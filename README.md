@@ -1,2 +1,2 @@
-# au-fhir-childhealth
-Child health implementation guide
+# au-fhir-pd
+Australian context FHIR profile for provider directory services
