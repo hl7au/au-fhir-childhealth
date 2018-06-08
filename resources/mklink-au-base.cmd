@@ -1,0 +1,1 @@
+mklink /D au-fhir-base ..\..\au-fhir-base\resources
