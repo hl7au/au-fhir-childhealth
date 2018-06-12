@@ -13,10 +13,47 @@
   <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-patient" />
   <derivation value="constraint" />
   <differential>
-    <element id="Patient">
-      <path value="Patient" />
-      <short value="Australian Child Patient" />
-      <definition value="Child patient in Australian context." />
+    <element id="Patient.extension:indigenousstatus">
+      <path value="Patient.extension" />
+      <sliceName value="indigenousstatus" />
+    </element>
+    <element id="Patient.extension:indigenousstatus.valueCoding:valueCoding">
+      <path value="Patient.extension.valueCoding" />
+      <sliceName value="valueCoding" />
+    </element>
+    <element id="Patient.extension:closethegapregistration">
+      <path value="Patient.extension" />
+      <sliceName value="closethegapregistration" />
+    </element>
+    <element id="Patient.extension:closethegapregistration.valueBoolean:valueBoolean">
+      <path value="Patient.extension.valueBoolean" />
+      <sliceName value="valueBoolean" />
+    </element>
+    <element id="Patient.identifier:ihinumber">
+      <path value="Patient.identifier" />
+      <sliceName value="ihinumber" />
+    </element>
+    <element id="Patient.identifier:ihinumber.extension:ihistatus">
+      <path value="Patient.identifier.extension" />
+      <sliceName value="ihistatus" />
+    </element>
+    <element id="Patient.identifier:ihinumber.extension:ihistatus.valueCoding:valueCoding">
+      <path value="Patient.identifier.extension.valueCoding" />
+      <sliceName value="valueCoding" />
+    </element>
+    <element id="Patient.identifier:ihinumber.extension:ihirecordstatus">
+      <path value="Patient.identifier.extension" />
+      <sliceName value="ihirecordstatus" />
+    </element>
+    <element id="Patient.identifier:ihinumber.extension:ihirecordstatus.valueCoding:valueCoding">
+      <path value="Patient.identifier.extension.valueCoding" />
+      <sliceName value="valueCoding" />
+    </element>
+    <element id="Patient.identifier:stateidentifer">
+      <path value="Patient.identifier" />
+      <sliceName value="stateidentifer" />
+      <max value="1" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
