@@ -57,6 +57,9 @@
   "npm-name" : "hl7.fhir.au.ch",
   "resources": {
 	"StructureDefinition/au-child": {
+	  "base": "StructureDefinition-au-baby.html"
+	},
+	"StructureDefinition/au-child": {
 	  "base": "StructureDefinition-au-child.html"
 	},
 	"StructureDefinition/au-mother": {

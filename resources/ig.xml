@@ -33,6 +33,12 @@
 				<reference value="StructureDefinition/au-child"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/AU-ChildHealth-Baby"/>
+			</sourceReference>
+		</resource>
 	</package>
 	<page>
 		<source value="index.html"/>
