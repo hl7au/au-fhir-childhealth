@@ -2,6 +2,10 @@
 
 ## Introduction
 
+This is the Implementation Guide for the Australian Child Health Working Group.
+
+More details are available here: https://confluence.hl7australia.com/display/CHWG/Child+Health+Working+Group
+
 ## Scope
 
 ## Usage

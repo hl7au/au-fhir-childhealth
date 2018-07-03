@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="AU-ChildHealth-Baby" />
-  <url value="http://hl7.org.au/fhir/ch/StructureDefinition/AU-ChildHealth-Baby" />
+  <id value="ncdhc-childhealth-baby" />
+  <url value="http://hl7.org.au/fhir/ch/StructureDefinition/ncdhc-childhealth-baby" />
   <version value="0.1" />
-  <name value="AU-ChildHealth-Baby" />
+  <name value="ncdhc-childhealth-baby" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />

@@ -56,17 +56,11 @@
   },
   "npm-name" : "hl7.fhir.au.ch",
   "resources": {
-	"StructureDefinition/au-child": {
-	  "base": "StructureDefinition-au-baby.html"
-	},
 	"StructureDefinition/AU-ChildHealth-Baby": {
-	  "base": "StructureDefinition-au-childhealth-baby.html"
+	  "base": "StructureDefinition-ncdhc-childhealth-baby.html"
 	},
 		"StructureDefinition/au-base-birth-encounter": {
 	  "base": "StructureDefinition-au-base-birth-encounter.html"
-	},
-	"StructureDefinition/au-mother": {
-	  "base": "StructureDefinition-au-mother.html"
 	}
   }
 }

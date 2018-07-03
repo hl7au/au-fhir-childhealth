@@ -24,19 +24,7 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/au-mother"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="StructureDefinition/au-child"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="StructureDefinition/AU-ChildHealth-Baby"/>
+				<reference value="StructureDefinition/ncdhc-childhealth-baby"/>
 			</sourceReference>
 		</resource>
 		<resource>
