@@ -39,6 +39,12 @@
 				<reference value="StructureDefinition/AU-ChildHealth-Baby"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/au-base-birth-encounter"/>
+			</sourceReference>
+		</resource>
 	</package>
 	<page>
 		<source value="index.html"/>
