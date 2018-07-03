@@ -33,6 +33,12 @@
 				<reference value="StructureDefinition/au-base-birth-encounter"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/au-base-birth-record"/>
+			</sourceReference>
+		</resource>	
 	</package>
 	<page>
 		<source value="index.html"/>

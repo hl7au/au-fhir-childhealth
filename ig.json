@@ -59,7 +59,10 @@
 	"StructureDefinition/AU-ChildHealth-Baby": {
 	  "base": "StructureDefinition-ncdhc-childhealth-baby.html"
 	},
-		"StructureDefinition/au-base-birth-encounter": {
+	"StructureDefinition/au-base-birth-record": {
+	  "base": "StructureDefinition-au-base-birth-record.html"
+	},
+	"StructureDefinition/au-base-birth-encounter": {
 	  "base": "StructureDefinition-au-base-birth-encounter.html"
 	}
   }
