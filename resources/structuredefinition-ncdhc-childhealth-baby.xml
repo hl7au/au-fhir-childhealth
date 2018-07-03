@@ -3,7 +3,7 @@
   <id value="ncdhc-childhealth-baby" />
   <url value="http://hl7.org.au/fhir/ch/StructureDefinition/ncdhc-childhealth-baby" />
   <version value="0.1" />
-  <name value="ncdhc-childhealth-baby" />
+  <name value="NCDHC Child Health Baby" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />

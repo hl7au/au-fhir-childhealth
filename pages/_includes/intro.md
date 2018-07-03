@@ -2,11 +2,13 @@
 
 ## Introduction
 
-This is the Implementation Guide for the Australian Child Health Working Group.
+This implementation guide is provided to support the use of Child Health FHIR®© specifications in an Australian context.
 
-More details are available here: https://confluence.hl7australia.com/display/CHWG/Child+Health+Working+Group
+This document is a working specification that is expected to be implemented and tested by FHIR®© system producers to enable feedback to improve the content of this guide.
 
 ## Scope
+
+More details on the Australian Child Health Working Group are available here: https://confluence.hl7australia.com/display/CHWG/Child+Health+Working+Group
 
 ## Usage
 

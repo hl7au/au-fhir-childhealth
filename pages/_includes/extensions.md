@@ -1,4 +1,5 @@
 # {{ page.title }}
 
-These extensions have been defined for this implementation guide.
+No extensions have been published at this point.
+
 {% include list-simple-extensions.xhtml %}

@@ -1,3 +1,3 @@
-**AU Child Health Child Patient Profile**
+**AU Base Birth Encounter Profile**
 
-Child patient profile.
+AU Base Birth Encounter profile.
