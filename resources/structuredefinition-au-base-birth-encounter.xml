@@ -10,10 +10,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Encounter" />
   <derivation value="constraint" />
   <differential>
-	<element id="Encounter">
-		<path value="Encounter"/>
-		<definition value="An interaction during which services are provided to the patient"/>
-	</element>
+    <element id="Encounter">
+      <path value="Encounter" />
+      <definition value="An interaction during which services are provided to the patient" />
+    </element>
     <element id="Encounter.type">
       <path value="Encounter.type" />
       <min value="1" />
@@ -21,7 +21,7 @@
       <fixedCodeableConcept>
         <coding>
           <system value="http://snomed.info/sct" />
-          <code value="000" />
+          <code value="3950001" />
         </coding>
       </fixedCodeableConcept>
     </element>

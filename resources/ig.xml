@@ -24,12 +24,6 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-childhealth-baby"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
 				<reference value="StructureDefinition/au-base-birth-encounter"/>
 			</sourceReference>
 		</resource>
@@ -38,7 +32,19 @@
 			<sourceReference>
 				<reference value="StructureDefinition/au-base-birth-record"/>
 			</sourceReference>
-		</resource>	
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-childhealth-baby"/>
+			</sourceReference>
+		</resource>		
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-baby-birth-encounter"/>
+			</sourceReference>
+		</resource>
 	</package>
 	<page>
 		<source value="index.html"/>
