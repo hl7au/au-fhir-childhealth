@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org.au/fhir/ch/StructureDefinition/mother-patient" />
+  <name value="MotherPatient" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-patient" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Patient">
+      <path value="Patient" />
+      <short value="Mother patient" />
+      <definition value="Motherp patient that refers to one or more relationships to their children" />
+    </element>
+    <element id="Patient.extension:birthPlace">
+      <path value="Patient.extension" />
+      <sliceName value="birthPlace" />
+    </element>
+    <element id="Patient.extension:birthPlace.valueAddress:valueAddress">
+      <path value="Patient.extension.valueAddress" />
+      <sliceName value="valueAddress" />
+    </element>
+    <element id="Patient.extension:mothersMaidenName">
+      <path value="Patient.extension" />
+      <sliceName value="mothersMaidenName" />
+    </element>
+    <element id="Patient.extension:mothersMaidenName.valueString:valueString">
+      <path value="Patient.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="Patient.birthDate.extension:birthTime">
+      <path value="Patient.birthDate.extension" />
+      <sliceName value="birthTime" />
+    </element>
+    <element id="Patient.birthDate.extension:birthTime.valueDateTime:valueDateTime">
+      <path value="Patient.birthDate.extension.valueDateTime" />
+      <sliceName value="valueDateTime" />
+    </element>
+    <element id="Patient.link">
+      <path value="Patient.link" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="other.reference" />
+        </discriminator>
+        <description value="a reference to Mother Related Person indicates a this patient has a mother relationship to another patient (child)" />
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Patient.link:motherRelatedPersion">
+      <path value="Patient.link" />
+      <sliceName value="motherRelatedPersion" />
+      <short value="Mother relationship to a child" />
+      <definition value="Required references to the mother relationship of this person to their children" />
+      <min value="1" />
+    </element>
+    <element id="Patient.link:motherRelatedPersion.other">
+      <path value="Patient.link.other" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org.au/fhir/ch/StructureDefinition/mother-relatedperson" />
+      </type>
+    </element>
+    <element id="Patient.link:motherRelatedPersion.type">
+      <path value="Patient.link.type" />
+      <fixedCode value="refer" />
+    </element>
+  </differential>
+</StructureDefinition>

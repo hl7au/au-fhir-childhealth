@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="mother-relatedperson" />
+  <url value="http://hl7.org.au/fhir/ch/StructureDefinition/mother-relatedperson" />
+  <name value="MotherRelatedPerson" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="RelatedPerson" />
+  <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-relatedperson" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="RelatedPerson">
+      <path value="RelatedPerson" />
+      <short value="Mother related to Child" />
+      <definition value="Record of a person related to a patient that is a natural child (by birth) i.e the mother of the child" />
+    </element>
+    <element id="RelatedPerson.identifier:ihiNumber">
+      <path value="RelatedPerson.identifier" />
+      <sliceName value="ihiNumber" />
+    </element>
+    <element id="RelatedPerson.identifier:ihiNumber.extension:ihiRecordStatus">
+      <path value="RelatedPerson.identifier.extension" />
+      <sliceName value="ihiRecordStatus" />
+      <definition value="Known IHI record status associated with an IHI identifier." />
+    </element>
+    <element id="RelatedPerson.active">
+      <path value="RelatedPerson.active" />
+      <min value="1" />
+      <fixedBoolean value="true" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.patient">
+      <path value="RelatedPerson.patient" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.relationship">
+      <path value="RelatedPerson.relationship" />
+      <short value="Patient reference is natural child of Mother" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.relationship.coding">
+      <path value="RelatedPerson.relationship.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="RelatedPerson.relationship.coding.system">
+      <path value="RelatedPerson.relationship.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://hl7.org/fhir/v3/RoleCode" />
+    </element>
+    <element id="RelatedPerson.relationship.coding.code">
+      <path value="RelatedPerson.relationship.coding.code" />
+      <short value="Natural Child (by birth)" />
+      <min value="1" />
+      <fixedCode value="NCHILD" />
+    </element>
+  </differential>
+</StructureDefinition>
