@@ -3,6 +3,7 @@
   <id value="mother-relatedperson" />
   <url value="http://hl7.org.au/fhir/ch/StructureDefinition/mother-relatedperson" />
   <name value="MotherRelatedPerson" />
+  <title value="Mother Related Person" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
