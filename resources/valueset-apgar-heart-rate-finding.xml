@@ -1,0 +1,55 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="apgar-heart-rate-finding"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2018-09-18T09:41:00.000+10:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>APGAR heart rate findings</p>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+    <valueString value="Informative"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <url value="http://hl7.org.au/fhir/ch/ValueSet/apgar-heart-rate-finding"/>
+  <version value="3.0.1"/>
+  <name value="APGARHeartRateFindings"/>
+  <title value="APGAR Heart Rate Findings"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2018-09-18"/>
+  <publisher value="HL7 Australia (Child Health WG)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org.au"/>
+    </telecom>
+  </contact>
+  <description value="APGAR heart rate findings"/>
+  <compose>
+     <include>
+      <system value="http://loinc.com"/>
+      <concept>
+        <code value="LA6716-0"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://loinc.com"/>
+      <concept>
+        <code value="LA6717-8"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://loinc.com"/>
+      <concept>
+        <code value="LA6718-6"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
