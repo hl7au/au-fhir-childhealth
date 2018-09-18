@@ -68,6 +68,9 @@
 	"StructureDefinition/ncdhc-baby-birth-encounter": {
 	  "base": "StructureDefinition-ncdhc-baby-birth-encounter.html"
 	},
+	"StructureDefinition/apgar-score": {
+	  "base": "StructureDefinition-apgar-score.html"
+	},
 	"ValueSet/apgar-score-type": {
 	  "base": "ValueSet-apgar-score-type.html"
 	},
