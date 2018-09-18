@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="au-base-birth-record" />
-  <url value="http://hl7.org.au/fhir/ch/StructureDefinition/au-base-birth-record" />
-  <name value="AU Base Birth Record" />
+  <id value="birth-record" />
+  <url value="http://hl7.org.au/fhir/ch/StructureDefinition/birth-record" />
+  <name value="AUBirthRecord" />
+  <title value="AU Birth Record" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
@@ -12,10 +13,10 @@
   <derivation value="constraint" />
   <differential>
     <element id="Composition">
-		<path value="Composition"/>
-		<definition value="Composition for Australian realm"/>
-	</element>
-	<element id="Composition.confidentiality">
+      <path value="Composition" />
+      <definition value="Composition for Australian realm" />
+    </element>
+    <element id="Composition.confidentiality">
       <path value="Composition.confidentiality" />
       <max value="0" />
     </element>

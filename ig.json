@@ -67,6 +67,43 @@
 	},
 	"StructureDefinition/ncdhc-baby-birth-encounter": {
 	  "base": "StructureDefinition-ncdhc-baby-birth-encounter.html"
+	},
+	"ValueSet/apgar-score-type": {
+	  "base": "ValueSet-apgar-score-type.html"
+	},
+	"ValueSet/apgar-score-type-snomedct": {
+	  "base": "ValueSet-apgar-score-type-snomedct.html"
+	},
+	"ValueSet/apgar-colour": {
+	  "base": "ValueSet-apgar-colour.html"
+	},
+	"ValueSet/apgar-heart-rate": {
+	  "base": "ValueSet-apgar-heart-rate.html"
+	},
+	"ValueSet/apgar-reflex-irritability": {
+	  "base": "ValueSet-apgar-reflex-irritability.html"
+	},
+	"ValueSet/apgar-muscle-tone": {
+	  "base": "ValueSet-apgar-muscle-tone.html"
+	},
+	"ValueSet/apgar-respiratory-effort": {
+	  "base": "ValueSet-apgar-respiratory-effort.html"
+	},
+	"ValueSet/apgar-colour-finding": {
+	  "base": "ValueSet-apgar-colour-finding.html"
+	},
+	"ValueSet/apgar-heart-rate-finding": {
+	  "base": "ValueSet-apgar-heart-rate-finding.html"
+	},
+	"ValueSet/apgar-reflex-irritability-finding": {
+	  "base": "ValueSet-apgar-reflex-irritability-finding.html"
+	},
+	"ValueSet/apgar-muscle-tone-finding": {
+	  "base": "ValueSet-apgar-muscle-tone-finding.html"
+	},
+	"ValueSet/apgar-respiratory-effort-finding": {
+	  "base": "ValueSet-apgar-respiratory-effort-finding.html"
 	}
+	
   }
 }

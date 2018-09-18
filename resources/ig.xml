@@ -36,13 +36,13 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/au-base-birth-encounter"/>
+				<reference value="StructureDefinition/birth-encounter"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/au-base-birth-record"/>
+				<reference value="StructureDefinition/birth-record"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -55,6 +55,84 @@
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-baby-birth-encounter"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/apgar-score"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/apgar-score-type"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/apgar-score-type-snomedct"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/apgar-reflex-irritability"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/apgar-respiratory-effort"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/apgar-heart-rate"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/apgar-colour"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/apgar-muscle-tone"/>
+			</sourceReference>
+		</resource>
+				<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/apgar-reflex-irritability-finding"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/apgar-respiratory-effort-finding"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/apgar-heart-rate-finding"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/apgar-colour-finding"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/apgar-muscle-tone-finding"/>
 			</sourceReference>
 		</resource>
 	</package>

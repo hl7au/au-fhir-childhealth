@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://hl7.org.au/fhir/ch/StructureDefinition/au-base-birth-encounter" />
-  <name value="AU Base Birth Encounter" />
+  <url value="http://hl7.org.au/fhir/ch/StructureDefinition/birth-encounter" />
+  <name value="AUBirthEncounter" />
+  <title value="AU Birth Encounter" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
