@@ -48,7 +48,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="2" />
+      <min value="1" />
     </element>
     <element id="Observation.code.coding:loincScoreType">
       <path value="Observation.code.coding" />
@@ -66,10 +66,9 @@
     <element id="Observation.code.coding:snomedScoreType">
       <path value="Observation.code.coding" />
       <sliceName value="snomedScoreType" />
-      <min value="1" />
       <max value="1" />
       <binding>
-        <strength value="required" />
+        <strength value="example" />
         <description value="APGAR score observation type (SNOMED CT)" />
         <valueSetReference>
           <reference value="http://hl7.org.au/fhir/ch/ValueSet/apgar-score-type-snomedct" />
