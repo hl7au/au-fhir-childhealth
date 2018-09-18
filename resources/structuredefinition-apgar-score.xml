@@ -20,19 +20,19 @@
         <key value="inv-apgar01" />
         <severity value="error" />
         <human value="APGAR 1 minute component codes must match observation type" />
-        <expression value="code.coding.where(code='9272-6').exists() implies component.where(code.coding.where(code='32406-1').exists()).exists() and component.where(code.coding.where(code='32407-9').exists()).exists() and component.where(code.coding.where(code='32408-7').exists()).exists() and component.where(code.coding.where(code='32410-3').exists()).exists() and component.where(code.coding.where(code='32409-5').exists()).exists() " />
+        <expression value="(component.where(code.coding.where(code='32406-1').exists()).exists() or component.where(code.coding.where(code='32407-9').exists()).exists() or component.where(code.coding.where(code='32408-7').exists()).exists() or component.where(code.coding.where(code='32410-3').exists()).exists() or component.where(code.coding.where(code='32409-5').exists()).exists()) implies code.coding.where(code='9272-6').exists() " />
       </constraint>
       <constraint>
         <key value="inv-apgar02" />
         <severity value="error" />
         <human value="APGAR 5 minute component codes must match observation type" />
-        <expression value="code.coding.where(code='9272-6').exists() implies component.where(code.coding.where(code='32406-1').exists()).exists() and component.where(code.coding.where(code='32407-9').exists()).exists() and component.where(code.coding.where(code='32408-7').exists()).exists() and component.where(code.coding.where(code='32410-3').exists()).exists() and component.where(code.coding.where(code='32409-5').exists()).exists() " />
+        <expression value="(component.where(code.coding.where(code='32406-1').exists()).exists() or component.where(code.coding.where(code='32407-9').exists()).exists() or component.where(code.coding.where(code='32408-7').exists()).exists() or component.where(code.coding.where(code='32410-3').exists()).exists() or component.where(code.coding.where(code='32409-5').exists()).exists()) implies code.coding.where(code='9272-6').exists() " />
       </constraint>
       <constraint>
         <key value="inv-apgar03" />
         <severity value="error" />
         <human value="APGAR 10 minute component codes must match observation type" />
-        <expression value="code.coding.where(code='9271-8').exists() implies component.where(code.coding.where(code='32401-2').exists()).exists() and component.where(code.coding.where(code='32402-0').exists()).exists() and component.where(code.coding.where(code='32403-8').exists()).exists() and component.where(code.coding.where(code='32405-3').exists()).exists() and component.where(code.coding.where(code='32404-6').exists()).exists()" />
+        <expression value="(component.where(code.coding.where(code='32401-2').exists()).exists() or component.where(code.coding.where(code='32402-0').exists()).exists() or component.where(code.coding.where(code='32403-8').exists()).exists() or component.where(code.coding.where(code='32405-3').exists()).exists() or component.where(code.coding.where(code='32404-6').exists()).exists()) implies code.coding.where(code='9271-8').exists() " />
       </constraint>
     </element>
     <element id="Observation.code">
