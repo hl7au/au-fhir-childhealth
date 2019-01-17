@@ -1,6 +1,6 @@
 **NCDHC Newborn Delivery Health Interaction Composition Profile**
 
-This profile is used to represent Newborn Delivery Health Interaction as a FHIR document using Composition resource. 
+This profile is used to represent Newborn Delivery Health Interaction as a FHIR document using Composition resource. The profile is at draft stage and under review by the Child Health Working Group. 
 
 **Example Usage Scenarios:**
 
