@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "description": "NCDHC Patient profile to represent",
+  "description": "NCDHC Patient profile to represent baby and mother patient",
   "fhirVersion": "3.0.1",
   "mapping": [
     {
