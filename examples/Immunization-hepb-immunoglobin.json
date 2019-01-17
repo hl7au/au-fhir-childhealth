@@ -1,0 +1,49 @@
+{
+  "resourceType": "Immunization",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2018-12-27T16:13:03Z",
+    "profile": "http://hl7.org.au/fhir/StructureDefinition/ncdhc-immunisation"
+  },
+  "id": "241a72a8-df75-4484-ac89-ac4923f03b10",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<p>HepB Immunoglobin</p>\n\t\t\t\t\t\n</div>"
+  },
+  "status": "completed",
+  "notGiven": false,
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "116802006",
+        "display": "Intramuscular injection of Hepatitis B Virus immune globulin, human"
+      }
+    ],
+    "text": "HepB Immunoglobin"
+  },
+  "patient": {
+    "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+    "display": "Baby of Eve Bill"
+  },
+  "date": "2018-12-27",
+  "primarySource": true,
+  "practitioner": [
+    {
+      "role": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0443",
+            "code": "AP",
+            "display": "Administering Provider"
+          }
+        ],
+        "text": "Administering Provider"
+      },
+      "actor": {
+        "reference": "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0l",
+        "display": "Dr Helen Mayo"
+      }
+    }
+  ]
+}

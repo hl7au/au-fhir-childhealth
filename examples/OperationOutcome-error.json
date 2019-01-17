@@ -1,0 +1,24 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "62333608-eb01-40b5-b6c3-daded7910406",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>W is not a recognized code for Gender.</p>\n    </div>"
+  },
+  "issue": [
+    {
+      "severity": "error",
+      "code": "code-invalid",
+      "details": {
+        "text": "The code \"W\" is not known and not legal in this context"
+      },
+      "diagnostics": "NCDHC-SYS-34333: Error while processing request: Acme.Interop.FHIRProcessors.Patient.processGender line 2453",
+      "location": [
+        "/f:Person/f:gender"
+      ],
+      "expression": [
+        "Person.gender"
+      ]
+    }
+  ]
+}

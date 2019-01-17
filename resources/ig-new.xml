@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="au-ch"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\Users\60166876\OneDrive\ncdhc\execution\design\deliverables\fhir\ig\au-fhir-childhealth-master\resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\Users\60166876\OneDrive\ncdhc\execution\design\deliverables\fhir\ig\au-fhir-childhealth-master\examples"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="C:\Users\60166876\OneDrive\ncdhc\execution\design\deliverables\fhir\ig\au-fhir-childhealth-master\pages"/>
+  </extension>
+  <url value="http://hl7.org.au/fhir/ch/ImplementationGuide/au-ch"/>
+  <version value="0.9.0"/>
+  <name value="Child Health Implementation Guide"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2018-08-06T00:00:00+10:00"/>
+  <publisher value="HL7 Australia"/>
+  <contact>
+    <name value="HL7 Australia Child Health Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://confluence.hl7australia.com/display/CHWG/Child+Health+Working+Group"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <packageId value="hl7.fhir.au.ch"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="3.0.1"/>
+  <fhirVersion value="3.0.1"/>
+  <dependsOn id="aubase">
+    <uri value="http://hl7.org.au/fhir"/>
+    <packageId value="hl7.fhir.au.base"/>
+    <version value="current"/>
+  </dependsOn>
+  <definition>
+    <grouping id="p1">
+      <name value="base"/>
+      <description value="Guidance on the implementation of child health related content using FHIR in an Australian usage context"/>
+    </grouping>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-patient"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-estimated-gestation"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-birth"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-birth-complication"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-pregnancy-complication"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-method-of-delivery"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-apgar-score"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-labour-induced"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-birth-abnormalities"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-birth-weigth"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-birth-length"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-birth-head-circumference"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-medicationstatement-vitamink"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-immunization"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-score-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-score-type-snomedct"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-reflex-irritability"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-respiratory-effort"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-heart-rate"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-colour"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-muscle-tone"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-reflex-irritability-finding"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-respiratory-effort-finding"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-heart-rate-finding"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-colour-finding"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-muscle-tone-finding"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/3db74777-fd3d-4d3b-92ec-d405977a11a5"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/dd78393f-37ca-4738-81d6-e9595b2e5d0k"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b81"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b82"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b61"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b62"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b41"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b42"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b43"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b51"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b52"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b10"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b11"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b12"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Immunization/241a72a8-df75-4484-ac89-ac4923f03b10"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Immunization/241a72a8-df75-4484-ac89-ac4923f03b11"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/ncdhc-metadata"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="National Child Digital Health Implementation Guide"/>
+      <generation value="html"/>
+    </page>
+    <parameter>
+      <code value="generate-json"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-xml"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-turtle"/>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

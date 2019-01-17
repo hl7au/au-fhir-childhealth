@@ -2,18 +2,22 @@
   "sct-edition": "http://snomed.info/sct/32506021000036107",
   "version": "3.0.1",
   "source": "ig.xml",
-  "dependencyList": [ 
+  "dependencyList": [
     {
-       "name" : "aubase",
-       "location" : "http://hl7.org.au/fhir",
-	   "version" : "current"
+      "name": "aubase",
+      "location": "http://hl7.org.au/fhir",
+      "version": "current"
     }
-  ], 
+  ],
   "spreadsheets": [],
-  "special-urls": [ ],
-  "extraTemplates": [ "mappings" ],
+  "special-urls": [],
+  "extraTemplates": [
+    "mappings"
+  ],
   "defaults": {
-    "ConceptMap": { "template-base": "cm.html" },
+    "ConceptMap": {
+      "template-base": "cm.html"
+    },
     "Any": {
       "template-base": "base.html",
       "template-format": "format.html"
@@ -23,90 +27,199 @@
       "template-defns": "sd-definitions.html",
       "template-mappings": "sd-mappings.html"
     },
-    "ValueSet": { "template-base": "vs.html"},
-    "CodeSystem": { "template-base": "cs.html" },
-	"Patient": { 
-		"template-base": "ex.html",
-		"template-format": "ex-format.html"
-	},
-	"Practitioner": { 
-		"template-base": "ex.html",
-		"template-format": "ex-format.html" 
-	},
-	"PractitionerRole": { 
-		"template-base": "ex.html",
-		"template-format": "ex-format.html" 
-	},
-	"Organization": { 
-		"template-base": "ex.html",
-		"template-format": "ex-format.html" 
-	}
+    "ValueSet": {
+      "template-base": "vs.html"
+    },
+    "CodeSystem": {
+      "template-base": "cs.html"
+    },
+    "Patient": {
+      "template-base": "ex.html",
+      "template-format": "ex-format.html"
+    },
+    "Practitioner": {
+      "template-base": "ex.html",
+      "template-format": "ex-format.html"
+    },
+    "PractitionerRole": {
+      "template-base": "ex.html",
+      "template-format": "ex-format.html"
+    },
+    "Organization": {
+      "template-base": "ex.html",
+      "template-format": "ex-format.html"
+    }
   },
   "tool": "jekyll",
+  "swagger": [
+    {
+      "mode": "single",
+      "capabilities": "ncdhc-metadata"
+    }
+  ],
   "license": "CC0-1.0",
   "canonicalBase": "http://hl7.org.au/fhir/ch",
   "paths": {
     "temp": "temp",
-    "resources": [ "resources", "examples" ],
+    "resources": [
+      "resources",
+      "examples"
+    ],
     "pages": "pages",
     "txCache": "txCache",
     "output": "output",
     "qa": "qa",
     "specification": "http://hl7.org/fhir/STU3"
   },
-  "npm-name" : "hl7.fhir.au.ch",
+  "npm-name": "hl7.fhir.au.ch",
   "resources": {
-	"StructureDefinition/au-base-birth-encounter": {
-	  "base": "StructureDefinition-au-base-birth-encounter.html"
-	},
-	"StructureDefinition/au-base-birth-record": {
-	  "base": "StructureDefinition-au-base-birth-record.html"
-	},
-	"StructureDefinition/AU-ChildHealth-Baby": {
-	  "base": "StructureDefinition-ncdhc-childhealth-baby.html"
-	},
-	"StructureDefinition/ncdhc-baby-birth-encounter": {
-	  "base": "StructureDefinition-ncdhc-baby-birth-encounter.html"
-	},
-	"StructureDefinition/apgar-score": {
-	  "base": "StructureDefinition-apgar-score.html"
-	},
-	"ValueSet/apgar-score-type": {
-	  "base": "ValueSet-apgar-score-type.html"
-	},
-	"ValueSet/apgar-score-type-snomedct": {
-	  "base": "ValueSet-apgar-score-type-snomedct.html"
-	},
-	"ValueSet/apgar-colour": {
-	  "base": "ValueSet-apgar-colour.html"
-	},
-	"ValueSet/apgar-heart-rate": {
-	  "base": "ValueSet-apgar-heart-rate.html"
-	},
-	"ValueSet/apgar-reflex-irritability": {
-	  "base": "ValueSet-apgar-reflex-irritability.html"
-	},
-	"ValueSet/apgar-muscle-tone": {
-	  "base": "ValueSet-apgar-muscle-tone.html"
-	},
-	"ValueSet/apgar-respiratory-effort": {
-	  "base": "ValueSet-apgar-respiratory-effort.html"
-	},
-	"ValueSet/apgar-colour-finding": {
-	  "base": "ValueSet-apgar-colour-finding.html"
-	},
-	"ValueSet/apgar-heart-rate-finding": {
-	  "base": "ValueSet-apgar-heart-rate-finding.html"
-	},
-	"ValueSet/apgar-reflex-irritability-finding": {
-	  "base": "ValueSet-apgar-reflex-irritability-finding.html"
-	},
-	"ValueSet/apgar-muscle-tone-finding": {
-	  "base": "ValueSet-apgar-muscle-tone-finding.html"
-	},
-	"ValueSet/apgar-respiratory-effort-finding": {
-	  "base": "ValueSet-apgar-respiratory-effort-finding.html"
-	}
-	
+    "StructureDefinition/ncdhc-patient": {
+      "base": "StructureDefinition-ncdhc-patient.html"
+    },
+	"StructureDefinition/ncdhc-observation-apgar-score": {
+      "base": "StructureDefinition-ncdhc-observation-apgar-score.html"
+    },
+    "StructureDefinition/ncdhc-observation-pregnancy-complication": {
+      "base": "StructureDefinition-ncdhc-observation-pregnancy-complication.html"
+    },
+    "StructureDefinition/ncdhc-observation-birth-complication": {
+      "base": "StructureDefinition-ncdhc-observation-birth-complication.html"
+    },
+    "StructureDefinition/ncdhc-observation-method-of-delivery": {
+      "base": "StructureDefinition-ncdhc-observation-method-of-delivery.html"
+    },
+    "StructureDefinition/ncdhc-observation-estimated-gestation": {
+      "base": "StructureDefinition-ncdhc-observation-estimated-gestation.html"
+    },
+    "StructureDefinition/ncdhc-composition-birth": {
+      "base": "StructureDefinition-ncdhc-composition-birth.html"
+    },
+    "StructureDefinition/ncdhc-observation-birth-abnormalities": {
+      "base": "StructureDefinition-ncdhc-observation-birth-abnormalities.html"
+    },
+    "StructureDefinition/ncdhc-observation-labour-induced": {
+      "base": "StructureDefinition-ncdhc-observation-labour-induced.html"
+    },
+    "StructureDefinition/ncdhc-observation-birth-weigth": {
+      "base": "StructureDefinition-ncdhc-observation-birth-weigth.html"
+    },
+    "StructureDefinition/ncdhc-observation-birth-length": {
+      "base": "StructureDefinition-ncdhc-observation-birth-length.html"
+    },
+    "StructureDefinition/ncdhc-observation-birth-head-circumference": {
+      "base": "StructureDefinition-ncdhc-observation-birth-head-circumference.html"
+    },
+    "CapabilityStatement/ncdhc-metadata": {
+      "source": "CapabilityStatement.json",
+      "base": "CapabilityStatement-ncdhc-metadata.html"
+    },
+    "ValueSet/apgar-score-type": {
+      "base": "ValueSet-apgar-score-type.html"
+    },
+    "ValueSet/apgar-score-type-snomedct": {
+      "base": "ValueSet-apgar-score-type-snomedct.html"
+    },
+    "ValueSet/apgar-colour": {
+      "base": "ValueSet-apgar-colour.html"
+    },
+    "ValueSet/apgar-heart-rate": {
+      "base": "ValueSet-apgar-heart-rate.html"
+    },
+    "ValueSet/apgar-reflex-irritability": {
+      "base": "ValueSet-apgar-reflex-irritability.html"
+    },
+    "ValueSet/apgar-muscle-tone": {
+      "base": "ValueSet-apgar-muscle-tone.html"
+    },
+    "ValueSet/apgar-respiratory-effort": {
+      "base": "ValueSet-apgar-respiratory-effort.html"
+    },
+    "ValueSet/apgar-colour-finding": {
+      "base": "ValueSet-apgar-colour-finding.html"
+    },
+    "ValueSet/apgar-heart-rate-finding": {
+      "base": "ValueSet-apgar-heart-rate-finding.html"
+    },
+    "ValueSet/apgar-reflex-irritability-finding": {
+      "base": "ValueSet-apgar-reflex-irritability-finding.html"
+    },
+    "ValueSet/apgar-muscle-tone-finding": {
+      "base": "ValueSet-apgar-muscle-tone-finding.html"
+    },
+    "ValueSet/apgar-respiratory-effort-finding": {
+      "base": "ValueSet-apgar-respiratory-effort-finding.html"
+    },
+	"Patient/3db74777-fd3d-4d3b-92ec-d405977a11a5": {
+      "source": "Patient-newborn.json",
+      "base": "Patient-newborn.html"
+    },
+	"Patient/dd78393f-37ca-4738-81d6-e9595b2e5d0k": {
+      "source": "Patient-mother.json",
+      "base": "Patient-mother.html"
+    },
+    "Bundle/18900024-070c-4141-8109-9d9fa34dd24b": {
+      "source": "Bundle-document-birthHI-response-payload.json",
+      "base": "Bundle-document-birthHI-response-payload.html"
+    },
+    "Observation/541a72a8-df75-4484-ac89-ac4923f03b81": {
+      "source": "Observation-lengthOfGestation.json",
+      "base": "Observation-lengthOfGestation.html"
+    },
+    "Observation/541a72a8-df75-4484-ac89-ac4923f03b82": {
+      "source": "Observation-birthAbnormalities.json",
+      "base": "Observation-birthAbnormalities.html"
+    },
+    "Observation/541a72a8-df75-4484-ac89-ac4923f03b61": {
+      "source": "Observation-labour-induced.json",
+      "base": "Observation-labour-induced.html"
+    },
+    "Observation/541a72a8-df75-4484-ac89-ac4923f03b62": {
+      "source": "Observation-method-of-delivery.json",
+      "base": "Observation-method-of-delivery.html"
+    },
+    "Observation/541a72a8-df75-4484-ac89-ac4923f03b41": {
+      "source": "Observation-birth-weigth.json",
+      "base": "Observation-birth-weigth.html"
+    },
+    "Observation/541a72a8-df75-4484-ac89-ac4923f03b42": {
+      "source": "Observation-birth-length.json",
+      "base": "Observation-birth-length.html"
+    },
+    "Observation/541a72a8-df75-4484-ac89-ac4923f03b43": {
+      "source": "Observation-head-circumference.json",
+      "base": "Observation-head-circumference.html"
+    },
+    "Observation/541a72a8-df75-4484-ac89-ac4923f03b51": {
+      "source": "Observation-pregnancy-complications.json",
+      "base": "Observation-pregnancy-complications.html"
+    },
+    "Observation/541a72a8-df75-4484-ac89-ac4923f03b52": {
+      "source": "Observation-birth-complications.json",
+      "base": "Observation-birth-complications.html"
+    },
+    "MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b10": {
+      "source": "MedicationStatement-vitamink1.json",
+      "base": "MedicationStatement-vitamink1.html"
+    },
+    "MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b11": {
+      "source": "MedicationStatement-vitamink2.json",
+      "base": "MedicationStatement-vitamink2.html"
+    },
+    "MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b12": {
+      "source": "MedicationStatement-vitamink3.json",
+      "base": "MedicationStatement-vitamink3.html"
+    },
+    "Immunization/241a72a8-df75-4484-ac89-ac4923f03b11": {
+      "source": "Immunization-hepb-immunisation.json",
+      "base": "Immunization-hepb-immunisation.html"
+    },
+    "Immunization/241a72a8-df75-4484-ac89-ac4923f03b10": {
+      "source": "Immunization-hepb-immunoglobin.json",
+      "base": "Immunization-hepb-immunoglobin.html"
+    },
+	 "Composition/180f219f-97a8-486d-99d9-ed631fe4fc57": {
+      "source": "Bundle-document-birthHI-response-payload.json",
+      "base": "Bundle-document-birthHI-response-payload.html"
+    }
   }
 }

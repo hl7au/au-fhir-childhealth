@@ -1,0 +1,1689 @@
+{
+  "resourceType": "Bundle",
+  "id": "18900024-070c-4141-8109-9d9fa34dd24b",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2018-12-27T16:13:03Z"
+  },
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:0c3151bd-1cbf-4d64-b04d-cd9187a4c6e0"
+  },
+  "type": "document",
+  "entry": [
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Composition/180f219f-97a8-486d-99d9-ed631fe4fc57",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "180f219f-97a8-486d-99d9-ed631fe4fc57",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-composition-birth"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 180f219f-97a8-486d-99d9-ed631fe4fc57</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>type</b>: Newborn Birth Details Recorded<span>(Details : {LOINC code '11503-0' = 'Medical records')</span></p><p><b>title</b>: Newborn Birth Details Recorded</p><p><b>confidentiality</b>: N</p></div>"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11503-0"
+            }
+          ],
+          "text": "Newborn Delivery Details"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "date": "2018-12-24T12:30:02Z",
+        "author": [
+          {
+            "reference": "Practitioner/3db74777-fd3d-4d3b-92ec-d405977a11a5",
+            "display": "Doctor Adam Dev"
+          }
+        ],
+        "title": "Newborn Delivery Details",
+        "confidentiality": "N",
+        "atterster": [
+          {
+            "mode": "official",
+            "time": "2018-12-24T12:30:02Z",
+            "party": {
+              "reference": "#od78393f-37ca-4738-81d6-d9595b2e5d0f"
+            }
+          }
+        ],
+        "section": [
+          {
+            "title": "Estimated Gestation",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP97564-6",
+                  "display": "Gestational age at birth"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Length of gestation measured in weeks and days.</div>"
+            },
+            "entry": [
+              {
+                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b81"
+              }
+            ]
+          },
+          {
+            "title": "Congenital anomalies of the newborn",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP172858-5",
+                  "display": "Congenital anomalies of the newborn"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Congenital anomalies of the newborn</div>"
+            },
+            "entry": [
+              {
+                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b82"
+              }
+            ]
+          },
+          {
+            "title": "APGAR Scores",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP32192-4",
+                  "display": "Apgar"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">APGAR Scores</div>",
+              "section": [
+                {
+                  "title": "Apgar at 1 minute",
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://snomed.info/sct",
+                        "code": "169895004",
+                        "display": "Apgar at 1 minute"
+                      }
+                    ]
+                  },
+                  "text": {
+                    "status": "additional",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Apgar at 1 minute</div>"
+                  },
+                  "entry": [
+                    {
+                      "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b91"
+                    }
+                  ]
+                },
+                {
+                  "title": "Apgar at 5 minute",
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://snomed.info/sct",
+                        "code": "169909004",
+                        "display": "Apgar at 5 minute"
+                      }
+                    ]
+                  },
+                  "text": {
+                    "status": "additional",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Apgar at 5 minute</div>"
+                  },
+                  "entry": [
+                    {
+                      "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b92"
+                    }
+                  ]
+                },
+                {
+                  "title": "Apgar at 10 minute",
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://snomed.info/sct",
+                        "code": "169922007",
+                        "display": "Apgar at 10 minute"
+                      }
+                    ]
+                  },
+                  "text": {
+                    "status": "additional",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Apgar at 10 minute</div>"
+                  },
+                  "entry": [
+                    {
+                      "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b93"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "title": "Medication Administered",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP72926-6",
+                  "display": "Medication administered"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medication administered</div>"
+            },
+            "section": [
+              {
+                "title": "Vitamin K1",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "66656000",
+                      "display": "Phytomenadione"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vitamin K1</div>"
+                },
+                "entry": [
+                  {
+                    "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b10"
+                  }
+                ]
+              },
+              {
+                "title": "Vitamin K2",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "22606007",
+                      "display": "Vitamin K>2<"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vitamin K2</div>"
+                },
+                "entry": [
+                  {
+                    "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b11"
+                  }
+                ]
+              },
+              {
+                "title": "Vitamin K3",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "69169004",
+                      "display": "Vitamin K>3<"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vitamin K3</div>"
+                },
+                "entry": [
+                  {
+                    "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b12"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Immunisation",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP263510-2",
+                  "display": "Immunization"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Immunisation</div>"
+            },
+            "section": [
+              {
+                "title": "HepB Immunoglobin",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "116802006",
+                      "display": "Intramuscular injection of Hepatitis B Virus immune globulin, human"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">HepB Immunoglobin</div>"
+                },
+                "entry": [
+                  {
+                    "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Immunization/241a72a8-df75-4484-ac89-ac4923f03b10"
+                  }
+                ]
+              },
+              {
+                "title": "Hepatitis B Vaccination",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "170370000",
+                      "display": "First hepatitis B vaccination"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hepatitis B Vaccination</div>"
+                },
+                "entry": [
+                  {
+                    "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Immunization/241a72a8-df75-4484-ac89-ac4923f03b11"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Vital Signs and Measurements",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP73695-6",
+                  "display": "Vital signs measurements"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vital Signs and Measurements</div>"
+            },
+            "section": [
+              {
+                "title": "Birth Weight",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "56056-5",
+                      "display": "Birth weight - Reported"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Birth weight - Reported</div>"
+                },
+                "entry": [
+                  {
+                    "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b41"
+                  }
+                ]
+              },
+              {
+                "title": "Birth Length",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "89269-5",
+                      "display": "Body height Measured --at birth"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Body height Measured --at birth</div>"
+                },
+                "entry": [
+                  {
+                    "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b42"
+                  }
+                ]
+              },
+              {
+                "title": "Birth Head Circumference",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "8287-5",
+                      "display": "Head Occipital-frontal circumference by Tape measure"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Birth Head Circumference</div>"
+                },
+                "entry": [
+                  {
+                    "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b43"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Maternal Morbidity",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "73781-7",
+                  "display": "Maternal morbidity [US Standard Certificate of Live Birth]"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Maternal Morbidity</div>"
+            },
+            "section": [
+              {
+                "title": "Pregnancy Complications",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "609496007",
+                      "display": "Complication occurring during pregnancy"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Pregnancy Complications</div>"
+                },
+                "entry": [
+                  {
+                    "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b51"
+                  }
+                ]
+              },
+              {
+                "title": "Birth Complication",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "198609003",
+                      "display": "Complication of pregnancy, childbirth and/or the puerperium"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Birth Complication</div>"
+                },
+                "entry": [
+                  {
+                    "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b52"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Labour and Delivery",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LA20786-2",
+                  "display": "Labor and delivery"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Labour and Delivery</div>"
+            },
+            "section": [
+              {
+                "title": "Labour Initiation",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "LA20022-2",
+                      "display": "Induction of labor"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Labour Initiation</div>"
+                },
+                "entry": [
+                  {
+                    "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b61"
+                  }
+                ]
+              },
+              {
+                "title": "Method of Deliveryn",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "72149-8",
+                      "display": "Delivery method [RHEA]"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Method of Delivery</div>"
+                },
+                "entry": [
+                  {
+                    "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b62"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/3db74777-fd3d-4d3b-92ec-d405977a11a5",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "3db74777-fd3d-4d3b-92ec-d405977a11a5",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<p>Dr Adam Careful</p>\n\t\t\t\t\t\n</div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "NPI",
+                  "display": "National provider identifier"
+                }
+              ],
+              "text": "HPI-I"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hi/hpii/1.0",
+            "value": "8003610833334085"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Dev",
+            "given": [
+              "Adam"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ],
+        "qualification": [
+          {
+            "identifier": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org.au/fhir/v2/0203",
+                      "code": "AHPRA",
+                      "display": "Australian Health Practitioner Regulation Agency Registration Number"
+                    }
+                  ],
+                  "text": "AHPRA Registration Number"
+                },
+                "system": "http://hl7.org.au/id/ahpra-registration-number",
+                "value": "MED0000932850"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0",
+                  "code": "254111",
+                  "display": "Midwife"
+                }
+              ],
+              "text": "AHPRA qualification for Midwife"
+            },
+            "issuer": {
+              "display": "AHPRA"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "resource": {
+        "resourceType": "Patient",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<h1>Baby of Eve Bill</h1>\n\t\t\t\t\t\n</div>"
+        },
+        "id": "3db74777-fd3d-4d3b-92ec-d405977a11a5",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org.au/fhir/StructureDefinition/birthPlace",
+            "valueAddress": {
+              "text": "Blacktown Hospital"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+            "valueDateTime": "1956-08-23T14:35:45-05:00"
+          }
+        ],
+        "active": true,
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "NI",
+                  "display": "National unique individual identifier"
+                }
+              ],
+              "text": "IHI"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
+            "value": "8003608000024083"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "MR",
+                  "display": "Medical Record Number"
+                }
+              ],
+              "text": "Medical Record Number"
+            },
+            "system": "http://www.acme.com/identifiers/patient",
+            "value": "606915"
+          }
+        ],
+        "name": [
+          {
+            "text": "Baby of Eve Bill",
+            "family": "Bill",
+            "given": [
+              "Baby of Eve"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2018-12-24",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator",
+              "valueCoding": {
+                "system": "https://healthterminologies.gov.au/fhir/CodeSystem/date-accuracy-indicator-1",
+                "code": "AAA",
+                "display": "Day, month and year are accurate"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+              "valueDateTime": "2018-12-24T14:35:45-05:00"
+            }
+          ]
+        },
+        "address": [
+          {
+            "text": "home",
+            "line": [
+              "31 Pacquola Street"
+            ],
+            "city": "Blacktown",
+            "state": "NSW",
+            "postalCode": "2148",
+            "country": "Australia"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-e9595b2e5d0k",
+      "resource": {
+        "resourceType": "Patient",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<h1>Eve Bill</h1>\n\t\t\t\t\t\n</div>"
+        },
+        "id": "dd78393f-37ca-4738-81d6-e9595b2e5d0k",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+        },
+        "active": true,
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "MR",
+                  "display": "Medical Record Number"
+                }
+              ],
+              "text": "Medical Record Number"
+            },
+            "system": "http://www.acme.com/identifiers/patient",
+            "value": "606914"
+          }
+        ],
+        "name": [
+          {
+            "text": "Eve Bill",
+            "family": "Bill",
+            "given": [
+              "Eve"
+            ]
+          }
+        ],
+        "gender": "female"
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/RelatedPerson/dd78393f-37ca-4738-81d6-e9595b2e5d0k",
+      "resource": {
+        "resourceType": "RelatedPerson",
+        "id": "dd78393f-37ca-4738-81d6-e9595b2e5d0k",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<h1>Eve Bill, mother of the newborn</h1>\n\t\t\t\t\t\n</div>"
+        },
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/au-relatedperson"
+        },
+        "active": true,
+        "patient": {
+          "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+        },
+        "relationship": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/RoleCode",
+              "code": "MTH",
+              "display": "mother"
+            }
+          ]
+        },
+        "name": [
+          {
+            "text": "Eve Bill",
+            "family": "Eve",
+            "given": [
+              "Bill"
+            ]
+          }
+        ],
+        "gender": "female"
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/RelatedPerson/ed78393f-37ca-4738-81d6-e9595b2e5d0e",
+      "resource": {
+        "resourceType": "RelatedPerson",
+        "id": "ed78393f-37ca-4738-81d6-e9595b2e5d0e",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<h1>Simmons Bill</h1>\n\t\t\t\t\t\n</div>"
+        },
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/au-relatedperson"
+        },
+        "active": true,
+        "patient": {
+          "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+        },
+        "relationship": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/RoleCode",
+              "code": "FTH",
+              "display": "father"
+            }
+          ]
+        },
+        "name": [
+          {
+            "family": "Simmons",
+            "given": [
+              "Bill"
+            ]
+          }
+        ],
+        "gender": "male"
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b81",
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Length of gestation : 17 weeks 5 days.</div>"
+        },
+        "id": "541a72a8-df75-4484-ac89-ac4923f03b81",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-estimated-gestation"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LP97564-6"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "412726003"
+            }
+          ],
+          "text": "Length of gestation"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "performer": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+          "display": "Dr. Carla Smith"
+        },
+        "valueQuantity": {
+          "value": "124",
+          "unit": "days",
+          "system": "http://unitsofmeasure.org",
+          "code": "d"
+        },
+        "comment": "17 weeks 5 days"
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b82",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-birth-abnormalities"
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Abnormalities noted at birth</div>"
+        },
+        "id": "541a72a8-df75-4484-ac89-ac4923f03b82",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LP172858-5"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "414025005"
+            }
+          ],
+          "text": "Congenital anomalies of the newborn"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "performer": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+          "display": "Dr. Carla Smith"
+        },
+        "valueString": "The foot is twisted out of shape or position",
+        "comment": "Additional Comments on the abnormalities"
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b91",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-apgar-score"
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Apgar at 1 minute</div>"
+        },
+        "id": "541a72a8-df75-4484-ac89-ac4923f03b91",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "169895004"
+            }
+          ],
+          "text": "Apgar at 1 minute"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "performer": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+          "display": "Dr. Carla Smith"
+        },
+        "valueQuantity": {
+          "value": "12.4",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b92",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-apgar-score"
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Apgar at 5 minutes</div>"
+        },
+        "id": "541a72a8-df75-4484-ac89-ac4923f03b92",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "169909004"
+            }
+          ],
+          "text": "Apgar at 5 minutes"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "performer": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+          "display": "Dr. Carla Smith"
+        },
+        "valueQuantity": {
+          "value": "12.4",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b93",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-apgar-score"
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Apgar at 10 minutes</div>"
+        },
+        "id": "541a72a8-df75-4484-ac89-ac4923f03b93",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "169922007"
+            }
+          ],
+          "text": "Apgar at 10 minutes"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "performer": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+          "display": "Dr. Carla Smith"
+        },
+        "valueQuantity": {
+          "value": "12.4",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b61",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-labour-initiation"
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Labour Initiation</div>"
+        },
+        "id": "541a72a8-df75-4484-ac89-ac4923f03b61",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA20022-2"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "20236002"
+            }
+          ],
+          "text": "Induction of labor"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-e9595b2e5d0k",
+          "display": "Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "performer": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+          "display": "Dr. Carla Smith"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84457005",
+              "display": "Spontaneous onset of labour"
+            }
+          ],
+          "text": ""
+        }
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b62",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-method-of-delivery"
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Method Of Delivery</div>"
+        },
+        "id": "541a72a8-df75-4484-ac89-ac4923f03b62",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72149-8"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "289258004"
+            }
+          ],
+          "text": "Method Of Delivery"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "performer": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+          "display": "Dr. Carla Smith"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "200130005",
+              "display": "Forceps"
+            }
+          ],
+          "text": ""
+        }
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b51",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-pregnancy-complication"
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Pregnancy Complications</div>"
+        },
+        "id": "541a72a8-df75-4484-ac89-ac4923f03b51",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "TBD"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "609496007"
+            }
+          ],
+          "text": "Complication occurring during pregnancy"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-e9595b2e5d0k",
+          "display": "Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "performer": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+          "display": "Dr. Carla Smith"
+        },
+        "valueString": "Low amniotic fluid (oligohydramnios)"
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b52",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-birth-complication"
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Birth Complication</div>"
+        },
+        "id": "541a72a8-df75-4484-ac89-ac4923f03b52",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "TBD"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "198609003"
+            }
+          ],
+          "text": "Complication of pregnancy, childbirth and/or the puerperium"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "valueString": "Cephalopelvic disproportion (CPD)"
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b41",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-birth-weight"
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Birth Weight</div>"
+        },
+        "id": "541a72a8-df75-4484-ac89-ac4923f03b41",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "56056-5"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "364589006"
+            }
+          ],
+          "text": "Birth Weight"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "performer": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+          "display": "Dr. Carla Smith"
+        },
+        "valueQuantity": {
+          "value": 20.09414,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b42",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-birth-length"
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Birth Length</div>"
+        },
+        "id": "541a72a8-df75-4484-ac89-ac4923f03b42",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "89269-5"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "169886007"
+            }
+          ],
+          "text": "Body height Measured --at birth"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "performer": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+          "display": "Dr. Carla Smith"
+        },
+        "valueQuantity": {
+          "value": 25,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b43",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-birth-head-circumference"
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Birth head circumference</div>"
+        },
+        "id": "541a72a8-df75-4484-ac89-ac4923f03b43",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8287-5"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "363812007"
+            }
+          ],
+          "text": "Head circumference"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "performer": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+          "display": "Dr. Carla Smith"
+        },
+        "valueQuantity": {
+          "value": 51.2,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b10",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/ncdhc-medicationstatement-vitamink"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<p>Vitamin K1</p>\n\t\t\t\t\t\n</div>"
+        },
+        "id": "141a72a8-df75-4484-ac89-ac4923f03b10",
+        "status": "completed",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "66656000",
+              "display": "Phytomenadione"
+            }
+          ],
+          "text": "Vitamin K1"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "dateAsserted": "2018-12-27T16:13:03Z",
+        "informationSource": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/kk78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Dr. Rob Boston"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "taken": "y",
+        "dosage": [
+          {
+            "sequence": "1",
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "59108006",
+                  "display": "Injection"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b11",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/ncdhc-medicationstatement-vitamink"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<p>Vitamin K2</p>\n\t\t\t\t\t\n</div>"
+        },
+        "id": "141a72a8-df75-4484-ac89-ac4923f03b11",
+        "status": "completed",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "22606007",
+              "display": "Vitamin K>2<"
+            }
+          ],
+          "text": "Vitamin K>2<"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "dateAsserted": "2018-12-27T16:13:03Z",
+        "informationSource": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/kk78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Dr. Rob Boston"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "taken": "y",
+        "dosage": [
+          {
+            "sequence": "2",
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "59108006",
+                  "display": "Injection"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b12",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/ncdhc-medicationstatement-vitamink"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<p>Vitamin K3</p>\n\t\t\t\t\t\n</div>"
+        },
+        "id": "141a72a8-df75-4484-ac89-ac4923f03b12",
+        "status": "completed",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "69169004",
+              "display": "Vitamin K>3<"
+            }
+          ],
+          "text": "Vitamin K>3<"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "dateAsserted": "2018-12-27T16:13:03Z",
+        "informationSource": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/kk78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Dr. Rob Boston"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "taken": "y",
+        "dosage": [
+          {
+            "sequence": "2",
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "59108006",
+                  "display": "Injection"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Immunization/241a72a8-df75-4484-ac89-ac4923f03b10",
+      "resource": {
+        "resourceType": "Immunization",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/ncdhc-immunisation"
+        },
+        "id": "241a72a8-df75-4484-ac89-ac4923f03b10",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<p>HepB Immunoglobin</p>\n\t\t\t\t\t\n</div>"
+        },
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "116802006",
+              "display": "Intramuscular injection of Hepatitis B Virus immune globulin, human"
+            }
+          ],
+          "text": "HepB Immunoglobin"
+        },
+        "patient": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "date": "2018-12-27",
+        "primarySource": true,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0443",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ],
+              "text": "Administering Provider"
+            },
+            "actor": {
+              "reference": "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0l",
+              "display": "Dr Helen Mayo"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Immunization/241a72a8-df75-4484-ac89-ac4923f03b11",
+      "resource": {
+        "resourceType": "Immunization",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/ncdhc-immunisation"
+        },
+        "id": "241a72a8-df75-4484-ac89-ac4923f03b11",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<p>HepB Immunisation</p>\n\t\t\t\t\t\n</div>"
+        },
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "170370000",
+              "display": "First hepatitis B vaccination"
+            }
+          ],
+          "text": "HepB Immunisation"
+        },
+        "patient": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "date": "2018-12-27",
+        "primarySource": true,
+        "lotNumber": "d899993dj33",
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0443",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ],
+              "text": "Administering Provider"
+            },
+            "actor": {
+              "reference": "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0l",
+              "display": "Dr Helen Mayo"
+            }
+          }
+        ],
+        "note": "Additional Comments",
+        "vaccinationProtocol": [
+          {
+            "doseSequence": 1,
+            "description": "Hep B Dose",
+            "series": "Name of vaccine series",
+            "targetDisease": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "66071002",
+                    "display": "Hepatitis B"
+                  }
+                ]
+              }
+            ],
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v3/NullFlavor",
+                  "code": "NAVU",
+                  "display": "Not available"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Provenance/991a72a8-df75-4484-ac89-ac4923f03b11",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "991a72a8-df75-4484-ac89-ac4923f03b11",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Provenance resource to establish Parent child relationship in the document</div>"
+        },
+        "target": [
+          {
+            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "display": "Baby of Eve Bill"
+          }
+        ],
+        "recorded": "2018-12-27T08:39:24+10:00",
+        "reason": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+                "code": "PATADMIN",
+                "display": "patient administration"
+              }
+            ]
+          }
+        ],
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "whoReference": {
+              "reference": "Practitioner/3db74777-fd3d-4d3b-92ec-d405977a11a5",
+              "display": "Doctor Adam Dev"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "whatReference": {
+              "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/RelatedPerson/dd78393f-37ca-4738-81d6-e9595b2e5d0k",
+              "display": "Eve Bill"
+            }
+          },
+          {
+            "role": "source",
+            "whatReference": {
+              "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/RelatedPerson/ed78393f-37ca-4738-81d6-e9595b2e5d0e",
+              "display": "Simons Bill"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

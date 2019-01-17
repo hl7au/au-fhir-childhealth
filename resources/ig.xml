@@ -20,48 +20,90 @@
 	<fhirVersion value="3.0.1"/>
 	<package>
 		<name value="base"/>
-		<description value="Guidance on the implementation of child health related content using FHIR in an Australian usage context"/>
+		<description value="Guidance on the implementation of child health related content using FHIR in an Australian usage context"/>		
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/mother-patient"/>
+				<reference value="StructureDefinition/ncdhc-patient"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/mother-relatedperson"/>
+				<reference value="StructureDefinition/ncdhc-observation-estimated-gestation"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/birth-encounter"/>
+				<reference value="StructureDefinition/ncdhc-composition-birth"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/birth-record"/>
+				<reference value="StructureDefinition/ncdhc-observation-birth-complication"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-childhealth-baby"/>
+				<reference value="StructureDefinition/ncdhc-observation-pregnancy-complication"/>
+			</sourceReference>
+		</resource>	
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-method-of-delivery"/>
+			</sourceReference>
+		</resource>	
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-apgar-score"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-labour-induced"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-birth-abnormalities"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-birth-weigth"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-birth-length"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-birth-head-circumference"/>
 			</sourceReference>
 		</resource>		
 		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-baby-birth-encounter"/>
-			</sourceReference>
+		  <example value="false"/>
+		  <sourceReference>
+			<reference value="StructureDefinition/ncdhc-medicationstatement-vitamink"/>
+		  </sourceReference>
 		</resource>
 		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="StructureDefinition/apgar-score"/>
-			</sourceReference>
+		  <example value="false"/>
+		  <sourceReference>
+			<reference value="StructureDefinition/ncdhc-immunization"/>
+		  </sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
@@ -135,10 +177,118 @@
 				<reference value="ValueSet/apgar-muscle-tone-finding"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Patient/3db74777-fd3d-4d3b-92ec-d405977a11a5"/>
+			</sourceReference>
+		</resource>	
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Patient/dd78393f-37ca-4738-81d6-e9595b2e5d0k"/>
+			</sourceReference>
+		</resource>			
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b81"/>
+			</sourceReference>
+		</resource>		
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b82"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b61"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b62"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b41"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b42"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b43"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b51"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b52"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b10"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b11"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b12"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Immunization/241a72a8-df75-4484-ac89-ac4923f03b10"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Immunization/241a72a8-df75-4484-ac89-ac4923f03b11"/>
+			</sourceReference>
+		</resource>
+		<!--<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Bundle/18900024-070c-4141-8109-9d9fa34dd24b"/>
+			</sourceReference>
+		</resource>-->
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CapabilityStatement/ncdhc-metadata"/>
+			</sourceReference>
+		</resource>
 	</package>
 	<page>
 		<source value="index.html"/>
-		<title value="Australian Child Health Implementation Guide"/>
+		<title value="National Child Digital Health Implementation Guide"/>
 		<kind value="page"/>
 	</page>
 </ImplementationGuide>
