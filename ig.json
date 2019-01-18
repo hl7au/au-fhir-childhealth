@@ -50,13 +50,7 @@
       "template-format": "ex-format.html"
     }
   },
-  "tool": "jekyll",
-  "swagger": [
-    {
-      "mode": "single",
-      "capabilities": "ncdhc-metadata"
-    }
-  ],
+  "tool": "jekyll",  
   "license": "CC0-1.0",
   "canonicalBase": "http://hl7.org.au/fhir/ch",
   "paths": {
