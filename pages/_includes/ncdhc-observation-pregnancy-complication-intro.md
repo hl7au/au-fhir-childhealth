@@ -1,6 +1,6 @@
 **NCDHC Pregnancy Complications Observation Profile**
 
-This profile sets minimum expectations for the [Observation] resource to record, search and fetch Pregnancy Complications associated with the patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile.
+This profile sets minimum expectations for the [Observation] resource to record, search and fetch Pregnancy Complications associated with the patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. The profile is at draft stage and under review by the Child Health Working Group. 
 
 **Example Usage Scenarios:**
 
