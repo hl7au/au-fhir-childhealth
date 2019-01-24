@@ -15,7 +15,11 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "89269-5"
+        "code": "8302-2"
+      },
+	  {
+        "system": "http://snomed.info/sct",
+        "code": "248334005"
       },
       {
         "system": "http://snomed.info/sct",
