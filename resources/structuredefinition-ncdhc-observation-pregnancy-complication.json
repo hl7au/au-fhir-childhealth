@@ -102,6 +102,7 @@
         "id": "Observation.code.coding:pregnancyComplicationSNOMED-CT",
         "path": "Observation.code.coding",
         "sliceName": "pregnancyComplicationSNOMED-CT",
+        "min": 1,
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
@@ -116,10 +117,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-patient",
-            "aggregation": [
-              "referenced"
-            ]
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-patient"
           }
         ],
         "mustSupport": true
@@ -142,17 +140,59 @@
         "min": 1
       },
       {
-        "id": "Observation.value[x]:valueString",
-        "path": "Observation.valueString",
-        "sliceName": "valueString",
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
         "short": "Maternal medical conditions or infectious diseases arising in pregnancy which may have an impact on the fetus, e.g. gestational diabetes, infection etc.",
         "min": 1,
         "type": [
+          {
+            "code": "CodeableConcept"
+          },
           {
             "code": "string"
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:snomedValue",
+        "path": "Observation.value[x]",
+        "sliceName": "snomedValue",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:snomedValue.coding",
+        "path": "Observation.value[x].coding",
+        "max": "1"
+      },
+      {
+        "id": "Observation.value[x]:snomedValue.coding.system",
+        "path": "Observation.value[x].coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.value[x]:strValue",
+        "path": "Observation.value[x]",
+        "sliceName": "strValue",
+        "short": "Actual result as string if the coded data is not available",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
       },
       {
         "id": "Observation.comment",

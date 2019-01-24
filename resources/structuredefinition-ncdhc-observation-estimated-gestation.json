@@ -102,14 +102,35 @@
         }
       },
       {
+        "id": "Observation.code.coding:estmatedGestationLOINC.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.code.coding:estmatedGestationLOINC.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "412726003"
+      },
+      {
         "id": "Observation.code.coding:estmatedGestationSNOMED-CT",
         "path": "Observation.code.coding",
         "sliceName": "estmatedGestationSNOMED-CT",
+        "min": 1,
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
           "code": "412726003"
         }
+      },
+      {
+        "id": "Observation.code.coding:estmatedGestationSNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:estmatedGestationSNOMED-CT.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "412726003"
       },
       {
         "id": "Observation.subject",
@@ -119,10 +140,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-patient",
-            "aggregation": [
-              "referenced"
-            ]
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-patient"
           }
         ],
         "mustSupport": true
