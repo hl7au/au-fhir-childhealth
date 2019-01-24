@@ -11,13 +11,25 @@
   },
   "id": "541a72a8-df75-4484-ac89-ac4923f03b41",
   "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ],
+      "text": "Vital Signs"
+    }
+  ],
   "code": {
     "coding": [
       {
         "system": "http://loinc.org",
         "code": "56056-5"
       },
-	  {
+      {
         "system": "http://snomed.info/sct",
         "code": "27113001"
       },
@@ -33,12 +45,14 @@
     "display": "Baby of Eve Bill"
   },
   "effectiveDateTime": "2018-12-27T16:13:03Z",
-  "performer": {
-    "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-    "display": "Dr. Carla Smith"
-  },
+  "performer": [
+    {
+      "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+      "display": "Dr. Carla Smith"
+    }
+  ],
   "valueQuantity": {
-    "value": 04.09414,
+    "value": "04.09414",
     "unit": "kg",
     "system": "http://unitsofmeasure.org",
     "code": "kg"

@@ -11,6 +11,18 @@
   },
   "id": "541a72a8-df75-4484-ac89-ac4923f03b43",
   "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ],
+      "text": "Vital Signs"
+    }
+  ],
   "code": {
     "coding": [
       {
