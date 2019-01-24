@@ -76,13 +76,13 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
       <td>Gestational age at birth</td>
       <td>LP97564-6</td>
       <td>Gestational length</td>
-      <td>SNOMED: 412726003 | LOINC: LP97564-6</td>	 
+      <td>SNOMED: 412726003</td>	 
     </tr>
 	<tr>
       <td>Congenital anomalies of the newbornh</td>
       <td>LP172858-5</td>
       <td>Birth Abnormalities</td>
-      <td>SNOMED: 414025005 | LOINC: 73780-9</td>	 
+      <td>SNOMED: 414025005</td>	 
     </tr>
 	<tr>
       <td>APGAR Scores</td>
@@ -160,19 +160,19 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
       <td></td>
       <td></td>
       <td>Birth Weight</td>
-      <td>SNOMED: 364589006 | LOINC: 56056-5</td>	 
+      <td><p>SNOMED: 27113001, 364589006 </p><p>LOINC: 29463-7</p></td>	 
     </tr>
 	<tr>
       <td></td>
       <td></td>
       <td>Birth Length</td>
-      <td>SNOMED: 169886007 | LOINC: 89269-5</td>	 
+      <td><p>248334005, 169886007</p><p>LOINC: 89269-5</p></td>	 
     </tr>
 	<tr>
       <td></td>
       <td></td>
       <td>Birth Head Circumference</td>
-      <td>SNOMED: 363812007 | LOINC: 8287-5</td>	 
+      <td><p>363812007, 169876006</p><p>LOINC: 8287-5</p></td>	 
     </tr>
 	<tr>
       <td>Maternal Morbidity</td>
@@ -184,7 +184,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
       <td></td>
       <td></td>
       <td>Pregnancy Complications</td>
-      <td>SNOMED: 609496007 | LOINC: 73781-7</td>	 
+      <td>SNOMED: 609496007</td>	 
     </tr>
 	<tr>
       <td></td>
@@ -202,13 +202,13 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
       <td></td>
       <td></td>
       <td>Labour Initiation</td>
-      <td>SNOMED: 20236002 | LOINC: LA20022-2</td>	 
+      <td>SNOMED: 20236002</td>	 
     </tr>
 	<tr>
       <td></td>
       <td></td>
       <td>Method of Delivery</td>
-      <td>SNOMED: 289258004 | LOINC: 72149-8</td>	 
+      <td>SNOMED: 289258004</td>	 
     </tr>    
   </tbody>
 </table>

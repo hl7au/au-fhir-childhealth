@@ -7,7 +7,7 @@ This profile sets minimum expectations for the [Observation] resource to record,
 The following are example usage scenarios for the National Child Digital Health interactions
 profile:
 
--   Query for labour initiation (e.g: spontaneous, induced) patient
+-   Query for labour initiation (e.g: spontaneous, induced) of the patient
 -   Record labour initiation (e.g: spontaneous, induced) of the patient
 
 ##### Mandatory Data Elements and Terminology

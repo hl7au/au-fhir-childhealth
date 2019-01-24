@@ -7,8 +7,8 @@ This profile sets minimum expectations for the [Observation] resource to record,
 The following are example usage scenarios for the National Child Digital Health interactions
 profile:
 
--   Query for Pregnancy Complications of the baby patient
--   Record Pregnancy Complications of the patient
+-   Query for Pregnancy Complications related to the baby patient
+-   Record Pregnancy Complications related to the baby patient
 
 ##### Mandatory Data Elements and Terminology
 
