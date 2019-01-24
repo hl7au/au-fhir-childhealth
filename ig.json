@@ -82,11 +82,17 @@
     "StructureDefinition/ncdhc-observation-method-of-delivery": {
       "base": "StructureDefinition-ncdhc-observation-method-of-delivery.html"
     },
+	"StructureDefinition/ncdhc-condition-family-history": {
+      "base": "StructureDefinition-ncdhc-condition-family-history.html"
+    },
     "StructureDefinition/ncdhc-observation-estimated-gestation": {
       "base": "StructureDefinition-ncdhc-observation-estimated-gestation.html"
     },
     "StructureDefinition/ncdhc-composition-birth": {
       "base": "StructureDefinition-ncdhc-composition-birth.html"
+    },
+	"StructureDefinition/ncdhc-composition-discharge": {
+      "base": "StructureDefinition-ncdhc-composition-discharge.html"
     },
     "StructureDefinition/ncdhc-observation-birth-abnormalities": {
       "base": "StructureDefinition-ncdhc-observation-birth-abnormalities.html"
@@ -94,14 +100,20 @@
     "StructureDefinition/ncdhc-observation-labour-induced": {
       "base": "StructureDefinition-ncdhc-observation-labour-induced.html"
     },
-    "StructureDefinition/ncdhc-observation-birth-weigth": {
-      "base": "StructureDefinition-ncdhc-observation-birth-weigth.html"
+    "StructureDefinition/ncdhc-observation-vitalsign-bodyweight": {
+      "base": "StructureDefinition-ncdhc-observation-vitalsign-bodyweight.html"
     },
-    "StructureDefinition/ncdhc-observation-birth-length": {
-      "base": "StructureDefinition-ncdhc-observation-birth-length.html"
+    "StructureDefinition/ncdhc-observation-vitalsign-bodyheight": {
+      "base": "StructureDefinition-ncdhc-observation-vitalsign-bodyheight.html"
     },
     "StructureDefinition/ncdhc-observation-birth-head-circumference": {
-      "base": "StructureDefinition-ncdhc-observation-birth-head-circumference.html"
+      "base": "StructureDefinition-ncdhc-observation-vitalsign-headcircum.html"
+    },
+	"StructureDefinition/ncdhc-observation-feeding-status": {
+      "base": "StructureDefinition-ncdhc-observation-feeding-status.html"
+    },
+	 "StructureDefinition/ncdhc-encounter-discharge-details": {
+      "base": "StructureDefinition-ncdhc-encounter-discharge-details.html"
     },
     "CapabilityStatement/ncdhc-metadata": {
       "source": "CapabilityStatement.json",
@@ -172,8 +184,12 @@
       "base": "Observation-method-of-delivery.html"
     },
     "Observation/541a72a8-df75-4484-ac89-ac4923f03b41": {
-      "source": "Observation-birth-weigth.json",
-      "base": "Observation-birth-weigth.html"
+      "source": "Observation-birth-weight.json",
+      "base": "Observation-birth-weight.html"
+    },
+    "Observation/741a72a8-df75-4484-ac89-ac4923f03b42": {
+      "source": "Observation-body-weight.json",
+      "base": "Observation-body-weight.html"
     },
     "Observation/541a72a8-df75-4484-ac89-ac4923f03b42": {
       "source": "Observation-birth-length.json",

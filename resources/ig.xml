@@ -42,6 +42,24 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-encounter-discharge-details"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-discharge"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-feeding-status"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-birth-complication"/>
 			</sourceReference>
 		</resource>
@@ -78,19 +96,19 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-birth-weigth"/>
+				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bodyweight"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-birth-length"/>
+				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bodyheight"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-birth-head-circumference"/>
+				<reference value="StructureDefinition/ncdhc-observation-vitalsign-headcircum"/>
 			</sourceReference>
 		</resource>		
 		<resource>
@@ -104,6 +122,12 @@
 		  <sourceReference>
 			<reference value="StructureDefinition/ncdhc-immunization"/>
 		  </sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-condition-family-history"/>
+			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
@@ -177,6 +201,7 @@
 				<reference value="ValueSet/apgar-muscle-tone-finding"/>
 			</sourceReference>
 		</resource>
+		
 		<resource>
 			<example value="true"/>
 			<sourceReference>
@@ -217,6 +242,12 @@
 			<example value="true"/>
 			<sourceReference>
 				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b41"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/741a72a8-df75-4484-ac89-ac4923f03b42"/>
 			</sourceReference>
 		</resource>
 		<resource>
