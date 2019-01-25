@@ -49,10 +49,40 @@
         ]
       },
       {
+        "id": "Encounter.participant.type.coding.system",
+        "path": "Encounter.participant.type.coding.system",
+        "fixedUri": "http://hl7.org/fhir/v3/ParticipationType"
+      },
+      {
+        "id": "Encounter.participant.type.coding.code",
+        "path": "Encounter.participant.type.coding.code",
+        "fixedCode": "DIS"
+      },
+      {
+        "id": "Encounter.participant.individual",
+        "path": "Encounter.participant.individual",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
+          }
+        ]
+      },
+      {
         "id": "Encounter.period.end",
         "path": "Encounter.period.end",
         "short": "The actual date and time of discharge.",
         "min": 1
+      },
+      {
+        "id": "Encounter.reason.coding.system",
+        "path": "Encounter.reason.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Encounter.reason.coding.code",
+        "path": "Encounter.reason.coding.code",
+        "fixedCode": "3950001"
       },
       {
         "id": "Encounter.hospitalization.destination",

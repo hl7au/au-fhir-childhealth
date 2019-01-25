@@ -299,7 +299,7 @@
       {
         "id": "Composition.section:familyHistory.entry",
         "path": "Composition.section.entry",
-        "short": "Section to represent Family History of the newborn data.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
+        "short": "Section to represent Family History of the newborn.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
         "comment": "If there are no entries in the list, an emptyReason SHOULD be provided. There could be multiple type of Congenital anomalies. The card proposed as 1...*.",
         "type": [
           {
