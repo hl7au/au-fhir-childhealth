@@ -83,8 +83,9 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 	<td>Discharge From</td>
 	<td>The name of the service or facility the baby was discharged from&nbsp;</td>
 	<td>
-	<p>Encounter.status = finished</p>
+	<p>Encounter.status = 'finished'</p>
 	<p>Encounter.location.name</p>
+	<p>Location.type = 'HOSP'</p>
 	</td>
 	</tr>
 	<tr>
@@ -93,6 +94,23 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 	<td>
 	<p>Encounter.hospitalization.destination</p>
 	<p>Encounter.hospitalization.dischargeDisposition</p>
+	</td>
+	</tr>
+    <tr>
+	<td>Reason</td>
+	<td>This to note this encounter related to birth</td>
+	<td>
+	<p>Encounter.reason.coding.system = 'http://snomed.info/sct'</p>
+	<p>Encounter.reason.coding.code = '3950001'</p>	
+	</td>
+	</tr>
+	<tr>
+	<td>Discharger Details</td>
+	<td>Who has discharged the Patient</td>
+	<td>
+	<p>Encounter.participant.type.coding.system = 'http://hl7.org/fhir/v3/ParticipationType'</p>
+	<p>Encounter.participant.type.coding.code = 'DIS'</p>
+    <p>Encounter.participant.individual = 'AU Practitioner'</p>	
 	</td>
 	</tr>	
 	<tr></tr>
