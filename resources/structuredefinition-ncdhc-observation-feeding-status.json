@@ -8,7 +8,7 @@
   "status": "draft",
   "date": "2019-01-25",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "description": "Represents length of gestation. Gestational age in weeks and days (usually equivalent to length of pregnancy).",
+  "description": "Represents Baby's Feeding Status at Discharge",
   "purpose": "To record Feeding Status as reported",
   "fhirVersion": "3.0.1",
   "kind": "resource",
