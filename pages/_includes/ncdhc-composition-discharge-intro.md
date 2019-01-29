@@ -152,19 +152,19 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
       <td></td>
       <td></td>
       <td>Discharge Weight</td>
-      <td><p>SNOMED: 27113001, 364589006</p><p>LOINC: 29463-7</p></td>	 
+      <td><p>SNOMED: 27113001</p><p>LOINC: 29463-7</p></td>	 
     </tr>
 	<tr>
       <td></td>
       <td></td>
       <td>Discharge Length</td>
-      <td><p>SNOMED: 248334005, 169886007</p><p>LOINC: 8302-2</p></td>	 
+      <td><p>SNOMED: 248334005</p><p>LOINC: 8302-2</p></td>	 
     </tr>
 	<tr>
       <td></td>
       <td></td>
       <td>Head Circumference</td>
-      <td><p>SNOMED: 363812007, 169876006</p><p>LOINC: 8287-5</p></td>	 
+      <td><p>SNOMED: 363812007</p><p>LOINC: 8287-5</p></td>	 
     </tr>	 
   </tbody>
 </table>
