@@ -4,7 +4,7 @@ This profile sets minimum expectations for the [Encounter] resource to record, s
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the National Child Digital Health interactions
+This is an administrative Encounter Profile. The following are example usage scenarios for the National Child Digital Health interactions
 profile:
 
 -   Query for discharge encounter of the baby patient
@@ -42,7 +42,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
   </thead>
   <tbody>
     <tr>
-      <td>Family History</td>
+      <td>Discharge Information</td>
       <td>LP74740-9</td>
       <td>Discharge Information</td>
       <td>TBD</td>
