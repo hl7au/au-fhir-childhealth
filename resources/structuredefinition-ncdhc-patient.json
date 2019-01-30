@@ -1840,7 +1840,11 @@
         "example": [
           {
             "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"
+            "valueUri": "http://www.acme.com/identifiers/patient"
+          },
+          {
+            "label": "General",
+            "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ],
         "condition": [
@@ -2997,7 +3001,11 @@
         "example": [
           {
             "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"
+            "valueUri": "http://www.acme.com/identifiers/patient"
+          },
+          {
+            "label": "General",
+            "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ],
         "condition": [
@@ -4010,7 +4018,7 @@
         "example": [
           {
             "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"
+            "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ],
         "condition": [
@@ -5149,7 +5157,7 @@
         "example": [
           {
             "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"
+            "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ],
         "condition": [
@@ -6288,7 +6296,7 @@
         "example": [
           {
             "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"
+            "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ],
         "condition": [
@@ -7427,7 +7435,7 @@
         "example": [
           {
             "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"
+            "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ],
         "condition": [
@@ -8565,7 +8573,7 @@
         "example": [
           {
             "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"
+            "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ],
         "condition": [
@@ -9698,7 +9706,7 @@
         "example": [
           {
             "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"
+            "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ],
         "condition": [
@@ -15991,6 +15999,31 @@
         "path": "Patient.identifier",
         "sliceName": "ihiNumber",
         "max": "1"
+      },
+      {
+        "id": "Patient.identifier:ihiNumber.system",
+        "path": "Patient.identifier.system",
+        "example": [
+          {
+            "label": "General",
+            "valueUri": "http://www.acme.com/identifiers/patient"
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier:medicareNumber",
+        "path": "Patient.identifier",
+        "sliceName": "medicareNumber"
+      },
+      {
+        "id": "Patient.identifier:medicareNumber.system",
+        "path": "Patient.identifier.system",
+        "example": [
+          {
+            "label": "General",
+            "valueUri": "http://www.acme.com/identifiers/patient"
+          }
+        ]
       },
       {
         "id": "Patient.contact",
