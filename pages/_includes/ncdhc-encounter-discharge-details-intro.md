@@ -42,8 +42,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
   </thead>
   <tbody>
     <tr>
-      <td>Discharge Information</td>
-      <td>LP74740-9</td>
+      <td>Birth Discharge Information</td>
+      <td>52524-6</td>
       <td>Discharge Information</td>
       <td>TBD</td>
 	  <td>TBD</td>	  

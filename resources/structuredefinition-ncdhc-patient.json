@@ -177,6 +177,16 @@
         "path": "Patient.contact",
         "sliceName": "contactOther",
         "definition": "A contact party (e.g. guardian, partner, friend) for the patient. This is applicable only to the Baby Patient"
+      },
+      {
+        "id": "Patient.contact:contactOther.relationship.coding.system",
+        "path": "Patient.contact.relationship.coding.system",
+        "fixedUri": "http://hl7.org/fhir/v3/RoleCode"
+      },
+      {
+        "id": "Patient.contact:contactOther.relationship.coding.code",
+        "path": "Patient.contact.relationship.coding.code",
+        "fixedCode": "O"
       }
     ]
   }

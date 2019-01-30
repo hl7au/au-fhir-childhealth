@@ -47,7 +47,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
   <tbody>
     <tr>
       <td>Estimated Gestation</td>
-      <td>LP97564-6</td>
+      <td>72147-2</td>
       <td>Gestational age at birth</td>
       <td>412726003</td>
 	  <td>Length of gestation at birth</td>

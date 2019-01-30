@@ -74,13 +74,13 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
   <tbody>
     <tr>
       <td>Gestational age at birth</td>
-      <td>LP97564-6</td>
+      <td>72147-2</td>
       <td>Gestational length</td>
       <td>SNOMED: 412726003</td>	 
     </tr>
 	<tr>
       <td>Congenital anomalies of the newbornh</td>
-      <td>LP172858-5</td>
+      <td>73780-9</td>
       <td>Birth Abnormalities</td>
       <td>SNOMED: 414025005</td>	 
     </tr>
@@ -109,8 +109,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
       <td>SNOMED: 169922007</td>	 
     </tr>
 	<tr>
-      <td>Medication Administered</td>
-      <td>LP72926-6</td>
+      <td>Medication administered</td>
+      <td>29303-5</td>
       <td>-</td>
       <td>-</td>	 
     </tr>
@@ -133,8 +133,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
       <td>SNOMED: 69169004</td>	 
     </tr>
 	<tr>
-      <td>Immunisation</td>
-      <td>LP263510-2</td>
+      <td>Indication for Immunization</td>
+      <td>59785-6</td>
       <td>-</td>
       <td>-</td>	 
     </tr>
@@ -151,8 +151,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
       <td>SNOMED: 170370000</td>	 
     </tr>
 	<tr>
-      <td>Vital Signs and Measurements</td>
-      <td>LP73695-6</td>
+      <td>Vital Signs</td>
+      <td>67795-5</td>
       <td>-</td>
       <td>-</td>	 
     </tr>
@@ -194,7 +194,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
     </tr>
 	<tr>
       <td>Labour and Delivery</td>
-      <td>LOINC: LA20786-2</td>
+      <td>LA20786-2</td>
       <td>-</td>
       <td>-</td>	 
     </tr>

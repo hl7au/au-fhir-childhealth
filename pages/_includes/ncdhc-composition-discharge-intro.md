@@ -48,7 +48,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
   </thead>
   <tbody>
     <tr>
-      <td>LP74740-9</td>
+      <td>52524-6</td>
       <td>LOINC</td>
       <td>Discharge Information</td>
       <td>TBD</td>
@@ -138,7 +138,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
     </tr>
 	<tr>
       <td>Family History</td>
-      <td>LA26428-5</td>
+      <td>54114-4</td>
       <td>Family history</td>
       <td>SNOMED: 414025005</td>	 
     </tr>	
