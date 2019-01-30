@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-birth-complication",
-  "url": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-birth-complication",
+  "url": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-birth-complication",
   "version": "v1.0.0",
   "name": "NCDHC Birth Complication Observation Profile",
   "title": "NCDHC Birth Complication",
@@ -9,7 +9,7 @@
   "date": "2018-12-21",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "Complications observed during the birthing process",
-  "purpose": "To record Gestational age in days",
+  "purpose": "To record Birth Complications reported",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,

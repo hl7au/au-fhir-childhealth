@@ -8,6 +8,7 @@
   "status": "draft",
   "date": "2019-01-25",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "purpose": "Administrative Encouter profile to record discharge related details",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
