@@ -1715,7 +1715,7 @@
             "code": "string"
           }
         ],
-        "fixedString": "Newborn Hearing Screen Health Interaction",
+        "fixedString": "Newborn Exam Health Interaction",
         "condition": [
           "ele-1"
         ],
@@ -4830,7 +4830,7 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
-        "fixedString": "Newborn Hearing Screen Health Interaction"
+        "fixedString": "Newborn Exam Health Interaction"
       },
       {
         "id": "Composition.confidentiality",

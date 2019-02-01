@@ -873,7 +873,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-patient",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient",
             "aggregation": [
               "bundled"
             ]
@@ -1053,19 +1053,11 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
           },
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Device"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
           }
         ],
         "condition": [
@@ -3204,10 +3196,24 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-patient",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient",
             "aggregation": [
               "bundled"
             ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.author",
+        "path": "Composition.author",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Device"
           }
         ]
       },

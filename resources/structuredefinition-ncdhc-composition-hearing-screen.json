@@ -1647,7 +1647,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
           },
           {
             "code": "Reference",
@@ -3617,7 +3617,7 @@
       {
         "id": "Composition.section.entry",
         "path": "Composition.section.entry",
-        "short": "A test used to detect certain rare genetic conditions and disorders of the metabolism",
+        "short": "Hearing Screening Test details",
         "definition": "A reference to the actual resource from which the narrative in the section is derived.",
         "comment": "If there are no entries in the list, an emptyReason SHOULD be provided.",
         "min": 0,
@@ -3826,7 +3826,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
           },
           {
             "code": "Reference",
@@ -3876,7 +3876,7 @@
       {
         "id": "Composition.section.entry",
         "path": "Composition.section.entry",
-        "short": "A test used to detect certain rare genetic conditions and disorders of the metabolism",
+        "short": "Hearing Screening Test details",
         "max": "1",
         "type": [
           {
