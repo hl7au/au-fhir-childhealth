@@ -905,7 +905,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-patient"
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient"
           }
         ],
         "condition": [
@@ -1090,14 +1090,6 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Device"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
           }
         ],
         "condition": [
@@ -1637,6 +1629,13 @@
           "max": "1"
         },
         "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner",
+            "aggregation": [
+              "bundled"
+            ]
+          },
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation",
@@ -3826,7 +3825,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-estimated-gestation",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-estimated-gestation",
             "aggregation": [
               "bundled"
             ]
@@ -4580,7 +4579,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-birth-abnormalities",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-birth-abnormalities",
             "aggregation": [
               "bundled"
             ]
@@ -6280,7 +6279,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/ncdhc-medicationstatement-vitamink",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-medicationstatement-vitamink",
             "aggregation": [
               "bundled"
             ]
@@ -7034,7 +7033,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-immunisation",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-immunisation",
             "aggregation": [
               "bundled"
             ]
@@ -7782,7 +7781,7 @@
               "path": "reference"
             }
           ],
-          "rules": "open"
+          "rules": "closed"
         },
         "short": "Section to represent Vital Sings measured on the newborn.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
         "definition": "A reference to the actual resource from which the narrative in the section is derived.",
@@ -7856,7 +7855,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-bodyweight",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-bodyweight",
             "aggregation": [
               "bundled"
             ]
@@ -7918,7 +7917,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-bodyheight",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-bodyheight",
             "aggregation": [
               "bundled"
             ]
@@ -7980,7 +7979,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-headcircum",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-headcircum",
             "aggregation": [
               "bundled"
             ]
@@ -8743,11 +8742,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-pregnancy-complication"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-birth-complication"
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Resource"
           }
         ],
         "condition": [
@@ -8806,7 +8801,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-birth-complication",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-birth-complication",
             "aggregation": [
               "bundled"
             ]
@@ -8868,7 +8863,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-pregnancy-complication",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-pregnancy-complication",
             "aggregation": [
               "bundled"
             ]
@@ -9631,11 +9626,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "​http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-labour-induced"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-method-of-delivery"
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Resource"
           }
         ],
         "condition": [
@@ -9694,7 +9685,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-method-of-delivery",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-method-of-delivery",
             "aggregation": [
               "bundled"
             ]
@@ -9756,7 +9747,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-labour-induced",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-labour-induced",
             "aggregation": [
               "bundled"
             ]
@@ -9929,7 +9920,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-patient"
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient"
           }
         ]
       },
@@ -9947,14 +9938,6 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Device"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
           }
         ]
       },
@@ -9989,6 +9972,13 @@
         "id": "Composition.attester.party",
         "path": "Composition.attester.party",
         "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner",
+            "aggregation": [
+              "bundled"
+            ]
+          },
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation",
@@ -10078,7 +10068,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-estimated-gestation",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-estimated-gestation",
             "aggregation": [
               "bundled"
             ]
@@ -10128,7 +10118,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-birth-abnormalities",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-birth-abnormalities",
             "aggregation": [
               "bundled"
             ]
@@ -10277,7 +10267,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/ncdhc-medicationstatement-vitamink",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-medicationstatement-vitamink",
             "aggregation": [
               "bundled"
             ]
@@ -10327,7 +10317,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-immunisation",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-immunisation",
             "aggregation": [
               "bundled"
             ]
@@ -10379,7 +10369,7 @@
               "path": "reference"
             }
           ],
-          "rules": "open"
+          "rules": "closed"
         },
         "short": "Section to represent Vital Sings measured on the newborn.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
         "max": "3"
@@ -10393,7 +10383,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-bodyweight",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-bodyweight",
             "aggregation": [
               "bundled"
             ]
@@ -10409,7 +10399,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-bodyheight",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-bodyheight",
             "aggregation": [
               "bundled"
             ]
@@ -10425,7 +10415,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-headcircum",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-headcircum",
             "aggregation": [
               "bundled"
             ]
@@ -10479,17 +10469,7 @@
           ],
           "rules": "closed"
         },
-        "short": "Section to represent Maternal Morbidity details which includes Birth Complications and Pregnancy Complications.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-pregnancy-complication"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-birth-complication"
-          }
-        ]
+        "short": "Section to represent Maternal Morbidity details which includes Birth Complications and Pregnancy Complications.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided."
       },
       {
         "id": "Composition.section:maternalMorbidity.entry:birthComplications",
@@ -10499,7 +10479,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-birth-complication",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-birth-complication",
             "aggregation": [
               "bundled"
             ]
@@ -10514,7 +10494,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-pregnancy-complication",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-pregnancy-complication",
             "aggregation": [
               "bundled"
             ]
@@ -10569,17 +10549,7 @@
           "rules": "closed"
         },
         "short": "Section to represent labour and delivery details which includes  capturing details on labour induced and method of delivery.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
-        "max": "2",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "​http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-labour-induced"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-method-of-delivery"
-          }
-        ]
+        "max": "2"
       },
       {
         "id": "Composition.section:labourAndDelivery.entry:typeOfBirth",
@@ -10590,7 +10560,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-method-of-delivery",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-method-of-delivery",
             "aggregation": [
               "bundled"
             ]
@@ -10606,7 +10576,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-labour-induced",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-labour-induced",
             "aggregation": [
               "bundled"
             ]

@@ -1291,7 +1291,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-patient"
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient"
           }
         ],
         "condition": [
@@ -1547,14 +1547,6 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Organization"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
           }
         ],
         "condition": [
@@ -3751,7 +3743,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-patient"
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient"
           }
         ],
         "mustSupport": true
@@ -3771,7 +3763,17 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Organization"
+          }
+        ]
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept",

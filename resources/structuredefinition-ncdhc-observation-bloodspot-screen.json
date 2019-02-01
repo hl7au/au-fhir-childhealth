@@ -1223,7 +1223,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-patient"
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient"
           }
         ],
         "condition": [
@@ -1464,8 +1464,8 @@
         "definition": "Who was responsible for asserting the observed value as \"true\".",
         "comment": "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.",
         "requirements": "May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.",
-        "min": 0,
-        "max": "1",
+        "min": 1,
+        "max": "*",
         "base": {
           "path": "Observation.performer",
           "min": 0,
@@ -1479,14 +1479,6 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Organization"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
           }
         ],
         "condition": [
@@ -3902,7 +3894,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-patient"
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient"
           }
         ],
         "mustSupport": true
@@ -3923,7 +3915,17 @@
         "id": "Observation.performer",
         "path": "Observation.performer",
         "short": "Person who is clinically responsible for the undetaking of the exam",
-        "max": "1"
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Organization"
+          }
+        ]
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept",
