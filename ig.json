@@ -1,5 +1,6 @@
 {
   "sct-edition": "http://snomed.info/sct/32506021000036107",
+  "fixed-business-version" : "v1.0.0",
   "version": "3.0.1",
   "source": "ig.xml",
   "dependencyList": [
@@ -82,8 +83,8 @@
     "StructureDefinition/ncdhc-observation-method-of-delivery": {
       "base": "StructureDefinition-ncdhc-observation-method-of-delivery.html"
     },
-	"StructureDefinition/ncdhc-condition-family-history": {
-      "base": "StructureDefinition-ncdhc-condition-family-history.html"
+	"StructureDefinition/ncdhc-familymemberhistory-discharge": {	  
+      "base": "StructureDefinition-ncdhc-familymemberhistory-discharge.html"
     },
     "StructureDefinition/ncdhc-observation-estimated-gestation": {
       "base": "StructureDefinition-ncdhc-observation-estimated-gestation.html"
@@ -93,6 +94,18 @@
     },
 	"StructureDefinition/ncdhc-composition-discharge": {
       "base": "StructureDefinition-ncdhc-composition-discharge.html"
+    },
+	"StructureDefinition/ncdhc-medicationstatement-vitamink": {
+      "base": "StructureDefinition-ncdhc-medicationstatement-vitamink.html"
+    },
+	"StructureDefinition/ncdhc-composition-bloodspot-screen": {
+      "base": "StructureDefinition-ncdhc-composition-bloodspot-screen.html"
+    },
+	"StructureDefinition/ncdhc-composition-hearing-screen": {
+      "base": "StructureDefinition-ncdhc-composition-hearing-screen.html"
+    },
+	"StructureDefinition/ncdhc-composition-exam": {
+      "base": "StructureDefinition-ncdhc-composition-exam.html"
     },
     "StructureDefinition/ncdhc-observation-birth-abnormalities": {
       "base": "StructureDefinition-ncdhc-observation-birth-abnormalities.html"
@@ -111,6 +124,12 @@
     },
 	"StructureDefinition/ncdhc-observation-feeding-status": {
       "base": "StructureDefinition-ncdhc-observation-feeding-status.html"
+    },
+	"StructureDefinition/ncdhc-observation-bloodspot-screen": {
+      "base": "StructureDefinition-ncdhc-observation-bloodspot-screen.html"
+    },
+	"StructureDefinition/ncdhc-observation-hearing-screen": {
+      "base": "StructureDefinition-ncdhc-observation-hearing-screen.html"
     },
 	 "StructureDefinition/ncdhc-encounter-discharge-details": {
       "base": "StructureDefinition-ncdhc-encounter-discharge-details.html"
