@@ -913,7 +913,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-patient"
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient"
           }
         ],
         "condition": [
@@ -976,7 +976,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-encounter-discharge-details",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-encounter-discharge-details",
             "aggregation": [
               "bundled"
             ]
@@ -4088,7 +4088,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-feeding-status",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-feeding-status",
             "aggregation": [
               "bundled"
             ]
@@ -4842,7 +4842,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-condition-family-history",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-familymemberhistory-discharge",
             "aggregation": [
               "bundled"
             ]
@@ -5664,7 +5664,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-bodyweight",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-bodyweight",
             "aggregation": [
               "bundled"
             ]
@@ -5726,7 +5726,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-bodyheight",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-bodyheight",
             "aggregation": [
               "bundled"
             ]
@@ -5788,7 +5788,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-headcircum",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-headcircum",
             "aggregation": [
               "bundled"
             ]
@@ -5973,7 +5973,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-patient"
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient"
           }
         ]
       },
@@ -5984,7 +5984,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-encounter-discharge-details",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-encounter-discharge-details",
             "aggregation": [
               "bundled"
             ]
@@ -6152,7 +6152,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-feeding-status",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-feeding-status",
             "aggregation": [
               "bundled"
             ]
@@ -6202,7 +6202,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-condition-family-history",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-familymemberhistory-discharge",
             "aggregation": [
               "bundled"
             ]
@@ -6269,7 +6269,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-bodyweight",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-bodyweight",
             "aggregation": [
               "bundled"
             ]
@@ -6286,7 +6286,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-bodyheight",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-bodyheight",
             "aggregation": [
               "bundled"
             ]
@@ -6303,7 +6303,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-headcircum",
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-vitalsign-headcircum",
             "aggregation": [
               "bundled"
             ]
