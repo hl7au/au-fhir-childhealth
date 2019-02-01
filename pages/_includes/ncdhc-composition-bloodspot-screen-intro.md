@@ -86,7 +86,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-- [Newborn Discharge Health Interaction document](Bundle-document-dischargeHI-response-payload.html)
+- [Newborn Bllodspot Health Interaction document](Bundle-document-bloodspot-screen-payload.html)
 
 [Composition]: http://hl7.org.au/fhir/base2018Oct/StructureDefinition-au-composition.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible

@@ -17,7 +17,9 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Each Patient must have:**
 
-1.  an Identifier. This should be IHI for the Baby Patient and MRN for the mother Patient.
+1. an Identifier. This should be IHI for the Baby Patient and MRN for the mother Patient.
+2. last Name of the Patient
+3. date of birth
 
 
 **Profile specific implementation guidance:**
@@ -31,3 +33,6 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 - [Baby Patient](Patient-newborn.html)
 - [Mother Patient](Patient-mother.html)
 
+[Patient]: http://hl7.org/fhir/STU3/patient.html
+[extensible]: http://hl7.org/fhir/terminologies.html#extensible
+[General Guidance Section]: definitions.html

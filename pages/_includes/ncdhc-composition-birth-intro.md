@@ -166,13 +166,13 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
       <td></td>
       <td></td>
       <td>Birth Length</td>
-      <td><p>248334005, 169886007</p><p>LOINC: 89269-5</p></td>	 
+      <td><p>SNOMED: 248334005, 169886007</p><p>LOINC: 89269-5</p></td>	 
     </tr>
 	<tr>
       <td></td>
       <td></td>
       <td>Birth Head Circumference</td>
-      <td><p>363812007, 169876006</p><p>LOINC: 8287-5</p></td>	 
+      <td><p>SNOMED: 363812007, 169876006</p><p>LOINC: 8287-5</p></td>	 
     </tr>
 	<tr>
       <td>Maternal Morbidity</td>
