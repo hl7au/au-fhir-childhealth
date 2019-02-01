@@ -1546,7 +1546,7 @@
           },
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Organization"
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
           }
         ],
         "condition": [
@@ -3771,7 +3771,7 @@
           },
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Organization"
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
           }
         ]
       },

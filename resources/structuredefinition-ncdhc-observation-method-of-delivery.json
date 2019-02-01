@@ -2853,11 +2853,11 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
           },
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Organization"
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
           }
         ],
         "condition": [
@@ -5326,11 +5326,11 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
           },
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Organization"
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
           }
         ]
       },
