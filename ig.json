@@ -1,6 +1,5 @@
 {
-  "sct-edition": "http://snomed.info/sct/32506021000036107",
-  "fixed-business-version" : "v1.0.0",
+  "sct-edition": "http://snomed.info/sct/32506021000036107",  
   "version": "3.0.1",
   "source": "ig.xml",
   "dependencyList": [
