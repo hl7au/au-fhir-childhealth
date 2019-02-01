@@ -1,6 +1,6 @@
 **NCDHC Newborn Hearing Screen Health Interaction Composition Profile**
 
-This profile is used to represent NCDHC Newborn Hearing Screen Health Interaction as a FHIR document using Composition resource. The profile is at draft stage and under review by the Child Health Working Group. 
+This profile is used to represent NCDHC Newborn Hearing Screen Health Interaction as a FHIR document using [Composition] resource. The profile is at draft stage and under review by the Child Health Working Group. 
 
 **Example Usage Scenarios:**
 
@@ -24,11 +24,11 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  a date indicating when the details was taken
 1.	an auther detailing who has recorded the details.
 1.  title of the document
-1.  applicable sections and subsections as mentioned in the table below
+1.  applicable sections and entries as mentioned in the table below
 
 **Profile specific implementation guidance:**
 
-* Client sustem SHALL fillup all sections and subsections as defined in the profile. If data for any section/sub-sections are not known or not available, then empty reason should be provided.
+* Client sustem SHALL fillup all sections and subsections as defined in the profile. If data for any section entry is not known or not available, then empty reason should be provided.
 
 
 ##### Composition Type and Class Code
