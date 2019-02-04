@@ -28,7 +28,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Profile specific implementation guidance:**
 
-* Client sustem SHALL fillup all sections and subsections as defined in the profile. If data for any section entry is not known or not available, then empty reason should be provided.
+* Client sustem SHALL fillup all sections and entries as defined in the profile. If data for any section entry is not known or not available, then empty reason should be provided.
 
 
 ##### Composition Type and Class Code
