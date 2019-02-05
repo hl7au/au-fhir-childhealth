@@ -1,15 +1,15 @@
-**NCDHC Newborn Bloodspot Screen Health Interaction Composition Profile**
+**NCDHC Newborn Blood spot Screen Health Interaction Composition Profile**
 
-This profile is used to represent NCDHC Newborn Bloodspot Screen Health Interaction as a FHIR document using [Composition] resource. The profile is at draft stage and under review by the Child Health Working Group. 
+This profile is used to represent NCDHC Newborn Blood spot Screen Health Interaction as a FHIR document using [Composition] resource. The profile is at draft stage and under review by the Child Health Working Group. 
 
 **Example Usage Scenarios:**
 
 The following are example usage scenarios for the National Child Digital Health interactions
 profile:
 
--   Query for NCDHC Newborn Bloodspot Screen Health Interaction Health Interaction FHIR document
--   Upload NCDHC Newborn Bloodspot Screen Health Interaction Health Interaction FHIR document
--   Update existing NCDHC Newborn Bloodspot Screen Health Interaction FHIR document
+-   Query for NCDHC Newborn Blood spot Screen Health Interaction Health Interaction FHIR document
+-   Upload NCDHC Newborn Blood spot Screen Health Interaction Health Interaction FHIR document
+-   Update existing NCDHC Newborn Blood spot Screen Health Interaction FHIR document
 
 ##### Mandatory Data Elements and Terminology
 
@@ -22,13 +22,13 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  a LOINC code to represent the document type. Optional Class code as per the table below
 1.  a subject (Patient)
 1.  a date indicating when the details was taken
-1.	an auther detailing who has recorded the details.
+1.	an author detailing who has recorded the details.
 1.  title of the document
 1.  applicable sections and entries as mentioned in the table below
 
 **Profile specific implementation guidance:**
 
-* Client sustem SHALL fillup all sections and subsections as defined in the profile. If data for any section entry is not known or not available, then empty reason should be provided.
+* Client system SHALL fill up all sections and subsections as defined in the profile. If data for any section entry is not known or not available, then empty reason should be provided.
 
 
 ##### Composition Type and Class Code
@@ -71,9 +71,9 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
   </thead>
   <tbody>
     <tr>
-      <td>Newborn Bloodspot Screen</td>
+      <td>Newborn Blood spot Screen</td>
       <td>TBD</td>
-      <td>Newborn Bloodspot Screen</td>
+      <td>Newborn Blood spot Screen</td>
       <td>SNOMED: 428447008</td>	 
     </tr>
 	
@@ -86,7 +86,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-- [Newborn Bllodspot Health Interaction document](Bundle-document-bloodspot-screen-payload.html)
+- [Newborn Blood spot Health Interaction document](Bundle-document-bloodspot-screen-payload.html)
 
 [Composition]: http://hl7.org.au/fhir/base2018Oct/StructureDefinition-au-composition.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
