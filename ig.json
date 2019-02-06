@@ -1,16 +1,14 @@
 {
-  "sct-edition": "http://snomed.info/sct/32506021000036107",  
+  "sct-edition": "http://snomed.info/sct/32506021000036107",
   "version": "3.0.1",
   "source": "ig.xml",
-  "dependencyList": [
-    {
-      "name": "aubase",
-      "location": "http://hl7.org.au/fhir",
-      "version": "current"
-    }
+  "dependencyList": [],
+  "spreadsheets": [
+    
   ],
-  "spreadsheets": [],
-  "special-urls": [],
+  "special-urls": [
+    
+  ],
   "extraTemplates": [
     "mappings"
   ],
@@ -50,7 +48,7 @@
       "template-format": "ex-format.html"
     }
   },
-  "tool": "jekyll",  
+  "tool": "jekyll",
   "license": "CC0-1.0",
   "canonicalBase": "http://hl7.org.au/fhir/ch",
   "paths": {
@@ -70,7 +68,7 @@
     "StructureDefinition/ncdhc-patient": {
       "base": "StructureDefinition-ncdhc-patient.html"
     },
-	"StructureDefinition/ncdhc-observation-apgar-score": {
+    "StructureDefinition/ncdhc-observation-apgar-score": {
       "base": "StructureDefinition-ncdhc-observation-apgar-score.html"
     },
     "StructureDefinition/ncdhc-observation-pregnancy-complication": {
@@ -82,7 +80,7 @@
     "StructureDefinition/ncdhc-observation-method-of-delivery": {
       "base": "StructureDefinition-ncdhc-observation-method-of-delivery.html"
     },
-	"StructureDefinition/ncdhc-familymemberhistory-discharge": {	  
+    "StructureDefinition/ncdhc-familymemberhistory-discharge": {
       "base": "StructureDefinition-ncdhc-familymemberhistory-discharge.html"
     },
     "StructureDefinition/ncdhc-observation-estimated-gestation": {
@@ -91,19 +89,19 @@
     "StructureDefinition/ncdhc-composition-birth": {
       "base": "StructureDefinition-ncdhc-composition-birth.html"
     },
-	"StructureDefinition/ncdhc-composition-discharge": {
+    "StructureDefinition/ncdhc-composition-discharge": {
       "base": "StructureDefinition-ncdhc-composition-discharge.html"
     },
-	"StructureDefinition/ncdhc-medicationstatement-vitamink": {
+    "StructureDefinition/ncdhc-medicationstatement-vitamink": {
       "base": "StructureDefinition-ncdhc-medicationstatement-vitamink.html"
     },
-	"StructureDefinition/ncdhc-composition-bloodspot-screen": {
+    "StructureDefinition/ncdhc-composition-bloodspot-screen": {
       "base": "StructureDefinition-ncdhc-composition-bloodspot-screen.html"
     },
-	"StructureDefinition/ncdhc-composition-hearing-screen": {
+    "StructureDefinition/ncdhc-composition-hearing-screen": {
       "base": "StructureDefinition-ncdhc-composition-hearing-screen.html"
     },
-	"StructureDefinition/ncdhc-composition-exam": {
+    "StructureDefinition/ncdhc-composition-exam": {
       "base": "StructureDefinition-ncdhc-composition-exam.html"
     },
     "StructureDefinition/ncdhc-observation-birth-abnormalities": {
@@ -121,16 +119,16 @@
     "StructureDefinition/ncdhc-observation-birth-head-circumference": {
       "base": "StructureDefinition-ncdhc-observation-vitalsign-headcircum.html"
     },
-	"StructureDefinition/ncdhc-observation-feeding-status": {
+    "StructureDefinition/ncdhc-observation-feeding-status": {
       "base": "StructureDefinition-ncdhc-observation-feeding-status.html"
     },
-	"StructureDefinition/ncdhc-observation-bloodspot-screen": {
+    "StructureDefinition/ncdhc-observation-bloodspot-screen": {
       "base": "StructureDefinition-ncdhc-observation-bloodspot-screen.html"
     },
-	"StructureDefinition/ncdhc-observation-hearing-screen": {
+    "StructureDefinition/ncdhc-observation-hearing-screen": {
       "base": "StructureDefinition-ncdhc-observation-hearing-screen.html"
     },
-	 "StructureDefinition/ncdhc-encounter-discharge-details": {
+    "StructureDefinition/ncdhc-encounter-discharge-details": {
       "base": "StructureDefinition-ncdhc-encounter-discharge-details.html"
     },
     "CapabilityStatement/ncdhc-metadata": {
@@ -173,11 +171,11 @@
     "ValueSet/apgar-respiratory-effort-finding": {
       "base": "ValueSet-apgar-respiratory-effort-finding.html"
     },
-	"Patient/3db74777-fd3d-4d3b-92ec-d405977a11a5": {
+    "Patient/3db74777-fd3d-4d3b-92ec-d405977a11a5": {
       "source": "Patient-newborn.json",
       "base": "Patient-newborn.html"
     },
-	"Patient/dd78393f-37ca-4738-81d6-e9595b2e5d0k": {
+    "Patient/dd78393f-37ca-4738-81d6-e9595b2e5d0k": {
       "source": "Patient-mother.json",
       "base": "Patient-mother.html"
     },
@@ -245,7 +243,7 @@
       "source": "Immunization-hepb-immunoglobin.json",
       "base": "Immunization-hepb-immunoglobin.html"
     },
-	 "Composition/180f219f-97a8-486d-99d9-ed631fe4fc57": {
+    "Composition/180f219f-97a8-486d-99d9-ed631fe4fc57": {
       "source": "Bundle-document-birthHI-response-payload.json",
       "base": "Bundle-document-birthHI-response-payload.html"
     }
