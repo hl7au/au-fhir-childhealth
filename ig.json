@@ -2,7 +2,13 @@
   "sct-edition": "http://snomed.info/sct/32506021000036107",  
   "version": "3.0.1",
   "source": "ig.xml",
-  "dependencyList": [],
+  "dependencyList": [
+    {
+      "name": "aubase",
+      "location": "http://hl7.org.au/fhir",
+      "version": "current"
+    }
+  ],
   "spreadsheets": [],
   "special-urls": [],
   "extraTemplates": [
