@@ -7,6 +7,7 @@
   "title": "NCDHC Head Circumference Vital Sign",
   "status": "draft",
   "date": "2019-01-25",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "NCDHC Head Circumference Vital Sign Profile",
   "fhirVersion": "3.0.1",
   "kind": "resource",
