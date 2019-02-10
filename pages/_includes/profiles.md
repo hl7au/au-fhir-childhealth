@@ -5,6 +5,9 @@ These Profiles have been defined for this implementation guide.
 ## Patient Profiles
 * [NCDHC Patient](StructureDefinition-ncdhc-patient.html) - Demographic details of the Patient.
 
+## Consent Profiles
+* [NCDHC Consent Details](StructureDefinition-ncdhc-consent.html) - Consent profile to record access and use of patient record in NCDHC program.
+
 ## Orders and Observation Profiles
 * [NCDHC Estimated Gestation](StructureDefinition-ncdhc-observation-estimated-gestation.html) - Observation profile to record gestational age in weeks and days (usually equivalent to length of pregnancy). 
 * [NCDHC Congenital anomalies of the newborn](StructureDefinition-ncdhc-observation-birth-abnormalities.html) - Observation profile to record physical problems identified with the baby at, or shortly after birth. E.g. cleft lip/palate, extensive bruising, cephalohematoma etc. 
@@ -26,8 +29,8 @@ These Profiles have been defined for this implementation guide.
 ## Medication Profiles
 * [NCDHC Medication Administered](StructureDefinition-ncdhc-medicationstatement-vitamink.html) - MedicationStatement profile to record medication given to the newborn at birth
 
-## Immunisation Profiles
-* [NCDHC Immunisation](StructureDefinition-ncdhc-immunization.html) - Immunisation profile to record HepB Immunoglobin & HepB Immunisation details given to the newborn at birth
+## Immunization Profiles
+* [NCDHC Immunisation](StructureDefinition-ncdhc-immunization.html) - Immunization profile to record HepB Immunoglobin & HepB Immunisation details given to the newborn at birth
 
 ## Encounter Profiles
 * [NCDHC Discharge Details](StructureDefinition-ncdhc-encounter-discharge-details.html) - Encounter profile to record discharge administrative details (e.g.: date and time of discharge, name of the service or facility the baby was discharged from etc.)
@@ -35,6 +38,7 @@ These Profiles have been defined for this implementation guide.
 ## Composition Profiles
 * [NCDHC Newborn Delivery Health Interaction](StructureDefinition-ncdhc-composition-birth.html) - Composition profile to represent Newborn Delivery (Birth) Health Interaction
 * [NCDHC Newborn Discharge Health Interaction](StructureDefinition-ncdhc-composition-discharge.html) - Composition profile to represent Newborn Discharge Health Interaction
-* [NCDHC Newborn Blood spot Screen Health Interaction](StructureDefinition-ncdhc-composition-bloodspot-screen.html) - Composition profile to represent Newborn Blood spot Screen Health Interaction
+* [NCDHC Newborn Blood Spot Screen Health Interaction](StructureDefinition-ncdhc-composition-bloodspot-screen.html) - Composition profile to represent Newborn Blood Spot Screen Health Interaction
 * [NCDHC Newborn Hearing Screen Health Interaction](StructureDefinition-ncdhc-composition-hearing-screen.html) - Composition profile to represent Newborn Hearing Screen Health Interaction
+* [NCDHC Newborn Exam Health Interaction](StructureDefinition-ncdhc-composition-exam.html) - Composition profile to represent Newborn Exam Health Interaction
 
