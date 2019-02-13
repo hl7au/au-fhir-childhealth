@@ -22,13 +22,13 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  a LOINC code to represent the document type. Optional Class code as per the table below
 1.  a subject (Patient)
 1.  a date indicating when the details was taken
-1.	a auther detailing who has recorded the details.
+1.	a author detailing who has recorded the details.
 1.  title of the document
 1.  applicable sections and subsections as mentioned in the table below
 
 **Profile specific implementation guidance:**
 
-* Client should fillup all sections and subsections as defined in the profile. If data for any section/sub-sections are not known or not available, then empty reason should be provided.
+* Client should fill-up all sections and subsections as defined in the profile. If data for any section/entries are not known or not available, then empty reason should be provided.
 
 
 ##### Composition Type and Class Code
@@ -59,7 +59,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 
 
-##### Document Section and Sub-Sections
+##### Document Section and Entries
 ---
 
 <table class="grid">
@@ -67,22 +67,22 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
     <tr>
       <th>Section Title</th>
 	  <th>LOINC Code</th>
-		<th>Allowed Entries</th>
-		<th>Codes</th>	
+		<th>Entry Title</th>
+		<th>Codes</th>			
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Gestational age at birth</td>
       <td>72147-2</td>
-      <td>Gestational length</td>
-      <td>SNOMED: 412726003</td>	 
+      <td>Estimated Gestation</td>
+      <td>SNOMED: 412726003</td>	 	  
     </tr>
 	<tr>
-      <td>Congenital anomalies of the newbornh</td>
+      <td>Congenital anomalies of the newborn</td>
       <td>73780-9</td>
-      <td>Birth Abnormalities</td>
-      <td>SNOMED: 414025005</td>	 
+      <td>Abnormalities noted at birth </td>
+      <td>SNOMED: 414025005</td>	    
     </tr>
 	<tr>
       <td>APGAR Scores</td>
@@ -93,19 +93,19 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 	<tr>
       <td></td>
       <td></td>
-      <td>Apgar at 1 minute</td>
+      <td>APGAR score (1 Minute)</td>
       <td>SNOMED: 169895004</td>	 
     </tr>
 	<tr>
       <td></td>
       <td></td>
-      <td>Apgar at 5 minute</td>
+      <td>APGAR score (5 Minutes)</td>
       <td>SNOMED: 169909004</td>	 
     </tr>
 	<tr>
       <td></td>
       <td></td>
-      <td>Apgar at 10 minute</td>
+      <td>APGAR score (10 Minutes)</td>
       <td>SNOMED: 169922007</td>	 
     </tr>
 	<tr>
@@ -160,19 +160,19 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
       <td></td>
       <td></td>
       <td>Birth Weight</td>
-      <td><p>SNOMED: 27113001, 364589006 </p><p>LOINC: 29463-7</p></td>	 
+      <td><p>SNOMED: 364589006 </p><p>LOINC: 29463-7</p></td>	 
     </tr>
 	<tr>
       <td></td>
       <td></td>
       <td>Birth Length</td>
-      <td><p>SNOMED: 248334005, 169886007</p><p>LOINC: 89269-5</p></td>	 
+      <td><p>SNOMED: 248334005</p><p>LOINC: 89269-5</p></td>	 
     </tr>
 	<tr>
       <td></td>
       <td></td>
       <td>Birth Head Circumference</td>
-      <td><p>SNOMED: 363812007, 169876006</p><p>LOINC: 8287-5</p></td>	 
+      <td><p>SNOMED: 363812007</p><p>LOINC: 8287-5</p></td>	 
     </tr>
 	<tr>
       <td>Maternal Morbidity</td>
@@ -202,13 +202,13 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
       <td></td>
       <td></td>
       <td>Labour Initiation</td>
-      <td>SNOMED: 20236002</td>	 
+      <td>SNOMED: 20236002</td>		   
     </tr>
 	<tr>
       <td></td>
       <td></td>
-      <td>Method of Delivery</td>
-      <td>SNOMED: 289258004</td>	 
+      <td>Type of Birth</td>
+      <td>SNOMED: 289258004</td>	  	  
     </tr>    
   </tbody>
 </table>

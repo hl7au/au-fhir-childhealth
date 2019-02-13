@@ -3516,7 +3516,7 @@
             "code": "string"
           }
         ],
-        "fixedString": "Length of gestation",
+        "fixedString": "Estimated Gestation",
         "condition": [
           "ele-1"
         ],
@@ -4270,7 +4270,7 @@
             "code": "string"
           }
         ],
-        "fixedString": "Congenital anomalies of the newborn",
+        "fixedString": "Abnormalities noted at birth",
         "condition": [
           "ele-1"
         ],
@@ -5323,7 +5323,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "profile",
               "path": "reference"
             }
           ],
@@ -7777,7 +7777,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "profile",
               "path": "reference"
             }
           ],
@@ -8723,7 +8723,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "profile",
               "path": "reference"
             }
           ],
@@ -9607,7 +9607,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "profile",
               "path": "reference"
             }
           ],
@@ -10046,7 +10046,7 @@
       {
         "id": "Composition.section:estimatedGestation.title",
         "path": "Composition.section.title",
-        "fixedString": "Length of gestation"
+        "fixedString": "Estimated Gestation"
       },
       {
         "id": "Composition.section:estimatedGestation.code",
@@ -10096,7 +10096,7 @@
       {
         "id": "Composition.section:abnormalitiesNotedAtBirth.title",
         "path": "Composition.section.title",
-        "fixedString": "Congenital anomalies of the newborn"
+        "fixedString": "Abnormalities noted at birth"
       },
       {
         "id": "Composition.section:abnormalitiesNotedAtBirth.code",
@@ -10166,7 +10166,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "profile",
               "path": "reference"
             }
           ],
@@ -10365,7 +10365,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "profile",
               "path": "reference"
             }
           ],
@@ -10463,7 +10463,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "profile",
               "path": "reference"
             }
           ],
@@ -10542,7 +10542,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "profile",
               "path": "reference"
             }
           ],
