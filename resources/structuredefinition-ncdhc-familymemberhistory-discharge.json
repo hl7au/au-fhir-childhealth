@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ncdhc-familymemberhistory-discharge",
-  "url": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-familymemberhistory-discharge",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-familymemberhistory-discharge",
   "version": "v1.0.0",
   "name": "NCDHC Discharge Family Member History Profile",
   "title": "NCDHC Discharge Family Member History",
@@ -794,7 +794,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient"
           }
         ],
         "condition": [
@@ -2253,7 +2253,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient"
           }
         ]
       },

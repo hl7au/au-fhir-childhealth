@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ncdhc-composition-bloodspot-screen",
-  "url": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-composition-bloodspot-screen",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-bloodspot-screen",
   "version": "v1.0.0",
   "name": "NCDHC Newborn Bloodspot Screen Composition Profile",
   "title": "NCDHC Newborn Bloodspot Screen Composition",
@@ -873,7 +873,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient",
             "aggregation": [
               "bundled"
             ]
@@ -3036,7 +3036,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-bloodspot-screen",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bloodspot-screen",
             "aggregation": [
               "bundled"
             ]
@@ -3196,7 +3196,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient",
             "aggregation": [
               "bundled"
             ]
@@ -3264,7 +3264,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-bloodspot-screen",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bloodspot-screen",
             "aggregation": [
               "bundled"
             ]

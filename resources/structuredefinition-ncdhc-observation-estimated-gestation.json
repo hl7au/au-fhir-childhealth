@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-estimated-gestation",
-  "url": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-estimated-gestation",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-estimated-gestation",
   "version": "v1.0.0",
   "name": "NCDHC Estimated Gestation Observation Profile",
   "title": "NCDHC Estimated Gestation",
@@ -2605,7 +2605,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient"
           }
         ],
         "condition": [
@@ -5444,7 +5444,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient"
           }
         ],
         "mustSupport": true
