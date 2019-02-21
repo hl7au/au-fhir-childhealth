@@ -57,7 +57,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
   </tbody>
 </table>
 
-##### Document Section and Entries
+##### Document Section and Allowed Entries
 ---
 
 <table class="grid">
@@ -69,16 +69,118 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 		<th>Codes</th>	
     </tr>
   </thead>
-  <tbody>
-    <tr>
+  <tbody> 	
+	<tr>
       <td>Newborn Exam</td>
       <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>	 
+      <td>-</td>
+      <td>-</td>	 
+    </tr>	
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Head & Fontanelles</td>
+      <td>SNOMED: 170190000</td>	 
     </tr>
-	
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Eyes (Right/Left)</td>
+      <td>SNOMED: 170195005</td>	 
+    </tr>		
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Ears Right/Left</td>
+      <td>SNOMED: 170197002</td>	 
+    </tr>			
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Mouth & Palate</td>
+      <td>SNOMED: 39868003</td>	 
+    </tr>
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Oral Health</td>
+      <td>SNOMED: 122856003</td>	 
+    </tr>
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Cardiovascular/heart</td>
+      <td>SNOMED: 106063007</td>	 
+    </tr>
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Reflexes</td>
+      <td>SNOMED: 106146005</td>	 
+    </tr>
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Femoral Pulses (Right, Left)</td>
+      <td>SNOMED: 67316000</td>	 
+    </tr>	
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Respiratory Rate</td>
+      <td>SNOMED: 86290005</td>	 
+    </tr>	
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Abdomen / Umbilicus</td>
+      <td>SNOMED: 249537008</td>	 
+    </tr>
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Anus</td>
+      <td>SNOMED: 364154000</td>	 
+    </tr>
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Genitalia</td>
+      <td>SNOMED: 170210005</td>	 
+    </tr>
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Testes Fully Descended</td>
+      <td>SNOMED: 170209000</td>	 
+    </tr>
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Musculo-Skeletal</td>
+      <td>SNOMED: 164830005</td>	 
+    </tr>
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Limbs & Spine</td>
+      <td><p>Limb SNOMED: 275837002</p><p> Spine SNOMED: 170206007</p></td>	 
+    </tr>
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Hips</td>
+      <td>SNOMED: 170205006</td>	 
+    </tr>
+	<tr>
+      <td></td>
+      <td></td>
+      <td>Skin</td>
+      <td>SNOMED: 170189009</td>	 
+    </tr>			
   </tbody>
 </table>
+
 
 ---
 
