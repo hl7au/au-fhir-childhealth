@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ncdhc-consent-category",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Observation Screen Status Type</h2><div><p>Observation Screen Status types  that may be represent the status of an observation.</p>\r\n</div>"
+  },
+  "url": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-consent-category",
+  "version": "1.0.0",
+  "name": "NCDHC Consent Category Codes",
+  "title": "NCDHC Consent Category Codes",
+  "status": "draft",
+  "date": "2019-02-24T00:00:00+10:00",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC))",
+  "contact": [
+    {
+      "name": "hl7.org.au"
+    }
+  ],
+  "description": "NCDHC Consent Category Codes",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-consent-category",
+  "compositional": false,
+  "versionNeeded": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "NBCR",
+      "display": "Newborn Record Create Consent",
+      "definition": "Consent for the creation of a Child Health record on the birth of a child. This will be held against the person having the parental responsibility of the child at birth, typically the mother"
+    },
+    {
+      "code": "CROPT",
+      "display": "Child Digital Health Record Operation Consent",
+      "definition": "Consent for a child to have a operative child digital health record"
+    }
+  ]
+}

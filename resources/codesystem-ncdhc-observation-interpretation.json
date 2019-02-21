@@ -1,0 +1,43 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ncdhc-observation-interpretation",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Observation Interpretation Type</h2><div><p>Observation Interpretation types  that may be represent the outcome of an observation.</p>\r\n</div>"
+  },
+  "url": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-observation-interpretation",
+  "version": "1.0.0",
+  "name": "Observation Interpretation Type",
+  "title": "Observation Interpretation Type",
+  "status": "draft",
+  "date": "2019-02-24T00:00:00+10:00",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC))",
+  "contact": [
+    {
+      "name": "hl7.org.au"
+    }
+  ],
+  "description": "Observation Interpretation Type",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation",
+  "compositional": false,
+  "versionNeeded": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "NRML",
+      "display": "Normal",
+      "definition": "The outcome of the observation was normal"
+    },
+    {
+      "code": "RVIW",
+      "display": "Review",
+      "definition": "The outcome of the observation was review"
+    },
+    {
+      "code": "RFFR",
+      "display": "Refer",
+      "definition": "The outcome of the observation was refer"
+    }
+  ]
+}
