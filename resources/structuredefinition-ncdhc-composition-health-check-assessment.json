@@ -1,0 +1,395 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-composition-health-check-assessment",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-health-check-assessment",
+  "version": "v1.0.0",
+  "name": "NCDHC Newborn Health Check Assessment Composition Profile",
+  "title": "NCDHC Newborn Health Check Assessment Composition",
+  "status": "draft",
+  "date": "2019-02-01",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "This profile is used to represent Newborn Health Check Assessment.",
+  "purpose": "to record Newborn Health Check Assessment",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-composition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition",
+        "path": "Composition",
+        "short": "Composition for the NCDHC realm"
+      },
+      {
+        "id": "Composition.type",
+        "path": "Composition.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11503-0"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.type.coding.system",
+        "path": "Composition.type.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.type.coding.code",
+        "path": "Composition.type.coding.code",
+        "fixedCode": "11503-0"
+      },
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "short": "Reference to the Baby Patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.author",
+        "path": "Composition.author",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Device"
+          }
+        ]
+      },
+      {
+        "id": "Composition.title",
+        "path": "Composition.title",
+        "fixedString": "Newborn Health Check Assessment Health Interaction"
+      },
+      {
+        "id": "Composition.confidentiality",
+        "path": "Composition.confidentiality",
+        "fixedCode": "N"
+      },
+      {
+        "id": "Composition.attester.party",
+        "path": "Composition.attester.party",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
+          }
+        ]
+      },
+      {
+        "id": "Composition.custodian",
+        "path": "Composition.custodian",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section.entry",
+        "path": "Composition.section.entry",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:vitalSignsAndMeasurements",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "vitalSignsAndMeasurements",
+        "short": "Represents 'Vital Signs and Measurements' section for this document.",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:vitalSignsAndMeasurements.title",
+        "path": "Composition.section.title",
+        "fixedString": "Vital Signs and Measurements"
+      },
+      {
+        "id": "Composition.section:vitalSignsAndMeasurements.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "67795-5"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:vitalSignsAndMeasurements.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "id"
+            }
+          ],
+          "rules": "closed"
+        },
+        "short": "Section to represent Vital Sings measured on the newborn.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
+        "max": "4"
+      },
+      {
+        "id": "Composition.section:vitalSignsAndMeasurements.entry:Weight",
+        "path": "Composition.section.entry",
+        "sliceName": "Weight",
+        "short": "This section records weight of baby recorded at birth",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bodyweight",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:vitalSignsAndMeasurements.entry:Length",
+        "path": "Composition.section.entry",
+        "sliceName": "Length",
+        "short": "This section records length of baby recorded at birth",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bodyheight",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:vitalSignsAndMeasurements.entry:HeadCircumference",
+        "path": "Composition.section.entry",
+        "sliceName": "HeadCircumference",
+        "short": "This section records numeric value for head circumference",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-headcircum",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:vitalSignsAndMeasurements.entry:BMI",
+        "path": "Composition.section.entry",
+        "sliceName": "BMI",
+        "short": "Body mass index (BMI)",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bmi",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:vitalSignsAndMeasurements.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:otherHealthConditions",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "otherHealthConditions",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.title",
+        "path": "Composition.section.title",
+        "fixedString": "Other health conditions"
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "86674-9"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-head-shape",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-head-fontanelles",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-eyes",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-vision",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vision-screen",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-ears",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-hearing-check",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-hearing-screen",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-mouth",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-oral-health",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-cardiovascular",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-femoral-pulses",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-development",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-abdomen",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,15 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-bloodspot-screen",
-  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bloodspot-screen",
+  "id": "ncdhc-observation-head-shape",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-head-shape",
   "version": "v1.0.0",
-  "name": "NCDHC Blood Spot Screen Observation Profile",
-  "title": "NCDHC Blood Spot Screen Observation",
+  "name": "NCDHC Head Shape Observation Profile",
+  "title": "NCDHC Head Shape Observation",
   "status": "draft",
   "date": "2019-02-01",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "description": "A test used to detect certain rare genetic conditions and disorders of the metabolism",
-  "purpose": "To record Bloodspt screen result",
+  "description": "To record outcome of the child's head shape assessement",
+  "purpose": "To record Head Shape result",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -21,7 +21,7 @@
       {
         "id": "Observation",
         "path": "Observation",
-        "short": "NCDHC Blood Spot Screen Observation Profile",
+        "short": "NCDHC Head Shape Observation Profile",
         "constraint": [
           {
             "key": "ncdhc-obs-1",
@@ -56,7 +56,6 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "short": "Bloospot Screen code",
         "mustSupport": true
       },
       {
@@ -73,15 +72,25 @@
         }
       },
       {
-        "id": "Observation.code.coding:bloodSpotScreenSNOMEDCT-AU",
+        "id": "Observation.code.coding:HeadShapeSNOMEDCT-AU",
         "path": "Observation.code.coding",
-        "sliceName": "bloodSpotScreenSNOMEDCT-AU",
+        "sliceName": "HeadShapeSNOMEDCT-AU",
         "min": 1,
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
-          "code": "428447008"
+          "code": "301312002"
         }
+      },
+      {
+        "id": "Observation.code.coding:HeadShapeSNOMEDCT-AU.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:HeadShapeSNOMEDCT-AU.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "301312002"
       },
       {
         "id": "Observation.subject",
@@ -139,7 +148,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ch/v1/ValueSet/ncdhc-screen-status"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-screen-status"
           }
         }
       },
