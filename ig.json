@@ -1,6 +1,18 @@
 {
-  "sct-edition": "http://snomed.info/sct/32506021000036107",  
+  "sct-edition": "http://snomed.info/sct/32506021000036107",
   "version": "3.0.1",
+  "paths": {
+    "output": "output",
+    "pages": "pages",
+    "resources": [
+      "resources",
+      "examples"
+    ],
+    "temp": "temp",
+    "qa": "qa",
+    "specification": "http://hl7.org/fhir/STU3/",
+    "txCache": "txCache"
+  },
   "source": "ig.xml",
   "dependencyList": [
     {
@@ -9,11 +21,31 @@
       "version": "current"
     }
   ],
-  "spreadsheets": [],
-  "special-urls": [],
   "extraTemplates": [
     "mappings"
   ],
+  "do-transforms": "true",
+  "spreadsheets": [],
+  "special-urls": [
+    "urn:iso:std:iso:3166",
+    "http://hl7.org.au/fhir/sid/icpc-2plus",
+    "http://www.mims.com.au/codes",
+    "http://www.gs1.org/gtin",
+    "http://pbs.gov.au/code/item",
+    "http://hl7.org.au/fhir/v2/0203",
+    "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0",
+    "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0",
+    "https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1",
+    "https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1",
+    "https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1",
+    "https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1",
+    "https://healthterminologies.gov.au/fhir/CodeSystem/date-accuracy-indicator-1",
+    "https://healthterminologies.gov.au/fhir/CodeSystem/concurrent-supply-grounds-1"
+  ],
+  "tool": "jekyll",
+  "license": "CC0-1.0",
+  "canonicalBase": "http://hl7.org.au/fhir/ch/v1",
+  "npm-name": "hl7.fhir.au.ch",
   "defaults": {
     "ConceptMap": {
       "template-base": "cm.html"
@@ -50,126 +82,166 @@
       "template-format": "ex-format.html"
     }
   },
-  "tool": "jekyll",  
-  "license": "CC0-1.0",
-  "canonicalBase": "http://hl7.org.au/fhir/ch/v1",
-  "paths": {
-    "temp": "temp",
-    "resources": [
-      "resources",
-      "examples"
-    ],
-    "pages": "pages",
-    "txCache": "txCache",
-    "output": "output",
-    "qa": "qa",
-    "specification": "http://hl7.org/fhir/STU3"
-  },
-  "npm-name": "hl7.fhir.au.ch",
   "resources": {
-    "StructureDefinition/ncdhc-patient": {
-      "base": "StructureDefinition-ncdhc-patient.html",
-	  "defns": "StructureDefinition-ncdhc-patient-definitions.html"
+     "StructureDefinition/ncdhc-composition-base": {
+      "base": "StructureDefinition-ncdhc-composition-base.html",
+      "defns": "StructureDefinition-ncdhc-composition-base-definitions.html"
     },
-	"StructureDefinition/ncdhc-observation-apgar-score": {
+	"StructureDefinition/ncdhc-observation-base": {
+      "base": "StructureDefinition-ncdhc-observation-base.html",
+      "defns": "StructureDefinition-ncdhc-observation-base-definitions.html"
+    },
+	"StructureDefinition/ncdhc-patient": {
+      "base": "StructureDefinition-ncdhc-patient.html",
+      "defns": "StructureDefinition-ncdhc-patient-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-apgar-score": {
       "base": "StructureDefinition-ncdhc-observation-apgar-score.html",
-	  "defns": "StructureDefinition-ncdhc-observation-apgar-score-definitions.html"
+      "defns": "StructureDefinition-ncdhc-observation-apgar-score-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-pregnancy-complication": {
       "base": "StructureDefinition-ncdhc-observation-pregnancy-complication.html",
-	  "defns": "StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html"
+      "defns": "StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-birth-complication": {
       "base": "StructureDefinition-ncdhc-observation-birth-complication.html",
-	  "defns": "StructureDefinition-ncdhc-observation-birth-complication-definitions.html"
+      "defns": "StructureDefinition-ncdhc-observation-birth-complication-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-method-of-delivery": {
       "base": "StructureDefinition-ncdhc-observation-method-of-delivery.html",
-	  "defns": "StructureDefinition-ncdhc-observation-method-of-delivery-definitions.html"
+      "defns": "StructureDefinition-ncdhc-observation-method-of-delivery-definitions.html"
     },
-	"StructureDefinition/ncdhc-familymemberhistory-discharge": {	  
+    "StructureDefinition/ncdhc-familymemberhistory-discharge": {
       "base": "StructureDefinition-ncdhc-familymemberhistory-discharge.html",
-	  "defns": "StructureDefinition-ncdhc-familymemberhistory-discharge-definitions.html"
+      "defns": "StructureDefinition-ncdhc-familymemberhistory-discharge-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-estimated-gestation": {
       "base": "StructureDefinition-ncdhc-observation-estimated-gestation.html",
-	  "defns": "StructureDefinition-ncdhc-observation-estimated-gestation-definitions.html"
+      "defns": "StructureDefinition-ncdhc-observation-estimated-gestation-definitions.html"
     },
     "StructureDefinition/ncdhc-composition-birth": {
       "base": "StructureDefinition-ncdhc-composition-birth.html",
-	  "defns": "StructureDefinition-ncdhc-composition-birth-definitions.html"
+      "defns": "StructureDefinition-ncdhc-composition-birth-definitions.html"
     },
-	"StructureDefinition/ncdhc-composition-discharge": {
+    "StructureDefinition/ncdhc-composition-discharge": {
       "base": "StructureDefinition-ncdhc-composition-discharge.html",
-	  "defns": "StructureDefinition-ncdhc-composition-discharge-definitions.html"
+      "defns": "StructureDefinition-ncdhc-composition-discharge-definitions.html"
     },
-	"StructureDefinition/ncdhc-medicationstatement-vitamink": {
+    "StructureDefinition/ncdhc-medicationstatement-vitamink": {
       "base": "StructureDefinition-ncdhc-medicationstatement-vitamink.html",
-	  "defns": "StructureDefinition-ncdhc-medicationstatement-vitamink-definitions.html"
+      "defns": "StructureDefinition-ncdhc-medicationstatement-vitamink-definitions.html"
     },
-	"StructureDefinition/ncdhc-composition-bloodspot-screen": {
+    "StructureDefinition/ncdhc-composition-bloodspot-screen": {
       "base": "StructureDefinition-ncdhc-composition-bloodspot-screen.html",
-	  "defns": "StructureDefinition-ncdhc-composition-bloodspot-screen-definitions.html"
+      "defns": "StructureDefinition-ncdhc-composition-bloodspot-screen-definitions.html"
     },
-	"StructureDefinition/ncdhc-composition-hearing-screen": {
+    "StructureDefinition/ncdhc-composition-hearing-screen": {
       "base": "StructureDefinition-ncdhc-composition-hearing-screen.html",
-	  "defns": "StructureDefinition-ncdhc-composition-hearing-screen-definitions.html"
+      "defns": "StructureDefinition-ncdhc-composition-hearing-screen-definitions.html"
     },
-	"StructureDefinition/ncdhc-composition-exam": {
+    "StructureDefinition/ncdhc-composition-exam": {
       "base": "StructureDefinition-ncdhc-composition-exam.html",
-	  "defns": "StructureDefinition-ncdhc-composition-exam-definitions.html"
+      "defns": "StructureDefinition-ncdhc-composition-exam-definitions.html"
     },
-	"StructureDefinition/ncdhc-composition-health-check-assessment": {
+    "StructureDefinition/ncdhc-composition-health-check-assessment": {
       "base": "StructureDefinition-ncdhc-composition-health-check-assessment.html",
-	  "defns": "StructureDefinition-ncdhc-composition-health-check-assessment-definitions.html"
+      "defns": "StructureDefinition-ncdhc-composition-health-check-assessment-definitions.html"
     },
-    "StructureDefinition/ncdhc-observation-birth-abnormalities": {
-      "base": "StructureDefinition-ncdhc-observation-birth-abnormalities.html",
-	  "defns": "StructureDefinition-ncdhc-observation-birth-abnormalities-definitions.html"
+    "StructureDefinition/ncdhc-observation-head-shape": {
+      "base": "StructureDefinition-ncdhc-observation-head-shape.html",
+      "defns": "StructureDefinition-ncdhc-observation-head-shape-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-test-head-fontanelles": {
+      "base": "StructureDefinition-ncdhc-observation-test-head-fontanelles.html",
+      "defns": "StructureDefinition-ncdhc-observation-test-head-fontanelles-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-test-eyes": {
+      "base": "StructureDefinition-ncdhc-observation-test-eyes.html",
+      "defns": "StructureDefinition-ncdhc-observation-test-eyes-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-test-vision": {
+      "base": "StructureDefinition-ncdhc-observation-test-vision.html",
+      "defns": "StructureDefinition-ncdhc-observation-test-vision-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-vision-screen": {
+      "base": "StructureDefinition-ncdhc-observation-vision-screen.html",
+      "defns": "StructureDefinition-ncdhc-observation-vision-screen-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-test-ears": {
+      "base": "StructureDefinition-ncdhc-observation-test-ears.html",
+      "defns": "StructureDefinition-ncdhc-observation-test-ears-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-hearing-check": {
+      "base": "StructureDefinition-ncdhc-observation-hearing-check.html",
+      "defns": "StructureDefinition-ncdhc-observation-hearing-check-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-hearing-screen": {
+      "base": "StructureDefinition-ncdhc-observation-hearing-screen.html",
+      "defns": "StructureDefinition-ncdhc-observation-hearing-screen-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-test-mouth": {
+      "base": "StructureDefinition-ncdhc-observation-test-mouth.html",
+      "defns": "StructureDefinition-ncdhc-observation-test-mouth-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-oral-health": {
+      "base": "StructureDefinition-ncdhc-observation-oral-health.html",
+      "defns": "StructureDefinition-ncdhc-observation-oral-health-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-test-cardiovascular": {
+      "base": "StructureDefinition-ncdhc-observation-test-cardiovascular.html",
+      "defns": "StructureDefinition-ncdhc-observation-test-cardiovascular-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-test-femoral-pulses": {
+      "base": "StructureDefinition-ncdhc-observation-test-femoral-pulses.html",
+      "defns": "StructureDefinition-ncdhc-observation-test-femoral-pulses-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-development": {
+      "base": "StructureDefinition-ncdhc-observation-development.html",
+      "defns": "StructureDefinition-ncdhc-observation-development-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-abdomen": {
+      "base": "StructureDefinition-ncdhc-observation-abdomen.html",
+      "defns": "StructureDefinition-ncdhc-observation-abdomen-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-labour-induced": {
       "base": "StructureDefinition-ncdhc-observation-labour-induced.html",
-	  "defns": "StructureDefinition-ncdhc-observation-labour-induced-definitions.html"
+      "defns": "StructureDefinition-ncdhc-observation-labour-induced-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-vitalsign-bodyweight": {
       "base": "StructureDefinition-ncdhc-observation-vitalsign-bodyweight.html",
-	  "defns": "StructureDefinition-ncdhc-observation-vitalsign-bodyweight-definitions.html"
+      "defns": "StructureDefinition-ncdhc-observation-vitalsign-bodyweight-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-vitalsign-bodyheight": {
       "base": "StructureDefinition-ncdhc-observation-vitalsign-bodyheight.html",
-	  "defns": "StructureDefinition-ncdhc-observation-vitalsign-bodyheight-definitions.html"
+      "defns": "StructureDefinition-ncdhc-observation-vitalsign-bodyheight-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-birth-head-circumference": {
       "base": "StructureDefinition-ncdhc-observation-vitalsign-headcircum.html",
-	  "defns": "StructureDefinition-ncdhc-observation-vitalsign-headcircum-definitions.html"
+      "defns": "StructureDefinition-ncdhc-observation-vitalsign-headcircum-definitions.html"
     },
-	"StructureDefinition/ncdhc-observation-feeding-status": {
+    "StructureDefinition/ncdhc-observation-feeding-status": {
       "base": "StructureDefinition-ncdhc-observation-feeding-status.html",
-	  "defns": "StructureDefinition-ncdhc-observation-feeding-status-definitions.html"
+      "defns": "StructureDefinition-ncdhc-observation-feeding-status-definitions.html"
     },
-	"StructureDefinition/ncdhc-observation-bloodspot-screen": {
+    "StructureDefinition/ncdhc-observation-bloodspot-screen": {
       "base": "StructureDefinition-ncdhc-observation-bloodspot-screen.html",
-	  "defns": "StructureDefinition-ncdhc-observation-bloodspot-screen-definitions.html"
+      "defns": "StructureDefinition-ncdhc-observation-bloodspot-screen-definitions.html"
     },
-	"StructureDefinition/ncdhc-observation-hearing-screen": {
-      "base": "StructureDefinition-ncdhc-observation-hearing-screen.html",
-	  "defns": "StructureDefinition-ncdhc-observation-hearing-screen-definitions.html"
-    },
-	 "StructureDefinition/ncdhc-encounter-discharge-details": {
+    "StructureDefinition/ncdhc-encounter-discharge-details": {
       "base": "StructureDefinition-ncdhc-encounter-discharge-details.html",
-	  "defns": "StructureDefinition-ncdhc-encounter-discharge-details-definitions.html"
-    },	
-	 "StructureDefinition/ncdhc-consent": {
+      "defns": "StructureDefinition-ncdhc-encounter-discharge-details-definitions.html"
+    },
+    "StructureDefinition/ncdhc-consent": {
       "base": "StructureDefinition-ncdhc-consent.html",
-	  "defns": "StructureDefinition-ncdhc-consent-definitions.html"
+      "defns": "StructureDefinition-ncdhc-consent-definitions.html"
     },
     "CapabilityStatement/ncdhc-metadata": {
       "source": "CapabilityStatement.json",
       "base": "CapabilityStatement-ncdhc-metadata.html"
     },
-	"StructureDefinition/ncdhc-immunisation": {
+    "StructureDefinition/ncdhc-immunisation": {
       "base": "StructureDefinition-ncdhc-immunisation.html",
-	  "defns": "StructureDefinition-ncdhc-immunisation-definitions.html"
+      "defns": "StructureDefinition-ncdhc-immunisation-definitions.html"
     },
     "ValueSet/apgar-score-type": {
       "base": "ValueSet-apgar-score-type.html"
@@ -207,17 +279,45 @@
     "ValueSet/apgar-respiratory-effort-finding": {
       "base": "ValueSet-apgar-respiratory-effort-finding.html"
     },
-	"Patient/3db74777-fd3d-4d3b-92ec-d405977a11a5": {
+    "ValueSet/ncdhc-observation-interpretation": {
+      "source": "ValueSet-ncdhc-observation-interpretation.json",
+      "base": "ValueSet-ncdhc-observation-interpretation.html"
+    },
+    "CodeSystem/ncdhc-observation-interpretation": {
+      "source": "CodeSystem-ncdhc-observation-interpretation.json",
+      "base": "CodeSystem-ncdhc-observation-interpretation.html"
+    },
+    "ValueSet/ncdhc-screen-status": {
+      "source": "ValueSet-ncdhc-screen-status.json",
+      "base": "ValueSet-ncdhc-screen-status.html"
+    },
+    "ValueSet/ncdhc-consent-category": {
+      "source": "ValueSet-ncdhc-consent-category.json",
+      "base": "ValueSet-ncdhc-consent-category.html"
+    },
+    "CodeSystem/ncdhc-consent-category": {
+      "source": "CodeSystem-ncdhc-consent-category.json",
+      "base": "CodeSystem-ncdhc-consent-category.html"
+    },
+    "Patient/3db74777-fd3d-4d3b-92ec-d405977a11a5": {
       "source": "Patient-newborn.json",
       "base": "Patient-newborn.html"
     },
-	"Patient/dd78393f-37ca-4738-81d6-e9595b2e5d0k": {
+    "Patient/dd78393f-37ca-4738-81d6-e9595b2e5d0k": {
       "source": "Patient-mother.json",
       "base": "Patient-mother.html"
     },
     "Bundle/18900024-070c-4141-8109-9d9fa34dd24b": {
       "source": "Bundle-document-birthHI-response-payload.json",
       "base": "Bundle-document-birthHI-response-payload.html"
+    },
+    "Bundle/28900024-070c-4141-8109-9d9fa34dd24b": {
+      "source": "Bundle-document-healthcheck-response-payload.json",
+      "base": "Bundle-document-healthcheck-response-payload.html"
+    },
+	"Bundle/48900024-070c-4141-8109-9d9fa34dd24b": {
+      "source": "Bundle-document-hearing-screen-payload.json",
+      "base": "Bundle-document-hearing-screen-payload.html"
     },
     "Observation/541a72a8-df75-4484-ac89-ac4923f03b81": {
       "source": "Observation-lengthOfGestation.json",
@@ -279,7 +379,7 @@
       "source": "Immunization-hepb-immunoglobin.json",
       "base": "Immunization-hepb-immunoglobin.html"
     },
-	 "Composition/180f219f-97a8-486d-99d9-ed631fe4fc57": {
+    "Composition/180f219f-97a8-486d-99d9-ed631fe4fc57": {
       "source": "Bundle-document-birthHI-response-payload.json",
       "base": "Bundle-document-birthHI-response-payload.html"
     }

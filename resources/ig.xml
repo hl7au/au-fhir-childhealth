@@ -2,8 +2,8 @@
 <!--Hidden IG for de facto IG publishing-->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/implementationguide.xsd">
 	<id value="au-ch"/>
-	<url value="http://hl7.org.au/fhir/ch/ImplementationGuide/v1.0.0/au-ch"/>
-	<version value="v1.0.0"/>
+	<url value="http://hl7.org.au/fhir/ch/v1/ImplementationGuide/au-ch"/>
+	<version value="v1"/>
 	<name value="Child Health Implementation Guide"/>
 	<status value="draft"/>
 	<experimental value="true"/>
@@ -24,13 +24,19 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-patient"/>
+				<reference value="StructureDefinition/ncdhc-composition-base"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-consent"/>
+				<reference value="StructureDefinition/ncdhc-observation-base"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-patient"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -116,17 +122,23 @@
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-vitalsign-headcircum"/>
 			</sourceReference>
-		</resource>		
+		</resource>	
 		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bmi"/>
+			</sourceReference>
+		</resource>			
+		<!--<resource>
 		  <example value="false"/>
 		  <sourceReference>
 			<reference value="StructureDefinition/ncdhc-medicationstatement-vitamink"/>
 		  </sourceReference>
-		</resource>
+		</resource>-->
 		<resource>
 		  <example value="false"/>
 		  <sourceReference>
-			<reference value="StructureDefinition/ncdhc-immunization"/>
+			<reference value="StructureDefinition/ncdhc-immunisation"/>
 		  </sourceReference>
 		</resource>
 		<resource>
@@ -156,6 +168,90 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-health-check-assessment"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-head-shape"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-test-head-fontanelles"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-test-eyes"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-test-vision"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-vision-screen"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-test-ears"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-hearing-check"/>
+			</sourceReference>
+		</resource>		
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-test-mouth"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-oral-health"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-test-cardiovascular"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-test-femoral-pulses"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-development"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-abdomen"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-bloodspot-screen"/>
 			</sourceReference>
 		</resource>
@@ -163,6 +259,12 @@
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-hearing-screen"/>
+			</sourceReference>
+		</resource>		
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-consent"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -236,8 +338,37 @@
 			<sourceReference>
 				<reference value="ValueSet/apgar-muscle-tone-finding"/>
 			</sourceReference>
-		</resource>
-		
+		</resource>		
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-interpretation"/>
+			</sourceReference>
+		</resource>		
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-observation-interpretation"/>
+			</sourceReference>
+		</resource>	
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-screen-status"/>
+			</sourceReference>
+		</resource>		
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-consent-category"/>
+			</sourceReference>
+		</resource>		
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-consent-category"/>
+			</sourceReference>
+		</resource>			
 		<resource>
 			<example value="true"/>
 			<sourceReference>
@@ -340,12 +471,24 @@
 				<reference value="Immunization/241a72a8-df75-4484-ac89-ac4923f03b11"/>
 			</sourceReference>
 		</resource>
-		<!--<resource>
+		<resource>
 			<example value="true"/>
 			<sourceReference>
 				<reference value="Bundle/18900024-070c-4141-8109-9d9fa34dd24b"/>
 			</sourceReference>
-		</resource>-->
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Bundle/28900024-070c-4141-8109-9d9fa34dd24b"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Bundle/48900024-070c-4141-8109-9d9fa34dd24b"/>
+			</sourceReference>
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>

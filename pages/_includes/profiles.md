@@ -14,13 +14,14 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC APGAR Score](StructureDefinition-ncdhc-observation-apgar-score.html) - A set of observations made on the baby following birth to check adaptation to life outside the womb.  This includes 1 minute, 5 minutes and 10 minutes
 * [NCDHC Body Weight](StructureDefinition-ncdhc-observation-vitalsign-bodyweight.html) - Vital Sign profile to represent Weight of Body. This profile is used to record the Birth Weight as well.
 * [NCDHC Body Height](StructureDefinition-ncdhc-observation-vitalsign-bodyheight.html) - Vital Sign profile to represent Length of Body. This profile is used to record the Birth Height as well.
+* [NCDHC Body Mass Index (BMI)](StructureDefinition-ncdhc-observation-vitalsign-bmi.html) - Vital Sign profile to represent Body Mass Index (BMI).
 * [NCDHC Head Circumference](StructureDefinition-ncdhc-observation-vitalsign-headcircum.html) - Vital Sign profile to represent Numeric value for head circumference
 * [NCDHC Birth Complication](StructureDefinition-ncdhc-observation-birth-complication.html) - Observation profile to record complications observed during the birthing process
 * [NCDHC Pregnancy Complications](StructureDefinition-ncdhc-observation-pregnancy-complication.html) - Observation profile to record maternal medical conditions or infectious diseases arising in pregnancy which may have an impact on the fetus, e.g. gestational diabetes, infection etc.
 * [NCDHC Labour Initiation](StructureDefinition-ncdhc-observation-labour-induced.html) - Observation profile to record labour initiation eg spontaneous, induced 
 * [NCDHC Method Of Delivery](StructureDefinition-ncdhc-observation-method-of-delivery.html) - Observation profile to record type of birth observed during the birthing procedure 
 * [NCDHC Feeding Status](StructureDefinition-ncdhc-observation-feeding-status.html) - Observation profile to record baby's Feeding Status at Discharge 
-* [NCDHC Blood spot Screen](StructureDefinition-ncdhc-observation-bloodspot-screen.html) - Observation profile to record newborn's Blood spot Screen test status 
+* [NCDHC Blood Spot Screen](StructureDefinition-ncdhc-observation-bloodspot-screen.html) - Observation profile to record newborn's Blood Spot Screen test status 
 * [NCDHC Hearing Screen](StructureDefinition-ncdhc-observation-hearing-screen.html) - Observation profile to record newborn's Hearing Screen test status 
 
 ## FamilyMemberHistory Profiles
@@ -41,4 +42,4 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Newborn Blood Spot Screen Health Interaction](StructureDefinition-ncdhc-composition-bloodspot-screen.html) - Composition profile to represent Newborn Blood Spot Screen Health Interaction
 * [NCDHC Newborn Hearing Screen Health Interaction](StructureDefinition-ncdhc-composition-hearing-screen.html) - Composition profile to represent Newborn Hearing Screen Health Interaction
 * [NCDHC Newborn Exam Health Interaction](StructureDefinition-ncdhc-composition-exam.html) - Composition profile to represent Newborn Exam Health Interaction
-
+* [NCDHC Newborn Health Check Health Interaction](StructureDefinition-ncdhc-composition-health-check-assessment.html) - Composition profile to represent Newborn Health Check Health Interaction
