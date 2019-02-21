@@ -279,24 +279,19 @@
     "ValueSet/apgar-respiratory-effort-finding": {
       "base": "ValueSet-apgar-respiratory-effort-finding.html"
     },
-    "ValueSet/ncdhc-observation-interpretation": {
-      "source": "ValueSet-ncdhc-observation-interpretation.json",
+    "ValueSet/ncdhc-observation-interpretation": {      
       "base": "ValueSet-ncdhc-observation-interpretation.html"
     },
-    "CodeSystem/ncdhc-observation-interpretation": {
-      "source": "CodeSystem-ncdhc-observation-interpretation.json",
+    "CodeSystem/ncdhc-observation-interpretation": {      
       "base": "CodeSystem-ncdhc-observation-interpretation.html"
     },
-    "ValueSet/ncdhc-screen-status": {
-      "source": "ValueSet-ncdhc-screen-status.json",
+    "ValueSet/ncdhc-screen-status": {      
       "base": "ValueSet-ncdhc-screen-status.html"
     },
-    "ValueSet/ncdhc-consent-category": {
-      "source": "ValueSet-ncdhc-consent-category.json",
+    "ValueSet/ncdhc-consent-category": {      
       "base": "ValueSet-ncdhc-consent-category.html"
     },
-    "CodeSystem/ncdhc-consent-category": {
-      "source": "CodeSystem-ncdhc-consent-category.json",
+    "CodeSystem/ncdhc-consent-category": {      
       "base": "CodeSystem-ncdhc-consent-category.html"
     },
     "Patient/3db74777-fd3d-4d3b-92ec-d405977a11a5": {
