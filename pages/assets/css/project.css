@@ -388,3 +388,25 @@ a.to-top {
 /*    list-style: decimal; */
     display: inline-block;
 }
+
+#background{
+    position:fixed;
+    background:transparent;
+    display:block;
+    height:600; 
+    width:800;
+    color:yellow;
+	opacity:0.4;
+	z-index:1;
+	pointer-events: none;
+}
+
+
+#bg-text
+{
+    color:lightgrey;
+    font-size:120px;
+	font-weight:bold;
+    transform:rotate(330deg);
+    -webkit-transform:rotate(330deg);
+}
