@@ -36,7 +36,7 @@
           "text": "Newborn Health Check Assessment Health Interaction"
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
           "display": "Baby of Eve Bill"
         },
         "date": "2018-12-24T12:30:02Z",
@@ -58,6 +58,29 @@
           }
         ],
         "section": [
+          {
+            "title": "Vital Signs and Measurements",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "67795-5"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vital Signs</div>"
+            },
+            "entry": [
+              {
+                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+              },
+              {
+                "reference": "Observation/841a72a8-df75-4484-ac89-ac4923f03b42"
+              }
+            ]
+          },
           {
             "title": "Other health conditions",
             "code": {
@@ -84,7 +107,7 @@
         ]
       }
     },
-	{
+    {
       "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
       "resource": {
         "resourceType": "Patient",
@@ -96,21 +119,16 @@
         "meta": {
           "versionId": "1",
           "lastUpdated": "2018-12-27T16:13:03Z",
-          "profile": "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+          "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient"
         },
         "extension": [
           {
-            "url": "http://hl7.org.au/fhir/StructureDefinition/birthPlace",
+            "url": "http://hl7.org/fhir/StructureDefinition/birthPlace",
             "valueAddress": {
               "text": "Blacktown Hospital"
             }
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
-            "valueDateTime": "1956-08-23T14:35:45-05:00"
           }
         ],
-        "active": true,
         "identifier": [
           {
             "type": {
@@ -137,10 +155,14 @@
               ],
               "text": "Medical Record Number"
             },
-            "system": "http://www.acme.com/identifiers/patient",
-            "value": "606915"
+            "system": "http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0",
+            "value": "8003620000000000",
+            "assigner": {
+              "display": "Blacktown Hospital"
+            }
           }
         ],
+        "active": true,
         "name": [
           {
             "text": "Baby of Eve Bill",
@@ -154,14 +176,6 @@
         "birthDate": "2018-12-24",
         "_birthDate": {
           "extension": [
-            {
-              "url": "http://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator",
-              "valueCoding": {
-                "system": "https://healthterminologies.gov.au/fhir/CodeSystem/date-accuracy-indicator-1",
-                "code": "AAA",
-                "display": "Day, month and year are accurate"
-              }
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
               "valueDateTime": "2018-12-24T14:35:45-05:00"
@@ -179,9 +193,53 @@
             "postalCode": "2148",
             "country": "Australia"
           }
+        ],
+        "contact": [
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/RoleCode",
+                    "code": "MTH",
+                    "display": "mother"
+                  }
+                ],
+                "text": "Mother"
+              }
+            ],
+            "name": {
+              "text": "Eve Bill",
+              "family": "Bill",
+              "given": [
+                "Eve"
+              ]
+            }
+          },
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/RoleCode",
+                    "code": "FTH",
+                    "display": "father"
+                  }
+                ],
+                "text": "Father"
+              }
+            ],
+            "name": {
+              "text": "Simmons Bill",
+              "family": "Bill",
+              "given": [
+                "Simmons"
+              ]
+            }
+          }
         ]
       }
-    },       
+    },
     {
       "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
       "resource": {
@@ -189,7 +247,7 @@
         "id": "od78393f-37ca-4738-81d6-d9595b2e5d0f",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example1</p><p><b>identifier</b>: ABN = 51824753556</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/organization-type code 'prov' = 'Healthcare Provider', given as 'Healthcare Provider'})</span></p><p><b>name</b>: Albion Hospital</p><p><b>telecom</b>: enquiries@albionhospital.com.au(WORK)</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: od78393f-37ca-4738-81d6-d9595b2e5d0f</p><p><b>identifier</b>: ABN = 51824753556</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/organization-type code 'prov' = 'Healthcare Provider', given as 'Healthcare Provider'})</span></p><p><b>name</b>: Blacktown Hospital</p><p><b>telecom</b>: enquiries@blacktownhospital.com.au(WORK)</p></div>"
         },
         "identifier": [
           {
@@ -211,11 +269,11 @@
             ]
           }
         ],
-        "name": "Albion Hospital",
+        "name": "Blacktown Hospital",
         "telecom": [
           {
             "system": "email",
-            "value": "enquiries@albionhospital.com.au",
+            "value": "enquiries@blacktownhospital.com.au",
             "use": "work"
           }
         ]
@@ -304,7 +362,7 @@
         "id": "dd78393f-37ca-4738-81d6-d9595b2e5d0d",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example3</p><p><b>identifier</b>: HPI-I = 8003611234567893</p><p><b>name</b>: Francis Fernando </p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>AHPRA registration number = MED0000932850</td><td>AHPRA qualification for General Practitioner <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0 code '253111' = '253111', given as 'General Medical Practitioner'})</span></td><td>AHPRA</td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: dd78393f-37ca-4738-81d6-d9595b2e5d0d</p><p><b>identifier</b>: HPI-I = 8003611234567893</p><p><b>name</b>: Dr. Carla Smith </p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>AHPRA registration number = MED0000932850</td><td>AHPRA qualification for General Practitioner <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0 code '253111' = '253111', given as 'General Medical Practitioner'})</span></td><td>AHPRA</td></tr></table></div>"
         },
         "identifier": [
           {
@@ -367,14 +425,132 @@
           }
         ]
       }
-    },    
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/741a72a8-df75-4484-ac89-ac4923f03b42",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-10-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Body Weight recorded : 20.09414 kg</div>"
+        },
+        "id": "741a72a8-df75-4484-ac89-ac4923f03b42",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "56056-5"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27113001"
+            }
+          ],
+          "text": "Body Weight"
+        },
+        "subject": {
+          "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "performer": [
+          {
+            "reference": "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "display": "Dr. Carla Smith"
+          }
+        ],
+        "valueQuantity": {
+          "value": 20.09414,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/841a72a8-df75-4484-ac89-ac4923f03b42",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "841a72a8-df75-4484-ac89-ac4923f03b42",
+        "meta": {
+          "profile": [
+            "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bmi"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: bmi</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: BMI <span>(Details : {LOINC code '39156-5' = 'Body mass index (BMI) [Ratio]', given as 'Body mass index (BMI) [Ratio]'})</span></p><p><b>subject</b>: <a>Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f\"</a></p><p><b>effective</b>: 02/07/1999</p><p><b>value</b>: 16.2 kg/m2<span> (Details: UCUM code kg/m2 = 'kg/m2')</span></p></div>"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "60621009"
+            }
+          ],
+          "text": "BMI"
+        },
+        "subject": {
+          "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+        },
+        "effectiveDateTime": "2019-01-02",
+        "performer": [
+          {
+            "reference": "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "display": "Dr. Carla Smith"
+          }
+        ],
+        "valueQuantity": {
+          "value": 16.2,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }
+    },
     {
       "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/641a72a8-df75-4484-ac89-ac4923f03b81",
       "resource": {
         "resourceType": "Observation",
         "text": {
           "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Abdomen Test Result</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Abdomen Test Completed. The result is NORMAL</div>"
         },
         "id": "641a72a8-df75-4484-ac89-ac4923f03b81",
         "meta": {
@@ -392,17 +568,17 @@
           ]
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
           "display": "Baby of Eve Bill"
         },
         "effectiveDateTime": "2018-12-27T16:13:03Z",
         "performer": [
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "reference": "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
             "display": "Dr. Carla Smith"
           }
         ],
-		"dataAbsentReason": {
+        "dataAbsentReason": {
           "coding": [
             {
               "system": "http://hl7.org/fhir/data-absent-reason",
@@ -421,13 +597,13 @@
         "comment": "Completed"
       }
     },
-	{
+    {
       "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b81",
       "resource": {
         "resourceType": "Observation",
         "text": {
           "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Head Shape test</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Head Shape Completed.</div>"
         },
         "id": "541a72a8-df75-4484-ac89-ac4923f03b81",
         "meta": {
@@ -445,13 +621,13 @@
           ]
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
           "display": "Baby of Eve Bill"
         },
         "effectiveDateTime": "2018-12-27T16:13:03Z",
         "performer": [
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "reference": "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
             "display": "Dr. Carla Smith"
           }
         ],

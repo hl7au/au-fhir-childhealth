@@ -125,8 +125,7 @@
           ],
           "rules": "closed"
         },
-        "min": 1,
-        "max": "1"
+        "max": "2"
       },
       {
         "id": "Composition.section.entry",
@@ -171,24 +170,8 @@
       {
         "id": "Composition.section:vitalSignsAndMeasurements.entry",
         "path": "Composition.section.entry",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "id"
-            }
-          ],
-          "rules": "closed"
-        },
         "short": "Section to represent Vital Sings measured on the newborn.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
-        "max": "4"
-      },
-      {
-        "id": "Composition.section:vitalSignsAndMeasurements.entry:Weight",
-        "path": "Composition.section.entry",
-        "sliceName": "Weight",
-        "short": "This section records weight of baby recorded at birth",
-        "max": "1",
+        "max": "4",
         "type": [
           {
             "code": "Reference",
@@ -196,48 +179,21 @@
             "aggregation": [
               "bundled"
             ]
-          }
-        ]
-      },
-      {
-        "id": "Composition.section:vitalSignsAndMeasurements.entry:Length",
-        "path": "Composition.section.entry",
-        "sliceName": "Length",
-        "short": "This section records length of baby recorded at birth",
-        "max": "1",
-        "type": [
+          },
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bodyheight",
             "aggregation": [
               "bundled"
             ]
-          }
-        ]
-      },
-      {
-        "id": "Composition.section:vitalSignsAndMeasurements.entry:HeadCircumference",
-        "path": "Composition.section.entry",
-        "sliceName": "HeadCircumference",
-        "short": "This section records numeric value for head circumference",
-        "max": "1",
-        "type": [
+          },
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-headcircum",
             "aggregation": [
               "bundled"
             ]
-          }
-        ]
-      },
-      {
-        "id": "Composition.section:vitalSignsAndMeasurements.entry:BMI",
-        "path": "Composition.section.entry",
-        "sliceName": "BMI",
-        "short": "Body mass index (BMI)",
-        "max": "1",
-        "type": [
+          },
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bmi",
@@ -284,6 +240,7 @@
       {
         "id": "Composition.section:otherHealthConditions.entry",
         "path": "Composition.section.entry",
+        "short": "A reference to set of profiles that are allowed in this section",
         "type": [
           {
             "code": "Reference",
@@ -379,6 +336,55 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-abdomen",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-anus",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-gait",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-iron",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fluoride-varnish",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-hips",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-skin",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-reflexes",
             "aggregation": [
               "bundled"
             ]
