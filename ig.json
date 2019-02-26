@@ -199,9 +199,41 @@
       "base": "StructureDefinition-ncdhc-observation-development.html",
       "defns": "StructureDefinition-ncdhc-observation-development-definitions.html"
     },
-    "StructureDefinition/ncdhc-observation-abdomen": {
+    "StructureDefinition/ncdhc-observation-birth-abnormalities": {
+      "base": "StructureDefinition-ncdhc-observation-birth-abnormalities.html",
+      "defns": "StructureDefinition-ncdhc-observation-birth-abnormalities-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-anus": {
+      "base": "StructureDefinition-ncdhc-observation-anus.html",
+      "defns": "StructureDefinition-ncdhc-observation-anus-definitions.html"
+    },
+	"StructureDefinition/ncdhc-observation-abdomen": {
       "base": "StructureDefinition-ncdhc-observation-abdomen.html",
       "defns": "StructureDefinition-ncdhc-observation-abdomen-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-gait": {
+      "base": "StructureDefinition-ncdhc-observation-gait.html",
+      "defns": "StructureDefinition-ncdhc-observation-gait-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-test-iron": {
+      "base": "StructureDefinition-ncdhc-observation-test-iron.html",
+      "defns": "StructureDefinition-ncdhc-observation-test-iron-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-fluoride-varnish": {
+      "base": "StructureDefinition-ncdhc-observation-fluoride-varnish.html",
+      "defns": "StructureDefinition-ncdhc-observation-fluoride-varnish-definitions.html"
+    },
+	"StructureDefinition/ncdhc-observation-hips": {
+      "base": "StructureDefinition-ncdhc-observation-hips.html",
+      "defns": "StructureDefinition-ncdhc-observation-hips-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-skin": {
+      "base": "StructureDefinition-ncdhc-observation-skin.html",
+      "defns": "StructureDefinition-ncdhc-observation-skin-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-test-reflexes": {
+      "base": "StructureDefinition-ncdhc-observation-test-reflexes.html",
+      "defns": "StructureDefinition-ncdhc-observation-test-reflexes-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-labour-induced": {
       "base": "StructureDefinition-ncdhc-observation-labour-induced.html",
@@ -215,9 +247,13 @@
       "base": "StructureDefinition-ncdhc-observation-vitalsign-bodyheight.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-bodyheight-definitions.html"
     },
-    "StructureDefinition/ncdhc-observation-birth-head-circumference": {
+    "StructureDefinition/ncdhc-observation-vitalsign-headcircum": {	  
       "base": "StructureDefinition-ncdhc-observation-vitalsign-headcircum.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-headcircum-definitions.html"
+    },
+	"StructureDefinition/ncdhc-observation-vitalsign-bmi": {	  
+      "base": "StructureDefinition-ncdhc-observation-vitalsign-bmi.html",
+      "defns": "StructureDefinition-ncdhc-observation-vitalsign-bmi-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-feeding-status": {
       "base": "StructureDefinition-ncdhc-observation-feeding-status.html",
@@ -242,6 +278,10 @@
     "StructureDefinition/ncdhc-immunisation": {
       "base": "StructureDefinition-ncdhc-immunisation.html",
       "defns": "StructureDefinition-ncdhc-immunisation-definitions.html"
+    },
+	"StructureDefinition/ncdhc-audit-event": {
+      "base": "StructureDefinition-ncdhc-audit-event.html",
+      "defns": "StructureDefinition-ncdhc-audit-event-definitions.html"
     },
     "ValueSet/apgar-score-type": {
       "base": "ValueSet-apgar-score-type.html"
@@ -293,6 +333,12 @@
     },
     "CodeSystem/ncdhc-consent-category": {      
       "base": "CodeSystem-ncdhc-consent-category.html"
+    },
+	"ValueSet/ncdhc-document-type": {      
+      "base": "ValueSet-ncdhc-document-type.html"
+    },
+    "CodeSystem/ncdhc-document-type": {      
+      "base": "CodeSystem-ncdhc-document-type.html"
     },
     "Patient/3db74777-fd3d-4d3b-92ec-d405977a11a5": {
       "source": "Patient-newborn.json",

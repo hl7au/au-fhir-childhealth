@@ -8,6 +8,9 @@ These Profiles have been defined for this implementation guide.
 ## Consent Profiles
 * [NCDHC Consent Details](StructureDefinition-ncdhc-consent.html) - Consent profile to record access and use of patient record in NCDHC program.
 
+## Audit Event Profiles
+* [NCDHC Audit Details](StructureDefinition-ncdhc-audit-event.html) - AuditEvent profile to record audit details of all operations performed in Data Hub.
+
 ## Orders and Observation Profiles
 * [NCDHC Estimated Gestation](StructureDefinition-ncdhc-observation-estimated-gestation.html) - Observation profile to record gestational age in weeks and days (usually equivalent to length of pregnancy). 
 * [NCDHC Congenital anomalies of the newborn](StructureDefinition-ncdhc-observation-birth-abnormalities.html) - Observation profile to record physical problems identified with the baby at, or shortly after birth. E.g. cleft lip/palate, extensive bruising, cephalohematoma etc. 

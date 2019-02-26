@@ -252,6 +252,48 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-anus"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-gait"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-test-iron"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-fluoride-varnish"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-hips"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-skin"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-test-reflexes"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-bloodspot-screen"/>
 			</sourceReference>
 		</resource>
@@ -260,7 +302,19 @@
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-hearing-screen"/>
 			</sourceReference>
-		</resource>		
+		</resource>
+		<!--<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-audit-event"/>
+			</sourceReference>
+		</resource>-->			
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CapabilityStatement/ncdhc-metadata"/>
+			</sourceReference>
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -368,6 +422,18 @@
 			<sourceReference>
 				<reference value="CodeSystem/ncdhc-consent-category"/>
 			</sourceReference>
+		</resource>	
+<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-document-type"/>
+			</sourceReference>
+		</resource>		
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-document-type"/>
+			</sourceReference>
 		</resource>			
 		<resource>
 			<example value="true"/>
@@ -380,8 +446,14 @@
 			<sourceReference>
 				<reference value="Patient/dd78393f-37ca-4738-81d6-e9595b2e5d0k"/>
 			</sourceReference>
-		</resource>			
+		</resource>	
 		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Bundle/28900024-070c-4141-8109-9d9fa34dd24b"/>
+			</sourceReference>
+		</resource>		
+		<!--<resource>
 			<example value="true"/>
 			<sourceReference>
 				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b81"/>
@@ -476,25 +548,14 @@
 			<sourceReference>
 				<reference value="Bundle/18900024-070c-4141-8109-9d9fa34dd24b"/>
 			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true"/>
-			<sourceReference>
-				<reference value="Bundle/28900024-070c-4141-8109-9d9fa34dd24b"/>
-			</sourceReference>
-		</resource>
+		</resource>		
 		<resource>
 			<example value="true"/>
 			<sourceReference>
 				<reference value="Bundle/48900024-070c-4141-8109-9d9fa34dd24b"/>
 			</sourceReference>
 		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="CapabilityStatement/ncdhc-metadata"/>
-			</sourceReference>
-		</resource>
+		-->
 	</package>
 	<page>
 		<source value="index.html"/>
