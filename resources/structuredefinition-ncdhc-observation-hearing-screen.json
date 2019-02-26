@@ -128,14 +128,26 @@
         "max": "1"
       },
       {
+        "id": "Observation.component:outcomeLeft.code",
+        "path": "Observation.component.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "473422006"
+            }
+          ]
+        }
+      },
+      {
         "id": "Observation.component:outcomeLeft.code.coding.system",
         "path": "Observation.component.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.component:outcomeLeft.code.coding.code",
         "path": "Observation.component.code.coding.code",
-        "fixedCode": "54108-6"
+        "fixedCode": "473422006"
       },
       {
         "id": "Observation.component:outcomeLeft.interpretation",
@@ -164,14 +176,26 @@
         "max": "1"
       },
       {
+        "id": "Observation.component:outcomeRight.code",
+        "path": "Observation.component.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "473421004"
+            }
+          ]
+        }
+      },
+      {
         "id": "Observation.component:outcomeRight.code.coding.system",
         "path": "Observation.component.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.component:outcomeRight.code.coding.code",
         "path": "Observation.component.code.coding.code",
-        "fixedCode": "54108-6"
+        "fixedCode": "473421004"
       },
       {
         "id": "Observation.component:outcomeRight.interpretation",

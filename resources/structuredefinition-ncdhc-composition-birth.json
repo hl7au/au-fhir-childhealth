@@ -62,7 +62,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient"
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-patient"
           }
         ]
       },
@@ -301,11 +301,11 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "profile",
-              "path": "entry.item.resolve()"
+              "type": "exists",
+              "path": "reference"
             }
           ],
-          "rules": "closed"
+          "rules": "open"
         },
         "min": 2,
         "max": "3"
@@ -501,11 +501,11 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "profile",
-              "path": "entry.item.resolve()"
+              "type": "exists",
+              "path": "reference"
             }
           ],
-          "rules": "closed"
+          "rules": "open"
         },
         "short": "Section to represent Vital Sings measured on the newborn.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
         "max": "3"
@@ -599,11 +599,11 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "profile",
-              "path": "entry.item.resolve()"
+              "type": "exists",
+              "path": "reference"
             }
           ],
-          "rules": "closed"
+          "rules": "open"
         },
         "short": "Section to represent Maternal Morbidity details which includes Birth Complications and Pregnancy Complications.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided."
       },
@@ -678,11 +678,11 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "profile",
-              "path": "entry.item.resolve()"
+              "type": "exists",
+              "path": "reference"
             }
           ],
-          "rules": "closed"
+          "rules": "open"
         },
         "short": "Section to represent labour and delivery details which includes  capturing details on labour induced and method of delivery.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
         "max": "2"

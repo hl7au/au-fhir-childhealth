@@ -24,7 +24,7 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
+              "system": "http://loinc.org",
               "code": "28615-3"
             }
           ]

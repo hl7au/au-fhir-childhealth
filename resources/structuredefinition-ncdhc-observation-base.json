@@ -48,9 +48,6 @@
         "path": "Observation.category",
         "comment": "In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.\r\n\r\nCWG: Discussion on the Category to match it with Composition.type",
         "max": "1",
-        "patternCodeableConcept": {
-          "text": "This needs to be discussed and finalized"
-        },
         "mustSupport": true
       },
       {
@@ -101,13 +98,12 @@
         "path": "Observation.performer",
         "sliceName": "Examiner",
         "short": "Person who is clinically responsible for the undertaking of the exam",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner",
-            "aggregation": [
-              "bundled"
-            ]
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
           }
         ]
       },
@@ -115,14 +111,13 @@
         "id": "Observation.performer:Organisation",
         "path": "Observation.performer",
         "sliceName": "Organisation",
-        "short": "An organisation which captures the relevant details include the venue where examination/assessment took place.",
+        "short": "An organisation which captures the relevant details including the venue where examination/assessment took place.",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation",
-            "aggregation": [
-              "bundled"
-            ]
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
           }
         ]
       },
