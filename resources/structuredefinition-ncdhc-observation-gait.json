@@ -79,13 +79,6 @@
             "human": "dataAbsentReason SHALL only be present if Observation.value[x] is not present",
             "expression": "dataAbsentReason.empty() or value.empty()",
             "xpath": "not(exists(f:dataAbsentReason)) or (not(exists(*[starts-with(local-name(.), 'value')])))"
-          },
-          {
-            "key": "ncdhc-obs-1",
-            "severity": "error",
-            "human": "If there is no component or related element then either a value[x] or a data absent reason must be present",
-            "expression": "(component.empty() and related.empty()) implies (dataAbsentReason or value)",
-            "xpath": "exists(f:component) or exists(f:related) or exists(f:*[starts-with(local-name(.), 'value')]) or exists(f:dataAbsentReason)"
           }
         ],
         "mapping": [
