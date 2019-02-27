@@ -43,7 +43,7 @@
         "author": [
           {
             "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/3db74777-fd3d-4d3b-92ec-d405977a11a5",
-            "display": "Doctor Adam Dev"
+            "display": "Dr. Adam Dev"
           }
         ],
         "title": "Newborn Health Check Assessment Health Interaction",
@@ -290,7 +290,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<p>Dr Adam Careful</p>\n\t\t\t\t\t\n</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<p>Dr Adam Dev</p>\n\t\t\t\t\t\n</div>"
         },
         "identifier": [
           {
