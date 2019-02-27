@@ -1745,7 +1745,7 @@
           "strength": "required",
           "description": "APGAR score type",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-score-type"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-score-type"
           }
         },
         "mapping": [
@@ -1816,7 +1816,7 @@
           "strength": "example",
           "description": "APGAR score observation type (SNOMED CT)",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-score-type-snomedct"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-score-type-snomedct"
           }
         },
         "mapping": [
@@ -4898,7 +4898,7 @@
           "strength": "required",
           "description": "Colour observation",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-colour"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-colour"
           }
         },
         "mapping": [
@@ -4980,7 +4980,7 @@
           "strength": "required",
           "description": "Colour finding values",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-colour-finding"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-colour-finding"
           }
         },
         "mapping": [
@@ -5441,7 +5441,7 @@
           "strength": "required",
           "description": "Heart rate observation",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-heart-rate"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-heart-rate"
           }
         },
         "mapping": [
@@ -5523,7 +5523,7 @@
           "strength": "required",
           "description": "Heart rate finding values",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-heart-rate-finding"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-heart-rate-finding"
           }
         },
         "mapping": [
@@ -5984,7 +5984,7 @@
           "strength": "required",
           "description": "Muscle tone observation",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-muscle-tone"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-muscle-tone"
           }
         },
         "mapping": [
@@ -6066,7 +6066,7 @@
           "strength": "required",
           "description": "Muscle tone finding values",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-muscle-tone-finding"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-muscle-tone-finding"
           }
         },
         "mapping": [
@@ -6527,7 +6527,7 @@
           "strength": "required",
           "description": "Respiratory effort observation",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-respiratory-effort"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-respiratory-effort"
           }
         },
         "mapping": [
@@ -6609,7 +6609,7 @@
           "strength": "required",
           "description": "Respiratory effort finding values",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-respiratory-effort-finding"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-respiratory-effort-finding"
           }
         },
         "mapping": [
@@ -7070,7 +7070,7 @@
           "strength": "required",
           "description": "Reflex irritability observation",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-reflex-irritability"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-reflex-irritability"
           }
         },
         "mapping": [
@@ -7152,7 +7152,7 @@
           "strength": "required",
           "description": "Reflex irritability finding values",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-reflex-irritability-finding"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-reflex-irritability-finding"
           }
         },
         "mapping": [
@@ -7433,7 +7433,7 @@
           "strength": "required",
           "description": "APGAR score type",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-score-type"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-score-type"
           }
         }
       },
@@ -7447,7 +7447,7 @@
           "strength": "example",
           "description": "APGAR score observation type (SNOMED CT)",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-score-type-snomedct"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-score-type-snomedct"
           }
         }
       },
@@ -7551,7 +7551,7 @@
           "strength": "required",
           "description": "Colour observation",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-colour"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-colour"
           }
         }
       },
@@ -7569,7 +7569,7 @@
           "strength": "required",
           "description": "Colour finding values",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-colour-finding"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-colour-finding"
           }
         }
       },
@@ -7593,7 +7593,7 @@
           "strength": "required",
           "description": "Heart rate observation",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-heart-rate"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-heart-rate"
           }
         }
       },
@@ -7611,7 +7611,7 @@
           "strength": "required",
           "description": "Heart rate finding values",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-heart-rate-finding"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-heart-rate-finding"
           }
         }
       },
@@ -7635,7 +7635,7 @@
           "strength": "required",
           "description": "Muscle tone observation",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-muscle-tone"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-muscle-tone"
           }
         }
       },
@@ -7653,7 +7653,7 @@
           "strength": "required",
           "description": "Muscle tone finding values",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-muscle-tone-finding"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-muscle-tone-finding"
           }
         }
       },
@@ -7677,7 +7677,7 @@
           "strength": "required",
           "description": "Respiratory effort observation",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-respiratory-effort"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-respiratory-effort"
           }
         }
       },
@@ -7695,7 +7695,7 @@
           "strength": "required",
           "description": "Respiratory effort finding values",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-respiratory-effort-finding"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-respiratory-effort-finding"
           }
         }
       },
@@ -7719,7 +7719,7 @@
           "strength": "required",
           "description": "Reflex irritability observation",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-reflex-irritability"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-reflex-irritability"
           }
         }
       },
@@ -7737,7 +7737,7 @@
           "strength": "required",
           "description": "Reflex irritability finding values",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/ValueSet/apgar-reflex-irritability-finding"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-reflex-irritability-finding"
           }
         }
       }

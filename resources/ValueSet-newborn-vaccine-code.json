@@ -22,7 +22,7 @@
       "valueInteger": 0
     }
   ],
-  "url": "http://hl7.org.au/fhir/ch/ValueSet/apgar-score-type",
+  "url": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-score-type",
   "version": "3.0.1",
   "name": "NewbornImmunizationTypes",
   "title": "Immunization Types applicable at the time of Birth",

@@ -22,7 +22,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  a subject (Patient)
 1.  a time indicating when the details was recorded
 1.	a performer detailing who has recorded the details.
-1.  a CodableConcept representation of the Types reported. Applicable types are defined in the ValueSet: http://hl7.org.au/fhir/ch/ValueSet/type-of-birth-snomed
+1.  a CodableConcept representation of the Types reported. Applicable types are defined in the ValueSet: http://hl7.org.au/fhir/ch/v1/ValueSet/type-of-birth-snomed
     
 
 **Profile specific implementation guidance:**

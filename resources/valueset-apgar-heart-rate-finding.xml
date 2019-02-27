@@ -17,7 +17,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="0"/>
   </extension>
-  <url value="http://hl7.org.au/fhir/ch/ValueSet/apgar-heart-rate-finding"/>
+  <url value="http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-heart-rate-finding"/>
   <version value="3.0.1"/>
   <name value="APGARHeartRateFindings"/>
   <title value="APGAR Heart Rate Findings"/>

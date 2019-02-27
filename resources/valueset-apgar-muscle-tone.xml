@@ -17,7 +17,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="0"/>
   </extension>
-  <url value="http://hl7.org.au/fhir/ch/ValueSet/apgar-muscle-tone"/>
+  <url value="http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-muscle-tone"/>
   <version value="3.0.1"/>
   <name value="APGARMuscleToneObservationTypes"/>
   <title value="APGAR Muscle Tone Observation Types"/>

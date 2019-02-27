@@ -398,7 +398,7 @@
       {
         "id": "Composition.section:medicationsAdministered.entry",
         "path": "Composition.section.entry",
-        "short": "Section to represent what are the different medications administered to the newborn.  The allowed typs are defined at :  http://hl7.org.au/fhir/ch/ValueSet/medication-administration-type. If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
+        "short": "Section to represent what are the different medications administered to the newborn.  The allowed typs are defined at :  http://hl7.org.au/fhir/ch/v1/ValueSet/medication-administration-type. If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
         "max": "3",
         "type": [
           {

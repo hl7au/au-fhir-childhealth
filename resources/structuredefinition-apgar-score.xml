@@ -59,7 +59,7 @@
         <strength value="required" />
         <description value="APGAR score type" />
         <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/ch/ValueSet/apgar-score-type" />
+          <reference value="http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-score-type" />
         </valueSetReference>
       </binding>
     </element>
@@ -71,7 +71,7 @@
         <strength value="example" />
         <description value="APGAR score observation type (SNOMED CT)" />
         <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/ch/ValueSet/apgar-score-type-snomedct" />
+          <reference value="http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-score-type-snomedct" />
         </valueSetReference>
       </binding>
     </element>
@@ -137,7 +137,7 @@
         <strength value="required" />
         <description value="Colour observation" />
         <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/ch/ValueSet/apgar-colour" />
+          <reference value="http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-colour" />
         </valueSetReference>
       </binding>
     </element>
@@ -152,7 +152,7 @@
         <strength value="required" />
         <description value="Colour finding values" />
         <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/ch/ValueSet/apgar-colour-finding" />
+          <reference value="http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-colour-finding" />
         </valueSetReference>
       </binding>
     </element>
@@ -171,7 +171,7 @@
         <strength value="required" />
         <description value="Heart rate observation" />
         <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/ch/ValueSet/apgar-heart-rate" />
+          <reference value="http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-heart-rate" />
         </valueSetReference>
       </binding>
     </element>
@@ -186,7 +186,7 @@
         <strength value="required" />
         <description value="Heart rate finding values" />
         <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/ch/ValueSet/apgar-heart-rate-finding" />
+          <reference value="http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-heart-rate-finding" />
         </valueSetReference>
       </binding>
     </element>
@@ -205,7 +205,7 @@
         <strength value="required" />
         <description value="Muscle tone observation" />
         <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/ch/ValueSet/apgar-muscle-tone" />
+          <reference value="http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-muscle-tone" />
         </valueSetReference>
       </binding>
     </element>
@@ -220,7 +220,7 @@
         <strength value="required" />
         <description value="Muscle tone finding values" />
         <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/ch/ValueSet/apgar-muscle-tone-finding" />
+          <reference value="http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-muscle-tone-finding" />
         </valueSetReference>
       </binding>
     </element>
@@ -239,7 +239,7 @@
         <strength value="required" />
         <description value="Respiratory effort observation" />
         <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/ch/ValueSet/apgar-respiratory-effort" />
+          <reference value="http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-respiratory-effort" />
         </valueSetReference>
       </binding>
     </element>
@@ -254,7 +254,7 @@
         <strength value="required" />
         <description value="Respiratory effort finding values" />
         <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/ch/ValueSet/apgar-respiratory-effort-finding" />
+          <reference value="http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-respiratory-effort-finding" />
         </valueSetReference>
       </binding>
     </element>
@@ -273,7 +273,7 @@
         <strength value="required" />
         <description value="Reflex irritability observation" />
         <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/ch/ValueSet/apgar-reflex-irritability" />
+          <reference value="http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-reflex-irritability" />
         </valueSetReference>
       </binding>
     </element>
@@ -288,7 +288,7 @@
         <strength value="required" />
         <description value="Reflex irritability finding values" />
         <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/ch/ValueSet/apgar-reflex-irritability-finding" />
+          <reference value="http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-reflex-irritability-finding" />
         </valueSetReference>
       </binding>
     </element>
