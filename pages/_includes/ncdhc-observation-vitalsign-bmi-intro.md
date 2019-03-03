@@ -61,7 +61,7 @@ The client system SHALL supply both LOINC and SNOMED CT-AU codes to record this 
 
 #### Examples
 
-- [Body Mass Index (BMI)](Observation-vitalsing.bmi.html)
+To be added
 
 
 [Vitalsign]: http://hl7.org/fhir/STU3/observation-vitalsigns.html

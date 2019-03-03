@@ -32,7 +32,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-- [Family History](FamilyMemberHistory-family-history-discharge.html)
+To be added
 
 [Condition]: http://hl7.org/fhir/familymemberhistory.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible

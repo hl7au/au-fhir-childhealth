@@ -65,8 +65,7 @@ The client system SHALL supply both LOINC and SNOMED CT-AU codes to record this 
 
 #### Examples
 
-- [Head Circumference](Observation-head-circumference.html)
-- [Birth Head Circumference](Observation-birth-head-circumference.html)
+To be added
 
 [Vitalsign]: http://hl7.org/fhir/STU3/observation-vitalsigns.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible

@@ -2395,7 +2395,7 @@
         "isSummary": true,
         "binding": {
           "strength": "preferred",
-          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/labour-initiation-type"
+          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-labour-initiation-type"
         },
         "mapping": [
           {
@@ -4610,7 +4610,7 @@
         "path": "Observation.valueCodeableConcept.coding",
         "binding": {
           "strength": "preferred",
-          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/labour-initiation-type"
+          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-labour-initiation-type"
         }
       },
       {

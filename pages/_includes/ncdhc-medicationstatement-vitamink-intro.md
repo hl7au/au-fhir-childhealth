@@ -32,9 +32,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-- [Medication Administered - Vitamin K1](MedicationStatement-vitamink1.html)
-- [Medication Administered - Vitamin K2](MedicationStatement-vitamink2.html)
-- [Medication Administered - Vitamin K3](MedicationStatement-vitamink3.html)
+To be added
 
 [MedicationStatement]: http://hl7.org.au/fhir/base2018Oct/StructureDefinition-au-medicationstatement.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible

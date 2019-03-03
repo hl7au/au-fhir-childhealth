@@ -34,19 +34,19 @@
   <description value="APGAR colour findings"/>
   <compose>
      <include>
-      <system value="http://loinc.com"/>
+      <system value="http://loinc.org"/>
       <concept>
         <code value="LA6722-8"/>
       </concept>
     </include>
     <include>
-      <system value="http://loinc.com"/>
+      <system value="http://loinc.org"/>
       <concept>
         <code value="LA6723-6"/>
       </concept>
     </include>
     <include>
-      <system value="http://loinc.com"/>
+      <system value="http://loinc.org"/>
       <concept>
         <code value="LA6724-4"/>
       </concept>

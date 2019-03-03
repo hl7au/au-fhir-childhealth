@@ -34,19 +34,19 @@
   <description value="APGAR colour observation types 1, 5, 10 minutes"/>
   <compose>
      <include>
-      <system value="http://loinc.com"/>
+      <system value="http://loinc.org"/>
       <concept>
         <code value="32406-1"/>
       </concept>
     </include>
     <include>
-      <system value="http://loinc.com"/>
+      <system value="http://loinc.org"/>
       <concept>
         <code value="32411-1"/>
       </concept>
     </include>
     <include>
-      <system value="http://loinc.com"/>
+      <system value="http://loinc.org"/>
       <concept>
         <code value="32401-2"/>
       </concept>

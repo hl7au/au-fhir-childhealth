@@ -34,19 +34,19 @@
   <description value="APGAR respiratory effort findings"/>
   <compose>
      <include>
-      <system value="http://loinc.com"/>
+      <system value="http://loinc.org"/>
       <concept>
         <code value="LA6725-1"/>
       </concept>
     </include>
     <include>
-      <system value="http://loinc.com"/>
+      <system value="http://loinc.org"/>
       <concept>
         <code value="LA6726-9"/>
       </concept>
     </include>
     <include>
-      <system value="http://loinc.com"/>
+      <system value="http://loinc.org"/>
       <concept>
         <code value="LA6727-7"/>
       </concept>

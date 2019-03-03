@@ -35,7 +35,7 @@
       {
         "id": "Patient.identifier:medicalRecordNumber.system",
         "path": "Patient.identifier.system",
-        "fixedUri": "http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0"
+        "fixedUri": "urn:uuid:8fc4571b-8019-4144-9ad1-8bccbbb6e5b9"
       },
       {
         "id": "Patient.identifier:insurerNumber",
@@ -229,22 +229,32 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/v3/RoleCode",
+              "system": "http://hl7.org/fhir/v2/0131",
               "code": "F"
             }
-          ],
-          "text": "Federal Agency"
+          ]
         }
       },
       {
         "id": "Patient.contact:contactFedAgency.relationship.coding.system",
         "path": "Patient.contact.relationship.coding.system",
-        "fixedUri": "http://hl7.org/fhir/v3/RoleCode"
+        "fixedUri": "http://hl7.org/fhir/v2/0131"
       },
       {
         "id": "Patient.contact:contactFedAgency.relationship.coding.code",
         "path": "Patient.contact.relationship.coding.code",
         "fixedCode": "F"
+      },
+      {
+        "id": "Patient.contact:contactFedAgency.relationship.text",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Patient.contact.relationship.text",
+        "fixedString": "Federal Agency"
       },
       {
         "id": "Patient.contact:contactStateAgency",
@@ -265,22 +275,32 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/v3/RoleCode",
+              "system": "http://hl7.org/fhir/v2/0131",
               "code": "S"
             }
-          ],
-          "text": "State Agency"
+          ]
         }
       },
       {
         "id": "Patient.contact:contactStateAgency.relationship.coding.system",
         "path": "Patient.contact.relationship.coding.system",
-        "fixedUri": "http://hl7.org/fhir/v3/RoleCode"
+        "fixedUri": "http://hl7.org/fhir/v2/0131"
       },
       {
         "id": "Patient.contact:contactStateAgency.relationship.coding.code",
         "path": "Patient.contact.relationship.coding.code",
         "fixedCode": "S"
+      },
+      {
+        "id": "Patient.contact:contactStateAgency.relationship.text",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Patient.contact.relationship.text",
+        "fixedString": "State Agency"
       }
     ]
   }

@@ -34,19 +34,19 @@
   <description value="APGAR respiratory effort observation types 1, 5, 10 minutes"/>
   <compose>
      <include>
-      <system value="http://loinc.com"/>
+      <system value="http://loinc.org"/>
       <concept>
         <code value="32410-3"/>
       </concept>
     </include>
     <include>
-      <system value="http://loinc.com"/>
+      <system value="http://loinc.org"/>
       <concept>
         <code value="32415-2"/>
       </concept>
     </include>
     <include>
-      <system value="http://loinc.com"/>
+      <system value="http://loinc.org"/>
       <concept>
         <code value="32405-3"/>
       </concept>

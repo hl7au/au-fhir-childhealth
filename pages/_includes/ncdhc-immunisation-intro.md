@@ -60,8 +60,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-- [HepB Immunoglobin](Immunization-hepb-immunoglobin.html)
-- [HepB Immunisation](Immunization-hepb-immunisation.html)
+To be added
 
 [Immunization]: http://hl7.org.au/fhir/base2018Oct/StructureDefinition-au-immunisation.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible

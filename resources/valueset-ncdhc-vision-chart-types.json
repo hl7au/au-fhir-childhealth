@@ -1,0 +1,57 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ncdhc-vision-chart-types",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Observation Vision Chart Ref set</h2><div><p>Vision Chart Types</p>\r\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include codes defined in <a href=\"http://snomed.info/sct\"></a></li></ul></div>"
+  },
+  "url": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-vision-chart-types",
+  "version": "1.0.0",
+  "name": "Vision Chart Types",
+  "title": "Vision Chart Types",
+  "status": "draft",
+  "date": "2019-02-24T00:00:00+10:00",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC))",
+  "contact": [
+    {
+      "name": "hl7.org.au"
+    }
+  ],
+  "description": "Labour Initiation Type",
+  "compose": {
+    "include": [
+      {
+        "system" : "http://snomed.info/sct",
+        "concept" : [
+          {
+            "code" : "163936007"
+          }
+        ]
+      },
+      {
+        "system" : "http://snomed.info/sct",
+        "concept" : [
+          {
+            "code" : "163937003"
+          }
+        ]
+      },
+	  {
+        "system" : "http://snomed.info/sct",
+        "concept" : [
+          {
+            "code" : "408302002"
+          }
+        ]
+      },
+	  {
+        "system" : "http://snomed.info/sct",
+        "concept" : [
+          {
+            "code" : "704110007"
+          }
+        ]
+      }
+    ]
+  }
+}

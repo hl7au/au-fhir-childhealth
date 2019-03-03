@@ -34,19 +34,19 @@
   <description value="APGAR reflex irritability findings"/>
   <compose>
      <include>
-      <system value="http://loinc.com"/>
+      <system value="http://loinc.org"/>
       <concept>
         <code value="LA6719-4"/>
       </concept>
     </include>
     <include>
-      <system value="http://loinc.com"/>
+      <system value="http://loinc.org"/>
       <concept>
         <code value="LA6720-2"/>
       </concept>
     </include>
     <include>
-      <system value="http://loinc.com"/>
+      <system value="http://loinc.org"/>
       <concept>
         <code value="LA6721-0"/>
       </concept>

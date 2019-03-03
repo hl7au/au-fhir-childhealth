@@ -118,6 +118,7 @@
       {
         "id": "Observation.interpretation",
         "path": "Observation.interpretation",
+        "short": "Normal | Reivew | Refer",
         "binding": {
           "extension": [
             {
@@ -125,9 +126,9 @@
               "valueString": "ObservationInterpretation"
             }
           ],
-          "strength": "extensible",
+          "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/newborn-exam-outcome"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation"
           }
         }
       },

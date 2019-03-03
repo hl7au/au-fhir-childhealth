@@ -1,0 +1,57 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ncdhc-type-of-birth",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Observation Completion Status Type</h2><div><p>Type of birth observed during the birthing procedure </p>\r\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include codes defined in <a href=\"http://snomed.info/sct\"></a></li></ul></div>"
+  },
+  "url": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-type-of-birth",
+  "version": "1.0.0",
+  "name": "Type of Birth",
+  "title": "Type of Birth",
+  "status": "draft",
+  "date": "2019-02-24T00:00:00+10:00",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC))",
+  "contact": [
+    {
+      "name": "hl7.org.au"
+    }
+  ],
+  "description": "Type of birth observed during the birthing procedure",
+  "compose": {
+    "include": [
+      {
+        "system" : "http://snomed.info/sct",
+        "concept" : [
+          {
+            "code" : "289259007"
+          }
+        ]
+      },
+      {
+        "system" : "http://snomed.info/sct",
+        "concept" : [
+          {
+            "code" : "200130005"
+          }
+        ]
+      },
+	  {
+        "system" : "http://snomed.info/sct",
+        "concept" : [
+          {
+            "code" : "267278005"
+          }
+        ]
+      },
+	  {
+        "system" : "http://snomed.info/sct",
+        "concept" : [
+          {
+            "code" : "271370008"
+          }
+        ]
+      }	  
+    ]
+  }
+}

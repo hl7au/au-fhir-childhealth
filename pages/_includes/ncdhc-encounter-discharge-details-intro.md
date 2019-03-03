@@ -56,7 +56,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-- [Discharge Encounter Details](Encounter-discharge-details.html)
+To be added
 
 [Encounter]: http://hl7.org/fhir/encounter.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible

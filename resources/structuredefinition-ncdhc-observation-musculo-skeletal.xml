@@ -1462,7 +1462,7 @@
         <strength value="required" />
         <description value="Codes identifying interpretations of observations." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/ncdhc-observation-interpretation" />
+          <reference value="http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -3102,7 +3102,7 @@
         </extension>
         <strength value="required" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/ncdhc-observation-interpretation" />
+          <reference value="http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation" />
         </valueSetReference>
       </binding>
     </element>

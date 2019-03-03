@@ -2,6 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ncdhc-consent-category",
   "text": {
+	"status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NCDHC Consent Category Type</h2><div><p>NCDHC Consent Category Type</p>\r\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ncdhc-consent-category.html\"><code>http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-consent-category</code></a></li></ul></div>"
   },
   "url": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-consent-category",
