@@ -10,7 +10,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n        <p>Feeding Status type applicable at the newborn birth</p>\n    </div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n        <p>Feeding Status type applicable to the newborn at birth</p>\n    </div>"
   },
   "extension": [
     {
