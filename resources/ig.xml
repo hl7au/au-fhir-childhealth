@@ -308,13 +308,13 @@
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-audit-event"/>
 			</sourceReference>
-		</resource>-->			
+		</resource>			
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="CapabilityStatement/ncdhc-metadata"/>
 			</sourceReference>
-		</resource>
+		</resource>-->
 		<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -408,7 +408,7 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="ValueSet/ncdhc-screen-status"/>
+				<reference value="ValueSet/ncdhc-observation-completion-status"/>
 			</sourceReference>
 		</resource>		
 		<resource>
@@ -416,14 +416,39 @@
 			<sourceReference>
 				<reference value="ValueSet/ncdhc-consent-category"/>
 			</sourceReference>
-		</resource>		
+		</resource>	
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/newborn-feeding-status"/>
+			</sourceReference>
+		</resource>	
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-labour-initiation-type"/>
+			</sourceReference>
+		</resource>	
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-type-of-birth"/>
+			</sourceReference>
+		</resource>			
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="CodeSystem/ncdhc-consent-category"/>
 			</sourceReference>
 		</resource>	
-<resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-vision-chart-types"/>
+			</sourceReference>
+		</resource>
+		
+		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/ncdhc-document-type"/>
@@ -434,17 +459,18 @@
 			<sourceReference>
 				<reference value="CodeSystem/ncdhc-document-type"/>
 			</sourceReference>
-		</resource>			
+		</resource>		
+<!-- Example Section -->		
 		<resource>
 			<example value="true"/>
 			<sourceReference>
-				<reference value="Patient/3db74777-fd3d-4d3b-92ec-d405977a11a5"/>
+				<reference value="Patient/example-mother"/>
 			</sourceReference>
 		</resource>	
 		<resource>
 			<example value="true"/>
 			<sourceReference>
-				<reference value="Patient/dd78393f-37ca-4738-81d6-e9595b2e5d0k"/>
+				<reference value="Patient/example-newborn"/>
 			</sourceReference>
 		</resource>	
 		<resource>

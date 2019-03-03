@@ -271,10 +271,6 @@
       "base": "StructureDefinition-ncdhc-consent.html",
       "defns": "StructureDefinition-ncdhc-consent-definitions.html"
     },
-    "CapabilityStatement/ncdhc-metadata": {
-      "source": "CapabilityStatement.json",
-      "base": "CapabilityStatement-ncdhc-metadata.html"
-    },
     "StructureDefinition/ncdhc-immunisation": {
       "base": "StructureDefinition-ncdhc-immunisation.html",
       "defns": "StructureDefinition-ncdhc-immunisation-definitions.html"
@@ -319,14 +315,26 @@
     "ValueSet/apgar-respiratory-effort-finding": {
       "base": "ValueSet-apgar-respiratory-effort-finding.html"
     },
+	"ValueSet/newborn-feeding-status": {      
+      "base": "ValueSet-newborn-feeding-status.html"
+    },
+	"ValueSet/ncdhc-labour-initiation-type": {      
+      "base": "ValueSet-ncdhc-labour-initiation-type.html"
+    },
+	"ValueSet/ncdhc-type-of-birth": {      
+      "base": "ValueSet-ncdhc-type-of-birth.html"
+    },
+	"ValueSet/ncdhc-vision-chart-types": {      
+      "base": "ValueSet-ncdhc-vision-chart-types.html"
+    },
     "ValueSet/ncdhc-observation-interpretation": {      
       "base": "ValueSet-ncdhc-observation-interpretation.html"
     },
     "CodeSystem/ncdhc-observation-interpretation": {      
       "base": "CodeSystem-ncdhc-observation-interpretation.html"
     },
-    "ValueSet/ncdhc-screen-status": {      
-      "base": "ValueSet-ncdhc-screen-status.html"
+    "ValueSet/ncdhc-observation-completion-status": {      
+      "base": "ValueSet-ncdhc-observation-completion-status.html"
     },
     "ValueSet/ncdhc-consent-category": {      
       "base": "ValueSet-ncdhc-consent-category.html"
@@ -340,89 +348,23 @@
     "CodeSystem/ncdhc-document-type": {      
       "base": "CodeSystem-ncdhc-document-type.html"
     },
-    "Patient/3db74777-fd3d-4d3b-92ec-d405977a11a5": {
-      "source": "Patient-newborn.json",
-      "base": "Patient-newborn.html"
+	"ValueSet/ncdhc-document-class": {      
+      "base": "ValueSet-ncdhc-document-class.html"
     },
-    "Patient/dd78393f-37ca-4738-81d6-e9595b2e5d0k": {
-      "source": "Patient-mother.json",
-      "base": "Patient-mother.html"
+    "CodeSystem/ncdhc-document-class": {      
+      "base": "CodeSystem-ncdhc-document-class.html"
     },
-    "Bundle/18900024-070c-4141-8109-9d9fa34dd24b": {
-      "source": "Bundle-document-birthHI-response-payload.json",
-      "base": "Bundle-document-birthHI-response-payload.html"
+    "Patient/example-newborn": {
+      "source": "patient-example-newborn.json",
+      "base": "Patient-example-newborn.html"
     },
+    "Patient/example-mother": {
+      "source": "patient-example-mother.json",
+      "base": "Patient-example-mother.html"
+    },    
     "Bundle/28900024-070c-4141-8109-9d9fa34dd24b": {
       "source": "Bundle-document-healthcheck-response-payload.json",
       "base": "Bundle-document-healthcheck-response-payload.html"
-    },
-	"Bundle/48900024-070c-4141-8109-9d9fa34dd24b": {
-      "source": "Bundle-document-hearing-screen-payload.json",
-      "base": "Bundle-document-hearing-screen-payload.html"
-    },
-    "Observation/541a72a8-df75-4484-ac89-ac4923f03b81": {
-      "source": "Observation-lengthOfGestation.json",
-      "base": "Observation-lengthOfGestation.html"
-    },
-    "Observation/541a72a8-df75-4484-ac89-ac4923f03b82": {
-      "source": "Observation-birthAbnormalities.json",
-      "base": "Observation-birthAbnormalities.html"
-    },
-    "Observation/541a72a8-df75-4484-ac89-ac4923f03b61": {
-      "source": "Observation-labour-induced.json",
-      "base": "Observation-labour-induced.html"
-    },
-    "Observation/541a72a8-df75-4484-ac89-ac4923f03b62": {
-      "source": "Observation-method-of-delivery.json",
-      "base": "Observation-method-of-delivery.html"
-    },
-    "Observation/541a72a8-df75-4484-ac89-ac4923f03b41": {
-      "source": "Observation-birth-weight.json",
-      "base": "Observation-birth-weight.html"
-    },
-    "Observation/741a72a8-df75-4484-ac89-ac4923f03b42": {
-      "source": "Observation-body-weight.json",
-      "base": "Observation-body-weight.html"
-    },
-    "Observation/541a72a8-df75-4484-ac89-ac4923f03b42": {
-      "source": "Observation-birth-length.json",
-      "base": "Observation-birth-length.html"
-    },
-    "Observation/541a72a8-df75-4484-ac89-ac4923f03b43": {
-      "source": "Observation-head-circumference.json",
-      "base": "Observation-head-circumference.html"
-    },
-    "Observation/541a72a8-df75-4484-ac89-ac4923f03b51": {
-      "source": "Observation-pregnancy-complications.json",
-      "base": "Observation-pregnancy-complications.html"
-    },
-    "Observation/541a72a8-df75-4484-ac89-ac4923f03b52": {
-      "source": "Observation-birth-complications.json",
-      "base": "Observation-birth-complications.html"
-    },
-    "MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b10": {
-      "source": "MedicationStatement-vitamink1.json",
-      "base": "MedicationStatement-vitamink1.html"
-    },
-    "MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b11": {
-      "source": "MedicationStatement-vitamink2.json",
-      "base": "MedicationStatement-vitamink2.html"
-    },
-    "MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b12": {
-      "source": "MedicationStatement-vitamink3.json",
-      "base": "MedicationStatement-vitamink3.html"
-    },
-    "Immunization/241a72a8-df75-4484-ac89-ac4923f03b11": {
-      "source": "Immunization-hepb-immunisation.json",
-      "base": "Immunization-hepb-immunisation.html"
-    },
-    "Immunization/241a72a8-df75-4484-ac89-ac4923f03b10": {
-      "source": "Immunization-hepb-immunoglobin.json",
-      "base": "Immunization-hepb-immunoglobin.html"
-    },
-    "Composition/180f219f-97a8-486d-99d9-ed631fe4fc57": {
-      "source": "Bundle-document-birthHI-response-payload.json",
-      "base": "Bundle-document-birthHI-response-payload.html"
     }
   }
 }
