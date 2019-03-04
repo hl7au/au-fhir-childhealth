@@ -336,6 +336,9 @@
     "ValueSet/ncdhc-observation-completion-status": {      
       "base": "ValueSet-ncdhc-observation-completion-status.html"
     },
+	"ValueSet/ncdhc-condition-code": {      
+      "base": "ValueSet-condition-code.html"
+    },
     "ValueSet/ncdhc-consent-category": {      
       "base": "ValueSet-ncdhc-consent-category.html"
     },

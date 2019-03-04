@@ -459,7 +459,25 @@
 			<sourceReference>
 				<reference value="CodeSystem/ncdhc-document-type"/>
 			</sourceReference>
+		</resource>	
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-document-class"/>
+			</sourceReference>
 		</resource>		
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-document-class"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-condition-code"/>
+			</sourceReference>
+		</resource>			
 <!-- Example Section -->		
 		<resource>
 			<example value="true"/>
