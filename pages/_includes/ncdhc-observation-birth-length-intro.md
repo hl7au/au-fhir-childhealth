@@ -1,6 +1,6 @@
 **NCDHC Birth Length Vital Sign Observation Profile**
 
-This profile sets minimum expectations for the [Observation] resource to record, search and fetch Birth Legth associated with the baby patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. The profile is at draft stage and under review by the Child Health Working Group. 
+This profile sets minimum expectations for the [Observation] resource to record, search and fetch Birth Length associated with the baby patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. The profile is at draft stage and under review by the Child Health Working Group. 
 
 **Example Usage Scenarios:**
 
@@ -8,7 +8,7 @@ The following are example usage scenarios for the National Child Digital Health 
 profile:
 
 -   Query for Birth Length of the baby patient
--   Record Birth Legth of the baby patient
+-   Record Birth Length of the baby patient
 
 ##### Mandatory Data Elements and Terminology
 

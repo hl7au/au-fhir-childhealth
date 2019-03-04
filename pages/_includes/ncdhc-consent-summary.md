@@ -12,5 +12,5 @@ This profile contains the following variations from [Consent](http://hl7.org/fhi
    
 1. <span style='color:green'>  policyRule </span> is yet to be decided.
   
-[(NCDHC Patient)]: http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient
-[NCDHC Consent Category]: http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-consent-category
+[(NCDHC Patient)]: (http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient)
+[NCDHC Consent Category]: (http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-consent-category)

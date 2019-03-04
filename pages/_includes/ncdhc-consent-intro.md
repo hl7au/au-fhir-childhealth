@@ -79,8 +79,8 @@ The table below provides the details of the codes applicable to NCDHC system:
 
 #### Examples
 
-- [Consent from Expected Mother to have a record created when the child is born](Consent-expected-mother-for-child.html)
-- [Child Consent](Consent-child.html)
+To be added
+
 
 [Consent]: http://hl7.org/fhir/STU3/consent.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
