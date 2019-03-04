@@ -1,9 +1,9 @@
 {
-  "resourceClass": "CodeSystem",
+  "resourceType": "CodeSystem",
   "id": "ncdhc-document-class",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NCDHC Document Class</h2><div><p>NCDHC Document classs  that are applicable to all documents interactions with Data Hub.</p>\r\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NCDHC Document Class</h2><div><p>NCDHC Document class  that are applicable to all documents interactions with Data Hub.</p>\r\n</div>"
   },
   "url": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class",
   "version": "1.0.0",
