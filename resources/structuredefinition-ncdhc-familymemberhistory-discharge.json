@@ -1961,7 +1961,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSetUri": "http://hl7.org/fhir/ValueSet/condition-snomed-code"
+          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-condition-code"
         },
         "mapping": [
           {
@@ -2294,7 +2294,7 @@
         "sliceName": "snomedCoding",
         "binding": {
           "strength": "required",
-          "valueSetUri": "http://hl7.org/fhir/ValueSet/condition-snomed-code"
+          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-condition-code"
         }
       }
     ]
