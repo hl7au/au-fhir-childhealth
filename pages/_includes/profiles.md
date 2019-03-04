@@ -34,7 +34,7 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Medication Administered](StructureDefinition-ncdhc-medicationstatement-vitamink.html) - MedicationStatement profile to record medication given to the newborn at birth
 
 ## Immunization Profiles
-* [NCDHC Immunisation](StructureDefinition-ncdhc-immunization.html) - Immunization profile to record HepB Immunoglobin & HepB Immunisation details given to the newborn at birth
+* [NCDHC Immunisation](StructureDefinition-ncdhc-immunisation.html) - Immunization profile to record HepB Immunoglobin & HepB Immunisation details given to the newborn at birth
 
 ## Encounter Profiles
 * [NCDHC Discharge Details](StructureDefinition-ncdhc-encounter-discharge-details.html) - Encounter profile to record discharge administrative details (e.g.: date and time of discharge, name of the service or facility the baby was discharged from etc.)

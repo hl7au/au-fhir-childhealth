@@ -94,16 +94,6 @@
         "fixedCode": "N"
       },
       {
-        "id": "Composition.attester.mode",
-        "path": "Composition.attester.mode",
-        "type": [
-          {
-            "code": "code",
-            "profile": "official"
-          }
-        ]
-      },
-      {
         "id": "Composition.attester.party",
         "path": "Composition.attester.party",
         "type": [
