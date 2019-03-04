@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-audit-event",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-audit-event",
+  "version": "v1.0.0",
+  "name": "NCDHC AuditEvent Profile",
+  "title": "NCDHC AuditEvent",
+  "status": "draft",
+  "date": "2019-03-01",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "Captures Audit Details of the different operations performed in Data Hub",
+  "purpose": "To capture Audit Details of the different operations performed in Data Hub",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "AuditEvent",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/AuditEvent",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "AuditEvent.type",
+        "path": "AuditEvent.type",
+        "mustSupport": true
+      },
+      {
+        "id": "AuditEvent.action",
+        "path": "AuditEvent.action",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "AuditEvent.outcome",
+        "path": "AuditEvent.outcome",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "AuditEvent.source",
+        "path": "AuditEvent.source",
+        "mustSupport": true
+      },
+      {
+        "id": "AuditEvent.entity",
+        "path": "AuditEvent.entity",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}
