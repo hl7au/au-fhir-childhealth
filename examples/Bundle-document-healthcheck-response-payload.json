@@ -456,13 +456,20 @@
         "code": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "56056-5"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "27113001"
-            }
+        "system": "http://loinc.org",
+        "code": "29463-7",
+        "display": "Body Weight"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "3141-9",
+        "display": "Body weight Measured"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "27113001",
+        "display": "Body weight"
+      }
           ],
           "text": "Body Weight"
         },
