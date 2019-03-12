@@ -461,9 +461,8 @@
         "display": "Body Weight"
       },
       {
-        "system": "http://loinc.org",
-        "code": "3141-9",
-        "display": "Body weight Measured"
+        "system": "http://snomed.info/sct",
+        "code": "364589006"        
       },
       {
         "system": "http://snomed.info/sct",
