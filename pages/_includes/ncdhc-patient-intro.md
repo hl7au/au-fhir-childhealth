@@ -20,7 +20,7 @@ The profile covers up Baby Patient and Mother Patient instances in the NCDHC con
    * Baby's Name <span style='color:green'>name</span> should be provided in the Patient instance. This includes the following details:
 		*  <span style='color:green'>name.family</span> to capture Last Name.
 		*  <span style='color:green'>name.given</span> to capture First Name.
-   * Baby's Sex <span style='color:green'>gender</span> to capture the biological sex of the baby identified at birth. This element is mandatory for a Baby Patient instance. 
+   * Baby's Sex <span style='color:green'>gender</span> to capture the administrative gender of the baby identified at birth. This element is mandatory for a Baby Patient instance. 
    * Baby's Date of Birth <span style='color:green'>birthDate</span> and Time of Birth should be included. Time of Birth can be captured using the <span style='color:green'>patient-birthTime</span> extension. 
    * Address <span style='color:green'>address</span> may be included (if provided) to capture the Baby's address. This may include the following details:
 		*  multiple <span style='color:green'>address.line</span> to capture street name, number, PO box etc.
