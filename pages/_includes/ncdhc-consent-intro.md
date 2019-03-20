@@ -32,50 +32,6 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 * Server may provide the reference to the relevant Health Interaction instances using the Consent.data element. 'related ' SHALL be used as Consent.data.meaning.  
 
 
-##### Consent Category
----
-<table class="grid">  
-  <tbody>
-    <tr>
-      <td>Defining URL:</td>  
-	  <td>http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-consent-category</td>		  
-    </tr>
-	<tr>
-      <td>Name:</td> 
-	  <td>NCDHC Consent Category Codes</td>  	  
-    </tr>	
-  </tbody>
-</table>
-
-The table below provides the details of the codes applicable to NCDHC system:
-<table class="grid">
-  <thead>
-    <tr>
-      <th>Code</th>
-      <th>System</th>
-      <th>Display</th>
-      <th>Definition</th>	  
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>NBCR</td>
-      <td>http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-consent-category</td>
-      <td>Newborn Record Create Consent</td>
-      <td>Consent for the creation of a Child Health record on the birth of a child. This will be held against the person having the parental responsibility of the child at birth, typically the mother</td>	  
-    </tr>
-	<tr>
-      <td>CROPT</td>
-      <td>http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-consent-category</td>
-      <td>Child Digital Health Record Operation Consent</td>
-      <td>Consent for a child to have a operative child digital health record</td>	  
-    </tr>
-  </tbody>
-</table>
-
----
-
-
 
 #### Examples
 
