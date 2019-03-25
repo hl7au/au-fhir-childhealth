@@ -7,7 +7,7 @@
 	<name value="Child Health Implementation Guide"/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<date value="2018-08-06"/> 
+	<date value="2018-08-06"/>
 	<publisher value="National Children's Digital Health Collaborative (NCDHC)"/>
 	<contact>
 		<name value="HL7 Australia Child Health Working Group"/>
@@ -20,7 +20,8 @@
 	<fhirVersion value="3.0.1"/>
 	<package>
 		<name value="base"/>
-		<description value="Guidance on the implementation of child health related content using FHIR in an Australian usage context"/>		
+		<description value="Guidance on the implementation of child health related content using FHIR in an Australian usage context"/>
+<!-- Base Profiles -->
 		<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -33,10 +34,18 @@
 				<reference value="StructureDefinition/ncdhc-observation-base"/>
 			</sourceReference>
 		</resource>
+		<!-- Patient Profile -->
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-patient"/>
+			</sourceReference>
+		</resource>
+		<!-- Observation Profiles -->
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-birth-complication"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -54,7 +63,7 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-encounter-discharge-details"/>
+				<reference value="StructureDefinition/ncdhc-encounter"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -72,21 +81,15 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-birth-complication"/>
+				<reference value="StructureDefinition/ncdhc-observation-pregnancy-complication"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-pregnancy-complication"/>
-			</sourceReference>
-		</resource>	
-		<resource>
-			<example value="false"/>
-			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-method-of-delivery"/>
 			</sourceReference>
-		</resource>	
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -108,6 +111,18 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-bodyweight"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-bodyheight"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bodyweight"/>
 			</sourceReference>
 		</resource>
@@ -122,13 +137,13 @@
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-vitalsign-headcircum"/>
 			</sourceReference>
-		</resource>	
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bmi"/>
 			</sourceReference>
-		</resource>			
+		</resource>
 		<!--<resource>
 		  <example value="false"/>
 		  <sourceReference>
@@ -144,33 +159,22 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-familymemberhistory-discharge"/>
+				<reference value="StructureDefinition/ncdhc-questionnaire-familyhistory"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-composition-bloodspot-screen"/>
+				<reference value="StructureDefinition/ncdhc-observation-riskfactor"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-composition-hearing-screen"/>
+				<reference value="StructureDefinition/ncdhc-familymemberhistory"/>
 			</sourceReference>
 		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-composition-exam"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-composition-health-check-assessment"/>
-			</sourceReference>
-		</resource>
+
 		<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -212,7 +216,7 @@
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-hearing-check"/>
 			</sourceReference>
-		</resource>		
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -308,7 +312,7 @@
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-audit-event"/>
 			</sourceReference>
-		</resource>			
+		</resource>
 		<!--<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -319,6 +323,43 @@
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-consent"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-bloodspot-screen"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-hearing-screen"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-exam"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-health-check-assessment"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-familyhistory"/>
+			</sourceReference>
+		</resource>
+		<!-- ValueSet and CodeSystems -->
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-encounter-type"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -392,80 +433,80 @@
 			<sourceReference>
 				<reference value="ValueSet/apgar-muscle-tone-finding"/>
 			</sourceReference>
-		</resource>		
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/ncdhc-observation-interpretation"/>
 			</sourceReference>
-		</resource>		
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="CodeSystem/ncdhc-observation-interpretation"/>
 			</sourceReference>
-		</resource>	
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/ncdhc-observation-completion-status"/>
 			</sourceReference>
-		</resource>		
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/ncdhc-consent-category"/>
 			</sourceReference>
-		</resource>	
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/newborn-feeding-status"/>
 			</sourceReference>
-		</resource>	
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/ncdhc-labour-initiation-type"/>
 			</sourceReference>
-		</resource>	
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/ncdhc-type-of-birth"/>
 			</sourceReference>
-		</resource>			
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="CodeSystem/ncdhc-consent-category"/>
 			</sourceReference>
-		</resource>	
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/ncdhc-vision-chart-types"/>
 			</sourceReference>
 		</resource>
-		
+
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/ncdhc-document-type"/>
 			</sourceReference>
-		</resource>		
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="CodeSystem/ncdhc-document-type"/>
 			</sourceReference>
-		</resource>	
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/ncdhc-document-class"/>
 			</sourceReference>
-		</resource>		
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -477,32 +518,32 @@
 			<sourceReference>
 				<reference value="ValueSet/ncdhc-condition-code"/>
 			</sourceReference>
-		</resource>			
-<!-- Example Section -->		
+		</resource>
+<!-- Example Section -->
 		<resource>
 			<example value="true"/>
 			<sourceReference>
 				<reference value="Patient/example-mother"/>
 			</sourceReference>
-		</resource>	
+		</resource>
 		<resource>
 			<example value="true"/>
 			<sourceReference>
 				<reference value="Patient/example-newborn"/>
 			</sourceReference>
-		</resource>	
+		</resource>
 		<resource>
 			<example value="true"/>
 			<sourceReference>
 				<reference value="Bundle/28900024-070c-4141-8109-9d9fa34dd24b"/>
 			</sourceReference>
-		</resource>		
+		</resource>
 		<!--<resource>
 			<example value="true"/>
 			<sourceReference>
 				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b81"/>
 			</sourceReference>
-		</resource>		
+		</resource>
 		<resource>
 			<example value="true"/>
 			<sourceReference>
@@ -592,7 +633,7 @@
 			<sourceReference>
 				<reference value="Bundle/18900024-070c-4141-8109-9d9fa34dd24b"/>
 			</sourceReference>
-		</resource>		
+		</resource>
 		<resource>
 			<example value="true"/>
 			<sourceReference>
