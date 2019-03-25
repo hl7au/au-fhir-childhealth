@@ -131,7 +131,11 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "identifier.type"
+              "path": "identifier.type.coding.code"
+            },
+            {
+              "type": "value",
+              "path": "identifier.type.coding.system"
             }
           ],
           "rules": "open"

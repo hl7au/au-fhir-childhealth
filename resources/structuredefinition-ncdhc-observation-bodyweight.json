@@ -1,0 +1,143 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-bodyweight",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bodyweight",
+  "version": "v1.0.0",
+  "name": "NCDHC Body Weight Observation Profile",
+  "title": "NCDHC Body Weight Observation",
+  "status": "draft",
+  "date": "2019-03-22",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "Weight of baby recorded at birth or body weight recored during assessment",
+  "purpose": "To allow delivery by vendors in the POC timelines, an additional tactical profile for vital signs is built that only requires SCT – this will only be enabled on a vendor by vendor basis for the pilot with vendors encouraged to use the FHIR conformant profile unless not practical for the POC . On receipt of a measurement using this profile the data hub will enrich the message with the respective LOINC code to ensure outbound messaging adheres to the FHIR conformant profiles. The use of this non Conformant profile will be re-visited at the end of the POC.",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Required body weight SNOMED CT code"
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "Observation.code.coding:BirthWeightSNOMEDCTAUCode",
+        "path": "Observation.code.coding",
+        "sliceName": "BirthWeightSNOMEDCTAUCode",
+        "short": "SNOMED CT code to represent Birth Weight",
+        "max": "1",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "364589006"
+        }
+      },
+      {
+        "id": "Observation.code.coding:BirthWeightSNOMEDCTAUCode.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:BirthWeightSNOMEDCTAUCode.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "364589006"
+      },
+      {
+        "id": "Observation.code.coding:BodyWeightSNOMEDCTAUCode",
+        "path": "Observation.code.coding",
+        "sliceName": "BodyWeightSNOMEDCTAUCode",
+        "short": "SNOMED CT code to represent Body Weight",
+        "max": "1",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "27113001"
+        }
+      },
+      {
+        "id": "Observation.code.coding:BodyWeightSNOMEDCTAUCode.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:BodyWeightSNOMEDCTAUCode.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "27113001"
+      },
+      {
+        "id": "Observation.effectiveDateTime:effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "sliceName": "effectiveDateTime",
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.valueQuantity",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.value",
+        "path": "Observation.valueQuantity.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Observation.valueQuantity.unit",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.system",
+        "path": "Observation.valueQuantity.system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.valueQuantity.code",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "description": "Common UCUM units for Body Weight",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/ucum-bodyweight"
+          }
+        }
+      },
+      {
+        "id": "Observation.dataAbsentReason",
+        "path": "Observation.dataAbsentReason",
+        "mustSupport": true
+      }
+    ]
+  }
+}

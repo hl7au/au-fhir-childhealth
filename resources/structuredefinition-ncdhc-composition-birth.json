@@ -24,7 +24,7 @@
     }
   ],
   "description": "Composition profile for NCDHC Newborn Delivery Health Interaction",
-  "purpose": "The purpose is to captuere all the relevant details associated to the Newborn Delivery Event.",
+  "purpose": "The purpose is to capture all the relevant details associated to the Newborn Delivery Event.",
   "fhirVersion": "3.0.1",
   "mapping": [
     {
@@ -46,7 +46,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Composition",
-  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-composition",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-base",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -89,13 +89,9 @@
         "fixedString": "Newborn Delivery Health Interaction"
       },
       {
-        "id": "Composition.confidentiality",
-        "path": "Composition.confidentiality",
-        "fixedCode": "N"
-      },
-      {
         "id": "Composition.attester.party",
         "path": "Composition.attester.party",
+        "short": "The Practitioner and/or Organization who attested the composition",
         "type": [
           {
             "code": "Reference",
@@ -144,16 +140,6 @@
           ],
           "rules": "closed"
         }
-      },
-      {
-        "id": "Composition.section.entry",
-        "path": "Composition.section.entry",
-        "max": "0"
-      },
-      {
-        "id": "Composition.section.section",
-        "path": "Composition.section.section",
-        "max": "0"
       },
       {
         "id": "Composition.section:estimatedGestation",
@@ -291,11 +277,11 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "exists",
-              "path": "reference"
+              "type": "profile",
+              "path": "entry.item.resolve()"
             }
           ],
-          "rules": "open"
+          "rules": "closed"
         },
         "min": 2,
         "max": "3"
@@ -406,56 +392,6 @@
         "max": "0"
       },
       {
-        "id": "Composition.section:immunisation",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "Section"
-          }
-        ],
-        "path": "Composition.section",
-        "sliceName": "immunisation",
-        "short": "Represents 'Immunisation' section for this document.",
-        "max": "1"
-      },
-      {
-        "id": "Composition.section:immunisation.title",
-        "path": "Composition.section.title",
-        "fixedString": "Immunisation"
-      },
-      {
-        "id": "Composition.section:immunisation.code",
-        "path": "Composition.section.code",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "59785-6"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Composition.section:immunisation.entry",
-        "path": "Composition.section.entry",
-        "short": "Section to represent Immunisations administered to the newborn.  The allowed typs are defined at :  http://hl7.org/fhir/ValueSet/newborn-vaccine-code. If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
-        "max": "2",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-immunisation",
-            "aggregation": [
-              "bundled"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Composition.section:immunisation.section",
-        "path": "Composition.section.section",
-        "max": "0"
-      },
-      {
         "id": "Composition.section:vitalSignsAndMeasurements",
         "extension": [
           {
@@ -491,11 +427,11 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "exists",
-              "path": "reference"
+              "type": "profile",
+              "path": "entry.item.resolve()"
             }
           ],
-          "rules": "open"
+          "rules": "closed"
         },
         "short": "Section to represent Vital Sings measured on the newborn.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
         "max": "3"
@@ -510,6 +446,13 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bodyweight",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bodyweight",
             "aggregation": [
               "bundled"
             ]
@@ -589,11 +532,11 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "exists",
-              "path": "reference"
+              "type": "profile",
+              "path": "entry.item.resolve()"
             }
           ],
-          "rules": "open"
+          "rules": "closed"
         },
         "short": "Section to represent Maternal Morbidity details which includes Birth Complications and Pregnancy Complications.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided."
       },
@@ -668,11 +611,11 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "exists",
-              "path": "reference"
+              "type": "profile",
+              "path": "entry.item.resolve()"
             }
           ],
-          "rules": "open"
+          "rules": "closed"
         },
         "short": "Section to represent labour and delivery details which includes  capturing details on labour induced and method of delivery.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
         "max": "2"

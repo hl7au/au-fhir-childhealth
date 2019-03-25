@@ -70,6 +70,17 @@
         ]
       },
       {
+        "id": "Composition.encounter",
+        "path": "Composition.encounter",
+        "short": "Provides the details on venue, organization and person who is clinically responsible for the encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-encounter"
+          }
+        ]
+      },
+      {
         "id": "Composition.author",
         "path": "Composition.author",
         "type": [
@@ -91,63 +102,34 @@
       {
         "id": "Composition.attester",
         "path": "Composition.attester",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "party.identifier.type"
-            }
-          ],
-          "rules": "open"
-        },
         "min": 1
       },
       {
-        "id": "Composition.attester:HealthcareProfessional",
-        "path": "Composition.attester",
-        "sliceName": "HealthcareProfessional",
-        "short": "A healthcare professional who has attested to the accuracy of the composition/document."
-      },
-      {
-        "id": "Composition.attester:HealthcareProfessional.mode",
-        "path": "Composition.attester.mode",
-        "max": "1",
-        "fixedCode": "professional"
-      },
-      {
-        "id": "Composition.attester:HealthcareProfessional.party",
+        "id": "Composition.attester.party",
         "path": "Composition.attester.party",
+        "short": "An organisation/practitioner/patient (consumer document) who has attested to the accuracy of the composition/document.",
+        "min": 1,
         "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient",
+            "aggregation": [
+              "bundled"
+            ]
+          },
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner",
             "aggregation": [
               "bundled"
             ]
-          }
-        ]
-      },
-      {
-        "id": "Composition.attester:Organisation",
-        "path": "Composition.attester",
-        "sliceName": "Organisation",
-        "short": "An organisation who has attested to the accuracy of the composition/document.",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Composition.attester:Organisation.mode",
-        "path": "Composition.attester.mode",
-        "max": "1",
-        "fixedCode": "professional"
-      },
-      {
-        "id": "Composition.attester:Organisation.party",
-        "path": "Composition.attester.party",
-        "type": [
+          },
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation",
+            "aggregation": [
+              "bundled"
+            ]
           }
         ]
       }

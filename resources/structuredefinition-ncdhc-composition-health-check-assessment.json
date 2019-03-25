@@ -14,7 +14,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Composition",
-  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-composition",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-base",
   "derivation": "constraint",
   "differential": {
     "element": [

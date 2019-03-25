@@ -12,7 +12,7 @@
   "purpose": "To define NCDHC base profile",
   "fhirVersion": "3.0.1",
   "kind": "resource",
-  "abstract": false,
+  "abstract": true,
   "type": "Observation",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation": "constraint",
@@ -89,7 +89,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
           }
         ]
       },
@@ -111,7 +111,7 @@
         "id": "Observation.performer:Organisation",
         "path": "Observation.performer",
         "sliceName": "Organisation",
-        "short": "An organisation which captures the relevant details including the venue where examination/assessment took place.",
+        "short": "An organisation which captures the relevant details",
         "min": 1,
         "max": "1",
         "type": [

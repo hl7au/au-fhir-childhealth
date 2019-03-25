@@ -1,0 +1,145 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-composition-familyhistory",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-familyhistory",
+  "version": "v1.0.0",
+  "name": "NCDHC Newborn Family History Health Interaction Composition Profile",
+  "title": "NCDHC Newborn Family History Health Interaction",
+  "status": "draft",
+  "date": "2019-03-22",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "Composition profile to capture Family Hisotry and Risk Factor of a new born",
+  "purpose": "To capture Family Hisotry and Risk Factor of a new born",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition",
+        "path": "Composition",
+        "short": "NCDHC Newborn Family History Health Interaction"
+      },
+	  {
+        "id": "Composition.title",
+        "path": "Composition.title",
+        "fixedString": "Newborn Family History Health Interaction"
+      },
+      {
+        "id": "Composition.section",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "Composition.section:FamilyHistory",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "FamilyHistory"
+      },
+      {
+        "id": "Composition.section:FamilyHistory.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA26428-5"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:FamilyHistory.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:FamilyHistory.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "LA26428-5"
+      },
+      {
+        "id": "Composition.section:FamilyHistory.entry",
+        "path": "Composition.section.entry",
+        "short": "Details on the Family History Questionnaire and related responses",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-familymemberhistory",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:RiskFactors",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "RiskFactors"
+      },
+      {
+        "id": "Composition.section:RiskFactors.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LP73299-7"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:RiskFactors.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:RiskFactors.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "LP73299-7"
+      },
+      {
+        "id": "Composition.section:RiskFactors.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-riskfactor",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

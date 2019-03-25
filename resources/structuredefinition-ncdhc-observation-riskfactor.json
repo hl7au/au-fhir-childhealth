@@ -1,0 +1,35 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-riskfactor",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-riskfactor",
+  "version": "v1.0.0",
+  "name": "NCDHC Risk Factor Observation Profile",
+  "title": "NCDHC Risk Factor Observation",
+  "status": "draft",
+  "date": "2019-03-22",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "Record of risk factors associated with a Patient",
+  "purpose": "To record the potential risk factor on any observation.",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

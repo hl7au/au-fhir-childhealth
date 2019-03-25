@@ -14,7 +14,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-base",
   "derivation": "constraint",
   "snapshot": {
     "element": [
@@ -4985,7 +4985,7 @@
           "strength": "required",
           "description": "6M | 3M",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/vision-chart-types"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-vision-chart-types"
           }
         },
         "mapping": [
@@ -5521,7 +5521,7 @@
           "strength": "required",
           "description": "6M | 3M",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/vision-chart-types"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-vision-chart-types"
           }
         },
         "mapping": [
@@ -6063,7 +6063,7 @@
           "strength": "required",
           "description": "6M | 3M",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/vision-chart-types"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-vision-chart-types"
           }
         }
       },
@@ -6095,7 +6095,7 @@
           "strength": "required",
           "description": "6M | 3M",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/vision-chart-types"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-vision-chart-types"
           }
         }
       },
