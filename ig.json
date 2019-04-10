@@ -251,10 +251,7 @@
       "base": "StructureDefinition-ncdhc-observation-feeding-status.html",
       "defns": "StructureDefinition-ncdhc-observation-feeding-status-definitions.html"
     },
-    "StructureDefinition/ncdhc-observation-bloodspot-screen": {
-      "base": "StructureDefinition-ncdhc-observation-bloodspot-screen.html",
-      "defns": "StructureDefinition-ncdhc-observation-bloodspot-screen-definitions.html"
-    },
+    
     "StructureDefinition/ncdhc-observation-bloodspot-screen": {
       "base": "StructureDefinition-ncdhc-observation-bloodspot-screen.html",
       "defns": "StructureDefinition-ncdhc-observation-bloodspot-screen-definitions.html"
