@@ -107,7 +107,6 @@
       "base": "StructureDefinition-ncdhc-observation-apgar-score.html",
       "defns": "StructureDefinition-ncdhc-observation-apgar-score-definitions.html"
     },
-
     "StructureDefinition/ncdhc-observation-birth-complication": {
       "base": "StructureDefinition-ncdhc-observation-birth-complication.html",
       "defns": "StructureDefinition-ncdhc-observation-birth-complication-definitions.html"
@@ -256,6 +255,14 @@
       "base": "StructureDefinition-ncdhc-observation-bloodspot-screen.html",
       "defns": "StructureDefinition-ncdhc-observation-bloodspot-screen-definitions.html"
     },
+    "StructureDefinition/ncdhc-observation-bloodspot-screen": {
+      "base": "StructureDefinition-ncdhc-observation-bloodspot-screen.html",
+      "defns": "StructureDefinition-ncdhc-observation-bloodspot-screen-definitions.html"
+    },
+    "StructureDefinition/ncdhc-medicationstatement-vitamink": {
+      "base": "StructureDefinition-ncdhc-medicationstatement-vitamink.html",
+      "defns": "StructureDefinition-ncdhc-medicationstatement-vitamink-definitions.html"
+    },
     "StructureDefinition/ncdhc-encounter": {
       "base": "StructureDefinition-ncdhc-encounter.html",
       "defns": "StructureDefinition-ncdhc-encounter-definitions.html"
@@ -380,7 +387,10 @@
     },
     "ValueSet/ncdhc-encounter-type": {
         "base": "ValueSet-ncdhc-encounter-type.html"
-      },
+    },
+    "ValueSet/ncdhc-meds-ncdhc-route-admins-type": {
+        "base": "ValueSet-ncdhc-meds-ncdhc-route-admins-type.html"
+    },
     "Patient/example-newborn": {
       "source": "patient-example-newborn.json",
       "base": "Patient-example-newborn.html"
@@ -392,6 +402,10 @@
     "Bundle/28900024-070c-4141-8109-9d9fa34dd24b": {
       "source": "Bundle-document-healthcheck-response-payload.json",
       "base": "Bundle-document-healthcheck-response-payload.html"
+    },
+    "Bundle/27700024-070c-4141-8109-9d9fa34dd24b": {
+      "source": "birth-hi-example.json",
+      "base": "birth-hi-example.html"
     }
   }
 }
