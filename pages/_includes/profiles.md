@@ -32,8 +32,8 @@ These Profiles have been defined for this implementation guide.
 ## FamilyMemberHistory Profiles
 * [NCDHC Family History](StructureDefinition-ncdhc-familymemberhistory.html) - FamilyMemberHistory profile to record family history (e.g.: deafness)
 
-## Immunization Profiles
-* [NCDHC Immunisation](StructureDefinition-ncdhc-immunisation.html) - Immunization profile to record HepB Immunoglobin & HepB Immunisation details given to the newborn at birth
+## MedicationStatement Profiles
+* [NCDHC Medication Vitamin K](StructureDefinition-ncdhc-medicationstatement-vitamink.html) - MedicationStatement profile to record Vitamin K1 details administered to the newborn at birth
 
 ## Encounter Profiles
 * [NCDHC Encounter](StructureDefinition-ncdhc-encounter.html) - Encounter profile to record  administrative details (e.g.: date and time of discharge, name of the service or facility the baby was discharged from etc.)

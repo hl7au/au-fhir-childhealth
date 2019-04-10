@@ -7,9 +7,11 @@ This profile is used to represent Newborn Delivery Health Interaction as a FHIR 
 The following are example usage scenarios for the National Child Digital Health interactions
 profile:
 
--   Query for Newborn Delivery Health Interaction FHIR document
--   Upload Newborn Delivery Health Interaction FHIR document
+-   Upload Newborn Delivery Health Interaction FHIR document from jurisdiction system
 -   Update existing Newborn Delivery Health Interaction FHIR document
+-   Consumers to view the details of the birth delivery
+-   Non-Jurisdictional user to view birth details
+
 
 ##### Mandatory Data Elements and Terminology
 
@@ -19,201 +21,15 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Each Composition must have:**
 
 1.  a status  
-1.  a LOINC code to represent the document type. Optional Class code as per the table below
+1.  a LOINC code to represent the document type. Optional Class codes as required
 1.  a subject (Patient)
 1.  a date indicating when the details was taken
 1.	a author detailing who has recorded the details.
 1.  title of the document
-1.  applicable sections and subsections as mentioned in the table below
 
 **Profile specific implementation guidance:**
 
-* Client should fill-up all sections and subsections as defined in the profile. If data for any section/entries are not known or not available, then empty reason should be provided.
-
-
-##### Composition Type and Class Code
----
-
-<table class="grid">
-  <thead>
-    <tr>
-      <th>Type Code</th>
-      <th>Code System</th>
-      <th>Display</th>
-      <th>Class Code</th>
-	  <th>Code System</th>
-	  <th>Display</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>TBD</td>
-      <td>LOINC</td>
-      <td>TBD</td>
-      <td>TBD</td>
-	  <td>LOINC</td>
-	  <td>TBD</td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-##### Document Section and Entries
----
-
-<table class="grid">
-  <thead>
-    <tr>
-      <th>Section Title</th>
-	  <th>LOINC Code</th>
-		<th>Entry Title</th>
-		<th>Codes</th>			
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Gestational age at birth</td>
-      <td>72147-2</td>
-      <td>Estimated Gestation</td>
-      <td>SNOMED: 412726003</td>	 	  
-    </tr>
-	<tr>
-      <td>Congenital anomalies of the newborn</td>
-      <td>73780-9</td>
-      <td>Abnormalities noted at birth </td>
-      <td>SNOMED: 414025005</td>	    
-    </tr>
-	<tr>
-      <td>APGAR Scores</td>
-      <td>LP32192-4</td>
-      <td>-</td>
-      <td>-</td>	 
-    </tr>
-	<tr>
-      <td></td>
-      <td></td>
-      <td>APGAR score (1 Minute)</td>
-      <td>SNOMED: 169895004</td>	 
-    </tr>
-	<tr>
-      <td></td>
-      <td></td>
-      <td>APGAR score (5 Minutes)</td>
-      <td>SNOMED: 169909004</td>	 
-    </tr>
-	<tr>
-      <td></td>
-      <td></td>
-      <td>APGAR score (10 Minutes)</td>
-      <td>SNOMED: 169922007</td>	 
-    </tr>
-	<tr>
-      <td>Medication administered</td>
-      <td>29303-5</td>
-      <td>-</td>
-      <td>-</td>	 
-    </tr>
-	<tr>
-      <td></td>
-      <td></td>
-      <td>Vitamin K1</td>
-      <td>SNOMED: 66656000</td>	 
-    </tr>
-	<tr>
-      <td></td>
-      <td></td>
-      <td>Vitamin K2</td>
-      <td>SNOMED: 22606007</td>	 
-    </tr>
-	<tr>
-      <td></td>
-      <td></td>
-      <td>Vitamin K3</td>
-      <td>SNOMED: 69169004</td>	 
-    </tr>
-	<tr>
-      <td>Indication for Immunization</td>
-      <td>59785-6</td>
-      <td>-</td>
-      <td>-</td>	 
-    </tr>
-	<tr>
-      <td></td>
-      <td></td>
-      <td>HepB Immunoglobin</td>
-      <td>SNOMED: 116802006</td>	 
-    </tr>
-	<tr>
-      <td></td>
-      <td></td>
-      <td>HepB Immunisation</td>
-      <td>SNOMED: 170370000</td>	 
-    </tr>
-	<tr>
-      <td>Vital Signs</td>
-      <td>67795-5</td>
-      <td>-</td>
-      <td>-</td>	 
-    </tr>
-	<tr>
-      <td></td>
-      <td></td>
-      <td>Birth Weight</td>
-      <td><p>SNOMED: 364589006 </p><p>LOINC: 29463-7</p></td>	 
-    </tr>
-	<tr>
-      <td></td>
-      <td></td>
-      <td>Birth Length</td>
-      <td><p>SNOMED: 248334005</p><p>LOINC: 89269-5</p></td>	 
-    </tr>
-	<tr>
-      <td></td>
-      <td></td>
-      <td>Birth Head Circumference</td>
-      <td><p>SNOMED: 363812007</p><p>LOINC: 8287-5</p></td>	 
-    </tr>
-	<tr>
-      <td>Maternal Morbidity</td>
-      <td>73781-7</td>
-      <td>-</td>
-      <td>-</td>	 
-    </tr>
-	<tr>
-      <td></td>
-      <td></td>
-      <td>Pregnancy Complications</td>
-      <td>SNOMED: 609496007</td>	 
-    </tr>
-	<tr>
-      <td></td>
-      <td></td>
-      <td>Birth Complication</td>
-      <td>SNOMED: 198609003</td>	 
-    </tr>
-	<tr>
-      <td>Labour and Delivery</td>
-      <td>LA20786-2</td>
-      <td>-</td>
-      <td>-</td>	 
-    </tr>
-	<tr>
-      <td></td>
-      <td></td>
-      <td>Labour Initiation</td>
-      <td>SNOMED: 20236002</td>		   
-    </tr>
-	<tr>
-      <td></td>
-      <td></td>
-      <td>Type of Birth</td>
-      <td>SNOMED: 289258004</td>	  	  
-    </tr>    
-  </tbody>
-</table>
-
----
+* Client system should fill-up all sections and subsections as defined in the profile. If data for any section/entries are not known or not available, then empty reason should be provided.
 
 
 

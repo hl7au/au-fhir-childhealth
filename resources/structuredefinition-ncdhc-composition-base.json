@@ -95,11 +95,6 @@
         ]
       },
       {
-        "id": "Composition.confidentiality",
-        "path": "Composition.confidentiality",
-        "fixedCode": "N"
-      },
-      {
         "id": "Composition.attester",
         "path": "Composition.attester",
         "min": 1
