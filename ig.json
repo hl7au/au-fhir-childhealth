@@ -95,10 +95,14 @@
       "base": "StructureDefinition-ncdhc-observation-base.html",
       "defns": "StructureDefinition-ncdhc-observation-base-definitions.html"
     },
-	"StructureDefinition/ncdhc-patient": {
-      "base": "StructureDefinition-ncdhc-patient.html",
-      "defns": "StructureDefinition-ncdhc-patient-definitions.html"
+	"StructureDefinition/ncdhc-patient-baby": {
+      "base": "StructureDefinition-ncdhc-patient-baby.html",
+      "defns": "StructureDefinition-ncdhc-patient-baby-definitions.html"
     },
+    "StructureDefinition/ncdhc-patient-mother": {
+        "base": "StructureDefinition-ncdhc-patient-mother.html",
+        "defns": "StructureDefinition-ncdhc-patient-mother-definitions.html"
+      },
     "StructureDefinition/ncdhc-observation-pregnancy-complication": {
       "base": "StructureDefinition-ncdhc-observation-pregnancy-complication.html",
       "defns": "StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html"
@@ -251,7 +255,7 @@
       "base": "StructureDefinition-ncdhc-observation-feeding-status.html",
       "defns": "StructureDefinition-ncdhc-observation-feeding-status-definitions.html"
     },
-    
+
     "StructureDefinition/ncdhc-observation-bloodspot-screen": {
       "base": "StructureDefinition-ncdhc-observation-bloodspot-screen.html",
       "defns": "StructureDefinition-ncdhc-observation-bloodspot-screen-definitions.html"
@@ -403,6 +407,10 @@
     "Bundle/27700024-070c-4141-8109-9d9fa34dd24b": {
       "source": "birth-hi-example.json",
       "base": "birth-hi-example.html"
+    },
+    "Bundle/87700024-070c-4141-8109-9d9fa34dd24b": {
+      "source": "audit-event.json",
+      "base": "audit-event.html"
     }
   }
 }

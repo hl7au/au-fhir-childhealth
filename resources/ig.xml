@@ -38,7 +38,13 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-patient"/>
+				<reference value="StructureDefinition/ncdhc-patient-baby"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-patient-mother"/>
 			</sourceReference>
 		</resource>
 		<!-- Observation Profiles -->
@@ -548,6 +554,12 @@
 			<example value="true"/>
 			<sourceReference>
 				<reference value="Bundle/27700024-070c-4141-8109-9d9fa34dd24b"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Bundle/87700024-070c-4141-8109-9d9fa34dd24b"/>
 			</sourceReference>
 		</resource>
 	<!--	<resource>
