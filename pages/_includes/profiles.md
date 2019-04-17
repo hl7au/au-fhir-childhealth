@@ -3,7 +3,8 @@
 These Profiles have been defined for this implementation guide.
 
 ## Patient Profiles
-* [NCDHC Patient](StructureDefinition-ncdhc-patient.html) - Demographic details of the Patient.
+* [NCDHC Baby Patient](StructureDefinition-ncdhc-patient-baby.html) - Demographic details of the Baby Patient.
+* [NCDHC Mother Patient](StructureDefinition-ncdhc-patient-mother.html) - Demographic details of the Mother Patient.
 
 ## Consent Profiles
 * [NCDHC Consent Details](StructureDefinition-ncdhc-consent.html) - Consent profile to record access and use of patient record in NCDHC program.
