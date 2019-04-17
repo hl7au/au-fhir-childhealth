@@ -44,14 +44,15 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-baby"
           }
         ]
       },
       {
         "id": "FamilyMemberHistory.reasonReference",
         "path": "FamilyMemberHistory.reasonReference",
-        "min": 1
+        "min": 1,
+        "mustSupport": false
       },
       {
         "id": "FamilyMemberHistory.condition.code.coding",

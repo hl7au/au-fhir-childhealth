@@ -24,16 +24,6 @@
         "short": "NCDHC Type of Birth Observation Profile"
       },
       {
-        "id": "Observation.category.coding.system",
-        "path": "Observation.category.coding.system",
-        "fixedUri": "http://hl7.org/fhir/observation-category"
-      },
-      {
-        "id": "Observation.category.coding.code",
-        "path": "Observation.category.coding.code",
-        "fixedCode": "procedure"
-      },
-      {
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Code to represent Type of Birth",

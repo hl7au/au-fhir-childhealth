@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-vitalsign-headcircum",
-  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-headcircum",
+  "id": "ncdhc-observation-headcircum",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-headcircum",
   "version": "v1.0.0",
   "name": "NCDHC Head Circumference Vital Sign Profile",
   "title": "NCDHC Head Circumference Vital Sign",
@@ -13,7 +13,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-headcircum",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-base",
   "derivation": "constraint",
   "differential": {
     "element": [

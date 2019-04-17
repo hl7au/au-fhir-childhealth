@@ -75,7 +75,8 @@
       {
         "id": "Observation.code.coding:BirthWeightSNOMEDCTAUCode",
         "path": "Observation.code.coding",
-        "sliceName": "BirthWeightSNOMEDCTAUCode"
+        "sliceName": "BirthWeightSNOMEDCTAUCode",
+        "max": "1"
       },
       {
         "id": "Observation.code.coding:BirthWeightSNOMEDCTAUCode.system",
@@ -91,7 +92,6 @@
         "id": "Observation.code.coding:BodyWeightSNOMEDCTAUCode",
         "path": "Observation.code.coding",
         "sliceName": "BodyWeightSNOMEDCTAUCode",
-        "min": 1,
         "max": "1"
       },
       {
@@ -110,7 +110,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-baby"
           }
         ]
       },
