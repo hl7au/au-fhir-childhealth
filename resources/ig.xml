@@ -34,7 +34,7 @@
 				<reference value="StructureDefinition/ncdhc-observation-base"/>
 			</sourceReference>
 		</resource>
-		<!-- Patient Profile -->
+		<!-- Baby and Mother Patient Profile -->
 		<resource>
 			<example value="false"/>
 			<sourceReference>

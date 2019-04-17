@@ -13,4 +13,4 @@ This profile contains the following variations from [Consent](http://hl7.org/fhi
 1. <span style='color:green'>  policyRule </span> is yet to be decided.
   
 [(NCDHC Patient)]: StructureDefinition-ncdhc-patient-baby.html
-[NCDHC Consent Category]: (ncdhc-consent-category.html)
+[NCDHC Consent Category]: ValueSet-ncdhc-consent-category.html
