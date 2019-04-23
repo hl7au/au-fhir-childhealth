@@ -19,6 +19,11 @@
   "differential": {
     "element": [
       {
+        "id": "AuditEvent",
+        "path": "AuditEvent",
+        "short": "NCDHC Audit Event Profile"
+      },
+      {
         "id": "AuditEvent.type",
         "path": "AuditEvent.type",
         "mustSupport": true
