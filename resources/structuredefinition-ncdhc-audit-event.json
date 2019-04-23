@@ -19,13 +19,13 @@
   "differential": {
     "element": [
       {
-        "id": "AuditEvent",
-        "path": "AuditEvent",
-        "short": "NCDHC AuditEvent"
-      },
-	  {
         "id": "AuditEvent.type",
         "path": "AuditEvent.type",
+        "mustSupport": true
+      },
+      {
+        "id": "AuditEvent.subtype",
+        "path": "AuditEvent.subtype",
         "mustSupport": true
       },
       {
@@ -35,9 +35,41 @@
         "mustSupport": true
       },
       {
+        "id": "AuditEvent.recorded",
+        "path": "AuditEvent.recorded",
+        "short": "action date / time",
+        "mustSupport": true
+      },
+      {
         "id": "AuditEvent.outcome",
         "path": "AuditEvent.outcome",
         "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "AuditEvent.outcomeDesc",
+        "path": "AuditEvent.outcomeDesc",
+        "mustSupport": true
+      },
+      {
+        "id": "AuditEvent.agent",
+        "path": "AuditEvent.agent",
+        "short": "who (clinician and organisation or the patient)"
+      },
+      {
+        "id": "AuditEvent.agent.name",
+        "path": "AuditEvent.agent.name",
+        "mustSupport": true
+      },
+      {
+        "id": "AuditEvent.agent.location.display",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "AuditEvent.agent.location.display",
         "mustSupport": true
       },
       {
@@ -48,7 +80,6 @@
       {
         "id": "AuditEvent.entity",
         "path": "AuditEvent.entity",
-        "min": 1,
         "mustSupport": true
       }
     ]
