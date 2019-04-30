@@ -10,7 +10,25 @@
     "value": "urn:uuid:0d4151bd-1cbf-4d64-b04d-cd9187a4c6e0"
   },
   "type": "searchset",
-  "total": 3,
+  "total": 30,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://ncdhc.health.gov.au/fhir/v1.0.0/AuditEvent?patient=dd78393f-37ca-4738-81d6-d9595b2e5d0f&_format=application/fhir+json&search-id=40dfe4ea-04c0-4aa6-af05-d48ecf3b6b&_sort=date"
+    },
+    {
+      "relation": "first",
+      "url": "https://ncdhc.health.gov.au/fhir/v1.0.0/AuditEvent?patient=dd78393f-37ca-4738-81d6-d9595b2e5d0f&_format=application/fhir+json&search-id=40dfe4ea-04c0-4aa6-af05-d48ecf3b6b&_sort=date&search-offset=0&_count=2"
+    },
+    {
+      "relation": "next",
+      "url": "https://ncdhc.health.gov.au/fhir/v1.0.0/AuditEvent?patient=dd78393f-37ca-4738-81d6-d9595b2e5d0f&_format=application/fhir+json&search-id=40dfe4ea-04c0-4aa6-af05-d48ecf3b6b&_sort=date&search-offset=4&_count=2"
+    },
+    {
+      "relation": "last",
+      "url": "https://ncdhc.health.gov.au/fhir/v1.0.0/AuditEvent?patient=dd78393f-37ca-4738-81d6-d9595b2e5d0f&_format=application/fhir+json&search-id=40dfe4ea-04c0-4aa6-af05-d48ecf3b6b&_sort=date&search-offset=28&_count=2"
+    }
+  ],
   "entry": [
     {
       "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/AuditEvent/27700024-070c-4141-8109-9d9fa34dd24b",
@@ -49,7 +67,7 @@
               {
                 "coding": [
                   {
-                    "system": "http://dicom.nema.org/resources/ontology/DCM",
+                    "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-role-type",
                     "code": "RESPRSN",
                     "display": "responsible party"
                   }
@@ -116,7 +134,7 @@
               {
                 "coding": [
                   {
-                    "system": "http://dicom.nema.org/resources/ontology/DCM",
+                    "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-role-type",
                     "code": "PROV",
                     "display": "healthcare provider"
                   }
@@ -132,7 +150,7 @@
               {
                 "coding": [
                   {
-                    "system": "http://dicom.nema.org/resources/ontology/DCM",
+                    "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-role-type",
                     "code": "CST",
                     "display": "custodian"
                   }

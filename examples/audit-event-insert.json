@@ -1,0 +1,166 @@
+{
+  "resourceType": "AuditEvent",
+  "id": "47700024-070c-4141-8109-9d9fa34dd24b",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2019-04-19T00:00:00Z",
+    "profile": [
+      "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-audit-event"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b> Create Newborn Delivery by Dr. Joe Smith </b></p></div>"
+  },
+  "type": {
+    "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-type",
+    "code": "HI",
+    "display": "Health Interactions"
+  },
+  "subtype": [
+    {
+      "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-subtype",
+      "code": "NBBRTH",
+      "display": "Newborn Delivery"
+    }
+  ],
+  "action": "C",
+  "recorded": "2019-04-19T00:00:00Z",
+  "outcome": "0",
+  "agent": [
+    {
+      "role": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-role-type",
+              "code": "PAT",
+              "display": "patient"
+            }
+          ],
+          "text": "Patient"
+        }
+      ],
+      "reference": {
+        "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+      },
+      "userId": {
+        "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
+        "value": "8003608166690503"
+      },
+      "name": "Baby of Eva Bill",
+      "requestor": false
+    },
+    {
+      "role": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-role-type",
+              "code": "RESPRSN",
+              "display": "responsible party"
+            }
+          ],
+          "text": "Authorised Rep"
+        }
+      ],
+      "reference": {
+        "reference": "Patient/mm78393f-37ca-4738-81d6-d9595b2e5d0f"
+      },
+      "userId": {
+        "system": "http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0",
+        "value": "8003620000000000"
+      },
+      "name": "Eva Bill",
+      "requestor": false
+    },
+    {
+      "role": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-role-type",
+              "code": "PROV",
+              "display": "healthcare provider"
+            }
+          ],
+          "text": "Provider"
+        }
+      ],
+      "userId": {
+        "system": "http://ns.electronichealth.net.au/id/hi/hpii/1.0",
+        "value": "8003610833334085"
+      },
+      "name": "Dr. Joe Smith",
+      "requestor": true
+    },
+    {
+      "role": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-role-type",
+              "code": "CST",
+              "display": "custodian"
+            }
+          ],
+          "text": "Organisation"
+        }
+      ],
+      "userId": {
+        "system": "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
+        "value": "8003627500000328"
+      },
+      "name": "ABC Medical Centre",
+      "requestor": true
+    },
+	{
+      "role": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-role-type",
+              "code": "PRDCT",
+              "display": "product"
+            }
+          ],
+          "text": "Product"
+        }
+      ],
+      "userId": {
+        "system": "http://ns.electronichealth.net.au/id/pcehr/paid/1.0",
+        "value": "8003640003999998"
+      },
+      "name": "NSW JT",
+      "requestor": true
+    }
+  ],
+  "source": {
+    "site": "JT",
+    "identifier": {
+      "value": "ncdhc.jt.app.3125225222"
+    },
+    "type": [
+      {
+        "system": "http://hl7.org/fhir/security-source-type",
+        "code": "4",
+        "display": "Application Server"
+      }
+    ]
+  },
+  "entity": [
+    {
+      "type": {
+        "system": "http://hl7.org/fhir/object-type",
+        "code": "Bundle",
+        "display": "Bundle"
+      },
+      "detail": [
+        {
+          "type": "Newborn Health Interaction Document",
+          "value": "MS4yLjg0MC4xMTQzNTAuMS4xMy4wLjEuNy4xLjE="
+        }
+      ]
+    }
+  ]
+}
