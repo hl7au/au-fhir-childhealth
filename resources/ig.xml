@@ -562,6 +562,12 @@
 				<reference value="Bundle/87700024-070c-4141-8109-9d9fa34dd24b"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="AuditEvent/47700024-070c-4141-8109-9d9fa34dd24b"/>
+			</sourceReference>
+		</resource>
 	<!--	<resource>
 			<example value="true"/>
 			<sourceReference>
