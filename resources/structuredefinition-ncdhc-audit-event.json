@@ -6,7 +6,7 @@
   "name": "NCDHC AuditEvent Profile",
   "title": "NCDHC AuditEvent",
   "status": "draft",
-  "date": "2019-03-01",
+  "date": "2019-04-30",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "Captures Audit Details of the different operations performed in Data Hub",
   "purpose": "To capture Audit Details of the different operations performed in Data Hub",
@@ -126,7 +126,12 @@
       {
         "id": "AuditEvent.entity",
         "path": "AuditEvent.entity",
-        "mustSupport": true
+        "mustSupport": false
+      },
+      {
+        "id": "AuditEvent.entity.detail",
+        "path": "AuditEvent.entity.detail",
+        "short": "Source entity as received should be logged here"
       }
     ]
   }
