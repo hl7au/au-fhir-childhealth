@@ -120,11 +120,11 @@
           "coding": [
             {
               "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-role-type",
-              "code": "PRDCT",
-              "display": "product"
+              "code": "DIVC",
+              "display": "Devices"
             }
           ],
-          "text": "Product"
+          "text": "Devices"
         }
       ],
       "userId": {
@@ -132,7 +132,7 @@
         "value": "8003640003999998"
       },
       "name": "NSW JT",
-      "requestor": true
+      "requestor": false
     }
   ],
   "source": {
@@ -150,6 +150,9 @@
   },
   "entity": [
     {
+      "reference": {
+        "reference": "Bundle/27700024-070c-4141-8109-9d9fa34dd24b"
+      },
       "type": {
         "system": "http://hl7.org/fhir/object-type",
         "code": "Bundle",

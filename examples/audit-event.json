@@ -159,7 +159,10 @@
               }
             ],
             "name": "ABC Medical Center",
-            "requestor": false
+            "requestor": true,
+            "location" : {
+              "display": "Blacktown, NSW"
+            }
           }
         ],
         "source": {
