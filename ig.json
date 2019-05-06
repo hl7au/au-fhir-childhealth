@@ -415,6 +415,10 @@
 	"AuditEvent/47700024-070c-4141-8109-9d9fa34dd24b": {
       "source": "audit-event-insert.json",
       "base": "audit-event-insert.html"
+    },
+	"CapabilityStatement/ncdhc-metadata": {
+      "base": "capabilitystatement-ncdhc-metadata.html",
+      "defns": "capabilitystatement-ncdhc-metadata-definitions.html"
     }
   }
 }

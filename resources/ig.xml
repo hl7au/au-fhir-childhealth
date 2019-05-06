@@ -319,12 +319,12 @@
 				<reference value="StructureDefinition/ncdhc-audit-event"/>
 			</sourceReference>
 		</resource>
-		<!--<resource>
+		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="CapabilityStatement/ncdhc-metadata"/>
 			</sourceReference>
-		</resource>-->
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
