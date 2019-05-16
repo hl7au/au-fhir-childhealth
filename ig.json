@@ -219,6 +219,10 @@
       "base": "StructureDefinition-ncdhc-observation-skin.html",
       "defns": "StructureDefinition-ncdhc-observation-skin-definitions.html"
     },
+	"StructureDefinition/ncdhc-observation-genitalia": {
+      "base": "StructureDefinition-ncdhc-observation-genitalian.html",
+      "defns": "StructureDefinition-ncdhc-observation-genitalia-definitions.html"
+    },
     "StructureDefinition/ncdhc-observation-test-reflexes": {
       "base": "StructureDefinition-ncdhc-observation-test-reflexes.html",
       "defns": "StructureDefinition-ncdhc-observation-test-reflexes-definitions.html"
@@ -255,7 +259,6 @@
       "base": "StructureDefinition-ncdhc-observation-feeding-status.html",
       "defns": "StructureDefinition-ncdhc-observation-feeding-status-definitions.html"
     },
-
     "StructureDefinition/ncdhc-observation-bloodspot-screen": {
       "base": "StructureDefinition-ncdhc-observation-bloodspot-screen.html",
       "defns": "StructureDefinition-ncdhc-observation-bloodspot-screen-definitions.html"
@@ -386,6 +389,18 @@
     "CodeSystem/ncdhc-document-class": {
       "base": "CodeSystem-ncdhc-document-class.html"
     },
+	"ValueSet/ncdhc-audit-role-type": {
+      "base": "ValueSet-ncdhc-audit-role-type.html"
+    },
+    "CodeSystem/ncdhc-audit-role-type": {
+      "base": "CodeSystem-ncdhc-audit-role-type.html"
+    },
+	"ValueSet/ncdhc-observation-category": {
+      "base": "ValueSet-ncdhc-observation-category.html"
+    },
+    "CodeSystem/ncdhc-hi-type": {
+      "base": "CodeSystem-ncdhc-hi-type.html"
+    },
     "ValueSet/ncdhc-encounter-type": {
         "base": "ValueSet-ncdhc-encounter-type.html"
     },
@@ -415,6 +430,22 @@
 	"AuditEvent/47700024-070c-4141-8109-9d9fa34dd24b": {
       "source": "audit-event-insert.json",
       "base": "audit-event-insert.html"
+    },
+	"Questionnaire/nb-delivery-q-en-s1": {
+      "source": "ncdhc-view-questionnaire-birth.json",
+      "base": "ncdhc-view-questionnaire-birth.html"
+    },
+	"QuestionnaireResponse/nb-delivery-qa-1": {
+      "source": "ncdhc-view-questionnaire-response-birth.json",
+      "base": "ncdhc-view-questionnaire-response-birth.html"
+    },
+	 "OperationDefinition/ncdhc-composition-document": {
+      "base": "OperationDefinition-ncdhc-composition-document.html",
+      "defns": "StructureDefinition-ncdhc-composition-document-definitions.html"
+    },
+	"OperationDefinition/ncdhc-patient-access": {
+      "base": "OperationDefinition-ncdhc-patient-access.html",
+      "defns": "StructureDefinition-ncdhc-patient-access-definitions.html"
     },
 	"CapabilityStatement/ncdhc-metadata": {
       "base": "capabilitystatement-ncdhc-metadata.html",

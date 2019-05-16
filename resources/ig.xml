@@ -298,6 +298,12 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-genitalia"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-test-reflexes"/>
 			</sourceReference>
 		</resource>
@@ -353,6 +359,18 @@
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-composition-health-check-assessment"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="OperationDefinition/ncdhc-composition-document"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="OperationDefinition/ncdhc-patient-access"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -531,6 +549,30 @@
 				<reference value="ValueSet/ncdhc-meds-ncdhc-route-admins-type"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-audit-role-type"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-audit-role-type"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-category"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-hi-type"/>
+			</sourceReference>
+		</resource>
 <!-- Example Section -->
 		<resource>
 			<example value="true"/>
@@ -566,6 +608,18 @@
 			<example value="true"/>
 			<sourceReference>
 				<reference value="AuditEvent/47700024-070c-4141-8109-9d9fa34dd24b"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Questionnaire/nb-delivery-q-en-s1"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="QuestionnaireResponse/nb-delivery-qa-1"/>
 			</sourceReference>
 		</resource>
 	<!--	<resource>
