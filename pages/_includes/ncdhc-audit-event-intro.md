@@ -1,4 +1,4 @@
 #### Examples
 
 - [Consumer Audit View](audit-event.html)
-- [Insert Audit](audit-event-insert.html)
+- [Record Audit Details](audit-event-insert.html)

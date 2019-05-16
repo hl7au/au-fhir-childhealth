@@ -28,7 +28,29 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Method Of Delivery](StructureDefinition-ncdhc-observation-method-of-delivery.html) - Observation profile to record type of birth observed during the birthing procedure 
 * [NCDHC Feeding Status](StructureDefinition-ncdhc-observation-feeding-status.html) - Observation profile to record baby's Feeding Status at Discharge 
 * [NCDHC Blood Spot Screen](StructureDefinition-ncdhc-observation-bloodspot-screen.html) - Observation profile to record newborn's Blood Spot Screen test status 
-* [NCDHC Hearing Screen](StructureDefinition-ncdhc-observation-hearing-screen.html) - Observation profile to record newborn's Hearing Screen test status 
+* [NCDHC Hearing Screen](StructureDefinition-ncdhc-observation-hearing-screen.html) - Observation profile to record newborn's Hearing Screen test status
+* [NCDHC Head Shape](StructureDefinition-ncdhc-observation-head-shape.html) - Observation profile to record outcome of the child's head shape assessment
+* [NCDHC Fontanelles, Sutures](StructureDefinition-ncdhc-observation-test-head-fontanelles.html) - Observation profile to record outcome of the child's fontanelles, sutures assessment
+* [NCDHC Eyes Monocularly Tested (Right, Left)](StructureDefinition-ncdhc-observation-test-vision.html) - Observation profile to record outcome of eye test conducted to determine child's vision    
+* [NCDHC Eyes (Right/Left)](StructureDefinition-ncdhc-observation-test-eyes.html) - Observation profile to record outcome of the child's right/left eye assessment  
+* [NCDHC Vision Screen](StructureDefinition-ncdhc-observation-vision-screen.html) - Observation profile to record Vision Screen test result aimed to detect children with vision problems at a young age
+* [NCDHC Ears Right/Left](StructureDefinition-ncdhc-observation-test-ears.html) - Observation profile to record outcome of the child's right/left ear - visual inspection of pinna, ear canal and ear drum
+* [NCDHC Hearing Check](StructureDefinition-ncdhc-observation-hearing-check.html) - Observation profile to record outcome of the child's hearing check. This includes Pure tone audiometry and (Tympanometry) Screen
+* [NCDHC Hearing Screen](StructureDefinition-ncdhc-observation-hearing-screen.html) - Observation profile to record outcome of the child's hearing screen. Hearing test aimed to detect children with significant hearing loss at a young age
+* [NCDHC Mouth & Palate](StructureDefinition-ncdhc-observation-test-mouth.html) - Observation profile to record outcome of the child's mouth and palate assessment
+* [NCDHC Oral Health](StructureDefinition-ncdhc-observation-oral-health.html) - Observation profile to record outcome of the child's oral assessment
+* [NCDHC Cardiovascular (Dr Only)](StructureDefinition-ncdhc-observation-test-cardiovascular.html) - Observation profile to record outcome of the child's cardiovascular assessment    
+* [NCDHC Femoral Pulses (Right, Left)](StructureDefinition-ncdhc-observation-test-femoral-pulses.html) - Observation profile to record outcome of the child's femoral pulses right check 
+* [NCDHC Development ](StructureDefinition-ncdhc-observation-development.html) - Observation profile to record outcome of the child's developmental assessment 
+* [NCDHC Abdomen / Umbilicus](StructureDefinition-ncdhc-observation-abdomen.html) - Observation profile to record outcome of the child's Abdomen / Umbilicus assessment
+* [NCDHC Anus](StructureDefinition-ncdhc-observation-anus.html) - Observation profile to record outcome of the child's anus assessment
+* [NCDHC Gait](StructureDefinition-ncdhc-observation-gait.html) - Observation profile to record outcome of the child's gait check 
+* [NCDHC Iron](StructureDefinition-ncdhc-observation-test-iron.html) - Observation profile to record outcome of the child's iron check
+* [NCDHC Fluoride Varnish](StructureDefinition-ncdhc-observation-fluoride-varnish.html) - Observation profile to record outcome of the child's fluoride varnish assessment
+* [NCDHC Hips](StructureDefinition-ncdhc-observation-hips.html) - Observation profile to record outcome of the child's  hips assessment
+* [NCDHC Skin](StructureDefinition-ncdhc-observation-skin.html) - Observation profile to record outcome of the child's skin assessment
+* [NCDHC Genitalia](StructureDefinition-ncdhc-observation-genitalia.html) - Observation profile to record outcome of the child's genitalia assessment
+* [NCDHC Reflexes](StructureDefinition-ncdhc-observation-test-reflexes.html) - Observation profile to record outcome of the child's reflexes assessment
 
 ## FamilyMemberHistory Profiles
 * [NCDHC Family History](StructureDefinition-ncdhc-familymemberhistory.html) - FamilyMemberHistory profile to record family history (e.g.: deafness)
@@ -45,5 +67,5 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Newborn Blood Spot Screen Health Interaction](StructureDefinition-ncdhc-composition-bloodspot-screen.html) - Composition profile to represent Newborn Blood Spot Screen Health Interaction
 * [NCDHC Newborn Hearing Screen Health Interaction](StructureDefinition-ncdhc-composition-hearing-screen.html) - Composition profile to represent Newborn Hearing Screen Health Interaction
 * [NCDHC Newborn Exam Health Interaction](StructureDefinition-ncdhc-composition-exam.html) - Composition profile to represent Newborn Exam Health Interaction
-* [NCDHC Newborn Health Check Health Interaction](StructureDefinition-ncdhc-composition-health-check-assessment.html) - Composition profile to represent Newborn Health Check Health Interaction
+* [NCDHC Health Check Assessment Health Interaction](StructureDefinition-ncdhc-composition-health-check-assessment.html) - Composition profile to represent Health Check Assessment Health Interaction
 * [NCDHC Newborn Family Member History Health Interaction](StructureDefinition-ncdhc-composition-familyhistory.html) - Composition profile to represent Newborn Family Member History Health Interaction

@@ -454,7 +454,7 @@
         },
         "text": {
           "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Estimated lenght of gestation noted as : 28 wks</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Estimated length of gestation noted as : 28 wks</div>"
         },
         "id": "741a72a8-df75-4484-ac89-ac4923f03b42",
         "status": "final",
@@ -469,7 +469,7 @@
               "code": "412726003"
             }
           ],
-          "text": "Estimated lenght of Genstation"
+          "text": "Estimated length of Gestation"
         },
         "subject": {
           "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",

@@ -42,7 +42,7 @@
         }
       ],
       "reference": {
-        "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+        "reference": "Patient/example-newborn"
       },
       "userId": {
         "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
@@ -65,7 +65,7 @@
         }
       ],
       "reference": {
-        "reference": "Patient/mm78393f-37ca-4738-81d6-d9595b2e5d0f"
+        "reference": "Patient/example-mother"
       },
       "userId": {
         "system": "http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0",

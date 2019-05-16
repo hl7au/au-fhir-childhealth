@@ -1,0 +1,68 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "ncdhc-patient-access",
+  "url": "http://hl7.org.au/fhir/ch/v1/OperationDefinition/ncdhc-patient-access",
+  "version": "v1.0.0",
+  "name": "NCDHC OperationDefination $access",
+  "status": "active",
+  "kind": "operation",
+  "date": "2019-05-10",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "purpose": "To allow Provider and Provider organisation to gain access to a Patient record",
+  "code": "access",
+  "comment": "This will be used by provider or provider system to gain access to a patient record. The system will return back the patient reference if the consent exists to access the record by the provider in context.",
+  "resource": [
+    "Patient"
+  ],
+  "system": false,
+  "type": true,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "subject",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "The requested Patient details. The client system SHALL provide the following details as a part of the Patient resoruce:\r\n1. IHI as identifier\r\n2. name (family name must be present)\r\n3. birthDate\r\n4. gender",
+      "type": "Patient"
+    },
+    {
+      "name": "context",
+      "use": "in",
+      "min": 1,
+      "max": "*",
+      "documentation": "Define the access context.  e.g.: CDHR, DPHR",
+      "type": "Coding"
+    },
+    {
+      "name": "purposeOfUse",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Type of acces request and in which program. e.g. GENERAL means the provider is trying to gain general access on the patient record. The applicable values are referenced from http://terminology.hl7.org/CodeSystrestrem/v3-ActReason codesystem.",
+      "type": "Coding",
+      "binding": {
+        "strength": "required",
+        "valueSetReference": {
+          "reference": "http://terminology.hl7.org/CodeSystrestrem/v3-ActReason codesystem"
+        }
+      }
+    },
+    {
+      "name": "patient",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "documentation": "The reference of the Patient if the Patient exists. The system SHALL return back the logical id of the Patient along with the details sent in the request. No additional details of the Patient SHALL be return back by the system.",
+      "type": "Patient"
+    },
+    {
+      "name": "outcome",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "An OperationOutcome to return back the result information.",
+      "type": "OperationOutcome"
+    }
+  ]
+}

@@ -3,13 +3,13 @@
   "id": "ncdhc-composition-health-check-assessment",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-health-check-assessment",
   "version": "v1.0.0",
-  "name": "NCDHC Newborn Health Check Assessment Composition Profile",
-  "title": "NCDHC Newborn Health Check Assessment Composition",
+  "name": "NCDHC Health Check Assessment Composition Profile",
+  "title": "NCDHC Health Check Assessment Composition",
   "status": "draft",
   "date": "2019-02-01",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "description": "This profile is used to represent Newborn Health Check Assessment.",
-  "purpose": "to record Newborn Health Check Assessment",
+  "description": "This profile is used to represent Health Check Assessment.",
+  "purpose": "to record Health Check Assessment",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -21,9 +21,9 @@
       {
         "id": "Composition",
         "path": "Composition",
-        "short": "Composition for the NCDHC realm"
+        "short": "NCDHC Health Check Assessment Composition Profile"
       },
-      {
+	  {
         "id": "Composition.type",
         "path": "Composition.type",
         "fixedCodeableConcept": {
@@ -48,30 +48,7 @@
       {
         "id": "Composition.subject",
         "path": "Composition.subject",
-        "short": "Reference to the Baby Patient",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-baby",
-            "aggregation": [
-              "bundled"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Composition.author",
-        "path": "Composition.author",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Device"
-          }
-        ]
+        "short": "Reference to the Baby Patient"
       },
       {
         "id": "Composition.title",
@@ -287,7 +264,7 @@
         "id": "Composition.section:otherHealthConditions.entry:HeadShape",
         "path": "Composition.section.entry",
         "sliceName": "HeadShape",
-        "short": "To capture Head Shape details",
+        "short": "Head Shape",
         "max": "1",
         "type": [
           {
@@ -303,7 +280,7 @@
         "id": "Composition.section:otherHealthConditions.entry:FontanellesSutures",
         "path": "Composition.section.entry",
         "sliceName": "FontanellesSutures",
-        "short": "check performed around the anatomical feature of the infant skull",
+        "short": "Fontanelles, Sutures",
         "max": "1",
         "type": [
           {
@@ -316,10 +293,26 @@
         ]
       },
       {
+        "id": "Composition.section:otherHealthConditions.entry:MonocularlyVisionTest",
+        "path": "Composition.section.entry",
+        "sliceName": "MonocularlyVisionTest",
+        "short": "Eyes Monocularly Tested (Right, Left)",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-vision",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Composition.section:otherHealthConditions.entry:Eyes",
         "path": "Composition.section.entry",
         "sliceName": "Eyes",
-        "short": "Newborn eye test",
+        "short": "Eyes (Right/Left)",
         "max": "1",
         "type": [
           {
@@ -330,7 +323,295 @@
             ]
           }
         ]
-      },      
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:VisionScreen",
+        "path": "Composition.section.entry",
+        "sliceName": "VisionScreen",
+        "short": "Vision Screen Outcome",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vision-screen",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:Ears",
+        "path": "Composition.section.entry",
+        "sliceName": "Ears",
+        "short": "Ears Right/Left",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-ears",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:HearingCheck",
+        "path": "Composition.section.entry",
+        "sliceName": "HearingCheck",
+        "short": "Hearing Check",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-hearing-check",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:HearingScreen",
+        "path": "Composition.section.entry",
+        "sliceName": "HearingScreen",
+        "short": "Hearing Screen",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-hearing-screen",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:MouthAndPalate",
+        "path": "Composition.section.entry",
+        "sliceName": "MouthAndPalate",
+        "short": "Mouth & Palate",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-mouth",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:OralHealth",
+        "path": "Composition.section.entry",
+        "sliceName": "OralHealth",
+        "short": "Oral Health",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-oral-health",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:Cardiovascular",
+        "path": "Composition.section.entry",
+        "sliceName": "Cardiovascular",
+        "short": "Cardiovascular (Dr Only)",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-cardiovascular",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:FemoralPulses",
+        "path": "Composition.section.entry",
+        "sliceName": "FemoralPulses",
+        "short": "Femoral Pulses (Right, Left)",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-femoral-pulses",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:Development",
+        "path": "Composition.section.entry",
+        "sliceName": "Development",
+        "short": "Development",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-development",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:Abdomen_Umbilicus",
+        "path": "Composition.section.entry",
+        "sliceName": "Abdomen_Umbilicus",
+        "short": "Abdomen / Umbilicus",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-abdomen",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:Anus",
+        "path": "Composition.section.entry",
+        "sliceName": "Anus",
+        "short": "Anus",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-anus",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:Gait",
+        "path": "Composition.section.entry",
+        "sliceName": "Gait",
+        "short": "Gait",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-gait",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:Iron",
+        "path": "Composition.section.entry",
+        "sliceName": "Iron",
+        "short": "Iron Testing",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-iron",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:FluorideVarnish",
+        "path": "Composition.section.entry",
+        "sliceName": "FluorideVarnish",
+        "short": "Fluoride Varnish",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fluoride-varnish",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:Hips",
+        "path": "Composition.section.entry",
+        "sliceName": "Hips",
+        "short": "Hips",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-hips",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:Skin",
+        "path": "Composition.section.entry",
+        "sliceName": "Skin",
+        "short": "Skin",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-skin",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:Genitalia",
+        "path": "Composition.section.entry",
+        "sliceName": "Genitalia",
+        "short": "Genitalia",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-genitalia",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:otherHealthConditions.entry:Reflexes",
+        "path": "Composition.section.entry",
+        "sliceName": "Reflexes",
+        "short": "Reflexes",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-reflexes",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
       {
         "id": "Composition.section:otherHealthConditions.section",
         "path": "Composition.section.section",
