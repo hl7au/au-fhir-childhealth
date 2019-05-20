@@ -46,7 +46,7 @@ The profile covers up Baby Patient and Mother Patient instances in the NCDHC con
 
 #### Examples
 
-- [Baby Patient](Patient-example-newborn.html)
+- [Baby Patient](ncdhc-patient-baby-example.html)
 
 
 [Patient]: http://hl7.org/fhir/STU3/patient.html

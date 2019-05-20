@@ -2,7 +2,7 @@ Below is an overview of the required search and read operations for this profile
 
 
 -----------
-**`GET /AuditEvent/$view?patient=[Patient's Logical Id]&_sort=date&_count=[number of resources should be returned in a single page]`**
+**`GET /AuditEvent?patient=[Patient's Logical Id]&_sort=date&_count=[number of resources should be returned in a single page]`**
 
 *Support:* Mandatory to support search by patient
 
@@ -18,7 +18,7 @@ Below is an overview of the required search and read operations for this profile
 
 -----------
 
-**`GET /AuditEvent/$view?patient=[Patient's Logical Id]&date=lt[Date to]&date=gt[Date from]&_sort=date&_count=[number of resources should be returned in a single page]`**
+**`GET /AuditEvent?patient=[Patient's Logical Id]&date=lt[Date to]&date=gt[Date from]&_sort=date&_count=[number of resources should be returned in a single page]`**
 
 *Support:* Optional search by Date Range
 
@@ -34,7 +34,7 @@ Below is an overview of the required search and read operations for this profile
 
 -----------
 
-**`GET /AuditEvent/$view?patient=[Patient's Logical Id]&agent-role=[Agent role in the event. e.g.: 'PROV']&_sort=date&_count=[number of resources should be returned in a single page]`**
+**`GET /AuditEvent?patient=[Patient's Logical Id]&agent-role=[Agent role/s in the event. e.g.: 'PROV']&_sort=date&_count=[number of resources should be returned in a single page]`**
 
 *Support:* Optional search by User Type
 
@@ -50,7 +50,7 @@ Below is an overview of the required search and read operations for this profile
 
 -----------
 
-**`GET /AuditEvent/$view?patient=[Patient's Logical Id]&action=[Type of action performed during the event. e.g.: 'R']&_sort=date&_count=[number of resources should be returned in a single page]`**
+**`GET /AuditEvent?patient=[Patient's Logical Id]&action=[Type of action/s performed during the event. e.g.: 'R']&_sort=date&_count=[number of resources should be returned in a single page]`**
 
 *Support:* Optional search by Action Type
 
@@ -66,7 +66,7 @@ Below is an overview of the required search and read operations for this profile
 
 -----------
 
-**`GET /AuditEvent/$view?patient=[Patient's Logical Id]&&date=lt[Date to]&date=gt[Date from]&agent-role=[Agent role in the event. e.g.: 'PROV']&action=[Type of action performed during the event. e.g.: 'R']&_sort=date&_count=[number of resources should be returned in a single page]`**
+**`GET /AuditEvent?patient=[Patient's Logical Id]&&date=lt[Date to]&date=gt[Date from]&agent-role=[Agent role in the event. e.g.: 'PROV']&action=[Type of action performed during the event. e.g.: 'R']&_sort=date&_count=[number of resources should be returned in a single page]`**
 
 *Support:* Optional search by applying all filters
 

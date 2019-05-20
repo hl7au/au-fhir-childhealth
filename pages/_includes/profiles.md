@@ -61,11 +61,18 @@ These Profiles have been defined for this implementation guide.
 ## Encounter Profiles
 * [NCDHC Encounter](StructureDefinition-ncdhc-encounter.html) - Encounter profile to record  administrative details (e.g.: date and time of discharge, name of the service or facility the baby was discharged from etc.)
 
+## Questionnaire Profiles
+* [NCDHC Questionnaire](StructureDefinition-ncdhc-questionnaire-base.html) - Questionnaire profile 
+* [NCDHC QuestionnaireResponse](StructureDefinition-ncdhc-questionnaireresponse-base.html) - QuestionnaireResponse profile 
+
 ## Composition Profiles
-* [NCDHC Newborn Delivery Health Interaction](StructureDefinition-ncdhc-composition-birth.html) - Composition profile to represent Newborn Delivery (Birth) Health Interaction
+* [NCDHC Newborn Delivery Health Interaction](StructureDefinition-ncdhc-composition-nbdelivery.html) - Composition profile to represent Newborn Delivery Health Interaction
 * [NCDHC Newborn Discharge Health Interaction](StructureDefinition-ncdhc-composition-discharge.html) - Composition profile to represent Newborn Discharge Health Interaction
 * [NCDHC Newborn Blood Spot Screen Health Interaction](StructureDefinition-ncdhc-composition-bloodspot-screen.html) - Composition profile to represent Newborn Blood Spot Screen Health Interaction
 * [NCDHC Newborn Hearing Screen Health Interaction](StructureDefinition-ncdhc-composition-hearing-screen.html) - Composition profile to represent Newborn Hearing Screen Health Interaction
 * [NCDHC Newborn Exam Health Interaction](StructureDefinition-ncdhc-composition-exam.html) - Composition profile to represent Newborn Exam Health Interaction
 * [NCDHC Health Check Assessment Health Interaction](StructureDefinition-ncdhc-composition-health-check-assessment.html) - Composition profile to represent Health Check Assessment Health Interaction
 * [NCDHC Newborn Family Member History Health Interaction](StructureDefinition-ncdhc-composition-familyhistory.html) - Composition profile to represent Newborn Family Member History Health Interaction
+
+## NCDHC Views
+* [NCDHC Birth Consolidated view](StructureDefinition-ncdhc-composition-view-birth.html) - Consolidated view to represent Birth related details. This view includes summaries from Newborn Delivery, Newborn Discharge, Bloodshot Screening, Hearing Screening and Immunisation.
