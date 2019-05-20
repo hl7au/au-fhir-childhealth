@@ -23,27 +23,11 @@
   "instance": false,
   "parameter": [
     {
-      "name": "patient",
-      "use": "in",
-      "min": 1,
-      "max": "1",
-      "documentation": "The patient in context",
-      "type": "Patient"
-    },
-    {
-      "name": "includeSourceDocument",
+      "name": "summary",
       "use": "in",
       "min": 0,
       "max": "1",
-      "documentation": "This parameter instruct the FHIR server to include the reference of source FHIR document corresponding to each section",
-      "type": "boolean"
-    },
-    {
-      "name": "includeSourceQuestionnaire",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "documentation": "This parameter instruct the FHIR server to include the Questionnaire associated with each section",
+      "documentation": "This parameter instructs the FHIR server to produce a document with minimum details (as defined by server). the default value is true. If client wants full document then the value should be provided as 'false'. In that case the server will provide the referenced resources in the Bundle. For an example if the $document generates a view where each section of the document is based on QuestionnaireResponse then 'false' value of this param will force the server to include the referenced Questionnaire resource in the Bundle document and section source using Provenence resource.",
       "type": "boolean"
     },
     {

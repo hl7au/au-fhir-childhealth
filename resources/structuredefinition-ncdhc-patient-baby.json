@@ -29,6 +29,12 @@
         "short": "A patient in NCDHC healthcare context"
       },
       {
+        "id": "Patient.extension:birthPlace",
+        "path": "Patient.extension",
+        "sliceName": "birthPlace",
+        "short": "Name of Birth Facility"
+      },
+      {
         "id": "Patient.identifier:ihiNumber",
         "path": "Patient.identifier",
         "sliceName": "ihiNumber",
@@ -37,8 +43,19 @@
       {
         "id": "Patient.name",
         "path": "Patient.name",
+        "short": "Baby's Name",
         "min": 1,
         "mustSupport": true
+      },
+      {
+        "id": "Patient.name.family",
+        "path": "Patient.name.family",
+        "short": "Last Name - will represent the last name of mother"
+      },
+      {
+        "id": "Patient.name.given",
+        "path": "Patient.name.given",
+        "short": "First Name - will represent the name of baby ie 'Baby of <mother first name>'"
       },
       {
         "id": "Patient.gender",
@@ -48,7 +65,19 @@
       {
         "id": "Patient.birthDate",
         "path": "Patient.birthDate",
+        "short": "Date of Birth. Extended for time and accuracy indicator",
         "mustSupport": true
+      },
+      {
+        "id": "Patient.birthDate.extension:birthTime",
+        "path": "Patient.birthDate.extension",
+        "sliceName": "birthTime",
+        "short": "Time of Birth"
+      },
+      {
+        "id": "Patient.address.city",
+        "path": "Patient.address.city",
+        "short": "Name of City, Town"
       },
       {
         "id": "Patient.contact",
@@ -117,6 +146,21 @@
         "fixedString": "Mother"
       },
       {
+        "id": "Patient.contact:contactMother.name",
+        "path": "Patient.contact.name",
+        "short": "Mother's Name"
+      },
+      {
+        "id": "Patient.contact:contactMother.name.family",
+        "path": "Patient.contact.name.family",
+        "short": "Last name of mother"
+      },
+      {
+        "id": "Patient.contact:contactMother.name.given",
+        "path": "Patient.contact.name.given",
+        "short": "First name of Mother"
+      },
+      {
         "id": "Patient.contact:contactFather",
         "extension": [
           {
@@ -163,6 +207,26 @@
         "fixedString": "Father"
       },
       {
+        "id": "Patient.contact:contactFather.name",
+        "path": "Patient.contact.name",
+        "short": "Father's Name"
+      },
+      {
+        "id": "Patient.contact:contactFather.name.text",
+        "path": "Patient.contact.name.text",
+        "short": "Full Name of Father (used where First and Last names are not split into separate fields in a system)"
+      },
+      {
+        "id": "Patient.contact:contactFather.name.family",
+        "path": "Patient.contact.name.family",
+        "short": "Last name of Father"
+      },
+      {
+        "id": "Patient.contact:contactFather.name.given",
+        "path": "Patient.contact.name.given",
+        "short": "First name of Father"
+      },
+      {
         "id": "Patient.contact:contactOther",
         "extension": [
           {
@@ -207,6 +271,21 @@
         ],
         "path": "Patient.contact.relationship.text",
         "fixedString": "Other"
+      },
+      {
+        "id": "Patient.contact:contactOther.name.text",
+        "path": "Patient.contact.name.text",
+        "short": "Full Name of Other Parent (used where First and Last names are not split into separate fields in a system)"
+      },
+      {
+        "id": "Patient.contact:contactOther.name.family",
+        "path": "Patient.contact.name.family",
+        "short": "Last name of other Parent"
+      },
+      {
+        "id": "Patient.contact:contactOther.name.given",
+        "path": "Patient.contact.name.given",
+        "short": "First name of other parent"
       },
       {
         "id": "Patient.contact:contactFedAgency",

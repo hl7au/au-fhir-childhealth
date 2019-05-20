@@ -1,0 +1,40 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-composition-view-base",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-view-base",
+  "name": "NCDHC Composition View Base Profile",
+  "title": "NCDHC Composition View Base",
+  "status": "draft",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Composition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.section.title",
+        "path": "Composition.section.title",
+        "min": 1
+      },
+      {
+        "id": "Composition.section.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Resource"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-questionnaireresponse-base",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
