@@ -29,7 +29,7 @@
           "answer": [
             {
               "valueReference": {
-                "reference": "Patient/baby-patient"
+                "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
               }
             }
           ]
@@ -55,7 +55,7 @@
           "answer": [
             {
               "valueReference": {
-                "reference": "Patient/baby-patient"
+                "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
               }
             }
           ]
@@ -85,7 +85,7 @@
           "answer": [
             {
               "valueReference": {
-                "reference": "Patient/baby-patient"
+                "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
               }
             }
           ]
@@ -116,7 +116,7 @@
           "answer": [
             {
               "valueReference": {
-                "reference": "Observation/estimated-gestation"
+                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
               }
             }
           ]
@@ -146,7 +146,7 @@
           "answer": [
             {
               "valueReference": {
-                "reference": "Observation/type-of-birth"
+                "reference": "Observation/641a72a8-df75-4484-ac89-ac4923f03b41"
               }
             }
           ]
@@ -176,7 +176,7 @@
           "answer": [
             {
               "valueReference": {
-                "reference": "Observation/labour-initiation"
+                "reference": "Observation/641a72a8-df75-4l484-ac89-ac4923f03b42"
               }
             }
           ]

@@ -23,7 +23,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 180f219f-97a8-486d-99d9-ed631fe4fc57</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>type</b>: Newborn Delivery <span>(Details : {LOINC code '11503-0' = 'Medical records')</span></p><p><b>title</b>: Newborn Delivery</p><p><b>confidentiality</b>: N</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 180f219f-97a8-486d-99d9-ed631fe4fc57</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>type</b>: Newborn Delivery </p><p><b>title</b>: Newborn Delivery</p><p><b>confidentiality</b>: N</p></div>"
         },
         "status": "final",
         "type": {
