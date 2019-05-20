@@ -63,7 +63,7 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-composition-birth"/>
+				<reference value="StructureDefinition/ncdhc-composition-nbdelivery"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -379,6 +379,18 @@
 				<reference value="StructureDefinition/ncdhc-composition-familyhistory"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-view-base"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-view-birth"/>
+			</sourceReference>
+		</resource>
 		<!-- ValueSet and CodeSystems -->
 		<resource>
 			<example value="false"/>
@@ -583,7 +595,7 @@
 		<resource>
 			<example value="true"/>
 			<sourceReference>
-				<reference value="Patient/example-newborn"/>
+				<reference value="Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -607,6 +619,12 @@
 		<resource>
 			<example value="true"/>
 			<sourceReference>
+				<reference value="Bundle/ncdhc-composition-view-birth-sample"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
 				<reference value="AuditEvent/47700024-070c-4141-8109-9d9fa34dd24b"/>
 			</sourceReference>
 		</resource>
@@ -622,30 +640,6 @@
 				<reference value="QuestionnaireResponse/nb-delivery-qa-1"/>
 			</sourceReference>
 		</resource>
-	<!--	<resource>
-			<example value="true"/>
-			<sourceReference>
-				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b82"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true"/>
-			<sourceReference>
-				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b61"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true"/>
-			<sourceReference>
-				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b62"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true"/>
-			<sourceReference>
-				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b41"/>
-			</sourceReference>
-		</resource>
 		<resource>
 			<example value="true"/>
 			<sourceReference>
@@ -655,70 +649,15 @@
 		<resource>
 			<example value="true"/>
 			<sourceReference>
-				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b42"/>
+				<reference value="Observation/641a72a8-df75-4484-ac89-ac4923f03b41"/>
 			</sourceReference>
-		</resource>
+		</resource>	
 		<resource>
 			<example value="true"/>
 			<sourceReference>
-				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b43"/>
+				<reference value="Observation/641a72a8-df75-4l484-ac89-ac4923f03b42"/>
 			</sourceReference>
 		</resource>
-		<resource>
-			<example value="true"/>
-			<sourceReference>
-				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b51"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true"/>
-			<sourceReference>
-				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b52"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true"/>
-			<sourceReference>
-				<reference value="MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b10"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true"/>
-			<sourceReference>
-				<reference value="MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b11"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true"/>
-			<sourceReference>
-				<reference value="MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b12"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true"/>
-			<sourceReference>
-				<reference value="Immunization/241a72a8-df75-4484-ac89-ac4923f03b10"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true"/>
-			<sourceReference>
-				<reference value="Immunization/241a72a8-df75-4484-ac89-ac4923f03b11"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true"/>
-			<sourceReference>
-				<reference value="Bundle/18900024-070c-4141-8109-9d9fa34dd24b"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true"/>
-			<sourceReference>
-				<reference value="Bundle/48900024-070c-4141-8109-9d9fa34dd24b"/>
-			</sourceReference>
-		</resource>
-		-->
 	</package>
 	<page>
 		<source value="index.html"/>

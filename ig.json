@@ -87,22 +87,22 @@
     }
   },
   "resources": {
-     "StructureDefinition/ncdhc-composition-base": {
+    "StructureDefinition/ncdhc-composition-base": {
       "base": "StructureDefinition-ncdhc-composition-base.html",
       "defns": "StructureDefinition-ncdhc-composition-base-definitions.html"
     },
-	"StructureDefinition/ncdhc-observation-base": {
+    "StructureDefinition/ncdhc-observation-base": {
       "base": "StructureDefinition-ncdhc-observation-base.html",
       "defns": "StructureDefinition-ncdhc-observation-base-definitions.html"
     },
-	"StructureDefinition/ncdhc-patient-baby": {
+    "StructureDefinition/ncdhc-patient-baby": {
       "base": "StructureDefinition-ncdhc-patient-baby.html",
       "defns": "StructureDefinition-ncdhc-patient-baby-definitions.html"
     },
     "StructureDefinition/ncdhc-patient-mother": {
-        "base": "StructureDefinition-ncdhc-patient-mother.html",
-        "defns": "StructureDefinition-ncdhc-patient-mother-definitions.html"
-      },
+      "base": "StructureDefinition-ncdhc-patient-mother.html",
+      "defns": "StructureDefinition-ncdhc-patient-mother-definitions.html"
+    },
     "StructureDefinition/ncdhc-observation-pregnancy-complication": {
       "base": "StructureDefinition-ncdhc-observation-pregnancy-complication.html",
       "defns": "StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html"
@@ -195,7 +195,7 @@
       "base": "StructureDefinition-ncdhc-observation-anus.html",
       "defns": "StructureDefinition-ncdhc-observation-anus-definitions.html"
     },
-	"StructureDefinition/ncdhc-observation-abdomen": {
+    "StructureDefinition/ncdhc-observation-abdomen": {
       "base": "StructureDefinition-ncdhc-observation-abdomen.html",
       "defns": "StructureDefinition-ncdhc-observation-abdomen-definitions.html"
     },
@@ -211,7 +211,7 @@
       "base": "StructureDefinition-ncdhc-observation-fluoride-varnish.html",
       "defns": "StructureDefinition-ncdhc-observation-fluoride-varnish-definitions.html"
     },
-	"StructureDefinition/ncdhc-observation-hips": {
+    "StructureDefinition/ncdhc-observation-hips": {
       "base": "StructureDefinition-ncdhc-observation-hips.html",
       "defns": "StructureDefinition-ncdhc-observation-hips-definitions.html"
     },
@@ -219,7 +219,7 @@
       "base": "StructureDefinition-ncdhc-observation-skin.html",
       "defns": "StructureDefinition-ncdhc-observation-skin-definitions.html"
     },
-	"StructureDefinition/ncdhc-observation-genitalia": {
+    "StructureDefinition/ncdhc-observation-genitalia": {
       "base": "StructureDefinition-ncdhc-observation-genitalian.html",
       "defns": "StructureDefinition-ncdhc-observation-genitalia-definitions.html"
     },
@@ -251,7 +251,7 @@
       "base": "StructureDefinition-ncdhc-observation-vitalsign-headcircum.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-headcircum-definitions.html"
     },
-	"StructureDefinition/ncdhc-observation-vitalsign-bmi": {
+    "StructureDefinition/ncdhc-observation-vitalsign-bmi": {
       "base": "StructureDefinition-ncdhc-observation-vitalsign-bmi.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-bmi-definitions.html"
     },
@@ -279,13 +279,13 @@
       "base": "StructureDefinition-ncdhc-immunisation.html",
       "defns": "StructureDefinition-ncdhc-immunisation-definitions.html"
     },
-	"StructureDefinition/ncdhc-audit-event": {
+    "StructureDefinition/ncdhc-audit-event": {
       "base": "StructureDefinition-ncdhc-audit-event.html",
       "defns": "StructureDefinition-ncdhc-audit-event-definitions.html"
     },
-    "StructureDefinition/ncdhc-composition-birth": {
-      "base": "StructureDefinition-ncdhc-composition-birth.html",
-      "defns": "StructureDefinition-ncdhc-composition-birth-definitions.html"
+    "StructureDefinition/ncdhc-composition-nbdelivery": {
+      "base": "StructureDefinition-ncdhc-composition-nbdelivery.html",
+      "defns": "StructureDefinition-ncdhc-composition-nbdelivery-definitions.html"
     },
     "StructureDefinition/ncdhc-composition-discharge": {
       "base": "StructureDefinition-ncdhc-composition-discharge.html",
@@ -310,6 +310,14 @@
     "StructureDefinition/ncdhc-composition-familyhistory": {
       "base": "StructureDefinition-ncdhc-composition-familyhistory.html",
       "defns": "StructureDefinition-ncdhc-composition-familyhistory-definitions.html"
+    },
+    "StructureDefinition/ncdhc-composition-view-birth": {
+      "base": "StructureDefinition-ncdhc-composition-view-birth.html",
+      "defns": "StructureDefinition-ncdhc-composition-view-birth-definitions.html"
+    },
+    "StructureDefinition/ncdhc-composition-view-base": {
+      "base": "StructureDefinition-ncdhc-composition-view-base.html",
+      "defns": "StructureDefinition-ncdhc-composition-view-base-definitions.html"
     },
     "ValueSet/apgar-score-type": {
       "base": "ValueSet-apgar-score-type.html"
@@ -347,16 +355,16 @@
     "ValueSet/apgar-respiratory-effort-finding": {
       "base": "ValueSet-apgar-respiratory-effort-finding.html"
     },
-	"ValueSet/newborn-feeding-status": {
+    "ValueSet/newborn-feeding-status": {
       "base": "ValueSet-newborn-feeding-status.html"
     },
-	"ValueSet/ncdhc-labour-initiation-type": {
+    "ValueSet/ncdhc-labour-initiation-type": {
       "base": "ValueSet-ncdhc-labour-initiation-type.html"
     },
-	"ValueSet/ncdhc-type-of-birth": {
+    "ValueSet/ncdhc-type-of-birth": {
       "base": "ValueSet-ncdhc-type-of-birth.html"
     },
-	"ValueSet/ncdhc-vision-chart-types": {
+    "ValueSet/ncdhc-vision-chart-types": {
       "base": "ValueSet-ncdhc-vision-chart-types.html"
     },
     "ValueSet/ncdhc-observation-interpretation": {
@@ -368,7 +376,7 @@
     "ValueSet/ncdhc-observation-completion-status": {
       "base": "ValueSet-ncdhc-observation-completion-status.html"
     },
-	"ValueSet/ncdhc-condition-code": {
+    "ValueSet/ncdhc-condition-code": {
       "base": "ValueSet-condition-code.html"
     },
     "ValueSet/ncdhc-consent-category": {
@@ -377,39 +385,39 @@
     "CodeSystem/ncdhc-consent-category": {
       "base": "CodeSystem-ncdhc-consent-category.html"
     },
-	"ValueSet/ncdhc-document-type": {
+    "ValueSet/ncdhc-document-type": {
       "base": "ValueSet-ncdhc-document-type.html"
     },
     "CodeSystem/ncdhc-document-type": {
       "base": "CodeSystem-ncdhc-document-type.html"
     },
-	"ValueSet/ncdhc-document-class": {
+    "ValueSet/ncdhc-document-class": {
       "base": "ValueSet-ncdhc-document-class.html"
     },
     "CodeSystem/ncdhc-document-class": {
       "base": "CodeSystem-ncdhc-document-class.html"
     },
-	"ValueSet/ncdhc-audit-role-type": {
+    "ValueSet/ncdhc-audit-role-type": {
       "base": "ValueSet-ncdhc-audit-role-type.html"
     },
     "CodeSystem/ncdhc-audit-role-type": {
       "base": "CodeSystem-ncdhc-audit-role-type.html"
     },
-	"ValueSet/ncdhc-observation-category": {
+    "ValueSet/ncdhc-observation-category": {
       "base": "ValueSet-ncdhc-observation-category.html"
     },
     "CodeSystem/ncdhc-hi-type": {
       "base": "CodeSystem-ncdhc-hi-type.html"
     },
     "ValueSet/ncdhc-encounter-type": {
-        "base": "ValueSet-ncdhc-encounter-type.html"
+      "base": "ValueSet-ncdhc-encounter-type.html"
     },
     "ValueSet/ncdhc-meds-ncdhc-route-admins-type": {
-        "base": "ValueSet-ncdhc-meds-ncdhc-route-admins-type.html"
+      "base": "ValueSet-ncdhc-meds-ncdhc-route-admins-type.html"
     },
-    "Patient/example-newborn": {
-      "source": "patient-example-newborn.json",
-      "base": "Patient-example-newborn.html"
+    "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f": {
+      "source": "ncdhc-patient-baby-example.json",
+      "base": "ncdhc-patient-baby-example.html"
     },
     "Patient/example-mother": {
       "source": "patient-example-mother.json",
@@ -418,36 +426,52 @@
     "Bundle/28900024-070c-4141-8109-9d9fa34dd24b": {
       "source": "Bundle-document-healthcheck-response-payload.json",
       "base": "Bundle-document-healthcheck-response-payload.html"
-    },
-    "Bundle/27700024-070c-4141-8109-9d9fa34dd24b": {
-      "source": "birth-hi-example.json",
-      "base": "birth-hi-example.html"
-    },
+    },    
     "Bundle/87700024-070c-4141-8109-9d9fa34dd24b": {
       "source": "audit-event.json",
       "base": "audit-event.html"
     },
-	"AuditEvent/47700024-070c-4141-8109-9d9fa34dd24b": {
+    "Bundle/ncdhc-composition-view-birth-sample": {
+      "source": "ncdhc-birth-consolidated-view-summary.json",
+      "base": "ncdhc-birth-consolidated-view-summary.html"
+    },
+    "AuditEvent/47700024-070c-4141-8109-9d9fa34dd24b": {
       "source": "audit-event-insert.json",
       "base": "audit-event-insert.html"
     },
-	"Questionnaire/nb-delivery-q-en-s1": {
+	"Bundle/27700024-070c-4141-8109-9d9fa34dd24b": {
+      "source": "ncdhc-composition-nbdelivery-example.json",
+      "base": "ncdhc-composition-nbdelivery-example.html"
+    },
+    "Observation/741a72a8-df75-4484-ac89-ac4923f03b42": {
+      "source": "ncdhc-observation-estimated-gestation-example.json",
+      "base": "ncdhc-observation-estimated-gestation-example.html"
+    },
+    "Observation/641a72a8-df75-4484-ac89-ac4923f03b41": {
+      "source": "ncdhc-observation-method-of-delivery-example.json",
+      "base": "ncdhc-observation-method-of-delivery-example.html"
+    },
+	"Observation/641a72a8-df75-4l484-ac89-ac4923f03b42": {
+      "source": "ncdhc-observation-labour-induced-example.json",
+      "base": "ncdhc-observation-labour-induced-example.html"
+    },
+    "Questionnaire/nb-delivery-q-en-s1": {
       "source": "ncdhc-view-questionnaire-birth.json",
       "base": "ncdhc-view-questionnaire-birth.html"
     },
-	"QuestionnaireResponse/nb-delivery-qa-1": {
+    "QuestionnaireResponse/nb-delivery-qa-1": {
       "source": "ncdhc-view-questionnaire-response-birth.json",
       "base": "ncdhc-view-questionnaire-response-birth.html"
     },
-	 "OperationDefinition/ncdhc-composition-document": {
+    "OperationDefinition/ncdhc-composition-document": {
       "base": "OperationDefinition-ncdhc-composition-document.html",
       "defns": "StructureDefinition-ncdhc-composition-document-definitions.html"
     },
-	"OperationDefinition/ncdhc-patient-access": {
+    "OperationDefinition/ncdhc-patient-access": {
       "base": "OperationDefinition-ncdhc-patient-access.html",
       "defns": "StructureDefinition-ncdhc-patient-access-definitions.html"
     },
-	"CapabilityStatement/ncdhc-metadata": {
+    "CapabilityStatement/ncdhc-metadata": {
       "base": "capabilitystatement-ncdhc-metadata.html",
       "defns": "capabilitystatement-ncdhc-metadata-definitions.html"
     }
