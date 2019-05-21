@@ -116,7 +116,7 @@
           "answer": [
             {
               "valueReference": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/241a72a8-df75-4484-ac89-ac4923f03b42"
               }
             }
           ]
@@ -202,7 +202,7 @@
           "answer": [
             {
               "valueReference": {
-                "reference": "Observation/pregnancy-complications"
+                "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b53"
               }
             }
           ]
@@ -228,7 +228,7 @@
           "answer": [
             {
               "valueReference": {
-                "reference": "Observation/abnormalities-noted"
+                "reference": "Observation/841a72a8-df75-4484-ac89-ac4923f03b42"
               }
             }
           ]
@@ -254,7 +254,7 @@
           "answer": [
             {
               "valueReference": {
-                "reference": "Observation/abnormalities-noted"
+                "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b52"
               }
             }
           ]
@@ -288,7 +288,7 @@
               "answer": [
                 {
                   "valueReference": {
-                    "reference": "Observation/apgar-1m"
+                    "reference": "Observation/901a72a8-df75-4484-ac89-ac4923f03b01"
                   }
                 }
               ]
@@ -321,7 +321,7 @@
           "answer": [
             {
               "valueReference": {
-                "reference": "Observation/birth-weight"
+                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b44"
               }
             }
           ]
@@ -352,7 +352,7 @@
           "answer": [
             {
               "valueReference": {
-                "reference": "Observation/birth-length"
+                "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b42"
               }
             }
           ]
@@ -422,7 +422,7 @@
               "answer": [
                 {
                   "valueReference": {
-                    "reference": "Observation/vitamin-k1"
+                    "reference": "MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b10"
                   }
                 }
               ]
