@@ -70,7 +70,8 @@ The client system SHALL supply both LOINC and SNOMED CT-AU codes to record this 
 
 #### Examples
 
-To be added
+- [Birth Weight](ncdhc-observation-vitalsign-birthweight-example.html)
+- [Body Weight](ncdhc-observation-vitalsign-bodyweight-example.html)
 
 [Vitalsign]: http://hl7.org/fhir/STU3/observation-vitalsigns.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible

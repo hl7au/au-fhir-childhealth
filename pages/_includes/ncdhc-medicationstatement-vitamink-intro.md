@@ -32,7 +32,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-To be added
+- [Vitamin K1](ncdhc-medicationstatement-k1-example.html)
 
 [MedicationStatement]: http://hl7.org.au/fhir/base2018Oct/StructureDefinition-au-medicationstatement.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible

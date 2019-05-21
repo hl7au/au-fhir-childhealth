@@ -18,7 +18,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Each Observation must have:**
 
 1.  a status  
-1.  a LOINC and SNOMED code which tells you what is being measured and is taken from the “LOINC Code” &  "SNOMED CT" columns respectively in the table below.
+1.  a SNOMED code which tells you what is being measured.
 1.  a subject (Patient)
 1.  a time indicating when the details was taken
 1.	a performer detailing who has recorded the details.
@@ -30,36 +30,9 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 
 
----
-
-<table class="grid">
-  <thead>
-    <tr>
-      <th>Maternal Morbidity</th>
-      <th>LOINC Code</th>
-      <th><em>LOINC Name </em>and Comments</th>
-	  <th>SNOMED Code</th>
-      <th><em>SNOMED Name </em>and Comments</th>      
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Pregnancy Complications</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>609496007</td>
-	  <td>Complication occurring during pregnancy</td>	  
-    </tr>
-    
-  </tbody>
-</table>
-
----
-
-
 #### Examples
 
-To be added
+- [Pregnancy Complications](ncdhc-observation-pregnancy-complication-example.html)
 
 [Observation]: http://hl7.org/fhir/observation.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
