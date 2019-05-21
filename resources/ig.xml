@@ -643,7 +643,7 @@
 		<resource>
 			<example value="true"/>
 			<sourceReference>
-				<reference value="Observation/741a72a8-df75-4484-ac89-ac4923f03b42"/>
+				<reference value="Observation/241a72a8-df75-4484-ac89-ac4923f03b42"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -656,6 +656,72 @@
 			<example value="true"/>
 			<sourceReference>
 				<reference value="Observation/641a72a8-df75-4l484-ac89-ac4923f03b42"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b52"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/841a72a8-df75-4484-ac89-ac4923f03b42"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/901a72a8-df75-4484-ac89-ac4923f03b01"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b10"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b53"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/741a72a8-df75-4484-ac89-ac4923f03b42"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/741a72a8-df75-4484-ac89-ac4923f03b43"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/741a72a8-df75-4484-ac89-ac4923f03b44"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/741a72a8-df75-4484-ac89-ac4923f03b45"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b42"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b43"/>
 			</sourceReference>
 		</resource>
 	</package>
