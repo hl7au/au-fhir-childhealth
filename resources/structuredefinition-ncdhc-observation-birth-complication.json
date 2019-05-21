@@ -22,7 +22,7 @@
         "path": "Observation",
         "short": "NCDHC complication noted at birth Observation Profile"
       },
-	  {
+      {
         "id": "Observation.status",
         "extension": [
           {
@@ -33,7 +33,7 @@
         "path": "Observation.status",
         "fixedCode": "final"
       },
-	   {
+      {
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Code to represent complications noted during the birthing process",
@@ -114,7 +114,8 @@
           {
             "code": "string"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.comment",

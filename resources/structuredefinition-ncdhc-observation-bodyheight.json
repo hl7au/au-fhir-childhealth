@@ -71,6 +71,21 @@
         "fixedCode": "248334005"
       },
       {
+        "id": "Observation.code.coding:BirthLengthSNOMEDCTAUCode",
+        "path": "Observation.code.coding",
+        "sliceName": "BirthLengthSNOMEDCTAUCode"
+      },
+      {
+        "id": "Observation.code.coding:BirthLengthSNOMEDCTAUCode.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:BirthLengthSNOMEDCTAUCode.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "169886007"
+      },
+      {
         "id": "Observation.effectiveDateTime:effectiveDateTime",
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",

@@ -8,6 +8,7 @@
   "status": "draft",
   "date": "2019-02-15",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "Vitamin K is a medication given to the newborn at birth. \r\n\r\nEither by intramuscular injection or up to three doses orally",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
