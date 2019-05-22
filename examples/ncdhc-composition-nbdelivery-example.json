@@ -970,8 +970,7 @@
     },
     {
       "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b52",
-      "resource": 
-      {
+      "resource": {
         "resourceType": "Observation",
         "meta": {
           "versionId": "1",
@@ -1001,13 +1000,13 @@
           "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
           "display": "Baby of Eve Bill"
         },
-        "effectiveDateTime" : "2018-12-27T16:13:03Z",
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
         "performer": {
           "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/kk78393f-37ca-4738-81d6-d9595b2e5d0f",
           "display": "Dr. Rob Boston"
         },
         "valueString": "Cephalopelvic disproportion (CPD)"
-      }      
+      }
     },
     {
       "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b53",
@@ -1079,19 +1078,19 @@
         "code": {
           "coding": [
             {
-        "system": "http://loinc.org",
-        "code": "29463-7",
-        "display": "Body Weight"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "364589006"        
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "27113001",
-        "display": "Body weight"
-      }
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "364589006"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27113001",
+              "display": "Body weight"
+            }
           ],
           "text": "Birth Weight"
         },
