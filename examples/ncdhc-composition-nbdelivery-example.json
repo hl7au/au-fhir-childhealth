@@ -99,6 +99,95 @@
             ]
           },
           {
+            "title": "Apgar scores",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP32192-4"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Apgar scores</div>"
+            },
+            "entry": [
+              {
+                "reference": "Observation/901a72a8-df75-4484-ac89-ac4923f03b01"
+              }
+            ]
+          },
+          {
+            "title": "Medication administered",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "29303-5"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vitamin K1 administered</div>"
+            },
+            "entry": [
+              {
+                "reference": "MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b10"
+              }
+            ]
+          },
+          {
+            "title": "Vital Signs and Measurements",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "67795-5"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vital Signs</div>"
+            },
+            "entry": [
+              {
+                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b44"
+              },
+              {
+                "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b42"
+              },
+              {
+                "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b47"
+              }
+            ]
+          },
+          {
+            "title": "Maternal morbidity",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "73781-7"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Details on Birth Complications and Pregency Complications</div>"
+            },
+            "entry": [
+              {
+                "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b52"
+              },
+              {
+                "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b53"
+              }
+            ]
+          },
+          {
             "title": "Labour and delivery",
             "code": {
               "coding": [
@@ -114,10 +203,10 @@
             },
             "entry": [
               {
-                "reference": "Observation/641a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/641a72a8-df75-4484-ac89-ac4923f03b41"
               },
               {
-                "reference": "Observation/641a72a8-df75-4484-ac89-ac4923f03b41"
+                "reference": "Observation/641a72a8-df75-4l484-ac89-ac4923f03b42"
               }
             ]
           }
