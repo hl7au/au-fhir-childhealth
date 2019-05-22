@@ -326,7 +326,7 @@
 			</sourceReference>
 		</resource>
 		<resource>
-			<example value="false"/>
+			<example value="true"/>
 			<sourceReference>
 				<reference value="CapabilityStatement/ncdhc-metadata"/>
 			</sourceReference>

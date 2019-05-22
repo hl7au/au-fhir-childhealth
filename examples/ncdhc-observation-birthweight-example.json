@@ -29,7 +29,11 @@
     "performer": [
       {
         "reference": "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-        "display": "Dr. Carla Smith"
+        "display": "Examiner"
+      },
+      {
+        "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+        "display": "Organisation"
       }
     ],
     "valueQuantity": {

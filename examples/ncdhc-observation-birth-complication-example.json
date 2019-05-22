@@ -31,8 +31,12 @@
   "effectiveDateTime": "2018-12-27T16:13:03Z",
   "performer": [
     {
-      "reference": "Practitioner/kk78393f-37ca-4738-81d6-d9595b2e5d0f",
-      "display": "Dr. Rob Boston"
+      "reference": "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+      "display": "Examiner"
+    },
+    {
+      "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "display": "Organisation"
     }
   ],
   "valueString": "Cephalopelvic disproportion (CPD)"
