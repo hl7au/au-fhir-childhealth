@@ -45,10 +45,12 @@
       "display": "Baby of Eve Bill"
     },
     "effectiveDateTime": "2018-12-27T16:13:03Z",
-    "performer": {
+    "performer": [
+      {
       "reference": "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
       "display": "Dr. Carla Smith"
-    },
+    }
+  ],
     "valueQuantity": {
       "value": 51.2,
       "unit": "cm",

@@ -336,7 +336,7 @@
           ],
           "versioning": "versioned",
           "conditionalCreate": true,
-          "conditionalUpdate": false,
+          "conditionalUpdate": true,
           "conditionalDelete": "single",
           "searchParam": [
             {
@@ -374,7 +374,7 @@
       "mode": "consumer",
       "documentation": "FHIR Document Support for Newborn Delivery Health Interaction",
       "profile": {
-        "reference": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-birth"
+        "reference": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-nbdelivery"
       }
     }
   ]
