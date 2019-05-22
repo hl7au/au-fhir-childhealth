@@ -426,7 +426,7 @@
     "Bundle/28900024-070c-4141-8109-9d9fa34dd24b": {
       "source": "Bundle-document-healthcheck-response-payload.json",
       "base": "Bundle-document-healthcheck-response-payload.html"
-    },    
+    },
     "Bundle/87700024-070c-4141-8109-9d9fa34dd24b": {
       "source": "audit-event.json",
       "base": "audit-event.html"
@@ -439,7 +439,7 @@
       "source": "audit-event-insert.json",
       "base": "audit-event-insert.html"
     },
-	"Bundle/27700024-070c-4141-8109-9d9fa34dd24b": {
+    "Bundle/27700024-070c-4141-8109-9d9fa34dd24b": {
       "source": "ncdhc-composition-nbdelivery-example.json",
       "base": "ncdhc-composition-nbdelivery-example.html"
     },
@@ -451,55 +451,62 @@
       "source": "ncdhc-observation-method-of-delivery-example.json",
       "base": "ncdhc-observation-method-of-delivery-example.html"
     },
-	"Observation/641a72a8-df75-4l484-ac89-ac4923f03b42": {
+    "Observation/641a72a8-df75-4l484-ac89-ac4923f03b42": {
       "source": "ncdhc-observation-labour-induced-example.json",
       "base": "ncdhc-observation-labour-induced-example.html"
     },
-	"Observation/541a72a8-df75-4484-ac89-ac4923f03b52": {
+    "Observation/541a72a8-df75-4484-ac89-ac4923f03b52": {
       "source": "ncdhc-observation-birth-complication-example.json",
       "base": "ncdhc-observation-birth-complication-example.html"
     },
-	"Observation/841a72a8-df75-4484-ac89-ac4923f03b42": {
+    "Observation/841a72a8-df75-4484-ac89-ac4923f03b42": {
       "source": "ncdhc-observation-birth-abnormalities-example.json",
       "base": "ncdhc-observation-birth-abnormalities-example.html"
     },
-	"Observation/901a72a8-df75-4484-ac89-ac4923f03b01": {
+    "Observation/901a72a8-df75-4484-ac89-ac4923f03b01": {
       "source": "ncdhc-observation-apgar-score-1m-example.json",
       "base": "ncdhc-observation-apgar-score-1m-example.html"
     },
-	"MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b10": {
+    "MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b10": {
       "source": "ncdhc-medicationstatement-k1-example.json",
       "base": "ncdhc-medicationstatement-k1-example.html"
     },
-	"Observation/541a72a8-df75-4484-ac89-ac4923f03b53": {
+    "Observation/541a72a8-df75-4484-ac89-ac4923f03b53": {
       "source": "ncdhc-observation-pregnancy-complication-example.json",
       "base": "ncdhc-observation-pregnancy-complication-example.html"
     },
-	"Observation/741a72a8-df75-4484-ac89-ac4923f03b42": {
+    "Observation/741a72a8-df75-4484-ac89-ac4923f03b42": {
       "source": "ncdhc-observation-bodyweight-example.json",
       "base": "ncdhc-observation-bodyweight-example.html"
     },
-	"Observation/741a72a8-df75-4484-ac89-ac4923f03b43": {
+    "Observation/741a72a8-df75-4484-ac89-ac4923f03b43": {
       "source": "ncdhc-observation-birthweight-example.json",
       "base": "ncdhc-observation-birthweight-example.html"
     },
-	"Observation/741a72a8-df75-4484-ac89-ac4923f03b45": {
+    "Observation/741a72a8-df75-4484-ac89-ac4923f03b45": {
       "source": "ncdhc-observation-vitalsign-bodyweight-example.json",
       "base": "ncdhc-observation-vitalsign-bodyweight-example.html"
     },
-	"Observation/741a72a8-df75-4484-ac89-ac4923f03b44": {
+    "Observation/741a72a8-df75-4484-ac89-ac4923f03b44": {
       "source": "ncdhc-observation-vitalsign-birthweight-example.json",
       "base": "ncdhc-observation-vitalsign-birthweight-example.html"
     },
-	"Observation/541a72a8-df75-4484-ac89-ac4923f03b42": {
+    "Observation/541a72a8-df75-4484-ac89-ac4923f03b42": {
       "source": "ncdhc-observation-vitalsign-birthlength-example.json",
       "base": "ncdhc-observation-vitalsign-birthlength-example.html"
     },
-	"Observation/541a72a8-df75-4484-ac89-ac4923f03b43": {
+    "Observation/541a72a8-df75-4484-ac89-ac4923f03b43": {
       "source": "ncdhc-observation-vitalsign-bodyheight-example.json",
       "base": "ncdhc-observation-vitalsign-bodyheight-example.html"
     },
-	
+    "Observation/541a72a8-df75-4484-ac89-ac4923f03b46": {
+      "source": "ncdhc-observation-bodyheight-example.json",
+      "base": "ncdhc-observation-bodyheight-example.html"
+    },
+    "Observation/541a72a8-df75-4484-ac89-ac4923f03b47": {
+      "source": "ncdhc-observation-vitalsign-headcircum-example.json",
+      "base": "ncdhc-observation-vitalsign-headcircum-example.html"
+    },
     "Questionnaire/nb-delivery-q-en-s1": {
       "source": "ncdhc-view-questionnaire-birth.json",
       "base": "ncdhc-view-questionnaire-birth.html"

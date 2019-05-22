@@ -724,6 +724,18 @@
 				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b43"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b46"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b47"/>
+			</sourceReference>
+		</resource>
 	</package>
 	<page>
 		<source value="index.html"/>
