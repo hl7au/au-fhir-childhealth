@@ -71,7 +71,8 @@
       {
         "id": "Observation.code.coding:BirthLengthSNOMEDCTAUCode",
         "path": "Observation.code.coding",
-        "sliceName": "BirthLengthSNOMEDCTAUCode"
+        "sliceName": "BirthLengthSNOMEDCTAUCode",
+        "max": "1"
       },
       {
         "id": "Observation.code.coding:BirthLengthSNOMEDCTAUCode.system",

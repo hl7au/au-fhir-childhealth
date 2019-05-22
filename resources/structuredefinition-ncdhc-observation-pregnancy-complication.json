@@ -74,6 +74,16 @@
         }
       },
       {
+        "id": "Observation.code.coding:pregnancyComplicationSNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:pregnancyComplicationSNOMED-CT.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "609496007"
+      },
+      {
         "id": "Observation.subject",
         "path": "Observation.subject",
         "short": "Reference to the Baby Patient"

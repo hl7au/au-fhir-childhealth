@@ -717,8 +717,12 @@
         "effectiveDateTime": "2019-05-18T22:33:22Z",
         "performer": [
           {
-            "reference": "Practitioner/kk78393f-37ca-4738-81d6-d9595b2e5d0f",
-            "display": "Dr. Rob Boston"
+            "reference": "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "display": "Organisation"
           }
         ],
         "valueQuantity": {
@@ -1003,8 +1007,12 @@
         "effectiveDateTime": "2018-12-27T16:13:03Z",
         "performer": [
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/kk78393f-37ca-4738-81d6-d9595b2e5d0f",
-            "display": "Dr. Rob Boston"
+            "reference": "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "display": "Organisation"
           }
         ],
         "valueString": "Cephalopelvic disproportion (CPD)"
@@ -1045,8 +1053,12 @@
         "effectiveDateTime": "2018-12-27T16:13:03Z",
         "performer": [
           {
-            "reference": "Practitioner/kk78393f-37ca-4738-81d6-d9595b2e5d0f",
-            "display": "Dr. Rob Boston"
+            "reference": "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "display": "Organisation"
           }
         ],
         "valueString": "High blood pressure"
@@ -1106,7 +1118,11 @@
         "performer": [
           {
             "reference": "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Dr. Carla Smith"
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "display": "Organisation"
           }
         ],
         "valueQuantity": {
@@ -1169,7 +1185,11 @@
         "performer": [
           {
             "reference": "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Dr. Carla Smith"
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "display": "Organisation"
           }
         ],
         "valueQuantity": {

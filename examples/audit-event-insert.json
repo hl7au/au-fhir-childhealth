@@ -42,7 +42,7 @@
         }
       ],
       "reference": {
-        "reference": "Patient/example-newborn"
+        "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
       },
       "userId": {
         "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
