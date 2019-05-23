@@ -412,8 +412,17 @@
     "ValueSet/ncdhc-encounter-type": {
       "base": "ValueSet-ncdhc-encounter-type.html"
     },
-    "ValueSet/ncdhc-meds-ncdhc-route-admins-type": {
-      "base": "ValueSet-ncdhc-meds-ncdhc-route-admins-type.html"
+    "ValueSet/ncdhc-meds-route-admins-type": {
+      "base": "ValueSet-ncdhc-meds-route-admins-type.html"
+    },	 
+	 "ValueSet/valueset-ncdhc-vitamink-doses": {
+      "base": "ValueSet-valueset-ncdhc-vitamink-doses.html"
+    },
+	 "ValueSet/ncdhc-audit-subtype": {
+      "base": "ValueSet-ncdhc-audit-subtype.html"
+    },
+    "CodeSystem/ncdhc-audit-subtype": {
+      "base": "CodeSystem-ncdhc-audit-subtype.html"
     },
     "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f": {
       "source": "ncdhc-patient-baby-example.json",

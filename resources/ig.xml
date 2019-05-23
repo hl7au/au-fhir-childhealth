@@ -560,17 +560,23 @@
 			<sourceReference>
 				<reference value="ValueSet/ncdhc-condition-code"/>
 			</sourceReference>
-		</resource>
+		</resource>		
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="ValueSet/ncdhc-meds-ncdhc-route-admins-type"/>
+				<reference value="ValueSet/ncdhc-audit-role-type"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="ValueSet/ncdhc-audit-role-type"/>
+				<reference value="CodeSystem/ncdhc-audit-subtype"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-audit-subtype"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -583,6 +589,18 @@
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/ncdhc-observation-category"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-meds-route-admins-type"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/valueset-ncdhc-vitamink-doses"/>
 			</sourceReference>
 		</resource>
 		<resource>
