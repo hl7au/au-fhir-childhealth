@@ -526,11 +526,15 @@
     },
     "OperationDefinition/ncdhc-composition-view-document": {
       "base": "OperationDefinition-ncdhc-composition-view-document.html",
-      "defns": "StructureDefinition-ncdhc-composition-view-document-definitions.html"
+      "defns": "OperationDefinition-ncdhc-composition-view-document-definitions.html"
+    },
+	"OperationDefinition/ncdhc-bundle-upload": {
+      "base": "OperationDefinition-ncdhc-bundle-upload.html",
+      "defns": "OperationDefinition-ncdhc-bundle-upload-definitions.html"
     },
     "OperationDefinition/ncdhc-patient-access": {
       "base": "OperationDefinition-ncdhc-patient-access.html",
-      "defns": "StructureDefinition-ncdhc-patient-access-definitions.html"
+      "defns": "OperationDefinition-ncdhc-patient-access-definitions.html"
     },
     "CapabilityStatement/ncdhc-metadata": {
       "base": "capabilitystatement-ncdhc-metadata.html",

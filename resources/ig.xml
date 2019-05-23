@@ -376,6 +376,12 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="OperationDefinition/ncdhc-bundle-upload"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="OperationDefinition/ncdhc-patient-access"/>
 			</sourceReference>
 		</resource>
