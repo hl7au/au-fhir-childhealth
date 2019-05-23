@@ -27,7 +27,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
-      "documentation": "This parameter instructs the FHIR server to produce a document with minimum details (as defined by server). the default value is true. If client wants full document then the value should be provided as 'false'. In that case the server will provide the referenced resources in the Bundle. For an example if the $document generates a view where each section of the document is based on QuestionnaireResponse then 'false' value of this param will force the server to include the referenced Questionnaire resource in the Bundle document and section source using Provenence resource.",
+      "documentation": "This parameter instructs the FHIR server to produce a document with minimum details (as defined by server). the default value is true. If client wants full document then the value should be provided as 'false'. In that case the server will provide the referenced resources in the Bundle. For an example if the $document generates a view where each section of the document is based on QuestionnaireResponse, then 'false' value of this param will force the server to include the referenced Questionnaire resource in the Bundle document and section source using Provenence resource.",
       "type": "boolean"
     },
     {
@@ -36,7 +36,7 @@
       "min": 1,
       "max": "1",
       "documentation": "type code to instruct the FHIR server which type of view needs to be generated",
-      "type": "Coding"
+      "type": "CodeableConcept"
     }
   ]
 }

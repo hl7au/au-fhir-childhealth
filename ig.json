@@ -515,9 +515,9 @@
       "source": "ncdhc-view-questionnaire-response-birth.json",
       "base": "ncdhc-view-questionnaire-response-birth.html"
     },
-    "OperationDefinition/ncdhc-composition-document": {
-      "base": "OperationDefinition-ncdhc-composition-document.html",
-      "defns": "StructureDefinition-ncdhc-composition-document-definitions.html"
+    "OperationDefinition/ncdhc-composition-view-document": {
+      "base": "OperationDefinition-ncdhc-composition-view-document.html",
+      "defns": "StructureDefinition-ncdhc-composition-view-document-definitions.html"
     },
     "OperationDefinition/ncdhc-patient-access": {
       "base": "OperationDefinition-ncdhc-patient-access.html",

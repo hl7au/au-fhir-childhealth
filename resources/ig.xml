@@ -370,6 +370,12 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="OperationDefinition/ncdhc-composition-view-document"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="OperationDefinition/ncdhc-patient-access"/>
 			</sourceReference>
 		</resource>
