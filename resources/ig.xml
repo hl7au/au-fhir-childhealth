@@ -7,10 +7,10 @@
 	<name value="Child Health Implementation Guide"/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<date value="2018-08-06"/>
+	<date value="2019-08-30"/>
 	<publisher value="National Children's Digital Health Collaborative (NCDHC)"/>
 	<contact>
-		<name value="HL7 Australia Child Health Working Group"/>
+		<name value="HL7 Australia Child Digital Health Working Group"/>
 		<telecom>
 			<system value="url"/>
 			<value value="https://confluence.hl7australia.com/display/CHWG/Child+Health+Working+Group"/>
