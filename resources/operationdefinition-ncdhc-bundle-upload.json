@@ -1,0 +1,46 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "ncdhc-bundle-upload",
+  "url": "http://hl7.org.au/fhir/ch/v1/OperationDefinition/ncdhc-bundle-upload",
+  "version": "v1.0.0",
+  "name": "NCDHC OperationDefination $upload",
+  "status": "active",
+  "kind": "operation",
+  "date": "2019-05-17",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "purpose": "To allow client system to access custom view generated from multiple sources",
+  "code": "upload",
+  "comment": "This custom FHIR operation will be used to upload a FHIR document in Data Hub",
+  "resource": [
+    "Bundle"
+  ],
+  "system": false,
+  "type": true,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "payload",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "This parameter is use to transmit the payload to HUB",
+      "type": "Bundle"
+    },
+    {
+      "name": "consenter",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "A Patient/RelatedPerson/Person instance detailing the entity who has provided the consent during registration. The instance represent the person who has the parental responsibility and provided the consent.",
+      "type": "Reference"
+    },
+    {
+      "name": "result",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "The server SHALL return an OperationOutcome resource detailing the outcome. If the document has been created successfully, then the server shall provide the 'id' of the newly created document",
+      "type": "OperationOutcome"
+    }
+  ]
+}
