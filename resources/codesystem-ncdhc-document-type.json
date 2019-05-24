@@ -51,6 +51,11 @@
       "display": "Newborn Discharge",
       "definition": "A newborn child is discharged from care - discharge summary is generated"
     },
+	{
+      "code": "BRTHVW",
+      "display": "Birth Consolidated View",
+      "definition": "Birth Consolidated View"
+    },
     {
       "code": "EXAM04W",
       "display": "Newborn Examination (Assessment) 0-4 weeks",
