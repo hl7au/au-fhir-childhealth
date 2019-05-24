@@ -311,7 +311,7 @@
           "interaction": [
             {
               "code": "read",
-              "documentation": "System allows user to read a particular Bundle"
+              "documentation": "System allows user to read a particular Bundle (FHIR Document)"
             },
             {
               "code": "history-instance",
@@ -342,7 +342,7 @@
             {
               "name": "composition.subject",
               "type": "reference",
-              "documentation": "Reference to the Patient for whom the Bundle should be pulled. If the reference is not provided in the request, system should try to pull the Bundle instances associated to the logged in user (Patient associated to the access token)"
+              "documentation": "Reference to the Patient for whom the Bundle should be pulled. If the reference is not provided in the request, system should try to pull the Bundle instances associated to the logged in user (Patient associated to the access token). This field is mandatory when used by provider system."
             },
             {
               "name": "composition.status",
@@ -375,9 +375,15 @@
           }
         },
         {
-          "name": "NCDHC OperationDefination $document",
+          "name": "NCDHC OperationDefination $view-document",
           "definition": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/OperationDefinition/ncdhc-composition-document"
+            "reference": "http://hl7.org.au/fhir/ch/v1/OperationDefinition/ncdhc-composition-view-document"
+          }
+        },
+        {
+          "name": "NCDHC OperationDefination $upload",
+          "definition": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/OperationDefinition/ncdhc-bundle-upload"
           }
         }
       ]
