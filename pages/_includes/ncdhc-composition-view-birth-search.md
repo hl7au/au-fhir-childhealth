@@ -21,7 +21,7 @@ Below is an overview of the required search and read operations for this profile
 
 *Support:* Mandatory to support search by patient
 
-*Implementation Notes:*  Search FHIR Document as per the provided Patient's identifier. The server will return back the complete view of the document. 
+*Implementation Notes:*  Search FHIR Document as per the provided Patient's identifier. The server will return back the detailed document. 
 
 *Response Class:*
 

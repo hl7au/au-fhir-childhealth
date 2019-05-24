@@ -12,11 +12,7 @@
   "id": "541a72a8-df75-4484-ac89-ac4923f03b52",
   "status": "final",
   "code": {
-    "coding": [
-      {
-        "system": "http://loinc.org",
-        "code": "TBD"
-      },
+    "coding": [     
       {
         "system": "http://snomed.info/sct",
         "code": "198609003"
