@@ -1,0 +1,54 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-operation-outcome",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-operation-outcome",
+  "version": "v1.0.0",
+  "name": "NCDHC OperationOutcome Profile",
+  "title": "NCDHC OperationOutcome",
+  "status": "draft",
+  "date": "2019-05-31",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "OperationOutcome",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/OperationOutcome",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "OperationOutcome",
+        "path": "OperationOutcome",
+        "short": "NCDHC OperationOutcome Profile"
+      },
+      {
+        "id": "OperationOutcome.issue.details.coding",
+        "path": "OperationOutcome.issue.details.coding",
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/ncdhc-operation-outcome"
+          }
+        }
+      },
+      {
+        "id": "OperationOutcome.issue.details.text",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "OperationOutcome.issue.details.text",
+        "short": "The Functional message SHALL go here",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "OperationOutcome.issue.diagnostics",
+        "path": "OperationOutcome.issue.diagnostics",
+        "short": "Additional diagnostic information about the issue. This shall contain unique error id",
+        "min": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+NO Search Capability has been enabled for OperationOutcome resource. 

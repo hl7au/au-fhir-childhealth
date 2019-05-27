@@ -1,0 +1,24 @@
+{
+    "resourceType": "OperationOutcome",
+    "id": "62333608-eb01-40b5-b6c3-daded7910406",
+    "text": {
+      "status": "additional",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>The requested AuditEvent no longer exists in the Data Hub</p>\n    </div>"
+    },
+    "issue": [
+      {
+        "severity": "information",
+        "code": "not-found",
+        "details": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/ncdhc-operation-outcome",
+              "code": "NCDHC-AE-410"
+            }
+          ],
+          "text": "The requested Audit details no longer exists in the Data Hub"
+        },
+        "diagnostics": "NCDHC12345: No matching AuditEvent exists for the Patient with id 62333608-eb01-40b5-b6c3-daded7910406"
+      }
+    ]
+  }
