@@ -615,6 +615,12 @@
 				<reference value="CodeSystem/ncdhc-hi-type"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-operation-outcome"/>
+			</sourceReference>
+		</resource>
 <!-- Example Section -->
 		<resource>
 			<example value="true"/>
@@ -764,6 +770,12 @@
 			<example value="true"/>
 			<sourceReference>
 				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b47"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="OperationOutcome/62333608-eb01-40b5-b6c3-daded7910406"/>
 			</sourceReference>
 		</resource>
 	</package>

@@ -17,7 +17,7 @@
   "dependencyList": [
     {
       "name": "aubase",
-      "location": "http://hl7.org.au/fhir",
+      "location": "http://hl7.org.au/fhir/base",
       "version": "current"
     }
   ],
@@ -319,6 +319,10 @@
       "base": "StructureDefinition-ncdhc-composition-view-base.html",
       "defns": "StructureDefinition-ncdhc-composition-view-base-definitions.html"
     },
+	"StructureDefinition/ncdhc-operation-outcome": {
+      "base": "StructureDefinition-ncdhc-operation-outcome.html",
+      "defns": "StructureDefinition-ncdhc-operation-outcome-definitions.html"
+    },
     "ValueSet/apgar-score-type": {
       "base": "ValueSet-apgar-score-type.html"
     },
@@ -535,6 +539,10 @@
     "OperationDefinition/ncdhc-patient-access": {
       "base": "OperationDefinition-ncdhc-patient-access.html",
       "defns": "OperationDefinition-ncdhc-patient-access-definitions.html"
+    },
+	"OperationOutcome/62333608-eb01-40b5-b6c3-daded7910406": {
+      "source": "ncdhc-operationoutcome-information-example.json",
+      "base": "ncdhc-operationoutcome-information-example.html"
     },
     "CapabilityStatement/ncdhc-metadata": {
       "base": "capabilitystatement-ncdhc-metadata.html",
