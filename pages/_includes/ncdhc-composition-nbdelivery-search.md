@@ -47,9 +47,9 @@ Below is an overview of the required search and read operations for this profile
 -   (Status 500): Internal Server Error - Data Hub is unable to respond
 
 -----------
-**`POST /Bundle/$upload`**
+**`POST /`**
 
-*Support:* Mandatory to support search by patient
+*Support:* Bundle Transaction Model SHALL be supported by the server and client system
 
 *Implementation Notes:*  Creates a new document in the Child Data Hub.  Duplicates are not allowed. The server may enforces use of 'Prefer' tag with value as 'representation' to get the newly created document. Please reefer to $upload FHIR operation for more details on input and output parameters.
 
