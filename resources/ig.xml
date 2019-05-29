@@ -621,6 +621,12 @@
 				<reference value="StructureDefinition/ncdhc-operation-outcome"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-questionnaire-base"/>
+			</sourceReference>
+		</resource>
 <!-- Example Section -->
 		<resource>
 			<example value="true"/>
@@ -656,6 +662,12 @@
 			<example value="true"/>
 			<sourceReference>
 				<reference value="Bundle/ncdhc-composition-view-birth-sample"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Bundle/ncdhc-bundle-transaction-nbdelivery-request-payload"/>
 			</sourceReference>
 		</resource>
 		<resource>
