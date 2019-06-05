@@ -532,9 +532,9 @@
       "source": "ncdhc-view-questionnaire-birth.json",
       "base": "ncdhc-view-questionnaire-birth.html"
     },
-    "QuestionnaireResponse/nb-delivery-qa-1": {
-      "source": "ncdhc-view-questionnaire-response-birth.json",
-      "base": "ncdhc-view-questionnaire-response-birth.html"
+    "QuestionnaireResponse/nb-birth-qa-1": {
+      "source": "ncdhc-view-questionnaireresponse-birth.json",
+      "base": "ncdhc-view-questionnaireresponse-birth.html"
     },
     "OperationDefinition/ncdhc-composition-view-document": {
       "base": "OperationDefinition-ncdhc-composition-view-document.html",
