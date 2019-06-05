@@ -407,267 +407,223 @@
         },
         "item": [
           {
+            "id": "1.0.0.0",
             "linkId": "1",
             "text": "Facility / Location",
-            "item": [
+            "subject": {
+              "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+            },
+            "answer": [
               {
-                "linkId": "1.1",
-                "text": "value",
-                "answer": [
-                  {
-                    "valueString": "Blacktown Hospital"
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2",
-                "text": "link",
-                "answer": [
-                  {
-                    "valueReference": {
-                      "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
-                    }
-                  }
-                ]
+                "valueString": "Blacktown Hospital"
               }
             ]
           },
           {
+            "id": "2.0.0.0",
             "linkId": "2",
             "text": "Birth Date / Time",
-            "item": [
+            "subject": {
+              "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+            },
+            "answer": [
               {
-                "linkId": "2.1",
-                "text": "value",
-                "answer": [
-                  {
-                    "valueDateTime": "2018-01-07T17:42:21z"
-                  }
-                ]
-              },
-              {
-                "linkId": "2.2",
-                "text": "link",
-                "answer": [
-                  {
-                    "valueReference": {
-                      "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
-                    }
-                  }
-                ]
+                "valueDateTime": "2018-01-19T14:15:00-05:00"
               }
             ]
           },
           {
+            "id": "3.0.0.0",
             "linkId": "3",
             "text": "Sex",
-            "item": [
+            "subject": {
+              "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+            },
+            "answer": [
               {
-                "linkId": "3.1",
-                "text": "value",
-                "answer": [
-                  {
-                    "valueCoding": {
-                      "system": "http://hl7.org/fhir/administrative-gender",
-                      "code": "female",
-                      "display": "Female"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "3.2",
-                "text": "link",
-                "answer": [
-                  {
-                    "valueReference": {
-                      "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
-                    }
-                  }
-                ]
+                "valueCoding": {
+                  "system": "http://hl7.org/fhir/administrative-gender",
+                  "code": "female",
+                  "display": "Female"
+                }
               }
             ]
           },
           {
+            "id": "4.0.0.0",
             "linkId": "4",
             "text": "Estimated Gestation",
-            "item": [
+            "subject": {
+              "reference": "Observation/241a72a8-df75-4484-ac89-ac4923f03b42"
+            },
+            "answer": [
               {
-                "linkId": "4.1",
-                "text": "value",
-                "answer": [
-                  {
-                    "valueQuantity": {
-                      "value": 41.5,
-                      "unit": "week",
-                      "system": "http://unitsofmeasure.org",
-                      "code": "wk"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "4.2",
-                "text": "link",
-                "answer": [
-                  {
-                    "valueReference": {
-                      "reference": "Observation/241a72a8-df75-4484-ac89-ac4923f03b42"
-                    }
-                  }
-                ]
+                "valueString": "41 weeks 5 days"
               }
             ]
           },
           {
+            "id": "5.0.0.0",
             "linkId": "5",
             "text": "Type of Birth",
-            "item": [
+            "subject": {
+              "reference": "Observation/641a72a8-df75-4484-ac89-ac4923f03b41"
+            },
+            "answer": [
               {
-                "linkId": "5.1",
-                "text": "value",
-                "answer": [
-                  {
-                    "valueCoding": {
-                      "system": "http://snomed.info/sct",
-                      "code": "289259007",
-                      "display": "Vaginal delivery"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "5.2",
-                "text": "link",
-                "answer": [
-                  {
-                    "valueReference": {
-                      "reference": "Observation/641a72a8-df75-4484-ac89-ac4923f03b41"
-                    }
-                  }
-                ]
+                "valueCoding": {
+                  "system": "http://snomed.info/sct",
+                  "code": "289259007",
+                  "display": "Vaginal delivery"
+                }
               }
             ]
           },
           {
+            "id": "6.0.0.0",
             "linkId": "6",
             "text": "Labour Initiation",
-            "item": [
+            "subject": {
+              "reference": "Observation/641a72a8-df75-4l484-ac89-ac4923f03b42"
+            },
+            "answer": [
               {
-                "linkId": "6.1",
-                "text": "value",
-                "answer": [
-                  {
-                    "valueCoding": {
-                      "system": "http://snomed.info/sct",
-                      "code": "84457005",
-                      "display": "Spontaneous onset of labor"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "6.2",
-                "text": "link",
-                "answer": [
-                  {
-                    "valueReference": {
-                      "reference": "Observation/641a72a8-df75-4l484-ac89-ac4923f03b42"
-                    }
-                  }
-                ]
+                "valueCoding": {
+                  "system": "http://snomed.info/sct",
+                  "code": "84457005",
+                  "display": "Spontaneous onset of labor"
+                }
               }
             ]
           },
           {
+            "id": "7.0.0.0",
             "linkId": "7",
             "text": "Pregnancy Complications",
-            "item": [
+            "answer": [
               {
-                "linkId": "7.2",
-                "text": "text",
-                "answer": [
-                  {
-                    "valueString": "Not applicable"
-                  }
-                ]
-              },
-              {
-                "linkId": "7.3",
-                "text": "link",
-                "answer": [
-                  {
-                    "valueReference": {
-                      "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b53"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "linkId": "8",
-            "text": "Abnormalities Noted",
-            "item": [
-              {
-                "linkId": "8.2",
-                "text": "text",
-                "answer": [
-                  {
-                    "valueString": "Not applicable"
-                  }
-                ]
-              },
-              {
-                "linkId": "8.3",
-                "text": "link",
-                "answer": [
-                  {
-                    "valueReference": {
-                      "reference": "Observation/841a72a8-df75-4484-ac89-ac4923f03b42"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "linkId": "9",
-            "text": "Birth Complications",
-            "item": [
-              {
-                "linkId": "9.2",
-                "text": "text",
-                "answer": [
-                  {
-                    "valueString": "Not applicable"
-                  }
-                ]
-              },
-              {
-                "linkId": "9.3",
-                "text": "link",
-                "answer": [
-                  {
-                    "valueReference": {
-                      "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b52"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "linkId": "10",
-            "text": "APGAR",
-            "item": [
-              {
-                "linkId": "10.1",
-                "text": "1 minute",
+                "valueString": "Yes",
                 "item": [
                   {
-                    "linkId": "10.1.1",
-                    "text": "value",
+                    "id": "7.1.0.1",
+                    "linkId": "7.1",
+                    "subject": {
+                      "reference": "Observation/701a72a8-df75-4484-ac89-ac4923f03b02"
+                    },
+                    "item": [
+                      {
+                        "id": "7.1.1.1",
+                        "linkId": "7.1.1",
+                        "text": "Problem",
+                        "answer": [
+                          {
+                            "valueString": "High blood pressure"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "7.1.2.1",
+                        "linkId": "7.1.2",
+                        "text": "Comment",
+                        "answer": [
+                          {
+                            "valueString": "Not Applicable"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "7.1.0.2",
+                    "linkId": "7.1",
+                    "subject": {
+                      "reference": "Observation/701a72a8-df75-4484-ac89-ac4923f03b03"
+                    },
+                    "item": [
+                      {
+                        "id": "7.1.1.2",
+                        "linkId": "7.1.1",
+                        "text": "Problem",
+                        "answer": [
+                          {
+                            "valueString": "Medical Problem - Infection"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "7.1.2.2",
+                        "linkId": "7.1.2",
+                        "text": "Comment",
+                        "answer": [
+                          {
+                            "valueString": "Injection found"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "8.0.0.0",
+            "linkId": "8",
+            "text": "Abnormalities Noted",
+            "subject": {
+              "reference": "Observation/841a72a8-df75-4484-ac89-ac4923f03b42"
+            },
+            "answer": [
+              {
+                "valueString": "Yes",
+                "item": [
+                  {
+                    "id": "8.1.0.1",
+                    "linkId": "8.1",
+                    "text": "Abnormalities Noted",
+                    "subject": {
+                      "reference": "Observation/841a72a8-df75-4484-ac89-ac4923f03b42"
+                    },
+                    "answer": [
+                      {
+                        "valueString": "The foot is twisted out of shape or position"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "9.0.0.0",
+            "linkId": "9",
+            "text": "Birth Complications",
+            "subject": {
+              "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b52"
+            },
+            "answer": [
+              {
+                "valueCoding": {
+                  "display": "Not Applicable"
+                }
+              }
+            ]
+          },
+          {
+            "id": "10.0.0.0",
+            "linkId": "10",
+            "text": "APGAR",
+            "answer": [
+              {
+                "valueString": "1m: 9",
+                "item": [
+                  {
+                    "id": "10.1.0.1",
+                    "linkId": "10.1",
+                    "text": "1 minute",
+                    "subject": {
+                      "reference": "Observation/901a72a8-df75-4484-ac89-ac4923f03b01"
+                    },
                     "answer": [
                       {
                         "valueQuantity": {
@@ -679,12 +635,33 @@
                     ]
                   },
                   {
-                    "linkId": "10.1.2",
-                    "text": "link",
+                    "id": "10.2.0.1",
+                    "linkId": "10.2",
+                    "text": "5 minute",
+                    "subject": {
+                      "reference": "Observation/901a72a8-df75-4484-ac89-ac4923f03b02"
+                    },
                     "answer": [
                       {
-                        "valueReference": {
-                          "reference": "Observation/901a72a8-df75-4484-ac89-ac4923f03b01"
+                        "valueQuantity": {
+                          "value": 16,
+                          "system": "http://unitsofmeasure.org",
+                          "code": "{score}"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "10.3.0.1",
+                    "linkId": "10.3",
+                    "text": "10 minute",
+                    "subject": {
+                      "reference": "Observation/901a72a8-df75-4484-ac89-ac4923f03b03"
+                    },
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "display": "Not Available"
                         }
                       }
                     ]
@@ -694,132 +671,111 @@
             ]
           },
           {
+            "id": "11.0.0.0",
             "linkId": "11",
             "text": "Birth Weight",
-            "item": [
+            "subject": {
+              "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b44"
+            },
+            "answer": [
               {
-                "linkId": "11.1",
-                "text": "text",
-                "answer": [
-                  {
-                    "valueQuantity": {
-                      "value": 4140,
-                      "unit": "g",
-                      "system": "http://unitsofmeasure.org",
-                      "code": "g"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "11.3",
-                "text": "link",
-                "answer": [
-                  {
-                    "valueReference": {
-                      "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b44"
-                    }
-                  }
-                ]
+                "valueQuantity": {
+                  "value": 3.09414,
+                  "unit": "kg",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "kg"
+                }
               }
             ]
           },
           {
+            "id": "12.0.0.0",
             "linkId": "12",
             "text": "Birth Length",
-            "item": [
+            "subject": {
+              "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b42"
+            },
+            "answer": [
               {
-                "linkId": "12.1",
-                "text": "text",
-                "answer": [
-                  {
-                    "valueQuantity": {
-                      "value": 51.5,
-                      "unit": "cm",
-                      "system": "http://unitsofmeasure.org",
-                      "code": "cm"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "12.3",
-                "text": "link",
-                "answer": [
-                  {
-                    "valueReference": {
-                      "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b42"
-                    }
-                  }
-                ]
+                "valueQuantity": {
+                  "value": 125,
+                  "unit": "cm",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "cm"
+                }
               }
             ]
           },
           {
+            "id": "13.0.0.0",
             "linkId": "13",
             "text": "Head Circumference",
-            "item": [
+            "subject": {
+              "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b47"
+            },
+            "answer": [
               {
-                "linkId": "13.1",
-                "text": "text",
-                "answer": [
-                  {
-                    "valueQuantity": {
-                      "value": 34.5,
-                      "unit": "cm",
-                      "system": "http://unitsofmeasure.org",
-                      "code": "cm"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "13.3",
-                "text": "link",
-                "answer": [
-                  {
-                    "valueReference": {
-                      "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b47"
-                    }
-                  }
-                ]
+                "valueQuantity": {
+                  "value": 51.2,
+                  "unit": "cm",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "cm"
+                }
               }
             ]
           },
           {
+            "id": "14.0.0.0",
             "linkId": "14",
             "text": "Vitamin K",
-            "item": [
+            "answer": [
               {
-                "linkId": "14.1",
-                "text": "Vitamin K1",
+                "valueString": "Given",
                 "item": [
                   {
-                    "linkId": "14.1.1",
-                    "text": "date",
-                    "answer": [
+                    "linkId": "14.1",
+                    "text": "Vitamin K1",
+                    "subject": {
+                      "reference": "MedicationStatement/901a72a8-df75-4484-ac89-ac4923f03b02"
+                    },
+                    "item": [
                       {
-                        "valueDateTime": "2019-01-01T00:00:00Z"
-                      }
-                    ]
-                  },
-                  {
-                    "linkId": "14.1.2",
-                    "text": "text",
-                    "answer": [
+                        "id": "14.1.1.1",
+                        "linkId": "14.1.1",
+                        "text": "Dose",
+                        "answer": [
+                          {
+                            "valueCoding": {
+                              "system": "http://snomed.info/sct",
+                              "code": "66656000",
+                              "display": "Phytomenadione"
+                            }
+                          }
+                        ]
+                      },
                       {
-                        "valueString": "Given"
-                      }
-                    ]
-                  },
-                  {
-                    "linkId": "14.1.3",
-                    "text": "link",
-                    "answer": [
+                        "id": "14.1.2.1",
+                        "linkId": "14.1.2",
+                        "text": "Date",
+                        "answer": [
+                          {
+                            "valueDateTime": "2018-01-19T14:15:00-05:00"
+                          }
+                        ]
+                      },
                       {
-                        "valueReference": {
-                          "reference": "MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b10"
-                        }
+                        "id": "14.1.3.1",
+                        "linkId": "14.1.3",
+                        "text": "Route",
+                        "answer": [
+                          {
+                            "valueCoding": {
+                              "system": "http://snomed.info/sct",
+                              "code": "59108006",
+                              "display": "Injection"
+                            }
+                          }
+                        ]
                       }
                     ]
                   }
@@ -828,74 +784,136 @@
             ]
           },
           {
+            "id": "15.0.0.0",
             "linkId": "15",
             "text": "HepB Immunoglobin",
-            "item": [
+            "answer": [
               {
-                "linkId": "15.1",
-                "text": "date",
-                "answer": [
+                "valueString": "Geven",
+                "item": [
                   {
-                    "valueDateTime": "2019-01-01T00:00:00Z"
-                  }
-                ]
-              },
-              {
-                "linkId": "15.2",
-                "text": "text",
-                "answer": [
-                  {
-                    "valueString": "Given"
-                  }
-                ]
-              },
-              {
-                "linkId": "15.3",
-                "text": "link",
-                "answer": [
-                  {
-                    "valueReference": {
-                      "reference": "Observation/hepb-immunoglobin"
-                    }
+                    "id": "15.1.0.1",
+                    "linkId": "15.1",
+                    "text": "HepB Immunoglobin",
+                    "subject": {
+                      "reference": "Immunization/901a72a8-df75-4484-ac89-ac4923f03b02"
+                    },
+                    "answer": [
+                      {
+                        "valueString": "TBD"
+                      }
+                    ]
                   }
                 ]
               }
             ]
           },
           {
+            "id": "16.0.0.0",
             "linkId": "16",
             "text": "HepB Immunisation",
-            "item": [
+            "answer": [
               {
-                "linkId": "16.1",
-                "text": "date",
-                "answer": [
+                "valueString": "Geven",
+                "item": [
                   {
-                    "valueDateTime": "2019-01-01T00:00:00Z"
-                  }
-                ]
-              },
-              {
-                "linkId": "16.2",
-                "text": "text",
-                "answer": [
-                  {
-                    "valueString": "Given"
-                  }
-                ]
-              },
-              {
-                "linkId": "16.3",
-                "text": "link",
-                "answer": [
-                  {
-                    "valueReference": {
-                      "reference": "Observation/hepb-immunisation"
-                    }
+                    "id": "16.1.0.1",
+                    "linkId": "16.1",
+                    "text": "HepB Immunisation",
+                    "subject": {
+                      "reference": "Immunization/901a72a8-df75-4484-ac89-ac4923f03b03"
+                    },
+                    "answer": [
+                      {
+                        "valueString": "TBD"
+                      }
+                    ]
                   }
                 ]
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Provenance/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "od78393f-37ca-4738-81d6-d9595b2e5d0f",
+        "target": [
+          {
+            "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+          },
+          {
+            "reference": "Observation/241a72a8-df75-4484-ac89-ac4923f03b42"
+          },
+          {
+            "reference": "Observation/641a72a8-df75-4484-ac89-ac4923f03b41"
+          },
+          {
+            "reference": "Observation/641a72a8-df75-4l484-ac89-ac4923f03b42"
+          },
+          {
+            "reference": "Observation/701a72a8-df75-4484-ac89-ac4923f03b02"
+          },
+          {
+            "reference": "Observation/701a72a8-df75-4484-ac89-ac4923f03b03"
+          },
+          {
+            "reference": "Observation/841a72a8-df75-4484-ac89-ac4923f03b42"
+          },
+          {
+            "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b52"
+          },
+          {
+            "reference": "MedicationStatement/901a72a8-df75-4484-ac89-ac4923f03b02"
+          }
+        ],
+        "period": {
+          "start": "2019-05-27",
+          "end": "2019-05-27"
+        },
+        "recorded": "2019-05-27T08:39:24+10:00",
+        "agent": [
+          {
+            "role": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/RoleClass",
+                    "code": "PAT"
+                  }
+                ]
+              }
+            ],
+            "whoReference": {
+              "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+            }
+          },
+          {
+            "role": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "DEV"
+                  }
+                ]
+              }
+            ],
+            "whoReference": {
+              "reference": "Device/ncdhc-nsw-jt"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "whatReference": {
+              "reference": "DocumentReference/original-source-fhir-document-metadata",
+              "display": "Reference to the  FHIR Document in repository"
+            }
           }
         ]
       }

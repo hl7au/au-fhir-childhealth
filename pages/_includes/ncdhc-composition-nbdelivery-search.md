@@ -49,14 +49,13 @@ Below is an overview of the required search and read operations for this profile
 -----------
 **`POST /`**
 
-*Support:* Bundle Transaction Model SHALL be supported by the server and client system
+*Support:* Bundle Transaction Model SHALL be supported by the server and client system. The request payload Should be posted on the base url.
 
 *Implementation Notes:*  Creates a new document in the Child Data Hub.  Duplicates are not allowed. The server may enforces use of 'Prefer' tag with value as 'representation' to get the newly created document. Please reefer to $upload FHIR operation for more details on input and output parameters.
 
 *Response Class:*
 
 -   (Status 201): Created - Document has been successfully created
--   (Status 404): Not Found - resource type not supported, or not a FHIR end-point
 -   (Status 400): Bad Request - resource could not be parsed or failed basic FHIR validation rules
 -   (Status 422): Unprocessable Entity - the proposed resource violated applicable FHIR profiles or server business rules.
 -   (Status 401/4xx): Unauthorised - necessary credentials are missing in the request

@@ -1,6 +1,6 @@
 {
   "resourceType": "Questionnaire",
-  "id": "nb-delivery-q-en-s1",
+  "id": "nb-delivery-q-en-sd1",
   "meta": {
     "profile": [
       "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-questionnaire-base"
@@ -55,6 +55,11 @@
           "type": "string"
         },
         {
+          "linkId": "10-s",
+          "text": "source",
+          "type": "uri"
+        },
+        {
           "linkId": "10-m^169895004",
           "text": "more",
           "item": [
@@ -86,6 +91,11 @@
           "linkId": "14-d",
           "text": "display",
           "type": "string"
+        },
+        {
+          "linkId": "14-s",
+          "text": "source",
+          "type": "uri"
         },
         {
           "linkId": "14-m^169895004",
