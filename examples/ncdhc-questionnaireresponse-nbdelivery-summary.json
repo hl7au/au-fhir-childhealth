@@ -160,7 +160,7 @@
                     "text": "Comment",
                     "answer": [
                       {
-                        "valueString": "Injection found"
+                        "valueString": "Infection found"
                       }
                     ]
                   }
@@ -337,6 +337,7 @@
             "valueString": "Given",
             "item": [
               {
+                "id": "14.1.0.1",
                 "linkId": "14.1",
                 "text": "Vitamin K1",
                 "subject": {

@@ -556,7 +556,7 @@
                         "text": "Comment",
                         "answer": [
                           {
-                            "valueString": "Injection found"
+                            "valueString": "Infection found"
                           }
                         ]
                       }
@@ -733,6 +733,7 @@
                 "valueString": "Given",
                 "item": [
                   {
+                    "id": "14.1.0.1",
                     "linkId": "14.1",
                     "text": "Vitamin K1",
                     "subject": {
@@ -876,21 +877,6 @@
         },
         "recorded": "2019-05-27T08:39:24+10:00",
         "agent": [
-          {
-            "role": [
-              {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/v3/RoleClass",
-                    "code": "PAT"
-                  }
-                ]
-              }
-            ],
-            "whoReference": {
-              "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
-            }
-          },
           {
             "role": [
               {
