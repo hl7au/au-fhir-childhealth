@@ -627,6 +627,12 @@
 				<reference value="StructureDefinition/ncdhc-questionnaire-base"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-questionnaireresponse-base"/>
+			</sourceReference>
+		</resource>
 <!-- Example Section -->
 		<resource>
 			<example value="true"/>
@@ -681,11 +687,11 @@
 			<sourceReference>
 				<reference value="Questionnaire/nb-delivery-q-en-s1"/>
 			</sourceReference>
-		</resource>
+		</resource>		
 		<resource>
 			<example value="true"/>
 			<sourceReference>
-				<reference value="QuestionnaireResponse/nb-birth-qa-1"/>
+				<reference value="QuestionnaireResponse/nb-delivery-qa-1"/>
 			</sourceReference>
 		</resource>
 		<resource>

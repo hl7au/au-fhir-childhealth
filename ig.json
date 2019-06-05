@@ -327,6 +327,10 @@
       "base": "StructureDefinition-ncdhc-questionnaire-base.html",
       "defns": "StructureDefinition-ncdhc-questionnaire-base-definitions.html"
     },
+    "StructureDefinition/ncdhc-questionnaireresponse-base": {
+      "base": "StructureDefinition-ncdhc-questionnaireresponse-base.html",
+      "defns": "StructureDefinition-ncdhc-questionnaireresponse-base-definitions.html"
+    },
     "ValueSet/apgar-score-type": {
       "base": "ValueSet-apgar-score-type.html"
     },
@@ -529,12 +533,12 @@
       "base": "ncdhc-observation-vitalsign-headcircum-example.html"
     },
     "Questionnaire/nb-delivery-q-en-s1": {
-      "source": "ncdhc-view-questionnaire-birth.json",
-      "base": "ncdhc-view-questionnaire-birth.html"
+      "source": "ncdhc-view-questionnaire-nbdelivery-example.json",
+      "base": "ncdhc-view-questionnaire-nbdelivery-example.html"
     },
-    "QuestionnaireResponse/nb-birth-qa-1": {
-      "source": "ncdhc-view-questionnaireresponse-birth.json",
-      "base": "ncdhc-view-questionnaireresponse-birth.html"
+    "QuestionnaireResponse/nb-delivery-qa-1": {
+      "source": "ncdhc-questionnaireresponse-nbdelivery-example.json",
+      "base": "ncdhc-questionnaireresponse-nbdelivery-example.html"
     },
     "OperationDefinition/ncdhc-composition-view-document": {
       "base": "OperationDefinition-ncdhc-composition-view-document.html",
