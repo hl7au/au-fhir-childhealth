@@ -3,7 +3,9 @@
   "id": "ncdhc-questionnaireresponse-base",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-questionnaireresponse-base",
   "name": "NCDHC QuestionnaireResponse Base Profile",
+  "title": "NCDHC QuestionnaireResponse Base",
   "status": "draft",
+  "date": "2019-06-07",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "fhirVersion": "3.0.1",
   "kind": "resource",
@@ -14,74 +16,39 @@
   "differential": {
     "element": [
       {
+        "id": "QuestionnaireResponse",
+        "path": "QuestionnaireResponse",
+        "short": "NCDHC QuestionnaireResponse Profile"
+      },
+      {
+        "id": "QuestionnaireResponse.questionnaire",
+        "path": "QuestionnaireResponse.questionnaire",
+        "min": 1
+      },
+      {
+        "id": "QuestionnaireResponse.subject",
+        "path": "QuestionnaireResponse.subject",
+        "min": 1
+      },
+      {
         "id": "QuestionnaireResponse.item",
         "path": "QuestionnaireResponse.item",
         "min": 1
       },
       {
-        "id": "QuestionnaireResponse.item.item",
-        "path": "QuestionnaireResponse.item.item",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "linkId"
-            }
-          ],
-          "rules": "open"
-        }
+        "id": "QuestionnaireResponse.item.answer.item",
+        "path": "QuestionnaireResponse.item.answer.item",
+        "short": "Nested groups and questions. Provide Nested answer where the question type is group."
       },
       {
-        "id": "QuestionnaireResponse.item.item:value",
-        "path": "QuestionnaireResponse.item.item",
-        "sliceName": "value"
+        "id": "QuestionnaireResponse.item.answer.item.subject",
+        "path": "QuestionnaireResponse.item.answer.item.subject",
+        "short": "The subject this group's answers are about. It is recommended to provide a subject reference for all answers"
       },
       {
-        "id": "QuestionnaireResponse.item.item:value.text",
-        "path": "QuestionnaireResponse.item.item.text",
-        "fixedString": "value"
-      },
-      {
-        "id": "QuestionnaireResponse.item.item:text",
-        "path": "QuestionnaireResponse.item.item",
-        "sliceName": "text"
-      },
-      {
-        "id": "QuestionnaireResponse.item.item:text.text",
-        "path": "QuestionnaireResponse.item.item.text",
-        "fixedString": "text"
-      },
-      {
-        "id": "QuestionnaireResponse.item.item:link",
-        "path": "QuestionnaireResponse.item.item",
-        "sliceName": "link"
-      },
-      {
-        "id": "QuestionnaireResponse.item.item:link.text",
-        "path": "QuestionnaireResponse.item.item.text",
-        "fixedString": "link"
-      },
-      {
-        "id": "QuestionnaireResponse.item.item:interpretation",
-        "path": "QuestionnaireResponse.item.item",
-        "sliceName": "interpretation",
-        "max": "1"
-      },
-      {
-        "id": "QuestionnaireResponse.item.item:interpretation.text",
-        "path": "QuestionnaireResponse.item.item.text",
-        "fixedString": "interpretation"
-      },
-      {
-        "id": "QuestionnaireResponse.item.item:date",
-        "path": "QuestionnaireResponse.item.item",
-        "sliceName": "date",
-        "max": "1"
-      },
-      {
-        "id": "QuestionnaireResponse.item.item:date.text",
-        "path": "QuestionnaireResponse.item.item.text",
-        "fixedString": "date"
+        "id": "QuestionnaireResponse.item.answer.item.item",
+        "path": "QuestionnaireResponse.item.answer.item.item",
+        "short": "Nested questionnaire response items."
       }
     ]
   }
