@@ -11,11 +11,11 @@
   },
   "item": [
     {
-      "linkId": "1",
+      "linkId": "1^169812000",
       "text": "Facility / Location",
       "item": [
         {
-          "linkId": "1.1",
+          "linkId": "1.d-1",
           "text": "value",
           "answer": [
             {
@@ -24,8 +24,8 @@
           ]
         },
         {
-          "linkId": "1.2",
-          "text": "link",
+          "linkId": "1.s",
+          "text": "source",
           "answer": [
             {
               "valueReference": {

@@ -1140,7 +1140,7 @@
         },
         "request": {
           "method": "POST",
-          "url": "Binary"
+          "url": "Bundle"
         }
       },
       {
