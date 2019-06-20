@@ -1,0 +1,85 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-heart-rate",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-heart-rate",
+  "version": "v1.0.0",
+  "name": "NCDHC Fetal Heart Rate (FHR) Observation Profile",
+  "title": "NCDHC Fetal Heart Rate (FHR) Observation",
+  "status": "draft",
+  "date": "2019-06-21",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "A normal fetal heart rate (FHR), varies during gestation, increasing to around 170 bpm at 10 weeks and decreasing from then to around 130 bpm at term",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "289437007"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-baby"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-mother"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.valueQuantity",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.value",
+        "path": "Observation.valueQuantity.value",
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Observation.valueQuantity.unit",
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.system",
+        "path": "Observation.valueQuantity.system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.valueQuantity.code",
+        "fixedCode": "/min"
+      }
+    ]
+  }
+}

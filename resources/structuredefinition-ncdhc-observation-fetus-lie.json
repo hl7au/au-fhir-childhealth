@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-fetus-lie",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fetus-lie",
+  "version": "v1.0.0",
+  "name": "NCDHC Lie of Fetus Observation Profile",
+  "title": "NCDHC Lie of Fetus Observation",
+  "status": "draft",
+  "date": "2019-06-21",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "Relationship between the longitudinal axis of fetus and mother:",
+  "purpose": "To record relationship between the longitudinal axis of fetus and mother:",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "NCDHC Lie of Fetus Observation Profile"
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "patternCodeableConcept": {
+          "text": "This needs to be discussed and finalised"
+        }
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Lie of Fetus code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "Observation.code.coding:Lie-SNOMEDCT-AU",
+        "path": "Observation.code.coding",
+        "sliceName": "Lie-SNOMEDCT-AU",
+        "min": 1,
+        "max": "1",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "249062004"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Reference to the Mother Patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-mother"
+          }
+        ]
+      },
+      {
+        "id": "Observation.effectiveDateTime:effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "sliceName": "effectiveDateTime",
+        "short": "Date when Lie of fetus was assessed"
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "short": "Person who is clinically responsible for the undetaking of the assessment",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "Lie of Fetus codes",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-fetus-lie-type"
+          }
+        }
+      }
+    ]
+  }
+}

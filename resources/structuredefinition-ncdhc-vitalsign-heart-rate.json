@@ -1,0 +1,68 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-vitalsign-heart-rate",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-vitalsign-heart-rate",
+  "version": "v1.0.0",
+  "name": "NCDHC Heart Rate Vital Sign Profile",
+  "title": "NCDHC Vital Sign Heart Rate",
+  "status": "draft",
+  "date": "2019-06-21",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/heartrate",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding:FetalHeartRateSNOMEDCode",
+        "path": "Observation.code.coding",
+        "sliceName": "FetalHeartRateSNOMEDCode",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "289437007"
+        }
+      },
+      {
+        "id": "Observation.code.coding:HeartRateSNOMED",
+        "path": "Observation.code.coding",
+        "sliceName": "HeartRateSNOMED",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "364075005"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-baby"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-mother"
+          }
+        ]
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "min": 1
+      },
+      {
+        "id": "Observation.valueQuantity:valueQuantity",
+        "path": "Observation.valueQuantity",
+        "sliceName": "valueQuantity"
+      },
+      {
+        "id": "Observation.component.valueQuantity:valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "sliceName": "valueQuantity"
+      }
+    ]
+  }
+}

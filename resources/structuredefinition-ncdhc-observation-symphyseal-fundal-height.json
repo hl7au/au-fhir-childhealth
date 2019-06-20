@@ -1,0 +1,138 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-symphyseal-fundal-height",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-symphyseal-fundal-height",
+  "version": "v1.0.0",
+  "name": "NCDHC Symphyseal-fundal height (SFH) Observation Profile",
+  "title": "NCDHC Symphyseal-fundal height (SFH) Observation",
+  "status": "draft",
+  "date": "2019-06-21",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "It is measured from the top uterus to the top of the pubic symphysis. Fundal height, expressed in centimeters",
+  "purpose": "It is measured from the top uterus to the top of the pubic symphysis. Fundal height, expressed in centimeterslt",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "NCDHC Symphyseal-fundal height (SFH) Observation Profile"
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "patternCodeableConcept": {
+          "text": "This needs to be discussed and finalized"
+        }
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Symphyseal-fundal height (SFH) code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "Observation.code.coding:SFH-SNOMEDCT-AU",
+        "path": "Observation.code.coding",
+        "sliceName": "SFH-SNOMEDCT-AU",
+        "min": 1,
+        "max": "1",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "289626002"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Reference to the Mother Patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-mother"
+          }
+        ]
+      },
+      {
+        "id": "Observation.effectiveDateTime:effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "sliceName": "effectiveDateTime",
+        "short": "Date when Symphyseal-fundal height (SFH) was assessed"
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "short": "Person who is clinically responsible for the undetaking of the exam",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.valueQuantity",
+        "sliceName": "valueQuantity",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.value",
+        "path": "Observation.valueQuantity.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Observation.valueQuantity.unit",
+        "min": 1,
+        "fixedString": "cm",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.system",
+        "path": "Observation.valueQuantity.system",
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.valueQuantity.code",
+        "fixedCode": "cm"
+      }
+    ]
+  }
+}
