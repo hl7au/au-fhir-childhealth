@@ -255,13 +255,45 @@
       "base": "StructureDefinition-ncdhc-observation-vitalsign-bmi.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-bmi-definitions.html"
     },
-    "StructureDefinition/ncdhc-observation-feeding-status": {
-      "base": "StructureDefinition-ncdhc-observation-feeding-status.html",
-      "defns": "StructureDefinition-ncdhc-observation-feeding-status-definitions.html"
+    "StructureDefinition/ncdhc-vitalsign-heart-rate": {
+      "base": "StructureDefinition-ncdhc-vitalsign-heart-rate.html",
+      "defns": "StructureDefinition-ncdhc-vitalsign-heart-rate-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-heart-rate": {
+      "base": "StructureDefinition-ncdhc-observation-heart-rate.html",
+      "defns": "StructureDefinition-ncdhc-observation-heart-rate-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-fetal-movement": {
+      "base": "StructureDefinition-ncdhc-observation-fetal-movement.html",
+      "defns": "StructureDefinition-ncdhc-observation-fetal-movement-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-bloodspot-screen": {
       "base": "StructureDefinition-ncdhc-observation-bloodspot-screen.html",
       "defns": "StructureDefinition-ncdhc-observation-bloodspot-screen-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-fifths-above-brim": {
+      "base": "StructureDefinition-ncdhc-observation-fifths-above-brim.html",
+      "defns": "StructureDefinition-ncdhc-observation-fifths-above-brim-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-fetus-liquor": {
+      "base": "StructureDefinition-ncdhc-observation-fetus-liquor.html",
+      "defns": "StructureDefinition-ncdhc-observation-fetus-liquor-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-fetus-presentation": {
+      "base": "StructureDefinition-ncdhc-observation-fetus-presentation.html",
+      "defns": "StructureDefinition-ncdhc-observation-fetus-presentation-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-fetus-lie": {
+      "base": "StructureDefinition-ncdhc-observation-fetus-lie.html",
+      "defns": "StructureDefinition-ncdhc-observation-fetus-lie-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-fetus-position": {
+      "base": "StructureDefinition-ncdhc-observation-fetus-position.html",
+      "defns": "StructureDefinition-ncdhc-observation-fetus-position-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-symphyseal-fundal-height": {
+      "base": "StructureDefinition-ncdhc-observation-symphyseal-fundal-height.html",
+      "defns": "StructureDefinition-ncdhc-observation-symphyseal-fundal-height-definitions.html"
     },
     "StructureDefinition/ncdhc-medicationstatement-vitamink": {
       "base": "StructureDefinition-ncdhc-medicationstatement-vitamink.html",
@@ -314,6 +346,10 @@
     "StructureDefinition/ncdhc-composition-view-birth": {
       "base": "StructureDefinition-ncdhc-composition-view-birth.html",
       "defns": "StructureDefinition-ncdhc-composition-view-birth-definitions.html"
+    },
+	"StructureDefinition/ncdhc-composition-fetal-health-checks": {
+      "base": "StructureDefinition-ncdhc-composition-fetal-health-checks.html",
+      "defns": "StructureDefinition-ncdhc-composition-fetal-health-checks-definitions.html"
     },
     "StructureDefinition/ncdhc-composition-view-base": {
       "base": "StructureDefinition-ncdhc-composition-view-base.html",

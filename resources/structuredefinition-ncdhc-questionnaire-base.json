@@ -23,11 +23,6 @@
         "id": "Questionnaire.item",
         "path": "Questionnaire.item",
         "min": 1
-      },
-      {
-        "id": "Questionnaire.item.code",
-        "path": "Questionnaire.item.code",
-        "min": 1
       }
     ]
   }

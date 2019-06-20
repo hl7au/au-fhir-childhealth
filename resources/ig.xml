@@ -69,6 +69,12 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-fetal-health-checks"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-encounter"/>
 			</sourceReference>
 		</resource>
@@ -148,6 +154,12 @@
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bmi"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-vitalsign-heart-rate"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -316,7 +328,49 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-hearing-screen"/>
+				<reference value="StructureDefinition/ncdhc-observation-symphyseal-fundal-height"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-fetus-position"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-fetus-lie"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-fifths-above-brim"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-fetus-presentation"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-fetus-liquor"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-fetal-movement"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-heart-rate"/>
 			</sourceReference>
 		</resource>
 		<resource>
