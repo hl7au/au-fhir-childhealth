@@ -23,8 +23,10 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Body Height Vital Sign](StructureDefinition-ncdhc-observation-vitalsign-bodyheight.html) - Vital Sign profile to represent Length of Body. This profile is used to record the Birth Height as well.
 * [NCDHC Body Mass Index (BMI) Vital Sign](StructureDefinition-ncdhc-observation-vitalsign-bmi.html) - Vital Sign profile to represent Body Mass Index (BMI).
 * [NCDHC Head Circumference Vital Sign](StructureDefinition-ncdhc-observation-vitalsign-headcircum.html) - Vital Sign profile to represent Numeric value for head circumference
+* [NCDHC Heart Rate Vital Sign](StructureDefinition-ncdhc-vitalsign-heart-rate.html) - Vital Sign Heart Rate Profile
 * [NCDHC Body Weight](StructureDefinition-ncdhc-observation-bodyweight.html) - Observation profile to represent Weight of Body. This profile is used to record the Birth Weight as well. This profile allows the system to send body/birth weight details to DataHub using SNOMED Code only. 
 * [NCDHC Body Height](StructureDefinition-ncdhc-observation-bodyheight.html) - Observation profile to represent height of Body. This profile is used to record the Birth Height as well. This profile allows the system to send body/birth Height details to DataHub using SNOMED Code only. 
+* [NCDHC Heart Rate](StructureDefinition-ncdhc-observation-heart-rate.html) - Observation profile to represent heart rate. This profile allows the system to send Heart Rate details to DataHub using SNOMED Code only.
 * [NCDHC Birth Complication](StructureDefinition-ncdhc-observation-birth-complication.html) - Observation profile to record complications observed during the birthing process
 * [NCDHC Pregnancy Complications](StructureDefinition-ncdhc-observation-pregnancy-complication.html) - Observation profile to record maternal medical conditions or infectious diseases arising in pregnancy which may have an impact on the fetus, e.g. gestational diabetes, infection etc.
 * [NCDHC Labour Initiation](StructureDefinition-ncdhc-observation-labour-induced.html) - Observation profile to record labour initiation eg spontaneous, induced 
@@ -54,6 +56,13 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Skin](StructureDefinition-ncdhc-observation-skin.html) - Observation profile to record outcome of the child's skin assessment
 * [NCDHC Genitalia](StructureDefinition-ncdhc-observation-genitalia.html) - Observation profile to record outcome of the child's genitalia assessment
 * [NCDHC Reflexes](StructureDefinition-ncdhc-observation-test-reflexes.html) - Observation profile to record outcome of the child's reflexes assessment
+* [NCDHC Symphyseal Fundal Height](StructureDefinition-ncdhc-observation-symphyseal-fundal-height.html) - Observation profile to record Fundal height
+* [NCDHC Fetus Presentation](StructureDefinition-ncdhc-observation-fetus-presentation.html) - Observation profile to record Fetus Presentation
+* [NCDHC Fifths Above Brim](StructureDefinition-ncdhc-observation-fifths-above-brim.html) - Observation profile used to measure the decent of the babies head into the pelvis, measured in fifths of the head
+* [NCDHC Fetus Position](StructureDefinition-ncdhc-observation-fetus-position.html) - Observation profile used to record orientation of the fetus in the womb
+* [NCDHC Fetus Lie](StructureDefinition-ncdhc-observation-fetus-lie.html) - Observation profile used to record relationship between the longitudinal axis of fetus and mother
+* [NCDHC Fetus Liquor](StructureDefinition-ncdhc-observation-fetus-liquor.html) - Observation profile used to record amniotic fluid
+* [NCDHC Fetal Movement](StructureDefinition-ncdhc-observation-fetal-movement.html) - Observation profile used to record first movement, known as quickening, between weeks 14 and 26
 
 ## FamilyMemberHistory Profiles
 * [NCDHC Family History](StructureDefinition-ncdhc-familymemberhistory.html) - FamilyMemberHistory profile to record family history (e.g.: deafness)
@@ -76,6 +85,7 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Newborn Exam Health Interaction](StructureDefinition-ncdhc-composition-exam.html) - Composition profile to represent Newborn Exam Health Interaction
 * [NCDHC Health Check Assessment Health Interaction](StructureDefinition-ncdhc-composition-health-check-assessment.html) - Composition profile to represent Health Check Assessment Health Interaction
 * [NCDHC Newborn Family Member History Health Interaction](StructureDefinition-ncdhc-composition-familyhistory.html) - Composition profile to represent Newborn Family Member History Health Interaction
+* [NCDHC Fetal Health Checks Health Interaction](StructureDefinition-ncdhc-composition-fetal-health-checks.html) - Composition profile to represent Fetal Health Checks Health Interaction Health Interaction
 
 ## NCDHC Views
 * [NCDHC Birth Consolidated view](StructureDefinition-ncdhc-composition-view-birth.html) - Consolidated view to represent Birth related details. This view includes summaries from Newborn Delivery, Newborn Discharge, Bloodshot Screening, Hearing Screening and Immunisation.
