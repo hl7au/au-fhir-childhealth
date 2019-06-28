@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-vitalsign-heart-rate",
-  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-vitalsign-heart-rate",
+  "id": "ncdhc-observation-vitalsign-heart-rate",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-heart-rate",
   "version": "v1.0.0",
   "name": "NCDHC Heart Rate Vital Sign Profile",
   "title": "NCDHC Vital Sign Heart Rate",

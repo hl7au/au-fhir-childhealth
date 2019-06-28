@@ -1,0 +1,184 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-alcohol-intake",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-alcohol-intake",
+  "version": "v1.0.0",
+  "name": "NCDHC Alcohol Use Assessment Observation Profile",
+  "title": "NCDHC Alcohol Use Assessment Observation",
+  "status": "draft",
+  "date": "2019-06-28",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "Alchol Intake Status",
+  "purpose": "To record Alchol Intake status and relevant information",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "NCDHC Tobacco Use Assessment Observation Profile"
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "patternCodeableConcept": {
+          "text": "This needs to be discussed and finalised"
+        }
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Alchol Intake Status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "Observation.code.coding:AlcoholIntakeStatus-SNOMEDCT-AU",
+        "path": "Observation.code.coding",
+        "sliceName": "AlcoholIntakeStatus-SNOMEDCT-AU",
+        "min": 1,
+        "max": "1",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "160573003"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Reference to the Patient in context",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-mother"
+          }
+        ]
+      },
+      {
+        "id": "Observation.effectiveDateTime:effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "sliceName": "effectiveDateTime",
+        "short": "Date when amniotic fluid was assessed"
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "short": "Person who is clinically responsible for the undetaking of the assessment",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
+        "sliceName": "valueCodeableConcept",
+        "short": "Drinking Status",
+        "definition": "Create a value Set from taking few codes from SNMOED 228273003?",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-drinking-status"
+          }
+        }
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:AlcoholPerDay",
+        "path": "Observation.component",
+        "sliceName": "AlcoholPerDay",
+        "short": "Number of alcohol units consumed on typical drinking day",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:AlcoholPerDay.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.component:AlcoholPerDay.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "fixedCode": "443315005"
+      },
+      {
+        "id": "Observation.component:AlcoholPerDay.value[x]:valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "sliceName": "valueQuantity",
+        "short": "Cigarettes Consumption",
+        "definition": "Proposal is to create a ValueSet with options: 266921000: Ex-trivial cigarette smoker (<1/day), 266924008: Ex-heavy cigarette smoker (20-39/day), 160605003: Heavy cigarette smoker (20-39 cigs/day), 160603005: Light cigarette smoker (1-9 cigs/day)",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:AlcholQuitDate",
+        "path": "Observation.component",
+        "sliceName": "AlcholQuitDate"
+      },
+      {
+        "id": "Observation.component:AlcholQuitDate.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.component:AlcholQuitDate.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "fixedCode": "228329000"
+      },
+      {
+        "id": "Observation.component:AlcholQuitDate.value[x]:valueDateTime",
+        "path": "Observation.component.valueDateTime",
+        "sliceName": "valueDateTime",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      }
+    ]
+  }
+}

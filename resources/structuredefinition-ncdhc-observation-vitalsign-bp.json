@@ -1,0 +1,95 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-vitalsign-bp",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bp",
+  "name": "NCDHC Vital Sign BP Profile",
+  "title": "NCDHC Vital Sign Blood Pressure",
+  "status": "draft",
+  "date": "2019-06-28",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/bp",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "NCDHC Vital Sign Blood Pressure Profile"
+      },
+      {
+        "id": "Observation.code.coding:BP-SNOMED",
+        "path": "Observation.code.coding",
+        "sliceName": "BP-SNOMED",
+        "max": "1",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "75367002"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "The Patient in context",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-mother"
+          }
+        ]
+      },
+      {
+        "id": "Observation.valueQuantity:valueQuantity",
+        "path": "Observation.valueQuantity",
+        "sliceName": "valueQuantity"
+      },
+      {
+        "id": "Observation.component.valueQuantity:valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "sliceName": "valueQuantity"
+      },
+      {
+        "id": "Observation.component:SystolicBP",
+        "path": "Observation.component",
+        "sliceName": "SystolicBP"
+      },
+      {
+        "id": "Observation.component:SystolicBP.code.coding:SBP-SNOMED",
+        "path": "Observation.component.code.coding",
+        "sliceName": "SBP-SNOMED",
+        "max": "1",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "271649006"
+        }
+      },
+      {
+        "id": "Observation.component:SystolicBP.valueQuantity:valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "sliceName": "valueQuantity"
+      },
+      {
+        "id": "Observation.component:DiastolicBP",
+        "path": "Observation.component",
+        "sliceName": "DiastolicBP"
+      },
+      {
+        "id": "Observation.component:DiastolicBP.code.coding:DBP-SNOMED",
+        "path": "Observation.component.code.coding",
+        "sliceName": "DBP-SNOMED",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "271650006"
+        }
+      },
+      {
+        "id": "Observation.component:DiastolicBP.valueQuantity:valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "sliceName": "valueQuantity"
+      }
+    ]
+  }
+}

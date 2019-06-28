@@ -63,7 +63,7 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "short": "Reference to the Mother Patient",
+        "short": "Reference to the Patient in context",
         "type": [
           {
             "code": "Reference",
