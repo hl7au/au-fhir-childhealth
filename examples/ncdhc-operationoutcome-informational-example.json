@@ -1,0 +1,18 @@
+{
+    "resourceType": "OperationOutcome",
+    "id": "62333608-eb01-40b5-b6c3-daded7910406",
+    "text": {
+      "status": "additional",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Au</p>\n    </div>"
+    },
+    "issue": [
+      {
+        "severity": "information",
+        "code": "informational",
+        "details": {
+          "text": "Audit details captured"
+        },
+        "diagnostics": "NCDHC-200-12345: AuditEvent with id '62333608-eb01-40b5-b6c3-daded7910406' created"
+      }
+    ]
+  }

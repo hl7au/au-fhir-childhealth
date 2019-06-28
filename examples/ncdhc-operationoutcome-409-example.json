@@ -1,0 +1,18 @@
+{
+    "resourceType": "OperationOutcome",
+    "id": "62333608-eb01-40b5-b6c3-daded7910406",
+    "text": {
+      "status": "additional",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Conflict - the version id provided in the If-Match header does not match</p>\n    </div>"
+    },
+    "issue": [
+      {
+        "severity": "error",
+        "code": "conflict",
+        "details": {
+          "text": "Conflict - the version id provided in the If-Match header does not match"
+        },
+        "diagnostics": "NCDHC-409-12345: Conflict - the version id provided in the If-Match header does not match"
+      }
+    ]
+ }

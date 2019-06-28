@@ -1,0 +1,18 @@
+{
+    "resourceType": "OperationOutcome",
+    "id": "62333608-eb01-40b5-b6c3-daded7910406",
+    "text": {
+      "status": "additional",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>The requested action can not be performed by the Data Hub due to internal service error</p>\n    </div>"
+    },
+    "issue": [
+      {
+        "severity": "error",
+        "code": "exception",
+        "details": {
+          "text": "The requested action can not be performed by the Data Hub due to internal service error"
+        },
+        "diagnostics": "NCDHC-500-12345: The requested action can not be performed by the Data Hub due to internal service error"
+      }
+    ]
+}
