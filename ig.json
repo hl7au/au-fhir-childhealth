@@ -18,7 +18,7 @@
     {
       "name": "aubase",
       "location": "http://hl7.org.au/fhir/base",
-      "version": "current"
+      "version": "current-stu3"
     }
   ],
   "extraTemplates": [
@@ -255,9 +255,17 @@
       "base": "StructureDefinition-ncdhc-observation-vitalsign-bmi.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-bmi-definitions.html"
     },
-    "StructureDefinition/ncdhc-vitalsign-heart-rate": {
-      "base": "StructureDefinition-ncdhc-vitalsign-heart-rate.html",
-      "defns": "StructureDefinition-ncdhc-vitalsign-heart-rate-definitions.html"
+    "StructureDefinition/ncdhc-observation-vitalsign-heart-rate": {
+      "base": "StructureDefinition-ncdhc-observation-vitalsign-heart-rate.html",
+      "defns": "StructureDefinition-ncdhc-observation-vitalsign-heart-rate-definitions.html"
+    },
+	"StructureDefinition/ncdhc-observation-vitalsign-bp": {
+      "base": "StructureDefinition-ncdhc-observation-vitalsign-bp.html",
+      "defns": "StructureDefinition-ncdhc-observation-vitalsign-bp-definitions.html"
+    },
+	"StructureDefinition/ncdhc-observation-bp": {
+      "base": "StructureDefinition-ncdhc-observation-bp.html",
+      "defns": "StructureDefinition-ncdhc-observation-bp-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-heart-rate": {
       "base": "StructureDefinition-ncdhc-observation-heart-rate.html",
@@ -294,6 +302,30 @@
     "StructureDefinition/ncdhc-observation-symphyseal-fundal-height": {
       "base": "StructureDefinition-ncdhc-observation-symphyseal-fundal-height.html",
       "defns": "StructureDefinition-ncdhc-observation-symphyseal-fundal-height-definitions.html"
+    },
+	"StructureDefinition/ncdhc-observation-urinalysis-protein": {
+      "base": "StructureDefinition-ncdhc-observation-urinalysis-protein.html",
+      "defns": "StructureDefinition-ncdhc-observation-urinalysis-protein-definitions.html"
+    },
+	"StructureDefinition/ncdhc-observation-tobacco-usage": {
+      "base": "StructureDefinition-ncdhc-observation-tobacco-usage.html",
+      "defns": "StructureDefinition-ncdhc-observation-tobacco-usage-definitions.html"
+    },
+	"StructureDefinition/ncdhc-observation-illicit-drugs-usage": {
+      "base": "StructureDefinition-ncdhc-observation-illicit-drugs-usage.html",
+      "defns": "StructureDefinition-ncdhc-observation-illicit-drugs-usage-definitions.html"
+    },
+	"StructureDefinition/ncdhc-observation-breastfeeding-intention": {
+      "base": "StructureDefinition-ncdhc-observation-breastfeeding-intention.html",
+      "defns": "StructureDefinition-ncdhc-observation-breastfeeding-intention-definitions.html"
+    },
+	"StructureDefinition/ncdhc-observation-emotional-health-wellbeing": {
+      "base": "StructureDefinition-ncdhc-observation-emotional-health-wellbeing.html",
+      "defns": "StructureDefinition-ncdhc-observation-emotional-health-wellbeing-definitions.html"
+    },
+	"StructureDefinition/ncdhc-observation-alcohol-intake": {
+      "base": "StructureDefinition-ncdhc-observation-alcohol-intake.html",
+      "defns": "StructureDefinition-ncdhc-observation-alcohol-intake-definitions.html"
     },
     "StructureDefinition/ncdhc-medicationstatement-vitamink": {
       "base": "StructureDefinition-ncdhc-medicationstatement-vitamink.html",
@@ -350,6 +382,10 @@
 	"StructureDefinition/ncdhc-composition-fetal-health-checks": {
       "base": "StructureDefinition-ncdhc-composition-fetal-health-checks.html",
       "defns": "StructureDefinition-ncdhc-composition-fetal-health-checks-definitions.html"
+    },
+	"StructureDefinition/ncdhc-composition-maternal-health-checks": {
+      "base": "StructureDefinition-ncdhc-composition-maternal-health-checks.html",
+      "defns": "StructureDefinition-ncdhc-composition-maternal-health-checks-definitions.html"
     },
     "StructureDefinition/ncdhc-composition-view-base": {
       "base": "StructureDefinition-ncdhc-composition-view-base.html",

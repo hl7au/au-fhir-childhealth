@@ -159,7 +159,7 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-vitalsign-heart-rate"/>
+				<reference value="StructureDefinition/ncdhc-observation-vitalsign-heart-rate"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -370,9 +370,64 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-maternal-health-checks"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-urinalysis-protein"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bp"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-bp"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-heart-rate"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-alcohol-intake"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-emotional-health-wellbeing"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-breastfeeding-intention"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-illicit-drugs-usage"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-tobacco-usage"/>
+			</sourceReference>
+		</resource>
+		
 		<resource>
 			<example value="false"/>
 			<sourceReference>
