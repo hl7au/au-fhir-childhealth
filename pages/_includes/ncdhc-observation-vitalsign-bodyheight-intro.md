@@ -65,8 +65,8 @@ The client system SHALL supply both LOINC and SNOMED CT-AU codes to record this 
 
 #### Examples
 
-- [Birth Length](ncdhc-observation-estimated-gestation-example.html)
-- [Body Height](ncdhc-observation-vitalsign-birthlength-example.html)
+- [Birth Length](ncdhc-observation-vitalsign-birthlength-example.html)
+- [Body Height](ncdhc-observation-bodyheight-example.html)
 
 [Vitalsign]: http://hl7.org/fhir/STU3/observation-vitalsigns.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
