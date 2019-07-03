@@ -97,7 +97,7 @@
         "path": "Observation.valueCodeableConcept",
         "sliceName": "valueCodeableConcept",
         "short": "Drinking Status",
-        "definition": "Create a value Set from taking few codes from SNMOED 228273003?",
+        "definition": "Create a value Set from taking few codes from SNMOED 219006?",
         "min": 1,
         "type": [
           {
@@ -146,8 +146,8 @@
         "id": "Observation.component:AlcoholPerDay.value[x]:valueQuantity",
         "path": "Observation.component.valueQuantity",
         "sliceName": "valueQuantity",
-        "short": "Cigarettes Consumption",
-        "definition": "Proposal is to create a ValueSet with options: 266921000: Ex-trivial cigarette smoker (<1/day), 266924008: Ex-heavy cigarette smoker (20-39/day), 160605003: Heavy cigarette smoker (20-39 cigs/day), 160603005: Light cigarette smoker (1-9 cigs/day)",
+        "short": "Alcohol Consumption Quantity",
+        "definition": "Proposal is to create a ValueSet with options: 160582009: Ex-trivial drinker - less than 1 unit/day, 160578007: Very heavy drinker - greater than 9 units/day,  etc",
         "type": [
           {
             "code": "Quantity"

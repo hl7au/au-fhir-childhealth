@@ -40,7 +40,7 @@
         }
       },
       {
-        "id": "Composition.section:delivery",
+        "id": "Composition.section:NewbornDelivery",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
@@ -48,35 +48,31 @@
           }
         ],
         "path": "Composition.section",
-        "sliceName": "delivery",
+        "sliceName": "NewbornDelivery",
         "short": "This section represents details from Newborn Delivery Health Interaction"
       },
       {
-        "id": "Composition.section:discharge",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "Section"
-          }
-        ],
-        "path": "Composition.section",
-        "sliceName": "discharge",
-        "short": "This section represents details from Newborn Discharge Health Interaction"
+        "id": "Composition.section:NewbornDelivery.title",
+        "path": "Composition.section.title",
+        "fixedString": "Newborn Delivery"
       },
       {
-        "id": "Composition.section:bloodspotScreen",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "Section"
-          }
-        ],
-        "path": "Composition.section",
-        "sliceName": "bloodspotScreen",
-        "short": "This section represents details from Bloodspot Screening Health Interaction"
+        "id": "Composition.section:NewbornDelivery.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://loinc.org"
       },
       {
-        "id": "Composition.section:hearingScreen",
+        "id": "Composition.section:NewbornDelivery.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "67795-5"
+      },
+      {
+        "id": "Composition.section:NewbornDelivery.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "short": "Why the section is empty. A generic message \"Sorry, the Newborn Delivery record is currently unavailable\" can be shown if the data is not yet available to the system."
+      },
+      {
+        "id": "Composition.section:NewbornImmunisation",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
@@ -84,8 +80,161 @@
           }
         ],
         "path": "Composition.section",
-        "sliceName": "hearingScreen",
-        "short": "This section represents details from Hearing Screening Health Interaction"
+        "sliceName": "NewbornImmunisation",
+        "short": "This section represents details from Newborn Immunisation Health Interaction",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:NewbornImmunisation.title",
+        "path": "Composition.section.title",
+        "fixedString": "Newborn Immunisation"
+      },
+      {
+        "id": "Composition.section:NewbornImmunisation.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:NewbornImmunisation.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "11370-4"
+      },
+      {
+        "id": "Composition.section:NewbornDelivery.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "short": "Why the section is empty. A generic message \"Sorry, the Newborn Immunisation record is currently unavailable\" can be shown if the data is not yet available to the system."
+      },
+      {
+        "id": "Composition.section:NewbornExamination",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "NewbornExamination",
+        "short": "This section represents details from Newborn Examination Health Interaction",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:NewbornExamination.title",
+        "path": "Composition.section.title",
+        "fixedString": "Newborn Examination"
+      },
+      {
+        "id": "Composition.section:NewbornExamination.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:NewbornExamination.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "52524-6"
+      },
+      {
+        "id": "Composition.section:NewbornDelivery.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "short": "Why the section is empty. A generic message \"Sorry, the Newborn Examination record is currently unavailable\" can be shown if the data is not yet available to the system."
+      },
+      {
+        "id": "Composition.section:NewbornBloodspotScreen",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "NewbornBloodspotScreen",
+        "short": "This section represents details from Newborn Bloodspot Screen Health Interaction",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:NewbornBloodspotScreen.title",
+        "path": "Composition.section.title",
+        "fixedString": "Newborn Bloodspot Screen"
+      },
+      {
+        "id": "Composition.section:NewbornBloodspotScreen.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:NewbornBloodspotScreen.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "LP67167-4"
+      },
+      {
+        "id": "Composition.section:NewbornDelivery.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "short": "Why the section is empty. A generic message \"Sorry, the Newborn Bloodspot Screen record is currently unavailable\" can be shown if the data is not yet available to the system."
+      },
+      {
+        "id": "Composition.section:NewbornHearingScreen",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "NewbornHearingScreen",
+        "short": "This section represents details from Newborn Hearing Screen Health Interaction",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:NewbornHearingScreen.title",
+        "path": "Composition.section.title",
+        "fixedString": "Newborn Hearing Screen"
+      },
+      {
+        "id": "Composition.section:NewbornHearingScreen.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:NewbornHearingScreen.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "LP76356-2"
+      },
+      {
+        "id": "Composition.section:NewbornDelivery.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "short": "Why the section is empty. A generic message \"Sorry, the Newborn Hearing Screen record is currently unavailable\" can be shown if the data is not yet available to the system."
+      },
+      {
+        "id": "Composition.section:NewbornDischarge",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "NewbornDischarge",
+        "short": "This section represents details from Newborn Discharge Health Interaction",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:NewbornDischarge.title",
+        "path": "Composition.section.title",
+        "fixedString": "Newborn Discharge"
+      },
+      {
+        "id": "Composition.section:NewbornDischarge.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:NewbornDischarge.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "LP76356-2"
+      },
+      {
+        "id": "Composition.section:NewbornDelivery.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "short": "Why the section is empty. A generic message \"Sorry, the Newborn Discharge record is currently unavailable\" can be shown if the data is not yet available to the system."
       }
     ]
   }
