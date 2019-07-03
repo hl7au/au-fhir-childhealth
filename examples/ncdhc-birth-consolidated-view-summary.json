@@ -69,6 +69,111 @@
                 "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/QuestionnaireResponse/nb-delivery-qa-1"
               }
             ]
+          },
+          {
+            "title": "Newborn Immunisation",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11370-4"
+                }
+              ]
+            },
+            "emptyReason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/list-empty-reason",
+                  "code": "unavailable",
+                  "display": "Unavailable"
+                }
+              ],
+              "text": "Sorry, the Newborn Immunisation record is currently unavailable"
+            }
+          },
+          {
+            "title": "Newborn Examination",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "52524-6"
+                }
+              ]
+            },
+            "emptyReason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/list-empty-reason",
+                  "code": "unavailable",
+                  "display": "Unavailable"
+                }
+              ],
+              "text": "Sorry, the Newborn Examination record is currently unavailable"
+            }
+          },
+          {
+            "title": "Newborn Bloodspot Screen",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP67167-4"
+                }
+              ]
+            },
+            "emptyReason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/list-empty-reason",
+                  "code": "unavailable",
+                  "display": "Unavailable"
+                }
+              ],
+              "text": "Sorry, the Newborn Bloodspot Screen record is currently unavailable"
+            }
+          },
+          {
+            "title": "Newborn Hearing Screen",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP76356-2"
+                }
+              ]
+            },
+            "emptyReason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/list-empty-reason",
+                  "code": "unavailable",
+                  "display": "Unavailable"
+                }
+              ],
+              "text": "Sorry, the Newborn Hearing Screen record is currently unavailable"
+            }
+          },
+          {
+            "title": "Newborn Discharge",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP76356-2"
+                }
+              ]
+            },
+            "emptyReason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/list-empty-reason",
+                  "code": "unavailable",
+                  "display": "Unavailable"
+                }
+              ],
+              "text": "Sorry, the Newborn Discharge record is currently unavailable"
+            }
           }
         ]
       }
@@ -748,7 +853,7 @@
                           {
                             "valueCoding": {
                               "system": "http://snomed.info/sct",
-                              "code": "66656000",
+                              "code": "69775011000036100",
                               "display": "Phytomenadione"
                             }
                           }
@@ -777,56 +882,6 @@
                             }
                           }
                         ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "15.0.0.0",
-            "linkId": "15",
-            "text": "HepB Immunoglobin",
-            "answer": [
-              {
-                "valueString": "Geven",
-                "item": [
-                  {
-                    "id": "15.1.0.1",
-                    "linkId": "15.1",
-                    "text": "HepB Immunoglobin",
-                    "subject": {
-                      "reference": "Immunization/901a72a8-df75-4484-ac89-ac4923f03b02"
-                    },
-                    "answer": [
-                      {
-                        "valueString": "TBD"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "16.0.0.0",
-            "linkId": "16",
-            "text": "HepB Immunisation",
-            "answer": [
-              {
-                "valueString": "Geven",
-                "item": [
-                  {
-                    "id": "16.1.0.1",
-                    "linkId": "16.1",
-                    "text": "HepB Immunisation",
-                    "subject": {
-                      "reference": "Immunization/901a72a8-df75-4484-ac89-ac4923f03b03"
-                    },
-                    "answer": [
-                      {
-                        "valueString": "TBD"
                       }
                     ]
                   }
