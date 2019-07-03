@@ -18,6 +18,17 @@
   "differential": {
     "element": [
       {
+        "id": "Patient",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "trial-use"
+          }
+        ],
+        "path": "Patient",
+        "short": "Expected Mother Patient in NCDHC healthcare context"
+      },
+	  {
         "id": "Patient.identifier:ihiNumber",
         "path": "Patient.identifier",
         "sliceName": "ihiNumber",
