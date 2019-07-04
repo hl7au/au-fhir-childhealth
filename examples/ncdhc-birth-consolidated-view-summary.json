@@ -893,7 +893,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Provenance/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "fullUrl": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
       "resource": {
         "resourceType": "Provenance",
         "id": "od78393f-37ca-4738-81d6-d9595b2e5d0f",
