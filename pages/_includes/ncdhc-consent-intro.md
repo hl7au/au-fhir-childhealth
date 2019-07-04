@@ -39,6 +39,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 - [Nominated Representative Consent](ncdhc-consent-registration-nomrep-example.html)
 
 
+
 [Consent]: http://hl7.org/fhir/STU3/consent.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
 [General Guidance Section]: definitions.html

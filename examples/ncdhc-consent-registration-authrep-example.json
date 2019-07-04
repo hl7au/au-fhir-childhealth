@@ -22,7 +22,7 @@
       "role": {
         "coding": [
           {
-            "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-role-type",
+            "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-security-role-type",
             "code": "RESPRSN"
           }
         ]
