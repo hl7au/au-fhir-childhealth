@@ -35,7 +35,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-To be added
+- [Authorsied Representative Consent](ncdhc-consent-registration-authrep-example.html)
+- [Nominated Representative Consent](ncdhc-consent-registration-nomrep-example.html)
 
 
 [Consent]: http://hl7.org/fhir/STU3/consent.html

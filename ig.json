@@ -484,8 +484,11 @@
     "ValueSet/ncdhc-audit-role-type": {
       "base": "ValueSet-ncdhc-audit-role-type.html"
     },
-    "CodeSystem/ncdhc-audit-role-type": {
-      "base": "CodeSystem-ncdhc-audit-role-type.html"
+    "ValueSet/ncdhc-security-role-type": {
+      "base": "ValueSet-ncdhc-security-role-type.html"
+    },
+    "CodeSystem/ncdhc-security-role-type": {
+      "base": "CodeSystem-ncdhc-security-role-type.html"
     },
     "ValueSet/ncdhc-observation-category": {
       "base": "ValueSet-ncdhc-observation-category.html"
@@ -512,7 +515,7 @@
       "source": "ncdhc-patient-baby-example.json",
       "base": "ncdhc-patient-baby-example.html"
     },
-    "Patient/example-mother": {
+    "Patient/ea287411-5ab7-4ff8-9023-42933b73bc17": {
       "source": "patient-example-mother.json",
       "base": "Patient-example-mother.html"
     },
@@ -627,6 +630,30 @@
 	"OperationOutcome/62333608-eb01-40b5-b6c3-daded7910406": {
       "source": "ncdhc-operationoutcome-information-example.json",
       "base": "ncdhc-operationoutcome-information-example.html"
+    },
+    "Person/ea287411-5ab7-4ff8-9023-42933b73bc17": {
+      "source": "ncdhc-person-registration-authrep-example.json",
+      "base": "ncdhc-person-registration-authrep-example.html"
+    },
+    "Person/fa287411-5ab7-4ff8-9023-42933b73bc18": {
+      "source": "ncdhc-person-registration-nomrep-example.json",
+      "base": "ncdhc-person-registration-nomrep-example.html"
+    },
+    "RelatedPerson/ea287411-5ab7-4ff8-9023-42933b73bc17": {
+      "source": "ncdhc-relatedperson-registration-authrep-example.json",
+      "base": "ncdhc-relatedperson-registration-authrep-example.html"
+    },
+    "RelatedPerson/fa287411-5ab7-4ff8-9023-42933b73bc18": {
+      "source": "ncdhc-relatedperson-registration-nomrep-example.json",
+      "base": "ncdhc-relatedperson-registration-nomrep-example.html"
+    },
+    "Consent/cf0f07d7-425f-4f32-92cd-a8abd2c0fd36": {
+      "source": "ncdhc-consent-registration-authrep-example.json",
+      "base": "ncdhc-consent-registration-authrep-example.html"
+    },
+    "Consent/fa287411-5ab7-4ff8-9023-42933b73bc18": {
+      "source": "ncdhc-consent-registration-nomrep-example.json",
+      "base": "ncdhc-consent-registration-nomrep-example.html"
     },
     "CapabilityStatement/ncdhc-metadata": {
       "base": "capabilitystatement-ncdhc-metadata.html",
