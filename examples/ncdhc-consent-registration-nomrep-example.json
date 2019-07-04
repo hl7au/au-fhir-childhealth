@@ -6,6 +6,16 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Father Registered as Nominated Representative</div>"
   },
   "status": "active",
+  "category": [
+    {
+    "coding": [
+      {
+        "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-consent-category",
+        "code": "AUTHCONST"
+      }
+    ]
+  }
+  ],
   "patient": {
     "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
     "display": "Baby  of Eve Bill"
