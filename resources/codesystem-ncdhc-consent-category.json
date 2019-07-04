@@ -52,6 +52,11 @@
 		"code" : "CROPT",
 		"display" : "Child Digital Health Record Operation Consent",
 		"definition" : "Consent for a child to have a operative child digital health record"
+	},
+	{
+		"code" : "AUTHCONST",
+		"display" : "NCDHC Authorisation Consent",
+		"definition" : "Consent used to record registration role and authorisation"
 	}
   ]
 }

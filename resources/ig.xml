@@ -685,6 +685,12 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="ValueSet/ncdhc-security-role-type"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="CodeSystem/ncdhc-audit-subtype"/>
 			</sourceReference>
 		</resource>
@@ -697,7 +703,7 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="CodeSystem/ncdhc-audit-role-type"/>
+				<reference value="CodeSystem/ncdhc-security-role-type"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -746,7 +752,7 @@
 		<resource>
 			<example value="true"/>
 			<sourceReference>
-				<reference value="Patient/example-mother"/>
+				<reference value="Patient/ea287411-5ab7-4ff8-9023-42933b73bc17"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -903,6 +909,43 @@
 			<example value="true"/>
 			<sourceReference>
 				<reference value="OperationOutcome/62333608-eb01-40b5-b6c3-daded7910406"/>
+			</sourceReference>
+		</resource>
+		<!-- Authorisation record for Expected mother and father -->
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Person/ea287411-5ab7-4ff8-9023-42933b73bc17"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="RelatedPerson/ea287411-5ab7-4ff8-9023-42933b73bc17"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Consent/cf0f07d7-425f-4f32-92cd-a8abd2c0fd36"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Person/fa287411-5ab7-4ff8-9023-42933b73bc18"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="RelatedPerson/fa287411-5ab7-4ff8-9023-42933b73bc18"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Consent/fa287411-5ab7-4ff8-9023-42933b73bc18"/>
 			</sourceReference>
 		</resource>
 	</package>
