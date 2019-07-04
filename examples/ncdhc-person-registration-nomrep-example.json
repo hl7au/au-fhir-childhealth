@@ -1,0 +1,41 @@
+{
+  "resourceType": "Person",
+  "id": "fa287411-5ab7-4ff8-9023-42933b73bc18",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Person Father Registered as Nominated Representative </div>"
+  },
+  "name": [
+    {
+      "text": "Simon Bill",
+      "family": "Bill",
+      "given": [
+        "Simon"
+      ]
+    }
+  ],
+  "gender": "male",
+  "telecom": [
+    {
+      "use": "home"
+    },
+    {
+      "system": "phone",
+      "value": "(03) 5555 6473",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "bsimon@example.org",
+      "use": "home"
+    }
+  ],
+  "active": true,
+  "link": [
+    {
+      "target": {
+        "reference": "RelatedPerson/fa287411-5ab7-4ff8-9023-42933b73bc18"
+      }
+    }
+  ]
+}

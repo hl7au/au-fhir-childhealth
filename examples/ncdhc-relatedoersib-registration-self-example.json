@@ -1,0 +1,7 @@
+{
+  "resourceType": "RelatedPerson",
+  "id": "ea287411-5ab7-4ff8-9023-42933b73bc17",
+  "patient": {
+    "reference": "Patient/ea287411-5ab7-4ff8-9023-42933b73bc17"
+  }
+}
