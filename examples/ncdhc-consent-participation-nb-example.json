@@ -1,0 +1,30 @@
+{
+    "resourceType": "Consent",
+    "id": "dc0f07d7-425f-4f32-92cd-a8abd2c0fd36",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Derived Consent for Baby to participate in NCDHC Program</div>"
+    },
+    "status": "active",
+    "category": [
+      {
+      "coding": [
+        {
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-consent-category",
+          "code": "NBCR"
+        }
+      ]
+    }
+    ],
+    "patient": {
+      "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "display": "Baby of Eve Bill"
+    },
+    "dateTime": "2019-06-04T16:13:03Z",
+    "consentingParty": [
+      {
+        "reference": "RelatedPerson/ea287411-5ab7-4ff8-9023-42933b73bc17"
+      }
+    ],    
+    "policyRule": "urn:uuid:44847642-b160-4e0b-9ce7-69611bf5b303"
+  }

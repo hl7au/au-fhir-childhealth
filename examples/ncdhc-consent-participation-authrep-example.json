@@ -1,0 +1,30 @@
+{
+    "resourceType": "Consent",
+    "id": "pc0f07d7-425f-4f32-92cd-a8abd2c0fd36",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Expected Mother Consented to participate in NCDHC Program</div>"
+    },
+    "status": "active",
+    "category": [
+      {
+      "coding": [
+        {
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-consent-category",
+          "code": "NBCR"
+        }
+      ]
+    }
+    ],
+    "patient": {
+      "reference": "Patient/ea287411-5ab7-4ff8-9023-42933b73bc17",
+      "display": "Eve Bill"
+    },
+    "dateTime": "2019-06-04T16:13:03Z",
+    "consentingParty": [
+      {
+        "reference": "RelatedPerson/ea287411-5ab7-4ff8-9023-42933b73bc17"
+      }
+    ],    
+    "policyRule": "urn:uuid:44847642-b160-4e0b-9ce7-69611bf5b303"
+  }

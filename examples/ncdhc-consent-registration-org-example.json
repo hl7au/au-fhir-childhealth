@@ -18,7 +18,7 @@
   ],
   "patient": {
     "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
-    "display": "Baby  of Eve Bill"
+    "display": "Baby of Eve Bill"
   },
   "dateTime": "2019-07-04T16:13:03Z",
   "consentingParty": [
