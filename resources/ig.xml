@@ -948,6 +948,12 @@
 				<reference value="Consent/fa0f07d7-425f-4f32-92cd-a8abd2c0fd39"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Consent/pc0f07d7-425f-4f32-92cd-a8abd2c0fd36"/>
+			</sourceReference>
+		</resource>
 	</package>
 	<page>
 		<source value="index.html"/>

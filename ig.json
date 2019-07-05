@@ -655,6 +655,10 @@
       "source": "ncdhc-consent-registration-nomrep-example.json",
       "base": "ncdhc-consent-registration-nomrep-example.html"
     },
+    "Consent/pc0f07d7-425f-4f32-92cd-a8abd2c0fd36": {
+      "source": "ncdhc-consent-participation-authrep-example.json",
+      "base": "ncdhc-consent-participation-authrep-example.html"
+    },
     "CapabilityStatement/ncdhc-metadata": {
       "base": "capabilitystatement-ncdhc-metadata.html",
       "defns": "capabilitystatement-ncdhc-metadata-definitions.html"
