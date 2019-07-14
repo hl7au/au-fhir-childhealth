@@ -50,12 +50,6 @@
         "max": "1",
         "mustSupport": true,
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationCategory"
-            }
-          ],
           "strength": "required",
           "description": "Codes for high level observation categories. This is mainly used to associate an Observation instance to a particular Health Interaction (as applicable)",
           "valueSetReference": {
@@ -155,6 +149,11 @@
         ],
         "path": "Observation.performer.display",
         "fixedString": "Organisation"
+      },
+      {
+        "id": "Observation.dataAbsentReason",
+        "path": "Observation.dataAbsentReason",
+        "mustSupport": true
       },
       {
         "id": "Observation.comment",

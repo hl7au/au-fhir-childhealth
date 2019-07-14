@@ -34,31 +34,15 @@
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Alchol Intake Status",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "slicing": {
-          "discriminator": [
+        "patternCodeableConcept": {
+          "coding": [
             {
-              "type": "value",
-              "path": "system"
+              "system": "http://snomed.info/sct",
+              "code": "160573003"
             }
-          ],
-          "rules": "closed"
-        }
-      },
-      {
-        "id": "Observation.code.coding:AlcoholIntakeStatus-SNOMEDCT-AU",
-        "path": "Observation.code.coding",
-        "sliceName": "AlcoholIntakeStatus-SNOMEDCT-AU",
-        "min": 1,
-        "max": "1",
-        "fixedCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "160573003"
-        }
+          ]
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.subject",

@@ -697,6 +697,18 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="ValueSet/ncdhc-audit-type"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-audit-type"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/ncdhc-audit-subtype"/>
 			</sourceReference>
 		</resource>

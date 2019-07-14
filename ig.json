@@ -508,8 +508,14 @@
 	 "ValueSet/ncdhc-audit-subtype": {
       "base": "ValueSet-ncdhc-audit-subtype.html"
     },
+	"ValueSet/ncdhc-audit-type": {
+      "base": "ValueSet-ncdhc-audit-type.html"
+    },
     "CodeSystem/ncdhc-audit-subtype": {
       "base": "CodeSystem-ncdhc-audit-subtype.html"
+    },
+	"CodeSystem/ncdhc-audit-type": {
+      "base": "CodeSystem-ncdhc-audit-type.html"
     },
     "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f": {
       "source": "ncdhc-patient-baby-example.json",
