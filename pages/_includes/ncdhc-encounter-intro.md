@@ -24,7 +24,11 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Profile specific implementation guidance:**
 
-* To be added
+* Clinically responsible person shall be recorded using the following way:
+1.  Encounter.participant.type=”CALLBCK”
+1.  Encounter.participant.individual (AUBasePractitioner)
+* Clinically responsible Organisation shall be recorded using Encounter.serviceProvider(AUOrganization) 
+* The Venue shall be recorded using Encounter.location.location (Location)
 
 
 #### Examples
