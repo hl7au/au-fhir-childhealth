@@ -34,15 +34,15 @@
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Alchol Intake Status",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "160573003"
-            }
-          ]
-        },
         "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "160573003"
+        }
       },
       {
         "id": "Observation.subject",
