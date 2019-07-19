@@ -403,6 +403,10 @@
       "base": "StructureDefinition-ncdhc-questionnaireresponse-base.html",
       "defns": "StructureDefinition-ncdhc-questionnaireresponse-base-definitions.html"
     },
+	 "StructureDefinition/ncdhc-graphdefinition-base": {
+      "base": "StructureDefinition-ncdhc-graphdefinition-base.html",
+      "defns": "StructureDefinition-ncdhc-graphdefinition-base-definitions.html"
+    },
     "ValueSet/apgar-score-type": {
       "base": "ValueSet-apgar-score-type.html"
     },
@@ -653,9 +657,13 @@
       "source": "ncdhc-relatedperson-registration-nomrep-example.json",
       "base": "ncdhc-relatedperson-registration-nomrep-example.html"
     },
-    "Consent/cf0f07d7-425f-4f32-92cd-a8abd2c0fd36": {
-      "source": "ncdhc-consent-registration-authrep-example.json",
-      "base": "ncdhc-consent-registration-authrep-example.html"
+    "GraphDefinition/nsw-hc-6-8wks-example": {
+      "source": "ncdhc-graphdefinition-nsw-hc-6-8wks-example.json",
+      "base": "ncdhc-graphdefinition-nsw-hc-6-8wks-example.html"
+    },
+	"Consent/cf0f07d7-425f-4f32-92cd-a8abd2c0fd36": {
+      "source": "ncdhc-consent-registration-self-example.json",
+      "base": "ncdhc-consent-registration-self-example.html"
     },
     "Consent/fa0f07d7-425f-4f32-92cd-a8abd2c0fd39": {
       "source": "ncdhc-consent-registration-nomrep-example.json",

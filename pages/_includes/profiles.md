@@ -80,6 +80,9 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Questionnaire](StructureDefinition-ncdhc-questionnaire-base.html) - Questionnaire profile 
 * [NCDHC QuestionnaireResponse](StructureDefinition-ncdhc-questionnaireresponse-base.html) - QuestionnaireResponse profile 
 
+## GraphDefinition Profiles
+* [NCDHC GraphDefinition Base](StructureDefinition-ncdhc-graphdefinition-base.html) - GraphDefinition Base profile 
+
 ## Composition Profiles
 * [NCDHC Newborn Delivery Health Interaction](StructureDefinition-ncdhc-composition-nbdelivery.html) - Composition profile to represent Newborn Delivery Health Interaction
 * [NCDHC Newborn Discharge Health Interaction](StructureDefinition-ncdhc-composition-discharge.html) - Composition profile to represent Newborn Discharge Health Interaction

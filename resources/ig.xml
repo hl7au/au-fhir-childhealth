@@ -435,6 +435,12 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-graphdefinition-base"/>
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="true"/>
 			<sourceReference>
 				<reference value="CapabilityStatement/ncdhc-metadata"/>
@@ -964,6 +970,12 @@
 			<example value="true"/>
 			<sourceReference>
 				<reference value="Consent/pc0f07d7-425f-4f32-92cd-a8abd2c0fd36"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="GraphDefinition/nsw-hc-6-8wks-example"/>
 			</sourceReference>
 		</resource>
 	</package>
