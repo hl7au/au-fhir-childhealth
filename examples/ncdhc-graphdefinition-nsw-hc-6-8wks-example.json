@@ -1,0 +1,81 @@
+{
+  "resourceType": "GraphDefinition",
+  "id": "nsw-hc-6-8wks",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">NSW Health Check Assessment 6-8 Wks profile</div>"
+  },
+  "url": "http://h7.org/fhir/GraphDefinition/example",
+  "name": "NSW Health Check Assessment 6-8 Wks",
+  "useContext": [
+    {
+      "resourceType": "UsageContext",
+      "code": {
+        "system": "<uri>",
+        "version": "<string>",
+        "code": "HCSCHD",
+        "display": "Health Check Schedule"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "<uri>",
+            "version": "<string>",
+            "code": "HC68WKS",
+            "display": "6-8 Weeks Health Check Assessment"
+          }
+        ]
+      }
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "<uri>",
+          "version": "<string>",
+          "code": "NSW",
+          "display": "<string>"
+        }
+      ]
+    }
+  ],
+  "purpose": "To record the allowed profiles in NSW for 6-8 weeks Health Check",
+  "status": "draft",
+  "date": "2019-07-18",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "NSW Health Check Assessment 6-8 Wks profile mapping",
+  "start": "Composition",
+  "link": [
+    {
+      "path": "Composition.section.entry",
+      "description": "Link to NCDHC Anus Test Observation Profile",
+      "target": [
+        {
+          "type": "Observation",
+          "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-anus"
+        }
+      ]
+    },
+    {
+      "path": "Composition.section.entry",
+      "description": "Link to NCDHC Hearing Check Observation Profile",
+      "target": [
+        {
+          "type": "Observation",
+          "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-hearing-checke"
+        }
+      ]
+    }
+  ]
+}
