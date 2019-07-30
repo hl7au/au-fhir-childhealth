@@ -21,26 +21,26 @@
   "name": "NCDHC Audit SubType",
   "title": "NCDHC Audit SubType",
   "status": "draft",
-  "experimental": true,
+  "experimental": false,
   "date": "2018-12-31",
-  "publisher": "Australian Digital Health Agency",
+  "publisher": "National Children's Digital Health Collaborative",
   "contact": [
     {
       "telecom": [
         {
           "system": "email",
-          "value": "help@digitalhealth.gov.au"
+          "value": "tba"
         }
       ]
     }
   ],
   "description": "NCDHC Audit SubType",
-  "copyright": "Copyright © 2018 Australian Digital Health Agency – All rights reserved. Except for the material identified below, this content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. \n\nThis resource includes material that is based on Australian Institute of Health and Welfare material. \n\nAll copies of this resource must include this copyright statement and all information contained in this statement.",
+  "copyright": "To be added",
   "caseSensitive": true,
   "compositional": false,
   "versionNeeded": false,
   "content": "complete",
-  "count": 34,
+  "count": 35,
   "concept": [
 	{
 		"code" : "NEWBRNDEL",
@@ -185,7 +185,7 @@
 											{
 		"code" : "CREALONGITRECD",
 		"display" : "Create of Longitudinal Record",
-		"definition" : "A clinician or consumer can view a child's longitudinal health record in context of the child's clinical record"
+		"definition" : "A clinician or consumer can create a child's longitudinal health record in context of the child's clinical record"
 	},
 												{
 		"code" : "CONSTCHECK",
