@@ -37,27 +37,30 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Blood Spot Screen](StructureDefinition-ncdhc-observation-bloodspot-screen.html) - Observation profile to record newborn's Blood Spot Screen test status 
 * [NCDHC Hearing Screen](StructureDefinition-ncdhc-observation-hearing-screen.html) - Observation profile to record newborn's Hearing Screen test status
 * [NCDHC Head Shape](StructureDefinition-ncdhc-observation-head-shape.html) - Observation profile to record outcome of the child's head shape assessment
-* [NCDHC Fontanelles, Sutures](StructureDefinition-ncdhc-observation-test-head-fontanelles.html) - Observation profile to record outcome of the child's fontanelles, sutures assessment
-* [NCDHC Eyes Monocularly Tested (Right, Left)](StructureDefinition-ncdhc-observation-test-vision.html) - Observation profile to record outcome of eye test conducted to determine child's vision    
-* [NCDHC Eyes (Right/Left)](StructureDefinition-ncdhc-observation-test-eyes.html) - Observation profile to record outcome of the child's right/left eye assessment  
+* [NCDHC Fontanelles, Sutures](StructureDefinition-ncdhc-observation-sutures-fontanelles.html) - Observation profile to record outcome of the child's fontanelles, sutures assessment
+* [NCDHC Eyes Monocularly Tested (Right, Left)](StructureDefinition-ncdhc-observation-vision-tested-monocularly.html) - Observation profile to record outcome of eye test conducted to determine child's vision    
+* [NCDHC Eyes (Right/Left)](StructureDefinition-ncdhc-observation-eyes.html) - Observation profile to record outcome of the child's right/left eye assessment  
 * [NCDHC Vision Screen](StructureDefinition-ncdhc-observation-vision-screen.html) - Observation profile to record Vision Screen test result aimed to detect children with vision problems at a young age
-* [NCDHC Ears Right/Left](StructureDefinition-ncdhc-observation-test-ears.html) - Observation profile to record outcome of the child's right/left ear - visual inspection of pinna, ear canal and ear drum
+* [NCDHC Ears Right/Left](StructureDefinition-ncdhc-observation-ears.html) - Observation profile to record outcome of the child's right/left ear - visual inspection of pinna, ear canal and ear drum
 * [NCDHC Hearing Check](StructureDefinition-ncdhc-observation-hearing-check.html) - Observation profile to record outcome of the child's hearing check. This includes Pure tone audiometry and (Tympanometry) Screen
 * [NCDHC Hearing Screen](StructureDefinition-ncdhc-observation-hearing-screen.html) - Observation profile to record outcome of the child's hearing screen. Hearing test aimed to detect children with significant hearing loss at a young age
-* [NCDHC Mouth & Palate](StructureDefinition-ncdhc-observation-test-mouth.html) - Observation profile to record outcome of the child's mouth and palate assessment
+* [NCDHC Mouth & Palate](StructureDefinition-ncdhc-observation-mouth-palate.html) - Observation profile to record outcome of the child's mouth and palate assessment
 * [NCDHC Oral Health](StructureDefinition-ncdhc-observation-oral-health.html) - Observation profile to record outcome of the child's oral assessment
-* [NCDHC Cardiovascular (Dr Only)](StructureDefinition-ncdhc-observation-test-cardiovascular.html) - Observation profile to record outcome of the child's cardiovascular assessment    
-* [NCDHC Femoral Pulses (Right, Left)](StructureDefinition-ncdhc-observation-test-femoral-pulses.html) - Observation profile to record outcome of the child's femoral pulses right check 
-* [NCDHC Development ](StructureDefinition-ncdhc-observation-development.html) - Observation profile to record outcome of the child's developmental assessment 
+* [NCDHC Cardiovascular (Dr Only)](StructureDefinition-ncdhc-observation-cardiovascular-dr.html) - Observation profile to record outcome of the child's cardiovascular assessment    
+* [NCDHC Femoral Pulses (Right, Left)](StructureDefinition-ncdhc-observation-femoral-pulses.html) - Observation profile to record outcome of the child's femoral pulses right check 
+* [NCDHC Development](StructureDefinition-ncdhc-observation-development.html) - Observation profile to record outcome of the child's developmental assessment 
 * [NCDHC Abdomen / Umbilicus](StructureDefinition-ncdhc-observation-abdomen.html) - Observation profile to record outcome of the child's Abdomen / Umbilicus assessment
 * [NCDHC Anus](StructureDefinition-ncdhc-observation-anus.html) - Observation profile to record outcome of the child's anus assessment
 * [NCDHC Gait](StructureDefinition-ncdhc-observation-gait.html) - Observation profile to record outcome of the child's gait check 
-* [NCDHC Iron](StructureDefinition-ncdhc-observation-test-iron.html) - Observation profile to record outcome of the child's iron check
+* [NCDHC Iron](StructureDefinition-ncdhc-observation-iron.html) - Observation profile to record outcome of the child's iron check
 * [NCDHC Fluoride Varnish](StructureDefinition-ncdhc-observation-fluoride-varnish.html) - Observation profile to record outcome of the child's fluoride varnish assessment
 * [NCDHC Hips](StructureDefinition-ncdhc-observation-hips.html) - Observation profile to record outcome of the child's  hips assessment
 * [NCDHC Skin](StructureDefinition-ncdhc-observation-skin.html) - Observation profile to record outcome of the child's skin assessment
 * [NCDHC Genitalia](StructureDefinition-ncdhc-observation-genitalia.html) - Observation profile to record outcome of the child's genitalia assessment
-* [NCDHC Reflexes](StructureDefinition-ncdhc-observation-test-reflexes.html) - Observation profile to record outcome of the child's reflexes assessment
+* [NCDHC Reflexes](StructureDefinition-ncdhc-observation-reflexes.html) - Observation profile to record outcome of the child's reflexes assessment
+* [NCDHC Testes fully descended R/L](StructureDefinition-ncdhc-observation-testes-fully-descended.html) - Observation profile to record outcome of Testes assessment
+* [NCDHC Deworming](StructureDefinition-ncdhc-observation-deworming.html) - Observation profile to record outcome of Deworming
+* [NCDHC Age Appropriate Immunisation completed as per schedule](StructureDefinition-ncdhc-observation-ageaprImmcomp.html) - Observation profile to record vaccination status as per schedule
 * [NCDHC Symphyseal Fundal Height](StructureDefinition-ncdhc-observation-symphyseal-fundal-height.html) - Observation profile to record Fundal height
 * [NCDHC Fetus Presentation](StructureDefinition-ncdhc-observation-fetus-presentation.html) - Observation profile to record Fetus Presentation
 * [NCDHC Fifths Above Brim](StructureDefinition-ncdhc-observation-fifths-above-brim.html) - Observation profile used to measure the decent of the babies head into the pelvis, measured in fifths of the head

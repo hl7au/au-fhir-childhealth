@@ -153,6 +153,30 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-headcircum"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-testes-fully-descended"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-deworming"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-ageaprImmcomp"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bmi"/>
 			</sourceReference>
 		</resource>
@@ -202,19 +226,19 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-test-head-fontanelles"/>
+				<reference value="StructureDefinition/ncdhc-observation-sutures-fontanelles"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-test-eyes"/>
+				<reference value="StructureDefinition/ncdhc-observation-eyes"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-test-vision"/>
+				<reference value="StructureDefinition/ncdhc-observation-vision-tested-monocularly"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -226,7 +250,7 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-test-ears"/>
+				<reference value="StructureDefinition/ncdhc-observation-ears"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -238,7 +262,7 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-test-mouth"/>
+				<reference value="StructureDefinition/ncdhc-observation-mouth-palate"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -250,13 +274,13 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-test-cardiovascular"/>
+				<reference value="StructureDefinition/ncdhc-observation-cardiovascular-dr"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-test-femoral-pulses"/>
+				<reference value="StructureDefinition/ncdhc-observation-femoral-pulses"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -286,7 +310,7 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-test-iron"/>
+				<reference value="StructureDefinition/ncdhc-observation-iron"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -316,7 +340,7 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-test-reflexes"/>
+				<reference value="StructureDefinition/ncdhc-observation-reflexes"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -462,6 +486,12 @@
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-composition-hearing-screen"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-hearing-screen"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -619,6 +649,12 @@
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/ncdhc-consent-category"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-tympanometry-screen-result-type"/>
 			</sourceReference>
 		</resource>
 		<resource>
