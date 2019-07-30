@@ -18,7 +18,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Each Observation must have:**
 
 1.  a status  
-1.  a LOINC and SNOMED code which tells you what was recorded and is taken from the “LOINC Code” & "SNOMED CT" columns respectively in the table below.
+1.  a SNOMED code which tells you what was recorded and is taken from the “LOINC Code” & "SNOMED CT" columns respectively in the table below.
 1.  a subject (Patient)
 1.  a time indicating when the details was recorded
 1.	a performer detailing who has recorded the details.
@@ -30,31 +30,6 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 * To be added
 
 
-
----
-
-<table class="grid">
-  <thead>
-    <tr>
-      <th>Observation</th>
-      <th>LOINC Code</th>
-      <th><em>LOINC Name </em>and Comments</th>
-	  <th>SNOMED Code</th>
-      <th><em>SNOMED Name </em>and Comments</th>      
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Feeding Status</td>
-      <td>11321-7</td>
-      <td>Feeding and dietary status reported</td>
-      <td>129007004</td>
-	  <td>Feeding</td>	  
-    </tr>    
-  </tbody>
-</table>
-
----
 
 
 #### Examples
