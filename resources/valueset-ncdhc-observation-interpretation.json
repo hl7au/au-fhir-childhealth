@@ -36,7 +36,7 @@
       ]
     }
   ],
-  "description": "Codes to determine what type Observation Interpretation are applicable.",
+  "description": "Codes to determine what type of Observation Interpretation are applicable.",
   "copyright": "To be added",
   "compose": {
     "include": [
