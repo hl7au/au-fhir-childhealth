@@ -1,15 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-anus",
-  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-anus",
+  "id": "ncdhc-observation-eyes",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-eyes",
   "version": "v1.0.0",
-  "name": "NCDHC Anus Observation Profile",
-  "title": "NCDHC Anus Observation",
+  "name": "NCDHC Eyes Observation Profile",
+  "title": "NCDHC Eyes Observation",
   "status": "draft",
-  "date": "2019-02-15",
+  "date": "2019-02-01",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "description": "Anus Outcome",
-  "purpose": "To record observations on Anus",
+  "description": "Eeye Test",
+  "purpose": "To record observations on eye assessment",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -21,7 +21,7 @@
       {
         "id": "Observation",
         "path": "Observation",
-        "short": "NCDHC Anus Test Observation Profile"
+        "short": "NCDHC Eyes Test Observation Profile"
       },
       {
         "id": "Observation.category",
@@ -33,6 +33,7 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
+        "short": "Eyes Exam code",
         "mustSupport": true
       },
       {
@@ -49,25 +50,15 @@
         }
       },
       {
-        "id": "Observation.code.coding:AnusSNOMEDCT-AU",
+        "id": "Observation.code.coding:EyeTestSNOMEDCT-AU",
         "path": "Observation.code.coding",
-        "sliceName": "AnusSNOMEDCT-AU",
+        "sliceName": "EyeTestSNOMEDCT-AU",
         "min": 1,
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
-          "code": "364154000"
+          "code": "170195005"
         }
-      },
-      {
-        "id": "Observation.code.coding:AnusSNOMEDCT-AU.system",
-        "path": "Observation.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding:AnusSNOMEDCT-AU.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "364154000"
       },
       {
         "id": "Observation.subject",
@@ -96,39 +87,85 @@
         ]
       },
       {
-        "id": "Observation.value[x]:valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
-        "sliceName": "valueCodeableConcept",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "defaultValueCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "44393800"
-            }
-          ]
-        },
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
         "mustSupport": false
       },
       {
-        "id": "Observation.interpretation",
-        "path": "Observation.interpretation",
-        "short": "Normal | Review | Refer",
+        "id": "Observation.comment",
+        "path": "Observation.comment",
+        "comment": "Additional comments"
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "Observation.component:leftEyeAssessment",
+        "path": "Observation.component",
+        "sliceName": "leftEyeAssessment",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leftEyeAssessment.code",
+        "path": "Observation.component.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "386708005"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:leftEyeAssessment.interpretation",
+        "path": "Observation.component.interpretation",
         "binding": {
           "strength": "required",
+          "description": "Normal | Review | Refer",
           "valueSetReference": {
             "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation"
           }
         }
       },
       {
-        "id": "Observation.comment",
-        "path": "Observation.comment",
-        "comment": "Additional comments"
+        "id": "Observation.component:rightEyeAssessment",
+        "path": "Observation.component",
+        "sliceName": "rightEyeAssessment",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:rightEyeAssessment.code",
+        "path": "Observation.component.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "386709002"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:rightEyeAssessment.interpretation",
+        "path": "Observation.component.interpretation",
+        "binding": {
+          "strength": "extensible",
+          "description": "Normal | Review | Refer",
+          "valueSetReference": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation"
+          }
+        }
       }
     ]
   }

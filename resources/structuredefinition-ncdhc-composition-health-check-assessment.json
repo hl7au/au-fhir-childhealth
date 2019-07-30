@@ -23,7 +23,7 @@
         "path": "Composition",
         "short": "NCDHC Health Check Assessment Composition Profile"
       },
-	  {
+      {
         "id": "Composition.type",
         "path": "Composition.type",
         "fixedCodeableConcept": {
@@ -104,7 +104,7 @@
         }
       },
       {
-        "id": "Composition.section:vitalSignsAndMeasurements",
+        "id": "Composition.section:VitalSignsAndMeasurements",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
@@ -112,17 +112,17 @@
           }
         ],
         "path": "Composition.section",
-        "sliceName": "vitalSignsAndMeasurements",
+        "sliceName": "VitalSignsAndMeasurements",
         "short": "Represents 'Vital Signs and Measurements' section for this document.",
         "max": "1"
       },
       {
-        "id": "Composition.section:vitalSignsAndMeasurements.title",
+        "id": "Composition.section:VitalSignsAndMeasurements.title",
         "path": "Composition.section.title",
         "fixedString": "Vital Signs and Measurements"
       },
       {
-        "id": "Composition.section:vitalSignsAndMeasurements.code",
+        "id": "Composition.section:VitalSignsAndMeasurements.code",
         "path": "Composition.section.code",
         "fixedCodeableConcept": {
           "coding": [
@@ -134,7 +134,7 @@
         }
       },
       {
-        "id": "Composition.section:vitalSignsAndMeasurements.entry",
+        "id": "Composition.section:VitalSignsAndMeasurements.entry",
         "path": "Composition.section.entry",
         "slicing": {
           "discriminator": [
@@ -149,12 +149,17 @@
         "max": "4"
       },
       {
-        "id": "Composition.section:vitalSignsAndMeasurements.entry:Weight",
+        "id": "Composition.section:VitalSignsAndMeasurements.entry:Weight",
         "path": "Composition.section.entry",
         "sliceName": "Weight",
         "short": "This section records weight of baby recorded at birth",
+        "min": 1,
         "max": "1",
         "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bodyweight"
+          },
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bodyweight",
@@ -165,12 +170,17 @@
         ]
       },
       {
-        "id": "Composition.section:vitalSignsAndMeasurements.entry:Length",
+        "id": "Composition.section:VitalSignsAndMeasurements.entry:Length",
         "path": "Composition.section.entry",
         "sliceName": "Length",
         "short": "This section records length of baby recorded at birth",
+        "min": 1,
         "max": "1",
         "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bodyheight"
+          },
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bodyheight",
@@ -181,12 +191,17 @@
         ]
       },
       {
-        "id": "Composition.section:vitalSignsAndMeasurements.entry:HeadCircumference",
+        "id": "Composition.section:VitalSignsAndMeasurements.entry:HeadCircumference",
         "path": "Composition.section.entry",
         "sliceName": "HeadCircumference",
         "short": "This section records numeric value for head circumference",
+        "min": 1,
         "max": "1",
         "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-headcircum"
+          },
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-headcircum",
@@ -197,10 +212,11 @@
         ]
       },
       {
-        "id": "Composition.section:vitalSignsAndMeasurements.entry:BMI",
+        "id": "Composition.section:VitalSignsAndMeasurements.entry:BMI",
         "path": "Composition.section.entry",
         "sliceName": "BMI",
         "short": "Body mass index (BMI)",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -213,12 +229,12 @@
         ]
       },
       {
-        "id": "Composition.section:vitalSignsAndMeasurements.section",
+        "id": "Composition.section:VitalSignsAndMeasurements.section",
         "path": "Composition.section.section",
         "max": "0"
       },
       {
-        "id": "Composition.section:otherHealthConditions",
+        "id": "Composition.section:HealthConditionsSection",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
@@ -226,28 +242,28 @@
           }
         ],
         "path": "Composition.section",
-        "sliceName": "otherHealthConditions",
+        "sliceName": "HealthConditionsSection",
         "max": "1"
       },
       {
-        "id": "Composition.section:otherHealthConditions.title",
+        "id": "Composition.section:HealthConditionsSection.title",
         "path": "Composition.section.title",
-        "fixedString": "Other health conditions"
+        "fixedString": "Health conditions section"
       },
       {
-        "id": "Composition.section:otherHealthConditions.code",
+        "id": "Composition.section:HealthConditionsSection.code",
         "path": "Composition.section.code",
         "fixedCodeableConcept": {
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "86674-9"
+              "code": "46030-3"
             }
           ]
         }
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry",
+        "id": "Composition.section:HealthConditionsSection.entry",
         "path": "Composition.section.entry",
         "slicing": {
           "discriminator": [
@@ -261,10 +277,11 @@
         }
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:HeadShape",
+        "id": "Composition.section:HealthConditionsSection.entry:HeadShape",
         "path": "Composition.section.entry",
         "sliceName": "HeadShape",
-        "short": "Head Shape",
+        "short": "Outcome of the child's head shape assessment",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -277,15 +294,16 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:FontanellesSutures",
+        "id": "Composition.section:HealthConditionsSection.entry:FontanellesSutures",
         "path": "Composition.section.entry",
         "sliceName": "FontanellesSutures",
-        "short": "Fontanelles, Sutures",
+        "short": "Outcome of the child's fontanelles, sutures assessment",
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-head-fontanelles",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-sutures-fontanelles",
             "aggregation": [
               "bundled"
             ]
@@ -293,15 +311,16 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:MonocularlyVisionTest",
+        "id": "Composition.section:HealthConditionsSection.entry:EyesMonocularlyTested",
         "path": "Composition.section.entry",
-        "sliceName": "MonocularlyVisionTest",
+        "sliceName": "EyesMonocularlyTested",
         "short": "Eyes Monocularly Tested (Right, Left)",
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-vision",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vision-tested-monocularly",
             "aggregation": [
               "bundled"
             ]
@@ -309,15 +328,16 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:Eyes",
+        "id": "Composition.section:HealthConditionsSection.entry:Eyes",
         "path": "Composition.section.entry",
         "sliceName": "Eyes",
         "short": "Eyes (Right/Left)",
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-eyes",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-eyes",
             "aggregation": [
               "bundled"
             ]
@@ -325,10 +345,11 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:VisionScreen",
+        "id": "Composition.section:HealthConditionsSection.entry:VisionScreen",
         "path": "Composition.section.entry",
         "sliceName": "VisionScreen",
         "short": "Vision Screen Outcome",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -341,15 +362,16 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:Ears",
+        "id": "Composition.section:HealthConditionsSection.entry:Ears",
         "path": "Composition.section.entry",
         "sliceName": "Ears",
         "short": "Ears Right/Left",
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-ears",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-ears",
             "aggregation": [
               "bundled"
             ]
@@ -357,10 +379,11 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:HearingCheck",
+        "id": "Composition.section:HealthConditionsSection.entry:HearingCheck",
         "path": "Composition.section.entry",
         "sliceName": "HearingCheck",
         "short": "Hearing Check",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -373,10 +396,11 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:HearingScreen",
+        "id": "Composition.section:HealthConditionsSection.entry:HearingScreen",
         "path": "Composition.section.entry",
         "sliceName": "HearingScreen",
         "short": "Hearing Screen",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -389,15 +413,16 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:MouthAndPalate",
+        "id": "Composition.section:HealthConditionsSection.entry:MouthAndPalate",
         "path": "Composition.section.entry",
         "sliceName": "MouthAndPalate",
         "short": "Mouth & Palate",
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-mouth",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-mouth-palate",
             "aggregation": [
               "bundled"
             ]
@@ -405,10 +430,11 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:OralHealth",
+        "id": "Composition.section:HealthConditionsSection.entry:OralHealth",
         "path": "Composition.section.entry",
         "sliceName": "OralHealth",
         "short": "Oral Health",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -421,15 +447,16 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:Cardiovascular",
+        "id": "Composition.section:HealthConditionsSection.entry:CardiovascularDR",
         "path": "Composition.section.entry",
-        "sliceName": "Cardiovascular",
+        "sliceName": "CardiovascularDR",
         "short": "Cardiovascular (Dr Only)",
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-cardiovascular",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-cardiovascular-dr",
             "aggregation": [
               "bundled"
             ]
@@ -437,15 +464,16 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:FemoralPulses",
+        "id": "Composition.section:HealthConditionsSection.entry:FemoralPulses",
         "path": "Composition.section.entry",
         "sliceName": "FemoralPulses",
         "short": "Femoral Pulses (Right, Left)",
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-femoral-pulses",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-femoral-pulses",
             "aggregation": [
               "bundled"
             ]
@@ -453,10 +481,11 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:Development",
+        "id": "Composition.section:HealthConditionsSection.entry:Development",
         "path": "Composition.section.entry",
         "sliceName": "Development",
         "short": "Development",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -469,10 +498,11 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:Abdomen_Umbilicus",
+        "id": "Composition.section:HealthConditionsSection.entry:Abdomen_Umbilicus",
         "path": "Composition.section.entry",
         "sliceName": "Abdomen_Umbilicus",
         "short": "Abdomen / Umbilicus",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -485,10 +515,11 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:Anus",
+        "id": "Composition.section:HealthConditionsSection.entry:Anus",
         "path": "Composition.section.entry",
         "sliceName": "Anus",
         "short": "Anus",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -501,10 +532,11 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:Gait",
+        "id": "Composition.section:HealthConditionsSection.entry:Gait",
         "path": "Composition.section.entry",
         "sliceName": "Gait",
         "short": "Gait",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -517,10 +549,11 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:Iron",
+        "id": "Composition.section:HealthConditionsSection.entry:Iron",
         "path": "Composition.section.entry",
         "sliceName": "Iron",
         "short": "Iron Testing",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -533,10 +566,11 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:FluorideVarnish",
+        "id": "Composition.section:HealthConditionsSection.entry:FluorideVarnish",
         "path": "Composition.section.entry",
         "sliceName": "FluorideVarnish",
         "short": "Fluoride Varnish",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -549,10 +583,11 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:Hips",
+        "id": "Composition.section:HealthConditionsSection.entry:Hips",
         "path": "Composition.section.entry",
         "sliceName": "Hips",
         "short": "Hips",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -565,10 +600,11 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:Skin",
+        "id": "Composition.section:HealthConditionsSection.entry:Skin",
         "path": "Composition.section.entry",
         "sliceName": "Skin",
         "short": "Skin",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -581,10 +617,11 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:Genitalia",
+        "id": "Composition.section:HealthConditionsSection.entry:Genitalia",
         "path": "Composition.section.entry",
         "sliceName": "Genitalia",
         "short": "Genitalia",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -597,15 +634,16 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.entry:Reflexes",
+        "id": "Composition.section:HealthConditionsSection.entry:Reflexes",
         "path": "Composition.section.entry",
         "sliceName": "Reflexes",
         "short": "Reflexes",
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-reflexes",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-reflexes",
             "aggregation": [
               "bundled"
             ]
@@ -613,7 +651,55 @@
         ]
       },
       {
-        "id": "Composition.section:otherHealthConditions.section",
+        "id": "Composition.section:HealthConditionsSection.entry:TestesFullyDescendedRL",
+        "path": "Composition.section.entry",
+        "sliceName": "TestesFullyDescendedRL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-testes-fully-descended",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:HealthConditionsSection.entry:Deworming",
+        "path": "Composition.section.entry",
+        "sliceName": "Deworming",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-deworming",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:HealthConditionsSection.entry:AgeAppropriateImmunisationCompletionStatus",
+        "path": "Composition.section.entry",
+        "sliceName": "AgeAppropriateImmunisationCompletionStatus",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-ageaprImmcomp",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:HealthConditionsSection.section",
         "path": "Composition.section.section",
         "max": "0"
       }

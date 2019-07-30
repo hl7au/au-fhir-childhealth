@@ -1,15 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-anus",
-  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-anus",
+  "id": "ncdhc-observation-iron",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-iron",
   "version": "v1.0.0",
-  "name": "NCDHC Anus Observation Profile",
-  "title": "NCDHC Anus Observation",
+  "name": "NCDHC Iron Test Observation Profile",
+  "title": "NCDHC Iron Test Observation",
   "status": "draft",
   "date": "2019-02-15",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "description": "Anus Outcome",
-  "purpose": "To record observations on Anus",
+  "description": "Iron Testing Outcome",
+  "purpose": "To record observations on Iron Testing",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -21,7 +21,7 @@
       {
         "id": "Observation",
         "path": "Observation",
-        "short": "NCDHC Anus Test Observation Profile"
+        "short": "NCDHC Iron Test Observation Profile"
       },
       {
         "id": "Observation.category",
@@ -49,25 +49,15 @@
         }
       },
       {
-        "id": "Observation.code.coding:AnusSNOMEDCT-AU",
+        "id": "Observation.code.coding:IronTestSNOMEDCT-AU",
         "path": "Observation.code.coding",
-        "sliceName": "AnusSNOMEDCT-AU",
+        "sliceName": "IronTestSNOMEDCT-AU",
         "min": 1,
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
-          "code": "364154000"
+          "code": "42950004"
         }
-      },
-      {
-        "id": "Observation.code.coding:AnusSNOMEDCT-AU.system",
-        "path": "Observation.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding:AnusSNOMEDCT-AU.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "364154000"
       },
       {
         "id": "Observation.subject",
@@ -96,22 +86,8 @@
         ]
       },
       {
-        "id": "Observation.value[x]:valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
-        "sliceName": "valueCodeableConcept",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "defaultValueCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "44393800"
-            }
-          ]
-        },
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
         "mustSupport": false
       },
       {

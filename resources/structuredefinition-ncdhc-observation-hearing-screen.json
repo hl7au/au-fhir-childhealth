@@ -56,8 +56,18 @@
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
-          "code": "417491009"
+          "code": "252957005"
         }
+      },
+      {
+        "id": "Observation.code.coding:hearingScreenSNOMEDCT-AU.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:hearingScreenSNOMEDCT-AU.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "252957005"
       },
       {
         "id": "Observation.subject",
@@ -74,7 +84,6 @@
         "id": "Observation.value[x]:valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
         "sliceName": "valueCodeableConcept",
-        "short": "Completed | Not Completed",
         "min": 1,
         "type": [
           {
@@ -94,122 +103,7 @@
         "path": "Observation.interpretation",
         "short": "Indication of whether a referral is needed. Allowed values are : Normal | Review | Refer. If the outcome of any of the component is \"Refer\" then, this will be changed to \"Refer\"",
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation"
-          }
-        }
-      },
-      {
-        "id": "Observation.component",
-        "path": "Observation.component",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "code"
-            }
-          ],
-          "rules": "closed"
-        }
-      },
-      {
-        "id": "Observation.component:outcomeLeft",
-        "path": "Observation.component",
-        "sliceName": "outcomeLeft",
-        "short": "Outcome of hearing test in left ear",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Observation.component:outcomeLeft.code",
-        "path": "Observation.component.code",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "473422006"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Observation.component:outcomeLeft.code.coding.system",
-        "path": "Observation.component.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.component:outcomeLeft.code.coding.code",
-        "path": "Observation.component.code.coding.code",
-        "fixedCode": "473422006"
-      },
-      {
-        "id": "Observation.component:outcomeLeft.interpretation",
-        "path": "Observation.component.interpretation",
-        "short": "Normal | Review | Refer",
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
-          "strength": "required",
-          "description": "Indication of whether a referral is needed",
-          "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation"
-          }
-        }
-      },
-      {
-        "id": "Observation.component:outcomeRight",
-        "path": "Observation.component",
-        "sliceName": "outcomeRight",
-        "short": "Outcome of hearing test in right ear",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Observation.component:outcomeRight.code",
-        "path": "Observation.component.code",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "473421004"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Observation.component:outcomeRight.code.coding.system",
-        "path": "Observation.component.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.component:outcomeRight.code.coding.code",
-        "path": "Observation.component.code.coding.code",
-        "fixedCode": "473421004"
-      },
-      {
-        "id": "Observation.component:outcomeRight.interpretation",
-        "path": "Observation.component.interpretation",
-        "short": "Normal | Review | Refer",
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
-          "strength": "required",
-          "description": "Indication of whether a referral is needed",
+          "strength": "extensible",
           "valueSetReference": {
             "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation"
           }

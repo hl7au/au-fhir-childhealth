@@ -134,9 +134,21 @@
         }
       },
       {
-        "id": "Observation.dataAbsentReason",
-        "path": "Observation.dataAbsentReason",
-        "mustSupport": true
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "short": "Normal | Review | Refer",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationInterpretation"
+            }
+          ],
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation"
+          }
+        }
       }
     ]
   }

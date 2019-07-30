@@ -21,37 +21,14 @@
       {
         "id": "Observation",
         "path": "Observation",
-        "short": "NCDHC Fluoride Varnish Observation Profile",
-        "constraint": [
-          {
-            "key": "ncdhc-obs-1",
-            "severity": "error",
-            "human": "If there is no component or related element then either a value[x] or a data absent reason must be present",
-            "expression": "(component.empty() and related.empty()) implies (dataAbsentReason or value)",
-            "xpath": "exists(f:component) or exists(f:related) or exists(f:*[starts-with(local-name(.), 'value')]) or exists(f:dataAbsentReason)"
-          }
-        ]
-      },
-      {
-        "id": "Observation.status",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint",
-            "valueString": "default: final"
-          }
-        ],
-        "path": "Observation.status",
-        "mustSupport": true
+        "short": "NCDHC Fluoride Varnish Observation Profile"
       },
       {
         "id": "Observation.category",
         "path": "Observation.category",
-        "comment": "In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.\r\n\r\nCWG: Discussion on the Category to match it with Composition.type",
-        "max": "1",
         "patternCodeableConcept": {
           "text": "This needs to be discussed and finalized"
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.code",
@@ -84,35 +61,30 @@
         }
       },
       {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "short": "Reference to the Baby Patient",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-baby"
-          }
-        ],
-        "mustSupport": true
+        "id": "Observation.code.coding:FluorideVarnishSNOMEDCT-AU.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.effective[x]:effectiveDateTime",
+        "id": "Observation.code.coding:FluorideVarnishSNOMEDCT-AU.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "313042009"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Reference to the Baby Patient"
+      },
+      {
+        "id": "Observation.effectiveDateTime:effectiveDateTime",
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
-        "short": "Date Bloodspot Screen Test performed",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "mustSupport": true
+        "short": "Date Bloodspot Screen Test performed"
       },
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
         "short": "Person who is clinically responsible for the undetaking of the exam",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -125,23 +97,23 @@
         ]
       },
       {
-        "id": "Observation.value[x]:valueBoolean",
-        "path": "Observation.valueBoolean",
-        "sliceName": "valueBoolean",
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
+        "sliceName": "valueCodeableConcept",
         "short": "Outcome of the child's fluoride varnish assessement.",
         "min": 1,
         "type": [
           {
-            "code": "boolean"
+            "code": "CodeableConcept"
           }
         ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.comment",
-        "path": "Observation.comment",
-        "short": "Additional comments",
-        "comment": "Additional Information"
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-completion-status"
+          }
+        }
       }
     ]
   }
