@@ -3,13 +3,13 @@
   "id": "ncdhc-observation-mouth-palate",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-mouth-palate",
   "version": "v1.0.0",
-  "name": "NCDHC Mouth Test Observation Profile",
-  "title": "NCDHC Ears Test Observation",
+  "name": "NCDHC Mouth and Palate Observation Profile",
+  "title": "NCDHC Mouth and Palate Observation",
   "status": "draft",
   "date": "2019-02-15",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "Mouth Test",
-  "purpose": "To record Ear Test outcomes",
+  "purpose": "To record Mouth & Palate assessment outcomes",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -21,7 +21,7 @@
       {
         "id": "Observation",
         "path": "Observation",
-        "short": "NCDHC Mouth Test Observation Profile"
+        "short": "NCDHC Mouth and Palate Observation Profile"
       },
       {
         "id": "Observation.category",
