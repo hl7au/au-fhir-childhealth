@@ -152,7 +152,7 @@
         "id": "Composition.section:VitalSignsAndMeasurements.entry:Weight",
         "path": "Composition.section.entry",
         "sliceName": "Weight",
-        "short": "This section records weight of baby recorded at birth",
+        "short": "Weight",
         "min": 1,
         "max": "1",
         "type": [
@@ -173,7 +173,7 @@
         "id": "Composition.section:VitalSignsAndMeasurements.entry:Length",
         "path": "Composition.section.entry",
         "sliceName": "Length",
-        "short": "This section records length of baby recorded at birth",
+        "short": "Length/Height",
         "min": 1,
         "max": "1",
         "type": [
@@ -194,7 +194,7 @@
         "id": "Composition.section:VitalSignsAndMeasurements.entry:HeadCircumference",
         "path": "Composition.section.entry",
         "sliceName": "HeadCircumference",
-        "short": "This section records numeric value for head circumference",
+        "short": "Head Circumference",
         "min": 1,
         "max": "1",
         "type": [
@@ -280,7 +280,7 @@
         "id": "Composition.section:HealthConditionsSection.entry:HeadShape",
         "path": "Composition.section.entry",
         "sliceName": "HeadShape",
-        "short": "Outcome of the child's head shape assessment",
+        "short": "Head Shape",
         "min": 1,
         "max": "1",
         "type": [
@@ -297,7 +297,7 @@
         "id": "Composition.section:HealthConditionsSection.entry:FontanellesSutures",
         "path": "Composition.section.entry",
         "sliceName": "FontanellesSutures",
-        "short": "Outcome of the child's fontanelles, sutures assessment",
+        "short": "Fontanelles, Sutures",
         "min": 1,
         "max": "1",
         "type": [
@@ -348,7 +348,7 @@
         "id": "Composition.section:HealthConditionsSection.entry:VisionScreen",
         "path": "Composition.section.entry",
         "sliceName": "VisionScreen",
-        "short": "Vision Screen Outcome",
+        "short": "Vision Screen",
         "min": 1,
         "max": "1",
         "type": [
@@ -654,6 +654,7 @@
         "id": "Composition.section:HealthConditionsSection.entry:TestesFullyDescendedRL",
         "path": "Composition.section.entry",
         "sliceName": "TestesFullyDescendedRL",
+        "short": "Testes fully descended R/L",
         "min": 1,
         "max": "1",
         "type": [
@@ -670,6 +671,7 @@
         "id": "Composition.section:HealthConditionsSection.entry:Deworming",
         "path": "Composition.section.entry",
         "sliceName": "Deworming",
+        "short": "Deworming",
         "min": 1,
         "max": "1",
         "type": [
@@ -686,6 +688,7 @@
         "id": "Composition.section:HealthConditionsSection.entry:AgeAppropriateImmunisationCompletionStatus",
         "path": "Composition.section.entry",
         "sliceName": "AgeAppropriateImmunisationCompletionStatus",
+        "short": "Age Appropriate Immunisation completed as per schedule",
         "min": 1,
         "max": "1",
         "type": [

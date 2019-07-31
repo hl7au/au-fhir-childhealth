@@ -3,12 +3,12 @@
   "id": "ncdhc-observation-headcircum",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-headcircum",
   "version": "v1.0.0",
-  "name": "NCDHC Head Circumference Vital Sign Profile",
-  "title": "NCDHC Head Circumference Vital Sign",
+  "name": "NCDHC Head Circumference Observation Profile",
+  "title": "NCDHC Head Circumference Observation",
   "status": "draft",
   "date": "2019-01-25",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "description": "NCDHC Head Circumference Vital Sign Profile",
+  "description": "NCDHC Head Circumference Observation Profile",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -54,16 +54,50 @@
         ]
       },
       {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.valueQuantity",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.value",
+        "path": "Observation.valueQuantity.value",
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Observation.valueQuantity.unit",
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.system",
+        "path": "Observation.valueQuantity.system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.valueQuantity.code",
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://hl7.org/fhir/ValueSet/ucum-bodylength"
+        }
+      },
+      {
         "id": "Observation.interpretation",
         "path": "Observation.interpretation",
         "short": "Normal | Review | Refer",
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
           "strength": "required",
           "valueSetReference": {
             "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation"
