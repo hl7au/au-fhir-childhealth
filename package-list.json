@@ -1,6 +1,6 @@
 {
   "package-id": "hl7.fhir.au.ncdhc",
-  "canonical": "http://hl7.org.au/fhir/ch/v1",
+  "canonical": "http://hl7.org.au/fhir",
   "list": [
     {
       "version": "current",
