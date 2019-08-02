@@ -459,6 +459,18 @@
 				<reference value="StructureDefinition/ncdhc-observation-tobacco-usage"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-iron-haemoglobin-level"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-iron-serum-ferritin"/>
+			</sourceReference>
+		</resource>
 		
 		<resource>
 			<example value="false"/>

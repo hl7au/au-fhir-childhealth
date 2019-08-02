@@ -419,6 +419,14 @@
       "base": "StructureDefinition-ncdhc-graphdefinition-base.html",
       "defns": "StructureDefinition-ncdhc-graphdefinition-base-definitions.html"
     },
+	 "StructureDefinition/ncdhc-observation-iron-serum-ferritin": {
+      "base": "StructureDefinition-ncdhc-observation-iron-serum-ferritin.html",
+      "defns": "StructureDefinition-ncdhc-observation-iron-serum-ferritin-definitions.html"
+    },
+	"StructureDefinition/ncdhc-observation-iron-haemoglobin-level": {
+      "base": "StructureDefinition-ncdhc-observation-iron-haemoglobin-level.html",
+      "defns": "StructureDefinition-ncdhc-observation-iron-haemoglobin-level-definitions.html"
+    },
     "ValueSet/apgar-score-type": {
       "base": "ValueSet-apgar-score-type.html"
     },

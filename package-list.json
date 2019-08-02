@@ -1,5 +1,6 @@
 {
   "package-id": "hl7.fhir.au.ncdhc",
+  "title": "National Child Digital Health Implementation Guide",
   "canonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth",
   "list": [
     {
