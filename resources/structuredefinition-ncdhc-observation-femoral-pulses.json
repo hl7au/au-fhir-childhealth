@@ -75,12 +75,6 @@
         "short": "Reference to the Baby Patient"
       },
       {
-        "id": "Observation.effectiveDateTime:effectiveDateTime",
-        "path": "Observation.effectiveDateTime",
-        "sliceName": "effectiveDateTime",
-        "short": "Date Bloodspot Screen Test performed"
-      },
-      {
         "id": "Observation.performer",
         "path": "Observation.performer",
         "short": "Person who is clinically responsible for the undetaking of the exam",
@@ -108,7 +102,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "443938003"
+              "code": "44393800"
             }
           ]
         },
