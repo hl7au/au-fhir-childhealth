@@ -4,7 +4,7 @@
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-abdomen",
   "version": "v1.0.0",
   "name": "NCDHC Abdomen Umbilicus Observation Profile",
-  "title": "NCDHC Abdoment Test Observation",
+  "title": "NCDHC Abdoment Observation",
   "status": "draft",
   "date": "2019-02-15",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
