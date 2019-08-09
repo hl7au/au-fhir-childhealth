@@ -123,10 +123,20 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "386708005"
+              "code": "89644007"
             }
           ]
         }
+      },
+      {
+        "id": "Observation.component:leftEar.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.component:leftEar.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "fixedCode": "89644007"
       },
       {
         "id": "Observation.component:leftEar.interpretation",
@@ -140,25 +150,35 @@
         }
       },
       {
-        "id": "Observation.component:rightEye",
+        "id": "Observation.component:rightEar",
         "path": "Observation.component",
-        "sliceName": "rightEye",
+        "sliceName": "rightEar",
         "max": "1"
       },
       {
-        "id": "Observation.component:rightEye.code",
+        "id": "Observation.component:rightEar.code",
         "path": "Observation.component.code",
         "fixedCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "386709002"
+              "code": "25577004"
             }
           ]
         }
       },
       {
-        "id": "Observation.component:rightEye.interpretation",
+        "id": "Observation.component:rightEar.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.component:rightEar.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "fixedCode": "25577004"
+      },
+      {
+        "id": "Observation.component:rightEar.interpretation",
         "path": "Observation.component.interpretation",
         "short": "Normal | Review | Refer",
         "binding": {

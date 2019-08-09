@@ -57,8 +57,18 @@
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
-          "code": "170195005"
+          "code": "363926002"
         }
+      },
+      {
+        "id": "Observation.code.coding:EyeTestSNOMEDCT-AU.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:EyeTestSNOMEDCT-AU.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "363926002"
       },
       {
         "id": "Observation.subject",
@@ -122,10 +132,20 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "386708005"
+              "code": "8966001"
             }
           ]
         }
+      },
+      {
+        "id": "Observation.component:leftEyeAssessment.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.component:leftEyeAssessment.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "fixedCode": "8966001"
       },
       {
         "id": "Observation.component:leftEyeAssessment.interpretation",
@@ -151,10 +171,20 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "386709002"
+              "code": "18944008"
             }
           ]
         }
+      },
+      {
+        "id": "Observation.component:rightEyeAssessment.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.component:rightEyeAssessment.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "fixedCode": "18944008"
       },
       {
         "id": "Observation.component:rightEyeAssessment.interpretation",
