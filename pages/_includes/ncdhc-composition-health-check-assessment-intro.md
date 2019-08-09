@@ -35,7 +35,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-- [Newborn Health Check Assessment Health Interaction document](Bundle-document-healthcheck-response-payload.html)
+- [Newborn Health Check Assessment Health Interaction document])
 
 [Composition]: http://hl7.org.au/fhir/base2018Oct/StructureDefinition-au-composition.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible

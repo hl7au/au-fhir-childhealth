@@ -1,1 +1,1 @@
-TODO: Add more details here once the Capability Statement and OAI is decided
+Refer to Capability Statement and OAI for more details

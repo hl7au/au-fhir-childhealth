@@ -22,7 +22,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  a subject (Patient)
 1.  a time indicating when the details was recorded.
 1.	a performer detailing who has recorded the details.
-1.  a numeric result value and standard UCUM unit which is taken from the “UCUM Unit Code” column in the table below.
+1.  a numeric result value and standard UCUM unit.
     -   note: if there is no numeric result then you have to supply a reason
 
 **Profile specific implementation guidance:**
