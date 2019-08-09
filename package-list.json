@@ -4,7 +4,7 @@
   "canonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth",
   "list": [
     {
-      "version": "1.0.0",
+      "version": "current",
       "date": "n/a",
       "desc": "Continuous Integration Build (latest in version control)",
       "path": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth",
