@@ -24,28 +24,6 @@
         "short": "NCDHC Health Check Assessment Composition Profile"
       },
       {
-        "id": "Composition.type",
-        "path": "Composition.type",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "11503-0"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Composition.type.coding.system",
-        "path": "Composition.type.coding.system",
-        "fixedUri": "http://loinc.org"
-      },
-      {
-        "id": "Composition.type.coding.code",
-        "path": "Composition.type.coding.code",
-        "fixedCode": "11503-0"
-      },
-      {
         "id": "Composition.subject",
         "path": "Composition.subject",
         "short": "Reference to the Baby Patient"
@@ -54,11 +32,6 @@
         "id": "Composition.title",
         "path": "Composition.title",
         "fixedString": "Newborn Health Check Assessment Health Interaction"
-      },
-      {
-        "id": "Composition.confidentiality",
-        "path": "Composition.confidentiality",
-        "fixedCode": "N"
       },
       {
         "id": "Composition.attester.party",
@@ -153,7 +126,6 @@
         "path": "Composition.section.entry",
         "sliceName": "Weight",
         "short": "Weight",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -174,7 +146,6 @@
         "path": "Composition.section.entry",
         "sliceName": "Length",
         "short": "Length/Height",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -195,7 +166,6 @@
         "path": "Composition.section.entry",
         "sliceName": "HeadCircumference",
         "short": "Head Circumference",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -216,7 +186,6 @@
         "path": "Composition.section.entry",
         "sliceName": "BMI",
         "short": "Body mass index (BMI)",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -281,7 +250,6 @@
         "path": "Composition.section.entry",
         "sliceName": "HeadShape",
         "short": "Head Shape",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -298,7 +266,6 @@
         "path": "Composition.section.entry",
         "sliceName": "FontanellesSutures",
         "short": "Fontanelles, Sutures",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -315,7 +282,6 @@
         "path": "Composition.section.entry",
         "sliceName": "EyesMonocularlyTested",
         "short": "Eyes Monocularly Tested (Right, Left)",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -332,7 +298,6 @@
         "path": "Composition.section.entry",
         "sliceName": "Eyes",
         "short": "Eyes (Right/Left)",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -349,7 +314,6 @@
         "path": "Composition.section.entry",
         "sliceName": "VisionScreen",
         "short": "Vision Screen",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -366,7 +330,6 @@
         "path": "Composition.section.entry",
         "sliceName": "Ears",
         "short": "Ears Right/Left",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -383,7 +346,6 @@
         "path": "Composition.section.entry",
         "sliceName": "HearingCheck",
         "short": "Hearing Check",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -400,7 +362,6 @@
         "path": "Composition.section.entry",
         "sliceName": "HearingScreen",
         "short": "Hearing Screen",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -417,7 +378,6 @@
         "path": "Composition.section.entry",
         "sliceName": "MouthAndPalate",
         "short": "Mouth & Palate",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -434,7 +394,6 @@
         "path": "Composition.section.entry",
         "sliceName": "OralHealth",
         "short": "Oral Health",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -451,7 +410,6 @@
         "path": "Composition.section.entry",
         "sliceName": "CardiovascularDR",
         "short": "Cardiovascular (Dr Only)",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -468,7 +426,6 @@
         "path": "Composition.section.entry",
         "sliceName": "FemoralPulses",
         "short": "Femoral Pulses (Right, Left)",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -485,7 +442,6 @@
         "path": "Composition.section.entry",
         "sliceName": "Development",
         "short": "Development",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -502,7 +458,6 @@
         "path": "Composition.section.entry",
         "sliceName": "Abdomen_Umbilicus",
         "short": "Abdomen / Umbilicus",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -519,7 +474,6 @@
         "path": "Composition.section.entry",
         "sliceName": "Anus",
         "short": "Anus",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -536,7 +490,6 @@
         "path": "Composition.section.entry",
         "sliceName": "Gait",
         "short": "Gait",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -553,7 +506,6 @@
         "path": "Composition.section.entry",
         "sliceName": "Iron",
         "short": "Iron Testing",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -570,7 +522,6 @@
         "path": "Composition.section.entry",
         "sliceName": "FluorideVarnish",
         "short": "Fluoride Varnish",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -587,7 +538,6 @@
         "path": "Composition.section.entry",
         "sliceName": "Hips",
         "short": "Hips",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -604,7 +554,6 @@
         "path": "Composition.section.entry",
         "sliceName": "Skin",
         "short": "Skin",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -621,7 +570,6 @@
         "path": "Composition.section.entry",
         "sliceName": "Genitalia",
         "short": "Genitalia",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -638,7 +586,6 @@
         "path": "Composition.section.entry",
         "sliceName": "Reflexes",
         "short": "Reflexes",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -655,7 +602,6 @@
         "path": "Composition.section.entry",
         "sliceName": "TestesFullyDescendedRL",
         "short": "Testes fully descended R/L",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -672,7 +618,6 @@
         "path": "Composition.section.entry",
         "sliceName": "Deworming",
         "short": "Deworming",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -689,7 +634,6 @@
         "path": "Composition.section.entry",
         "sliceName": "AgeAppropriateImmunisationCompletionStatus",
         "short": "Age Appropriate Immunisation completed as per schedule",
-        "min": 1,
         "max": "1",
         "type": [
           {
