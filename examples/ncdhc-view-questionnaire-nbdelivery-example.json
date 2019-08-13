@@ -113,14 +113,12 @@
       "item": [
         {
           "linkId": "7.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html#Observation.value[x]",
-          "text": "Problem",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html#Observation.value[x]",         
           "type": "open-choice"
         },
         {
           "linkId": "7.2",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html#Observation.comment",
-          "text": "Comment",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html#Observation.comment",         
           "type": "text"
         }
       ]
@@ -138,14 +136,12 @@
       "item": [
         {
           "linkId": "8.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-abnormalities-definitions.html#Observation.value[x]",
-          "text": "Problem",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-abnormalities-definitions.html#Observation.value[x]",         
           "type": "open-choice"
         },
         {
           "linkId": "8.2",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-abnormalities-definitions.html#Observation.comment",
-          "text": "Comment",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-abnormalities-definitions.html#Observation.comment",          
           "type": "text"
         }
       ]
@@ -163,14 +159,12 @@
       "item": [
         {
           "linkId": "9.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-complication-definitions.html#Observation.value[x]",
-          "text": "Problem",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-complication-definitions.html#Observation.value[x]",         
           "type": "open-choice"
         },
         {
           "linkId": "9.2",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-complication-definitions.html#Observation.comment",
-          "text": "Comment",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-complication-definitions.html#Observation.comment",         
           "type": "text"
         }
       ]

@@ -118,7 +118,6 @@
                 {
                   "id": "7.1.1.1",
                   "linkId": "7.1.1",
-                  "text": "Problem",
                   "answer": [
                     {
                       "valueString": "High blood pressure"
@@ -128,7 +127,6 @@
                 {
                   "id": "7.1.2.1",
                   "linkId": "7.1.2",
-                  "text": "Comment",
                   "answer": [
                     {
                       "valueString": "Not Applicable"
@@ -147,7 +145,6 @@
                 {
                   "id": "7.1.1.2",
                   "linkId": "7.1.1",
-                  "text": "Problem",
                   "answer": [
                     {
                       "valueString": "Medical Problem - Infection"
@@ -157,7 +154,6 @@
                 {
                   "id": "7.1.2.2",
                   "linkId": "7.1.2",
-                  "text": "Comment",
                   "answer": [
                     {
                       "valueString": "Infection found"
