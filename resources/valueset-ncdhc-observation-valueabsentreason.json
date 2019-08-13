@@ -36,7 +36,7 @@
       ]
     }
   ],
-  "description" : "Codes to determine what kind of role is applicable to the role tyope of Consent",
+  "description" : "NCDHC Observation Value Absent Reason Types as provided by the source system",
   "copyright" : "To be added",
   "compose" : {
     "include" : [
