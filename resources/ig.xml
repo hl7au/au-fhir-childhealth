@@ -662,6 +662,12 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-valueabsentreason"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/ncdhc-consent-category"/>
 			</sourceReference>
 		</resource>
