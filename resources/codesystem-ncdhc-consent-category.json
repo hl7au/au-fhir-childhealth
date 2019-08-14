@@ -54,6 +54,11 @@
 		"definition" : "Consent for a child to have a operative child digital health record"
 	},
 	{
+		"code" : "MHRINTR",
+		"display" : "Consent to Interact with My Health Record",
+		"definition" : "Consent provided by the authorised representative to Interact with My Health Record"
+	},
+	{
 		"code" : "AUTHCONST",
 		"display" : "NCDHC Authorisation Consent",
 		"definition" : "Consent used to record registration role and authorisation"
