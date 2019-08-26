@@ -300,6 +300,7 @@
     },
     {
       "linkId": "15",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.individual",
       "text": "Examiner",
       "type": "group",
       "item": [
