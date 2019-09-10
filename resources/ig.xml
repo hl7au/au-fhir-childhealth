@@ -572,6 +572,18 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="ValueSet/ncdhc-birth-complications"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-pregnancy-complications"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/apgar-score-type"/>
 			</sourceReference>
 		</resource>

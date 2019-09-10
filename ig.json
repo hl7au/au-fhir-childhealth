@@ -488,6 +488,12 @@
 	"ValueSet/ncdhc-observation-valueabsentreason": {
       "base": "ValueSet-ncdhc-observation-valueabsentreason.html"
     },
+	"ValueSet/ncdhc-birth-complications": {
+      "base": "ValueSet-ncdhc-birth-complications.html"
+    },
+	"ValueSet/ncdhc-pregnancy-complicationss": {
+      "base": "ValueSet-ncdhc-pregnancy-complications.html"
+    },
     "ValueSet/ncdhc-condition-code": {
       "base": "ValueSet-condition-code.html"
     },
