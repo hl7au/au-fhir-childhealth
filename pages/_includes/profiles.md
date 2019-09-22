@@ -2,6 +2,20 @@
 
 These Profiles have been defined for this implementation guide.
 
+## Digital Child Health Profiles
+* [NCDHC Newborn Delivery Health Interaction](StructureDefinition-ncdhc-composition-nbdelivery.html) - Composition profile to represent Newborn Delivery Health Interaction
+* [NCDHC Newborn Discharge Health Interaction](StructureDefinition-ncdhc-composition-discharge.html) - Composition profile to represent Newborn Discharge Health Interaction
+* [NCDHC Health Check Assessment Health Interaction](StructureDefinition-ncdhc-composition-health-check-assessment.html) - Composition profile to represent Health Check Assessment Health Interaction
+* [NCDHC Newborn Blood Spot Screen Health Interaction](StructureDefinition-ncdhc-composition-bloodspot-screen.html) - Composition profile to represent Newborn Blood Spot Screen Health Interaction
+* [NCDHC Newborn Hearing Screen Health Interaction](StructureDefinition-ncdhc-composition-hearing-screen.html) - Composition profile to represent Newborn Hearing Screen Health Interaction
+* [NCDHC Newborn Exam Health Interaction](StructureDefinition-ncdhc-composition-exam.html) - Composition profile to represent Newborn Exam Health Interaction
+* [NCDHC Newborn Family Member History Health Interaction](StructureDefinition-ncdhc-composition-familyhistory.html) - Composition profile to represent Newborn Family Member History Health Interaction
+
+## Digital Pregnancy Record Profiles
+* [NCDHC Fetal Health Checks Health Interaction](StructureDefinition-ncdhc-composition-fetal-health-checks.html) - Composition profile to represent Fetal Health Checks Health Interaction Health Interaction
+* [NCDHC Maternal Health Checks Health Interaction](StructureDefinition-ncdhc-composition-maternal-health-checks.html) - Composition profile to represent Maternal Health Checks Health Interaction Health Interaction
+* [NCDHC Estimated Date Of Birth Health Interaction](StructureDefinition-ncdhc-composition-edb.html) - Composition profile to represent Estimated Date Of Birth and associated details.
+
 ## Patient Profiles
 * [NCDHC Baby Patient](StructureDefinition-ncdhc-patient-baby.html) - Demographic details of the Baby Patient.
 * [NCDHC Expected Mother Patient](StructureDefinition-ncdhc-patient-mother.html) - Demographic details of the Expected Mother Patient.
@@ -86,16 +100,6 @@ These Profiles have been defined for this implementation guide.
 ## GraphDefinition Profiles
 * [NCDHC GraphDefinition Base](StructureDefinition-ncdhc-graphdefinition-base.html) - GraphDefinition Base profile 
 
-## Composition Profiles
-* [NCDHC Newborn Delivery Health Interaction](StructureDefinition-ncdhc-composition-nbdelivery.html) - Composition profile to represent Newborn Delivery Health Interaction
-* [NCDHC Newborn Discharge Health Interaction](StructureDefinition-ncdhc-composition-discharge.html) - Composition profile to represent Newborn Discharge Health Interaction
-* [NCDHC Newborn Blood Spot Screen Health Interaction](StructureDefinition-ncdhc-composition-bloodspot-screen.html) - Composition profile to represent Newborn Blood Spot Screen Health Interaction
-* [NCDHC Newborn Hearing Screen Health Interaction](StructureDefinition-ncdhc-composition-hearing-screen.html) - Composition profile to represent Newborn Hearing Screen Health Interaction
-* [NCDHC Newborn Exam Health Interaction](StructureDefinition-ncdhc-composition-exam.html) - Composition profile to represent Newborn Exam Health Interaction
-* [NCDHC Health Check Assessment Health Interaction](StructureDefinition-ncdhc-composition-health-check-assessment.html) - Composition profile to represent Health Check Assessment Health Interaction
-* [NCDHC Newborn Family Member History Health Interaction](StructureDefinition-ncdhc-composition-familyhistory.html) - Composition profile to represent Newborn Family Member History Health Interaction
-* [NCDHC Fetal Health Checks Health Interaction](StructureDefinition-ncdhc-composition-fetal-health-checks.html) - Composition profile to represent Fetal Health Checks Health Interaction Health Interaction
-* [NCDHC Maternal Health Checks Health Interaction](StructureDefinition-ncdhc-composition-maternal-health-checks.html) - Composition profile to represent Maternal Health Checks Health Interaction Health Interaction
 
 ## NCDHC Views
 * [NCDHC Birth Consolidated view](StructureDefinition-ncdhc-composition-view-birth.html) - Consolidated view to represent Birth related details. This view includes summaries from Newborn Delivery, Newborn Discharge, Bloodshot Screening, Hearing Screening and Immunisation.

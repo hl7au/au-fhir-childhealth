@@ -1,0 +1,104 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-edb",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-edb",
+  "name": "NCDHC EDB Observation Profile",
+  "title": "NCDHC Observation EDB",
+  "status": "draft",
+  "date": "2019-09-20",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "NCDHC EDB Observation Profile"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "161714006"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-mother"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueDateTime",
+        "path": "Observation.valueDateTime",
+        "sliceName": "valueDateTime",
+        "short": "Date of EDB",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.method",
+        "path": "Observation.method",
+        "short": "EDB Calculation",
+        "min": 1,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationMethod"
+            }
+          ],
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ch/v1/ValueSet/ncdhc-edb-observation-methods"
+          }
+        }
+      },
+      {
+        "id": "Observation.related",
+        "path": "Observation.related",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.related.type",
+        "path": "Observation.related.type",
+        "fixedCode": "derived-from"
+      },
+      {
+        "id": "Observation.related.target",
+        "path": "Observation.related.target",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Observation"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-questionnaireresponse-base"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Sequence"
+          }
+        ]
+      }
+    ]
+  }
+}
