@@ -562,6 +562,19 @@
 				<reference value="StructureDefinition/ncdhc-composition-view-birth"/>
 			</sourceReference>
 		</resource>
+		<!-- DPHR Profiles -->
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-edb"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-edb"/>
+			</sourceReference>
+		</resource>
 		<!-- ValueSet and CodeSystems -->
 		<resource>
 			<example value="false"/>

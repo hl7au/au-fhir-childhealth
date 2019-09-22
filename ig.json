@@ -340,6 +340,10 @@
       "base": "StructureDefinition-ncdhc-observation-ageaprImmcomp.html",
       "defns": "StructureDefinition-ncdhc-observation-ageaprImmcomp-definitions.html"
     },
+	"StructureDefinition/ncdhc-observation-edb": {
+      "base": "StructureDefinition-ncdhc-observation-edb.html",
+      "defns": "StructureDefinition-ncdhc-observation-edb-definitions.html"
+    },
     "StructureDefinition/ncdhc-medicationstatement-vitamink": {
       "base": "StructureDefinition-ncdhc-medicationstatement-vitamink.html",
       "defns": "StructureDefinition-ncdhc-medicationstatement-vitamink-definitions.html"
@@ -399,6 +403,10 @@
     "StructureDefinition/ncdhc-composition-maternal-health-checks": {
       "base": "StructureDefinition-ncdhc-composition-maternal-health-checks.html",
       "defns": "StructureDefinition-ncdhc-composition-maternal-health-checks-definitions.html"
+    },
+	 "StructureDefinition/ncdhc-composition-edb": {
+      "base": "StructureDefinition-ncdhc-composition-edb.html",
+      "defns": "StructureDefinition-ncdhc-composition-edb-definitions.html"
     },
     "StructureDefinition/ncdhc-composition-view-base": {
       "base": "StructureDefinition-ncdhc-composition-view-base.html",
