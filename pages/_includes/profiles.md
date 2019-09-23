@@ -63,7 +63,8 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Cardiovascular (Dr Only)](StructureDefinition-ncdhc-observation-cardiovascular-dr.html) - Observation profile to record outcome of the child's cardiovascular assessment    
 * [NCDHC Femoral Pulses (Right, Left)](StructureDefinition-ncdhc-observation-femoral-pulses.html) - Observation profile to record outcome of the child's femoral pulses right check 
 * [NCDHC Development](StructureDefinition-ncdhc-observation-development.html) - Observation profile to record outcome of the child's developmental assessment 
-* [NCDHC Abdomen / Umbilicus](StructureDefinition-ncdhc-observation-abdomen.html) - Observation profile to record outcome of the child's Abdomen / Umbilicus assessment
+* [NCDHC Abdomen](StructureDefinition-ncdhc-observation-abdomen.html) - Observation profile to record outcome of the child's Abdomen / Umbilicus assessment
+* [NCDHC Umbilicus](StructureDefinition-ncdhc-observation-umbilicus.html) - Observation profile to record outcome of the child's Umbilicus assessment
 * [NCDHC Anus](StructureDefinition-ncdhc-observation-anus.html) - Observation profile to record outcome of the child's anus assessment
 * [NCDHC Gait](StructureDefinition-ncdhc-observation-gait.html) - Observation profile to record outcome of the child's gait check 
 * [NCDHC Iron](StructureDefinition-ncdhc-observation-iron.html) - Observation profile to record outcome of the child's iron check

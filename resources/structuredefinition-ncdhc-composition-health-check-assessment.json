@@ -454,15 +454,31 @@
         ]
       },
       {
-        "id": "Composition.section:HealthConditionsSection.entry:Abdomen_Umbilicus",
+        "id": "Composition.section:HealthConditionsSection.entry:Abdomen",
         "path": "Composition.section.entry",
-        "sliceName": "Abdomen_Umbilicus",
-        "short": "Abdomen / Umbilicus",
+        "sliceName": "Abdomen",
+        "short": "Abdomen",
         "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-abdomen",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:HealthConditionsSection.entry:Umbilicus",
+        "path": "Composition.section.entry",
+        "sliceName": "Umbilicus",
+        "short": "Umbilicus",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-umbilicus",
             "aggregation": [
               "bundled"
             ]

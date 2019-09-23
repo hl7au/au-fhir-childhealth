@@ -70,12 +70,6 @@
         "short": "Code to represent Birth length",
         "mustSupport": true,
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationCode"
-            }
-          ],
           "strength": "preferred"
         }
       },
@@ -111,6 +105,16 @@
           "system": "http://snomed.info/sct",
           "code": "169886007"
         }
+      },
+      {
+        "id": "Observation.code.coding:birthHeightSNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:birthHeightSNOMED-CT.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "169886007"
       },
       {
         "id": "Observation.subject",

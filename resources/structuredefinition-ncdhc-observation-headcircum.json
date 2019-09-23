@@ -24,18 +24,52 @@
         "definition": "This profile defines  how to represent Head Circumference observations in FHIR using a standard LOINC and SNOMED CT AU code. The profile uses UCUM units of measure."
       },
       {
-        "id": "Observation.code.coding:BirthHeadCircumSNOMEDCTAU",
+        "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "sliceName": "BirthHeadCircumSNOMEDCTAU",
-        "max": "1"
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            },
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
       },
       {
-        "id": "Observation.code.coding:BirthHeadCircumSNOMEDCTAU.system",
+        "id": "Observation.code.coding:HeadCircumferenceSNOMEDCT",
+        "path": "Observation.code.coding",
+        "sliceName": "HeadCircumferenceSNOMEDCT",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "363812007"
+        }
+      },
+      {
+        "id": "Observation.code.coding:HeadCircumferenceSNOMEDCT.system",
         "path": "Observation.code.coding.system",
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:BirthHeadCircumSNOMEDCTAU.code",
+        "id": "Observation.code.coding:HeadCircumferenceSNOMEDCT.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "363812007"
+      },
+      {
+        "id": "Observation.code.coding:BirthHeadCircumferenceSNOMED",
+        "path": "Observation.code.coding",
+        "sliceName": "BirthHeadCircumferenceSNOMED",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "169876006"
+        }
+      },
+      {
+        "id": "Observation.code.coding:BirthHeadCircumferenceSNOMED.code",
         "path": "Observation.code.coding.code",
         "fixedCode": "169876006"
       },

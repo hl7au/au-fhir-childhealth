@@ -37,10 +37,19 @@
         "definition": "This profile defines  how to represent Body Height observations in FHIR using a standard LOINC and SNOMED CT-AU code . The profile uses UCUM units of measure."
       },
       {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "comment": "additional codes that translate or map to this code are allowed. For example a more granular LOINC code or code that is used locally in a system."
+      },
+      {
         "id": "Observation.code.coding:BodyHeightSNOMEDCTAUCode",
         "path": "Observation.code.coding",
         "sliceName": "BodyHeightSNOMEDCTAUCode",
-        "max": "1"
+        "max": "1",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "248334005"
+        }
       },
       {
         "id": "Observation.code.coding:BodyHeightSNOMEDCTAUCode.system",
@@ -56,7 +65,11 @@
         "id": "Observation.code.coding:BirthHeightSNOMEDCTAUCode",
         "path": "Observation.code.coding",
         "sliceName": "BirthHeightSNOMEDCTAUCode",
-        "max": "1"
+        "max": "1",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "169886007"
+        }
       },
       {
         "id": "Observation.code.coding:BirthHeightSNOMEDCTAUCode.system",
@@ -69,20 +82,24 @@
         "fixedCode": "169886007"
       },
       {
-        "id": "Observation.code.coding:BirthLengthSNOMEDCTAUCode",
+        "id": "Observation.code.coding:BodyHeightMeasurSNOMEDCTAUCode",
         "path": "Observation.code.coding",
-        "sliceName": "BirthLengthSNOMEDCTAUCode",
-        "max": "1"
+        "sliceName": "BodyHeightMeasurSNOMEDCTAUCode",
+        "max": "1",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "50373000"
+        }
       },
       {
-        "id": "Observation.code.coding:BirthLengthSNOMEDCTAUCode.system",
+        "id": "Observation.code.coding:BodyHeightMeasurSNOMEDCTAUCode.system",
         "path": "Observation.code.coding.system",
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:BirthLengthSNOMEDCTAUCode.code",
+        "id": "Observation.code.coding:BodyHeightMeasurSNOMEDCTAUCode.code",
         "path": "Observation.code.coding.code",
-        "fixedCode": "169886007"
+        "fixedCode": "50373000"
       },
       {
         "id": "Observation.subject",
@@ -114,12 +131,6 @@
         "path": "Observation.interpretation",
         "short": "Normal | Review | Refer",
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
           "strength": "required",
           "valueSetReference": {
             "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation"

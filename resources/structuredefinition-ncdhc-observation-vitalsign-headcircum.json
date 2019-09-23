@@ -27,7 +27,11 @@
         "id": "Observation.code.coding:HeadCircumSNOMEDCTAU",
         "path": "Observation.code.coding",
         "sliceName": "HeadCircumSNOMEDCTAU",
-        "max": "1"
+        "max": "1",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "363812007"
+        }
       },
       {
         "id": "Observation.code.coding:HeadCircumSNOMEDCTAU.system",
@@ -43,7 +47,11 @@
         "id": "Observation.code.coding:BirthHeadCircumSNOMEDCTAU",
         "path": "Observation.code.coding",
         "sliceName": "BirthHeadCircumSNOMEDCTAU",
-        "max": "1"
+        "max": "1",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "169876006"
+        }
       },
       {
         "id": "Observation.code.coding:BirthHeadCircumSNOMEDCTAU.system",
@@ -81,21 +89,25 @@
         ]
       },
       {
+        "id": "Observation.valueQuantity:valueQuantity",
+        "path": "Observation.valueQuantity",
+        "sliceName": "valueQuantity"
+      },
+      {
         "id": "Observation.interpretation",
         "path": "Observation.interpretation",
         "short": "Normal | Review | Refer",
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
           "strength": "required",
           "valueSetReference": {
             "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation"
           }
         }
+      },
+      {
+        "id": "Observation.component.valueQuantity:valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "sliceName": "valueQuantity"
       }
     ]
   }
