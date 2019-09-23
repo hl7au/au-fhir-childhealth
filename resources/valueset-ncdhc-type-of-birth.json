@@ -3,7 +3,7 @@
   "id": "ncdhc-type-of-birth",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-07-31T03:05:02.360+00:00",
+    "lastUpdated": "2019-09-11T03:05:02.360+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
     ]
@@ -46,7 +46,7 @@
           {
             "property": "constraint",
             "op": "=",
-            "value": "(700000006|Vaginal delivery of fetus| OR 302383004|Forceps delivery| OR 61586001|Delivery by vacuum extraction| OR 11466000|Caesarean section| OR 274130007|Emergency caesarean section| OR 177141003|Elective caesarean section| OR 417121007|Breech extraction| OR 16819009|Delivery of face presentation| OR 236974004|Instrumental delivery| OR 450798003|Delivery of occipitoposterior presentation|)"
+            "value": "(700000006|Vaginal delivery of fetus| OR 302383004|Forceps delivery| OR 61586001|Delivery by vacuum extraction| OR 11466000|Caesarean section| OR 274130007|Emergency caesarean section| OR 177141003|Elective caesarean section| OR 417121007|Breech extraction| OR 16819009|Delivery of face presentation| OR 236974004|Instrumental delivery| OR 450798003|Delivery of occipitoposterior presentation| OR 1364451000168109|Delivery of brow presentation| OR 1364441000168107|Delivery of compound presentation|)"
           }
         ]
       }
