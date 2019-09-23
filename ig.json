@@ -200,6 +200,10 @@
       "base": "StructureDefinition-ncdhc-observation-abdomen.html",
       "defns": "StructureDefinition-ncdhc-observation-abdomen-definitions.html"
     },
+	 "StructureDefinition/ncdhc-observation-umbilicus": {
+      "base": "StructureDefinition-ncdhc-observation-umbilicus.html",
+      "defns": "StructureDefinition-ncdhc-observation-umbilicus-definitions.html"
+    },
     "StructureDefinition/ncdhc-observation-gait": {
       "base": "StructureDefinition-ncdhc-observation-gait.html",
       "defns": "StructureDefinition-ncdhc-observation-gait-definitions.html"
