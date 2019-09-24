@@ -41,7 +41,7 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Blood Pressure Vital Sign](StructureDefinition-ncdhc-observation-vitalsign-bp.html) - Vital Sign Blood Pressure Profile
 * [NCDHC Body Weight](StructureDefinition-ncdhc-observation-bodyweight.html) - Observation profile to represent Weight of Body. This profile is used to record the Birth Weight as well. This profile allows the system to send body/birth weight details to DataHub using SNOMED Code only. 
 * [NCDHC Body Height](StructureDefinition-ncdhc-observation-bodyheight.html) - Observation profile to represent height of Body. This profile is used to record the Birth Height as well. This profile allows the system to send body/birth Height details to DataHub using SNOMED Code only. 
-* [NCDHC BMI](StructureDefinition-ncdhc-observation-bmi.html) - Observation profile to represent BMI. This profile allows the system to send BMI details to DataHub using SNOMED Code only.
+* [NCDHC Body Mass Index (BMI)](StructureDefinition-ncdhc-observation-bmi.html) - Observation profile to represent BMI. This profile allows the system to send BMI details to DataHub using SNOMED Code only.
 * [NCDHC Heart Rate](StructureDefinition-ncdhc-observation-heart-rate.html) - Observation profile to represent heart rate. This profile allows the system to send Heart Rate details to DataHub using SNOMED Code only.
 * [NCDHC Blood Pressure](StructureDefinition-ncdhc-observation-bp.html) - Observation profile to represent blood pressure. This profile allows the system to send Heart Rate details to DataHub using SNOMED Code only.
 * [NCDHC Birth Complication](StructureDefinition-ncdhc-observation-birth-complication.html) - Observation profile to record complications observed during the birthing process
