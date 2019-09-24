@@ -1,0 +1,324 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "hca-06-q-en-s1",
+  "meta": {
+    "profile": [
+      "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-questionnaire-base"
+    ]
+  },
+  "language": "en-AU",
+  "url": "http://hl7.org.au/fhir/ch/v1/Questionnaire/nb-delivery-q-en-s1",
+  "version": "hca06-v1",
+  "title": "Health Check Assessment 0-6 Questionnaire",
+  "experimental": "false",
+  "status": "active",
+  "date": "2019-09-24",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "Question model to represent Newborn Delivery Section of the longitudinal summary",
+  "code": [
+    {
+      "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-questionnaire-type",
+      "code": "NBDELQ",
+      "display": "Newborn Delivery Questionnaire"
+    }
+  ],
+  "subjectType": [
+    "Patient",
+    "Observation"   
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby-definitions.html#Patient.extension:birthPlace",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "169812000"
+        }
+      ],
+      "text": "Facility / Location",
+      "type": "string"
+    },
+    {
+      "linkId": "2",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby-definitions.html#Patient.birthDate.extension:birthTime",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "184099003"
+        }
+      ],
+      "text": "Birth Date / Time",
+      "type": "dateTime"
+    },
+    {
+      "linkId": "3",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby-definitions.html#Patient.gender",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "734000001"
+        }
+      ],
+      "text": "Sex",
+      "type": "choice"
+    },
+    {
+      "linkId": "4",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-estimated-gestation-definitions.html#Observation.valueQuantity:valueQuantity",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "444135009"
+        }
+      ],
+      "text": "Estimated Gestation",
+      "type": "string"
+    },
+    {
+      "linkId": "5",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-method-of-delivery-definitions.html#Observation.valueCodeableConcept:valueCodeableConcept",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "289258004"
+        }
+      ],
+      "text": "Type of Birth",
+      "type": "choice"
+    },
+    {
+      "linkId": "6",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-labour-induced-definitions.html#Observation.valueCodeableConcept:valueCodeableConcept",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "20236002"
+        }
+      ],
+      "text": "Labour Initiation",
+      "type": "choice"
+    },
+    {
+      "linkId": "7",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "609496007"
+        }
+      ],
+      "text": "Pregnancy Complications",
+      "type": "open-choice",
+      "item": [
+        {
+          "linkId": "7.1",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html#Observation.value[x]",         
+          "type": "open-choice"
+        },
+        {
+          "linkId": "7.2",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html#Observation.comment",         
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "8",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "414025005"
+        }
+      ],
+      "text": "Abnormalities Noted",
+      "type": "open-choice",
+      "item": [
+        {
+          "linkId": "8.1",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-abnormalities-definitions.html#Observation.value[x]",         
+          "type": "open-choice"
+        },
+        {
+          "linkId": "8.2",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-abnormalities-definitions.html#Observation.comment",          
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "9",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "198609003"
+        }
+      ],
+      "text": "Birth Complications",
+      "type": "open-choice",
+      "item": [
+        {
+          "linkId": "9.1",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-complication-definitions.html#Observation.value[x]",         
+          "type": "open-choice"
+        },
+        {
+          "linkId": "9.2",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-complication-definitions.html#Observation.comment",         
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "10",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "302083008"
+        }
+      ],
+      "text": "APGAR",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "10.1",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-apgar-score-definitions.html#Observation.value[x]:valueQuantity",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "169895004"
+            }
+          ],
+          "text": "1 minute",
+          "type": "quantity"
+        },
+        {
+          "linkId": "10.2",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-apgar-score-definitions.html#Observation.value[x]:valueQuantity",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "169909004"
+            }
+          ],
+          "text": "5 minute",
+          "type": "quantity"
+        },
+        {
+          "linkId": "10.3",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-apgar-score-definitions.html#Observation.value[x]:valueQuantity",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "169922007"
+            }
+          ],
+          "text": "10 minute",
+          "type": "quantity"
+        }
+      ]
+    },
+    {
+      "linkId": "11",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyweight-definitions.html#Observation.valueQuantity",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "364589006"
+        }
+      ],
+      "text": "Birth Weight",
+      "type": "quantity"
+    },
+    {
+      "linkId": "12",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyheight-definitions.html#Observation.valueQuantity",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "248334005"
+        }
+      ],
+      "text": "Birth Length",
+      "type": "quantity"
+    },
+    {
+      "linkId": "13",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-headcircum-definitions.html#Observation.valueQuantity",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "363812007"
+        }
+      ],
+      "text": "Head Circumference",
+      "type": "quantity"
+    },
+    {
+      "linkId": "14",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "66656000"
+        }
+      ],
+      "text": "Vitamin K",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "14.1",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "169895004"
+            }
+          ],
+          "text": "Vitamin K1",
+          "type": "question",
+          "item": [
+            {
+              "linkId": "14.1.1",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-medicationstatement-vitamink-definitions.html#MedicationStatement.dosage.dose[x]",
+              "text": "Dose",
+              "type": "open-choice"
+            },
+            {
+              "linkId": "14.1.2",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-medicationstatement-vitamink-definitions.html#MedicationStatement.effectiveDateTime:effectiveDateTime",
+              "text": "Date",
+              "type": "dateTime"
+            },
+            {
+              "linkId": "14.1.3",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-medicationstatement-vitamink-definitions.html#MedicationStatement.dosage.route",
+              "text": "Route",
+              "type": "choice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "15",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.individual",
+      "text": "Examiner",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "15.1",
+          "text": "Designation",
+          "type": "choice"
+        },
+        {
+          "linkId": "15.2",
+          "text": "Venue",
+          "type": "string"
+        },
+        {
+          "linkId": "15.3",
+          "text": "Date & Time",
+          "type": "dateTime"
+        }
+      ]
+    }
+  ]
+}
