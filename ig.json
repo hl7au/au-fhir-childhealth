@@ -260,6 +260,10 @@
       "base": "StructureDefinition-ncdhc-observation-vitalsign-bmi.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-bmi-definitions.html"
     },
+	 "StructureDefinition/ncdhc-observation-bmi": {
+      "base": "StructureDefinition-ncdhc-observation-bmi.html",
+      "defns": "StructureDefinition-ncdhc-observation-bmi-definitions.html"
+    },
     "StructureDefinition/ncdhc-observation-vitalsign-heart-rate": {
       "base": "StructureDefinition-ncdhc-observation-vitalsign-heart-rate.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-heart-rate-definitions.html"

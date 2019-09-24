@@ -191,6 +191,12 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-bmi"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-vitalsign-heart-rate"/>
 			</sourceReference>
 		</resource>
