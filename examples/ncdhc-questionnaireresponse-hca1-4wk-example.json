@@ -1,0 +1,912 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "hca-1-4wk-qa-en-s1",
+  "questionnaire": {
+    "reference": "Questionnaire/hca-1-4wk-q-en-s1",
+    "display": "1-4 Week"
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+  },
+  "item": [
+    {
+      "id": "1.0.0.0",
+      "linkId": "1",
+      "text": "Venue",
+      "subject": {
+        "reference": "Encounter/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+      },
+      "answer": [
+        {
+          "valueString": "Blacktown CHC"
+        }
+      ]
+    },
+    {
+      "id": "2.0.0.0",
+      "linkId": "2",
+      "text": "Date / Time",
+      "subject": {
+        "reference": "Encounter/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+      },
+      "answer": [
+        {
+          "valueDateTime": "2018-01-07T17:42:00-05:00"
+        }
+      ]
+    },
+    {
+      "id": "3.0.0.0",
+      "linkId": "3",
+      "text": "Weight",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "3.1.0.1",
+              "linkId": "3.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "3.1.1.1",
+                  "linkId": "3.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "3.1.2.1",
+                  "linkId": "3.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.0.0.0",
+      "linkId": "4",
+      "text": "Length",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "4.1.0.1",
+              "linkId": "4.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "4.1.1.1",
+                  "linkId": "4.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "4.1.2.1",
+                  "linkId": "4.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5.0.0.0",
+      "linkId": "5",
+      "text": "Head Circumference",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "5.1.0.1",
+              "linkId": "5.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "5.1.1.1",
+                  "linkId": "5.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "5.1.2.1",
+                  "linkId": "5.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.0.0.0",
+      "linkId": "6",
+      "text": "Head Shape",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "6.1.0.1",
+              "linkId": "6.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "6.1.1.1",
+                  "linkId": "6.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "6.1.2.1",
+                  "linkId": "6.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7.0.0.0",
+      "linkId": "7",
+      "text": "Fontanelles",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "7.1.0.1",
+              "linkId": "7.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "7.1.1.1",
+                  "linkId": "7.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "7.1.2.1",
+                  "linkId": "7.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.0.0.0",
+      "linkId": "8",
+      "text": "Ears",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "8.1.0.1",
+              "linkId": "8.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "8.1.1.1",
+                  "linkId": "8.1.1",
+                  "text": "Assessment Outcome (Left Ear)",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "8.1.2.1",
+                  "linkId": "8.1.2",
+                  "text": "Assessment Outcome (Right Ear)",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "8.1.3.1",
+                  "linkId": "8.1.3",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9.0.0.0",
+      "linkId": "9",
+      "text": "Eyes",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "9.1.0.1",
+              "linkId": "9.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "9.1.1.1",
+                  "linkId": "9.1.1",
+                  "text": "Assessment Outcome (Left Eye)",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "9.1.1.1",
+                  "linkId": "9.1.2",
+                  "text": "Assessment Outcome (Right Eye)",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "9.1.2.1",
+                  "linkId": "9.1.3",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.0.0.0",
+      "linkId": "10",
+      "text": "Mouth Palate",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "10.1.0.1",
+              "linkId": "10.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "10.1.1.1",
+                  "linkId": "10.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "10.1.2.1",
+                  "linkId": "10.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11.0.0.0",
+      "linkId": "11",
+      "text": "Cardiovascular",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "11.1.0.1",
+              "linkId": "11.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "11.1.1.1",
+                  "linkId": "11.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "11.1.2.1",
+                  "linkId": "11.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12.0.0.0",
+      "linkId": "12",
+      "text": "Reflexes",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "12.1.0.1",
+              "linkId": "12.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "12.1.1.1",
+                  "linkId": "12.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "12.1.2.1",
+                  "linkId": "12.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13.0.0.0",
+      "linkId": "13",
+      "text": "Femoral Pulse",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "13.1.0.1",
+              "linkId": "13.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "13.1.1.1",
+                  "linkId": "13.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "13.1.2.1",
+                  "linkId": "13.1.2",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "13.1.3.1",
+                  "linkId": "13.1.3",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14.0.0.0",
+      "linkId": "14",
+      "text": "Development",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "14.1.0.1",
+              "linkId": "14.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "14.1.1.1",
+                  "linkId": "14.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "14.1.2.1",
+                  "linkId": "14.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15.0.0.0",
+      "linkId": "15",
+      "text": "Umbilicus",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "15.1.0.1",
+              "linkId": "15.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "15.1.1.1",
+                  "linkId": "15.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "15.1.2.1",
+                  "linkId": "15.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16.0.0.0",
+      "linkId": "16",
+      "text": "Testes fully descended",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "16.1.0.1",
+              "linkId": "16.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "16.1.1.1",
+                  "linkId": "16.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "16.1.2.1",
+                  "linkId": "16.1.2",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "16.1.3.1",
+                  "linkId": "16.1.3",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17.0.0.0",
+      "linkId": "17",
+      "text": "Genitalia",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "17.1.0.1",
+              "linkId": "17.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "17.1.1.1",
+                  "linkId": "17.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "17.1.2.1",
+                  "linkId": "17.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18.0.0.0",
+      "linkId": "18",
+      "text": "Anus",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "18.1.0.1",
+              "linkId": "18.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "18.1.1.1",
+                  "linkId": "18.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "18.1.2.1",
+                  "linkId": "18.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19.0.0.0",
+      "linkId": "18",
+      "text": "Skin",
+      "answer": [
+        {
+          "valueString": "Show Details",
+          "item": [
+            {
+              "id": "19.1.0.1",
+              "linkId": "19.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "19.1.1.1",
+                  "linkId": "19.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "27113001",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "19.1.2.1",
+                  "linkId": "19.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20.0.0.0",
+      "linkId": "20",
+      "text": "Examiner",
+      "answer": [
+        {
+          "valueString": "Judith NORMAN",
+          "item": [
+            {
+              "id": "20.1.0.1",
+              "linkId": "20.1",
+              "text": "Designation",
+              "subject": {
+                "reference": "Practioner/901a72a8-df75-4484-ac89-ac4923f03b02"
+              },
+              "answer": [
+                {
+                  "valueString": "Midwife"
+                }
+              ]
+            },
+            {
+              "id": "20.1.0.1",
+              "linkId": "20.2",
+              "text": "Venue",
+              "subject": {
+                "reference": "Encounter/901a72a8-df75-4484-ac89-ac4923f03b02"
+              },
+              "answer": [
+                {
+                  "valueString": "Blacktown Hospital"
+                }
+              ]
+            },
+            {
+              "id": "20.1.0.1",
+              "linkId": "20.3",
+              "text": "Date & Time",
+              "subject": {
+                "reference": "Encounter/901a72a8-df75-4484-ac89-ac4923f03b02"
+              },
+              "answer": [
+                {
+                  "valueDateTime": "2018-01-19T14:15:00-05:00"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
