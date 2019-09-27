@@ -564,6 +564,9 @@
     "ValueSet/ncdhc-audit-type": {
       "base": "ValueSet-ncdhc-audit-type.html"
     },
+	"ValueSet/ncdhc-observation-vac-sch-comp-status": {
+      "base": "ValueSet-ncdhc-observation-vac-sch-comp-status.html"
+    },
     "CodeSystem/ncdhc-audit-subtype": {
       "base": "CodeSystem-ncdhc-audit-subtype.html"
     },
@@ -670,9 +673,17 @@
       "source": "ncdhc-view-questionnaire-nbdelivery-example.json",
       "base": "ncdhc-view-questionnaire-nbdelivery-example.html"
     },
+	"Questionnaire/hca-1-4wk-q-en-s1": {
+      "source": "ncdhc-view-questionnaire-hca-1-4wk-example.json",
+      "base": "ncdhc-view-questionnaire-hca-1-4wk-example.html"
+    },
     "QuestionnaireResponse/nb-delivery-qa-1": {
       "source": "ncdhc-questionnaireresponse-nbdelivery-example.json",
       "base": "ncdhc-questionnaireresponse-nbdelivery-example.html"
+    },
+	"QuestionnaireResponse/hca-1-4wk-qa-en-s1": {
+      "source": "ncdhc-questionnaireresponse-hca1-4wk-example.json",
+      "base": "ncdhc-questionnaireresponse-hca1-4wk-example.html"
     },
     "OperationDefinition/ncdhc-composition-view-document": {
       "base": "OperationDefinition-ncdhc-composition-view-document.html",

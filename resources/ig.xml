@@ -838,6 +838,12 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-vac-sch-comp-status"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="CodeSystem/ncdhc-hi-type"/>
 			</sourceReference>
 		</resource>
@@ -913,11 +919,23 @@
 			<sourceReference>
 				<reference value="Questionnaire/nb-delivery-q-en-s1"/>
 			</sourceReference>
-		</resource>		
+		</resource>	
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Questionnaire/hca-1-4wk-q-en-s1"/>
+			</sourceReference>
+		</resource>			
 		<resource>
 			<example value="true"/>
 			<sourceReference>
 				<reference value="QuestionnaireResponse/nb-delivery-qa-1"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="QuestionnaireResponse/hca-1-4wk-qa-en-s1"/>
 			</sourceReference>
 		</resource>
 		<resource>
