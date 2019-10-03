@@ -42,7 +42,12 @@
     "include": [
       {
         "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-type"
-		}
+		},
+		{
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/audit-event-type"
+        ]
+      }
         ]
       }
   }
