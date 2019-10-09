@@ -134,11 +134,11 @@
         "code": [
           {
             "system": "http://snomed.info/sct",
-            "code": "50373000"
+            "code": "169876006"
           },
           {
             "system": "http://snomed.info/sct",
-            "code": "169886007"
+            "code": "363812007"
           },
           {
             "system": "http://snomed.info/sct",
@@ -146,7 +146,7 @@
           },
           {
             "system": "http://loinc.org",
-            "code": "8302-2"
+            "code": "8287-5"
           }
         ],
         "text": "Head Circumference",

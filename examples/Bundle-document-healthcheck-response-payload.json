@@ -1,21 +1,21 @@
 {
   "resourceType": "Bundle",
-  "id": "28900024-070c-4141-8109-9d9fa34dd24b",
+  "id": "28900024-070c-4141-8109-9d9fa34dd24c",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-01-01T00:00:00Z"
+    "lastUpdated": "2019-10-01T00:00:00Z"
   },
   "identifier": {
     "system": "urn:ietf:rfc:3986",
-    "value": "urn:uuid:0c4151bd-1cbf-4d64-b04d-cd9187a4c6e0"
+    "value": "urn:uuid:0h4151bd-1cbf-4d64-b04d-cd9187a4c6e1"
   },
   "type": "document",
   "entry": [
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Composition/280f219f-97a8-486d-99d9-ed631fe4fc57",
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Composition/280f219f-97a8-486d-99d9-ed631fe4fc59",
       "resource": {
         "resourceType": "Composition",
-        "id": "280f219f-97a8-486d-99d9-ed631fe4fc57",
+        "id": "280f219f-97a8-486d-99d9-ed631fe4fc59",
         "meta": {
           "versionId": "1",
           "lastUpdated": "2019-01-01T00:00:00Z",
@@ -23,7 +23,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 180f219f-97a8-486d-99d9-ed631fe4fc57</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>type</b>: Newborn Healthcheck Assessment<span>(Details : {LOINC code '11503-0' = 'Medical records')</span></p><p><b>title</b>: Newborn Healthcheck Assessment</p><p><b>confidentiality</b>: N</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 180f219f-97a8-486d-99d9-ed631fe4fc57</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>type</b>: Healthcheck Assessment<span>(Details : {LOINC code '11503-0' = 'Medical records')</span></p><p><b>title</b>:Healthcheck Assessment</p><p><b>confidentiality</b>: N</p></div>"
         },
         "status": "final",
         "type": {
@@ -33,7 +33,7 @@
               "code": "11503-0"
             }
           ],
-          "text": "Newborn Health Check Assessment Health Interaction"
+          "text": "Health Check Assessment Health Interaction"
         },
         "subject": {
           "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
@@ -46,7 +46,7 @@
             "display": "Dr. Adam Dev"
           }
         ],
-        "title": "Newborn Health Check Assessment Health Interaction",
+        "title": "Health Check Assessment Health Interaction",
         "confidentiality": "N",
         "attester": [
           {
@@ -78,29 +78,32 @@
               },
               {
                 "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/841a72a8-df75-4484-ac89-ac4923f03b42"
+              },
+              {
+                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/641a72a8-df75-4484-ac89-ac4923f03b41"
               }
             ]
           },
           {
-            "title": "Other health conditions",
+            "title": "Health conditions section",
             "code": {
               "coding": [
                 {
                   "system": "http://loinc.org",
-                  "code": "86674-9"
+                  "code": "46030-3"
                 }
               ]
             },
             "text": {
               "status": "additional",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Other health conditions</div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Health conditions section</div>"
             },
-            "entry": [
+            "entry": [              
               {
-                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b81"
+                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/011a72a8-df75-4484-ac89-ac4923f03b81"
               },
               {
-                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/641a72a8-df75-4484-ac89-ac4923f03b81"
+                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/021a72a8-df75-4484-ac89-ac4923f03b81"
               }
             ]
           }
@@ -437,7 +440,7 @@
         },
         "text": {
           "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Body Weight recorded : 20.09414 kg</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Body Weight recorded : 10.09414 kg</div>"
         },
         "id": "741a72a8-df75-4484-ac89-ac4923f03b42",
         "status": "final",
@@ -459,11 +462,7 @@
         "system": "http://loinc.org",
         "code": "29463-7",
         "display": "Body Weight"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "364589006"        
-      },
+      },      
       {
         "system": "http://snomed.info/sct",
         "code": "27113001",
@@ -484,7 +483,7 @@
           }
         ],
         "valueQuantity": {
-          "value": 20.09414,
+          "value": 10.09414,
           "unit": "kg",
           "system": "http://unitsofmeasure.org",
           "code": "kg"
@@ -522,15 +521,16 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "39156-5",
-              "display": "Body mass index (BMI) [Ratio]"
+              "code": "8302-2",
+              "display": "Body height"
             },
             {
               "system": "http://snomed.info/sct",
-              "code": "60621009"
+              "code": "50373000",
+              "display": "Body height measure"
             }
           ],
-          "text": "BMI"
+          "text": "Body height measure"
         },
         "subject": {
           "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
@@ -543,75 +543,82 @@
           }
         ],
         "valueQuantity": {
-          "value": 16.2,
-          "unit": "kg/m2",
+          "value": 25,
+          "unit": "cm",
           "system": "http://unitsofmeasure.org",
-          "code": "kg/m2"
+          "code": "cm"
         }
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/641a72a8-df75-4484-ac89-ac4923f03b81",
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/641a72a8-df75-4484-ac89-ac4923f03b41",
       "resource": {
         "resourceType": "Observation",
-        "text": {
-          "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Abdomen Test Completed. The result is NORMAL</div>"
-        },
-        "id": "641a72a8-df75-4484-ac89-ac4923f03b81",
+        "id": "641a72a8-df75-4484-ac89-ac4923f03b41",
         "meta": {
-          "versionId": "1",
-          "lastUpdated": "2018-12-27T16:13:03Z",
-          "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-eyes"
+          "profile": [
+            "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-headcircum"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Head circumference</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Head circumference <span>(Details : {LOINC code '39156-5' = 'Body mass index (BMI) [Ratio]', given as 'Body mass index (BMI) [Ratio]'})</span></p><p><b>subject</b>: <a>Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f</a></p><p><b>effective</b>: 02/07/1999</p><p><b>value</b>: 16.2 kg/m2<span> (Details: UCUM code kg/m2 = 'kg/m2')</span></p></div>"
         },
         "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
         "code": {
           "coding": [
             {
+              "system": "http://loinc.org",
+              "code": "8287-5",
+              "display": "Head circumference"
+            },
+            {
               "system": "http://snomed.info/sct",
-              "code": "249537008"
+              "code": "363812007",
+              "display": "Head circumference"
             }
-          ]
+          ],
+          "text": "Head circumference"
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
-          "display": "Baby of Eve Bill"
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
         },
-        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "effectiveDateTime": "2019-01-02",
         "performer": [
           {
             "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
             "display": "Dr. Carla Smith"
           }
         ],
-        "dataAbsentReason": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/data-absent-reason",
-              "code": "unsupported"
-            }
-          ]
-        },
-        "interpretation": {
-          "coding": [
-            {
-              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-observation-interpretation",
-              "code": "NRML"
-            }
-          ]
-        },
-        "comment": "Completed"
+        "valueQuantity": {
+          "value": 51.2,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/541a72a8-df75-4484-ac89-ac4923f03b81",
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/011a72a8-df75-4484-ac89-ac4923f03b81",
       "resource": {
         "resourceType": "Observation",
         "text": {
           "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Head Shape Completed.</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Head Shape Assessed. The result is NORMAL</div>"
         },
-        "id": "541a72a8-df75-4484-ac89-ac4923f03b81",
+        "id": "011a72a8-df75-4484-ac89-ac4923f03b81",
         "meta": {
           "versionId": "1",
           "lastUpdated": "2018-12-27T16:13:03Z",
@@ -622,7 +629,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "301312002"
+              "code": "364407007",
+              "display": "Appearance of head"
             }
           ]
         },
@@ -641,7 +649,73 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "255594003"
+              "code": "443938003",
+              "display": "Procedure carried out on subject"
+            }
+          ]
+        },
+        "interpretation": {
+          "coding": [
+            {
+              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-observation-interpretation",
+              "code": "17621005",
+              "display": "Normal"
+            }
+          ]
+        },
+        "comment": "Completed"
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/021a72a8-df75-4484-ac89-ac4923f03b81",
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Fontanelles and Sutures Assessed.</div>"
+        },
+        "id": "021a72a8-df75-4484-ac89-ac4923f03b81",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-sutures-fontanelles"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "7352004",
+              "display": "Fontanel closure, function (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "performer": [
+          {
+            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "display": "Dr. Carla Smith"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "443938003",
+              "display": "Procedure carried out on subject"
+            }
+          ]
+        },
+        "interpretation": {
+          "coding": [
+            {
+              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-observation-interpretation",
+              "code": "17621005",
+              "display": "Normal"
             }
           ]
         },
