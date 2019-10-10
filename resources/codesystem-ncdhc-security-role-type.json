@@ -76,6 +76,11 @@
 		"code" : "AGNTSYS",
 		"display" : "Admin - System",
 		"definition" : "CDHR Hub"
+	},
+	{
+		"code" : "DIVC",
+		"display" : "Devices",
+		"definition" : "External System"
 	}
 	]
 }

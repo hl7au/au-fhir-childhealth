@@ -48,13 +48,13 @@
         },
         "type": {
           "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-type",
-          "code": "HI",
+          "code": "HEALTHINT",
           "display": "Health Interactions"
         },
         "subtype": [
           {
-            "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-subtype",
-            "code": "NBBRTH",
+            "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type",
+            "code": "NEWBRNDEL",
             "display": "Newborn Delivery"
           }
         ],
@@ -115,13 +115,13 @@
         },
         "type": {
           "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-type",
-          "code": "HI",
-          "display": "Health Interactions"
+          "code": "HEALTHINT",
+          "display": "Health Interaction"
         },
         "subtype": [
           {
-            "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-subtype",
-            "code": "NBBRTH",
+            "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type",
+            "code": "NEWBRNDEL",
             "display": "Newborn Delivery"
           }
         ],
@@ -134,9 +134,9 @@
               {
                 "coding": [
                   {
-                    "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-role-type",
+                    "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-security-role-type",
                     "code": "PROV",
-                    "display": "healthcare provider"
+                    "display": "Health Care Provider"
                   }
                 ],
                 "text": "Provider"
@@ -150,9 +150,9 @@
               {
                 "coding": [
                   {
-                    "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-role-type",
+                    "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-security-role-type",
                     "code": "CST",
-                    "display": "custodian"
+                    "display": "Provider Organisation"
                   }
                 ],
                 "text": "Organisation"

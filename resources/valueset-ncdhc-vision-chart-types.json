@@ -21,34 +21,16 @@
   "compose": {
     "include": [
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
+        "system": "http://snomed.info/sct",
+        "concept": [
           {
-            "code" : "163936007"
-          }
-        ]
-      },
-      {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
+            "code": "1368901000168106"
+          },
           {
-            "code" : "163937003"
-          }
-        ]
-      },
-	  {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
+            "code": "1368891000168107"
+          },
           {
-            "code" : "408302002"
-          }
-        ]
-      },
-	  {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "704110007"
+            "code": "1368911000168109"
           }
         ]
       }

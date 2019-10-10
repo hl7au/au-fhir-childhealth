@@ -1,6 +1,6 @@
 {
   "resourceType": "AuditEvent",
-  "id": "47700024-070c-4141-8109-9d9fa34dd24b",
+  "id": "47700024-070c-4141-8109-9d9fa34dd24c",
   "meta": {
     "versionId": "1",
     "lastUpdated": "2019-04-19T00:00:00Z",
@@ -114,7 +114,7 @@
       "name": "ABC Medical Centre",
       "requestor": true
     },
-	{
+    {
       "role": [
         {
           "coding": [
@@ -152,18 +152,7 @@
     {
       "reference": {
         "reference": "Bundle/27700024-070c-4141-8109-9d9fa34dd24b"
-      },
-      "type": {
-        "system": "http://hl7.org/fhir/resource-types",
-        "code": "Bundle",
-        "display": "Bundle"
-      },
-      "detail": [
-        {
-          "type": "Newborn Health Interaction Document",
-          "value": "MS4yLjg0MC4xMTQzNTAuMS4xMy4wLjEuNy4xLjE="
-        }
-      ]
+      }
     }
   ]
 }
