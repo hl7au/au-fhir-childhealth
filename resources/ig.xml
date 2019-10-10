@@ -917,6 +917,30 @@
 		<resource>
 			<example value="true"/>
 			<sourceReference>
+				<reference value="AuditEvent/37700024-070c-4141-8109-9d9fa34dd24r"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="AuditEvent/37700024-070c-4141-8109-9d9fa34dd24c"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="AuditEvent/37700024-070c-4141-8109-9d9fa34dd24u"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="AuditEvent/37700024-070c-4141-8109-9d9fa34dd24d"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
 				<reference value="Questionnaire/nb-delivery-q-en-s1"/>
 			</sourceReference>
 		</resource>	

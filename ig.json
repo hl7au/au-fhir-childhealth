@@ -601,6 +601,22 @@
       "source": "audit-event-insert.json",
       "base": "audit-event-insert.html"
     },
+	"AuditEvent/37700024-070c-4141-8109-9d9fa34dd24c": {
+      "source": "audit_event_created.json",
+      "base": "audit_event_created.html"
+    },
+	"AuditEvent/37700024-070c-4141-8109-9d9fa34dd24u": {
+      "source": "audit_event_updated.json",
+      "base": "audit_event_updated.html"
+    },
+	"AuditEvent/37700024-070c-4141-8109-9d9fa34dd24d": {
+      "source": "audit_event_deleted.json",
+      "base": "audit_event_deleted.html"
+    },
+	"AuditEvent/37700024-070c-4141-8109-9d9fa34dd24r": {
+      "source": "audit_event_read.json",
+      "base": "audit_event_read.html"
+    },
     "Bundle/27700024-070c-4141-8109-9d9fa34dd24b": {
       "source": "ncdhc-composition-nbdelivery-example.json",
       "base": "ncdhc-composition-nbdelivery-example.html"
