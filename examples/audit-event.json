@@ -49,7 +49,7 @@
         "type": {
           "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-type",
           "code": "HEALTHINT",
-          "display": "Health Interactions"
+          "display": "Health Interaction"
         },
         "subtype": [
           {
@@ -67,7 +67,7 @@
               {
                 "coding": [
                   {
-                    "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-audit-role-type",
+                    "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-security-role-type",
                     "code": "RESPRSN",
                     "display": "responsible party"
                   }

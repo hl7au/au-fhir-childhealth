@@ -20,6 +20,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 1.  a status  
 1.  a code to represent the document type.
+1.  a class code to represent this document as Health Check Assessment document.
 1.  a subject (Patient)
 1.  a date indicating when the details was taken
 1.	a author detailing who has recorded the details.
@@ -35,7 +36,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-- [Newborn Health Check Assessment Health Interaction document])
+- [Health Check Assessment 0-4 weeks](Bundle-document-healthcheck-response-payload.html)
 
 [Composition]: http://hl7.org.au/fhir/base2018Oct/StructureDefinition-au-composition.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible

@@ -52,49 +52,54 @@
       "display": "Newborn Discharge",
       "definition": "A newborn child is discharged from care - discharge summary is generated"
     },
+	{
+      "code": "NBEXAM",
+      "display": "Newborn Examination",
+      "definition": "A newborn examination has been completed with an outcome recorded"
+    },
     {
-      "code": "EXAM04W",
-      "display": "Newborn Examination (Assessment) 0-4 weeks",
-      "definition": "A newborn examination has been completed with an outcome recorded"
+      "code": "HEALTHCKASSMT04W",
+      "display": "Health Check Assessment 0-4 weeks",
+      "definition": "A child health assessment has been completed with an outcome recorded"
     },
 	{
-      "code": "EXAM68W",
-      "display": "Newborn Examination (Assessment) 6-8 weeks",
-      "definition": "A newborn examination has been completed with an outcome recorded"
+      "code": "HEALTHCKASSMT68W",
+      "display": "Health Check Assessment 6-8 weeks",
+      "definition": "A child health assessment has been completed with an outcome recorded"
     },
 	{
-      "code": "EXAM49M",
-      "display": "Newborn Examination (Assessment) 4-9 months",
-      "definition": "A newborn examination has been completed with an outcome recorded"
+      "code": "HEALTHCKASSMT49M",
+      "display": "Health Check Assessment 4-9 months",
+      "definition": "A child health assessment has been completed with an outcome recorded"
     },
 	{
-      "code": "EXAM12M",
-      "display": "Newborn Examination (Assessment) 12 months",
-      "definition": "A newborn examination has been completed with an outcome recorded"
+      "code": "HEALTHCKASSMT12M",
+      "display": "Health Check Assessment 12 months",
+      "definition": "A child health assessment has been completed with an outcome recorded"
     },
 	{
-      "code": "EXAM18M",
-      "display": "Newborn Examination (Assessment) 18 months",
-      "definition": "A newborn examination has been completed with an outcome recorded"
+      "code": "HEALTHCKASSMT18M",
+      "display": "Health Check Assessment 18 months",
+      "definition": "A child health assessment has been completed with an outcome recorded"
     },
 	{
-      "code": "EXAM23Y",
-      "display": "Newborn Examination (Assessment) 2-3 yrs",
-      "definition": "A newborn examination has been completed with an outcome recorded"
+      "code": "HEALTHCKASSMT23Y",
+      "display": "Health Check Assessment 2-3 yrs",
+      "definition": "A child health assessment has been completed with an outcome recorded"
     },
 	{
-      "code": "EXAM34Y",
-      "display": "Newborn Examination (Assessment) 3-4 yrs",
-      "definition": "A newborn examination has been completed with an outcome recorded"
+      "code": "HEALTHCKASSMT34Y",
+      "display": "Health Check Assessment 3-4 yrs",
+      "definition": "A child health assessment has been completed with an outcome recorded"
     },
 	{
-      "code": "EXAM45Y",
-      "display": "Newborn Examination (Assessment) 4-5 yrs",
-      "definition": "A newborn examination has been completed with an outcome recorded"
+      "code": "HEALTHCKASSMT45Y",
+      "display": "Health Check Assessment 4-5 yrs",
+      "definition": "A child health assessment has been completed with an outcome recorded"
     },
     {
       "code": "NEWBRNEXAMMISD",
-      "display": "Newborn Examination (Assessment) Missed",
+      "display": "Health Check Assessment Missed",
       "definition": "A newborn examination has not been conducted"
     },
     {
@@ -142,11 +147,7 @@
       "display": "Consumer Entered Milestone",
       "definition": "An achievement or milestone is observed and recorded by a carer or parent"
     },
-    {
-      "code": "HEALTHCKASSMT",
-      "display": "Health Check Assessment",
-      "definition": "A child health assessment has taken place"
-    },
+    
     {
       "code": "CHILDPRESEMRCY",
       "display": "Child Presented In Emergency",

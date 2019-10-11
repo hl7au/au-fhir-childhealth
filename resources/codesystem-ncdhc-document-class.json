@@ -35,9 +35,9 @@
       "definition": "Newborn discharge Health Interaction"
     },
     {
-      "code": "HLASS",
-      "display": "Health Assessment",
-      "definition": "Health Assessment details"
+      "code": "HEALTHCKASSMT",
+      "display": "Health Check Assessment",
+      "definition": "A child health assessment has taken place"
     }
   ]
 }

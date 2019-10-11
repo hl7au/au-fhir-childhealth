@@ -56,6 +56,11 @@
       "display": "Birth Consolidated View",
       "definition": "Birth Consolidated View"
     },
+	{
+      "code": "HLASS14WKS",
+      "display": "Newborn Examination (Assessment) 0-4 weeks",
+      "definition": "A newborn examination has been completed with an outcome recorded"
+    },
     {
       "code": "EXAM04W",
       "display": "Newborn Examination (Assessment) 0-4 weeks",

@@ -21,7 +21,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/codesystem-ncdhc-document-type"
+        "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type"
       }
     ]
   }
