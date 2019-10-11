@@ -581,7 +581,7 @@
       "source": "patient-example-mother.json",
       "base": "Patient-example-mother.html"
     },
-    "Bundle/28900024-070c-4141-8109-9d9fa34dd24b": {
+    "Bundle/28900024-070c-4141-8109-9d9fa34dd24c": {
       "source": "Bundle-document-healthcheck-response-payload.json",
       "base": "Bundle-document-healthcheck-response-payload.html"
     },
