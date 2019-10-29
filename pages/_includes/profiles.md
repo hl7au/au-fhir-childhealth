@@ -107,3 +107,11 @@ These Profiles have been defined for this implementation guide.
 
 ## NCDHC Views
 * [NCDHC Birth Consolidated view](StructureDefinition-ncdhc-composition-view-birth.html) - Consolidated view to represent Birth related details. This view includes summaries from Newborn Delivery, Newborn Discharge, Bloodshot Screening, Hearing Screening and Immunisation.
+* [NCDHC Health Check Assessment 1-4 Weeks view](StructureDefinition-ncdhc-composition-view-hca-14wks.html) - Consolidated view to represent Health Check Assessment performed during 1-4 weeks of Birth.
+* [NCDHC Health Check Assessment 6-8 Weeks view](StructureDefinition-ncdhc-composition-view-hca-68wks.html) - Consolidated view to represent Health Check Assessment performed during 6-8 weeks of Birth. 
+* [NCDHC Health Check Assessment 6 Months view](StructureDefinition-ncdhc-composition-view-hca-6m.html) - Consolidated view to represent Health Check Assessment performed during 6 months of Birth.
+* [NCDHC Health Check Assessment 12 Months view](StructureDefinition-ncdhc-composition-view-hca-12m.html) - Consolidated view to represent Health Check Assessment performed during 12 months of Birth.
+* [NCDHC Health Check Assessment 18 Months view](StructureDefinition-ncdhc-composition-view-hca-18m.html) - Consolidated view to represent Health Check Assessment performed during 18 months of Birth. 
+* [NCDHC Health Check Assessment 2 Years view](StructureDefinition-ncdhc-composition-view-hca-2yr.html) - Consolidated view to represent Health Check Assessment performed during 2 years of Birth.
+* [NCDHC Health Check Assessment 3 Years view](StructureDefinition-ncdhc-composition-view-hca-3yr.html) - Consolidated view to represent Health Check Assessment performed during 3 years of Birth.
+* [NCDHC Health Check Assessment 4 Years view](StructureDefinition-ncdhc-composition-view-hca-4yr.html) - Consolidated view to represent Health Check Assessment performed during 4 years of Birth.    
