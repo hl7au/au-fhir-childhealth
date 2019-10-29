@@ -1,0 +1,80 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ncdhc-consent-category-1",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2019-10-11T03:06:34.061+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem",
+	  "https://healthterminologies.gov.au/fhir/StructureDefinition/complete-code-system-2"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NCDHC Consent Category</h2><tt>http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-consent-category-1</tt><p>National Children Digital Health Collaborative -  Consent Category - these will represent the consent status applicable to the creation and operation of the Child Digital Health Record and Digital Pregnancy Health Record initiatives for the National Digital Health Collaborative.</p></div>"
+  },
+  "url": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-consent-category-1",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:1.2.36.1.2001.1004.200.10023"
+  },
+  "version": "1.0.0",
+  "name": "ncdhc-consent-category",
+  "title": "NCDHC Consent Category",
+  "status": "draft",
+  "experimental": true,
+  "date": "2019-10-31",
+  "publisher": "Australian Digital Health Agency",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "help@digitalhealth.gov.au"
+        }
+      ]
+    }
+  ],
+  "description": "National Children Digital Health Collaborative -  Consent Category - these will represent the consent status applicable to the creation and operation of the Child Digital Health Record and Digital Pregnancy Health Record initiatives for the National Digital Health Collaborative.",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-consent-category-1/vs",
+  "compositional": false,
+  "versionNeeded": false,
+  "content": "complete",
+  "count": 6,
+  "concept": [
+	{
+		"code" : "NBCR",
+		"display" : "Newborn Record Create Consent",
+		"definition" : "Consent for the creation of a Child Health record on the birth of a child. This will be held against the person having the parental responsibility of the child at birth, typically the mother"
+
+    },
+		{
+		"code" : "DPRC",
+		"display" : "Digital Pregnancy Health Record Create Consent",
+		"definition" : "Consent for the creation of a Digital Pregnancy Health Record "
+
+    },
+    {
+		"code" : "CROPT",
+		"display" : "Child Digital Health Record Operation Consent",
+		"definition" : "Consent for a child to have a operative child digital health record"
+	},
+	{
+		"code" : "DPOPT",
+		"display" : "Digital Pregnancy Health Record Operation Consent",
+		"definition" : "Consent for the pregnant women to have a operative Digital Pregnancy Health Record"
+	},
+	{
+		"code" : "MHRINTR",
+		"display" : "Consent to Interact with My Health Record",
+		"definition" : "Consent provided by the authorised representative to Interact with My Health Record"
+	},
+	{
+		"code" : "AUTHCONST",
+		"display" : "NCDHC Authorisation Consent",
+		"definition" : "Consent used to record registration role and authorisation"
+	}
+  ]
+}
