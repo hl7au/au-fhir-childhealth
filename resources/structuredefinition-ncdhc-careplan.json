@@ -1,0 +1,34 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-careplan",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-careplan",
+  "name": "NCDHC CarePlan Profile",
+  "status": "draft",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CarePlan",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CarePlan",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CarePlan.category",
+        "path": "CarePlan.category",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CarePlanCategory"
+            }
+          ],
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-care-plan-category"
+          }
+        }
+      }
+    ]
+  }
+}

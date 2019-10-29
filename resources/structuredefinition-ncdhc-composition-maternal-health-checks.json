@@ -61,7 +61,7 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/codesystem-ncdhc-document-type",
+              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/codesystem-ncdhc-document-type-1",
               "code": "MTHC"
             }
           ]

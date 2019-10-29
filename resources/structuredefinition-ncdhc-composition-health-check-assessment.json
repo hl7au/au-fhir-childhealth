@@ -31,7 +31,7 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
-        "fixedString": "Newborn Health Check Assessment Health Interaction"
+        "fixedString": "Health Check Assessment Health Interaction"
       },
       {
         "id": "Composition.attester.party",

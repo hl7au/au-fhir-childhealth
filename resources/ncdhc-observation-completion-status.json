@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Observation Completion Status Type</h2><div><p>Observation Completion Status Type</p>\r\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include codes defined in <a href=\"http://snomed.info/sct\"></a></li></ul></div>"
   },
-  "url": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-completion-status",
+  "url": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-completion-status-1",
   "version": "1.0.0",
   "name": "Observation Completion Status Type",
   "title": "Observation Completion Status Type",

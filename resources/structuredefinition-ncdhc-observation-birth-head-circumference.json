@@ -45,17 +45,49 @@
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Code to represent Birth head circumference",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "169876006"
-            }
-          ]
-        },
         "mustSupport": true,
         "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationCode"
+            }
+          ],
           "strength": "preferred"
+        }
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.code.coding:birthHeadCircumferenceLOINC",
+        "path": "Observation.code.coding",
+        "sliceName": "birthHeadCircumferenceLOINC",
+        "max": "1",
+        "fixedCoding": {
+          "system": "http://loinc.org",
+          "code": "8287-5"
+        }
+      },
+      {
+        "id": "Observation.code.coding:birthHeadCircumferenceSNOMED-CT",
+        "path": "Observation.code.coding",
+        "sliceName": "birthHeadCircumferenceSNOMED-CT",
+        "min": 1,
+        "max": "1",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "363812007"
         }
       },
       {

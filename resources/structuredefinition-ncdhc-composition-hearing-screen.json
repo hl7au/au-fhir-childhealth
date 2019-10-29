@@ -19,11 +19,6 @@
   "differential": {
     "element": [
       {
-        "id": "Composition",
-        "path": "Composition",
-        "short": "NCDHC Composition"
-      },
-	  {
         "id": "Composition.type",
         "path": "Composition.type",
         "fixedCodeableConcept": {

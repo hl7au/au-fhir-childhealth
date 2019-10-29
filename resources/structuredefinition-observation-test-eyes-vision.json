@@ -1573,7 +1573,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-completion-status"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-completion-status-1"
           }
         },
         "mapping": [
@@ -1731,7 +1731,7 @@
           "strength": "required",
           "description": "Normal | Review | Refer",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-1"
           }
         },
         "mapping": [
@@ -4104,7 +4104,7 @@
           "strength": "required",
           "description": "Normal | Review | Refer",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-1"
           }
         },
         "mapping": [
@@ -4674,7 +4674,7 @@
           "strength": "extensible",
           "description": "Normal | Review | Refer",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-1"
           }
         },
         "mapping": [
@@ -5934,7 +5934,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-completion-status"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-completion-status-1"
           }
         }
       },
@@ -5952,7 +5952,7 @@
           "strength": "required",
           "description": "Normal | Review | Refer",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-1"
           }
         }
       },
@@ -6006,7 +6006,7 @@
           "strength": "required",
           "description": "Normal | Review | Refer",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-1"
           }
         }
       },
@@ -6041,7 +6041,7 @@
           "strength": "extensible",
           "description": "Normal | Review | Refer",
           "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-1"
           }
         }
       },

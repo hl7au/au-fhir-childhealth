@@ -1,0 +1,30 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-conception",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-conception",
+  "version": "v1.0.0",
+  "name": "NCDHC Conception Observation Profile",
+  "title": "NCDHC Conception Observation",
+  "status": "draft",
+  "date": "2019-10-04",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.value[x]:valueBoolean",
+        "path": "Observation.valueBoolean",
+        "sliceName": "valueBoolean",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}
