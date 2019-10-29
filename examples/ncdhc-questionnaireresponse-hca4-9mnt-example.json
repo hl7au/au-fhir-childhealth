@@ -1,9 +1,9 @@
 {
   "resourceType": "QuestionnaireResponse",
-  "id": "hca-1-4wk-qa-en-s1",
+  "id": "hca-4-9mnth-qa-en-s1",
   "questionnaire": {
-    "reference": "Questionnaire/hca-1-4wk-q-en-s1",
-    "display": "1-4 Week"
+    "reference": "Questionnaire/hca-4-9mnth-q-en-s1",
+    "display": "6 month"
   },
   "status": "completed",
   "subject": {
@@ -32,7 +32,7 @@
       },
       "answer": [
         {
-          "valueDateTime": "2018-01-07T17:42:00-05:00"
+          "valueDateTime": "2018-06-07T17:42:00-05:00"
         }
       ]
     },
@@ -45,7 +45,7 @@
       },
       "answer": [
         {
-          "valueString": "7 days"
+          "valueString": "6 months 1 day"
         }
       ]
     },
@@ -55,7 +55,7 @@
       "text": "Skin",
       "answer": [
         {
-          "valueString": "Review",
+          "valueString": "Normal",
           "item": [
             {
               "id": "4.1.0.1",
@@ -72,8 +72,8 @@
                     {
                       "valueCoding": {
                         "system": "http://snomed.info/sct",
-                        "code": "1222461000168103",
-                        "display": "Follow-up review of patient requested"
+                        "code": "17621005",
+                        "display": "Normal"
                       }
                     }
                   ]
@@ -84,7 +84,7 @@
                   "text": "Comments",
                   "answer": [
                     {
-                      "valueString": "Mascular rash that was detected at birth still present on the infants left arm.Review required at next health check assessment."
+                      "valueString": "Comment goes here"
                     }
                   ]
                 }
@@ -233,9 +233,6 @@
       "id": "8.0.0.0",
       "linkId": "7",
       "text": "Head Shape",
-      "subject": {
-        "reference": "subject reference goes here"
-      },
       "answer": [
           {
             "valueString": "Not available",
@@ -920,7 +917,7 @@
     },  
     {
       "id": "22.0.0.0",
-      "linkId": "23",
+      "linkId": "25",
       "text": "Examiner",
       "answer": [
         {
@@ -928,7 +925,7 @@
           "item": [
             {
               "id": "22.1.0.1",
-              "linkId": "23.1",
+              "linkId": "25.1",
               "text": "Child and Family Health Nurse",
               "subject": {
                 "reference": "Practioner/901a72a8-df75-4484-ac89-ac4923f03b02"
@@ -941,7 +938,7 @@
             },
             {
               "id": "22.1.0.1",
-              "linkId": "23.2",
+              "linkId": "25.2",
               "text": "Venue",
               "subject": {
                 "reference": "Encounter/901a72a8-df75-4484-ac89-ac4923f03b02"
@@ -954,7 +951,7 @@
             },
             {
               "id": "22.1.0.1",
-              "linkId": "23.3",
+              "linkId": "25.3",
               "text": "Date & Time",
               "subject": {
                 "reference": "Encounter/901a72a8-df75-4484-ac89-ac4923f03b02"
@@ -1001,6 +998,96 @@
                 {
                   "id": "23.1.2.1",
                   "linkId": "22.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24.0.0.0",
+      "linkId": "24",
+      "text": "Immunisation completed",
+      "answer": [
+        {
+          "valueString": "Yes",
+          "item": [
+            {
+              "id": "24.1.0.1",
+              "linkId": "24.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "24.1.1.1",
+                  "linkId": "24.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "17621005",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "24.1.2.1",
+                  "linkId": "24.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "25.0.0.0",
+      "linkId": "23",
+      "text": "Oral Health",
+      "answer": [
+        {
+          "valueString": "Normal",
+          "item": [
+            {
+              "id": "25.1.0.1",
+              "linkId": "23.1",
+              "subject": {
+                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+              },
+              "item": [
+                {
+                  "id": "25.1.1.1",
+                  "linkId": "23.1.1",
+                  "text": "Assessment Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "17621005",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "25.1.2.1",
+                  "linkId": "23.1.2",
                   "text": "Comments",
                   "answer": [
                     {

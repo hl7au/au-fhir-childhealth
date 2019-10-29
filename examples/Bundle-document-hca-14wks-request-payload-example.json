@@ -1,6 +1,6 @@
 {
-  "resourceType": "Bundle",
-  "id": "28900024-070c-4141-8109-9d9fa34dd24c",
+  "resourceType": "Bundle", 
+  "id": "hca-14wks-request-payload-example", 
   "meta": {
     "versionId": "1",
     "lastUpdated": "2019-10-01T00:00:00Z"
@@ -12,7 +12,7 @@
   "type": "document",
   "entry": [
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Composition/280f219f-97a8-486d-99d9-ed631fe4fc59",
+      "fullUrl": "urn:uuid:280f219f-97a8-486d-99d9-ed631fe4fc59",
       "resource": {
         "resourceType": "Composition",
         "id": "280f219f-97a8-486d-99d9-ed631fe4fc59",
@@ -29,7 +29,7 @@
         "type": {
           "coding": [
             {
-              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type",
+              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
               "code": "HEALTHCKASSMT04W",
               "display": "Health Check Assessment 0-4 weeks"
             }
@@ -39,7 +39,7 @@
         "class": {
           "coding": [
             {
-              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class",
+              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1",
               "code": "HEALTHCKASSMT",
               "display": "Health Check Assessment"
             }
@@ -47,24 +47,24 @@
           "text": "Health Check Assessment Health Interaction"
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
           "display": "Baby of Eve Bill"
         },
         "date": "2018-12-24T12:30:02Z",
         "author": [
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/3db74777-fd3d-4d3b-92ec-d405977a11a5",
+            "reference": "urn:uuid:3db74777-fd3d-4d3b-92ec-d405977a11a5",
             "display": "Dr. Adam Dev"
           }
         ],
-        "title": "Newborn Health Check Assessment Health Interaction",
+        "title": "Health Check Assessment Health Interaction",
         "confidentiality": "N",
         "attester": [
           {
             "mode": "professional",
             "time": "2018-12-24T12:30:02Z",
             "party": {
-              "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f"
+              "reference": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f"
             }
           }
         ],
@@ -85,13 +85,13 @@
             },
             "entry": [
               {
-                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "urn:uuid:741a72a8-df75-4484-ac89-ac4923f03b42"
               },
               {
-                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/841a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "urn:uuid:841a72a8-df75-4484-ac89-ac4923f03b42"
               },
               {
-                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/641a72a8-df75-4484-ac89-ac4923f03b41"
+                "reference": "urn:uuid:641a72a8-df75-4484-ac89-ac4923f03b41"
               }
             ]
           },
@@ -111,25 +111,25 @@
             },
             "entry": [
               {
-                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/011a72a8-df75-4484-ac89-ac4923f03b81"
+                "reference": "urn:uuid:011a72a8-df75-4484-ac89-ac4923f03b81"
               },
               {
-                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/021a72a8-df75-4484-ac89-ac4923f03b81"
+                "reference": "urn:uuid:021a72a8-df75-4484-ac89-ac4923f03b81"
               },
               {
-                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/031a72a8-df75-4484-ac89-ac4923f03b81"
+                "reference": "urn:uuid:031a72a8-df75-4484-ac89-ac4923f03b81"
               },
               {
-                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/041a72a8-df75-4484-ac89-ac4923f03b81"
+                "reference": "urn:uuid:041a72a8-df75-4484-ac89-ac4923f03b81"
               },
               {
-                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/051a72a8-df75-4484-ac89-ac4923f03b81"
+                "reference": "urn:uuid:051a72a8-df75-4484-ac89-ac4923f03b81"
               },
               {
-                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/061a72a8-df75-4484-ac89-ac4923f03b81"
+                "reference": "urn:uuid:061a72a8-df75-4484-ac89-ac4923f03b81"
               },
               {
-                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/071a72a8-df75-4484-ac89-ac4923f03b81"
+                "reference": "urn:uuid:071a72a8-df75-4484-ac89-ac4923f03b81"
               }
             ]
           }
@@ -137,7 +137,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "fullUrl": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
       "resource": {
         "resourceType": "Patient",
         "text": {
@@ -270,7 +270,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "fullUrl": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
       "resource": {
         "resourceType": "Organization",
         "id": "od78393f-37ca-4738-81d6-d9595b2e5d0f",
@@ -316,7 +316,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/3db74777-fd3d-4d3b-92ec-d405977a11a5",
+      "fullUrl": "urn:uuid:3db74777-fd3d-4d3b-92ec-d405977a11a5",
       "resource": {
         "resourceType": "Practitioner",
         "id": "3db74777-fd3d-4d3b-92ec-d405977a11a5",
@@ -392,7 +392,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+      "fullUrl": "urn:uuid:pp78393f-37ca-4738-81d6-d9595b2e5d0d",
       "resource": {
         "resourceType": "Practitioner",
         "id": "dd78393f-37ca-4738-81d6-d9595b2e5d0d",
@@ -463,7 +463,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/741a72a8-df75-4484-ac89-ac4923f03b42",
+      "fullUrl": "urn:uuid:741a72a8-df75-4484-ac89-ac4923f03b42",
       "resource": {
         "resourceType": "Observation",
         "meta": {
@@ -500,19 +500,28 @@
               "system": "http://snomed.info/sct",
               "code": "27113001",
               "display": "Body weight"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "364589006",
+              "display": "Birth weight"
             }
           ],
           "text": "Body Weight"
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
           "display": "Baby of Eve Bill"
         },
         "effectiveDateTime": "2018-12-27T16:13:03Z",
         "performer": [
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Dr. Carla Smith"
+            "reference": "urn:uuid:pp78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "display": "Organisation"
           }
         ],
         "valueQuantity": {
@@ -524,7 +533,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/841a72a8-df75-4484-ac89-ac4923f03b42",
+      "fullUrl": "urn:uuid:841a72a8-df75-4484-ac89-ac4923f03b42",
       "resource": {
         "resourceType": "Observation",
         "id": "841a72a8-df75-4484-ac89-ac4923f03b42",
@@ -559,20 +568,29 @@
             },
             {
               "system": "http://snomed.info/sct",
-              "code": "50373000",
-              "display": "Body height measure"
+              "code": "248334005",
+              "display": "Length of body"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "169886007",
+              "display": "Birth length"
             }
           ],
-          "text": "Body height measure"
+          "text": "Length of body"
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f"
         },
         "effectiveDateTime": "2019-01-02",
         "performer": [
+           {
+            "reference": "urn:uuid:pp78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "display": "Examiner"
+          },
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Dr. Carla Smith"
+            "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "display": "Organisation"
           }
         ],
         "valueQuantity": {
@@ -584,7 +602,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/641a72a8-df75-4484-ac89-ac4923f03b41",
+      "fullUrl": "urn:uuid:641a72a8-df75-4484-ac89-ac4923f03b41",
       "resource": {
         "resourceType": "Observation",
         "id": "641a72a8-df75-4484-ac89-ac4923f03b41",
@@ -621,18 +639,27 @@
               "system": "http://snomed.info/sct",
               "code": "363812007",
               "display": "Head circumference"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "169876006",
+              "display": "Birth head circumference"
             }
           ],
           "text": "Head circumference"
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f"
         },
         "effectiveDateTime": "2019-01-02",
         "performer": [
+           {
+            "reference": "urn:uuid:pp78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "display": "Examiner"
+          },
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Dr. Carla Smith"
+            "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "display": "Organisation"
           }
         ],
         "valueQuantity": {
@@ -644,7 +671,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/011a72a8-df75-4484-ac89-ac4923f03b81",
+      "fullUrl": "urn:uuid:011a72a8-df75-4484-ac89-ac4923f03b81",
       "resource": {
         "resourceType": "Observation",
         "text": {
@@ -658,6 +685,18 @@
           "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-head-shape"
         },
         "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
+                "code": "HEALTHCKASSMT04W",
+                "display": "Health Check Assessment 0-4 weeks"
+              }
+            ],
+            "text": "Health Check Assessment 0-4 weeks"
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -668,14 +707,18 @@
           ]
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
           "display": "Baby of Eve Bill"
         },
         "effectiveDateTime": "2018-12-27T16:13:03Z",
         "performer": [
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Dr. Carla Smith"
+            "reference": "urn:uuid:pp78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "display": "Organisation"
           }
         ],
         "valueCodeableConcept": {
@@ -690,7 +733,7 @@
         "interpretation": {
           "coding": [
             {
-              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-observation-interpretation",
+              "system": "http://snomed.info/sct",
               "code": "17621005",
               "display": "Normal"
             }
@@ -700,7 +743,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/021a72a8-df75-4484-ac89-ac4923f03b81",
+      "fullUrl": "urn:uuid:021a72a8-df75-4484-ac89-ac4923f03b81",
       "resource": {
         "resourceType": "Observation",
         "text": {
@@ -724,14 +767,18 @@
           ]
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
           "display": "Baby of Eve Bill"
         },
         "effectiveDateTime": "2018-12-27T16:13:03Z",
         "performer": [
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Dr. Carla Smith"
+            "reference": "urn:uuid:pp78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "display": "Organisation"
           }
         ],
         "valueCodeableConcept": {
@@ -746,7 +793,7 @@
         "interpretation": {
           "coding": [
             {
-              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-observation-interpretation",
+              "system": "http://snomed.info/sct",
               "code": "17621005",
               "display": "Normal"
             }
@@ -756,7 +803,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/031a72a8-df75-4484-ac89-ac4923f03b81",
+      "fullUrl": "urn:uuid:031a72a8-df75-4484-ac89-ac4923f03b81",
       "resource": {
         "resourceType": "Observation",
         "text": {
@@ -780,14 +827,18 @@
           ]
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
           "display": "Baby of Eve Bill"
         },
         "effectiveDateTime": "2018-12-27T16:13:03Z",
         "performer": [
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Dr. Carla Smith"
+            "reference": "urn:uuid:pp78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "display": "Organisation"
           }
         ],
         "valueCodeableConcept": {
@@ -813,7 +864,7 @@
             "interpretation": {
               "coding": [
                 {
-                  "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-observation-interpretation",
+                  "system": "http://snomed.info/sct",
                   "code": "17621005",
                   "display": "Normal"
                 }
@@ -833,7 +884,7 @@
             "interpretation": {
               "coding": [
                 {
-                  "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-observation-interpretation",
+                  "system": "http://snomed.info/sct",
                   "code": "17621005",
                   "display": "Normal"
                 }
@@ -845,7 +896,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/041a72a8-df75-4484-ac89-ac4923f03b81",
+      "fullUrl": "urn:uuid:041a72a8-df75-4484-ac89-ac4923f03b81",
       "resource": {
         "resourceType": "Observation",
         "text": {
@@ -869,14 +920,18 @@
           ]
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
           "display": "Baby of Eve Bill"
         },
         "effectiveDateTime": "2018-12-27T16:13:03Z",
         "performer": [
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Dr. Carla Smith"
+            "reference": "urn:uuid:pp78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "display": "Organisation"
           }
         ],
         "valueCodeableConcept": {
@@ -902,7 +957,7 @@
             "interpretation": {
               "coding": [
                 {
-                  "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-observation-interpretation",
+                  "system": "http://snomed.info/sct",
                   "code": "17621005",
                   "display": "Normal"
                 }
@@ -922,7 +977,7 @@
             "interpretation": {
               "coding": [
                 {
-                  "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-observation-interpretation",
+                  "system": "http://snomed.info/sct",
                   "code": "17621005",
                   "display": "Normal"
                 }
@@ -934,7 +989,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/051a72a8-df75-4484-ac89-ac4923f03b81",
+      "fullUrl": "urn:uuid:051a72a8-df75-4484-ac89-ac4923f03b81",
       "resource": {
         "resourceType": "Observation",
         "text": {
@@ -958,14 +1013,18 @@
           ]
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
           "display": "Baby of Eve Bill"
         },
         "effectiveDateTime": "2018-12-27T16:13:03Z",
         "performer": [
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Dr. Carla Smith"
+            "reference": "urn:uuid:pp78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "display": "Organisation"
           }
         ],
         "valueCodeableConcept": {
@@ -980,7 +1039,7 @@
         "interpretation": {
           "coding": [
             {
-              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-observation-interpretation",
+              "system": "http://snomed.info/sct",
               "code": "17621005",
               "display": "Normal"
             }
@@ -990,7 +1049,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/061a72a8-df75-4484-ac89-ac4923f03b81",
+      "fullUrl": "urn:uuid:061a72a8-df75-4484-ac89-ac4923f03b81",
       "resource": {
         "resourceType": "Observation",
         "text": {
@@ -1014,14 +1073,18 @@
           ]
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
           "display": "Baby of Eve Bill"
         },
         "effectiveDateTime": "2018-12-27T16:13:03Z",
         "performer": [
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Dr. Carla Smith"
+            "reference": "urn:uuid:pp78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "display": "Organisation"
           }
         ],
         "valueCodeableConcept": {
@@ -1036,7 +1099,7 @@
         "interpretation": {
           "coding": [
             {
-              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-observation-interpretation",
+              "system": "http://snomed.info/sct",
               "code": "17621005",
               "display": "Normal"
             }
@@ -1046,7 +1109,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Observation/071a72a8-df75-4484-ac89-ac4923f03b81",
+      "fullUrl": "urn:uuid:071a72a8-df75-4484-ac89-ac4923f03b81",
       "resource": {
         "resourceType": "Observation",
         "text": {
@@ -1060,6 +1123,18 @@
           "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-reflexes"
         },
         "status": "final",
+		"category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
+                "code": "HEALTHCKASSMT04W",
+                "display": "Health Check Assessment 0-4 weeks"
+              }
+            ],
+            "text": "Health Check Assessment 0-4 weeks"
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -1070,14 +1145,18 @@
           ]
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
           "display": "Baby of Eve Bill"
         },
         "effectiveDateTime": "2018-12-27T16:13:03Z",
         "performer": [
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Dr. Carla Smith"
+            "reference": "urn:uuid:pp78393f-37ca-4738-81d6-d9595b2e5d0d",
+            "display": "Examiner"
+          },
+          {
+            "reference": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "display": "Organisation"
           }
         ],
         "valueCodeableConcept": {
@@ -1092,7 +1171,7 @@
         "interpretation": {
           "coding": [
             {
-              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-observation-interpretation",
+              "system": "http://snomed.info/sct",
               "code": "17621005",
               "display": "Normal"
             }

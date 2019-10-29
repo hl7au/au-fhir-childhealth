@@ -1,16 +1,16 @@
 {
     "resourceType": "Questionnaire",
-    "id": "hca-1-4wk-q-en-s1",
+    "id": "hca-6-8wk-q-en-s1",
     "meta": {
       "profile": [
         "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-questionnaire-base"
       ]
     },
     "language": "en-AU",
-    "url": "http://hl7.org.au/fhir/ch/v1/Questionnaire/hca-1-4wk-q-en-s1",
-    "version": "hca-1-4wk-q-en-s1",
-    "title": "Health Check Assessment 1-4 Week Questionnaire",
-    "experimental": false,
+    "url": "http://hl7.org.au/fhir/ch/v1/Questionnaire/hca-6-8wk-q-en-s1",
+    "version": "hca-6-8wk-q-en-s1",
+    "title": "Health Check Assessment 6-8 Week Questionnaire",
+    "experimental": "false",
     "status": "active",
     "date": "2019-10-21",
     "publisher": "National Children's Digital Health Collaborative (NCDHC)",
@@ -18,8 +18,8 @@
     "code": [
       {
         "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type",
-        "code": "HEALTHCKASSMT04W",
-        "display": "Health Check Assessment 0-4 weeks"
+        "code": "HEALTHCKASSMT68W",
+        "display": "Health Check Assessment 6-8 weeks"
       }
     ],
     "subjectType": [
@@ -669,22 +669,34 @@
       },
       {
         "linkId": "23",
+        "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-ageaprImmcomp-definitions.html#Observation.valueCodeableConcept:valueCodeableConcept",
+        "code": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "408864009"
+          }
+        ],
+        "text": "Immunisation completed",
+        "type": "string"
+      },
+      {
+        "linkId": "24",
         "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.individual",
         "text": "Examiner",
         "type": "group",
         "item": [
           {
-            "linkId": "23.1",
+            "linkId": "24.1",
             "text": "Designation",
             "type": "choice"
           },
           {
-            "linkId": "23.2",
+            "linkId": "24.2",
             "text": "Venue",
             "type": "string"
           },
           {
-            "linkId": "23.3",
+            "linkId": "24.3",
             "text": "Date & Time",
             "type": "dateTime"
           }

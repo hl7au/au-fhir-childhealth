@@ -1,0 +1,541 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "hca-qa-1",
+  "questionnaire": {
+    "reference": "Questionnaire/hca-q-en-s1",
+    "display": "Health Check Assessment"
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+  },
+  "item": [
+    {
+      "id": "1.0.0.0",
+      "linkId": "1",
+      "text": "Venue",
+      "subject": {
+        "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+      },
+      "answer": [
+        {
+          "valueString": "Blacktown CHC"
+        }
+      ]
+    },
+    {
+      "id": "2.0.0.0",
+      "linkId": "2",
+      "text": "Date / Time",
+      "subject": {
+        "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+      },
+      "answer": [
+        {
+          "valueDateTime": "2018-01-07T17:42:00-05:00"
+        }
+      ]
+    },
+    {
+      "id": "3.0.0.0",
+      "linkId": "3",
+      "text": "Skin",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "170189009",
+            "display": "Review"
+          },
+          "item": [
+            {
+              "id": "3.1.0.1",
+              "linkId": "3.1",
+              "text": "Skin",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "3.1.1.1",
+                  "linkId": "3.1.1",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.0.0.0",
+      "linkId": "4",
+      "text": "Weight",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "27113001",
+            "display": "Normal"
+          },
+          "item": [
+            {
+              "id": "4.1.0.1",
+              "linkId": "4.1",
+              "text": "Weight",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "4.1.1.1",
+                  "linkId": "4.1.1",
+                  "text": "Weight",
+                  "answer": [
+                    {
+                      "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "170189009",
+            "display": "Review"
+          },
+                    }
+                  ]
+                },
+                {
+                  "id": "4.1.2.1",
+                  "linkId": "4.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5.0.0.0",
+      "linkId": "5",
+      "text": "Length",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "248334005",
+            "display": "Normal"
+          },
+          "item": [
+            {
+              "id": "5.1.0.1",
+              "linkId": "5.1",
+              "text": "Length",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "5.1.1.1",
+                  "linkId": "5.1.1",
+                  "text": "Length",
+                  "answer": [
+                    {
+                      "valueQuantity": {
+                        "value": 130,
+                        "unit": "cm",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "cm"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "5.1.2.1",
+                  "linkId": "5.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.0.0.0",
+      "linkId": "6",
+      "text": "Head Circumference",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "363812007",
+            "display": "Normal"
+          },
+          "item": [
+            {
+              "id": "6.1.0.1",
+              "linkId": "6.1",
+              "text": "Length",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "6.1.1.1",
+                  "linkId": "6.1.1",
+                  "text": "Head Circumference",
+                  "answer": [
+                    {
+                      "valueQuantity": {
+                        "value": 50,
+                        "unit": "cm",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "cm"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "6.1.2.1",
+                  "linkId": "6.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7.0.0.0",
+      "linkId": "7",
+      "text": "Head Shape",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "363812007",
+            "display": "Normal"
+          },
+          "item": [
+            {
+              "id": "7.1.0.1",
+              "linkId": "7.1",
+              "text": "Head Shape",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "7.1.1.1",
+                  "linkId": "7.1.1",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7.0.0.0",
+      "linkId": "7",
+      "text": "Head Shape",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "363812007",
+            "display": "Normal"
+          },
+          "item": [
+            {
+              "id": "7.1.0.1",
+              "linkId": "7.1",
+              "text": "Head Shape",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "7.1.1.1",
+                  "linkId": "7.1.1",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.0.0.0",
+      "linkId": "8",
+      "text": "Fontanelles",
+      "answer": [
+        {
+          "valueString": "Normal",
+          "item": [
+            {
+              "id": "8.1.0.1",
+              "linkId": "8.1",
+              "text": "Fontanelles",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "8.1.1.1",
+                  "linkId": "8.1.1",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9.0.0.0",
+      "linkId": "9",
+      "text": "Eyes Monocularly Tested (Right, Left)",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "252963001",
+            "display": "Yes"},
+          "item": [
+            {
+              "id": "9.1.0.1",
+              "linkId": "9.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "9.1.1.1",
+                  "linkId": "9.1.1",
+                  "text": "Results - Vision Chart *6M (Right)",
+                  "answer": [
+                    {
+                      "valueString": "Results - Vision Chart *6M (Right)"
+                    }
+                  ]
+                },
+                {
+                  "id": "9.1.2.1",
+                  "linkId": "9.1.2",
+                  "text": "Answer",
+                  "answer": [
+                    {
+                      "valueQuantity": {
+                        "value": 6,
+                        "unit": "TBD",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "TBD"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9.1.0.2",
+              "linkId": "9.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "9.1.1.2",
+                  "linkId": "9.1.1",
+                  "text": "Results - Vision Chart *3M (Right)",
+                  "answer": [
+                    {
+                      "valueString": "Results - Vision Chart *6M (Left)"
+                    }
+                  ]
+                },
+                {
+                  "id": "9.1.2.2",
+                  "linkId": "9.1.2",
+                  "text": "Answer",
+                  "answer": [
+                    {
+                      "valueQuantity": {
+                        "value": 6,
+                        "unit": "TBD",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "TBD"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9.1.0.3",
+              "linkId": "9.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "9.1.1.3",
+                  "linkId": "9.1.2",
+                  "text": "Results - Vision Chart *3M (Right)",
+                  "answer": [
+                    {
+                      "valueString": "Results - Vision Chart *3M (Right)"
+                    }
+                  ]
+                },
+                {
+                  "id": "9.1.2.3",
+                  "linkId": "9.1.3",
+                  "text": "Answer",
+                  "answer": [
+                    {
+                      "valueQuantity": {
+                        "value": 6,
+                        "unit": "TBD",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "TBD"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9.1.0.4",
+              "linkId": "9.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "9.1.1.4",
+                  "linkId": "9.1.3",
+                  "text": "Results - Vision Chart *3M (Left)",
+                  "answer": [
+                    {
+                      "valueString": "Results - Vision Chart *3M (Left)"
+                    }
+                  ]
+                },
+                {
+                  "id": "9.1.2.4",
+                  "linkId": "9.1.4",
+                  "text": "Answer",
+                  "answer": [
+                    {
+                      "valueQuantity": {
+                        "value": 6,
+                        "unit": "TBD",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "TBD"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9.1.0.5",
+              "linkId": "9.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "9.1.1.5",
+                  "linkId": "9.1.5",
+                  "text": "Eyes (Vision Tested Monocularly) Outcome",
+                  "answer": [
+                    {
+                      "valueString": "Eyes (Vision Tested Monocularly) Outcome"
+                    }
+                  ]
+                },
+                {
+                  "id": "9.1.2.5",
+                  "linkId": "9.1.5",
+                  "text": "Answer",
+                  "answer": [
+                    {
+                      "valueString": "Normal" 
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9.1.0.6",
+              "linkId": "9.1",
+              "subject": {
+                "reference": "subject reference goes here"
+              },
+              "item": [
+                {
+                  "id": "9.1.1.6",
+                  "linkId": "9.1.6",
+                  "text": "Eyes Test (Comment)",
+                  "answer": [
+                    {
+                      "valueString": "Eyes Test (Comment)"
+                    }
+                  ]
+                },
+                {
+                  "id": "9.1.2.6",
+                  "linkId": "9.1.6",
+                  "text": "Answer",
+                  "answer": [
+                    {
+                      "valueString": "Eyes Test (Comment) goes here" 
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
