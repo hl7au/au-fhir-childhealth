@@ -151,7 +151,7 @@
               "id": "6.1.0.1",
               "linkId": "5.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b42"
               },
               "item": [
                 {
@@ -196,7 +196,7 @@
               "id": "7.1.0.1",
               "linkId": "6.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b47"
               },
               "item": [
                 {
@@ -233,9 +233,6 @@
       "id": "8.0.0.0",
       "linkId": "7",
       "text": "Head Shape",
-      "subject": {
-        "reference": "subject reference goes here"
-      },
       "answer": [
           {
             "valueString": "Not available",
@@ -244,7 +241,7 @@
                 "id": "8.1.0.1",
                 "linkId": "7.1",
                 "subject": {
-                  "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                  "reference": "Observation/011a72a8-df75-4484-ac89-ac4923f03b81"
                 },
                 "item": [
                   {
@@ -289,7 +286,7 @@
               "id": "9.1.0.1",
               "linkId": "8.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/021a72a8-df75-4484-ac89-ac4923f03b81"
               },
               "item": [
                 {
@@ -334,7 +331,7 @@
               "id": "10.1.0.1",
               "linkId": "9.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/031a72a8-df75-4484-ac89-ac4923f03b81"
               },
               "item": [
                 {
@@ -393,7 +390,7 @@
               "id": "11.1.0.1",
               "linkId": "10.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/041a72a8-df75-4484-ac89-ac4923f03b81"
               },
               "item": [
                 {
@@ -452,7 +449,7 @@
               "id": "12.1.0.1",
               "linkId": "11.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/051a72a8-df75-4484-ac89-ac4923f03b81"
               },
               "item": [
                 {
@@ -497,7 +494,7 @@
               "id": "13.1.0.1",
               "linkId": "12.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/061a72a8-df75-4484-ac89-ac4923f03b81"
               },
               "item": [
                 {
@@ -542,7 +539,7 @@
               "id": "14.1.0.1",
               "linkId": "13.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/071a72a8-df75-4484-ac89-ac4923f03b81"
               },
               "item": [
                 {
@@ -920,57 +917,6 @@
     },  
     {
       "id": "22.0.0.0",
-      "linkId": "24",
-      "text": "Examiner",
-      "answer": [
-        {
-          "valueString": "Judith NORMAN",
-          "item": [
-            {
-              "id": "22.1.0.1",
-              "linkId": "24.1",
-              "text": "Child and Family Health Nurse",
-              "subject": {
-                "reference": "Practioner/901a72a8-df75-4484-ac89-ac4923f03b02"
-              },
-              "answer": [
-                {
-                  "valueString": "Midwife"
-                }
-              ]
-            },
-            {
-              "id": "22.1.0.1",
-              "linkId": "24.2",
-              "text": "Venue",
-              "subject": {
-                "reference": "Encounter/901a72a8-df75-4484-ac89-ac4923f03b02"
-              },
-              "answer": [
-                {
-                  "valueString": "Blacktown CHC"
-                }
-              ]
-            },
-            {
-              "id": "22.1.0.1",
-              "linkId": "24.3",
-              "text": "Date & Time",
-              "subject": {
-                "reference": "Encounter/901a72a8-df75-4484-ac89-ac4923f03b02"
-              },
-              "answer": [
-                {
-                  "valueDateTime": "2018-01-07T14:15:00-05:00"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "23.0.0.0",
       "linkId": "22",
       "text": "Abdomen",
       "answer": [
@@ -978,14 +924,14 @@
           "valueString": "Normal",
           "item": [
             {
-              "id": "23.1.0.1",
+              "id": "22.1.0.1",
               "linkId": "22.1",
               "subject": {
                 "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
               },
               "item": [
                 {
-                  "id": "23.1.1.1",
+                  "id": "22.1.1.1",
                   "linkId": "22.1.1",
                   "text": "Assessment Outcome",
                   "answer": [
@@ -999,7 +945,7 @@
                   ]
                 },
                 {
-                  "id": "23.1.2.1",
+                  "id": "22.1.2.1",
                   "linkId": "22.1.2",
                   "text": "Comments",
                   "answer": [
@@ -1015,7 +961,7 @@
       ]
     },
     {
-      "id": "24.0.0.0",
+      "id": "23.0.0.0",
       "linkId": "23",
       "text": "Immunisation completed",
       "answer": [
@@ -1023,28 +969,28 @@
           "valueString": "Yes",
           "item": [
             {
-              "id": "24.1.0.1",
+              "id": "23.1.0.1",
               "linkId": "23.1",
               "subject": {
-                "reference": "subject reference goes here"
+                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
               },
               "item": [
                 {
-                  "id": "24.1.1.1",
+                  "id": "23.1.1.1",
                   "linkId": "23.1.1",
                   "text": "Assessment Outcome",
                   "answer": [
                     {
                       "valueCoding": {
                         "system": "http://snomed.info/sct",
-                        "code": "27113001",
+                        "code": "17621005",
                         "display": "Normal"
                       }
                     }
                   ]
                 },
                 {
-                  "id": "24.1.2.1",
+                  "id": "23.1.2.1",
                   "linkId": "23.1.2",
                   "text": "Comments",
                   "answer": [
@@ -1052,6 +998,57 @@
                       "valueString": "Comment goes here"
                     }
                   ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24.0.0.0",
+      "linkId": "24",
+      "text": "Examiner",
+      "answer": [
+        {
+          "valueString": "Judith NORMAN",
+          "item": [
+            {
+              "id": "24.1.0.1",
+              "linkId": "24.1",
+              "text": "Designation",
+              "subject": {
+                "reference": "Practioner/901a72a8-df75-4484-ac89-ac4923f03b02"
+              },
+              "answer": [
+                {
+                  "valueString": "Child and Family Health Nurse"
+                }
+              ]
+            },
+            {
+              "id": "24.1.0.1",
+              "linkId": "24.2",
+              "text": "Venue",
+              "subject": {
+                "reference": "Encounter/901a72a8-df75-4484-ac89-ac4923f03b02"
+              },
+              "answer": [
+                {
+                  "valueString": "Blacktown CHC"
+                }
+              ]
+            },
+            {
+              "id": "24.1.0.1",
+              "linkId": "24.3",
+              "text": "Date & Time",
+              "subject": {
+                "reference": "Encounter/901a72a8-df75-4484-ac89-ac4923f03b02"
+              },
+              "answer": [
+                {
+                  "valueDateTime": "2018-01-07T14:15:00-05:00"
                 }
               ]
             }
