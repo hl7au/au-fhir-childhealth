@@ -107,6 +107,7 @@ These Profiles have been defined for this implementation guide.
 
 ## NCDHC Views
 * [NCDHC Birth Consolidated view](StructureDefinition-ncdhc-composition-view-birth.html) - Consolidated view to represent Birth related details. This view includes summaries from Newborn Delivery, Newborn Discharge, Bloodshot Screening, Hearing Screening and Immunisation.
+* [NCDHC Health Check Schedule view](StructureDefinition-ncdhc-composition-view-schedule.html) - View Health Check Schedule based on Jurisdiction.
 * [NCDHC Health Check Assessment 1-4 Weeks view](StructureDefinition-ncdhc-composition-view-hca-14wks.html) - Consolidated view to represent Health Check Assessment performed during 1-4 weeks of Birth.
 * [NCDHC Health Check Assessment 6-8 Weeks view](StructureDefinition-ncdhc-composition-view-hca-68wks.html) - Consolidated view to represent Health Check Assessment performed during 6-8 weeks of Birth. 
 * [NCDHC Health Check Assessment 6 Months view](StructureDefinition-ncdhc-composition-view-hca-6m.html) - Consolidated view to represent Health Check Assessment performed during 6 months of Birth.

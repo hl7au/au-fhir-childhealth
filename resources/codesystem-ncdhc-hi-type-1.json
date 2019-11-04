@@ -59,6 +59,11 @@
       "display": "Newborn Examination",
       "definition": "A newborn examination has been completed with an outcome recorded"
     },
+	{
+      "code": "UPSCHEDVW",
+      "display": "Health Check Schedule",
+      "definition": "View Health Check Schedule based on Jurisdiction"
+    },
     {
       "code": "HEALTHCKASSMT04W",
       "display": "Health Check Assessment 0-4 weeks",

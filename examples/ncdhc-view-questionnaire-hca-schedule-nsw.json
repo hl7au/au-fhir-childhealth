@@ -1,0 +1,127 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "hca-sch-nsw-q-en-s1",
+    "meta": {
+      "profile": [
+        "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-questionnaire-base"
+      ]
+    },
+    "language": "en-AU",
+    "url": "http://hl7.org.au/fhir/ch/v1/Questionnaire/hca-1-4wk-q-en-s1",
+    "version": "hca-sch-nsw-q-en-s1",
+    "title": "Health Check Schedule",
+    "experimental": false,
+    "status": "active",
+    "date": "2019-11-01",
+    "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+    "description": "Question model to represent Health Check Assessment Section of the longitudinal summary",
+    "code": [
+      {
+        "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type",
+        "code": "UPSCHEDVW",
+        "display": "Health Check Schedule"
+      }
+    ],
+    "subjectType": [
+      "Patient"
+    ],
+    "item": [
+      {
+        "linkId": "8",
+        "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby-definitions.html#Patient.birthDate.extension:birthTime",
+        "code": [
+          {
+            "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
+            "code": "HEALTHCKASSMT04W"
+          }
+        ],
+        "text": "1-4 week",
+        "type": "string"
+      },
+      {
+        "linkId": "7",
+        "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby-definitions.html#Patient.birthDate.extension:birthTime",
+        "code": [
+          {
+            "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
+            "code": "HEALTHCKASSMT68W"
+          }
+        ],
+        "text": "6-8 week",
+        "type": "string"
+      },     
+      {
+        "linkId": "6",
+        "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby-definitions.html#Patient.birthDate.extension:birthTime",
+        "code": [
+          {
+            "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
+            "code": "HEALTHCKASSMT49M"
+          }
+        ],
+        "text": "6 months",
+        "type": "string"
+      },
+      {
+        "linkId": "5",
+        "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby-definitions.html#Patient.birthDate.extension:birthTime",
+        "code": [
+          {
+            "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
+            "code": "HEALTHCKASSMT12M"
+          }
+        ],
+        "text": "12 months",
+        "type": "string"
+      },      
+      {
+        "linkId": "4",
+        "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby-definitions.html#Patient.birthDate.extension:birthTime",
+        "code": [
+          {
+            "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
+            "code": "HEALTHCKASSMT18M"
+          }
+        ],
+        "text": "18 months",
+        "type": "string"
+      },
+      {
+        "linkId": "3",
+        "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby-definitions.html#Patient.birthDate.extension:birthTime",
+        "code": [
+          {
+            "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
+            "code": "HEALTHCKASSMT23Y"
+          }
+        ],
+        "text": "2 years",
+        "type": "string"
+      },
+      {
+        "linkId": "2",
+        "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby-definitions.html#Patient.birthDate.extension:birthTime",
+        "code": [
+          {
+            "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
+            "code": "HEALTHCKASSMT34Y"
+          }
+        ],
+        "text": "3 years",
+        "type": "string"
+      },
+      {
+        "linkId": "1",
+        "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby-definitions.html#Patient.birthDate.extension:birthTime",
+        "code": [
+          {
+            "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
+            "code": "HEALTHCKASSMT45Y"
+          }
+        ],
+        "text": "4 years",
+        "type": "string"
+      }
+
+    ]
+  }

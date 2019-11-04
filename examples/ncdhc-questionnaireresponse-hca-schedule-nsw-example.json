@@ -1,0 +1,94 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "hca-sch-nsw-qa-en-s1",
+  "questionnaire": {
+    "reference": "Questionnaire/hca-sch-nsw-qa-en-s1",
+    "display": "Health Check Schedule"
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+  },
+  "item": [
+    {
+      "id": "1.0.0.0",
+      "linkId": "1",
+      "text": "4 year",
+      "answer": [
+        {
+          "valueString": "Due 7 Jan 2020"
+        }
+      ]
+    },
+    {
+      "id": "2.0.0.0",
+      "linkId": "2",
+      "text": "3 year",
+      "answer": [
+        {
+          "valueString": "Due 14 Jan 18"
+        }
+      ]
+    },
+    {
+      "id": "3.0.0.0",
+      "linkId": "3",
+      "text": "2 year",
+      "answer": [
+        {
+          "valueString": "Due 14 Jan 18"
+        }
+      ]
+    },
+    {
+      "id": "4.0.0.0",
+      "linkId": "4",
+      "text": "18 month",
+      "answer": [
+        {
+          "valueString": "Due 14 Jan 18"
+        }
+      ]
+    },
+    {
+      "id": "5.0.0.0",
+      "linkId": "5",
+      "text": "12 month",
+      "answer": [
+        {
+          "valueString": "Due 14 Jan 18"
+        }
+      ]
+    },
+    {
+      "id": "6.0.0.0",
+      "linkId": "6",
+      "text": "6 month",
+      "answer": [
+        {
+          "valueString": "Due 14 Jan 18"
+        }
+      ]
+    },
+    {
+      "id": "7.0.0.0",
+      "linkId": "7",
+      "text": "6-8 week",
+      "answer": [
+        {
+          "valueString": "Due 14 Jan 18"
+        }
+      ]
+    },
+    {
+      "id": "8.0.0.0",
+      "linkId": "8",
+      "text": "1-4 week",
+      "answer": [
+        {
+          "valueString": "Due 14 Jan 18"
+        }
+      ]
+    }
+  ]
+}
