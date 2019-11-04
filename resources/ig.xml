@@ -25,7 +25,7 @@
 			<use value="work"/>
 		</telecom>
 	</contact>
-	<fhirVersion value="3.0.1"/>
+	<fhirVersion value="3.0.2"/>
 	<package>
 		<name value="base"/>
 		<description value="Guidance on the implementation of child health related content using FHIR in an Australian usage context"/>
@@ -198,6 +198,12 @@
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-vitalsign-heart-rate"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-view-schedule"/>
 			</sourceReference>
 		</resource>
 		<!--<resource>
@@ -942,6 +948,31 @@
 		<resource>
 			<example value="true"/>
 			<sourceReference>
+				<reference value="Bundle/ncdhc-hca-1-4weeks-view-sample"/>
+			</sourceReference>
+		</resource>
+		 <resource>
+		   <example value="true"/>
+		   <sourceReference>
+				<reference value="Bundle/ncdhc-hca-6-8weeks-view-summary"/>
+		   </sourceReference>
+		 </resource>
+		 <resource>
+		   <example value="true"/>
+		   <sourceReference>
+				<reference value="Bundle/ncdhc-hca-6mnths-view-summary"/>
+		   </sourceReference>
+		 </resource>
+		 <resource>
+		   <example value="true"/>
+		   <sourceReference>
+				<reference value="Bundle/ncdhc-hca-12mnths-view-summary"/>
+		   </sourceReference>
+		 </resource>
+
+		<resource>
+			<example value="true"/>
+			<sourceReference>
 				<reference value="Bundle/ncdhc-bundle-transaction-nbdelivery-request-payload"/>
 			</sourceReference>
 		</resource>
@@ -980,7 +1011,13 @@
 			<sourceReference>
 				<reference value="Questionnaire/nb-delivery-q-en-s1"/>
 			</sourceReference>
-		</resource>	
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Questionnaire/hca-sch-nsw-q-en-s1"/>
+			</sourceReference>
+		</resource>			
 		<resource>
 			<example value="true"/>
 			<sourceReference>
@@ -1005,6 +1042,12 @@
 				<reference value="Questionnaire/hca-12mnth-q-en-s1"/>
 			</sourceReference>
 		</resource>			
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="QuestionnaireResponse/hca-sch-nsw-qa-en-s1"/>
+			</sourceReference>
+		</resource>
 		<resource>
 			<example value="true"/>
 			<sourceReference>

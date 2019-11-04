@@ -1,6 +1,6 @@
 {
   "sct-edition": "http://snomed.info/sct/32506021000036107",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "paths": {
     "output": "output",
     "pages": "pages",
@@ -400,7 +400,11 @@
       "base": "StructureDefinition-ncdhc-composition-familyhistory.html",
       "defns": "StructureDefinition-ncdhc-composition-familyhistory-definitions.html"
     },
-    "StructureDefinition/ncdhc-composition-view-birth": {
+    "StructureDefinition/ncdhc-composition-view-schedule": {
+      "base": "StructureDefinition-ncdhc-composition-view-schedule.html",
+      "defns": "StructureDefinition-ncdhc-composition-view-schedule-definitions.html"
+    },
+	"StructureDefinition/ncdhc-composition-view-birth": {
       "base": "StructureDefinition-ncdhc-composition-view-birth.html",
       "defns": "StructureDefinition-ncdhc-composition-view-birth-definitions.html"
     },
@@ -607,6 +611,10 @@
       "source": "Bundle-document-hca-14wks-request-payload-example.json",
       "base": "Bundle-document-hca-14wks-request-payload-example.html"
     },
+	"Bundle/ncdhc-hca-1-4weeks-view-sample": {
+      "source": "ncdhc-hca-1-4weeks-view-summary.json",
+      "base": "ncdhc-hca-1-4weeks-view-summary.html"
+    },
     "Bundle/87700024-070c-4141-8109-9d9fa34dd24b": {
       "source": "audit-event.json",
       "base": "audit-event.html"
@@ -618,6 +626,19 @@
     "Bundle/ncdhc-bundle-transaction-nbdelivery-request-payload": {
       "source": "ncdhc-bundle-transaction-nbdelivery-request-payload.json",
       "base": "ncdhc-bundle-transaction-nbdelivery-request-payload.html"
+    },
+	
+    "Bundle/ncdhc-hca-6-8weeks-view-summary": {
+      "source": "ncdhc-hca-6-8weeks-view-summary.json",
+      "base": "ncdhc-hca-6-8weeks-view-summary.html"
+    },
+    "Bundle/ncdhc-hca-6mnths-view-summary": {
+      "source": "ncdhc-hca-6mnths-view-summary.json",
+      "base": "ncdhc-hca-6mnths-view-summary.html"
+    },
+    "Bundle/ncdhc-hca-12mnths-view-summary": {
+      "source": "ncdhc-hca-12mnths-view-summary.json",
+      "base": "ncdhc-hca-12mnths-view-summary.html"
     },
     "AuditEvent/47700024-070c-4141-8109-9d9fa34dd24b": {
       "source": "audit-event-insert.json",
@@ -707,6 +728,10 @@
       "source": "ncdhc-observation-vitalsign-headcircum-example.json",
       "base": "ncdhc-observation-vitalsign-headcircum-example.html"
     },
+	"Questionnaire/hca-sch-nsw-q-en-s1": {
+      "source": "ncdhc-view-questionnaire-hca-schedule-nsw.json",
+      "base": "ncdhc-view-questionnaire-hca-schedule-nsw.html"
+    },
     "Questionnaire/nb-delivery-q-en-s1": {
       "source": "ncdhc-view-questionnaire-nbdelivery-example.json",
       "base": "ncdhc-view-questionnaire-nbdelivery-example.html"
@@ -727,7 +752,11 @@
       "source": "ncdhc-view-questionnaire-hca-12mnt-example.json",
       "base": "ncdhc-view-questionnaire-hca-12mnt-example.html"
     },
-    "QuestionnaireResponse/nb-delivery-qa-1": {
+    "QuestionnaireResponse/hca-sch-nsw-qa-en-s1": {
+      "source": "ncdhc-questionnaireresponse-hca-schedule-nsw-example.json",
+      "base": "ncdhc-questionnaireresponse-hca-schedule-nsw-example.html"
+    },
+	 "QuestionnaireResponse/nb-delivery-qa-1": {
       "source": "ncdhc-questionnaireresponse-nbdelivery-example.json",
       "base": "ncdhc-questionnaireresponse-nbdelivery-example.html"
     },
