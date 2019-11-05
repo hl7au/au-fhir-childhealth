@@ -22,6 +22,16 @@
         "short": "NCDHC Rep Registration Composition Profile"
       },
       {
+        "id": "Composition.title",
+        "path": "Composition.title",
+        "type": [
+          {
+            "code": "string",
+            "profile": "Register Representative"
+          }
+        ]
+      },
+      {
         "id": "Composition.section",
         "extension": [
           {
@@ -56,8 +66,17 @@
         ],
         "path": "Composition.section",
         "sliceName": "consent",
-        "min": 1,
-        "max": "1"
+        "min": 1
+      },
+      {
+        "id": "Composition.section:consent.title",
+        "path": "Composition.section.title",
+        "type": [
+          {
+            "code": "string",
+            "profile": "Consent Details"
+          }
+        ]
       },
       {
         "id": "Composition.section:consent.code.coding.system",
@@ -93,6 +112,16 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:person.title",
+        "path": "Composition.section.title",
+        "type": [
+          {
+            "code": "string",
+            "profile": "Representative Details"
+          }
+        ]
+      },
+      {
         "id": "Composition.section:person.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "fixedUri": "http://loinc.org"
@@ -100,7 +129,7 @@
       {
         "id": "Composition.section:person.code.coding.code",
         "path": "Composition.section.code.coding.code",
-        "fixedCode": "LP98797-1"
+        "fixedCode": "45970-1"
       },
       {
         "id": "Composition.section:person.entry",
