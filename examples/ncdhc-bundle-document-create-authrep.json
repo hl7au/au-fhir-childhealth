@@ -264,7 +264,7 @@
         "resourceType": "Consent",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Expected Mother Registered as Authorised Representative</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">NCDHC Authorisation Consent By Expected Mother</div>"
         },
         "status": "active",
         "category": [
@@ -324,7 +324,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Expected Mother Registered as Authorised Representative</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Child Digital Health Record Operation Consent by Expected Mother</div>"
         },
         "status": "active",
         "category": [
@@ -362,7 +362,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Expected Mother Registered as Authorised Representative</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Consent to Interact with My Health Record by Expected Mother</div>"
         },
         "status": "active",
         "category": [
