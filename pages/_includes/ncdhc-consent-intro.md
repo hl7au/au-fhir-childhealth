@@ -27,6 +27,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Profile specific implementation guidance:**
 
 * Client System can only query 'active' Consents. Server will only provide the status of the Consent along with the Patient reference if the search is successful. No details about the actual Consent will be provided to the external system.
+* Server SHALL mark the status as 'inactive' for a suspended record and 'rejected' if the Consent has been withdrawn by the user. 
 * Search can be performed only by providing the Consent category and the patient in context. 
 * Optionally client system can provide reference to the 'consentor' and/or 'date' to perform more filtering on the search. 
 * Server may provide the reference to the relevant Health Interaction instances using the Consent.data element. 'related ' SHALL be used as Consent.data.meaning.  
