@@ -24,12 +24,7 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
-        "type": [
-          {
-            "code": "string",
-            "profile": "Register Representative"
-          }
-        ]
+        "fixedString": "Register Representative"
       },
       {
         "id": "Composition.section",
@@ -71,12 +66,7 @@
       {
         "id": "Composition.section:consent.title",
         "path": "Composition.section.title",
-        "type": [
-          {
-            "code": "string",
-            "profile": "Consent Details"
-          }
-        ]
+        "fixedString": "Consent Details"
       },
       {
         "id": "Composition.section:consent.code.coding.system",
@@ -114,12 +104,7 @@
       {
         "id": "Composition.section:person.title",
         "path": "Composition.section.title",
-        "type": [
-          {
-            "code": "string",
-            "profile": "Representative Details"
-          }
-        ]
+        "fixedString": "Representative Details"
       },
       {
         "id": "Composition.section:person.code.coding.system",
