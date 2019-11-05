@@ -60,6 +60,11 @@
       "definition": "A newborn examination has been completed with an outcome recorded"
     },
 	{
+      "code": "REGREP",
+      "display": "Register Representative",
+      "definition": "Register Representative"
+    },
+	{
       "code": "UPSCHEDVW",
       "display": "Health Check Schedule",
       "definition": "View Health Check Schedule based on Jurisdiction"
