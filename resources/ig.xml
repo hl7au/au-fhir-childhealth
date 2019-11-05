@@ -416,9 +416,12 @@
 				<reference value="StructureDefinition/ncdhc-observation-iron-serum-ferritin"/>
 			</sourceReference>
 		</resource>
-
-
-
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-nbdelivery"/>
+			</sourceReference>
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -516,6 +519,12 @@
 				<reference value="StructureDefinition/ncdhc-composition-hearing-screen"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-rep-registration"/>
+			</sourceReference>
+		</resource>		
 		<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -1152,7 +1161,7 @@
 		<resource>
 			<example value="true"/>
 			<sourceReference>
-				<reference value="Bundle/ncdhc-bundle-transaction-create-authrep"/>
+				<reference value="Bundle/ncdhc-bundle-document-create-authrep"/>
 			</sourceReference>
 		</resource>
 		<resource>

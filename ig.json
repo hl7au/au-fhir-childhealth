@@ -476,6 +476,10 @@
       "base": "StructureDefinition-ncdhc-composition-view-base.html",
       "defns": "StructureDefinition-ncdhc-composition-view-base-definitions.html"
     },
+	"StructureDefinition/ncdhc-composition-rep-registration": {
+      "base": "StructureDefinition-ncdhc-composition-rep-registration.html",
+      "defns": "StructureDefinition-ncdhc-composition-rep-registration-definitions.html"
+    },
 	"ValueSet/apgar-score-type": {
       "base": "ValueSet-apgar-score-type.html"
     },
@@ -804,9 +808,9 @@
       "source": "ncdhc-relatedperson-registration-nomrep-example.json",
       "base": "ncdhc-relatedperson-registration-nomrep-example.html"
     },
-    "Bundle/ncdhc-bundle-transaction-create-authrep": {
-      "source": "ncdhc-bundle-transaction-create-authrep.json",
-      "base": "ncdhc-bundle-transaction-create-authrep.html"
+    "Bundle/ncdhc-bundle-document-create-authrep": {
+      "source": "ncdhc-bundle-document-create-authrep.json",
+      "base": "ncdhc-bundle-document-create-authrep.html"
     },
     "GraphDefinition/nsw-hc-6-8wks-example": {
       "source": "ncdhc-graphdefinition-nsw-hc-6-8wks-example.json",
