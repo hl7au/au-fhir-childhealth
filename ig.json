@@ -812,6 +812,18 @@
       "source": "ncdhc-bundle-document-create-authrep.json",
       "base": "ncdhc-bundle-document-create-authrep.html"
     },
+	"Bundle/ncdhc-hca-18mnths-view-summary": {
+      "source": "ncdhc-hca-18mnths-view-summary.json",
+      "base": "ncdhc-hca-18mnths-view-summary.html"
+    },
+	"Questionnaire/hca-18mnth-q-en-s1": {
+      "source": "ncdhc-view-questionnaire-hca-18mnt-example.json",
+      "base": "ncdhc-view-questionnaire-hca-18mnt-example.html"
+    },
+	"QuestionnaireResponse/hca-18mnth-qa-en-s1": {
+      "source": "ncdhc-questionnaireresponse-hca18mnt-example.json",
+      "base": "ncdhc-questionnaireresponse-hca18mnt-example.html"
+    },
     "GraphDefinition/nsw-hc-6-8wks-example": {
       "source": "ncdhc-graphdefinition-nsw-hc-6-8wks-example.json",
       "base": "ncdhc-graphdefinition-nsw-hc-6-8wks-example.html"

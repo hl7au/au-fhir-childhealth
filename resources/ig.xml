@@ -1169,7 +1169,27 @@
 			<sourceReference>
 				<reference value="GraphDefinition/nsw-hc-6-8wks-example"/>
 			</sourceReference>
-		</resource>
+		</resource>		
+		  <resource>
+		   <example value="true"/>
+		   <sourceReference>
+						  <reference value="Questionnaire/hca-18mnth-q-en-s1"/>
+		   </sourceReference>
+		 </resource>       
+
+		 <resource>
+		   <example value="true"/>
+		   <sourceReference>
+						  <reference value="QuestionnaireResponse/hca-18mnth-qa-en-s1"/>
+		   </sourceReference>
+		 </resource>
+		<resource>
+		   <example value="true"/>
+		   <sourceReference>
+				<reference value="Bundle/ncdhc-hca-18mnths-view-summary"/>
+		   </sourceReference>
+		 </resource>
+
 
 	</package>
 	<page>
