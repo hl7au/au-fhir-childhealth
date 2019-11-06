@@ -85,8 +85,18 @@
         "item": [
           {
             "linkId": "4.1",
+            "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyweight-definitions.html#Observation.interpretation",
             "type": "question",
+            "options": {
+              "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
+              "display": "Normal|Review|Refer"
+            },
             "item": [
+              {
+                "linkId": "4.1.1",
+                "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyweight-definitions.html#Observation.component.valueQuantity",
+                "type": "text"
+              },
               {
                 "linkId": "4.1.1",
                 "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyweight-definitions.html#Observation.interpretation",

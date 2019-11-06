@@ -1437,7 +1437,7 @@
                           {
                             "valueCoding": {
                               "system": "http://snomed.info/sct",
-                              "code": "27113001",
+                              "code": "17621005",
                               "display": "Normal"
                             }
                           }
