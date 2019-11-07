@@ -2,12 +2,12 @@
   "resourceType": "QuestionnaireResponse",
   "id": "hca-sch-nsw-qa-en-s1",
   "questionnaire": {
-    "reference": "Questionnaire/hca-sch-nsw-qa-en-s1",
+    "reference": "Questionnaire/hca-sch-nsw-q-en-s1",
     "display": "Health Check Schedule"
   },
   "status": "completed",
   "subject": {
-    "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+    "reference": "Questionnaire/hca-sch-nsw-qa-en-s1"
   },
   "item": [
     {
@@ -16,7 +16,7 @@
       "text": "4 year",
       "answer": [
         {
-          "valueString": "Due 7 Jan 2020"
+          "valueString": "Due on 7 Jan 2022"
         }
       ]
     },
@@ -26,7 +26,7 @@
       "text": "3 year",
       "answer": [
         {
-          "valueString": "Due 14 Jan 18"
+          "valueString": "Due on 7 Jan 2021"
         }
       ]
     },
@@ -36,17 +36,17 @@
       "text": "2 year",
       "answer": [
         {
-          "valueString": "Due 14 Jan 18"
+          "valueString": "Due on 7 Jan 2020"
         }
       ]
     },
     {
       "id": "4.0.0.0",
       "linkId": "4",
-      "text": "18 month",
+      "text": "2018 month",
       "answer": [
         {
-          "valueString": "Due 14 Jan 18"
+          "valueString": "Due on 7 Jul 2019"
         }
       ]
     },
@@ -56,7 +56,7 @@
       "text": "12 month",
       "answer": [
         {
-          "valueString": "Due 14 Jan 18"
+          "valueString": "Due on 7 Jan 2019"
         }
       ]
     },
@@ -66,7 +66,7 @@
       "text": "6 month",
       "answer": [
         {
-          "valueString": "Due 14 Jan 18"
+          "valueString": "Due on 7 Jul 2018"
         }
       ]
     },
@@ -76,7 +76,7 @@
       "text": "6-8 week",
       "answer": [
         {
-          "valueString": "Due 14 Jan 18"
+          "valueString": "Due on 7 Mar 2018"
         }
       ]
     },
@@ -86,7 +86,7 @@
       "text": "1-4 week",
       "answer": [
         {
-          "valueString": "Due 14 Jan 18"
+          "valueString": "Due on 14 Jan 2018"
         }
       ]
     }

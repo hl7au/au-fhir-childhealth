@@ -1,0 +1,54 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "hca-sum-nsw-qa-en-s1",
+  "questionnaire": {
+    "reference": "Questionnaire/hca-sum-nsw-q-en-s1",
+    "display": "Health Check Schedule"
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+  },
+  "item": [    
+    {
+      "id": "1.0.0.0",
+      "linkId": "6",
+      "text": "6 month",
+      "answer": [
+        {
+          "valueString": "14 Jun 2018 - Dubbo Doctors"
+        }
+      ]
+    },
+    {
+      "id": "2.0.0.0",
+      "linkId": "7",
+      "text": "6-8 week",
+      "answer": [
+        {
+          "valueString": "8 Mar 2018 - Mt Druitt CHC"
+        }
+      ]
+    },
+    {
+      "id": "3.0.0.0",
+      "linkId": "7",
+      "text": "6-8 week",
+      "answer": [
+        {
+          "valueString": "4 Mar 2018 - Blacktown CHC"
+        }
+      ]
+    },
+    {
+      "id": "4.0.0.0",
+      "linkId": "8",
+      "text": "1-4 week",
+      "answer": [
+        {
+          "valueString": "7 Jan 2018 - Blacktown CHC"
+        }
+      ]
+    }
+  ]
+}
