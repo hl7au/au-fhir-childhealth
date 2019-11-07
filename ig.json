@@ -760,6 +760,10 @@
       "source": "ncdhc-questionnaireresponse-hca-schedule-nsw-example.json",
       "base": "ncdhc-questionnaireresponse-hca-schedule-nsw-example.html"
     },
+	 "QuestionnaireResponse/hca-sum-nsw-qa-en-s1": {
+      "source": "ncdhc-questionnaireresponse-hca-sumarry-nsw-example.json",
+      "base": "ncdhc-questionnaireresponse-hca-sumarry-nsw-example.html"
+    },
 	 "QuestionnaireResponse/nb-delivery-qa-1": {
       "source": "ncdhc-questionnaireresponse-nbdelivery-example.json",
       "base": "ncdhc-questionnaireresponse-nbdelivery-example.html"

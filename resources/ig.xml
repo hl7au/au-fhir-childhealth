@@ -1175,12 +1175,18 @@
 		   <sourceReference>
 						  <reference value="Questionnaire/hca-18mnth-q-en-s1"/>
 		   </sourceReference>
-		 </resource>       
+		 </resource> 
+		 <resource>
+		   <example value="true"/>
+		   <sourceReference>
+			 <reference value="QuestionnaireResponse/hca-18mnth-qa-en-s1"/>
+		   </sourceReference>
+		 </resource>
 
 		 <resource>
 		   <example value="true"/>
 		   <sourceReference>
-						  <reference value="QuestionnaireResponse/hca-18mnth-qa-en-s1"/>
+			<reference value="QuestionnaireResponse/hca-sum-nsw-qa-en-s1"/>
 		   </sourceReference>
 		 </resource>
 		<resource>
