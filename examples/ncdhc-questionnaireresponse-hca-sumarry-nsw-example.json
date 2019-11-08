@@ -3,7 +3,7 @@
   "id": "hca-sum-nsw-qa-en-s1",
   "questionnaire": {
     "reference": "Questionnaire/hca-sum-nsw-q-en-s1",
-    "display": "Health Check Schedule"
+    "display": "Health Check Summary"
   },
   "status": "completed",
   "subject": {

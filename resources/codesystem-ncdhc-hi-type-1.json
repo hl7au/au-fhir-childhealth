@@ -65,7 +65,12 @@
       "definition": "Register Representative"
     },
 	{
-      "code": "UPSCHEDVW",
+      "code": "HCSSUMVW",
+      "display": "Health Check Summary",
+      "definition": "View Health Check Summary based on Jurisdiction"
+    },
+	{
+      "code": "HCSSCHEDVW",
       "display": "Health Check Schedule",
       "definition": "View Health Check Schedule based on Jurisdiction"
     },

@@ -14,11 +14,11 @@
     "status": "active",
     "date": "2019-11-01",
     "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-    "description": "Question model to represent Health Check Assessment Section of the longitudinal summary",
+    "description": "Question model to represent Health Check Schedule",
     "code": [
       {
         "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type",
-        "code": "UPSCHEDVW",
+        "code": "HCSSCHEDVW",
         "display": "Health Check Schedule"
       }
     ],
@@ -101,7 +101,7 @@
           }
         ],
         "prefix": "Due on",
-        "text": "2 years",
+        "text": "2 years", 
         "type": "string"
       },
       {

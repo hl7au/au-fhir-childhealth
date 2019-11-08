@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "ncdhc-hca-12mnths-view-sample",
+  "id": "ncdhc-hca-12mnths-view-summary",
   "meta": {
     "versionId": "1",
     "lastUpdated": "2019-10-31T00:00:00Z"
@@ -467,7 +467,17 @@
                       {
                         "id": "4.1.1.1",
                         "linkId": "4.1.1",
-                        "text": "Assessment Outcome",
+                        "text": "Value",
+                        "answer": [
+                          {
+                            "valueString": "12.3kg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "4.1.2.1",
+                        "linkId": "4.1.2",
+                        "text": "Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -479,8 +489,8 @@
                         ]
                       },
                       {
-                        "id": "4.1.2.1",
-                        "linkId": "4.1.2",
+                        "id": "4.1.3.1",
+                        "linkId": "4.1.3",
                         "text": "Comments",
                         "answer": [
                           {
@@ -512,7 +522,17 @@
                       {
                         "id": "5.1.1.1",
                         "linkId": "5.1.1",
-                        "text": "Assessment Outcome",
+                        "text": "Value",
+                        "answer": [
+                          {
+                            "valueString": "81.3cm"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "5.1.2.1",
+                        "linkId": "5.1.2",
+                        "text": "Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -524,8 +544,8 @@
                         ]
                       },
                       {
-                        "id": "5.1.2.1",
-                        "linkId": "5.1.2",
+                        "id": "5.1.3.1",
+                        "linkId": "5.1.3",
                         "text": "Comments",
                         "answer": [
                           {
@@ -557,7 +577,17 @@
                       {
                         "id": "6.1.1.1",
                         "linkId": "6.1.1",
-                        "text": "Assessment Outcome",
+                        "text": "Value",
+                        "answer": [
+                          {
+                            "valueString": "48.1cm"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "6.1.2.1",
+                        "linkId": "6.1.2",
+                        "text": "Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -569,8 +599,8 @@
                         ]
                       },
                       {
-                        "id": "6.1.2.1",
-                        "linkId": "6.1.2",
+                        "id": "6.1.3.1",
+                        "linkId": "6.1.3",
                         "text": "Comments",
                         "answer": [
                           {
@@ -602,7 +632,7 @@
                         {
                           "id": "7.1.1.1",
                           "linkId": "7.1.1",
-                          "text": "Assessment Outcome",
+                          "text": "Outcome",
                           "answer": [
                             {
                               "valueCoding": {
@@ -647,7 +677,7 @@
                       {
                         "id": "8.1.1.1",
                         "linkId": "8.1.1",
-                        "text": "Assessment Outcome (Left Ear)",
+                        "text": "Left",
                         "answer": [
                           {
                             "valueCoding": {
@@ -661,7 +691,7 @@
                       {
                         "id": "8.1.2.1",
                         "linkId": "8.1.2",
-                        "text": "Assessment Outcome (Right Ear)",
+                        "text": "Right",
                         "answer": [
                           {
                             "valueCoding": {
@@ -706,7 +736,7 @@
                       {
                         "id": "9.1.1.1",
                         "linkId": "9.1.1",
-                        "text": "Assessment Outcome (Left Eye)",
+                        "text": "Left",
                         "answer": [
                           {
                             "valueCoding": {
@@ -720,7 +750,7 @@
                       {
                         "id": "9.1.2.1",
                         "linkId": "9.1.2",
-                        "text": "Assessment Outcome (Right Eye)",
+                        "text": "Right",
                         "answer": [
                           {
                             "valueCoding": {
@@ -765,7 +795,7 @@
                       {
                         "id": "10.1.1.1",
                         "linkId": "10.1.1",
-                        "text": "Assessment Outcome",
+                        "text": "Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -810,7 +840,7 @@
                       {
                         "id": "11.1.1.1",
                         "linkId": "11.1.1",
-                        "text": "Assessment Outcome (Left Testes)",
+                        "text": "Left",
                         "answer": [
                           {
                             "valueCoding": {
@@ -824,7 +854,7 @@
                       {
                         "id": "11.1.2.1",
                         "linkId": "11.1.2",
-                        "text": "Assessment Outcome (Right Testes)",
+                        "text": "Right",
                         "answer": [
                           {
                             "valueCoding": {
@@ -869,7 +899,7 @@
                       {
                         "id": "12.1.1.1",
                         "linkId": "13.1.1",
-                        "text": "Assessment Outcome",
+                        "text": "Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -914,7 +944,7 @@
                       {
                         "id": "13.1.1.1",
                         "linkId": "14.1.1",
-                        "text": "Assessment Outcome",
+                        "text": "Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -959,7 +989,7 @@
                       {
                         "id": "14.1.1.1",
                         "linkId": "12.1.1",
-                        "text": "Assessment Outcome",
+                        "text": "Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -1004,7 +1034,7 @@
                       {
                         "id": "15.1.1.1",
                         "linkId": "15.1.1",
-                        "text": "Assessment Outcome",
+                        "text": "Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -1049,7 +1079,7 @@
                       {
                         "id": "16.1.1.1",
                         "linkId": "16.1.1",
-                        "text": "Assessment Outcome",
+                        "text": "Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -1127,7 +1157,8 @@
               }
             ]
           }
-        ]}
+        ]
+      }
     },
     {
       "fullUrl": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
