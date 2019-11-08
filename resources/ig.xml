@@ -434,6 +434,12 @@
 				<reference value="StructureDefinition/ncdhc-composition-view-schedule"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-view-summary"/>
+			</sourceReference>
+		</resource>
 		<!-- CDHR Views Profiles -->
 		<resource>
 			<example value="false"/>
@@ -962,6 +968,12 @@
 		<resource>
 			<example value="true"/>
 			<sourceReference>
+				<reference value="Questionnaire/hca-sum-nsw-q-en-s1"/>
+			</sourceReference>
+		</resource>	
+		<resource>
+			<example value="true"/>
+			<sourceReference>
 				<reference value="Questionnaire/hca-1-4wk-q-en-s1"/>
 			</sourceReference>
 		</resource>	
@@ -1193,6 +1205,12 @@
 		   <example value="true"/>
 		   <sourceReference>
 				<reference value="Bundle/ncdhc-hca-18mnths-view-summary"/>
+		   </sourceReference>
+		 </resource>
+		<resource>
+		   <example value="true"/>
+		   <sourceReference>
+				<reference value="Bundle/ncdhc-hca-nsw-summary-sample"/>
 		   </sourceReference>
 		 </resource>
 

@@ -92,7 +92,7 @@
       "base": "StructureDefinition-ncdhc-composition-base.html",
       "defns": "StructureDefinition-ncdhc-composition-base-definitions.html"
     },
-	"StructureDefinition/ncdhc-observation-base": {
+    "StructureDefinition/ncdhc-observation-base": {
       "base": "StructureDefinition-ncdhc-observation-base.html",
       "defns": "StructureDefinition-ncdhc-observation-base-definitions.html"
     },
@@ -104,11 +104,11 @@
       "base": "StructureDefinition-ncdhc-patient-mother.html",
       "defns": "StructureDefinition-ncdhc-patient-mother-definitions.html"
     },
-	 "StructureDefinition/ncdhc-observation-pregnancy-complication": {
+    "StructureDefinition/ncdhc-observation-pregnancy-complication": {
       "base": "StructureDefinition-ncdhc-observation-pregnancy-complication.html",
       "defns": "StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html"
     },
-	"StructureDefinition/ncdhc-observation-birth-complication": {
+    "StructureDefinition/ncdhc-observation-birth-complication": {
       "base": "StructureDefinition-ncdhc-observation-birth-complication.html",
       "defns": "StructureDefinition-ncdhc-observation-birth-complication-definitions.html"
     },
@@ -119,12 +119,12 @@
     "StructureDefinition/ncdhc-observation-riskfactor": {
       "base": "StructureDefinition-ncdhc-observation-riskfactor.html",
       "defns": "StructureDefinition-ncdhc-observation-riskfactor-definitions.html"
-    },      
+    },
     "StructureDefinition/ncdhc-observation-estimated-gestation": {
       "base": "StructureDefinition-ncdhc-observation-estimated-gestation.html",
       "defns": "StructureDefinition-ncdhc-observation-estimated-gestation-definitions.html"
     },
-	"StructureDefinition/ncdhc-observation-head-shape": {
+    "StructureDefinition/ncdhc-observation-head-shape": {
       "base": "StructureDefinition-ncdhc-observation-head-shape.html",
       "defns": "StructureDefinition-ncdhc-observation-head-shape-definitions.html"
     },
@@ -164,7 +164,7 @@
       "base": "StructureDefinition-ncdhc-observation-oral-health.html",
       "defns": "StructureDefinition-ncdhc-observation-oral-health-definitions.html"
     },
-	"StructureDefinition/ncdhc-observation-cardiovascular-dr": {
+    "StructureDefinition/ncdhc-observation-cardiovascular-dr": {
       "base": "StructureDefinition-ncdhc-observation-cardiovascular-dr.html",
       "defns": "StructureDefinition-ncdhc-observation-cardiovascular-dr-definitions.html"
     },
@@ -340,7 +340,7 @@
       "base": "StructureDefinition-ncdhc-observation-edb.html",
       "defns": "StructureDefinition-ncdhc-observation-edb-definitions.html"
     },
-	"StructureDefinition/ncdhc-observation-iron-serum-ferritin": {
+    "StructureDefinition/ncdhc-observation-iron-serum-ferritin": {
       "base": "StructureDefinition-ncdhc-observation-iron-serum-ferritin.html",
       "defns": "StructureDefinition-ncdhc-observation-iron-serum-ferritin-definitions.html"
     },
@@ -348,19 +348,19 @@
       "base": "StructureDefinition-ncdhc-observation-iron-haemoglobin-level.html",
       "defns": "StructureDefinition-ncdhc-observation-iron-haemoglobin-level-definitions.html"
     },
-	"StructureDefinition/ncdhc-observation-apgar-score": {
+    "StructureDefinition/ncdhc-observation-apgar-score": {
       "base": "StructureDefinition-ncdhc-observation-apgar-score.html",
       "defns": "StructureDefinition-ncdhc-observation-apgar-score-definitions.html"
     },
-	 "StructureDefinition/ncdhc-questionnaire-familyhistory": {
+    "StructureDefinition/ncdhc-questionnaire-familyhistory": {
       "base": "StructureDefinition-ncdhc-questionnaire-familyhistory.html",
       "defns": "StructureDefinition-ncdhc-questionnaire-familyhistory-definitions.html"
     },
-	"StructureDefinition/ncdhc-familymemberhistory": {
+    "StructureDefinition/ncdhc-familymemberhistory": {
       "base": "StructureDefinition-ncdhc-familymemberhistory.html",
       "defns": "StructureDefinition-ncdhc-familymemberhistory-definitions.html"
     },
-	"StructureDefinition/ncdhc-medicationstatement-vitamink": {
+    "StructureDefinition/ncdhc-medicationstatement-vitamink": {
       "base": "StructureDefinition-ncdhc-medicationstatement-vitamink.html",
       "defns": "StructureDefinition-ncdhc-medicationstatement-vitamink-definitions.html"
     },
@@ -379,7 +379,7 @@
     "StructureDefinition/ncdhc-audit-event": {
       "base": "StructureDefinition-ncdhc-audit-event.html",
       "defns": "StructureDefinition-ncdhc-audit-event-definitions.html"
-    },    
+    },
     "StructureDefinition/ncdhc-operation-outcome": {
       "base": "StructureDefinition-ncdhc-operation-outcome.html",
       "defns": "StructureDefinition-ncdhc-operation-outcome-definitions.html"
@@ -396,7 +396,7 @@
       "base": "StructureDefinition-ncdhc-graphdefinition-base.html",
       "defns": "StructureDefinition-ncdhc-graphdefinition-base-definitions.html"
     },
-	"StructureDefinition/ncdhc-composition-nbdelivery": {
+    "StructureDefinition/ncdhc-composition-nbdelivery": {
       "base": "StructureDefinition-ncdhc-composition-nbdelivery.html",
       "defns": "StructureDefinition-ncdhc-composition-nbdelivery-definitions.html"
     },
@@ -428,7 +428,11 @@
       "base": "StructureDefinition-ncdhc-composition-view-schedule.html",
       "defns": "StructureDefinition-ncdhc-composition-view-schedule-definitions.html"
     },
-	"StructureDefinition/ncdhc-composition-view-birth": {
+    "StructureDefinition/ncdhc-composition-view-summary": {
+      "base": "StructureDefinition-ncdhc-composition-view-summary.html",
+      "defns": "StructureDefinition-ncdhc-composition-view-summary-definitions.html"
+    },
+    "StructureDefinition/ncdhc-composition-view-birth": {
       "base": "StructureDefinition-ncdhc-composition-view-birth.html",
       "defns": "StructureDefinition-ncdhc-composition-view-birth-definitions.html"
     },
@@ -476,11 +480,11 @@
       "base": "StructureDefinition-ncdhc-composition-view-base.html",
       "defns": "StructureDefinition-ncdhc-composition-view-base-definitions.html"
     },
-	"StructureDefinition/ncdhc-composition-rep-registration": {
+    "StructureDefinition/ncdhc-composition-rep-registration": {
       "base": "StructureDefinition-ncdhc-composition-rep-registration.html",
       "defns": "StructureDefinition-ncdhc-composition-rep-registration-definitions.html"
     },
-	"ValueSet/apgar-score-type": {
+    "ValueSet/apgar-score-type": {
       "base": "ValueSet-apgar-score-type.html"
     },
     "ValueSet/apgar-score-type-snomedct": {
@@ -615,7 +619,7 @@
       "source": "Bundle-document-hca-14wks-request-payload-example.json",
       "base": "Bundle-document-hca-14wks-request-payload-example.html"
     },
-	"Bundle/ncdhc-hca-1-4weeks-view-summary": {
+    "Bundle/ncdhc-hca-1-4weeks-view-summary": {
       "source": "ncdhc-hca-1-4weeks-view-summary.json",
       "base": "ncdhc-hca-1-4weeks-view-summary.html"
     },
@@ -631,7 +635,6 @@
       "source": "ncdhc-bundle-transaction-nbdelivery-request-payload.json",
       "base": "ncdhc-bundle-transaction-nbdelivery-request-payload.html"
     },
-	
     "Bundle/ncdhc-hca-6-8weeks-view-summary": {
       "source": "ncdhc-hca-6-8weeks-view-summary.json",
       "base": "ncdhc-hca-6-8weeks-view-summary.html"
@@ -732,9 +735,13 @@
       "source": "ncdhc-observation-vitalsign-headcircum-example.json",
       "base": "ncdhc-observation-vitalsign-headcircum-example.html"
     },
-	"Questionnaire/hca-sch-nsw-q-en-s1": {
+    "Questionnaire/hca-sch-nsw-q-en-s1": {
       "source": "ncdhc-view-questionnaire-hca-schedule-nsw.json",
       "base": "ncdhc-view-questionnaire-hca-schedule-nsw.html"
+    },
+    "Questionnaire/hca-sum-nsw-q-en-s1": {
+      "source": "ncdhc-view-questionnaire-hca-summary-nsw.json",
+      "base": "ncdhc-view-questionnaire-hca-summary-nsw.html"
     },
     "Questionnaire/nb-delivery-q-en-s1": {
       "source": "ncdhc-view-questionnaire-nbdelivery-example.json",
@@ -744,7 +751,7 @@
       "source": "ncdhc-view-questionnaire-hca-1-4wk-example.json",
       "base": "ncdhc-view-questionnaire-hca-1-4wk-example.html"
     },
-	 "Questionnaire/hca-6-8wk-q-en-s1": {
+    "Questionnaire/hca-6-8wk-q-en-s1": {
       "source": "ncdhc-view-questionnaire-hca-6-8wks-example.json",
       "base": "ncdhc-view-questionnaire-hca-6-8wks-example.html"
     },
@@ -760,11 +767,11 @@
       "source": "ncdhc-questionnaireresponse-hca-schedule-nsw-example.json",
       "base": "ncdhc-questionnaireresponse-hca-schedule-nsw-example.html"
     },
-	 "QuestionnaireResponse/hca-sum-nsw-qa-en-s1": {
+    "QuestionnaireResponse/hca-sum-nsw-qa-en-s1": {
       "source": "ncdhc-questionnaireresponse-hca-sumarry-nsw-example.json",
       "base": "ncdhc-questionnaireresponse-hca-sumarry-nsw-example.html"
     },
-	 "QuestionnaireResponse/nb-delivery-qa-1": {
+    "QuestionnaireResponse/nb-delivery-qa-1": {
       "source": "ncdhc-questionnaireresponse-nbdelivery-example.json",
       "base": "ncdhc-questionnaireresponse-nbdelivery-example.html"
     },
@@ -772,11 +779,11 @@
       "source": "ncdhc-questionnaireresponse-hca1-4wk-example.json",
       "base": "ncdhc-questionnaireresponse-hca1-4wk-example.html"
     },
-	"QuestionnaireResponse/hca-6-8wk-qa-en-s1": {
+    "QuestionnaireResponse/hca-6-8wk-qa-en-s1": {
       "source": "ncdhc-questionnaireresponse-hca6-8wk-example.json",
       "base": "ncdhc-questionnaireresponse-hca6-8wk-example.html"
     },
-	"QuestionnaireResponse/hca-4-9mnth-qa-en-s1": {
+    "QuestionnaireResponse/hca-4-9mnth-qa-en-s1": {
       "source": "ncdhc-questionnaireresponse-hca4-9mnt-example.json",
       "base": "ncdhc-questionnaireresponse-hca4-9mnt-example.html"
     },
@@ -816,15 +823,19 @@
       "source": "ncdhc-bundle-document-create-authrep.json",
       "base": "ncdhc-bundle-document-create-authrep.html"
     },
-	"Bundle/ncdhc-hca-18mnths-view-summary": {
+    "Bundle/ncdhc-hca-nsw-summary-sample": {
+      "source": "ncdhc-hca-nsw-summary-sample.json",
+      "base": "ncdhc-hca-nsw-summary-sample.html"
+    },
+    "Bundle/ncdhc-hca-18mnths-view-summary": {
       "source": "ncdhc-hca-18mnths-view-summary.json",
       "base": "ncdhc-hca-18mnths-view-summary.html"
     },
-	"Questionnaire/hca-18mnth-q-en-s1": {
+    "Questionnaire/hca-18mnth-q-en-s1": {
       "source": "ncdhc-view-questionnaire-hca-18mnt-example.json",
       "base": "ncdhc-view-questionnaire-hca-18mnt-example.html"
     },
-	"QuestionnaireResponse/hca-18mnth-qa-en-s1": {
+    "QuestionnaireResponse/hca-18mnth-qa-en-s1": {
       "source": "ncdhc-questionnaireresponse-hca18mnt-example.json",
       "base": "ncdhc-questionnaireresponse-hca18mnt-example.html"
     },
