@@ -1,35 +1,35 @@
 {
-    "resourceType": "Bundle",
-    "id": "72333608-eb01-40b5-b6c3-daded7910406",
-    "meta": {
-      "lastUpdated": "2019-01-07T01:43:30Z"
-    },
-    "type": "searchset",
-    "total": 0,
-    "entry": [
-      {
-        "fullUrl": "urn:uuid:62333608-eb01-40b5-b6c3-daded7910406",
-        "resource": {
-          "resourceType": "OperationOutcome",
-          "id": "62333608-eb01-40b5-b6c3-daded7910406",
-          "text": {
-            "status": "additional",
-            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>The requested Consent instance doesn't exist in the Data Hub</p>\n    </div>"
-          },
-          "issue": [
-            {
-              "severity": "information",
-              "code": "not-found",
-              "details": {
-                "text": "The requested Consent doesn't exist in the Data Hub"
-              },
-              "diagnostics": "NCDHC-404-12345: No matching Consent instance found for Patient with id 62333608-eb01-40b5-b6c3-daded7910406"
-            }
-          ]
+  "resourceType": "Bundle",
+  "id": "operationoutcome-404-bundle-example",
+  "meta": {
+    "lastUpdated": "2019-01-07T01:43:30Z"
+  },
+  "type": "searchset",
+  "total": 0,
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:62333608-eb01-40b5-b6c3-daded7910406",
+      "resource": {
+        "resourceType": "OperationOutcome",
+        "id": "62333608-eb01-40b5-b6c3-daded7910406",
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Sorry, we are unable to locate your requested child / children's details.</p>\n </div>"
         },
-        "search": {
-          "mode": "outcome"
-        }
+        "issue": [
+          {
+            "severity": "information",
+            "code": "not-found",
+            "details": {
+              "text": "Sorry, we are unable to locate your requested child / children's details."
+            },
+            "diagnostics": "NCDHC-404-12345: No matching Patient instance found"
+          }
+        ]
+      },
+      "search": {
+        "mode": "outcome"
       }
-    ]
-  }
+    }
+  ]
+}

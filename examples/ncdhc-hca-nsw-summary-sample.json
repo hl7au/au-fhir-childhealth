@@ -43,13 +43,13 @@
           "text": "Health Check Assessment View"
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
           "display": "Baby of Eve Bill"
         },
         "date": "2018-12-24T12:30:02Z",
         "author": [
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Device/3db74777-fd3d-4d3b-92ec-d405977a11a5",
+            "reference": "Device/3db74777-fd3d-4d3b-92ec-d405977a11a5",
             "display": "Best Practice GP"
           }
         ],
@@ -66,14 +66,21 @@
         ],
         "section": [
           {
-            "title": "Health Check Summary",            
+            "title": "Health Check Schedule",
             "entry": [
               {
-                "reference": "QuestionnaireResponse/hca-sum-nsw-q-en-s1"
+                "reference": "QuestionnaireResponse/hca-sch-nsw-qa-en-s1"
               }
             ]
-          }   
-         
+          },
+          {
+            "title": "Health Check Summary",
+            "entry": [
+              {
+                "reference": "QuestionnaireResponse/hca-sum-nsw-qa-en-s1"
+              }
+            ]
+          }
         ]
       }
     },
@@ -370,7 +377,7 @@
           "name": "BP GP System"
         },
         "version": "v1.0.0",
-        "status": "active",        
+        "status": "active",
         "contact": [
           {
             "system": "phone",
@@ -378,9 +385,9 @@
           }
         ]
       }
-    },    
+    },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/QuestionnaireResponse/hca-sum-nsw-q-en-s1",
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/QuestionnaireResponse/hca-sum-nsw-qa-en-s1",
       "resource": {
         "resourceType": "QuestionnaireResponse",
         "id": "hca-sum-nsw-qa-en-s1",
@@ -392,7 +399,7 @@
         "subject": {
           "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
         },
-        "item": [    
+        "item": [
           {
             "id": "1.0.0.0",
             "linkId": "6",
@@ -437,6 +444,103 @@
       }
     },
     {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/QuestionnaireResponse/hca-sch-nsw-qa-en-s1",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "hca-sch-nsw-qa-en-s1",
+        "questionnaire": {
+          "reference": "Questionnaire/hca-sch-nsw-q-en-s1",
+          "display": "Health Check Schedule"
+        },
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+        },
+        "item": [
+          {
+            "id": "1.0.0.0",
+            "linkId": "1",
+            "text": "4 year",
+            "answer": [
+              {
+                "valueString": "Due on 7 Jan 2022"
+              }
+            ]
+          },
+          {
+            "id": "2.0.0.0",
+            "linkId": "2",
+            "text": "3 year",
+            "answer": [
+              {
+                "valueString": "Due on 7 Jan 2021"
+              }
+            ]
+          },
+          {
+            "id": "3.0.0.0",
+            "linkId": "3",
+            "text": "2 year",
+            "answer": [
+              {
+                "valueString": "Due on 7 Jan 2020"
+              }
+            ]
+          },
+          {
+            "id": "4.0.0.0",
+            "linkId": "4",
+            "text": "2018 month",
+            "answer": [
+              {
+                "valueString": "Due on 7 Jul 2019"
+              }
+            ]
+          },
+          {
+            "id": "5.0.0.0",
+            "linkId": "5",
+            "text": "12 month",
+            "answer": [
+              {
+                "valueString": "Due on 7 Jan 2019"
+              }
+            ]
+          },
+          {
+            "id": "6.0.0.0",
+            "linkId": "6",
+            "text": "6 month",
+            "answer": [
+              {
+                "valueString": "Due on 7 Jul 2018"
+              }
+            ]
+          },
+          {
+            "id": "7.0.0.0",
+            "linkId": "7",
+            "text": "6-8 week",
+            "answer": [
+              {
+                "valueString": "Due on 7 Mar 2018"
+              }
+            ]
+          },
+          {
+            "id": "8.0.0.0",
+            "linkId": "8",
+            "text": "1-4 week",
+            "answer": [
+              {
+                "valueString": "Due on 14 Jan 2018"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "fullUrl": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
       "resource": {
         "resourceType": "Provenance",
@@ -447,6 +551,9 @@
           },
           {
             "reference": "QuestionnaireResponse/hca-sum-nsw-qa-en-s1"
+          },
+          {
+            "reference": "QuestionnaireResponse/hca-sch-nsw-qa-en-s1"
           }
         ],
         "period": {
@@ -467,7 +574,7 @@
               }
             ],
             "whoReference": {
-              "reference": "Device/ncdhc-nsw-jt"
+              "reference": "Device/3db74777-fd3d-4d3b-92ec-d405977a11a5"
             }
           }
         ],

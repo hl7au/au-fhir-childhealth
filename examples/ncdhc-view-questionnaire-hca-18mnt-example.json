@@ -7,9 +7,9 @@
     ]
   },
   "language": "en-AU",
-  "url": "http://hl7.org.au/fhir/ch/v1/Questionnaire/hca-12mnth-q-en-s1",
+  "url": "http://hl7.org.au/fhir/ch/v1/Questionnaire/hca-18mnth-q-en-s1",
   "version": "hca-18mnth-q-en-s1",
-  "title": "Health Check Assessment 18 Months Questionnaire",
+  "title": "Health Check Assessment 3 Year Questionnaire",
   "experimental": false,
   "status": "active",
   "date": "2019-10-29",
@@ -17,7 +17,7 @@
   "description": "Question model to represent Health Check Assessment Section of the longitudinal summary",
   "code": [
     {
-      "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type",
+      "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
       "code": "HEALTHCKASSMT18M",
       "display": "Health Check Assessment 18 months"
     }
@@ -69,15 +69,7 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "364589006"
-        },
-        {
-          "system": "http://snomed.info/sct",
           "code": "27113001"
-        },
-        {
-          "system": "http://loinc.org",
-          "code": "29463-7"
         }
       ],
       "text": "Weight",
@@ -85,16 +77,29 @@
       "item": [
         {
           "linkId": "4.1",
-          "type": "question",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyweight-definitions.html#Observation.interpretation",
+          "type": "choice",
+          "options": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
+            "display": "Normal|Review|Refer"
+          },
           "item": [
             {
               "linkId": "4.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyweight-definitions.html#Observation.interpretation",
-              "type": "open-choice"
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyweight-definitions.html#Observation.component.valueQuantity",
+              "text": "Value",
+              "type": "text"
             },
             {
               "linkId": "4.1.2",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyweight-definitions.html#Observation.interpretation",
+              "text": "Outcome",
+              "type": "open-choice"
+            },
+            {
+              "linkId": "4.1.3",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyweight-definitions.html#Observation.comment",
+              "text": "Comments",
               "type": "text"
             }
           ]
@@ -107,35 +112,36 @@
         {
           "system": "http://snomed.info/sct",
           "code": "50373000"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169886007"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "50373000"
-        },
-        {
-          "system": "http://loinc.org",
-          "code": "8302-2"
         }
       ],
-      "text": "Length",
+      "text": "Height",
       "type": "group",
       "item": [
         {
           "linkId": "5.1",
-          "type": "question",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyheight-definitions.html#Observation.interpretation",
+          "type": "choice",
+          "options": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
+            "display": "Normal|Review|Refer"
+          },
           "item": [
             {
               "linkId": "5.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyheight-definitions.html#Observation.interpretation",
-              "type": "open-choice"
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyheight-definitions.html#Observation.component.valueQuantity",
+              "text": "Value",
+              "type": "text"
             },
             {
               "linkId": "5.1.2",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyheight-definitions.html#Observation.interpretation",
+              "text": "Outcome",
+              "type": "open-choice"
+            },
+            {
+              "linkId": "5.1.3",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyheight-definitions.html#Observation.comment",
+              "text": "Comments",
               "type": "text"
             }
           ]
@@ -167,16 +173,29 @@
       "item": [
         {
           "linkId": "6.1",
-          "type": "question",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-headcircum-definitions.html#Observation.interpretation",
+          "type": "choice",
+          "options": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
+            "display": "Normal|Review|Refer"
+          },
           "item": [
             {
               "linkId": "6.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-headcircum-definitions.html#Observation.interpretation",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-headcircum-definitions.html#Observation.component.valueQuantity",
+              "text": "Value",
               "type": "open-choice"
             },
             {
               "linkId": "6.1.2",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-headcircum-definitions.html#Observation.interpretation",
+              "text": "Outcome",
+              "type": "open-choice"
+            },
+            {
+              "linkId": "6.1.3",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-headcircum-definitions.html#Observation.comment",
+              "text": "Comments",
               "type": "text"
             }
           ]
@@ -197,20 +216,24 @@
         {
           "linkId": "7.1",
           "type": "question",
+          "text": "Show Details",
           "item": [
             {
               "linkId": "7.1.1",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-ears-definitions.html#Observation.component:leftEar.interpretation",
+              "text": "Left",
               "type": "open-choice"
             },
             {
               "linkId": "7.1.2",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-ears-definitions.html#Observation.component:rightEar.interpretation",
+              "text": "Right",
               "type": "open-choice"
             },
             {
               "linkId": "7.1.3",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-ears-definitions.html#Observation.comment",
+              "text": "Comments",
               "type": "text"
             }
           ]
@@ -231,20 +254,24 @@
         {
           "linkId": "8.1",
           "type": "question",
+          "text": "Show Details",
           "item": [
             {
               "linkId": "8.1.1",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-eyes-definitions.html#Observation.component:leftEyeAssessment.interpretation",
+              "text": "Left",
               "type": "open-choice"
             },
             {
               "linkId": "8.1.2",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-eyes-definitions.html#Observation.component:rightEyeAssessment.interpretation",
+              "text": "Right",
               "type": "open-choice"
             },
             {
               "linkId": "8.1.3",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-eyes-definitions.html#Observation.comment",
+              "text": "Comments",
               "type": "text"
             }
           ]
@@ -264,16 +291,23 @@
       "item": [
         {
           "linkId": "9.1",
-          "type": "question",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-development-definitions.html#Observation.interpretation",
+          "type": "choice",
+          "options": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
+            "display": "Normal|Review|Refer"
+          },
           "item": [
             {
               "linkId": "9.1.1",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-development-definitions.html#Observation.interpretation",
+              "text": "Outcome",
               "type": "open-choice"
             },
             {
               "linkId": "9.1.2",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-development-definitions.html#Observation.comment",
+              "text": "Comments",
               "type": "text"
             }
           ]
@@ -293,16 +327,23 @@
       "item": [
         {
           "linkId": "10.1",
-          "type": "question",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-gait-definitions.html#Observation.interpretation",
+          "type": "choice",
+          "options": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
+            "display": "Normal|Review|Refer"
+          },
           "item": [
             {
               "linkId": "10.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-abdomen-definitions.html#Observation.interpretation",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-gait-definitions.html#Observation.interpretation",
+              "text": "Outcome",
               "type": "open-choice"
             },
             {
               "linkId": "10.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-abdomen-definitions.html#Observation.comment",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-gait-definitions.html#Observation.comment",
+              "text": "Comments",
               "type": "text"
             }
           ]
@@ -322,15 +363,22 @@
       "item": [
         {
           "linkId": "11.1",
-          "type": "question",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-skin-definitions.html#Observation.interpretation",
+          "type": "choice",
+          "options": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
+            "display": "Normal|Review|Refer"
+          },
           "item": [
             {
               "linkId": "11.1.1",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-skin-definitions.html#Observation.interpretation",
+              "text": "Outcome",
               "type": "open-choice"
             },
             {
               "linkId": "11.1.2",
+              "text": "Comments",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-skin-definitions.html#Observation.comment",
               "type": "text"
             }
@@ -351,15 +399,22 @@
       "item": [
         {
           "linkId": "12.1",
-          "type": "question",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-oral-health-definitions.html#Observation.interpretation",
+          "type": "choice",
+          "options": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
+            "display": "Normal|Review|Refer"
+          },
           "item": [
             {
               "linkId": "12.1.1",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-oral-health-definitions.html#Observation.interpretation",
+              "text": "Outcome",
               "type": "open-choice"
             },
             {
               "linkId": "12.1.2",
+              "text": "Comments",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-oral-health-definitions.html#Observation.comment",
               "type": "text"
             }
@@ -377,27 +432,33 @@
         }
       ],
       "text": "Immunisation completed",
-      "type": "string"
+      "type": "open-choice",
+      "options": {
+        "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-completion-status-display-1",
+        "display": "Yes|No"
+      }
     },
     {
       "linkId": "14",
-      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.individual",
       "text": "Examiner",
       "type": "group",
       "item": [
         {
           "linkId": "14.1",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.type",
           "text": "Designation",
-          "type": "choice"
+          "type": "open-choice"
         },
         {
           "linkId": "14.2",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.location.location",
           "text": "Venue",
           "type": "string"
         },
         {
           "linkId": "14.3",
           "text": "Date & Time",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.period",
           "type": "dateTime"
         }
       ]

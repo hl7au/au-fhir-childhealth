@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "ncdhc-hca-18mnths-view-summary",
+  "id": "ncdhc-hca-3year-view-summary",
   "meta": {
     "versionId": "1",
     "lastUpdated": "2019-10-31T00:00:00Z"
@@ -19,18 +19,18 @@
         "meta": {
           "versionId": "1",
           "lastUpdated": "2019-10-31T00:00:00Z",
-          "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-view-hca-18m"
+          "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-view-hca-3yr"
         },
         "status": "final",
         "type": {
           "coding": [
             {
               "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
-              "code": "HEALTHCKASSMT18M",
-              "display": "Health Check Assessment 18 months"
+              "code": "HEALTHCKASSMT34Y",
+              "display": "Health Check Assessment 3-4 yrs"
             }
           ],
-          "text": "Health Check Assessment 18 months"
+          "text": "Health Check Assessment 3-4 yrs"
         },
         "class": {
           "coding": [
@@ -53,7 +53,7 @@
             "display": "Best Practice GP"
           }
         ],
-        "title": "18 Months",
+        "title": "3 Years",
         "confidentiality": "N",
         "attester": [
           {
@@ -66,10 +66,10 @@
         ],
         "section": [
           {
-            "title": "18 Months",            
+            "title": "3 Years",            
             "entry": [
               {
-                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/QuestionnaireResponse/hca-18mnth-qa-en-s1"
+                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/QuestionnaireResponse/hca-3year-qa-en-s1"
               }
             ]
           }   
@@ -380,13 +380,13 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/QuestionnaireResponse/hca-18mnth-qa-en-s1",
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/QuestionnaireResponse/hca-3year-qa-en-s1",
       "resource": {
         "resourceType": "QuestionnaireResponse",
-        "id": "hca-18mnth-qa-en-s1",
+        "id": "hca-3year-qa-en-s1",
         "questionnaire": {
-          "reference": "Questionnaire/hca-18mnth-q-en-s1",
-          "display": "18 Month"
+          "reference": "Questionnaire/hca-3year-q-en-s1",
+          "display": "3 Year"
         },
         "status": "completed",
         "subject": {
@@ -415,7 +415,7 @@
             },
             "answer": [
               {
-                "valueDateTime": "2019-07-07T17:42:00-05:00"
+                "valueDateTime": "2021-02-07T17:42:00-05:00"
               }
             ]
           },
@@ -428,7 +428,7 @@
             },
             "answer": [
               {
-                "valueString": "1 year & 6 months"
+                "valueString": "3 years & 2 months"
               }
             ]
           },
@@ -450,17 +450,7 @@
                       {
                         "id": "4.1.1.1",
                         "linkId": "4.1.1",
-                        "text": "Value",
-                        "answer": [
-                          {
-                            "valueString": "13.5g"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "4.1.2.1",
-                        "linkId": "4.1.2",
-                        "text": "Outcome",
+                        "text": "Assessment Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -472,8 +462,8 @@
                         ]
                       },
                       {
-                        "id": "4.1.3.1",
-                        "linkId": "4.1.3",
+                        "id": "4.1.2.1",
+                        "linkId": "4.1.2",
                         "text": "Comments",
                         "answer": [
                           {
@@ -505,17 +495,7 @@
                       {
                         "id": "5.1.1.1",
                         "linkId": "5.1.1",
-                        "text": "Value",
-                        "answer": [
-                          {
-                            "valueString": "86.3cm"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "5.1.2.1",
-                        "linkId": "5.1.2",
-                        "text": "Outcome",
+                        "text": "Assessment Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -527,8 +507,8 @@
                         ]
                       },
                       {
-                        "id": "5.1.3.1",
-                        "linkId": "5.1.3",
+                        "id": "5.1.2.1",
+                        "linkId": "5.1.2",
                         "text": "Comments",
                         "answer": [
                           {
@@ -560,17 +540,7 @@
                       {
                         "id": "6.1.1.1",
                         "linkId": "6.1.1",
-                        "text": "Value",
-                        "answer": [
-                          {
-                            "valueString": "49.5cm"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "6.1.2.1",
-                        "linkId": "6.1.2",
-                        "text": "Outcome",
+                        "text": "Assessment Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -582,8 +552,8 @@
                         ]
                       },
                       {
-                        "id": "6.1.3.1",
-                        "linkId": "6.1.3",
+                        "id": "6.1.2.1",
+                        "linkId": "6.1.2",
                         "text": "Comments",
                         "answer": [
                           {
@@ -615,7 +585,7 @@
                       {
                         "id": "7.1.1.1",
                         "linkId": "7.1.1",
-                        "text": "Left",
+                        "text": "Assessment Outcome (Left Ear)",
                         "answer": [
                           {
                             "valueCoding": {
@@ -629,7 +599,7 @@
                       {
                         "id": "7.1.2.1",
                         "linkId": "7.1.2",
-                        "text": "Right",
+                        "text": "Assessment Outcome (Right Ear)",
                         "answer": [
                           {
                             "valueCoding": {
@@ -674,7 +644,7 @@
                       {
                         "id": "8.1.1.1",
                         "linkId": "8.1.1",
-                        "text": "Left",
+                        "text": "Assessment Outcome (Left Eye)",
                         "answer": [
                           {
                             "valueCoding": {
@@ -688,7 +658,7 @@
                       {
                         "id": "8.1.2.1",
                         "linkId": "8.1.2",
-                        "text": "Right",
+                        "text": "Assessment Outcome (Right Eye)",
                         "answer": [
                           {
                             "valueCoding": {
@@ -733,7 +703,7 @@
                       {
                         "id": "9.1.1.1",
                         "linkId": "9.1.1",
-                        "text": "Outcome",
+                        "text": "Assessment Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -778,7 +748,7 @@
                       {
                         "id": "10.1.1.1",
                         "linkId": "10.1.1",
-                        "text": "Outcome",
+                        "text": "Assessment Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -823,7 +793,7 @@
                       {
                         "id": "11.1.1.1",
                         "linkId": "11.1.1",
-                        "text": "Outcome",
+                        "text": "Assessment Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -868,7 +838,7 @@
                       {
                         "id": "12.1.1.1",
                         "linkId": "12.1.1",
-                        "text": "Outcome",
+                        "text": "Assessment Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -913,7 +883,7 @@
                       {
                         "id": "13.1.1.1",
                         "linkId": "13.1.1",
-                        "text": "Outcome",
+                        "text": "Assessment Outcome",
                         "answer": [
                           {
                             "valueCoding": {
@@ -943,14 +913,59 @@
           {
             "id": "14.0.0.0",
             "linkId": "14",
+            "text": "Body Mass Index (BMI)",
+            "answer": [
+              {
+                "valueString": "Yes",
+                "item": [
+                  {
+                    "id": "14.1.0.1",
+                    "linkId": "14.1",
+                    "subject": {
+                      "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                    },
+                    "item": [
+                      {
+                        "id": "14.1.1.1",
+                        "linkId": "14.1.1",
+                        "text": "Assessment Outcome",
+                        "answer": [
+                          {
+                            "valueCoding": {
+                              "system": "http://snomed.info/sct",
+                              "code": "17621005",
+                              "display": "Normal"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "14.1.2.1",
+                        "linkId": "14.1.2",
+                        "text": "Comments",
+                        "answer": [
+                          {
+                            "valueString": "Comment goes here"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "15.0.0.0",
+            "linkId": "15",
             "text": "Examiner",
             "answer": [
               {
                 "valueString": "Angelo ROWE",
                 "item": [
                   {
-                    "id": "14.1.0.1",
-                    "linkId": "14.1",
+                    "id": "15.1.0.1",
+                    "linkId": "15.1",
                     "text": "Designation",
                     "subject": {
                       "reference": "Practioner/901a72a8-df75-4484-ac89-ac4923f03b02"
@@ -962,8 +977,8 @@
                     ]
                   },
                   {
-                    "id": "14.1.0.1",
-                    "linkId": "14.2",
+                    "id": "15.1.0.1",
+                    "linkId": "15.2",
                     "text": "Venue",
                     "subject": {
                       "reference": "Encounter/901a72a8-df75-4484-ac89-ac4923f03b02"
@@ -975,15 +990,15 @@
                     ]
                   },
                   {
-                    "id": "14.1.0.1",
-                    "linkId": "14.3",
+                    "id": "15.1.0.1",
+                    "linkId": "15.3",
                     "text": "Date & Time",
                     "subject": {
                       "reference": "Encounter/901a72a8-df75-4484-ac89-ac4923f03b02"
                     },
                     "answer": [
                       {
-                        "valueDateTime": "2019-07-07T11:34:00-05:00"
+                        "valueDateTime": "2021-02-07T11:34:00-05:00"
                       }
                     ]
                   }
@@ -991,8 +1006,7 @@
               }
             ]
           }
-        ]
-      }
+        ]}
     },
     {
       "fullUrl": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",

@@ -17,7 +17,7 @@
   "description": "Question model to represent Newborn Delivery Section of the longitudinal summary",
   "code": [
     {
-      "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-questionnaire-type",
+      "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-questionnaire-type-1",
       "code": "NBDELQ",
       "display": "Newborn Delivery Questionnaire"
     }
@@ -120,6 +120,35 @@
           "linkId": "7.2",
           "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html#Observation.comment",         
           "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "7",
+      "code": [          
+        {
+          "system": "http://snomed.info/sct",
+          "code": "609496007"
+        }
+      ],
+      "text": "Pregnancy Complications",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "7.1",
+          "text": "",                 
+          "item": [
+            {
+              "linkId": "7.1",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html#Observation.value[x]",         
+              "type": "open-choice"
+            },
+            {
+              "linkId": "7.2",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html#Observation.comment",         
+              "type": "text"
+            }
+          ]
         }
       ]
     },

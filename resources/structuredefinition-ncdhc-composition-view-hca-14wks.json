@@ -8,7 +8,7 @@
   "date": "2019-11-01",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "purpose": "To generate a Custom View to represent Health Check Assessment sumarry view",
-  "fhirVersion": "3.0.1",
+  "fhirVersion": "3.0.2",
   "kind": "resource",
   "abstract": false,
   "type": "Composition",
