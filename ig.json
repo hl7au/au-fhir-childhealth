@@ -601,6 +601,12 @@
     "ValueSet/ncdhc-observation-vac-sch-comp-status-1": {
       "base": "ValueSet-ncdhc-observation-vac-sch-comp-status-1.html"
     },
+	"ValueSet/ncdhc-observation-interpretation-display-1": {
+      "base": "ValueSet-ncdhc-observation-interpretation-display-1.html"
+    },
+	"CodeSystem/ncdhc-observation-interpretation-display-1": {
+      "base": "CodeSystem-ncdhc-observation-interpretation-display-1.html"
+    },
     "CodeSystem/ncdhc-audit-subtype-1": {
       "base": "CodeSystem-ncdhc-audit-subtype-1.html"
     },
@@ -752,8 +758,8 @@
       "base": "ncdhc-view-questionnaire-hca-1-4wk-example.html"
     },
     "Questionnaire/hca-6-8wk-q-en-s1": {
-      "source": "ncdhc-view-questionnaire-hca-6-8wks-example.json",
-      "base": "ncdhc-view-questionnaire-hca-6-8wks-example.html"
+      "source": "ncdhc-view-questionnaire-hca-6-8wk-example.json",
+      "base": "ncdhc-view-questionnaire-hca-6-8wk-example.html"
     },
     "Questionnaire/hca-4-9mnth-q-en-s1": {
       "source": "ncdhc-view-questionnaire-hca-4-9mnt-example.json",
@@ -762,6 +768,22 @@
     "Questionnaire/hca-12mnth-q-en-s1": {
       "source": "ncdhc-view-questionnaire-hca-12mnt-example.json",
       "base": "ncdhc-view-questionnaire-hca-12mnt-example.html"
+    },
+    "Questionnaire/hca-18mnth-q-en-s1": {
+      "source": "ncdhc-view-questionnaire-hca-18mnt-example.json",
+      "base": "ncdhc-view-questionnaire-hca-18mnt-example.html"
+    },
+    "Questionnaire/hca-2yr-q-en-s1": {
+      "source": "ncdhc-view-questionnaire-hca-2yr-example.json",
+      "base": "ncdhc-view-questionnaire-hca-2yr-example.html"
+    },
+    "Questionnaire/hca-3yr-q-en-s1": {
+      "source": "ncdhc-view-questionnaire-hca-3yr-example.json",
+      "base": "ncdhc-view-questionnaire-hca-3yr-example.html"
+    },
+    "Questionnaire/hca-4yr-q-en-s1": {
+      "source": "ncdhc-view-questionnaire-hca-4yr-example.json",
+      "base": "ncdhc-view-questionnaire-hca-4yr-example.html"
     },
     "QuestionnaireResponse/hca-sch-nsw-qa-en-s1": {
       "source": "ncdhc-questionnaireresponse-hca-schedule-nsw-example.json",
@@ -831,10 +853,6 @@
       "source": "ncdhc-hca-18mnths-view-summary.json",
       "base": "ncdhc-hca-18mnths-view-summary.html"
     },
-    "Questionnaire/hca-18mnth-q-en-s1": {
-      "source": "ncdhc-view-questionnaire-hca-18mnt-example.json",
-      "base": "ncdhc-view-questionnaire-hca-18mnt-example.html"
-    },
     "QuestionnaireResponse/hca-18mnth-qa-en-s1": {
       "source": "ncdhc-questionnaireresponse-hca18mnt-example.json",
       "base": "ncdhc-questionnaireresponse-hca18mnt-example.html"
@@ -854,6 +872,14 @@
     "Consent/pc0f07d7-425f-4f32-92cd-a8abd2c0fd36": {
       "source": "ncdhc-consent-participation-authrep-example.json",
       "base": "ncdhc-consent-participation-authrep-example.html"
+    },
+	"OperationOutcome/operationoutcome-500-example": {
+      "source": "ncdhc-operationoutcome-500-example.json",
+      "base": "ncdhc-operationoutcome-500-example.html"
+    },
+	"Bundle/operationoutcome-404-bundle-example": {
+      "source": "ncdhc-operationoutcome-bundle-404-example.json",
+      "base": "ncdhc-operationoutcome-bundle-404-example.html"
     },
     "CapabilityStatement/ncdhc-metadata": {
       "base": "capabilitystatement-ncdhc-metadata.html",

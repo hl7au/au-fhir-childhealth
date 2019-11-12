@@ -48,6 +48,12 @@
 				<reference value="StructureDefinition/ncdhc-observation-base"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-encounter"/>
+			</sourceReference>
+		</resource>
 		<!-- Baby and Mother Patient Profile -->
 		<resource>
 			<example value="false"/>
@@ -784,6 +790,18 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-interpretation-display-1"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-observation-interpretation-display-1"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/ncdhc-observation-category-1"/>
 			</sourceReference>
 		</resource>
@@ -994,6 +1012,30 @@
 			<sourceReference>
 				<reference value="Questionnaire/hca-12mnth-q-en-s1"/>
 			</sourceReference>
+		</resource>	
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Questionnaire/hca-18mnth-q-en-s1"/>
+			</sourceReference>
+		</resource>	
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Questionnaire/hca-2yr-q-en-s1"/>
+			</sourceReference>
+		</resource>	
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Questionnaire/hca-3yr-q-en-s1"/>
+			</sourceReference>
+		</resource>	
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Questionnaire/hca-4yr-q-en-s1"/>
+			</sourceReference>
 		</resource>			
 		<resource>
 			<example value="true"/>
@@ -1181,13 +1223,8 @@
 			<sourceReference>
 				<reference value="GraphDefinition/nsw-hc-6-8wks-example"/>
 			</sourceReference>
-		</resource>		
-		  <resource>
-		   <example value="true"/>
-		   <sourceReference>
-						  <reference value="Questionnaire/hca-18mnth-q-en-s1"/>
-		   </sourceReference>
-		 </resource> 
+		</resource>	
+		  
 		 <resource>
 		   <example value="true"/>
 		   <sourceReference>
@@ -1211,6 +1248,18 @@
 		   <example value="true"/>
 		   <sourceReference>
 				<reference value="Bundle/ncdhc-hca-nsw-summary-sample"/>
+		   </sourceReference>
+		 </resource>
+		 <resource>
+		   <example value="true"/>
+		   <sourceReference>
+				<reference value="OperationOutcome/operationoutcome-500-example"/>
+		   </sourceReference>
+		 </resource>
+		 <resource>
+		   <example value="true"/>
+		   <sourceReference>
+				<reference value="Bundle/operationoutcome-404-bundle-example"/>
 		   </sourceReference>
 		 </resource>
 
