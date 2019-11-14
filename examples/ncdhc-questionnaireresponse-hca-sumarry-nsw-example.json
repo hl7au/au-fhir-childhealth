@@ -14,6 +14,9 @@
       "id": "1.0.0.0",
       "linkId": "6",
       "text": "6 month",
+      "subject": {
+        "reference": "Composition/$view-document?type=HEALTHCKASSMT49M&class=HCAVIEW&summary=true&id=14900024-070c-4141-8109-9d9fa34dd24b"
+      },
       "answer": [
         {
           "valueString": "14 Jun 2018 - Dubbo Doctors"
@@ -24,6 +27,9 @@
       "id": "2.0.0.0",
       "linkId": "7",
       "text": "6-8 week",
+      "subject": {
+        "reference": "Composition/$view-document?type=HEALTHCKASSMT68W&class=HCAVIEW&summary=true&id=87900024-070c-4141-8109-9d9fa34dd24b"
+      },
       "answer": [
         {
           "valueString": "8 Mar 2018 - Mt Druitt CHC"
@@ -34,6 +40,9 @@
       "id": "3.0.0.0",
       "linkId": "7",
       "text": "6-8 week",
+      "subject": {
+        "reference": "Composition/$view-document?type=HEALTHCKASSMT68W&class=HCAVIEW&summary=true&id=15900024-070c-4141-8109-9d9fa34dd24b"
+      },
       "answer": [
         {
           "valueString": "4 Mar 2018 - Blacktown CHC"
@@ -44,8 +53,11 @@
       "id": "4.0.0.0",
       "linkId": "8",
       "text": "1-4 week",
+      "subject": {
+        "reference": "Composition/$view-document?type=HEALTHCKASSMT04W&class=HCAVIEW&summary=true&id=49900024-070c-4141-8109-9d9fa34dd24b"
+      },
       "answer": [
-        {
+        {          
           "valueString": "7 Jan 2018 - Blacktown CHC"
         }
       ]

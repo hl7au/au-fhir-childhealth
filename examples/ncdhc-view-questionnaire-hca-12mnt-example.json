@@ -10,7 +10,7 @@
   "url": "http://hl7.org.au/fhir/ch/v1/Questionnaire/hca-12mnth-q-en-s1",
   "version": "hca-12mnth-q-en-s1",
   "title": "Health Check Assessment 12 Months Questionnaire",
-  "experimental": "false",
+  "experimental": false,
   "status": "active",
   "date": "2019-10-21",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",

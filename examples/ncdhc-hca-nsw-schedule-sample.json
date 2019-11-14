@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "ncdhc-hca-nsw-summary-sample",
+  "id": "ncdhc-hca-nsw-schedule-sample",
   "meta": {
     "versionId": "1",
     "lastUpdated": "2019-10-31T00:00:00Z"
@@ -12,10 +12,10 @@
   "type": "document",
   "entry": [
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Composition/780f219f-97a8-486d-99d9-ed631fe4fc57",
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Composition/880f219f-97a8-486d-99d9-ed631fe4fc57",
       "resource": {
         "resourceType": "Composition",
-        "id": "780f219f-97a8-486d-99d9-ed631fe4fc57",
+        "id": "880f219f-97a8-486d-99d9-ed631fe4fc57",
         "meta": {
           "versionId": "1",
           "lastUpdated": "2019-10-31T00:00:00Z",
@@ -26,11 +26,11 @@
           "coding": [
             {
               "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
-              "code": "HCSSUMVW",
+              "code": "HCSSCHEDVW",
               "display": "Health Check Summary"
             }
           ],
-          "text": "Health Check Summary"
+          "text": "Health Check Schedule"
         },
         "class": {
           "coding": [
@@ -53,7 +53,7 @@
             "display": "Best Practice GP"
           }
         ],
-        "title": "Health Check Summary",
+        "title": "Health Check Schedule",
         "confidentiality": "N",
         "attester": [
           {
@@ -66,10 +66,10 @@
         ],
         "section": [
           {
-            "title": "Health Check Summary",
+            "title": "Health Check Schedule",
             "entry": [
               {
-                "reference": "QuestionnaireResponse/hca-sum-nsw-qa-en-s1"
+                "reference": "QuestionnaireResponse/hca-sch-nsw-qa-en-s1"
               }
             ]
           }
@@ -377,15 +377,15 @@
           }
         ]
       }
-    },
+    },    
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/QuestionnaireResponse/hca-sum-nsw-qa-en-s1",
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/QuestionnaireResponse/hca-sch-nsw-qa-en-s1",
       "resource": {
         "resourceType": "QuestionnaireResponse",
-        "id": "hca-sum-nsw-qa-en-s1",
+        "id": "hca-sch-nsw-qa-en-s1",
         "questionnaire": {
-          "reference": "Questionnaire/hca-sum-nsw-q-en-s1",
-          "display": "Health Check Summary"
+          "reference": "Questionnaire/hca-sch-nsw-q-en-s1",
+          "display": "Health Check Schedule"
         },
         "status": "completed",
         "subject": {
@@ -394,53 +394,81 @@
         "item": [
           {
             "id": "1.0.0.0",
-            "linkId": "6",
-            "text": "6 month",
-            "subject": {
-              "reference": "Composition/$view-document?type=HEALTHCKASSMT49M&class=HCAVIEW&summary=true&id=14900024-070c-4141-8109-9d9fa34dd24b"
-            },
+            "linkId": "1",
+            "text": "4 year",
             "answer": [
               {
-                "valueString": "14 Jun 2018 - Dubbo Doctors"
+                "valueString": "Due on 7 Jan 2022"
               }
             ]
           },
           {
             "id": "2.0.0.0",
-            "linkId": "7",
-            "text": "6-8 week",
-            "subject": {
-              "reference": "Composition/$view-document?type=HEALTHCKASSMT68W&class=HCAVIEW&summary=true&id=87900024-070c-4141-8109-9d9fa34dd24b"
-            },
+            "linkId": "2",
+            "text": "3 year",
             "answer": [
               {
-                "valueString": "8 Mar 2018 - Mt Druitt CHC"
+                "valueString": "Due on 7 Jan 2021"
               }
             ]
           },
           {
             "id": "3.0.0.0",
-            "linkId": "7",
-            "text": "6-8 week",
-            "subject": {
-              "reference": "Composition/$view-document?type=HEALTHCKASSMT68W&class=HCAVIEW&summary=true&id=15900024-070c-4141-8109-9d9fa34dd24b"
-            },
+            "linkId": "3",
+            "text": "2 year",
             "answer": [
               {
-                "valueString": "4 Mar 2018 - Blacktown CHC"
+                "valueString": "Due on 7 Jan 2020"
               }
             ]
           },
           {
             "id": "4.0.0.0",
-            "linkId": "8",
-            "text": "1-4 week",
-            "subject": {
-              "reference": "Composition/$view-document?type=HEALTHCKASSMT04W&class=HCAVIEW&summary=true&id=49900024-070c-4141-8109-9d9fa34dd24b"
-            },
+            "linkId": "4",
+            "text": "18 month",
             "answer": [
               {
-                "valueString": "7 Jan 2018 - Blacktown CHC"
+                "valueString": "Due on 7 Jul 2019"
+              }
+            ]
+          },
+          {
+            "id": "5.0.0.0",
+            "linkId": "5",
+            "text": "12 month",
+            "answer": [
+              {
+                "valueString": "Due on 7 Jan 2019"
+              }
+            ]
+          },
+          {
+            "id": "6.0.0.0",
+            "linkId": "6",
+            "text": "6 month",
+            "answer": [
+              {
+                "valueString": "Due on 7 Jul 2018"
+              }
+            ]
+          },
+          {
+            "id": "7.0.0.0",
+            "linkId": "7",
+            "text": "6-8 week",
+            "answer": [
+              {
+                "valueString": "Due on 7 Mar 2018"
+              }
+            ]
+          },
+          {
+            "id": "8.0.0.0",
+            "linkId": "8",
+            "text": "1-4 week",
+            "answer": [
+              {
+                "valueString": "Due on 14 Jan 2018"
               }
             ]
           }
