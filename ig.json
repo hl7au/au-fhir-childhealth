@@ -601,10 +601,16 @@
     "ValueSet/ncdhc-observation-vac-sch-comp-status-1": {
       "base": "ValueSet-ncdhc-observation-vac-sch-comp-status-1.html"
     },
-	"ValueSet/ncdhc-observation-interpretation-display-1": {
+    "ValueSet/ncdhc-observation-interpretation-display-1": {
       "base": "ValueSet-ncdhc-observation-interpretation-display-1.html"
     },
-	"CodeSystem/ncdhc-observation-interpretation-display-1": {
+    "ValueSet/ncdhc-observation-completion-status-display-1": {
+      "base": "ValueSet-ncdhc-observation-completion-status-display-1.html"
+    },
+    "CodeSystem/ncdhc-observation-completion-status-display-1": {
+      "base": "CodeSystem-ncdhc-observation-completion-status-display-1.html"
+    },
+    "CodeSystem/ncdhc-observation-interpretation-display-1": {
       "base": "CodeSystem-ncdhc-observation-interpretation-display-1.html"
     },
     "CodeSystem/ncdhc-audit-subtype-1": {
@@ -849,6 +855,10 @@
       "source": "ncdhc-hca-nsw-summary-sample.json",
       "base": "ncdhc-hca-nsw-summary-sample.html"
     },
+    "Bundle/ncdhc-hca-nsw-schedule-sample": {
+      "source": "ncdhc-hca-nsw-schedule-sample.json",
+      "base": "ncdhc-hca-nsw-schedule-sample.html"
+    },
     "Bundle/ncdhc-hca-18mnths-view-summary": {
       "source": "ncdhc-hca-18mnths-view-summary.json",
       "base": "ncdhc-hca-18mnths-view-summary.html"
@@ -873,11 +883,11 @@
       "source": "ncdhc-consent-participation-authrep-example.json",
       "base": "ncdhc-consent-participation-authrep-example.html"
     },
-	"OperationOutcome/operationoutcome-500-example": {
+    "OperationOutcome/operationoutcome-500-example": {
       "source": "ncdhc-operationoutcome-500-example.json",
       "base": "ncdhc-operationoutcome-500-example.html"
     },
-	"Bundle/operationoutcome-404-bundle-example": {
+    "Bundle/operationoutcome-404-bundle-example": {
       "source": "ncdhc-operationoutcome-bundle-404-example.json",
       "base": "ncdhc-operationoutcome-bundle-404-example.html"
     },
