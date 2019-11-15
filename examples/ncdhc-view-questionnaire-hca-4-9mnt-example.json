@@ -251,30 +251,32 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "7352004"
+          "code": "363991003"
         }
       ],
-      "text": "Fontanelles",
+      "text": "Ears",
       "type": "group",
       "item": [
         {
           "linkId": "8.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-sutures-fontanelles-definitions.html#Observation.interpretation",
-          "type": "choice",
-          "options": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
-            "display": "Normal|Review|Refer"
-          },
+          "type": "question",
+          "text": "show details",
           "item": [
             {
               "linkId": "8.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-sutures-fontanelles-definitions.html#Observation.interpretation",
-              "text": "Outcome",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-ears-definitions.html#Observation.component:leftEar.interpretation",
+              "text": "Left",
               "type": "open-choice"
             },
             {
               "linkId": "8.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-sutures-fontanelles-definitions.html#Observation.comment",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-ears-definitions.html#Observation.component:rightEar.interpretation",
+              "text": "Right",
+              "type": "open-choice"
+            },
+            {
+              "linkId": "8.1.3",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-ears-definitions.html#Observation.comment",
               "text": "Comments",
               "type": "text"
             }
@@ -287,10 +289,10 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "363991003"
+          "code": "363926002"
         }
       ],
-      "text": "Ears",
+      "text": "Eyes",
       "type": "group",
       "item": [
         {
@@ -300,19 +302,19 @@
           "item": [
             {
               "linkId": "9.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-ears-definitions.html#Observation.component:leftEar.interpretation",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-eyes-definitions.html#Observation.component:leftEyeAssessment.interpretation",
               "text": "Left",
               "type": "open-choice"
             },
             {
               "linkId": "9.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-ears-definitions.html#Observation.component:rightEar.interpretation",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-eyes-definitions.html#Observation.component:rightEyeAssessment.interpretation",
               "text": "Right",
               "type": "open-choice"
             },
             {
               "linkId": "9.1.3",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-ears-definitions.html#Observation.comment",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-eyes-definitions.html#Observation.comment",
               "text": "Comments",
               "type": "text"
             }
@@ -325,32 +327,30 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "363926002"
+          "code": "364674008"
         }
       ],
-      "text": "Eyes",
+      "text": "Development",
       "type": "group",
       "item": [
         {
           "linkId": "10.1",
-          "type": "question",
-          "text": "show details",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-development-definitions.html#Observation.interpretation",
+          "type": "choice",
+          "options": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
+            "display": "Normal|Review|Refer"
+          },
           "item": [
             {
               "linkId": "10.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-eyes-definitions.html#Observation.component:leftEyeAssessment.interpretation",
-              "text": "Left",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-development-definitions.html#Observation.interpretation",
+              "text": "Outcome",
               "type": "open-choice"
             },
             {
               "linkId": "10.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-eyes-definitions.html#Observation.component:rightEyeAssessment.interpretation",
-              "text": "Right",
-              "type": "open-choice"
-            },
-            {
-              "linkId": "10.1.3",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-eyes-definitions.html#Observation.comment",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-development-definitions.html#Observation.comment",
               "text": "Comments",
               "type": "text"
             }
@@ -363,30 +363,32 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "249390006"
+          "code": "249237009"
         }
       ],
-      "text": "Mouth Palate",
+      "text": "Testes fully descended",
       "type": "group",
       "item": [
         {
           "linkId": "11.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-mouth-palate-definitions.html#Observation.interpretation",
-          "type": "choice",
-          "options": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
-            "display": "Normal|Review|Refer"
-          },
+          "type": "question",
+          "text": "show details",
           "item": [
             {
               "linkId": "11.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-mouth-palate-definitions.html#Observation.interpretation",
-              "text": "Outcome",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-testes-fully-descended-definitions.html#Observation.component:StructureLeftTestis.interpretation",
+              "text": "Left",
               "type": "open-choice"
             },
             {
               "linkId": "11.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-mouth-palate-definitions.html#Observation.comment",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-testes-fully-descended-definitions.html#Observation.component:StructureRightTestis.interpretation",
+              "text": "Right",
+              "type": "open-choice"
+            },
+            {
+              "linkId": "11.1.3",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-testes-fully-descended-definitions.html#Observation.comment",
               "text": "Comments",
               "type": "text"
             }
@@ -399,15 +401,15 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "70337006"
+          "code": "364204002"
         }
       ],
-      "text": "Cardiovascular",
+      "text": "Genitalia",
       "type": "group",
       "item": [
         {
           "linkId": "12.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-cardiovascular-dr-definitions.html#Observation.interpretation",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-genitalia-definitions.html#Observation.interpretation",
           "type": "choice",
           "options": {
             "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
@@ -416,13 +418,13 @@
           "item": [
             {
               "linkId": "12.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-cardiovascular-dr-definitions.html#Observation.interpretation",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-genitalia-definitions.html#Observation.interpretation",
               "text": "Outcome",
               "type": "open-choice"
             },
             {
               "linkId": "12.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-cardiovascular-dr-definitions.html#Observation.comment",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-genitalia-definitions.html#Observation.comment",
               "text": "Comments",
               "type": "text"
             }
@@ -435,15 +437,15 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "87572000"
+          "code": "364528001"
         }
       ],
-      "text": "Reflexes",
+      "text": "Skin",
       "type": "group",
       "item": [
         {
           "linkId": "13.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-reflexes-definitions.html#Observation.interpretation",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-skin-definitions.html#Observation.interpretation",
           "type": "choice",
           "options": {
             "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
@@ -452,14 +454,14 @@
           "item": [
             {
               "linkId": "13.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-reflexes-definitions.html#Observation.interpretation",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-skin-definitions.html#Observation.interpretation",
               "text": "Outcome",
               "type": "open-choice"
             },
             {
               "linkId": "13.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-reflexes-definitions.html#Observation.comment",
               "text": "Comments",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-skin-definitions.html#Observation.comment",
               "type": "text"
             }
           ]
@@ -471,32 +473,30 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "67316000"
+          "code": "250100005"
         }
       ],
-      "text": "Femoral Pulse",
+      "text": "Hips",
       "type": "group",
       "item": [
         {
           "linkId": "14.1",
-          "text": "show details",
-          "type": "question",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-hips-definitions.html#Observation.interpretation",
+          "type": "choice",
+          "options": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
+            "display": "Normal|Review|Refer"
+          },
           "item": [
             {
               "linkId": "14.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-femoral-pulses-definitions.html#Observation.component:leftFemoralPulses.interpretation",
-              "text": "Left",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-hips-definitions.html#Observation.interpretation",
+              "text": "Outcome",
               "type": "open-choice"
             },
             {
               "linkId": "14.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-femoral-pulses-definitions.html#Observation.component:rightFemoralPulses.interpretation",
-              "text": "Right",
-              "type": "open-choice"
-            },
-            {
-              "linkId": "14.1.3",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-femoral-pulses-definitions.html#Observation.comment",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-hips-definitions.html#Observation.comment",
               "text": "Comments",
               "type": "text"
             }
@@ -509,296 +509,6 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "364674008"
-        }
-      ],
-      "text": "Development",
-      "type": "group",
-      "item": [
-        {
-          "linkId": "15.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-development-definitions.html#Observation.interpretation",
-          "type": "choice",
-          "options": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
-            "display": "Normal|Review|Refer"
-          },
-          "item": [
-            {
-              "linkId": "15.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-development-definitions.html#Observation.interpretation",
-              "text": "Outcome",
-              "type": "open-choice"
-            },
-            {
-              "linkId": "15.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-development-definitions.html#Observation.comment",
-              "text": "Comments",
-              "type": "text"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "linkId": "16",
-      "code": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "364594006"
-        }
-      ],
-      "text": "Umbilicus",
-      "type": "group",
-      "item": [
-        {
-          "linkId": "16.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-umbilicus-definitions.html#Observation.interpretation",
-          "type": "choice",
-          "options": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
-            "display": "Normal|Review|Refer"
-          },
-          "item": [
-            {
-              "linkId": "16.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-umbilicus-definitions.html#Observation.interpretation",
-              "text": "Outcome",
-              "type": "open-choice"
-            },
-            {
-              "linkId": "16.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-umbilicus-definitions.html#Observation.comment",
-              "text": "Comments",
-              "type": "text"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "linkId": "17",
-      "code": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "249237009"
-        }
-      ],
-      "text": "Testes fully descended",
-      "type": "group",
-      "item": [
-        {
-          "linkId": "17.1",
-          "type": "question",
-          "text": "show details",
-          "item": [
-            {
-              "linkId": "17.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-testes-fully-descended-definitions.html#Observation.component:StructureLeftTestis.interpretation",
-              "text": "Left",
-              "type": "open-choice"
-            },
-            {
-              "linkId": "17.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-testes-fully-descended-definitions.html#Observation.component:StructureRightTestis.interpretation",
-              "text": "Right",
-              "type": "open-choice"
-            },
-            {
-              "linkId": "17.1.3",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-testes-fully-descended-definitions.html#Observation.comment",
-              "text": "Comments",
-              "type": "text"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "linkId": "18",
-      "code": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "364204002"
-        }
-      ],
-      "text": "Genitalia",
-      "type": "group",
-      "item": [
-        {
-          "linkId": "18.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-genitalia-definitions.html#Observation.interpretation",
-          "type": "choice",
-          "options": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
-            "display": "Normal|Review|Refer"
-          },
-          "item": [
-            {
-              "linkId": "18.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-genitalia-definitions.html#Observation.interpretation",
-              "text": "Outcome",
-              "type": "open-choice"
-            },
-            {
-              "linkId": "18.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-genitalia-definitions.html#Observation.comment",
-              "text": "Comments",
-              "type": "text"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "linkId": "19",
-      "code": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "250100005"
-        }
-      ],
-      "text": "Anus",
-      "type": "group",
-      "item": [
-        {
-          "linkId": "19.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-anus-definitions.html#Observation.interpretation",
-          "type": "choice",
-          "options": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
-            "display": "Normal|Review|Refer"
-          },
-          "item": [
-            {
-              "linkId": "19.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-anus-definitions.html#Observation.interpretation",
-              "text": "Outcome",
-              "type": "open-choice"
-            },
-            {
-              "linkId": "19.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-anus-definitions.html#Observation.comment",
-              "text": "Comments",
-              "type": "text"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "linkId": "20",
-      "code": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "364528001"
-        }
-      ],
-      "text": "Skin",
-      "type": "group",
-      "item": [
-        {
-          "linkId": "20.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-skin-definitions.html#Observation.interpretation",
-          "type": "choice",
-          "options": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
-            "display": "Normal|Review|Refer"
-          },
-          "item": [
-            {
-              "linkId": "20.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-skin-definitions.html#Observation.interpretation",
-              "text": "Outcome",
-              "type": "open-choice"
-            },
-            {
-              "linkId": "20.1.2",
-              "text": "Comments",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-skin-definitions.html#Observation.comment",
-              "type": "text"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "linkId": "21",
-      "code": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "250100005"
-        }
-      ],
-      "text": "Hips",
-      "type": "group",
-      "item": [
-        {
-          "linkId": "21.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-hips-definitions.html#Observation.interpretation",
-          "type": "choice",
-          "options": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
-            "display": "Normal|Review|Refer"
-          },
-          "item": [
-            {
-              "linkId": "21.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-hips-definitions.html#Observation.interpretation",
-              "text": "Outcome",
-              "type": "open-choice"
-            },
-            {
-              "linkId": "21.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-hips-definitions.html#Observation.comment",
-              "text": "Comments",
-              "type": "text"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "linkId": "22",
-      "code": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "364594006"
-        }
-      ],
-      "text": "Abdomen",
-      "type": "group",
-      "item": [
-        {
-          "linkId": "22.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-abdomen-definitions.html#Observation.interpretation",
-          "type": "choice",
-          "options": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
-            "display": "Normal|Review|Refer"
-          },
-          "item": [
-            {
-              "linkId": "22.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-abdomen-definitions.html#Observation.interpretation",
-              "text": "Outcome",
-              "type": "open-choice"
-            },
-            {
-              "linkId": "22.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-abdomen-definitions.html#Observation.comment",
-              "text": "Comments",
-              "type": "text"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "linkId": "23",
-      "code": [
-        {
-          "system": "http://snomed.info/sct",
           "code": "364111005"
         }
       ],
@@ -806,7 +516,7 @@
       "type": "group",
       "item": [
         {
-          "linkId": "23.1",
+          "linkId": "15.1",
           "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-oral-health-definitions.html#Observation.interpretation",
           "type": "choice",
           "options": {
@@ -815,13 +525,13 @@
           },
           "item": [
             {
-              "linkId": "23.1.1",
+              "linkId": "15.1.1",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-oral-health-definitions.html#Observation.interpretation",
               "text": "Outcome",
               "type": "open-choice"
             },
             {
-              "linkId": "23.1.2",
+              "linkId": "15.1.2",
               "text": "Comments",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-oral-health-definitions.html#Observation.comment",
               "type": "text"
@@ -831,7 +541,7 @@
       ]
     },
     {
-      "linkId": "24",
+      "linkId": "16",
       "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-ageaprImmcomp-definitions.html#Observation.valueCodeableConcept:valueCodeableConcept",
       "code": [
         {
@@ -847,24 +557,24 @@
       }
     },
     {
-      "linkId": "25",
+      "linkId": "17",
       "text": "Examiner",
       "type": "group",
       "item": [
         {
-          "linkId": "25.1",
+          "linkId": "17.1",
           "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.type",
           "text": "Designation",
           "type": "open-choice"
         },
         {
-          "linkId": "25.2",
+          "linkId": "17.2",
           "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.location.location",
           "text": "Venue",
           "type": "string"
         },
         {
-          "linkId": "25.3",
+          "linkId": "17.3",
           "text": "Date & Time",
           "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.period",
           "type": "dateTime"
