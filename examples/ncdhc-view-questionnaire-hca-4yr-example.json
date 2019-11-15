@@ -565,49 +565,49 @@
               "type": "text",
               "enableWhen": [
                 {
-                  "question": "9.1",
+                  "question": "17.1.2",
                   "hasAnswer": true
                 }
               ]
             },
             {
-              "linkId": "18.1.3",
+              "linkId": "17.1.3",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-iron-haemoglobin-level-definitions.html#Observation.valueQuantity:valueQuantity",
               "text": "Type",
               "type": "text",
               "enableWhen": [
                 {
-                  "question": "9.1",
+                  "question": "17.1.3",
                   "hasAnswer": true
                 }
               ]
             },
             {
-              "linkId": "18.1.4",
+              "linkId": "17.1.4",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-iron-serum-ferritin-definitions.html#Observation.valueQuantity:valueQuantity",
               "text": "Result",
               "type": "text",
               "enableWhen": [
                 {
-                  "question": "9.1",
+                  "question": "17.1.4",
                   "hasAnswer": true
                 }
               ]
             },
             {
-              "linkId": "18.1.5",
+              "linkId": "17.1.5",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-iron-haemoglobin-level-definitions.html#Observation.code.coding:HaemoglobinLevelSNOMEDCT-AU.display",
               "text": "Result",
               "type": "text",
               "enableWhen": [
                 {
-                  "question": "9.1",
+                  "question": "17.1.5",
                   "hasAnswer": true
                 }
               ]
             },
             {
-              "linkId": "18.1.6",
+              "linkId": "17.1.6",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-iron-haemoglobin-level-definitions.html#Observation.comment",
               "text": "Comments",
               "type": "text"
