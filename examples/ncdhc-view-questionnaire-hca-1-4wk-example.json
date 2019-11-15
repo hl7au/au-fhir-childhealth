@@ -655,7 +655,7 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "250100005"
+          "code": "364154000"
         }
       ],
       "text": "Anus",
@@ -763,7 +763,7 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "364594006"
+          "code": "271911005"
         }
       ],
       "text": "Abdomen",
