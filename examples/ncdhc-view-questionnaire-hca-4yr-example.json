@@ -187,13 +187,13 @@
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vision-tested-monocularly-definitions.html#Observation.component:leftEyeMonocularyTest.value[x]:valueQuantity",
               "text": "Result left 3m",
               "type": "open-choice"
-            },            
+            },
             {
               "linkId": "6.1.5",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vision-tested-monocularly-definitions.html#Observation.component:rightEyeMonocularyTest.value[x]:valueQuantity",
               "text": "Result right 3m",
               "type": "open-choice"
-            },           
+            },
             {
               "linkId": "6.1.6",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vision-tested-monocularly-definitions.html#Observation.interpretation",
@@ -223,8 +223,8 @@
       "item": [
         {
           "linkId": "7.1",
-          "type": "question",
           "text": "Show Details",
+          "type": "question",         
           "item": [
             {
               "linkId": "7.1.1",
@@ -260,9 +260,9 @@
       "type": "group",
       "item": [
         {
-          "linkId": "8.1",
-          "type": "question",
+          "linkId": "8.1",          
           "text": "Show Details",
+          "type": "question",
           "item": [
             {
               "linkId": "8.1.1",
@@ -291,30 +291,37 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "364674008"
+          "code": "252957005"
         }
       ],
-      "text": "Development",
+      "text": "Hearing Check",
       "type": "group",
       "item": [
         {
-          "linkId": "9.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-development-definitions.html#Observation.interpretation",
-          "type": "choice",
-          "options": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
-            "display": "Normal|Review|Refer"
+          "linkId": "9.1",          
+          "text": "Show Details",
+          "type": "question",
+          "initialCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "code": "NA",
+            "display": "not applicable"
           },
           "item": [
             {
               "linkId": "9.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-development-definitions.html#Observation.interpretation",
-              "text": "Outcome",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-hearing-check-definitions.html#Observation.component:PureToneAudiometry.interpretation",
+              "text": "Audiometry",
               "type": "open-choice"
             },
             {
               "linkId": "9.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-development-definitions.html#Observation.comment",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-hearing-check-definitions.html#Observation.component:TympanometryScreen.valueCodeableConcept",
+              "text": "Tympanometry",
+              "type": "open-choice"
+            },
+            {
+              "linkId": "9.1.3",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-hearing-check-definitions.html#Observation.comment",
               "text": "Comments",
               "type": "text"
             }
@@ -327,15 +334,15 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "363836006"
+          "code": "364674008"
         }
       ],
-      "text": "Gait",
+      "text": "Development",
       "type": "group",
       "item": [
         {
           "linkId": "10.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-gait-definitions.html#Observation.interpretation",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-development-definitions.html#Observation.interpretation",
           "type": "choice",
           "options": {
             "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
@@ -344,13 +351,13 @@
           "item": [
             {
               "linkId": "10.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-gait-definitions.html#Observation.interpretation",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-development-definitions.html#Observation.interpretation",
               "text": "Outcome",
               "type": "open-choice"
             },
             {
               "linkId": "10.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-gait-definitions.html#Observation.comment",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-development-definitions.html#Observation.comment",
               "text": "Comments",
               "type": "text"
             }
@@ -363,15 +370,15 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "364528001"
+          "code": "363836006"
         }
       ],
-      "text": "Skin",
+      "text": "Gait",
       "type": "group",
       "item": [
         {
           "linkId": "11.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-skin-definitions.html#Observation.interpretation",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-gait-definitions.html#Observation.interpretation",
           "type": "choice",
           "options": {
             "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
@@ -380,14 +387,14 @@
           "item": [
             {
               "linkId": "11.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-skin-definitions.html#Observation.interpretation",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-gait-definitions.html#Observation.interpretation",
               "text": "Outcome",
               "type": "open-choice"
             },
             {
               "linkId": "11.1.2",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-gait-definitions.html#Observation.comment",
               "text": "Comments",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-skin-definitions.html#Observation.comment",
               "type": "text"
             }
           ]
@@ -399,15 +406,15 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "364111005"
+          "code": "364528001"
         }
       ],
-      "text": "Oral Health",
+      "text": "Skin",
       "type": "group",
       "item": [
         {
           "linkId": "12.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-oral-health-definitions.html#Observation.interpretation",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-skin-definitions.html#Observation.interpretation",
           "type": "choice",
           "options": {
             "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
@@ -416,12 +423,48 @@
           "item": [
             {
               "linkId": "12.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-oral-health-definitions.html#Observation.interpretation",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-skin-definitions.html#Observation.interpretation",
               "text": "Outcome",
               "type": "open-choice"
             },
             {
               "linkId": "12.1.2",
+              "text": "Comments",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-skin-definitions.html#Observation.comment",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "13",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "364111005"
+        }
+      ],
+      "text": "Oral Health",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "13.1",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-oral-health-definitions.html#Observation.interpretation",
+          "type": "choice",
+          "options": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-display-1",
+            "display": "Normal|Review|Refer"
+          },
+          "item": [
+            {
+              "linkId": "13.1.1",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-oral-health-definitions.html#Observation.interpretation",
+              "text": "Outcome",
+              "type": "open-choice"
+            },
+            {
+              "linkId": "13.1.2",
               "text": "Comments",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-oral-health-definitions.html#Observation.comment",
               "type": "text"
@@ -431,7 +474,7 @@
       ]
     },
     {
-      "linkId": "13",
+      "linkId": "14",
       "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-ageaprImmcomp-definitions.html#Observation.valueCodeableConcept",
       "code": [
         {
@@ -447,7 +490,7 @@
       }
     },
     {
-      "linkId": "14",
+      "linkId": "15",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -458,7 +501,7 @@
       "type": "group",
       "item": [
         {
-          "linkId": "14.1",
+          "linkId": "16.1",
           "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bmi-definitions.html#Observation.interpretation",
           "type": "question",
           "options": {
@@ -467,19 +510,19 @@
           },
           "item": [
             {
-              "linkId": "14.1.1",
+              "linkId": "16.1.1",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bmi-definitions.html#Observation.valueQuantity:valueQuantity",
               "text": "Value",
               "type": "text"
             },
             {
-              "linkId": "14.1.2",
+              "linkId": "16.1.2",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bmi-definitions.html#Observation.interpretation",
               "text": "Outcome",
               "type": "open-choice"
             },
             {
-              "linkId": "14.1.3",
+              "linkId": "16.1.3",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bmi-definitions.html#Observation.comment",
               "text": "Comments",
               "type": "text"
@@ -489,7 +532,166 @@
       ]
     },
     {
-      "linkId": "15",
+      "linkId": "17",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "42950004"
+        }
+      ],
+      "text": "Iron Testing",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "17.1",          
+          "text": "Show Details",
+          "type": "question",
+          "initialCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "code": "NA",
+            "display": "not applicable"
+          },
+          "item": [
+            {
+              "linkId": "17.1.1",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-iron-definitions.html#Observation.valueCodeableConcept:valueCodeableConcept",
+              "text": "Completed",
+              "type": "open-choice"
+            },
+            {
+              "linkId": "17.1.2",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-iron-serum-ferritin-definitions.html#Observation.code.coding:SerumFerritinSNOMEDCT-AU.display",
+              "text": "Type",
+              "type": "text",
+              "enableWhen": [
+                {
+                  "question": "9.1",
+                  "hasAnswer": true
+                }
+              ]
+            },
+            {
+              "linkId": "18.1.3",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-iron-haemoglobin-level-definitions.html#Observation.valueQuantity:valueQuantity",
+              "text": "Type",
+              "type": "text",
+              "enableWhen": [
+                {
+                  "question": "9.1",
+                  "hasAnswer": true
+                }
+              ]
+            },
+            {
+              "linkId": "18.1.4",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-iron-serum-ferritin-definitions.html#Observation.valueQuantity:valueQuantity",
+              "text": "Result",
+              "type": "text",
+              "enableWhen": [
+                {
+                  "question": "9.1",
+                  "hasAnswer": true
+                }
+              ]
+            },
+            {
+              "linkId": "18.1.5",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-iron-haemoglobin-level-definitions.html#Observation.code.coding:HaemoglobinLevelSNOMEDCT-AU.display",
+              "text": "Result",
+              "type": "text",
+              "enableWhen": [
+                {
+                  "question": "9.1",
+                  "hasAnswer": true
+                }
+              ]
+            },
+            {
+              "linkId": "18.1.6",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-iron-haemoglobin-level-definitions.html#Observation.comment",
+              "text": "Comments",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "19",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "14369007"
+        }
+      ],
+      "text": "Deworming",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "19.1",         
+          "text": "Show Details",
+          "type": "question",
+          "initialCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "code": "NA",
+            "display": "not applicable"
+          },
+          "item": [
+            {
+              "linkId": "19.1.1",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/branches/master/StructureDefinition-ncdhc-observation-deworming-definitions.html#Observation.valueCodeableConcept:valueCodeableConcept",
+              "text": "Medication Given",
+              "type": "open-choice"
+            },
+            {
+              "linkId": "19.1.2",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/branches/master/StructureDefinition-ncdhc-observation-deworming-definitions.html#Observation.comment",
+              "text": "Comments",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "20",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "313042009"
+        }
+      ],
+      "text": "Flouride Varnish",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "20.1",          
+          "text": "Show Details",
+          "type": "question",
+          "initialCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "code": "NA",
+            "display": "not applicable"
+          },
+          "item": [
+            {
+              "linkId": "20.1.1",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/branches/master/StructureDefinition-ncdhc-observation-fluoride-varnish-definitions.html#Observation.value[x]:valueCodeableConcept",
+              "text": "Fluoride applied",
+              "type": "open-choice"
+            },
+            {
+              "linkId": "20.1.2",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/branches/master/StructureDefinition-ncdhc-observation-fluoride-varnish-definitions.html#Observation.comment",
+              "text": "Comments",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "21",
       "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-ageaprImmcomp-definitions.html#Observation.valueCodeableConcept",
       "code": [
         {
@@ -505,7 +707,7 @@
       }
     },
     {
-      "linkId": "16",
+      "linkId": "22",
       "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-ageaprImmcomp-definitions.html#Observation.valueCodeableConcept",
       "code": [
         {
@@ -521,24 +723,24 @@
       }
     },
     {
-      "linkId": "17",
+      "linkId": "23",
       "text": "Examiner",
       "type": "group",
       "item": [
         {
-          "linkId": "17.1",
+          "linkId": "23.1",
           "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.type",
           "text": "Designation",
           "type": "open-choice"
         },
         {
-          "linkId": "17.2",
+          "linkId": "23.2",
           "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.location.location",
           "text": "Venue",
           "type": "string"
         },
         {
-          "linkId": "17.3",
+          "linkId": "23.3",
           "text": "Date & Time",
           "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.period",
           "type": "dateTime"
