@@ -540,6 +540,12 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-child-registration" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-riskfactor" />
 			</sourceReference>
 		</resource>

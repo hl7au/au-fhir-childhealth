@@ -484,6 +484,10 @@
       "base": "StructureDefinition-ncdhc-composition-rep-registration.html",
       "defns": "StructureDefinition-ncdhc-composition-rep-registration-definitions.html"
     },
+	"StructureDefinition/ncdhc-composition-child-registration": {
+      "base": "StructureDefinition-ncdhc-composition-child-registration.html",
+      "defns": "StructureDefinition-ncdhc-composition-child-registration-definitions.html"
+    },
     "ValueSet/apgar-score-type": {
       "base": "ValueSet-apgar-score-type.html"
     },
