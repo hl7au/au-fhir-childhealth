@@ -50,7 +50,6 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Method Of Delivery](StructureDefinition-ncdhc-observation-method-of-delivery.html) - Observation profile to record type of birth observed during the birthing procedure 
 * [NCDHC Feeding Status](StructureDefinition-ncdhc-observation-feeding-status.html) - Observation profile to record baby's Feeding Status at Discharge 
 * [NCDHC Blood Spot Screen](StructureDefinition-ncdhc-observation-bloodspot-screen.html) - Observation profile to record newborn's Blood Spot Screen test status 
-* [NCDHC Hearing Screen](StructureDefinition-ncdhc-observation-hearing-screen.html) - Observation profile to record newborn's Hearing Screen test status
 * [NCDHC Head Shape](StructureDefinition-ncdhc-observation-head-shape.html) - Observation profile to record outcome of the child's head shape assessment
 * [NCDHC Fontanelles, Sutures](StructureDefinition-ncdhc-observation-sutures-fontanelles.html) - Observation profile to record outcome of the child's fontanelles, sutures assessment
 * [NCDHC Eyes Monocularly Tested (Right, Left)](StructureDefinition-ncdhc-observation-vision-tested-monocularly.html) - Observation profile to record outcome of eye test conducted to determine child's vision    
