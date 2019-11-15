@@ -51,7 +51,7 @@
     },
     {
       "id": "4.0.0.0",
-      "linkId": "20",
+      "linkId": "18",
       "text": "Skin",
       "answer": [
         {
@@ -59,14 +59,14 @@
           "item": [
             {
               "id": "4.1.0.1",
-              "linkId": "20.1",
+              "linkId": "18.1",
               "subject": {
                 "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
               },
               "item": [
                 {
                   "id": "4.1.1.1",
-                  "linkId": "20.1.1",
+                  "linkId": "18.1.1",
                   "text": "Outcome",
                   "answer": [
                     {
@@ -80,7 +80,7 @@
                 },
                 {
                   "id": "4.1.2.1",
-                  "linkId": "20.1.2",
+                  "linkId": "18.1.2",
                   "text": "Comments",
                   "answer": [
                     {
@@ -560,22 +560,22 @@
     {
       "id": "14.0.0.0",
       "linkId": "13",
-      "text": "Reflexes",
+      "text": "Femoral Pulse",
       "answer": [
         {
-          "valueString": "Normal",
+          "valueString": "Show Details",
           "item": [
             {
               "id": "14.1.0.1",
               "linkId": "13.1",
               "subject": {
-                "reference": "Observation/071a72a8-df75-4484-ac89-ac4923f03b81"
+                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
               },
               "item": [
                 {
                   "id": "14.1.1.1",
                   "linkId": "13.1.1",
-                  "text": "Outcome",
+                  "text": "Left",
                   "answer": [
                     {
                       "valueCoding": {
@@ -589,51 +589,6 @@
                 {
                   "id": "14.1.2.1",
                   "linkId": "13.1.2",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "15.0.0.0",
-      "linkId": "14",
-      "text": "Femoral Pulse",
-      "answer": [
-        {
-          "valueString": "Show Details",
-          "item": [
-            {
-              "id": "15.1.0.1",
-              "linkId": "14.1",
-              "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
-              },
-              "item": [
-                {
-                  "id": "15.1.1.1",
-                  "linkId": "14.1.1",
-                  "text": "Left",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "id": "15.1.2.1",
-                  "linkId": "14.1.2",
                   "text": "Right",
                   "answer": [
                     {
@@ -646,8 +601,8 @@
                   ]
                 },
                 {
-                  "id": "15.1.3.1",
-                  "linkId": "14.1.3",
+                  "id": "14.1.3.1",
+                  "linkId": "13.1.3",
                   "text": "Comments",
                   "answer": [
                     {
@@ -662,9 +617,54 @@
       ]
     },
     {
+      "id": "15.0.0.0",
+      "linkId": "14",
+      "text": "Development",
+      "answer": [
+        {
+          "valueString": "Normal",
+          "item": [
+            {
+              "id": "15.1.0.1",
+              "linkId": "14.1",
+              "subject": {
+                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+              },
+              "item": [
+                {
+                  "id": "15.1.1.1",
+                  "linkId": "14.1.1",
+                  "text": "Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "17621005",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "15.1.2.1",
+                  "linkId": "14.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "16.0.0.0",
       "linkId": "15",
-      "text": "Development",
+      "text": "Umbilicus",
       "answer": [
         {
           "valueString": "Normal",
@@ -709,10 +709,10 @@
     {
       "id": "17.0.0.0",
       "linkId": "16",
-      "text": "Umbilicus",
+      "text": "Testes fully descended",
       "answer": [
         {
-          "valueString": "Normal",
+          "valueString": "Not applicable",
           "item": [
             {
               "id": "17.1.0.1",
@@ -724,51 +724,6 @@
                 {
                   "id": "17.1.1.1",
                   "linkId": "16.1.1",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "id": "17.1.2.1",
-                  "linkId": "16.1.2",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "18.0.0.0",
-      "linkId": "17",
-      "text": "Testes fully descended",
-      "answer": [
-        {
-          "valueString": "Not applicable",
-          "item": [
-            {
-              "id": "18.1.0.1",
-              "linkId": "17.1",
-              "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
-              },
-              "item": [
-                {
-                  "id": "18.1.1.1",
-                  "linkId": "17.1.1",
                   "text": "Left",
                   "answer": [
                     {
@@ -781,8 +736,8 @@
                   ]
                 },
                 {
-                  "id": "18.1.2.1",
-                  "linkId": "17.1.2",
+                  "id": "17.1.2.1",
+                  "linkId": "16.1.2",
                   "text": "Right",
                   "answer": [
                     {
@@ -795,8 +750,8 @@
                   ]
                 },
                 {
-                  "id": "18.1.3.1",
-                  "linkId": "17.1.3",
+                  "id": "17.1.3.1",
+                  "linkId": "16.1.3",
                   "text": "Comments",
                   "answer": [
                     {
@@ -811,23 +766,23 @@
       ]
     },
     {
-      "id": "19.0.0.0",
-      "linkId": "18",
+      "id": "18.0.0.0",
+      "linkId": "17",
       "text": "Genitalia",
       "answer": [
         {
           "valueString": "Normal",
           "item": [
             {
-              "id": "19.1.0.1",
-              "linkId": "18.1",
+              "id": "18.1.0.1",
+              "linkId": "17.1",
               "subject": {
                 "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
               },
               "item": [
                 {
-                  "id": "19.1.1.1",
-                  "linkId": "18.1.1",
+                  "id": "18.1.1.1",
+                  "linkId": "17.1.1",
                   "text": "Outcome",
                   "answer": [
                     {
@@ -840,8 +795,8 @@
                   ]
                 },
                 {
-                  "id": "19.1.2.1",
-                  "linkId": "18.1.2",
+                  "id": "18.1.2.1",
+                  "linkId": "17.1.2",
                   "text": "Comments",
                   "answer": [
                     {
@@ -856,36 +811,36 @@
       ]
     },
     {
-      "id": "20.0.0.0",
+      "id": "19.0.0.0",
       "linkId": "19",
-      "text": "Anus",
+      "text": "Hips",
       "answer": [
         {
-          "valueString": "Not available",
+          "valueString": "Normal",
           "item": [
             {
-              "id": "20.1.0.1",
+              "id": "19.1.0.1",
               "linkId": "19.1",
               "subject": {
                 "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
               },
               "item": [
                 {
-                  "id": "20.1.1.1",
+                  "id": "19.1.1.1",
                   "linkId": "19.1.1",
                   "text": "Outcome",
                   "answer": [
                     {
                       "valueCoding": {
-                        "system": "http://hl7.org/fhir/data-absent-reason",
-                        "code": "not-performed",
-                        "display": "Not Performed"
+                        "system": "http://snomed.info/sct",
+                        "code": "17621005",
+                        "display": "Normal"
                       }
                     }
                   ]
                 },
                 {
-                  "id": "20.1.2.1",
+                  "id": "19.1.2.1",
                   "linkId": "19.1.2",
                   "text": "Comments",
                   "answer": [
@@ -901,12 +856,57 @@
       ]
     },  
     {
-      "id": "21.0.0.0",
-      "linkId": "21",
-      "text": "Hips",
+      "id": "20.0.0.0",
+      "linkId": "20",
+      "text": "Abdomen",
       "answer": [
         {
           "valueString": "Normal",
+          "item": [
+            {
+              "id": "20.1.0.1",
+              "linkId": "20.1",
+              "subject": {
+                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+              },
+              "item": [
+                {
+                  "id": "20.1.1.1",
+                  "linkId": "20.1.1",
+                  "text": "Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "17621005",
+                        "display": "Normal"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "20.1.2.1",
+                  "linkId": "20.1.2",
+                  "text": "Comments",
+                  "answer": [
+                    {
+                      "valueString": "Comment goes here"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "21.0.0.0",
+      "linkId": "21",
+      "text": "Immunisation completed",
+      "answer": [
+        {
+          "valueString": "Yes",
           "item": [
             {
               "id": "21.1.0.1",
@@ -944,108 +944,18 @@
           ]
         }
       ]
-    },  
+    },
     {
       "id": "22.0.0.0",
       "linkId": "22",
-      "text": "Abdomen",
-      "answer": [
-        {
-          "valueString": "Normal",
-          "item": [
-            {
-              "id": "22.1.0.1",
-              "linkId": "22.1",
-              "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
-              },
-              "item": [
-                {
-                  "id": "22.1.1.1",
-                  "linkId": "22.1.1",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "id": "22.1.2.1",
-                  "linkId": "22.1.2",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "23.0.0.0",
-      "linkId": "23",
-      "text": "Immunisation completed",
-      "answer": [
-        {
-          "valueString": "Yes",
-          "item": [
-            {
-              "id": "23.1.0.1",
-              "linkId": "23.1",
-              "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
-              },
-              "item": [
-                {
-                  "id": "23.1.1.1",
-                  "linkId": "23.1.1",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "id": "23.1.2.1",
-                  "linkId": "23.1.2",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "24.0.0.0",
-      "linkId": "24",
       "text": "Examiner",
       "answer": [
         {
           "valueString": "Judith NORMAN",
           "item": [
             {
-              "id": "24.1.0.1",
-              "linkId": "24.1",
+              "id": "22.1.0.1",
+              "linkId": "22.1",
               "text": "Designation",
               "subject": {
                 "reference": "Practioner/901a72a8-df75-4484-ac89-ac4923f03b02"
@@ -1057,8 +967,8 @@
               ]
             },
             {
-              "id": "24.1.0.1",
-              "linkId": "24.2",
+              "id": "22.1.0.1",
+              "linkId": "22.2",
               "text": "Venue",
               "subject": {
                 "reference": "Encounter/901a72a8-df75-4484-ac89-ac4923f03b02"
@@ -1070,8 +980,8 @@
               ]
             },
             {
-              "id": "24.1.0.1",
-              "linkId": "24.3",
+              "id": "22.1.0.1",
+              "linkId": "22.3",
               "text": "Date & Time",
               "subject": {
                 "reference": "Encounter/901a72a8-df75-4484-ac89-ac4923f03b02"
