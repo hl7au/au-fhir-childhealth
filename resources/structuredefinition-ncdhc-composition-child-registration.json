@@ -1,0 +1,134 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-composition-child-registration",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-child-registration",
+  "version": "v1.0.0",
+  "name": "NCDHC Child Registration Composition Profile",
+  "title": "NCDHC Rep Registration Composition",
+  "status": "draft",
+  "date": "2019-11-15",
+  "description": "A FHIR document to allow registration of child.",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition",
+        "path": "Composition",
+        "short": "NCDHC Child Registration Composition Profile"
+      },
+      {
+        "id": "Composition.title",
+        "path": "Composition.title",
+        "fixedString": "Register Child"
+      },
+      {
+        "id": "Composition.section",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code.coding.system"
+            },
+            {
+              "type": "value",
+              "path": "code.coding.code"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "2"
+      },
+      {
+        "id": "Composition.section:patient",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "patient",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:patient.title",
+        "path": "Composition.section.title",
+        "fixedString": "Child Patient Details"
+      },
+      {
+        "id": "Composition.section:patient.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:patient.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "LA9949-4"
+      },
+      {
+        "id": "Composition.section:patient.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-baby"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:authRep",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "authRep",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:authRep.title",
+        "path": "Composition.section.title",
+        "fixedString": "Auth Representative Details"
+      },
+      {
+        "id": "Composition.section:authRep.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:authRep.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "45970-1"
+      },
+      {
+        "id": "Composition.section:authRep.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Person",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
