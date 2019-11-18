@@ -873,6 +873,10 @@
       "source": "ncdhc-bundle-document-create-authrep.json",
       "base": "ncdhc-bundle-document-create-authrep.html"
     },
+	"Bundle/ncdhc-bundle-document-create-child": {
+      "source": "ncdhc-bundle-document-create-child.json",
+      "base": "ncdhc-bundle-document-create-child.html"
+    },
     "Bundle/ncdhc-hca-nsw-summary-sample": {
       "source": "ncdhc-hca-nsw-summary-sample.json",
       "base": "ncdhc-hca-nsw-summary-sample.html"

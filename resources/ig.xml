@@ -1270,6 +1270,12 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
+				<reference value="Bundle/ncdhc-bundle-document-create-child" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
 				<reference value="GraphDefinition/nsw-hc-6-8wks-example" />
 			</sourceReference>
 		</resource>
