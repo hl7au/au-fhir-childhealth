@@ -778,6 +778,18 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
+				<reference value="ValueSet/ncdhc-document-action-type-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-document-action-type-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
 				<reference value="CodeSystem/ncdhc-observation-completion-status-display-1" />
 			</sourceReference>
 		</resource>
@@ -864,6 +876,12 @@
 			<example value="false" />
 			<sourceReference>
 				<reference value="OperationDefinition/ncdhc-patient-access" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="OperationDefinition/ncdhc-document-update" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -1056,6 +1074,18 @@
 				<reference value="Questionnaire/hca-4yr-q-en-s1" />
 			</sourceReference>
 		</resource>
+		<resource>
+         <example value="true" />
+         <sourceReference>
+            <reference value="Bundle/ncdhc-hca-4year-view-summary" />
+         </sourceReference>
+      </resource>
+	  <resource>
+         <example value="true" />
+         <sourceReference>
+            <reference value="QuestionnaireResponse/hca-4year-qa-en-s1" />
+         </sourceReference>
+      </resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>

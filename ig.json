@@ -605,6 +605,9 @@
     "ValueSet/ncdhc-observation-vac-sch-comp-status-1": {
       "base": "ValueSet-ncdhc-observation-vac-sch-comp-status-1.html"
     },
+	"ValueSet/ncdhc-ncdhc-document-action-type-1": {
+      "base": "ValueSet-ncdhc-document-action-type-1.html"
+    },
     "ValueSet/ncdhc-observation-interpretation-display-1": {
       "base": "ValueSet-ncdhc-observation-interpretation-display-1.html"
     },
@@ -619,6 +622,9 @@
     },
     "CodeSystem/ncdhc-audit-subtype-1": {
       "base": "CodeSystem-ncdhc-audit-subtype-1.html"
+    },
+	"CodeSystem/ncdhc-ncdhc-document-action-type-1": {
+      "base": "CodeSystem-ncdhc-ncdhc-document-action-type-1.html"
     },
     "CodeSystem/ncdhc-audit-type-1": {
       "base": "CodeSystem-ncdhc-audit-type-1.html"
@@ -823,6 +829,14 @@
       "base": "OperationDefinition-ncdhc-composition-view-document.html",
       "defns": "OperationDefinition-ncdhc-composition-view-document-definitions.html"
     },
+	"QuestionnaireResponse/hca-4year-qa-en-s1": {
+      "source": "ncdhc-questionnaireresponse-hca4yr-example.json",
+      "base": "ncdhc-questionnaireresponse-hca4yr-example.html"
+    },
+	 "Bundle/ncdhc-hca-4year-view-summary": {
+      "source": "ncdhc-hca-4year-view-summary.json",
+      "base": "ncdhc-hca-4year-view-summary.html"
+    }, 
     "OperationDefinition/ncdhc-bundle-upload": {
       "base": "OperationDefinition-ncdhc-bundle-upload.html",
       "defns": "OperationDefinition-ncdhc-bundle-upload-definitions.html"
@@ -830,6 +844,10 @@
     "OperationDefinition/ncdhc-patient-access": {
       "base": "OperationDefinition-ncdhc-patient-access.html",
       "defns": "OperationDefinition-ncdhc-patient-access-definitions.html"
+    },
+	"OperationDefinition/ncdhc-document-update": {
+      "base": "OperationDefinition-ncdhc-document-update.html",
+      "defns": "OperationDefinition-ncdhc-document-update-definitions.html"
     },
     "OperationOutcome/62333608-eb01-40b5-b6c3-daded7910406": {
       "source": "ncdhc-operationoutcome-information-example.json",
