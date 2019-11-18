@@ -75,6 +75,16 @@
         "fixedString": "Health Check Summary"
       },
       {
+        "id": "Composition.section.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Composition.section.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "1418351000168103"
+      },
+      {
         "id": "Composition.section.entry",
         "path": "Composition.section.entry",
         "type": [
