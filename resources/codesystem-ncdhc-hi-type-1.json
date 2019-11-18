@@ -65,6 +65,11 @@
       "definition": "Register Representative"
     },
 	{
+      "code": "REGCHLD",
+      "display": "Register Child",
+      "definition": "Register Child"
+    },
+	{
       "code": "HCSSUMVW",
       "display": "Health Check Summary",
       "definition": "View Health Check Summary based on Jurisdiction"
