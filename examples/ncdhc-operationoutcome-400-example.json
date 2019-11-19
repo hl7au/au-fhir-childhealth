@@ -1,0 +1,18 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "operationoutcome-400-example",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Sorry, the details that you are requesting cannot be displayed at this time. Please try again later.</p>\n    </div>"
+  },
+  "issue": [
+    {
+      "severity": "error",
+      "code": "exception",
+      "details": {
+        "text": "Sorry, the details that you are requesting cannot be displayed at this time. Please try again later."
+      },
+      "diagnostics": "NCDHC-400-12345: The requested action can not be performed by the Data Hub as request failed FHIR validation."
+    }
+  ]
+}

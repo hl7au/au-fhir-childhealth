@@ -1,16 +1,16 @@
 {
     "resourceType": "OperationOutcome",
-    "id": "62333608-eb02-40b5-b6c3-daded7910406",
+    "id": "operationoutcome-401-example",
     "text": {
       "status": "additional",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>The requested action can not be performed by the Data Hub due to authentication error</p>\n    </div>"
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Sorry, you're not authorised to access this page.</p>\n    </div>"
     },
     "issue": [
       {
         "severity": "error",
         "code": "security",
         "details": {
-          "text": "The requested action can not be performed by the Data Hub due to authentication error"
+          "text": "Sorry, you're not authorised to access this page."
         },
         "diagnostics": "NCDHC-401-12345: The requested action can not be performed by the Data Hub due to authentication error"
       }

@@ -1,0 +1,18 @@
+{
+    "resourceType": "OperationOutcome",
+    "id": "operationoutcome-405-example",
+    "text": {
+      "status": "additional",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Sorry, We are experiencing technical difficulties at this time. Please try again later.</p>\n    </div>"
+    },
+    "issue": [
+      {
+        "severity": "warning",
+        "code": "not-supported",
+        "details": {
+          "text": "Sorry, We are experiencing technical difficulties at this time. Please try again later."
+        },
+        "diagnostics": "NCDHC-405-12345: Requested method isn't allowed for this operation."
+      }
+    ]
+  }

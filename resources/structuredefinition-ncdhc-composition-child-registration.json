@@ -76,7 +76,7 @@
       {
         "id": "Composition.section:patient.code.coding.code",
         "path": "Composition.section.code.coding.code",
-        "fixedCode": "45970-1"
+        "fixedCode": "LA9949-4"
       },
       {
         "id": "Composition.section:patient.entry",

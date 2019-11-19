@@ -1,16 +1,16 @@
 {
     "resourceType": "OperationOutcome",
-    "id": "52333608-eb01-40b5-b6c3-daded7910406",
+    "id": "operationoutcome-404-example",
     "text": {
       "status": "additional",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>The requested Patient resource doesn't exist in the Data Hub</p>\n    </div>"
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Sorry, the details that you are requesting are not available at this time. Please try again later.</p>\n    </div>"
     },
     "issue": [
       {
         "severity": "information",
         "code": "not-found",
         "details": {
-          "text": "The requested Patient resource doesn't exist in the Data Hub"
+          "text": "Sorry, the details that you are requesting are not available at this time. Please try again later."
         },
         "diagnostics": "NCDHC-404-12345: No matching Patient resource found with id 62333608-eb01-40b5-b6c3-daded7910406"
       }

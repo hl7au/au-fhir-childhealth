@@ -1,16 +1,16 @@
 {
     "resourceType": "OperationOutcome",
-    "id": "22333608-eb01-40b5-b6c3-daded7910406",
+    "id": "operationoutcome-412-example",
     "text": {
       "status": "additional",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Pre-condition failed - no If-Match header is found in the request</p>\n    </div>"
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Sorry, the details that you are requesting cannot be displayed at this time. Please try again later.</p>\n    </div>"
     },
     "issue": [
       {
         "severity": "error",
         "code": "required",
-        "details": {
-          "text": "Pre-condition failed - no If-Match header is found in the request"
+        "details":{
+          "text": "Sorry, the details that you are requesting cannot be displayed at this time. Please try again later. "
         },
         "diagnostics": "NCDHC-412-12345: Pre-condition failed - tno If-Match header is found in the request"
       }

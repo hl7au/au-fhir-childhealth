@@ -1,16 +1,16 @@
 {
     "resourceType": "OperationOutcome",
-    "id": "32333608-eb01-40b5-b6c3-daded7910406",
+    "id": "operationoutcome-410-example",
     "text": {
       "status": "additional",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>The requested Patient resource no longer exists in the Data Hub</p>\n    </div>"
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Sorry, we are unable to locate your requested child's details.</p>\n    </div>"
     },
     "issue": [
       {
         "severity": "information",
         "code": "not-found",
         "details": {
-          "text": "The requested Patient resource no longer exists in the Data Hub"
+          "text": "Sorry, we are unable to locate your requested child's details."
         },
         "diagnostics": "NCDHC-410-12345: No matching Patient resource exists with id 62333608-eb01-40b5-b6c3-daded7910406"
       }

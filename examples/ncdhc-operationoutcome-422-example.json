@@ -1,16 +1,16 @@
 {
     "resourceType": "OperationOutcome",
-    "id": "12333608-eb01-40b5-b6c3-daded7910406",
+    "id": "operationoutcome-422-example",
     "text": {
       "status": "additional",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Unprocessable Entity - the proposed resource violated applicable FHIR profiles or server business rules</p>\n    </div>"
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Sorry, the details that you are requesting cannot be displayed at this time. Please try again later.</p>\n    </div>"
     },
     "issue": [
       {
         "severity": "error",
         "code": "invariant", 
         "details": {
-          "text": "Unprocessable Entity - the proposed resource violated applicable FHIR profiles or server business rules"
+          "text": "Sorry, the details that you are requesting cannot be displayed at this time. Please try again later."
         },
         "diagnostics": "NCDHC-422-12345: Unprocessable Entity - the proposed resource violated applicable FHIR profiles or server business rules : $ provide the error details (schema or schematron error)"
       }

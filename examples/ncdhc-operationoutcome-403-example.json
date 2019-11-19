@@ -1,6 +1,6 @@
 {
     "resourceType": "OperationOutcome",
-    "id": "operationoutcome-409-example",
+    "id": "operationoutcome-403-example",
     "text": {
       "status": "additional",
       "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Sorry, you are not authorised to view these details at this time. Please try again later.</p>\n    </div>"
@@ -8,11 +8,11 @@
     "issue": [
       {
         "severity": "warning",
-        "code": "conflict",
+        "code": "forbidden",
         "details": {
           "text": "Sorry, you are not authorised to view these details at this time. Please try again later."
         },
-        "diagnostics": "NCDHC-409-12345: Conflict - the version id provided in the If-Match header does not match"
+        "diagnostics": "NCDHC-403-12345: Forbidden"
       }
     ]
  }
