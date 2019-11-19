@@ -1,3 +1,3 @@
 #### Examples
 
-- [Health Check Assessment View 6-8 Weeks](ncdhc-questionnaireresponse-hca6-8wk-example.html)
+- [Health Check Assessment View 6-8 Weeks](ncdhc-hca-6-8weeks-view-summary.html)

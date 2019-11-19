@@ -1,3 +1,3 @@
 #### Examples
 
-- [Health Check Assessment View 6 Months](ncdhc-questionnaireresponse-hca4-9mnt-example.html)
+- [Health Check Assessment View 6 Months](ncdhc-hca-6mnths-view-summary.html)
