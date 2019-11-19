@@ -1316,7 +1316,56 @@
 			<sourceReference>
 				<reference value="OperationOutcome/operationoutcome-500-example" />
 			</sourceReference>
+		</resource>		               
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-400-example" />
+			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-401-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-404-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-405-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-409-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-410-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-412-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-422-example" />
+			</sourceReference>
+		</resource>
+
 		<resource>
 			<example value="true" />
 			<sourceReference>

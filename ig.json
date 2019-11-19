@@ -912,11 +912,45 @@
     "OperationOutcome/operationoutcome-500-example": {
       "source": "ncdhc-operationoutcome-500-example.json",
       "base": "ncdhc-operationoutcome-500-example.html"
+    },	
+    "OperationOutcome/operationoutcome-400-example": {
+      "source": "ncdhc-operationoutcome-400-example.json",
+      "base": "ncdhc-operationoutcome-400-example.html"
     },
+    "OperationOutcome/operationoutcome-404-example": {
+      "source": "ncdhc-operationoutcome-404-example.json",
+      "base": "ncdhc-operationoutcome-404-example.html"
+    },
+    "OperationOutcome/operationoutcome-401-example": {
+      "source": "ncdhc-operationoutcome-401-example.json",
+      "base": "ncdhc-operationoutcome-401-example.html"
+    },
+    "OperationOutcome/operationoutcome-405-example": {
+      "source": "ncdhc-operationoutcome-405-example.json",
+      "base": "ncdhc-operationoutcome-405-example.html"
+    },
+    "OperationOutcome/operationoutcome-409-example": {
+      "source": "ncdhc-operationoutcome-409-example.json",
+      "base": "ncdhc-operationoutcome-409-example.html"
+    },
+    "OperationOutcome/operationoutcome-412-example": {
+      "source": "ncdhc-operationoutcome-412-example.json",
+      "base": "ncdhc-operationoutcome-412-example.html"
+    },
+    "OperationOutcome/operationoutcome-422-example": {
+      "source": "ncdhc-operationoutcome-422-example.json",
+      "base": "ncdhc-operationoutcome-422-example.html"
+    },
+    "OperationOutcome/operationoutcome-410-example": {
+      "source": "ncdhc-operationoutcome-410-example.json",
+      "base": "ncdhc-operationoutcome-410-example.html"
+    },
+
     "Bundle/operationoutcome-404-bundle-example": {
       "source": "ncdhc-operationoutcome-bundle-404-example.json",
       "base": "ncdhc-operationoutcome-bundle-404-example.html"
     },
+	
     "CapabilityStatement/ncdhc-metadata": {
       "base": "capabilitystatement-ncdhc-metadata.html",
       "defns": "capabilitystatement-ncdhc-metadata-definitions.html"
