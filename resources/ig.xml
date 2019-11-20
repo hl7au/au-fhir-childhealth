@@ -425,6 +425,18 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-estimated-gestation" />
+			</sourceReference>
+		</resource>
+		<!--<resource>
+		  <example value="false"/>
+		  <sourceReference>
+			<reference value="StructureDefinition/ncdhc-immunisation"/>
+		  </sourceReference>
+		</resource>-->
+		<resource>
+			<example value="false" />
+			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-composition-nbdelivery" />
 			</sourceReference>
 		</resource>
@@ -1365,11 +1377,16 @@
 				<reference value="OperationOutcome/operationoutcome-422-example" />
 			</sourceReference>
 		</resource>
-
 		<resource>
 			<example value="true" />
 			<sourceReference>
 				<reference value="Bundle/operationoutcome-404-bundle-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Encounter/ncdhc-encounter-example" />
 			</sourceReference>
 		</resource>
 

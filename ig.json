@@ -213,7 +213,7 @@
       "defns": "StructureDefinition-ncdhc-observation-skin-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-genitalia": {
-      "base": "StructureDefinition-ncdhc-observation-genitalian.html",
+      "base": "StructureDefinition-ncdhc-observation-genitalia.html",
       "defns": "StructureDefinition-ncdhc-observation-genitalia-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-reflexes": {
@@ -484,7 +484,7 @@
       "base": "StructureDefinition-ncdhc-composition-rep-registration.html",
       "defns": "StructureDefinition-ncdhc-composition-rep-registration-definitions.html"
     },
-	"StructureDefinition/ncdhc-composition-child-registration": {
+    "StructureDefinition/ncdhc-composition-child-registration": {
       "base": "StructureDefinition-ncdhc-composition-child-registration.html",
       "defns": "StructureDefinition-ncdhc-composition-child-registration-definitions.html"
     },
@@ -605,7 +605,7 @@
     "ValueSet/ncdhc-observation-vac-sch-comp-status-1": {
       "base": "ValueSet-ncdhc-observation-vac-sch-comp-status-1.html"
     },
-	"ValueSet/ncdhc-ncdhc-document-action-type-1": {
+    "ValueSet/ncdhc-ncdhc-document-action-type-1": {
       "base": "ValueSet-ncdhc-document-action-type-1.html"
     },
     "ValueSet/ncdhc-observation-interpretation-display-1": {
@@ -623,7 +623,7 @@
     "CodeSystem/ncdhc-audit-subtype-1": {
       "base": "CodeSystem-ncdhc-audit-subtype-1.html"
     },
-	"CodeSystem/ncdhc-ncdhc-document-action-type-1": {
+    "CodeSystem/ncdhc-ncdhc-document-action-type-1": {
       "base": "CodeSystem-ncdhc-ncdhc-document-action-type-1.html"
     },
     "CodeSystem/ncdhc-audit-type-1": {
@@ -829,14 +829,14 @@
       "base": "OperationDefinition-ncdhc-composition-view-document.html",
       "defns": "OperationDefinition-ncdhc-composition-view-document-definitions.html"
     },
-	"QuestionnaireResponse/hca-4year-qa-en-s1": {
+    "QuestionnaireResponse/hca-4year-qa-en-s1": {
       "source": "ncdhc-questionnaireresponse-hca4yr-example.json",
       "base": "ncdhc-questionnaireresponse-hca4yr-example.html"
     },
-	 "Bundle/ncdhc-hca-4year-view-summary": {
+    "Bundle/ncdhc-hca-4year-view-summary": {
       "source": "ncdhc-hca-4year-view-summary.json",
       "base": "ncdhc-hca-4year-view-summary.html"
-    }, 
+    },
     "OperationDefinition/ncdhc-bundle-upload": {
       "base": "OperationDefinition-ncdhc-bundle-upload.html",
       "defns": "OperationDefinition-ncdhc-bundle-upload-definitions.html"
@@ -845,7 +845,7 @@
       "base": "OperationDefinition-ncdhc-patient-access.html",
       "defns": "OperationDefinition-ncdhc-patient-access-definitions.html"
     },
-	"OperationDefinition/ncdhc-document-update": {
+    "OperationDefinition/ncdhc-document-update": {
       "base": "OperationDefinition-ncdhc-document-update.html",
       "defns": "OperationDefinition-ncdhc-document-update-definitions.html"
     },
@@ -873,7 +873,7 @@
       "source": "ncdhc-bundle-document-create-authrep.json",
       "base": "ncdhc-bundle-document-create-authrep.html"
     },
-	"Bundle/ncdhc-bundle-document-create-child": {
+    "Bundle/ncdhc-bundle-document-create-child": {
       "source": "ncdhc-bundle-document-create-child.json",
       "base": "ncdhc-bundle-document-create-child.html"
     },
@@ -912,7 +912,7 @@
     "OperationOutcome/operationoutcome-500-example": {
       "source": "ncdhc-operationoutcome-500-example.json",
       "base": "ncdhc-operationoutcome-500-example.html"
-    },	
+    },
     "OperationOutcome/operationoutcome-400-example": {
       "source": "ncdhc-operationoutcome-400-example.json",
       "base": "ncdhc-operationoutcome-400-example.html"
@@ -945,15 +945,17 @@
       "source": "ncdhc-operationoutcome-410-example.json",
       "base": "ncdhc-operationoutcome-410-example.html"
     },
-
     "Bundle/operationoutcome-404-bundle-example": {
       "source": "ncdhc-operationoutcome-bundle-404-example.json",
       "base": "ncdhc-operationoutcome-bundle-404-example.html"
     },
-	
     "CapabilityStatement/ncdhc-metadata": {
       "base": "capabilitystatement-ncdhc-metadata.html",
       "defns": "capabilitystatement-ncdhc-metadata-definitions.html"
+    },
+    "Encounter/ncdhc-encounter-example": {
+      "source": "ncdhc-encounter-example.json",
+      "base": "ncdhc-encounter-example.html"
     }
   }
 }
