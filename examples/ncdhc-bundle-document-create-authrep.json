@@ -254,7 +254,7 @@
         "resourceType": "Consent",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">NCDHC Authorisation Consent By Expected Mother</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">NCDHC Authorisation Consent By Auth Rep</div>"
         },
         "status": "active",
         "category": [
