@@ -216,17 +216,7 @@
       "fullUrl": "urn:uuid:3db74777-fd3d-4d3b-92ec-d405977a11a5",
       "resource": {
         "resourceType": "Device",
-        "id": "3db74777-fd3d-4d3b-92ec-d405977a11a5",
-        "type": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "86184003",
-              "display": "Electrocardiographic monitor and recorder"
-            }
-          ],
-          "text": "ECG"
-        },
+        "id": "3db74777-fd3d-4d3b-92ec-d405977a11a5",        
         "identifier": [
           {
             "type": {
