@@ -71,12 +71,12 @@
       {
         "id": "Composition.section:patient.code.coding.system",
         "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Composition.section:patient.code.coding.code",
         "path": "Composition.section.code.coding.code",
-        "fixedCode": "LA9949-4"
+        "fixedCode": "302147001"
       },
       {
         "id": "Composition.section:patient.entry",
@@ -109,12 +109,12 @@
       {
         "id": "Composition.section:authRep.code.coding.system",
         "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Composition.section:authRep.code.coding.code",
         "path": "Composition.section.code.coding.code",
-        "fixedCode": "45970-1"
+        "fixedCode": "184140000"
       },
       {
         "id": "Composition.section:authRep.entry",

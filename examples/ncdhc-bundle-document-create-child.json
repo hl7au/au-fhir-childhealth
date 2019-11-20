@@ -57,8 +57,8 @@
             "code": {
               "coding": [
                 {
-                  "system": "http://loinc.org",
-                  "code": "45970-1"
+                  "system": "http://snomed.info/sct",
+                  "code": "184140000"
                 }
               ]
             },
@@ -73,8 +73,8 @@
             "code": {
               "coding": [
                 {
-                  "system": "http://loinc.org",
-                  "code": "LA9949-4"
+                  "system": "http://snomed.info/sct",
+                  "code": "302147001"
                 }
               ]
             },

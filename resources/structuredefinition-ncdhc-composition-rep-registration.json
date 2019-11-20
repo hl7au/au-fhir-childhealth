@@ -71,12 +71,12 @@
       {
         "id": "Composition.section:consent.code.coding.system",
         "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Composition.section:consent.code.coding.code",
         "path": "Composition.section.code.coding.code",
-        "fixedCode": "59284-0"
+        "fixedCode": "721914005"
       },
       {
         "id": "Composition.section:consent.entry",
@@ -109,12 +109,12 @@
       {
         "id": "Composition.section:person.code.coding.system",
         "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Composition.section:person.code.coding.code",
         "path": "Composition.section.code.coding.code",
-        "fixedCode": "45970-1"
+        "fixedCode": "184140000"
       },
       {
         "id": "Composition.section:person.entry",
