@@ -17,10 +17,12 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Each Encounter must have:**
 
-1.  a status  
-1.  a SNOMED code which tells you what recorded.
+1.  a status
 1.  a subject (Patient)
-1.  a time indicating when the patient was discharge    
+1.  a period  indicating the start and end time of the encounter.
+1.  a location stating the Venue where the encounter has happend. 
+1.  participant to represent Clinically responsible person 
+1.  serviceProvider to represent Clinically responsible Organisation   
 
 **Profile specific implementation guidance:**
 
@@ -28,12 +30,12 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  Encounter.participant.type=”CALLBCK”
 1.  Encounter.participant.individual (AUBasePractitioner)
 * Clinically responsible Organisation shall be recorded using Encounter.serviceProvider(AUOrganization) 
-* The Venue shall be recorded using Encounter.location.location (Location)
+* The Venue shall be recorded using Encounter.location.location (Location). Use Location.name as the Name of the Venue as used by humans
 
 
 #### Examples
 
-To be added
+- [Health Check Assessment Encounter](ncdhc-encounter-example.html)
 
 [Encounter]: http://hl7.org/fhir/encounter.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible

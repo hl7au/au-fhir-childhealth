@@ -29,6 +29,11 @@
         "short": "Reference to the Baby Patient"
       },
       {
+        "id": "Composition.encounter",
+        "path": "Composition.encounter",
+        "min": 1
+      },
+      {
         "id": "Composition.title",
         "path": "Composition.title",
         "fixedString": "Health Check Assessment Health Interaction"

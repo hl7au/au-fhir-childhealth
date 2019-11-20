@@ -6,4 +6,4 @@
 1.  Composition.encounter.participant.type=”CALLBCK”
 1.  Composition.encounter.participant. individual (AUBasePractitioner)
 * Clinically responsible Organisation shall be recorded using Composition.encounter.serviceProvider(AUOrganization) 
-* The Venue shall be recorded using Composition.encounter.location.location (Location)
+* The Venue shall be recorded using Composition.encounter.location.location (Location). Use Location.name as the Name of the location as used by humans

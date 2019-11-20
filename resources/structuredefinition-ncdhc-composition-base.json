@@ -58,6 +58,7 @@
         "id": "Composition.encounter",
         "path": "Composition.encounter",
         "short": "Provides the details on venue, organization and person who is clinically responsible for the encounter",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
