@@ -20,7 +20,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  a status
 1.  a subject (Patient)
 1.  a period  indicating the start and end time of the encounter.
-1.  a location stating the Venue where the encounter has happend. 
+1.  a location stating the Venue where the encounter has happened. 
 1.  participant to represent Clinically responsible person 
 1.  serviceProvider to represent Clinically responsible Organisation   
 
