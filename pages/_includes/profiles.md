@@ -52,7 +52,9 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Blood Spot Screen](StructureDefinition-ncdhc-observation-bloodspot-screen.html) - Observation profile to record newborn's Blood Spot Screen test status 
 * [NCDHC Head Shape](StructureDefinition-ncdhc-observation-head-shape.html) - Observation profile to record outcome of the child's head shape assessment
 * [NCDHC Fontanelles, Sutures](StructureDefinition-ncdhc-observation-sutures-fontanelles.html) - Observation profile to record outcome of the child's fontanelles, sutures assessment
-* [NCDHC Eyes Monocularly Tested (Right, Left)](StructureDefinition-ncdhc-observation-vision-tested-monocularly.html) - Observation profile to record outcome of eye test conducted to determine child's vision    
+* [NCDHC Eyes Monocularly Tested (Right, Left)](StructureDefinition-ncdhc-observation-vision-tested-monocularly.html) - Observation profile to record outcome of eye test conducted to determine child's vision
+* [NCDHC Visual acuity Test - Left Eye](StructureDefinition-ncdhc-observation-left-eye-visiual-acuity.html) - Observation profile to record outcome of eye Vision Acute Test - Left Eye test
+* [NCDHC Visual acuity Test - Right Eye](StructureDefinition-ncdhc-observation-left-eye-visiual-acuity.html) - Observation profile to record outcome of eye Vision Acute Test - Right Eye test    
 * [NCDHC Eyes (Right/Left)](StructureDefinition-ncdhc-observation-eyes.html) - Observation profile to record outcome of the child's right/left eye assessment  
 * [NCDHC Vision Screen](StructureDefinition-ncdhc-observation-vision-screen.html) - Observation profile to record Vision Screen test result aimed to detect children with vision problems at a young age
 * [NCDHC Ears Right/Left](StructureDefinition-ncdhc-observation-ears.html) - Observation profile to record outcome of the child's right/left ear - visual inspection of pinna, ear canal and ear drum
