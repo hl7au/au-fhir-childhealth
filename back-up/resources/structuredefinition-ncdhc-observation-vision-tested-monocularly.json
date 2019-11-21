@@ -1,0 +1,183 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-vision-tested-monocularly",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vision-tested-monocularly",
+  "version": "v1.0.0",
+  "name": "NCDHC Eyes Monocularly Tested Observation Profile",
+  "title": "NCDHC Eyes Monocularly Tested Observation",
+  "status": "draft",
+  "date": "2019-02-15",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "Eyes Monoculary Test",
+  "purpose": "To record observations on vision test",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "NCDHC Vision Tested Monocularly Observation Profile"
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "patternCodeableConcept": {
+          "text": "This needs to be discussed and finalized"
+        }
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Eyes (Vision Tested Monocularly)",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "252963001"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Reference to the Baby Patient"
+      },
+      {
+        "id": "Observation.effectiveDateTime:effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "sliceName": "effectiveDateTime",
+        "short": "Date Bloodspot Screen Test performed"
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "short": "Person who is clinically responsible for the undetaking of the exam",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
+        "sliceName": "valueCodeableConcept",
+        "short": "To Specify if the test was conducted",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "defaultValueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "443938003"
+            }
+          ]
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-observation-completion-status"
+          }
+        }
+      },
+      {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "short": "Overall outcome of the eye test",
+        "binding": {
+          "strength": "required",
+          "description": "Normal | Review | Refer",
+          "valueSetReference": {
+            "reference": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-observation-interpretation-1"
+          }
+        }
+      },
+      {
+        "id": "Observation.comment",
+        "path": "Observation.comment",
+        "comment": "Additional comments"
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "Observation.component:leftEyeMonocularyTest",
+        "path": "Observation.component",
+        "sliceName": "leftEyeMonocularyTest"
+      },
+      {
+        "id": "Observation.component:leftEyeMonocularyTest.code",
+        "path": "Observation.component.code",
+        "binding": {
+          "strength": "required",
+          "description": "6M | 3M",
+          "valueSetReference": {
+            "reference": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-vision-chart-types"
+          }
+        }
+      },
+      {
+        "id": "Observation.component:leftEyeMonocularyTest.value[x]:valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:rightEyeMonocularyTest",
+        "path": "Observation.component",
+        "sliceName": "rightEyeMonocularyTest"
+      },
+      {
+        "id": "Observation.component:rightEyeMonocularyTest.code",
+        "path": "Observation.component.code",
+        "binding": {
+          "strength": "required",
+          "description": "6M | 3M",
+          "valueSetReference": {
+            "reference": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-vision-chart-types"
+          }
+        }
+      },
+      {
+        "id": "Observation.component:rightEyeMonocularyTest.value[x]:valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      }
+    ]
+  }
+}
