@@ -21,16 +21,6 @@
         "short": "NCDHC OperationOutcome Profile"
       },
       {
-        "id": "OperationOutcome.issue.details.coding",
-        "path": "OperationOutcome.issue.details.coding",
-        "binding": {
-          "strength": "preferred",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/ncdhc-operation-outcome"
-          }
-        }
-      },
-      {
         "id": "OperationOutcome.issue.details.text",
         "extension": [
           {
