@@ -1,0 +1,216 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-left-eye-visiual-acuity",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-left-eye-visiual-acuity",
+  "version": "v1.0.0",
+  "name": "NCDHC Left Eye Visual Acuity Observation Profile",
+  "title": "NCDHC Left Eye Visual Acuity Observation",
+  "status": "draft",
+  "date": "2019-11-22",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "NCDHC Left Eye Visual Acuity test",
+  "purpose": "To record Vision Screen result",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "NCDHC Left Eye Visual Acuity Observation Profile"
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "patternCodeableConcept": {
+          "text": "This needs to be discussed and finalized"
+        }
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Bloospot Screen code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "Observation.code.coding:VisualAcuityLeftEyeSNOMEDCT-AU",
+        "path": "Observation.code.coding",
+        "sliceName": "VisualAcuityLeftEyeSNOMEDCT-AU",
+        "min": 1,
+        "max": "1",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "386708005"
+        }
+      },
+      {
+        "id": "Observation.code.coding:VisualAcuityLeftEyeSNOMEDCT-AU.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:VisualAcuityLeftEyeSNOMEDCT-AU.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "386708005"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Reference to the Baby Patient"
+      },
+      {
+        "id": "Observation.effectiveDateTime:effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "sliceName": "effectiveDateTime",
+        "short": "Date Bloodspot Screen Test performed"
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "short": "Person who is clinically responsible for the undetaking of the exam",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
+        "sliceName": "valueCodeableConcept",
+        "short": "Completed | Not Completed",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-completion-status-1"
+          }
+        }
+      },
+      {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationInterpretation"
+            }
+          ],
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-1"
+          }
+        }
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code.coding.system"
+            },
+            {
+              "type": "value",
+              "path": "code.coding.code"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Visual acuity Test type and Result"
+      },
+      {
+        "id": "Observation.component.value[x]:valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:VisualAcuity3M",
+        "path": "Observation.component",
+        "sliceName": "VisualAcuity3M",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:VisualAcuity3M.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.component:VisualAcuity3M.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "fixedCode": "1368901000168106"
+      },
+      {
+        "id": "Observation.component:VisualAcuity3M.value[x]:valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:VisualAcuity6M",
+        "path": "Observation.component",
+        "sliceName": "VisualAcuity6M",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:VisualAcuity6M.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.component:VisualAcuity6M.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "fixedCode": "1368911000168109"
+      },
+      {
+        "id": "Observation.component:VisualAcuity6M.value[x]:valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      }
+    ]
+  }
+}
