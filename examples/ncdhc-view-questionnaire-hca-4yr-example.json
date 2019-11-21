@@ -172,25 +172,25 @@
             },
             {
               "linkId": "6.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vision-tested-monocularly-definitions.html#Observation.component:leftEyeMonocularyTest.value[x]:valueQuantity",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/branches/master/StructureDefinition-ncdhc-observation-left-eye-visiual-acuity-definitions.html#Observation.component:VisualAcuity6M.valueQuantity:valueQuantity",
               "text": "Result left 6m",
               "type": "text"
             },
             {
               "linkId": "6.1.3",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vision-tested-monocularly-definitions.html#Observation.component:rightEyeMonocularyTest.value[x]:valueQuantity",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/branches/master/StructureDefinition-ncdhc-observation-right-eye-visiual-acuity-definitions.html#Observation.component:VisualAcuity6M.valueQuantity:valueQuantity",
               "text": "Result right 6m",
               "type": "open-choice"
             },
             {
               "linkId": "6.1.4",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vision-tested-monocularly-definitions.html#Observation.component:leftEyeMonocularyTest.value[x]:valueQuantity",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/branches/master/StructureDefinition-ncdhc-observation-left-eye-visiual-acuity-definitions.html#Observation.component:VisualAcuity3M.valueQuantity:valueQuantity",
               "text": "Result left 3m",
               "type": "open-choice"
             },
             {
               "linkId": "6.1.5",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vision-tested-monocularly-definitions.html#Observation.component:rightEyeMonocularyTest.value[x]:valueQuantity",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/branches/master/StructureDefinition-ncdhc-observation-right-eye-visiual-acuity-definitions.html#Observation.component:VisualAcuity3M.valueQuantity:valueQuantity",
               "text": "Result right 3m",
               "type": "open-choice"
             },
