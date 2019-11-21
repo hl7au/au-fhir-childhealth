@@ -140,6 +140,14 @@
       "base": "StructureDefinition-ncdhc-observation-vision-tested-monocularly.html",
       "defns": "StructureDefinition-ncdhc-observation-vision-tested-monocularly-definitions.html"
     },
+	 "StructureDefinition/ncdhc-observation-left-eye-visiual-acuity": {
+      "base": "StructureDefinition-ncdhc-observation-left-eye-visiual-acuity.html",
+      "defns": "StructureDefinition-ncdhc-observation-left-eye-visiual-acuity-definitions.html"
+    },
+	 "StructureDefinition/ncdhc-observation-right-eye-visiual-acuity": {
+      "base": "StructureDefinition-ncdhc-observation-right-eye-visiual-acuity.html",
+      "defns": "StructureDefinition-ncdhc-observation-right-eye-visiual-acuity-definitions.html"
+    },
     "StructureDefinition/ncdhc-observation-vision-screen": {
       "base": "StructureDefinition-ncdhc-observation-vision-screen.html",
       "defns": "StructureDefinition-ncdhc-observation-vision-screen-definitions.html"
@@ -956,6 +964,18 @@
     "Encounter/ncdhc-encounter-example": {
       "source": "ncdhc-encounter-example.json",
       "base": "ncdhc-encounter-example.html"
+    },
+	"Observation/ncdhc-observation-vision-tested-monocularly-example": {
+      "source": "ncdhc-observation-vision-tested-monocularly-example.json",
+      "base": "ncdhc-observation-vision-tested-monocularly-example.html"
+    },
+	"Observation/ncdhc-observation-right-eye-visiual-acuity-example": {
+      "source": "ncdhc-observation-right-eye-visiual-acuity-example.json",
+      "base": "ncdhc-observation-right-eye-visiual-acuity-example.html"
+    },
+	"Observation/ncdhc-observation-left-eye-visiual-acuity-example": {
+      "source": "ncdhc-observation-left-eye-visiual-acuity-example.json",
+      "base": "ncdhc-observation-left-eye-visiual-acuity-example.html"
     }
   }
 }

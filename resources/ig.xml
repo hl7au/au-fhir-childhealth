@@ -202,6 +202,18 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-left-eye-visiual-acuity" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-right-eye-visiual-acuity" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-vision-screen" />
 			</sourceReference>
 		</resource>
@@ -1387,6 +1399,24 @@
 			<example value="true" />
 			<sourceReference>
 				<reference value="Encounter/ncdhc-encounter-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-vision-tested-monocularly-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-right-eye-visiual-acuity-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-left-eye-visiual-acuity-example" />
 			</sourceReference>
 		</resource>
 
