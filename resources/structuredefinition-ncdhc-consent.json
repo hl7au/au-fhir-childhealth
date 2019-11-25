@@ -43,7 +43,7 @@
       {
         "id": "Consent.patient",
         "path": "Consent.patient",
-        "short": "Who the consent applies to. Provide the reference to the mother Patient until the baby is born. Once baby is born, then provide the reference to the Baby patient in the operational Consent.",
+        "short": "Who the consent applies to. Provide the reference to the \"machine processable empty Patient\" until the baby is born. Once baby is born, then provide the reference to the Baby patient in the operational Consent.",
         "type": [
           {
             "code": "Reference",
@@ -99,12 +99,6 @@
         "id": "Consent.actor.role",
         "path": "Consent.actor.role",
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ConsentActorRole"
-            }
-          ],
           "strength": "required",
           "valueSetReference": {
             "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-security-role-type"
