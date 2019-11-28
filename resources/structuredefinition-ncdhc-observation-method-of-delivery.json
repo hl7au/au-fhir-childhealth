@@ -43,26 +43,6 @@
         }
       },
       {
-        "id": "Observation.code.coding:methodOfDeliveryLOINC",
-        "path": "Observation.code.coding",
-        "sliceName": "methodOfDeliveryLOINC",
-        "max": "1",
-        "fixedCoding": {
-          "system": "http://loinc.org",
-          "code": "72149-8"
-        }
-      },
-      {
-        "id": "Observation.code.coding:methodOfDeliveryLOINC.system",
-        "path": "Observation.code.coding.system",
-        "fixedUri": "http://loinc.org"
-      },
-      {
-        "id": "Observation.code.coding:methodOfDeliveryLOINC.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "72149-8"
-      },
-      {
         "id": "Observation.code.coding:methodOfDeliverySNOMED-CT",
         "path": "Observation.code.coding",
         "sliceName": "methodOfDeliverySNOMED-CT",
@@ -70,7 +50,7 @@
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
-          "code": "289258004"
+          "code": "236973005"
         }
       },
       {
@@ -81,7 +61,7 @@
       {
         "id": "Observation.code.coding:methodOfDeliverySNOMED-CT.code",
         "path": "Observation.code.coding.code",
-        "fixedCode": "289258004"
+        "fixedCode": "236973005"
       },
       {
         "id": "Observation.subject",

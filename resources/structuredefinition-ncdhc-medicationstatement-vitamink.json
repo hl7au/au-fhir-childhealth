@@ -28,6 +28,32 @@
         "fixedCode": "completed"
       },
       {
+        "id": "MedicationStatement.medication[x]:medicationCoded",
+        "path": "MedicationStatement.medication[x]",
+        "sliceName": "medicationCoded"
+      },
+      {
+        "id": "MedicationStatement.medication[x]:medicationCoded.coding:vitaminK",
+        "path": "MedicationStatement.medication[x].coding",
+        "sliceName": "vitaminK",
+        "min": 1,
+        "max": "1",
+        "fixedCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "65183007"
+        }
+      },
+      {
+        "id": "MedicationStatement.medication[x]:medicationCoded.coding:vitaminK.system",
+        "path": "MedicationStatement.medication[x].coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "MedicationStatement.medication[x]:medicationCoded.coding:vitaminK.code",
+        "path": "MedicationStatement.medication[x].coding.code",
+        "fixedCode": "65183007"
+      },
+      {
         "id": "MedicationStatement.effective[x]:effectiveDateTime",
         "path": "MedicationStatement.effectiveDateTime",
         "sliceName": "effectiveDateTime",

@@ -57,26 +57,6 @@
         }
       },
       {
-        "id": "Observation.code.coding:BirthComplicationLOINC",
-        "path": "Observation.code.coding",
-        "sliceName": "BirthComplicationLOINC",
-        "max": "1",
-        "fixedCoding": {
-          "system": "http://loinc.org",
-          "code": "73781-7"
-        }
-      },
-      {
-        "id": "Observation.code.coding:BirthComplicationLOINC.system",
-        "path": "Observation.code.coding.system",
-        "fixedUri": "http://loinc.org"
-      },
-      {
-        "id": "Observation.code.coding:BirthComplicationLOINC.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "73781-7"
-      },
-      {
         "id": "Observation.code.coding:BirthComplicationSNOMED",
         "path": "Observation.code.coding",
         "sliceName": "BirthComplicationSNOMED",

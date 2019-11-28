@@ -53,7 +53,7 @@
       {
         "id": "Composition",
         "path": "Composition",
-        "short": "NCDHC Birth Health Interaction Composition Profile"
+        "short": "NCDHC Newborn Delivery Health Interaction Composition Profile"
       },
       {
         "id": "Composition.type",
@@ -67,12 +67,6 @@
           ]
         },
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "DocumentType"
-            }
-          ],
           "strength": "required",
           "description": "Type of Health Interaction."
         }
@@ -210,11 +204,6 @@
         ]
       },
       {
-        "id": "Composition.section:estimatedGestation.section",
-        "path": "Composition.section.section",
-        "max": "0"
-      },
-      {
         "id": "Composition.section:abnormalitiesNotedAtBirth",
         "extension": [
           {
@@ -261,11 +250,6 @@
         ]
       },
       {
-        "id": "Composition.section:abnormalitiesNotedAtBirth.section",
-        "path": "Composition.section.section",
-        "max": "0"
-      },
-      {
         "id": "Composition.section:apgarScore",
         "extension": [
           {
@@ -307,7 +291,6 @@
           ],
           "rules": "closed"
         },
-        "min": 2,
         "max": "3"
       },
       {
@@ -361,11 +344,6 @@
         ]
       },
       {
-        "id": "Composition.section:apgarScore.section",
-        "path": "Composition.section.section",
-        "max": "0"
-      },
-      {
         "id": "Composition.section:medicationsAdministered",
         "extension": [
           {
@@ -409,11 +387,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Composition.section:medicationsAdministered.section",
-        "path": "Composition.section.section",
-        "max": "0"
       },
       {
         "id": "Composition.section:vitalSignsAndMeasurements",
@@ -597,11 +570,6 @@
         ]
       },
       {
-        "id": "Composition.section:maternalMorbidity.section",
-        "path": "Composition.section.section",
-        "max": "0"
-      },
-      {
         "id": "Composition.section:labourAndDelivery",
         "extension": [
           {
@@ -679,11 +647,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Composition.section:labourAndDelivery.section",
-        "path": "Composition.section.section",
-        "max": "0"
       }
     ]
   }

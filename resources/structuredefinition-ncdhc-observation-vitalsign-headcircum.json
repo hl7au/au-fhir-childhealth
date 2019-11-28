@@ -50,7 +50,7 @@
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
-          "code": "169876006"
+          "code": "363812007"
         }
       },
       {
@@ -61,7 +61,7 @@
       {
         "id": "Observation.code.coding:BirthHeadCircumSNOMEDCTAU.code",
         "path": "Observation.code.coding.code",
-        "fixedCode": "169876006"
+        "fixedCode": "363812007"
       },
       {
         "id": "Observation.subject",

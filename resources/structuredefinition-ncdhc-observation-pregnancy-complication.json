@@ -53,16 +53,6 @@
         }
       },
       {
-        "id": "Observation.code.coding:pregnancyComplicationLOINC",
-        "path": "Observation.code.coding",
-        "sliceName": "pregnancyComplicationLOINC",
-        "max": "1",
-        "fixedCoding": {
-          "system": "http://loinc.org",
-          "code": "73781-7"
-        }
-      },
-      {
         "id": "Observation.code.coding:pregnancyComplicationSNOMED-CT",
         "path": "Observation.code.coding",
         "sliceName": "pregnancyComplicationSNOMED-CT",
@@ -70,7 +60,7 @@
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
-          "code": "198609003"
+          "code": "609496007"
         }
       },
       {

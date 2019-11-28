@@ -60,26 +60,6 @@
         }
       },
       {
-        "id": "Observation.code.coding:labourInitiationLOINC",
-        "path": "Observation.code.coding",
-        "sliceName": "labourInitiationLOINC",
-        "max": "1",
-        "fixedCoding": {
-          "system": "http://loinc.org",
-          "code": "LA20022-2"
-        }
-      },
-      {
-        "id": "Observation.code.coding:labourInitiationLOINC.system",
-        "path": "Observation.code.coding.system",
-        "fixedUri": "http://loinc.org"
-      },
-      {
-        "id": "Observation.code.coding:labourInitiationLOINC.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "LA20022-2"
-      },
-      {
         "id": "Observation.code.coding:labourInitiationSNOMED-CT",
         "path": "Observation.code.coding",
         "sliceName": "labourInitiationSNOMED-CT",
@@ -87,7 +67,7 @@
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
-          "code": "20236002"
+          "code": "249120008"
         }
       },
       {
@@ -98,7 +78,7 @@
       {
         "id": "Observation.code.coding:labourInitiationSNOMED-CT.code",
         "path": "Observation.code.coding.code",
-        "fixedCode": "20236002"
+        "fixedCode": "249120008"
       },
       {
         "id": "Observation.subject",
