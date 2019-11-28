@@ -33,7 +33,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-To be added
+- [Hearing Screen Observation](ncdhc-observation-hearingscreen-normal-example.html)
 
 [Observation]: http://hl7.org/fhir/observation.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible

@@ -1,2 +1,3 @@
 #### Examples
-To be added
+
+- [Ears Normal Observation](ncdhc-observation-ears-normal-example.html)

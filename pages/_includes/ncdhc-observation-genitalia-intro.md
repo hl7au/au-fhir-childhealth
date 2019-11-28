@@ -1,2 +1,3 @@
 #### Examples
-To be added
+
+- [Genitalia Observation](ncdhc-observation-genitalia-normal-example.html)

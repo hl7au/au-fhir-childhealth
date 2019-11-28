@@ -1,2 +1,3 @@
 #### Examples
-To be added
+
+- [Hearing Check](ncdhc-observation-hearingcheck-normal-example.html)

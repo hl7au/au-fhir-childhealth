@@ -60,7 +60,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-To be added
+- [Immunisation](ncdhc-observation-immunisation-normal-example.html)
 
 [Immunization]: http://hl7.org.au/fhir/base2018Oct/StructureDefinition-au-immunisation.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
