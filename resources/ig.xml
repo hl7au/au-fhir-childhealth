@@ -446,13 +446,13 @@
 				<reference value="StructureDefinition/ncdhc-observation-estimated-gestation" />
 			</sourceReference>
 		</resource>
-		<resource>
+		<!--<resource>
 		  <example value="false"/>
 		  <sourceReference>
 			<reference value="StructureDefinition/ncdhc-medicationstatement-vitamink"/>
 		  </sourceReference>
 		</resource>
-		<!--<resource>
+		<resource>
 		  <example value="false"/>
 		  <sourceReference>
 			<reference value="StructureDefinition/ncdhc-immunisation"/>
