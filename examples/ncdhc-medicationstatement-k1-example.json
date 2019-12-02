@@ -26,11 +26,11 @@
   "effectiveDateTime" : "2018-12-27T16:13:03Z",
   "dateAsserted" : "2018-12-27T16:13:03Z",
   "informationSource" : {
-    "reference" : "Practitioner/kk78393f-37ca-4738-81d6-d9595b2e5d0f",
+    "reference" : "Practitioner/examiner-practitioner",
     "display" : "Dr. Rob Boston"
   },
   "subject" : {
-    "reference" : "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+    "reference" : "Patient/patient-baby-example",
     "display" : "Baby of Eve Bill"
   },
   "taken" : "y",

@@ -43,7 +43,7 @@
           "text": "Health Check Assessment View"
         },
         "subject": {
-          "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "reference": "Patient/patient-baby-example",
           "display": "Baby of Eve Bill"
         },
         "date": "2018-12-24T12:30:02Z",
@@ -60,7 +60,7 @@
             "mode": "professional",
             "time": "2018-12-24T12:30:02Z",
             "party": {
-              "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f"
+              "reference": "Organization/examiner-organization"
             }
           }
         ],
@@ -77,14 +77,14 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/patient-baby-example",
       "resource": {
         "resourceType": "Patient",
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<h1>Baby of Eve Bill</h1>\n\t\t\t\t\t\n</div>"
         },
-        "id": "dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+        "id": "patient-baby-example",
         "meta": {
           "versionId": "1",
           "lastUpdated": "2018-12-27T16:13:03Z",
@@ -210,10 +210,10 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Organization/examiner-organization",
       "resource": {
         "resourceType": "Organization",
-        "id": "od78393f-37ca-4738-81d6-d9595b2e5d0f",
+        "id": "examiner-organization",
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: od78393f-37ca-4738-81d6-d9595b2e5d0f</p><p><b>identifier</b>: ABN = 51824753556</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/organization-type code 'prov' = 'Healthcare Provider', given as 'Healthcare Provider'})</span></p><p><b>name</b>: Blacktown Hospital</p><p><b>telecom</b>: enquiries@blacktownhospital.com.au(WORK)</p></div>"
@@ -389,7 +389,7 @@
         },
         "status": "completed",
         "subject": {
-          "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+          "reference": "Patient/patient-baby-example"
         },
         "item": [
           {

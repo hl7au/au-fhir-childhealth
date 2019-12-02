@@ -7,7 +7,7 @@
   },
   "status": "completed",
   "subject": {
-    "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+    "reference": "Patient/patient-baby-example"
   },
   "item": [
     {
@@ -15,7 +15,7 @@
       "linkId": "1",
       "text": "Facility / Location",
       "subject": {
-        "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+        "reference": "Patient/patient-baby-example"
       },
       "answer": [
         {
@@ -28,7 +28,7 @@
       "linkId": "2",
       "text": "Birth Date / Time",
       "subject": {
-        "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+        "reference": "Patient/patient-baby-example"
       },
       "answer": [
         {
@@ -41,7 +41,7 @@
       "linkId": "3",
       "text": "Sex",
       "subject": {
-        "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+        "reference": "Patient/patient-baby-example"
       },
       "answer": [
         {
@@ -58,7 +58,7 @@
       "linkId": "4",
       "text": "Estimated Gestation",
       "subject": {
-        "reference": "Observation/241a72a8-df75-4484-ac89-ac4923f03b42"
+        "reference": "Observation/observation-estimated-gestation-example"
       },
       "answer": [
         {
@@ -222,7 +222,7 @@
               "linkId": "10.1",
               "text": "1 minute",
               "subject": {
-                "reference": "Observation/901a72a8-df75-4484-ac89-ac4923f03b01"
+                "reference": "Observation/observation-apgar-score-normal-example"
               },
               "answer": [
                 {
@@ -239,7 +239,7 @@
               "linkId": "10.2",
               "text": "5 minute",
               "subject": {
-                "reference": "Observation/901a72a8-df75-4484-ac89-ac4923f03b02"
+                "reference": "Observation/observation-apgar-score-normal-example"
               },
               "answer": [
                 {
@@ -256,7 +256,7 @@
               "linkId": "10.3",
               "text": "10 minute",
               "subject": {
-                "reference": "Observation/901a72a8-df75-4484-ac89-ac4923f03b03"
+                "reference": "Observation/observation-apgar-score-normal-example"
               },
               "answer": [
                 {
@@ -397,7 +397,7 @@
               "linkId": "15.1",
               "text": "Designation",
               "subject": {
-                "reference": "Practioner/901a72a8-df75-4484-ac89-ac4923f03b02"
+                "reference": "Practitioner/examiner-practitioner"
               },
               "answer": [
                 {
@@ -410,7 +410,7 @@
               "linkId": "15.2",
               "text": "Venue",
               "subject": {
-                "reference": "Encounter/901a72a8-df75-4484-ac89-ac4923f03b02"
+                "reference": "Encounter/ncdhc-encounter-example"
               },
               "answer": [
                 {
@@ -423,7 +423,7 @@
               "linkId": "15.3",
               "text": "Date & Time",
               "subject": {
-                "reference": "Encounter/901a72a8-df75-4484-ac89-ac4923f03b02"
+                "reference": "Encounter/ncdhc-encounter-example"
               },
               "answer": [
                 {

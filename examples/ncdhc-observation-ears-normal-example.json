@@ -23,7 +23,7 @@
           ]
         },
         "subject" : {
-          "reference" : "urn:uuid:patient-baby",
+          "reference" : "Patient/patient-baby-example",
           "display" : "Baby of Eve Bill"
         },
         "effectiveDateTime" : "2018-12-27T16:13:03Z",

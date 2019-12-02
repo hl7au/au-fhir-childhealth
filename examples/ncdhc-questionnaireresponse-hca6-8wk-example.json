@@ -7,7 +7,7 @@
   },
   "status": "completed",
   "subject": {
-    "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+    "reference": "Patient/patient-baby-example"
   },
   "item": [
     {
@@ -15,7 +15,7 @@
       "linkId": "1",
       "text": "Venue",
       "subject": {
-        "reference": "Encounter/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+        "reference": "Encounter/ncdhc-encounter-example"
       },
       "answer": [
         {
@@ -28,7 +28,7 @@
       "linkId": "2",
       "text": "Date / Time",
       "subject": {
-        "reference": "Encounter/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+        "reference": "Encounter/ncdhc-encounter-example"
       },
       "answer": [
         {
@@ -41,7 +41,7 @@
       "linkId": "3",
       "text": "Child's Age",
       "subject": {
-        "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+        "reference": "Patient/patient-baby-example"
       },
       "answer": [
         {
@@ -61,7 +61,7 @@
               "id": "4.1.0.1",
               "linkId": "18.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/observation-skin-normal-example"
               },
               "item": [
                 {
@@ -106,7 +106,7 @@
               "id": "5.1.0.1",
               "linkId": "4.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/observation-vitalsign-bodyweight-example"
               },
               "item": [
                 {
@@ -161,7 +161,7 @@
               "id": "6.1.0.1",
               "linkId": "5.1",
               "subject": {
-                "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/observation-vitalsign-bodyheight-example"
               },
               "item": [
                 {
@@ -216,7 +216,7 @@
               "id": "7.1.0.1",
               "linkId": "6.1",
               "subject": {
-                "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b47"
+                "reference": "Observation/observation-vitalsign-headcircum-example"
               },
               "item": [
                 {
@@ -271,7 +271,7 @@
                 "id": "8.1.0.1",
                 "linkId": "7.1",
                 "subject": {
-                  "reference": "Observation/011a72a8-df75-4484-ac89-ac4923f03b81"
+                  "reference": "Observation/observation-head-shape-normal-example"
                 },
                 "item": [
                   {
@@ -316,7 +316,7 @@
               "id": "9.1.0.1",
               "linkId": "8.1",
               "subject": {
-                "reference": "Observation/021a72a8-df75-4484-ac89-ac4923f03b81"
+                "reference": "Observation/observation-fontanelles-normal-example"
               },
               "item": [
                 {
@@ -361,7 +361,7 @@
               "id": "10.1.0.1",
               "linkId": "9.1",
               "subject": {
-                "reference": "Observation/031a72a8-df75-4484-ac89-ac4923f03b81"
+                "reference": "Observation/observation-ears-normal-example"
               },
               "item": [
                 {
@@ -420,7 +420,7 @@
               "id": "11.1.0.1",
               "linkId": "10.1",
               "subject": {
-                "reference": "Observation/041a72a8-df75-4484-ac89-ac4923f03b81"
+                "reference": "Observation/observation-eyes-normal-example"
               },
               "item": [
                 {
@@ -479,7 +479,7 @@
               "id": "12.1.0.1",
               "linkId": "11.1",
               "subject": {
-                "reference": "Observation/051a72a8-df75-4484-ac89-ac4923f03b81"
+                "reference": "Observation/observation-mouthpalate-normal-example"
               },
               "item": [
                 {
@@ -524,7 +524,7 @@
               "id": "13.1.0.1",
               "linkId": "12.1",
               "subject": {
-                "reference": "Observation/061a72a8-df75-4484-ac89-ac4923f03b81"
+                "reference": "Observation/observation-cardiovascular-normal-example"
               },
               "item": [
                 {
@@ -569,7 +569,7 @@
               "id": "14.1.0.1",
               "linkId": "13.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/observation-femoralpulse-normal-example"
               },
               "item": [
                 {
@@ -628,7 +628,7 @@
               "id": "15.1.0.1",
               "linkId": "14.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/observation-development-normal-example"
               },
               "item": [
                 {
@@ -673,7 +673,7 @@
               "id": "16.1.0.1",
               "linkId": "15.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/observation-umbilicus-normal-example"
               },
               "item": [
                 {
@@ -718,7 +718,7 @@
               "id": "17.1.0.1",
               "linkId": "16.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/observation-testes-normal-example"
               },
               "item": [
                 {
@@ -777,7 +777,7 @@
               "id": "18.1.0.1",
               "linkId": "17.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/observation-genitalia-normal-example"
               },
               "item": [
                 {
@@ -822,7 +822,7 @@
               "id": "19.1.0.1",
               "linkId": "19.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/observation-hips-normal-example"
               },
               "item": [
                 {
@@ -867,7 +867,7 @@
               "id": "20.1.0.1",
               "linkId": "20.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/observation-abdomen-normal-example"
               },
               "item": [
                 {
@@ -912,7 +912,7 @@
               "id": "21.1.0.1",
               "linkId": "21.1",
               "subject": {
-                "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/observation-immunisation-normal-example"
               },
               "item": [
                 {
@@ -958,7 +958,7 @@
               "linkId": "22.1",
               "text": "Designation",
               "subject": {
-                "reference": "Practioner/901a72a8-df75-4484-ac89-ac4923f03b02"
+                "reference": "Practitioner/examiner-practitioner"
               },
               "answer": [
                 {
@@ -971,7 +971,7 @@
               "linkId": "22.2",
               "text": "Venue",
               "subject": {
-                "reference": "Encounter/901a72a8-df75-4484-ac89-ac4923f03b02"
+                "reference": "Encounter/ncdhc-encounter-example"
               },
               "answer": [
                 {
@@ -984,7 +984,7 @@
               "linkId": "22.3",
               "text": "Date & Time",
               "subject": {
-                "reference": "Encounter/901a72a8-df75-4484-ac89-ac4923f03b02"
+                "reference": "Encounter/ncdhc-encounter-example"
               },
               "answer": [
                 {

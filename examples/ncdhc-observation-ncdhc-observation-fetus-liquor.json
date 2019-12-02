@@ -21,17 +21,17 @@
     "text": "Measure of amniotic fluid (liquor)"
   },
   "subject": {
-    "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+    "reference": "Patient/patient-baby-example",
     "display": "Eve Bill"
   },
   "effectiveDateTime": "2018-12-27T16:13:03Z",
   "performer": [
     {
-      "reference": "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+      "reference": "Practitioner/Practitioner/examiner-practitioner",
       "display": "Examiner"
     },
     {
-      "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "reference": "Organization/examiner-organization",
       "display": "Organisation"
     }
   ],

@@ -1,6 +1,6 @@
 {
   "resourceType" : "Observation",
-  "id" : "741a72a8-df75-4484-ac89-ac4923f03b43",
+  "id" : "observation-birthweight-example",
   "meta" : {
     "versionId" : "1",
     "lastUpdated" : "2019-10-27T16:13:03Z",
@@ -23,17 +23,17 @@
     "text" : "Birth Weight"
   },
   "subject" : {
-    "reference" : "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+    "reference" : "Patient/patient-baby-example",
     "display" : "Baby of Eve Bill"
   },
   "effectiveDateTime" : "2018-12-27T16:13:03Z",
   "performer" : [
     {
-      "reference" : "Practitioner/dd78393f-37ca-4738-81d6-d9595b2e5d0d",
+      "reference" : "Practitioner/examiner-practitioner",
       "display" : "Examiner"
     },
     {
-      "reference" : "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "reference" : "Organization/examiner-organization",
       "display" : "Organisation"
     }
   ],

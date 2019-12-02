@@ -49,7 +49,7 @@
             {
               "linkId": "8.1.2",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.location.location",
-              "prefix": " - ",
+              "prefix": "-",
               "type": "string"
             }
           ]
@@ -79,7 +79,7 @@
             {
               "linkId": "7.1.2",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.location.location",
-              "prefix": " - ",
+              "prefix": "-",
               "type": "string"
             }
           ]
@@ -109,7 +109,7 @@
             {
               "linkId": "6.1.2",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.location.location",
-              "prefix": " - ",
+              "prefix": "-",
               "type": "string"
             }
           ]
@@ -139,7 +139,7 @@
             {
               "linkId": "5.1.2",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.location.location",
-              "prefix": " - ",
+              "prefix": "-",
               "type": "string"
             }
           ]
@@ -169,7 +169,7 @@
             {
               "linkId": "4.1.2",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.location.location",
-              "prefix": " - ",
+              "prefix": "-",
               "type": "string"
             }
           ]
@@ -199,7 +199,7 @@
             {
               "linkId": "3.1.2",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.location.location",
-              "prefix": " - ",
+              "prefix": "-",
               "type": "string"
             }
           ]
@@ -229,7 +229,7 @@
             {
               "linkId": "2.1.2",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.location.location",
-              "prefix": " - ",
+              "prefix": "-",
               "type": "string"
             }
           ]
@@ -259,7 +259,7 @@
             {
               "linkId": "1.1.2",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.location.location",
-              "prefix": " - ",
+              "prefix": "-",
               "type": "string"
             }
           ]

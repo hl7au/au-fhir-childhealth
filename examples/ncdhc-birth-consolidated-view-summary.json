@@ -32,7 +32,7 @@
           "text": "NCDHC Birth Consolidated view"
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/patient-baby-example",
           "display": "Baby of Eve Bill"
         },
         "date": "2018-12-24T12:30:02Z",
@@ -49,7 +49,7 @@
             "mode": "professional",
             "time": "2018-12-24T12:30:02Z",
             "party": {
-              "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f"
+              "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Organization/examiner-organization"
             }
           }
         ],
@@ -179,14 +179,14 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/patient-baby-example",
       "resource": {
         "resourceType": "Patient",
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<h1>Baby of Eve Bill</h1>\n\t\t\t\t\t\n</div>"
         },
-        "id": "dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+        "id": "patient-baby",
         "meta": {
           "versionId": "1",
           "lastUpdated": "2018-12-27T16:13:03Z",
@@ -312,7 +312,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Organization/examiner-organization",
       "resource": {
         "resourceType": "Organization",
         "id": "od78393f-37ca-4738-81d6-d9595b2e5d0f",
@@ -508,7 +508,7 @@
         },
         "status": "completed",
         "subject": {
-          "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+          "reference": "Patient/patient-baby-example"
         },
         "item": [
           {
@@ -516,7 +516,7 @@
             "linkId": "1",
             "text": "Facility / Location",
             "subject": {
-              "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+              "reference": "Patient/patient-baby-example"
             },
             "answer": [
               {
@@ -529,7 +529,7 @@
             "linkId": "2",
             "text": "Birth Date / Time",
             "subject": {
-              "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+              "reference": "Patient/patient-baby-example"
             },
             "answer": [
               {
@@ -542,7 +542,7 @@
             "linkId": "3",
             "text": "Sex",
             "subject": {
-              "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+              "reference": "Patient/patient-baby-example"
             },
             "answer": [
               {
@@ -899,7 +899,7 @@
         "id": "od78393f-37ca-4738-81d6-d9595b2e5d0f",
         "target": [
           {
-            "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+            "reference": "Patient/patient-baby-example"
           },
           {
             "reference": "Observation/241a72a8-df75-4484-ac89-ac4923f03b42"
