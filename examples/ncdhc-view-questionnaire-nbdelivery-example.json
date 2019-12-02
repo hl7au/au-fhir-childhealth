@@ -70,7 +70,7 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "444135009"
+          "code": "412726003"
         }
       ],
       "text": "Estimated Gestation",
@@ -82,7 +82,7 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "289258004"
+          "code": "236973005"
         }
       ],
       "text": "Type of Birth",
@@ -94,7 +94,7 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "20236002"
+          "code": "249120008"
         }
       ],
       "text": "Labour Initiation",
@@ -122,36 +122,7 @@
           "type": "text"
         }
       ]
-    },
-    {
-      "linkId": "7",
-      "code": [          
-        {
-          "system": "http://snomed.info/sct",
-          "code": "609496007"
-        }
-      ],
-      "text": "Pregnancy Complications",
-      "type": "group",
-      "item": [
-        {
-          "linkId": "7.1",
-          "text": "",                 
-          "item": [
-            {
-              "linkId": "7.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html#Observation.value[x]",         
-              "type": "open-choice"
-            },
-            {
-              "linkId": "7.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html#Observation.comment",         
-              "type": "text"
-            }
-          ]
-        }
-      ]
-    },
+    },   
     {
       "linkId": "8",
       "code": [
@@ -180,7 +151,7 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "198609003"
+          "code": "199745000"
         }
       ],
       "text": "Birth Complications",
@@ -265,7 +236,7 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "248334005"
+          "code": "169886007"
         }
       ],
       "text": "Birth Length",
@@ -277,7 +248,7 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "363812007"
+          "code": "169876006"
         }
       ],
       "text": "Head Circumference",
@@ -288,7 +259,7 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "66656000"
+          "code": "18629005"
         }
       ],
       "text": "Vitamin K",
@@ -299,7 +270,7 @@
           "code": [
             {
               "system": "http://snomed.info/sct",
-              "code": "169895004"
+              "code": "255216001"
             }
           ],
           "text": "Vitamin K1",
@@ -328,25 +299,27 @@
       ]
     },
     {
-      "linkId": "15",
-      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.individual",
-      "text": "Examiner",
-      "type": "group",
-      "item": [
+      "linkId" : "15",
+      "text" : "Examiner",
+      "type" : "group",
+      "item" : [
         {
-          "linkId": "15.1",
-          "text": "Designation",
-          "type": "choice"
+          "linkId" : "15.1",
+          "definition" : "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.type",
+          "text" : "Designation",
+          "type" : "open-choice"
         },
         {
-          "linkId": "15.2",
-          "text": "Venue",
-          "type": "string"
+          "linkId" : "15.2",
+          "definition" : "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.location.location",
+          "text" : "Venue",
+          "type" : "string"
         },
         {
-          "linkId": "15.3",
-          "text": "Date & Time",
-          "type": "dateTime"
+          "linkId" : "15.3",
+          "definition" : "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.period",
+          "text" : "Date & Time",
+          "type" : "dateTime"
         }
       ]
     }
