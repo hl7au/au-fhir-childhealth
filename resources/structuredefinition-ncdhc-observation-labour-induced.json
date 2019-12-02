@@ -122,8 +122,8 @@
         "id": "Observation.value[x]:valueCodeableConcept.coding",
         "path": "Observation.valueCodeableConcept.coding",
         "binding": {
-          "strength": "preferred",
-          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-labour-initiation-type"
+          "strength": "required",
+          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-labour-initiation-type-1"
         }
       },
       {

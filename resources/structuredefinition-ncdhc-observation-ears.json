@@ -44,6 +44,10 @@
             {
               "type": "value",
               "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "closed"
@@ -59,6 +63,16 @@
           "system": "http://snomed.info/sct",
           "code": "363991003"
         }
+      },
+      {
+        "id": "Observation.code.coding:EarsSNOMEDCT-AU.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:EarsSNOMEDCT-AU.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "363991003"
       },
       {
         "id": "Observation.subject",

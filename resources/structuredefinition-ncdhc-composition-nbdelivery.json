@@ -182,8 +182,8 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "72147-2"
+              "system": "http://snomed.info/sct",
+              "code": "57036006"
             }
           ]
         }
@@ -228,8 +228,8 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "73780-9"
+              "system": "http://snomed.info/sct",
+              "code": "414025005"
             }
           ]
         }
@@ -273,8 +273,8 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "LP32192-4"
+              "system": "http://snomed.info/sct",
+              "code": "302083008"
             }
           ]
         }
@@ -367,8 +367,8 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "29303-5"
+              "system": "http://snomed.info/sct",
+              "code": "18629005"
             }
           ]
         }
@@ -412,8 +412,8 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "67795-5"
+              "system": "http://snomed.info/sct",
+              "code": "118227000"
             }
           ]
         }
@@ -517,8 +517,8 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "73781-7"
+              "system": "http://snomed.info/sct",
+              "code": "609496007"
             }
           ]
         }
@@ -593,8 +593,8 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "LA20786-2"
+              "system": "http://snomed.info/sct",
+              "code": "118215003"
             }
           ]
         }

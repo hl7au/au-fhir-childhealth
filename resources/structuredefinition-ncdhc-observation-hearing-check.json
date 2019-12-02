@@ -61,6 +61,16 @@
         }
       },
       {
+        "id": "Observation.code.coding:HearingCheckSNOMEDCT-AU.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:HearingCheckSNOMEDCT-AU.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "252957005"
+      },
+      {
         "id": "Observation.subject",
         "path": "Observation.subject",
         "short": "Reference to the Baby Patient"

@@ -60,6 +60,16 @@
         }
       },
       {
+        "id": "Observation.code.coding:IronTestSNOMEDCT-AU.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:IronTestSNOMEDCT-AU.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "42950004"
+      },
+      {
         "id": "Observation.subject",
         "path": "Observation.subject",
         "short": "Reference to the Baby Patient"
