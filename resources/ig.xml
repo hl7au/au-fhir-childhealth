@@ -94,6 +94,12 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-birth-complication" />
+			</sourceReference>
+		</resource>		
+		<resource>
+			<example value="false" />
+			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-birth-abnormalities" />
 			</sourceReference>
 		</resource>
@@ -439,6 +445,12 @@
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-estimated-gestation" />
 			</sourceReference>
+		</resource>
+		<resource>
+		  <example value="false"/>
+		  <sourceReference>
+			<reference value="StructureDefinition/ncdhc-medicationstatement-vitamink"/>
+		  </sourceReference>
 		</resource>
 		<!--<resource>
 		  <example value="false"/>
@@ -881,6 +893,12 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
+				<reference value="ValueSet/ncdhc-hi-type-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
 				<reference value="CodeSystem/ncdhc-hi-type-1" />
 			</sourceReference>
 		</resource>
@@ -920,7 +938,7 @@
 				<reference value="StructureDefinition/ncdhc-questionnaireresponse-base" />
 			</sourceReference>
 		</resource>
-		<!-- DPHR Profiles -->
+		<!-- DPHR Health Interactions -->
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -938,19 +956,19 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Patient/ea287411-5ab7-4ff8-9023-42933b73bc17" />
+				<reference value="Patient/patient-mother-example" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f" />
+				<reference value="Patient/patient-baby-example" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Bundle/hca-14wks-request-payload-example" />
+				<reference value="Bundle/ncdhc-hca-payload-4-9m" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -1099,17 +1117,17 @@
 			</sourceReference>
 		</resource>
 		<resource>
-         <example value="true" />
-         <sourceReference>
-            <reference value="Bundle/ncdhc-hca-4year-view-summary" />
-         </sourceReference>
-      </resource>
-	  <resource>
-         <example value="true" />
-         <sourceReference>
-            <reference value="QuestionnaireResponse/hca-4year-qa-en-s1" />
-         </sourceReference>
-      </resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-hca-4year-view-summary" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="QuestionnaireResponse/hca-4year-qa-en-s1" />
+			</sourceReference>
+		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
@@ -1140,7 +1158,7 @@
 				<reference value="QuestionnaireResponse/hca-6-8wk-qa-en-s1" />
 			</sourceReference>
 		</resource>
-		<resource>
+		<!--<resource>
 			<example value="true" />
 			<sourceReference>
 				<reference value="Observation/241a72a8-df75-4484-ac89-ac4923f03b42" />
@@ -1235,7 +1253,7 @@
 			<sourceReference>
 				<reference value="Observation/541a72a8-df75-4484-ac89-ac4923f03b47" />
 			</sourceReference>
-		</resource>
+		</resource> -->
 		<resource>
 			<example value="true" />
 			<sourceReference>
@@ -1417,6 +1435,227 @@
 			<example value="true" />
 			<sourceReference>
 				<reference value="Observation/ncdhc-observation-left-eye-visiual-acuity-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-bodyweight-example" />
+			</sourceReference>
+		</resource>       
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-bodyheight-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-birth-complication-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-abdomen-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-anus-normal-example" />
+			</sourceReference>
+		</resource><resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-bmi-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-cardiovascular-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-development-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-deworming-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-ears-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-eyes-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-femoralpulse-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-fluoridevarnish-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-fontanelles-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-gait-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-genitalia-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-head-shape-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-hearingcheck-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-hearingscreen-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-hips-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-immunisation-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-irontesting-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-mouthpalate-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-oralhealth-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-reflexes-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-skin-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-testes-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-umbilicus-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-visionscreen-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-skin-review-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-vitalsign-bodyweight-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-vitalsign-bodyheight-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-vitalsign-headcircum-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Organization/examiner-organization" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Practitioner/examiner-practitioner" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="DocumentReference/ncdhc-doc-ref-superseded-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="DocumentReference/ncdhc-doc-ref-current-example" />
 			</sourceReference>
 		</resource>
 

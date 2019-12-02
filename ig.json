@@ -1,5 +1,5 @@
 {
-  "sct-edition": "http://snomed.info/sct/32506021000036107",
+  "sct-edition": "http://snomed.info/sct/32506021000036107/version/20191130",
   "version": "3.0.2",
   "paths": {
     "output": "output",
@@ -140,11 +140,11 @@
       "base": "StructureDefinition-ncdhc-observation-vision-tested-monocularly.html",
       "defns": "StructureDefinition-ncdhc-observation-vision-tested-monocularly-definitions.html"
     },
-	 "StructureDefinition/ncdhc-observation-left-eye-visiual-acuity": {
+    "StructureDefinition/ncdhc-observation-left-eye-visiual-acuity": {
       "base": "StructureDefinition-ncdhc-observation-left-eye-visiual-acuity.html",
       "defns": "StructureDefinition-ncdhc-observation-left-eye-visiual-acuity-definitions.html"
     },
-	 "StructureDefinition/ncdhc-observation-right-eye-visiual-acuity": {
+    "StructureDefinition/ncdhc-observation-right-eye-visiual-acuity": {
       "base": "StructureDefinition-ncdhc-observation-right-eye-visiual-acuity.html",
       "defns": "StructureDefinition-ncdhc-observation-right-eye-visiual-acuity-definitions.html"
     },
@@ -589,6 +589,9 @@
     "ValueSet/ncdhc-observation-category-1": {
       "base": "ValueSet-ncdhc-observation-category.html"
     },
+    "ValueSet/ncdhc-hi-type-1": {
+      "base": "ValueSet-ncdhc-hi-type-1.html"
+    },
     "CodeSystem/ncdhc-hi-type-1": {
       "base": "CodeSystem-ncdhc-hi-type-1.html"
     },
@@ -637,17 +640,17 @@
     "CodeSystem/ncdhc-audit-type-1": {
       "base": "CodeSystem-ncdhc-audit-type-1.html"
     },
-    "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f": {
+    "Patient/patient-baby-example": {
       "source": "ncdhc-patient-baby-example.json",
       "base": "ncdhc-patient-baby-example.html"
     },
-    "Patient/ea287411-5ab7-4ff8-9023-42933b73bc17": {
-      "source": "patient-example-mother.json",
-      "base": "Patient-example-mother.html"
+    "Patient/patient-mother-example": {
+      "source": "ncdhc-patient-example-mother.json",
+      "base": "ncdhc-patient-example-mother.html"
     },
-    "Bundle/hca-14wks-request-payload-example": {
-      "source": "Bundle-document-hca-14wks-request-payload-example.json",
-      "base": "Bundle-document-hca-14wks-request-payload-example.html"
+    "Bundle/ncdhc-hca-payload-4-9m": {
+      "source": "ncdhc-hca-payload-4-9m.json",
+      "base": "ncdhc-hca-payload-4-9m.html"
     },
     "Bundle/ncdhc-hca-1-4weeks-view-summary": {
       "source": "ncdhc-hca-1-4weeks-view-summary.json",
@@ -701,69 +704,9 @@
       "source": "ncdhc-composition-nbdelivery-example.json",
       "base": "ncdhc-composition-nbdelivery-example.html"
     },
-    "Observation/241a72a8-df75-4484-ac89-ac4923f03b42": {
-      "source": "ncdhc-observation-estimated-gestation-example.json",
-      "base": "ncdhc-observation-estimated-gestation-example.html"
-    },
-    "Observation/641a72a8-df75-4484-ac89-ac4923f03b41": {
-      "source": "ncdhc-observation-method-of-delivery-example.json",
-      "base": "ncdhc-observation-method-of-delivery-example.html"
-    },
-    "Observation/641a72a8-df75-4l484-ac89-ac4923f03b42": {
-      "source": "ncdhc-observation-labour-induced-example.json",
-      "base": "ncdhc-observation-labour-induced-example.html"
-    },
-    "Observation/541a72a8-df75-4484-ac89-ac4923f03b52": {
-      "source": "ncdhc-observation-birth-complication-example.json",
-      "base": "ncdhc-observation-birth-complication-example.html"
-    },
-    "Observation/841a72a8-df75-4484-ac89-ac4923f03b42": {
-      "source": "ncdhc-observation-birth-abnormalities-example.json",
-      "base": "ncdhc-observation-birth-abnormalities-example.html"
-    },
-    "Observation/901a72a8-df75-4484-ac89-ac4923f03b01": {
-      "source": "ncdhc-observation-apgar-score-1m-example.json",
-      "base": "ncdhc-observation-apgar-score-1m-example.html"
-    },
     "MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b10": {
       "source": "ncdhc-medicationstatement-k1-example.json",
       "base": "ncdhc-medicationstatement-k1-example.html"
-    },
-    "Observation/541a72a8-df75-4484-ac89-ac4923f03b53": {
-      "source": "ncdhc-observation-pregnancy-complication-example.json",
-      "base": "ncdhc-observation-pregnancy-complication-example.html"
-    },
-    "Observation/741a72a8-df75-4484-ac89-ac4923f03b42": {
-      "source": "ncdhc-observation-bodyweight-example.json",
-      "base": "ncdhc-observation-bodyweight-example.html"
-    },
-    "Observation/741a72a8-df75-4484-ac89-ac4923f03b43": {
-      "source": "ncdhc-observation-birthweight-example.json",
-      "base": "ncdhc-observation-birthweight-example.html"
-    },
-    "Observation/741a72a8-df75-4484-ac89-ac4923f03b45": {
-      "source": "ncdhc-observation-vitalsign-bodyweight-example.json",
-      "base": "ncdhc-observation-vitalsign-bodyweight-example.html"
-    },
-    "Observation/741a72a8-df75-4484-ac89-ac4923f03b44": {
-      "source": "ncdhc-observation-vitalsign-birthweight-example.json",
-      "base": "ncdhc-observation-vitalsign-birthweight-example.html"
-    },
-    "Observation/541a72a8-df75-4484-ac89-ac4923f03b42": {
-      "source": "ncdhc-observation-vitalsign-birthlength-example.json",
-      "base": "ncdhc-observation-vitalsign-birthlength-example.html"
-    },
-    "Observation/541a72a8-df75-4484-ac89-ac4923f03b43": {
-      "source": "ncdhc-observation-vitalsign-bodyheight-example.json",
-      "base": "ncdhc-observation-vitalsign-bodyheight-example.html"
-    },
-    "Observation/541a72a8-df75-4484-ac89-ac4923f03b46": {
-      "source": "ncdhc-observation-bodyheight-example.json",
-      "base": "ncdhc-observation-bodyheight-example.html"
-    },
-    "Observation/541a72a8-df75-4484-ac89-ac4923f03b47": {
-      "source": "ncdhc-observation-vitalsign-headcircum-example.json",
-      "base": "ncdhc-observation-vitalsign-headcircum-example.html"
     },
     "Questionnaire/hca-sch-nsw-q-en-s1": {
       "source": "ncdhc-view-questionnaire-hca-schedule-nsw.json",
@@ -965,17 +908,201 @@
       "source": "ncdhc-encounter-example.json",
       "base": "ncdhc-encounter-example.html"
     },
-	"Observation/ncdhc-observation-vision-tested-monocularly-example": {
+    "Observation/ncdhc-observation-vision-tested-monocularly-example": {
       "source": "ncdhc-observation-vision-tested-monocularly-example.json",
       "base": "ncdhc-observation-vision-tested-monocularly-example.html"
     },
-	"Observation/ncdhc-observation-right-eye-visiual-acuity-example": {
+    "Observation/ncdhc-observation-right-eye-visiual-acuity-example": {
       "source": "ncdhc-observation-right-eye-visiual-acuity-example.json",
       "base": "ncdhc-observation-right-eye-visiual-acuity-example.html"
     },
-	"Observation/ncdhc-observation-left-eye-visiual-acuity-example": {
+    "Observation/ncdhc-observation-left-eye-visiual-acuity-example": {
       "source": "ncdhc-observation-left-eye-visiual-acuity-example.json",
       "base": "ncdhc-observation-left-eye-visiual-acuity-example.html"
+    },
+    "Observation/observation-abdomen-normal-example": {
+      "source": "ncdhc-observation-abdomen-normal-example.json",
+      "base": "ncdhc-observation-abdomen-normal-example.html"
+    },
+    "Observation/observation-anus-normal-example": {
+      "source": "ncdhc-observation-anus-normal-example.json",
+      "base": "ncdhc-observation-anus-normal-example.html"
+    },
+    "Observation/observation-bmi-normal-example": {
+      "source": "ncdhc-observation-bmi-normal-example.json",
+      "base": "ncdhc-observation-bmi-normal-example.html"
+    },
+    "Observation/observation-cardiovascular-normal-example": {
+      "source": "ncdhc-observation-cardiovascular-normal-example.json",
+      "base": "ncdhc-observation-cardiovascular-normal-example.html"
+    },
+    "Observation/observation-development-normal-example": {
+      "source": "ncdhc-observation-development-normal-example.json",
+      "base": "ncdhc-observation-development-normal-example.html"
+    },
+    "Observation/observation-deworming-normal-example": {
+      "source": "ncdhc-observation-deworming-normal-example.json",
+      "base": "ncdhc-observation-deworming-normal-example.html"
+    },
+    "Observation/observation-ears-normal-example": {
+      "source": "ncdhc-observation-ears-normal-example.json",
+      "base": "ncdhc-observation-ears-normal-example.html"
+    },
+    "Observation/observation-eyes-normal-example": {
+      "source": "ncdhc-observation-eyes-normal-example.json",
+      "base": "ncdhc-observation-eyes-normal-example.html"
+    },
+    "Observation/observation-femoralpulse-normal-example": {
+      "source": "ncdhc-observation-femoralpulse-normal-example.json",
+      "base": "ncdhc-observation-femoralpulse-normal-example.html"
+    },
+    "Observation/observation-fluoridevarnish-normal-example": {
+      "source": "ncdhc-observation-fluoridevarnish-normal-example.json",
+      "base": "ncdhc-observation-fluoridevarnish-normal-example.html"
+    },
+    "Observation/observation-fontanelles-normal-example": {
+      "source": "ncdhc-observation-fontanelles-normal-example.json",
+      "base": "ncdhc-observation-fontanelles-normal-example.html"
+    },
+    "Observation/observation-gait-normal-example": {
+      "source": "ncdhc-observation-gait-normal-example.json",
+      "base": "ncdhc-observation-gait-normal-example.html"
+    },
+    "Observation/observation-genitalia-normal-example": {
+      "source": "ncdhc-observation-genitalia-normal-example.json",
+      "base": "ncdhc-observation-genitalia-normal-example.html"
+    },
+    "Observation/observation-head-shape-normal-example": {
+      "source": "ncdhc-observation-head-shape-normal-example.json",
+      "base": "ncdhc-observation-head-shape-normal-example.html"
+    },
+    "Observation/observation-hearingcheck-normal-example": {
+      "source": "ncdhc-observation-hearingcheck-normal-example.json",
+      "base": "ncdhc-observation-hearingcheck-normal-example.html"
+    },
+    "Observation/observation-hearingscreen-normal-example": {
+      "source": "ncdhc-observation-hearingscreen-normal-example.json",
+      "base": "ncdhc-observation-hearingscreen-normal-example.html"
+    },
+    "Observation/observation-hips-normal-example": {
+      "source": "ncdhc-observation-hips-normal-example.json",
+      "base": "ncdhc-observation-hips-normal-example.html"
+    },
+    "Observation/observation-immunisation-normal-example": {
+      "source": "ncdhc-observation-immunisation-normal-example.json",
+      "base": "ncdhc-observation-immunisation-normal-example.html"
+    },
+    "Observation/observation-irontesting-normal-example": {
+      "source": "ncdhc-observation-irontesting-normal-example.json",
+      "base": "ncdhc-observation-irontesting-normal-example.html"
+    },
+    "Observation/observation-mouthpalate-normal-example": {
+      "source": "ncdhc-observation-mouthpalate-normal-example.json",
+      "base": "ncdhc-observation-mouthpalate-normal-example.html"
+    },
+    "Observation/observation-oralhealth-normal-example": {
+      "source": "ncdhc-observation-oralhealth-normal-example.json",
+      "base": "ncdhc-observation-oralhealth-normal-example.html"
+    },
+    "Observation/observation-reflexes-normal-example": {
+      "source": "ncdhc-observation-reflexes-normal-example.json",
+      "base": "ncdhc-observation-reflexes-normal-example.html"
+    },
+    "Observation/observation-skin-normal-example": {
+      "source": "ncdhc-observation-skin-normal-example.json",
+      "base": "ncdhc-observation-skin-normal-example.html"
+    },
+    "Observation/observation-testes-normal-example": {
+      "source": "ncdhc-observation-testes-normal-example.json",
+      "base": "ncdhc-observation-testes-normal-example.html"
+    },
+    "Observation/observation-umbilicus-normal-example": {
+      "source": "ncdhc-observation-umbilicus-normal-example.json",
+      "base": "ncdhc-observation-umbilicus-normal-example.html"
+    },
+    "Observation/observation-visionscreen-normal-example": {
+      "source": "ncdhc-observation-visionscreen-normal-example.json",
+      "base": "ncdhc-observation-visionscreen-normal-example.html"
+    },
+    "Observation/observation-birth-complication-example": {
+      "source": "ncdhc-observation-birth-complication-example.json",
+      "base": "ncdhc-observation-birth-complication-example.html"
+    },
+    "Observation/observation-skin-review-example": {
+      "source": "ncdhc-observation-skin-review-example.json",
+      "base": "ncdhc-observation-skin-review-example.html"
+    },
+    "Observation/observation-estimated-gestation-example": {
+      "source": "ncdhc-observation-estimated-gestation-example.json",
+      "base": "ncdhc-observation-estimated-gestation-example.html"
+    },
+    "Observation/observation-method-of-delivery-example": {
+      "source": "ncdhc-observation-method-of-delivery-example.json",
+      "base": "ncdhc-observation-method-of-delivery-example.html"
+    },
+    "Observation/observation-labour-induced-example": {
+      "source": "ncdhc-observation-labour-induced-example.json",
+      "base": "ncdhc-observation-labour-induced-example.html"
+    },
+    "Observation/observation-birth-abnormalities-example": {
+      "source": "ncdhc-observation-birth-abnormalities-example.json",
+      "base": "ncdhc-observation-birth-abnormalities-example.html"
+    },
+    "Observation/observation-apgar-score-normal-example": {
+      "source": "ncdhc-observation-apgar-score-1m-example.json",
+      "base": "ncdhc-observation-apgar-score-1m-example.html"
+    },
+    "Observation/observation-pregnancy-complication-example": {
+      "source": "ncdhc-observation-pregnancy-complication-example.json",
+      "base": "ncdhc-observation-pregnancy-complication-example.html"
+    },
+    "Observation/observation-bodyweight-example": {
+      "source": "ncdhc-observation-bodyweight-example.json",
+      "base": "ncdhc-observation-bodyweight-example.html"
+    },
+    "Observation/observation-birthweight-example": {
+      "source": "ncdhc-observation-birthweight-example.json",
+      "base": "ncdhc-observation-birthweight-example.html"
+    },
+    "Observation/observation-vitalsign-bodyweight-example": {
+      "source": "ncdhc-observation-vitalsign-bodyweight-example.json",
+      "base": "ncdhc-observation-vitalsign-bodyweight-example.html"
+    },
+    "Observation/observation-vitalsign-birthweight-example": {
+      "source": "ncdhc-observation-vitalsign-birthweight-example.json",
+      "base": "ncdhc-observation-vitalsign-birthweight-example.html"
+    },
+    "Observation/observation-vitalsign-birthlength-example": {
+      "source": "ncdhc-observation-vitalsign-birthlength-example.json",
+      "base": "ncdhc-observation-vitalsign-birthlength-example.html"
+    },
+    "Observation/observation-vitalsign-bodyheight-example": {
+      "source": "ncdhc-observation-vitalsign-bodyheight-example.json",
+      "base": "ncdhc-observation-vitalsign-bodyheight-example.html"
+    },
+    "Observation/observation-bodyheight-example": {
+      "source": "ncdhc-observation-bodyheight-example.json",
+      "base": "ncdhc-observation-bodyheight-example.html"
+    },
+    "Observation/observation-vitalsign-headcircum-example": {
+      "source": "ncdhc-observation-vitalsign-headcircum-example.json",
+      "base": "ncdhc-observation-vitalsign-headcircum-example.html"
+    },
+    "Organization/examiner-organization": {
+      "source": "ncdhc-examiner-organization-example.json",
+      "base": "ncdhc-examiner-organization-example.html"
+    },
+    "Practitioner/examiner-practitioner": {
+      "source": "ncdhc-examiner-practitioner-example.json",
+      "base": "ncdhc-examiner-practitioner-example.html"
+    },
+	"DocumentReference/ncdhc-doc-ref-superseded-example": {
+      "source": "ncdhc-doc-ref-superseded-example.json",
+      "base": "ncdhc-doc-ref-superseded-example.html"
+    },
+	"DocumentReference/ncdhc-doc-ref-current-example": {
+      "source": "ncdhc-doc-ref-current-example.json",
+      "base": "ncdhc-doc-ref-current-example.html"
     }
   }
 }
