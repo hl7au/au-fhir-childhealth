@@ -974,7 +974,7 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Bundle/27700024-070c-4141-8109-9d9fa34dd24b" />
+				<reference value="Bundle/ncdhc-nbdelivery-payload" />
 			</sourceReference>
 		</resource>
 		<resource>

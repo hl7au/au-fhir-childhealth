@@ -701,8 +701,8 @@
       "base": "audit_event_read.html"
     },
     "Bundle/27700024-070c-4141-8109-9d9fa34dd24b": {
-      "source": "ncdhc-composition-nbdelivery-example.json",
-      "base": "ncdhc-composition-nbdelivery-example.html"
+      "source": "ncdhc-nbdelivery-payload.json",
+      "base": "ncdhc-nbdelivery-payload.html"
     },
     "MedicationStatement/141a72a8-df75-4484-ac89-ac4923f03b10": {
       "source": "ncdhc-medicationstatement-k1-example.json",
