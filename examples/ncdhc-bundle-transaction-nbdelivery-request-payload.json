@@ -7,7 +7,7 @@
         "fullUrl": "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0a",
         "resource": {
           "resourceType": "Bundle",
-          "id": "61ebe359-bfdc-4613-8bf2-c5e300945f0a",
+          "id": "ncdhc-nbdelivery-payload",
           "identifier": {
             "system": "urn:ietf:rfc:3986",
             "value": "urn:uuid:0c4151bd-1cbf-4d64-b04d-cd9187a4c6e0"
@@ -61,8 +61,8 @@
                     "code": {
                       "coding": [
                         {
-                          "system": "http://loinc.org",
-                          "code": "72147-2"
+                          "system": "http://snomed.info/sct",
+                          "code": "57036006"
                         }
                       ]
                     },
@@ -81,8 +81,8 @@
                     "code": {
                       "coding": [
                         {
-                          "system": "http://loinc.org",
-                          "code": "73780-9"
+                          "system": "http://snomed.info/sct",
+                          "code": "414025005"
                         }
                       ]
                     },
@@ -101,8 +101,8 @@
                     "code": {
                       "coding": [
                         {
-                          "system": "http://loinc.org",
-                          "code": "LP32192-4"
+                          "system": "http://snomed.info/sct",
+                          "code": "302083008"
                         }
                       ]
                     },
@@ -121,8 +121,8 @@
                     "code": {
                       "coding": [
                         {
-                          "system": "http://loinc.org",
-                          "code": "29303-5"
+                          "system": "http://snomed.info/sct",
+                          "code": "18629005"
                         }
                       ]
                     },
@@ -141,8 +141,8 @@
                     "code": {
                       "coding": [
                         {
-                          "system": "http://loinc.org",
-                          "code": "67795-5"
+                          "system": "http://snomed.info/sct",
+                          "code": "118227000"
                         }
                       ]
                     },
@@ -167,8 +167,8 @@
                     "code": {
                       "coding": [
                         {
-                          "system": "http://loinc.org",
-                          "code": "73781-7"
+                          "system": "http://snomed.info/sct",
+                          "code": "609496007"
                         }
                       ]
                     },
@@ -190,8 +190,8 @@
                     "code": {
                       "coding": [
                         {
-                          "system": "http://loinc.org",
-                          "code": "LA20786-2"
+                          "system": "http://snomed.info/sct",
+                          "code": "118215003"
                         }
                       ]
                     },
@@ -822,11 +822,7 @@
                 },
                 "status": "final",
                 "code": {
-                  "coding": [
-                    {
-                      "system": "http://loinc.org",
-                      "code": "73780-9"
-                    },
+                  "coding": [           
                     {
                       "system": "http://snomed.info/sct",
                       "code": "414025005"
@@ -862,11 +858,7 @@
                 },
                 "status": "final",
                 "code": {
-                  "coding": [
-                    {
-                      "system": "http://loinc.org",
-                      "code": "72149-8"
-                    },
+                  "coding": [            
                     {
                       "system": "http://snomed.info/sct",
                       "code": "289258004"
@@ -956,11 +948,7 @@
                 },
                 "status": "final",
                 "code": {
-                  "coding": [
-                    {
-                      "system": "http://loinc.org",
-                      "code": "LA20022-2"
-                    },
+                  "coding": [            
                     {
                       "system": "http://snomed.info/sct",
                       "code": "20236002"
@@ -1099,11 +1087,6 @@
                     {
                       "system": "http://snomed.info/sct",
                       "code": "364589006"
-                    },
-                    {
-                      "system": "http://snomed.info/sct",
-                      "code": "27113001",
-                      "display": "Body weight"
                     }
                   ],
                   "text": "Birth Weight"
