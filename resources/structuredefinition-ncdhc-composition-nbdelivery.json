@@ -189,6 +189,16 @@
         }
       },
       {
+        "id": "Composition.section:estimatedGestation.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Composition.section:estimatedGestation.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "57036006"
+      },
+      {
         "id": "Composition.section:estimatedGestation.entry",
         "path": "Composition.section.entry",
         "short": "Section to represent Estimated Gestation data.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
@@ -235,6 +245,16 @@
         }
       },
       {
+        "id": "Composition.section:abnormalitiesNotedAtBirth.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Composition.section:abnormalitiesNotedAtBirth.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "414025005"
+      },
+      {
         "id": "Composition.section:abnormalitiesNotedAtBirth.entry",
         "path": "Composition.section.entry",
         "short": "Section to represent Congenital anomalies of the newborn data.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
@@ -278,6 +298,16 @@
             }
           ]
         }
+      },
+      {
+        "id": "Composition.section:apgarScore.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Composition.section:apgarScore.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "302083008"
       },
       {
         "id": "Composition.section:apgarScore.entry",
@@ -374,6 +404,16 @@
         }
       },
       {
+        "id": "Composition.section:medicationsAdministered.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Composition.section:medicationsAdministered.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "18629005"
+      },
+      {
         "id": "Composition.section:medicationsAdministered.entry",
         "path": "Composition.section.entry",
         "short": "Vitamin K",
@@ -417,6 +457,16 @@
             }
           ]
         }
+      },
+      {
+        "id": "Composition.section:vitalSignsAndMeasurements.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Composition.section:vitalSignsAndMeasurements.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "118227000"
       },
       {
         "id": "Composition.section:vitalSignsAndMeasurements.entry",
@@ -524,6 +574,16 @@
         }
       },
       {
+        "id": "Composition.section:maternalMorbidity.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Composition.section:maternalMorbidity.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "609496007"
+      },
+      {
         "id": "Composition.section:maternalMorbidity.entry",
         "path": "Composition.section.entry",
         "slicing": {
@@ -598,6 +658,16 @@
             }
           ]
         }
+      },
+      {
+        "id": "Composition.section:labourAndDelivery.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Composition.section:labourAndDelivery.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "118215003"
       },
       {
         "id": "Composition.section:labourAndDelivery.entry",
