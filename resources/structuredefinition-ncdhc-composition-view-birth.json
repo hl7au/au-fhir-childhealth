@@ -57,6 +57,18 @@
         "fixedString": "Newborn Delivery"
       },
       {
+        "id": "Composition.section:NewbornDelivery.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "67795-5"
+            }
+          ]
+        }
+      },
+      {
         "id": "Composition.section:NewbornDelivery.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "fixedUri": "http://loinc.org"
@@ -90,6 +102,18 @@
         "fixedString": "Newborn Immunisation"
       },
       {
+        "id": "Composition.section:NewbornImmunisation.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11370-4"
+            }
+          ]
+        }
+      },
+      {
         "id": "Composition.section:NewbornImmunisation.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "fixedUri": "http://loinc.org"
@@ -100,7 +124,7 @@
         "fixedCode": "11370-4"
       },
       {
-        "id": "Composition.section:NewbornDelivery.emptyReason",
+        "id": "Composition.section:NewbornImmunisation.emptyReason",
         "path": "Composition.section.emptyReason",
         "short": "Why the section is empty. A generic message \"Sorry, the Newborn Immunisation record is currently unavailable\" can be shown if the data is not yet available to the system."
       },
@@ -123,6 +147,18 @@
         "fixedString": "Newborn Examination"
       },
       {
+        "id": "Composition.section:NewbornExamination.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "52524-6"
+            }
+          ]
+        }
+      },
+      {
         "id": "Composition.section:NewbornExamination.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "fixedUri": "http://loinc.org"
@@ -133,7 +169,7 @@
         "fixedCode": "52524-6"
       },
       {
-        "id": "Composition.section:NewbornDelivery.emptyReason",
+        "id": "Composition.section:NewbornExamination.emptyReason",
         "path": "Composition.section.emptyReason",
         "short": "Why the section is empty. A generic message \"Sorry, the Newborn Examination record is currently unavailable\" can be shown if the data is not yet available to the system."
       },
@@ -156,6 +192,18 @@
         "fixedString": "Newborn Bloodspot Screen"
       },
       {
+        "id": "Composition.section:NewbornBloodspotScreen.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LP67167-4"
+            }
+          ]
+        }
+      },
+      {
         "id": "Composition.section:NewbornBloodspotScreen.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "fixedUri": "http://loinc.org"
@@ -166,7 +214,7 @@
         "fixedCode": "LP67167-4"
       },
       {
-        "id": "Composition.section:NewbornDelivery.emptyReason",
+        "id": "Composition.section:NewbornBloodspotScreen.emptyReason",
         "path": "Composition.section.emptyReason",
         "short": "Why the section is empty. A generic message \"Sorry, the Newborn Bloodspot Screen record is currently unavailable\" can be shown if the data is not yet available to the system."
       },
@@ -189,6 +237,18 @@
         "fixedString": "Newborn Hearing Screen"
       },
       {
+        "id": "Composition.section:NewbornHearingScreen.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LP76356-2"
+            }
+          ]
+        }
+      },
+      {
         "id": "Composition.section:NewbornHearingScreen.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "fixedUri": "http://loinc.org"
@@ -199,7 +259,7 @@
         "fixedCode": "LP76356-2"
       },
       {
-        "id": "Composition.section:NewbornDelivery.emptyReason",
+        "id": "Composition.section:NewbornHearingScreen.emptyReason",
         "path": "Composition.section.emptyReason",
         "short": "Why the section is empty. A generic message \"Sorry, the Newborn Hearing Screen record is currently unavailable\" can be shown if the data is not yet available to the system."
       },
@@ -222,6 +282,18 @@
         "fixedString": "Newborn Discharge"
       },
       {
+        "id": "Composition.section:NewbornDischarge.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LP76356-2"
+            }
+          ]
+        }
+      },
+      {
         "id": "Composition.section:NewbornDischarge.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "fixedUri": "http://loinc.org"
@@ -229,10 +301,10 @@
       {
         "id": "Composition.section:NewbornDischarge.code.coding.code",
         "path": "Composition.section.code.coding.code",
-        "fixedCode": "LP76356-2"
+        "fixedCode": "52524-6"
       },
       {
-        "id": "Composition.section:NewbornDelivery.emptyReason",
+        "id": "Composition.section:NewbornDischarge.emptyReason",
         "path": "Composition.section.emptyReason",
         "short": "Why the section is empty. A generic message \"Sorry, the Newborn Discharge record is currently unavailable\" can be shown if the data is not yet available to the system."
       }
