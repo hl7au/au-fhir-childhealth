@@ -16,52 +16,10 @@ profile:
 
 The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The [**Formal Profile Definition**](#profile) below provides the formal summary, definitions, and  terminology requirements.  
 
-**Each Observation must have:**
-
-1.  a status  
-1.  a LOINC and SNOMED code which tells you what was measured and is taken from the “LOINC Code” &  "SNOMED CT" columns respectively in the table below.
-1.  a subject (Patient)
-1.  a time indicating when the details was taken
-1.	a performer detailing who has recorded the details.
-1.  a numeric result value and standard UCUM unit which is taken from the “UCUM Unit Code” column in the table below.
-    -   note: if there is no numeric result then you have to supply a reason
-
-**Profile specific implementation guidance:**
-
-The client system SHALL supply both LOINC and SNOMED CT-AU codes to record this vital sign. 
-
----
-
-<table class="grid">
-  <thead>
-    <tr>
-      <th>Vital Sign</th>
-      <th>LOINC Code</th>
-      <th><em>LOINC Name </em>and Comments</th>
-	  <th>SNOMED Code</th>
-      <th><em>SNOMED Name </em>and Comments</th>
-      <th>UCUM Unit Code</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Body Mass Index (BMI)</td>
-      <td>39156-5</td>
-      <td>Body mass index (BMI) [Ratio]</td>
-      <td>60621009</td>
-	  <td>Body mass index</td>
-	  <td>kg/m2</td>
-    </tr>
-    
-  </tbody>
-</table>
-
----
-
 
 #### Examples
 
-- [BMI Normal] (ncdhc-observation-bmi-normal-example.html)
+- [BMI Normal](ncdhc-observation-bmi-normal-example.html)
 
 [Vitalsign]: http://hl7.org/fhir/STU3/observation-vitalsigns.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible

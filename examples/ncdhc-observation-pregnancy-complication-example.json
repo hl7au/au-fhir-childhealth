@@ -17,7 +17,8 @@
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "198609003"
+        "code" : "609496007",
+		"display": "Complication occurring during pregnancy"
       }
     ],
     "text" : "Complication of pregnancy, childbirth and/or the puerperium"

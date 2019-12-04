@@ -12,14 +12,11 @@
     },
     "status": "final",
     "code": {
-      "coding": [
-        {
-          "system": "http://loinc.org",
-          "code": "73780-9"
-        },
+      "coding": [      
         {
           "system": "http://snomed.info/sct",
-          "code": "414025005"
+          "code": "414025005",
+		  "display" : "Disorder of fetus or newborn (disorder)"
         }
       ],
       "text": "Abnormalities noted at Birth"

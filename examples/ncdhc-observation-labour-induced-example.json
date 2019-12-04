@@ -14,12 +14,9 @@
   "code" : {
     "coding" : [
       {
-        "system" : "http://loinc.org",
-        "code" : "LA20022-2"
-      },
-      {
         "system" : "http://snomed.info/sct",
-        "code" : "20236002"
+        "code" : "249120008",
+		"display" : "Onset of labor first stage"
       }
     ],
     "text" : "Labour Initiation"

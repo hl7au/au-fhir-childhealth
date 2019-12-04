@@ -25,10 +25,14 @@
       "display": "Baby of Eve Bill"
     },
     "effectiveDateTime": "2018-12-27T16:13:03Z",
-    "performer": [
+    "performer" : [
       {
-        "reference": "Practitioner/examiner-practitioner",
-        "display": "Dr. Carla Smith"
+        "reference" : "Practitioner/examiner-practitioner",
+        "display" : "Examiner"
+      },
+      {
+        "reference" : "Organization/examiner-organization",
+        "display" : "Organisation"
       }
     ],
     "valueQuantity": {

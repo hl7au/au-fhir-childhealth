@@ -14,12 +14,9 @@
   "code" : {
     "coding" : [
       {
-        "system" : "http://loinc.org",
-        "code" : "72149-8"
-      },
-      {
         "system" : "http://snomed.info/sct",
-        "code" : "289258004"
+        "code" : "236973005",
+		 "display" : "Delivery procedure"
       }
     ],
     "text" : "Method of Delivery"
