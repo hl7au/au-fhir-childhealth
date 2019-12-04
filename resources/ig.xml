@@ -974,7 +974,7 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Bundle/ncdhc-nbdelivery-payload" />
+				<reference value="Bundle/27700024-070c-4141-8109-9d9fa34dd24b" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -1652,6 +1652,13 @@
 				<reference value="DocumentReference/ncdhc-doc-ref-superseded-example" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-iron-normal-example" />
+			</sourceReference>
+		</resource>
+
 		<resource>
 			<example value="true" />
 			<sourceReference>
