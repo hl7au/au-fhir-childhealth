@@ -1,6 +1,6 @@
 {
         "resourceType" : "Observation",
-        "id" : "observation-iron-normal-example",
+        "id" : "ncdhc-observation-irontesting-normal-example",
         "meta" : {
           "versionId" : "1",
           "lastUpdated" : "2018-12-27T16:13:03Z",

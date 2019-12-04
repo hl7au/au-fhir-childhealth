@@ -1088,7 +1088,7 @@
       "source": "ncdhc-examiner-organization-example.json",
       "base": "ncdhc-examiner-organization-example.html"
     },    
-    "Observation/observation-iron-normal-example": {
+    "Observation/ncdhc-observation-irontesting-normal-example": {
       "source": "ncdhc-observation-irontesting-normal-example.json",
       "base": "ncdhc-observation-irontesting-normal-example.html"
     },
