@@ -23,40 +23,6 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  a time indicating when the details was taken
 1.	a performer detailing who has recorded the details.
 
-
-**Profile specific implementation guidance:**
-
-* To be added
-
-
-
----
-
-<table class="grid">
-  <thead>
-    <tr>
-      <th>Observation</th>
-      <th>LOINC Code</th>
-      <th><em>LOINC Name </em>and Comments</th>
-	  <th>SNOMED Code</th>
-      <th><em>SNOMED Name </em>and Comments</th>      
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Newborn Bloodspot Screen</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>428447008</td>
-	  <td>Newborn blood spot screening</td>	  
-    </tr>
-    
-  </tbody>
-</table>
-
----
-
-
 #### Examples
 
 To be added

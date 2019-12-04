@@ -28,41 +28,6 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  a numeric result value and standard UCUM unit which is taken from the “UCUM Unit Code” column in the table below. The applicable units are defined in the ValueSet : http://hl7.org/fhir/ValueSet/ucum-bodylength
     -   note: if there is no numeric result then you have to supply a reason
 
-**Profile specific implementation guidance:**
-
-The client system SHALL supply both LOINC and SNOMED CT-AU codes to record this vital sign. If the objective is to record the body height at birth, then client system SHALL additionally supply birth length SNOMED CT-AU code(169886007)
-
-
-
----
-
-<table class="grid">
-  <thead>
-    <tr>
-      <th>Vital Sign</th>
-      <th>LOINC Code</th>
-      <th><em>LOINC Name </em>and Comments</th>
-	  <th>SNOMED Code</th>
-      <th><em>SNOMED Name </em>and Comments</th>
-      <th>UCUM Unit Code</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Body height</td>
-      <td>8302-2</td>
-      <td>Body height</td>
-      <td><p>248334005</p><p>169886007</p></td>
-	  <td><p>Length of body</p><p>Birth length</p></td>
-	  <td>cm, [in_i]</td>
-    </tr>
-    
-  </tbody>
-</table>
-
----
-
-
 #### Examples
 
 - [Birth Length](ncdhc-observation-vitalsign-birthlength-example.html)

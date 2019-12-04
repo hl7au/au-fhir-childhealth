@@ -61,8 +61,7 @@ The client system SHALL supply both LOINC and SNOMED CT-AU codes to record this 
 
 #### Examples
 
-To be added
-
+- [BMI Normal] (ncdhc-observation-bmi-normal-example.html)
 
 [Vitalsign]: http://hl7.org/fhir/STU3/observation-vitalsigns.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
