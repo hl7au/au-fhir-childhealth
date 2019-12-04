@@ -1561,13 +1561,7 @@
 			<sourceReference>
 				<reference value="Observation/observation-immunisation-normal-example" />
 			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true" />
-			<sourceReference>
-				<reference value="Observation/observation-irontesting-normal-example" />
-			</sourceReference>
-		</resource>
+		</resource>		
 		<resource>
 			<example value="true" />
 			<sourceReference>
@@ -1655,7 +1649,7 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Observation/observation-iron-normal-example" />
+				<reference value="Observation/ncdhc-observation-irontesting-normal-example" />
 			</sourceReference>
 		</resource>
 
