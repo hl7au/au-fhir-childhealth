@@ -1537,6 +1537,24 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
+				<reference value="Observation/observation-vitalsign-birthweight-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-birthweight-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-vitalsign-birthlength-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
 				<reference value="Observation/observation-vitalsign-headcircum-example" />
 			</sourceReference>
 		</resource>
