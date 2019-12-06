@@ -3,7 +3,7 @@
   "id": "nb-delivery-qa-1",
   "questionnaire": {
     "reference": "Questionnaire/nb-delivery-q-en-s1",
-    "display": "Birth Questionnaire"
+    "display": "Birth"
   },
   "status": "completed",
   "subject": {
@@ -71,7 +71,7 @@
       "linkId": "5",
       "text": "Type of Birth",
       "subject": {
-        "reference": "Observation/641a72a8-df75-4484-ac89-ac4923f03b41"
+        "reference": "Observation/observation-method-of-delivery-example"
       },
       "answer": [
         {
@@ -88,7 +88,7 @@
       "linkId": "6",
       "text": "Labour Initiation",
       "subject": {
-        "reference": "Observation/641a72a8-df75-4l484-ac89-ac4923f03b42"
+        "reference": "Observation/observation-labour-induced-example"
       },
       "answer": [
         {
@@ -112,7 +112,7 @@
               "id": "7.1.0.1",
               "linkId": "7.1",
               "subject": {
-                "reference": "Observation/701a72a8-df75-4484-ac89-ac4923f03b02"
+                "reference": "Observation/observation-pregnancy-complication-example"
               },
               "item": [
                 {
@@ -139,7 +139,7 @@
               "id": "7.1.0.2",
               "linkId": "7.1",
               "subject": {
-                "reference": "Observation/701a72a8-df75-4484-ac89-ac4923f03b03"
+                "reference": "Observation/observation-pregnancy-complication-example"
               },
               "item": [
                 {
@@ -171,7 +171,7 @@
       "linkId": "8",
       "text": "Abnormalities Noted",
       "subject": {
-        "reference": "Observation/841a72a8-df75-4484-ac89-ac4923f03b42"
+        "reference": "Observation/observation-birth-abnormalities-example"
       },
       "answer": [
         {
@@ -182,7 +182,7 @@
               "linkId": "8.1",
               "text": "Abnormalities Noted",
               "subject": {
-                "reference": "Observation/841a72a8-df75-4484-ac89-ac4923f03b42"
+                "reference": "Observation/observation-birth-abnormalities-example"
               },
               "answer": [
                 {
@@ -199,7 +199,7 @@
       "linkId": "9",
       "text": "Birth Complications",
       "subject": {
-        "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b52"
+        "reference": "Observation/observation-birth-complication-example"
       },
       "answer": [
         {
@@ -275,7 +275,7 @@
       "linkId": "11",
       "text": "Birth Weight",
       "subject": {
-        "reference": "Observation/741a72a8-df75-4484-ac89-ac4923f03b44"
+        "reference": "Observation/observation-vitalsign-bodyweight-example"
       },
       "answer": [
         {
@@ -293,12 +293,12 @@
       "linkId": "12",
       "text": "Birth Length",
       "subject": {
-        "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b42"
+        "reference": "observation-vitalsign-bodyheight-example"
       },
       "answer": [
         {
           "valueQuantity": {
-            "value": 125,
+            "value": 51.5,
             "unit": "cm",
             "system": "http://unitsofmeasure.org",
             "code": "cm"
@@ -311,12 +311,12 @@
       "linkId": "13",
       "text": "Head Circumference",
       "subject": {
-        "reference": "Observation/541a72a8-df75-4484-ac89-ac4923f03b47"
+        "reference": "Observation/observation-vitalsign-headcircum-example"
       },
       "answer": [
         {
           "valueQuantity": {
-            "value": 51.2,
+            "value": 34.5,
             "unit": "cm",
             "system": "http://unitsofmeasure.org",
             "code": "cm"
@@ -337,7 +337,7 @@
               "linkId": "14.1",
               "text": "Vitamin K1",
               "subject": {
-                "reference": "MedicationStatement/901a72a8-df75-4484-ac89-ac4923f03b02"
+                "reference": "MedicationStatement/medication-statement-k1-example"
               },
               "item": [
                 {
@@ -349,7 +349,7 @@
                       "valueCoding": {
                         "system": "http://snomed.info/sct",
                         "code": "66656000",
-                        "display": "Phytomenadione"
+                        "display": "Vitamin K>1<"
                       }
                     }
                   ]
@@ -367,13 +367,23 @@
                 {
                   "id": "14.1.3.1",
                   "linkId": "14.1.3",
+                  "text": "Given",
+                  "answer": [
+                    {
+                      "valueString": "Yes"
+                    }
+                  ]
+                },
+                {
+                  "id": "14.1.5.1",
+                  "linkId": "14.1.5",
                   "text": "Route",
                   "answer": [
                     {
                       "valueCoding": {
                         "system": "http://snomed.info/sct",
-                        "code": "59108006",
-                        "display": "Injection"
+                        "code": "738956005",
+                        "display": "Oral"
                       }
                     }
                   ]
