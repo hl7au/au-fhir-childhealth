@@ -2,9 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-composition-view-birth",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-view-birth",
+  "version": "dv0.0.1",
   "name": "NCDHC Composition Birth View Profile",
   "title": "NCDHC Composition Birth View",
   "status": "draft",
+  "date": "2019-12-06",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "purpose": "To generate a Custom View to represent birth sumarry view",
   "fhirVersion": "3.0.1",
@@ -62,8 +64,8 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "67795-5"
+              "system": "http://snomed.info/sct",
+              "code": "169811007"
             }
           ]
         }
@@ -71,12 +73,12 @@
       {
         "id": "Composition.section:NewbornDelivery.code.coding.system",
         "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Composition.section:NewbornDelivery.code.coding.code",
         "path": "Composition.section.code.coding.code",
-        "fixedCode": "67795-5"
+        "fixedCode": "169811007"
       },
       {
         "id": "Composition.section:NewbornDelivery.emptyReason",
@@ -107,8 +109,8 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "11370-4"
+              "system": "http://snomed.info/sct",
+              "code": "1347121000168105"
             }
           ]
         }
@@ -116,12 +118,12 @@
       {
         "id": "Composition.section:NewbornImmunisation.code.coding.system",
         "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Composition.section:NewbornImmunisation.code.coding.code",
         "path": "Composition.section.code.coding.code",
-        "fixedCode": "11370-4"
+        "fixedCode": "1347121000168105"
       },
       {
         "id": "Composition.section:NewbornImmunisation.emptyReason",
@@ -152,8 +154,8 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "52524-6"
+              "system": "http://snomed.info/sct",
+              "code": "170099002"
             }
           ]
         }
@@ -161,12 +163,12 @@
       {
         "id": "Composition.section:NewbornExamination.code.coding.system",
         "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Composition.section:NewbornExamination.code.coding.code",
         "path": "Composition.section.code.coding.code",
-        "fixedCode": "52524-6"
+        "fixedCode": "170099002"
       },
       {
         "id": "Composition.section:NewbornExamination.emptyReason",
@@ -197,8 +199,8 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "LP67167-4"
+              "system": "http://snomed.info/sct",
+              "code": "428447008"
             }
           ]
         }
@@ -206,7 +208,7 @@
       {
         "id": "Composition.section:NewbornBloodspotScreen.code.coding.system",
         "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Composition.section:NewbornBloodspotScreen.code.coding.code",
@@ -242,8 +244,8 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "LP76356-2"
+              "system": "http://snomed.info/sct",
+              "code": "417491009"
             }
           ]
         }
@@ -251,12 +253,12 @@
       {
         "id": "Composition.section:NewbornHearingScreen.code.coding.system",
         "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Composition.section:NewbornHearingScreen.code.coding.code",
         "path": "Composition.section.code.coding.code",
-        "fixedCode": "LP76356-2"
+        "fixedCode": "417491009"
       },
       {
         "id": "Composition.section:NewbornHearingScreen.emptyReason",
@@ -287,8 +289,8 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "LP76356-2"
+              "system": "http://snomed.info/sct",
+              "code": "58000006"
             }
           ]
         }
@@ -296,12 +298,12 @@
       {
         "id": "Composition.section:NewbornDischarge.code.coding.system",
         "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Composition.section:NewbornDischarge.code.coding.code",
         "path": "Composition.section.code.coding.code",
-        "fixedCode": "52524-6"
+        "fixedCode": "58000006"
       },
       {
         "id": "Composition.section:NewbornDischarge.emptyReason",
