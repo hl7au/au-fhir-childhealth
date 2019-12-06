@@ -4,7 +4,7 @@
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-development",
   "version": "v1.0.0",
   "name": "NCDHC Development Observation Profile",
-  "title": "NCDHC Femoral Pulses Test Observation",
+  "title": "NCDHC Development Observation",
   "status": "draft",
   "date": "2019-02-15",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
