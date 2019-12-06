@@ -19,7 +19,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-- [BMI Normal](ncdhc-observation-bmi-normal-example.html)
+- [BMI Vital Sign](ncdhc-observation-vitalsign-bmi-example.html)
 
 [Vitalsign]: http://hl7.org/fhir/STU3/observation-vitalsigns.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
