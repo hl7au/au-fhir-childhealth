@@ -26,13 +26,10 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Profile specific implementation guidance:**
 
-- [Abnormalities noted at birth ](ncdhc-observation-birth-abnormalities-example.html)
-
-
 
 #### Examples
 
-To be added
+- [Abnormalities noted at birth ](ncdhc-observation-birth-abnormalities-example.html)
 
 [Observation]: http://hl7.org/fhir/observation.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
