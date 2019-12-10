@@ -87,11 +87,11 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "relationship.coding.code"
+              "type": "pattern",
+              "path": "relationship"
             }
           ],
-          "rules": "open"
+          "rules": "closed"
         },
         "mustSupport": true
       },
@@ -105,13 +105,12 @@
         ],
         "path": "Patient.contact",
         "sliceName": "contactMother",
-        "definition": "A contact party (e.g. guardian, partner, friend) for the patient. This is applicable only to the Baby Patient",
         "max": "1"
       },
       {
         "id": "Patient.contact:contactMother.relationship",
         "path": "Patient.contact.relationship",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://hl7.org/fhir/v3/RoleCode",
@@ -119,42 +118,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Patient.contact:contactMother.relationship.coding.system",
-        "path": "Patient.contact.relationship.coding.system",
-        "fixedUri": "http://hl7.org/fhir/v3/RoleCode"
-      },
-      {
-        "id": "Patient.contact:contactMother.relationship.coding.code",
-        "path": "Patient.contact.relationship.coding.code",
-        "fixedCode": "MTH"
-      },
-      {
-        "id": "Patient.contact:contactMother.relationship.text",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "Patient.contact.relationship.text",
-        "fixedString": "Mother"
-      },
-      {
-        "id": "Patient.contact:contactMother.name",
-        "path": "Patient.contact.name",
-        "short": "Mother's Name"
-      },
-      {
-        "id": "Patient.contact:contactMother.name.family",
-        "path": "Patient.contact.name.family",
-        "short": "Last name of mother"
-      },
-      {
-        "id": "Patient.contact:contactMother.name.given",
-        "path": "Patient.contact.name.given",
-        "short": "First name of Mother"
       },
       {
         "id": "Patient.contact:contactFather",
@@ -166,13 +129,12 @@
         ],
         "path": "Patient.contact",
         "sliceName": "contactFather",
-        "definition": "A contact party (e.g. guardian, partner, friend) for the patient. This is applicable only to the Baby Patient",
         "max": "1"
       },
       {
         "id": "Patient.contact:contactFather.relationship",
         "path": "Patient.contact.relationship",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://hl7.org/fhir/v3/RoleCode",
@@ -180,47 +142,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Patient.contact:contactFather.relationship.coding.system",
-        "path": "Patient.contact.relationship.coding.system",
-        "fixedUri": "http://hl7.org/fhir/v3/RoleCode"
-      },
-      {
-        "id": "Patient.contact:contactFather.relationship.coding.code",
-        "path": "Patient.contact.relationship.coding.code",
-        "fixedCode": "FTH"
-      },
-      {
-        "id": "Patient.contact:contactFather.relationship.text",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "Patient.contact.relationship.text",
-        "fixedString": "Father"
-      },
-      {
-        "id": "Patient.contact:contactFather.name",
-        "path": "Patient.contact.name",
-        "short": "Father's Name"
-      },
-      {
-        "id": "Patient.contact:contactFather.name.text",
-        "path": "Patient.contact.name.text",
-        "short": "Full Name of Father (used where First and Last names are not split into separate fields in a system)"
-      },
-      {
-        "id": "Patient.contact:contactFather.name.family",
-        "path": "Patient.contact.name.family",
-        "short": "Last name of Father"
-      },
-      {
-        "id": "Patient.contact:contactFather.name.given",
-        "path": "Patient.contact.name.given",
-        "short": "First name of Father"
       },
       {
         "id": "Patient.contact:contactOther",
@@ -231,14 +152,12 @@
           }
         ],
         "path": "Patient.contact",
-        "sliceName": "contactOther",
-        "definition": "A contact party (e.g. guardian, partner, friend) for the patient. This is applicable only to the Baby Patient",
-        "max": "1"
+        "sliceName": "contactOther"
       },
       {
         "id": "Patient.contact:contactOther.relationship",
         "path": "Patient.contact.relationship",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://hl7.org/fhir/v3/RoleCode",
@@ -248,43 +167,7 @@
         }
       },
       {
-        "id": "Patient.contact:contactOther.relationship.coding.system",
-        "path": "Patient.contact.relationship.coding.system",
-        "fixedUri": "http://hl7.org/fhir/v3/RoleCode"
-      },
-      {
-        "id": "Patient.contact:contactOther.relationship.coding.code",
-        "path": "Patient.contact.relationship.coding.code",
-        "fixedCode": "O"
-      },
-      {
-        "id": "Patient.contact:contactOther.relationship.text",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "Patient.contact.relationship.text",
-        "fixedString": "Other"
-      },
-      {
-        "id": "Patient.contact:contactOther.name.text",
-        "path": "Patient.contact.name.text",
-        "short": "Full Name of Other Parent (used where First and Last names are not split into separate fields in a system)"
-      },
-      {
-        "id": "Patient.contact:contactOther.name.family",
-        "path": "Patient.contact.name.family",
-        "short": "Last name of other Parent"
-      },
-      {
-        "id": "Patient.contact:contactOther.name.given",
-        "path": "Patient.contact.name.given",
-        "short": "First name of other parent"
-      },
-      {
-        "id": "Patient.contact:contactFedAgency",
+        "id": "Patient.contact:contactFederalAgency",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
@@ -292,14 +175,12 @@
           }
         ],
         "path": "Patient.contact",
-        "sliceName": "contactFedAgency",
-        "max": "1"
+        "sliceName": "contactFederalAgency"
       },
       {
-        "id": "Patient.contact:contactFedAgency.relationship",
+        "id": "Patient.contact:contactFederalAgency.relationship",
         "path": "Patient.contact.relationship",
-        "max": "1",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://hl7.org/fhir/v2/0131",
@@ -307,27 +188,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Patient.contact:contactFedAgency.relationship.coding.system",
-        "path": "Patient.contact.relationship.coding.system",
-        "fixedUri": "http://hl7.org/fhir/v2/0131"
-      },
-      {
-        "id": "Patient.contact:contactFedAgency.relationship.coding.code",
-        "path": "Patient.contact.relationship.coding.code",
-        "fixedCode": "F"
-      },
-      {
-        "id": "Patient.contact:contactFedAgency.relationship.text",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "Patient.contact.relationship.text",
-        "fixedString": "Federal Agency"
       },
       {
         "id": "Patient.contact:contactStateAgency",
@@ -338,14 +198,12 @@
           }
         ],
         "path": "Patient.contact",
-        "sliceName": "contactStateAgency",
-        "max": "1"
+        "sliceName": "contactStateAgency"
       },
       {
         "id": "Patient.contact:contactStateAgency.relationship",
         "path": "Patient.contact.relationship",
-        "max": "1",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://hl7.org/fhir/v2/0131",
@@ -353,27 +211,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Patient.contact:contactStateAgency.relationship.coding.system",
-        "path": "Patient.contact.relationship.coding.system",
-        "fixedUri": "http://hl7.org/fhir/v2/0131"
-      },
-      {
-        "id": "Patient.contact:contactStateAgency.relationship.coding.code",
-        "path": "Patient.contact.relationship.coding.code",
-        "fixedCode": "S"
-      },
-      {
-        "id": "Patient.contact:contactStateAgency.relationship.text",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "Patient.contact.relationship.text",
-        "fixedString": "State Agency"
       }
     ]
   }
