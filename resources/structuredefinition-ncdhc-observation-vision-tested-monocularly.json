@@ -176,12 +176,7 @@
       {
         "id": "Observation.related:rightEye.type",
         "path": "Observation.related.type",
-        "type": [
-          {
-            "code": "code",
-            "profile": "has-member"
-          }
-        ]
+        "fixedCode": "has-member"
       },
       {
         "id": "Observation.related:rightEye.target",
