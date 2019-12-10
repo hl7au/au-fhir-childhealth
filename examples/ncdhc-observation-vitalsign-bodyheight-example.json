@@ -18,26 +18,6 @@
             "system": "http://terminology.hl7.org/CodeSystem/observation-category",
             "code": "vital-signs",
             "display": "Vital Signs"
-          },
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "248334005",
-            "display" : "Length of body"
-          },
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "169886007",
-            "display" : "Birth length"
-          },
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "50373000",
-            "display" : "Body height"
-          },
-          {
-            "system" : "http://loinc.org",
-            "code" : "8302-2",
-            "display" : "Body height"
           }
         ],
         "text": "Vital Signs"
@@ -47,14 +27,16 @@
       "coding": [
         {
           "system": "http://loinc.org",
-          "code": "8302-2"
+          "code": "8302-2",
+          "display" : "Body height"
         },
         {
           "system": "http://snomed.info/sct",
-          "code": "248334005"
+          "code": "50373000",
+          "display" : "Body height"
         }
       ],
-      "text": "Body Height Length"
+      "text": "Body Height"
     },
     "subject": {
       "reference": "Patient/patient-baby-example",
