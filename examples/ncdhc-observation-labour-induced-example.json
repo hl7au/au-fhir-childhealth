@@ -16,10 +16,10 @@
       {
         "system" : "http://snomed.info/sct",
         "code" : "249120008",
-		"display" : "Onset of labor first stage"
+		"display" : "Onset of labour first stage"
       }
     ],
-    "text" : "Labour Initiation"
+    "text" : "Onset of labour first stage"
   },
   "subject" : {
     "reference" : "Patient/patient-baby-example"

@@ -15,10 +15,11 @@
     "coding": [     
       {
         "system": "http://snomed.info/sct",
-        "code": "199745000"
+        "code": "199745000",
+		"display" : "Complication occurring during labour and delivery"
       }
     ],
-    "text": "Complication of pregnancy, childbirth and/or the puerperium"
+    "text": "Complication occurring during labour and delivery"
   },
   "subject": {
     "reference": "Patient/patient-baby-example",

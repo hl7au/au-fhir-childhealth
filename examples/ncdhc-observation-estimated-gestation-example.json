@@ -14,19 +14,14 @@
   },
   "status" : "final",
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "72147-2",
-		"display" : "Gestational age--at birth [RHEA]"
-      },
+    "coding" : [      
       {
         "system" : "http://snomed.info/sct",
-        "code" : "412726003",
-		"display" : "Length of gestation at birth (observable entity)"
+        "code" : "5703600",
+		"display" : "Fetal gestational age"
       }
     ],
-    "text" : "Estimated length of Gestation"
+    "text" : "Fetal gestational age"
   },
   "subject" : {
     "reference" : "Patient/patient-baby-example",

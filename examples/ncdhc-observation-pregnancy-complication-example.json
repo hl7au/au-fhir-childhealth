@@ -21,7 +21,7 @@
 		"display": "Complication occurring during pregnancy"
       }
     ],
-    "text" : "Complication of pregnancy, childbirth and/or the puerperium"
+    "text" : "Complication occurring during pregnancy"
   },
   "subject" : {
     "reference" : "Patient/patient-baby-example",
