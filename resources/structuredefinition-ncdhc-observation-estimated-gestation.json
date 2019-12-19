@@ -24,17 +24,6 @@
         "short": "NCDHC Estimated Gestation Observation Profile"
       },
       {
-        "id": "Observation.status",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint",
-            "valueString": "default: final"
-          }
-        ],
-        "path": "Observation.status",
-        "fixedCode": "final"
-      },
-      {
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Code to represent Estimated Gestation noted during the birthing process",
