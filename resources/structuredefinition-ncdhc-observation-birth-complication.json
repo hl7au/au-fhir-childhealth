@@ -37,45 +37,15 @@
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Code to represent complications noted during the birthing process",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "slicing": {
-          "discriminator": [
+        "patternCodeableConcept": {
+          "coding": [
             {
-              "type": "value",
-              "path": "code"
-            },
-            {
-              "type": "value",
-              "path": "system"
+              "system": "http://snomed.info/sct",
+              "code": "199745000"
             }
-          ],
-          "rules": "closed"
-        }
-      },
-      {
-        "id": "Observation.code.coding:BirthComplicationSNOMED",
-        "path": "Observation.code.coding",
-        "sliceName": "BirthComplicationSNOMED",
-        "min": 1,
-        "max": "1",
-        "fixedCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "199745000"
-        }
-      },
-      {
-        "id": "Observation.code.coding:BirthComplicationSNOMED.system",
-        "path": "Observation.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding:BirthComplicationSNOMED.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "199745000"
+          ]
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.effectiveDateTime:effectiveDateTime",

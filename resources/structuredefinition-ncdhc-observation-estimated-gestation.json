@@ -38,65 +38,15 @@
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Code to represent Estimated Gestation noted during the birthing process",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "slicing": {
-          "discriminator": [
+        "patternCodeableConcept": {
+          "coding": [
             {
-              "type": "value",
-              "path": "code"
-            },
-            {
-              "type": "value",
-              "path": "system"
+              "system": "http://snomed.info/sct",
+              "code": "5703600"
             }
-          ],
-          "rules": "closed"
-        }
-      },
-      {
-        "id": "Observation.code.coding:EstimatedGestationLOINC",
-        "path": "Observation.code.coding",
-        "sliceName": "EstimatedGestationLOINC",
-        "max": "1",
-        "fixedCoding": {
-          "system": "http://loinc.org",
-          "code": "72147-2"
-        }
-      },
-      {
-        "id": "Observation.code.coding:EstimatedGestationLOINC.system",
-        "path": "Observation.code.coding.system",
-        "fixedUri": "http://loinc.org"
-      },
-      {
-        "id": "Observation.code.coding:EstimatedGestationLOINC.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "72147-2"
-      },
-      {
-        "id": "Observation.code.coding:EstimatedGestationSNOMED",
-        "path": "Observation.code.coding",
-        "sliceName": "EstimatedGestationSNOMED",
-        "min": 1,
-        "max": "1",
-        "fixedCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "412726003"
-        }
-      },
-      {
-        "id": "Observation.code.coding:EstimatedGestationSNOMED.system",
-        "path": "Observation.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding:EstimatedGestationSNOMED.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "412726003"
+          ]
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.subject",
