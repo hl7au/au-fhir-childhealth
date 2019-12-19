@@ -8,7 +8,7 @@
   "type": "document",
   "entry": [
     {
-      "fullUrl": "url:uuid:37700024-070c-4141-8109-9d9fa34dd24b",
+      "fullUrl": "urn:uuid:37700024-070c-4141-8109-9d9fa34dd24b",
       "resource": {
         "resourceType": "Composition",
         "id": "33d63d08-6c53-4a8c-86e0-b2933472ec3b",
