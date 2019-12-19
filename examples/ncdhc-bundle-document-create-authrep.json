@@ -1,13 +1,17 @@
 {
   "resourceType": "Bundle",
   "id": "ncdhc-bundle-document-create-authrep",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:83c6b096-3038-4ed8-a3c4-7dc55a6869ce"
+  },
   "type": "document",
   "entry": [
     {
       "fullUrl": "url:uuid:37700024-070c-4141-8109-9d9fa34dd24b",
       "resource": {
         "resourceType": "Composition",
-        "id": "37700024-070c-4141-8109-9d9fa34dd24b",
+        "id": "33d63d08-6c53-4a8c-86e0-b2933472ec3b",
         "meta": {
           "versionId": "1",
           "lastUpdated": "2019-11-05T00:00:00Z",
@@ -17,7 +21,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 180f219f-97a8-486d-99d9-ed631fe4fc57</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>type</b>: Register Representative </p><p><b>title</b>: Register Representative</p><p><b>confidentiality</b>: N</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 33d63d08-6c53-4a8c-86e0-b2933472ec3b</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>type</b>: Register Representative </p><p><b>title</b>: Register Representative</p><p><b>confidentiality</b>: N</p></div>"
         },
         "status": "final",
         "type": {
@@ -30,7 +34,7 @@
           ],
           "text": "Register Representative"
         },
-        "date": "2018-12-24T12:30:02Z",
+        "date": "2019-12-16T03:35:02Z",
         "author": [
           {
             "reference": "urn:uuid:3db74777-fd3d-4d3b-92ec-d405977a11a5",
@@ -42,7 +46,7 @@
         "attester": [
           {
             "mode": "professional",
-            "time": "2018-12-24T12:30:02Z",
+            "time": "2019-12-16T03:35:02Z",
             "party": {
               "reference": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
               "display": "NSW Health"
@@ -91,7 +95,7 @@
         ],
         "identifier": {
           "system": "urn:ietf:rfc:3986",
-          "value": "urn:uuid:0r4151bd-1cbf-4d64-b04d-cd9187a4c6e0"
+          "value": "urn:uuid:33d63d08-6c53-4a8c-86e0-b2933472ec3b"
         },
         "subject": {
           "reference": "urn:uuid:eb78393f-37ca-4738-81d6-d9595b2e5d0f"
@@ -114,6 +118,73 @@
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Machine Processable Patient Instance</div>"
         }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c",
+      "resource": {
+        "resourceType": "RelatedPerson",
+        "patient": {
+          "reference": "urn:uuid:eb78393f-37ca-4738-81d6-d9595b2e5d0f"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0a",
+      "resource": {
+        "resourceType": "Person",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Rosie Wagner Registered as Authorised Representative</div>"
+        },
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-05T00:00:00Z",
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Person"
+          ]
+        },
+        "id": "61ebe359-bfdc-4613-8bf2-c5e300945f0a",
+        "identifier": [
+          {
+            "system": "http://schemas.microsoft.com/identity/claims/objectidentifier",
+            "value": "c5e4915d-6c7a-4465-99dd-835257f65122"
+          }
+        ],
+        "name": [
+          {
+            "text": "RosieWagner",
+            "family": "Wagner",
+            "given": [
+              "Rosie"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "rosie.wagner@gmail.com",
+            "use": "home"
+          },
+          {
+            "system": "phone",
+            "value": "405898112",
+            "use": "mobile"
+          }
+        ],
+        "gender": "female",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "44 Kirkland Dr "
+            ],
+            "city": "Chatswood",
+            "state": "NSW",
+            "postalCode": "2025"
+          }
+        ],
+        "active": true
       }
     },
     {
@@ -186,72 +257,11 @@
               "text": "HPI-O"
             },
             "system": "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
-            "value": "8003621566684455"
+            "value": "8003620045462568"
           }
         ],
         "active": true,
         "name": "eHealth NSW"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c",
-      "resource": {
-        "resourceType": "RelatedPerson",
-        "patient": {
-          "reference": "urn:uuid:eb78393f-37ca-4738-81d6-d9595b2e5d0f"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0a",
-      "resource": {
-        "resourceType": "Person",
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Eve Bill Registered as Authorised Representative</div>"
-        },
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2019-11-05T00:00:00Z",
-          "profile": [
-            "http://hl7.org/fhir/StructureDefinition/Person"
-          ]
-        },
-        "id": "61ebe359-bfdc-4613-8bf2-c5e300945f0a",
-        "name": [
-          {
-            "text": "Eve Bill",
-            "family": "Bill",
-            "given": [
-              "Eve"
-            ]
-          }
-        ],
-        "telecom": [
-          {
-            "system": "email",
-            "value": "e.bill@kill.com",
-            "use": "home"
-          },
-          {
-            "system": "phone",
-            "value": "0444 123 125",
-            "use": "mobile"
-          }
-        ],
-        "gender": "female",
-        "address": [
-          {
-            "use": "home",
-            "line": [
-              "534 Erewhon St"
-            ],
-            "city": "PleasantVille",
-            "state": "NSW",
-            "postalCode": "2134"
-          }
-        ],
-        "active": true
       }
     },
     {
@@ -277,11 +287,11 @@
         "patient": {
           "reference": "urn:uuid:eb78393f-37ca-4738-81d6-d9595b2e5d0f"
         },
-        "dateTime": "2019-10-23T16:13:03Z",
+        "dateTime": "2019-12-16T03:35:02Z",
         "consentingParty": [
           {
             "reference": "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c",
-            "display": "Eve Bill"
+            "display": "Rosie Wagner"
           }
         ],
         "policyRule": "urn:uuid:44847642-b160-4e0b-9ce7-69611bf5b303",
@@ -305,7 +315,7 @@
             },
             "reference": {
               "reference": "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c",
-              "display": "Eve Bill"
+              "display": "Rosie Wagner"
             }
           }
         ]
@@ -341,11 +351,11 @@
         "patient": {
           "reference": "urn:uuid:eb78393f-37ca-4738-81d6-d9595b2e5d0f"
         },
-        "dateTime": "2019-10-23T16:13:03Z",
+        "dateTime": "2019-12-16T03:35:02Z",
         "consentingParty": [
           {
             "reference": "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c",
-            "display": "Eve Bill"
+            "display": "Rosie Wagner"
           }
         ],
         "policyRule": "urn:uuid:44847642-b160-4e0b-9ce7-69611bf5b303"
@@ -381,19 +391,15 @@
         "patient": {
           "reference": "urn:uuid:eb78393f-37ca-4738-81d6-d9595b2e5d0f"
         },
-        "dateTime": "2019-10-23T16:13:03Z",
+        "dateTime": "2019-12-16T03:35:02Z",
         "consentingParty": [
           {
             "reference": "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c",
-            "display": "Eve Bill"
+            "display": "RosieWagner"
           }
         ],
         "policyRule": "urn:uuid:44847642-b160-4e0b-9ce7-69611bf5b303"
       }
     }
-  ],
-  "identifier": {
-    "system": "urn:ietf:rfc:3986",
-    "value": "urn:uuid:ar4151bd-1cbf-4d64-b04d-cd9187a4c6e0"
-  }
+  ]
 }
