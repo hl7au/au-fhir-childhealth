@@ -70,7 +70,7 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "412726003"
+          "code": "5703600"
         }
       ],
       "text": "Estimated Gestation",
@@ -113,16 +113,16 @@
       "item": [
         {
           "linkId": "7.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html#Observation.value[x]",         
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html#Observation.value[x]",
           "type": "open-choice"
         },
         {
           "linkId": "7.2",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html#Observation.comment",         
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html#Observation.comment",
           "type": "text"
         }
       ]
-    },   
+    },
     {
       "linkId": "8",
       "code": [
@@ -136,12 +136,12 @@
       "item": [
         {
           "linkId": "8.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-abnormalities-definitions.html#Observation.value[x]",         
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-abnormalities-definitions.html#Observation.value[x]",
           "type": "open-choice"
         },
         {
           "linkId": "8.2",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-abnormalities-definitions.html#Observation.comment",          
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-abnormalities-definitions.html#Observation.comment",
           "type": "text"
         }
       ]
@@ -159,12 +159,12 @@
       "item": [
         {
           "linkId": "9.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-complication-definitions.html#Observation.value[x]",         
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-complication-definitions.html#Observation.value[x]",
           "type": "open-choice"
         },
         {
           "linkId": "9.2",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-complication-definitions.html#Observation.comment",         
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-birth-complication-definitions.html#Observation.comment",
           "type": "text"
         }
       ]
@@ -248,7 +248,7 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "169876006"
+          "code": "363812007"
         }
       ],
       "text": "Head Circumference",
@@ -270,7 +270,7 @@
           "code": [
             {
               "system": "http://snomed.info/sct",
-              "code": "255216001"
+              "code": "65183007"
             }
           ],
           "text": "Vitamin K1",
@@ -299,27 +299,27 @@
       ]
     },
     {
-      "linkId" : "15",
-      "text" : "Examiner",
-      "type" : "group",
-      "item" : [
+      "linkId": "15",
+      "text": "Examiner",
+      "type": "group",
+      "item": [
         {
-          "linkId" : "15.1",
-          "definition" : "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.type",
-          "text" : "Designation",
-          "type" : "open-choice"
+          "linkId": "15.1",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.type",
+          "text": "Designation",
+          "type": "open-choice"
         },
         {
-          "linkId" : "15.2",
-          "definition" : "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.location.location",
-          "text" : "Venue",
-          "type" : "string"
+          "linkId": "15.2",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.location.location",
+          "text": "Venue",
+          "type": "string"
         },
         {
-          "linkId" : "15.3",
-          "definition" : "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.period",
-          "text" : "Date & Time",
-          "type" : "dateTime"
+          "linkId": "15.3",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.period",
+          "text": "Date & Time",
+          "type": "dateTime"
         }
       ]
     }
