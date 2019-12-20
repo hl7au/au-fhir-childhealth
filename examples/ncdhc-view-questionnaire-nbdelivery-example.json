@@ -290,6 +290,12 @@
             },
             {
               "linkId": "14.1.3",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-medicationstatement-vitamink-definitions.html#MedicationStatement.taken",
+              "text": "Given",
+              "type": "choice"
+            },
+            {
+              "linkId": "14.1.4",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-medicationstatement-vitamink-definitions.html#MedicationStatement.dosage.route",
               "text": "Route",
               "type": "choice"
