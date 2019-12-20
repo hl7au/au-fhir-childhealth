@@ -58,10 +58,10 @@
       {
         "id": "Composition.type",
         "path": "Composition.type",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
-              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/codesystem-ncdhc-document-type-1",
+              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
               "code": "NEWBRNDEL"
             }
           ]
@@ -328,7 +328,6 @@
         "path": "Composition.section.entry",
         "sliceName": "apgar1m",
         "short": "This section records APGAR score (1 Minute)",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -345,7 +344,6 @@
         "path": "Composition.section.entry",
         "sliceName": "apgar5m",
         "short": "This section records APGAR score (5 Minutes)",
-        "min": 1,
         "max": "1",
         "type": [
           {
