@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-bodyweight",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bodyweight",
-  "version": "v1.0.0",
+  "version": "v1.1.0",
   "name": "NCDHC Body Weight Observation Profile",
   "title": "NCDHC Body Weight Observation",
   "status": "draft",
@@ -33,7 +33,7 @@
               "path": "code"
             }
           ],
-          "rules": "closed"
+          "rules": "open"
         }
       },
       {
@@ -63,20 +63,6 @@
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
         "min": 1
-      },
-      {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
-          }
-        ]
       },
       {
         "id": "Observation.value[x]:valueQuantity",
