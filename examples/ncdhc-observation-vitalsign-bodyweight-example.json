@@ -29,8 +29,7 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "29463-7",
-        "display": "Body Weight"
+        "code": "29463-7"
       },
       {
         "system": "http://snomed.info/sct",
