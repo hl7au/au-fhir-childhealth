@@ -45,6 +45,7 @@
         "id": "Observation.code.coding:BodyHeightSNOMEDCTAUCode",
         "path": "Observation.code.coding",
         "sliceName": "BodyHeightSNOMEDCTAUCode",
+		"min": 0,
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
@@ -65,6 +66,7 @@
         "id": "Observation.code.coding:BirthHeightSNOMEDCTAUCode",
         "path": "Observation.code.coding",
         "sliceName": "BirthHeightSNOMEDCTAUCode",
+		"min": 0,
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
@@ -85,6 +87,7 @@
         "id": "Observation.code.coding:BodyHeightMeasurSNOMEDCTAUCode",
         "path": "Observation.code.coding",
         "sliceName": "BodyHeightMeasurSNOMEDCTAUCode",
+		"min": 0,
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",

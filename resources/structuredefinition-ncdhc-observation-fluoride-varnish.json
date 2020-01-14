@@ -10,7 +10,7 @@
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "Record outcome of the child's fluoride varnish assessemen",
   "purpose": "To record Fluoride Varnish result",
-  "fhirVersion": "3.0.1",
+  "fhirVersion": "3.0.2",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -42,11 +42,11 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "system"
+              "type": "pattern",
+              "path": "code"
             }
           ],
-          "rules": "closed"
+          "rules": "open"
         }
       },
       {
@@ -55,20 +55,10 @@
         "sliceName": "FluorideVarnishSNOMEDCT-AU",
         "min": 1,
         "max": "1",
-        "fixedCoding": {
+        "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "313042009"
         }
-      },
-      {
-        "id": "Observation.code.coding:FluorideVarnishSNOMEDCT-AU.system",
-        "path": "Observation.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding:FluorideVarnishSNOMEDCT-AU.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "313042009"
       },
       {
         "id": "Observation.subject",
@@ -84,17 +74,7 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "short": "Person who is clinically responsible for the undetaking of the exam",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
-          }
-        ]
+        "short": "Person who is clinically responsible for the undetaking of the exam"
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept",

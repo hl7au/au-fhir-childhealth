@@ -73,9 +73,10 @@
         "definition": "This profile defines  how to represent body weight observations in FHIR using a standard LOINC code and SNOMED CT AU code. The profile uses UCUM units of measure."
       },
       {
-        "id": "Observation.code.coding:BirthWeightSNOMEDCTAUCode",
+        "id": "Observation.code.coding:BirthWeightSNOMEDCTAU",
         "path": "Observation.code.coding",
-        "sliceName": "BirthWeightSNOMEDCTAUCode",
+        "sliceName": "BirthWeightSNOMEDCTAU",
+		"min": 0,
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
@@ -83,19 +84,20 @@
         }
       },
       {
-        "id": "Observation.code.coding:BirthWeightSNOMEDCTAUCode.system",
+        "id": "Observation.code.coding:BirthWeightSNOMEDCTAU.system",
         "path": "Observation.code.coding.system",
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:BirthWeightSNOMEDCTAUCode.code",
+        "id": "Observation.code.coding:BirthWeightSNOMEDCTAU.code",
         "path": "Observation.code.coding.code",
         "fixedCode": "364589006"
       },
       {
-        "id": "Observation.code.coding:BodyWeightSNOMEDCTAUCode",
+        "id": "Observation.code.coding:BodyWeightSNOMEDCTAU",
         "path": "Observation.code.coding",
-        "sliceName": "BodyWeightSNOMEDCTAUCode",
+        "sliceName": "BodyWeightSNOMEDCTAU",
+		"min": 0,
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
@@ -103,12 +105,12 @@
         }
       },
       {
-        "id": "Observation.code.coding:BodyWeightSNOMEDCTAUCode.system",
+        "id": "Observation.code.coding:BodyWeightSNOMEDCTAU.system",
         "path": "Observation.code.coding.system",
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:BodyWeightSNOMEDCTAUCode.code",
+        "id": "Observation.code.coding:BodyWeightSNOMEDCTAU.code",
         "path": "Observation.code.coding.code",
         "fixedCode": "27113001"
       },
@@ -135,54 +137,38 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "identifier.type.coding.code"
-            },
-            {
-              "type": "value",
-              "path": "identifier.type.coding.system"
-            }
-          ],
-          "rules": "open"
-        },
         "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          }
-        ]
-      },
-      {
-        "id": "Observation.performer:Examiner",
-        "path": "Observation.performer",
-        "sliceName": "Examiner",
-        "short": "Person who is clinically responsible for the undertaking of the exam",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          }
-        ]
-      },
-      {
-        "id": "Observation.performer:Organisation",
-        "path": "Observation.performer",
-        "sliceName": "Organisation",
-        "short": "An organisation which captures the relevant details including the venue where examination/assessment took place.",
-        "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "inv-obs-exm-pract-001",
+            "requirements": "Person who is clinically responsible for the undertaking of the exam",
+            "severity": "error",
+            "human": "Person who is clinically responsible for the undertaking of the exam shall be present",
+            "expression": "Observation.performer.entry.resolve().where($this is Practitioner).exists() implies Observation.performer.entry.resolve().where($this is Practitioner).count()>0"
+          },
+          {
+            "key": "inv-obs-exm-org-002",
+            "requirements": "An organisation which captures the relevant details",
+            "severity": "error",
+            "human": "An organisation which captures the relevant details shall be present",
+            "expression": "Observation.performer.entry.resolve().where($this is Organization).exists() implies Observation.performer.entry.resolve().where($this is Organization).count()>0"
           }
         ]
+      },
+      {
+        "id": "Observation.valueQuantity:valueQuantity",
+        "path": "Observation.valueQuantity",
+        "sliceName": "valueQuantity"
       },
       {
         "id": "Observation.interpretation",
@@ -199,6 +185,11 @@
         "id": "Observation.comment",
         "path": "Observation.comment",
         "short": "Additional Comments"
+      },
+      {
+        "id": "Observation.component.valueQuantity:valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "sliceName": "valueQuantity"
       }
     ]
   }

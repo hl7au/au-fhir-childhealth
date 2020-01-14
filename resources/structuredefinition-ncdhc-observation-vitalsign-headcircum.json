@@ -27,6 +27,7 @@
         "id": "Observation.code.coding:HeadCircumSNOMEDCTAU",
         "path": "Observation.code.coding",
         "sliceName": "HeadCircumSNOMEDCTAU",
+		"min": 0,
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
@@ -47,6 +48,7 @@
         "id": "Observation.code.coding:BirthHeadCircumSNOMEDCTAU",
         "path": "Observation.code.coding",
         "sliceName": "BirthHeadCircumSNOMEDCTAU",
+		"min": 0,
         "max": "1",
         "fixedCoding": {
           "system": "http://snomed.info/sct",

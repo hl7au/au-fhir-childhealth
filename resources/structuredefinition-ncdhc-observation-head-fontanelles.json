@@ -34,7 +34,7 @@
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Fontanelles, Sutures code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -43,16 +43,6 @@
           ]
         },
         "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding.system",
-        "path": "Observation.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "7352004"
       },
       {
         "id": "Observation.subject",

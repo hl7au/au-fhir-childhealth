@@ -41,11 +41,11 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "system"
+              "type": "pattern",
+              "path": "code"
             }
           ],
-          "rules": "closed"
+          "rules": "open"
         }
       },
       {
@@ -54,20 +54,10 @@
         "sliceName": "IronTestSNOMEDCT-AU",
         "min": 1,
         "max": "1",
-        "fixedCoding": {
+        "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "42950004"
         }
-      },
-      {
-        "id": "Observation.code.coding:IronTestSNOMEDCT-AU.system",
-        "path": "Observation.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding:IronTestSNOMEDCT-AU.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "42950004"
       },
       {
         "id": "Observation.subject",
@@ -77,17 +67,7 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "short": "Person who is clinically responsible for the undetaking of the exam",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
-          }
-        ]
+        "short": "Person who is clinically responsible for the undetaking of the exam"
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept",

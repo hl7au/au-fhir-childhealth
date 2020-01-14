@@ -7,6 +7,7 @@
   "title": "NCDHC Rep Registration Composition",
   "status": "draft",
   "date": "2019-11-08",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "A FHIR document to allow registration of representative.",
   "fhirVersion": "3.0.1",
   "kind": "resource",

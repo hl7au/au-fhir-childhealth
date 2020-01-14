@@ -2,14 +2,36 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-medicationstatement-vitamink",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-medicationstatement-vitamink",
-  "version": "v1.0.0",
+  "version": "dv001",
   "name": "NCDHC Vitamin K Administered Profile",
   "title": "NCDHC Vitamin K Administered",
   "status": "draft",
-  "date": "2019-02-15",
+  "date": "2019-12-13",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "Vitamin K is a medication given to the newborn at birth.  Either by intramuscular injection or up to three doses orally",
   "fhirVersion": "3.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/w5",
+      "name": "W5 Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
   "kind": "resource",
   "abstract": false,
   "type": "MedicationStatement",
@@ -18,50 +40,14 @@
   "differential": {
     "element": [
       {
-        "id": "MedicationStatement",
-        "path": "MedicationStatement",
-        "short": "NCDHC Vitamin K Administered Profile"
+        "id": "MedicationStatement.effective[x]",
+        "path": "MedicationStatement.effective[x]",
+        "min": 1
       },
       {
-        "id": "MedicationStatement.status",
-        "path": "MedicationStatement.status",
-        "fixedCode": "completed"
-      },
-      {
-        "id": "MedicationStatement.medication[x]:medicationCoded",
-        "path": "MedicationStatement.medication[x]",
-        "sliceName": "medicationCoded"
-      },
-      {
-        "id": "MedicationStatement.medication[x]:medicationCoded.coding:vitaminK",
-        "path": "MedicationStatement.medication[x].coding",
-        "sliceName": "vitaminK",
-        "min": 1,
-        "max": "1",
-        "fixedCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "65183007"
-        }
-      },
-      {
-        "id": "MedicationStatement.medication[x]:medicationCoded.coding:vitaminK.system",
-        "path": "MedicationStatement.medication[x].coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "MedicationStatement.medication[x]:medicationCoded.coding:vitaminK.code",
-        "path": "MedicationStatement.medication[x].coding.code",
-        "fixedCode": "65183007"
-      },
-      {
-        "id": "MedicationStatement.effective[x]:effectiveDateTime",
-        "path": "MedicationStatement.effectiveDateTime",
-        "sliceName": "effectiveDateTime",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ]
+        "id": "MedicationStatement.dateAsserted",
+        "path": "MedicationStatement.dateAsserted",
+        "short": "Vitamin K Date"
       },
       {
         "id": "MedicationStatement.subject",
@@ -70,6 +56,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-baby"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Group"
           }
         ]
       },
@@ -81,7 +71,19 @@
       {
         "id": "MedicationStatement.dosage.route",
         "path": "MedicationStatement.dosage.route",
-        "mustSupport": true
+        "short": "Route of Administration",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "RouteOfAdministration"
+            }
+          ],
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-meds-route-admins-type-1"
+          }
+        }
       }
     ]
   }

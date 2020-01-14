@@ -41,11 +41,11 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "system"
+              "type": "pattern",
+              "path": "code"
             }
           ],
-          "rules": "closed"
+          "rules": "open"
         }
       },
       {
@@ -54,20 +54,10 @@
         "sliceName": "VacStatusSNOMEDCT-AU",
         "min": 1,
         "max": "1",
-        "fixedCoding": {
+        "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "408864009"
         }
-      },
-      {
-        "id": "Observation.code.coding:VacStatusSNOMEDCT-AU.system",
-        "path": "Observation.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding:VacStatusSNOMEDCT-AU.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "408864009"
       },
       {
         "id": "Observation.subject",

@@ -24,7 +24,7 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",

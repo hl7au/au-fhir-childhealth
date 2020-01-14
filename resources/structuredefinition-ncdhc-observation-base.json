@@ -46,7 +46,6 @@
       {
         "id": "Observation.category",
         "path": "Observation.category",
-        "comment": "In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.\r\n\r\nCWG: Discussion on the Category to match it with Composition.type",
         "max": "1",
         "mustSupport": true,
         "binding": {
@@ -83,84 +82,39 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "display"
-            }
-          ],
-          "rules": "open"
-        },
         "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          }
-        ]
-      },
-      {
-        "id": "Observation.performer:Examiner",
-        "path": "Observation.performer",
-        "sliceName": "Examiner",
-        "short": "Person who is clinically responsible for the undertaking of the exam",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          }
-        ]
-      },
-      {
-        "id": "Observation.performer:Examiner.display",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "Observation.performer.display",
-        "fixedString": "Examiner"
-      },
-      {
-        "id": "Observation.performer:Organisation",
-        "path": "Observation.performer",
-        "sliceName": "Organisation",
-        "short": "An organisation which captures the relevant details",
-        "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
-          }
-        ]
-      },
-      {
-        "id": "Observation.performer:Organisation.display",
-        "extension": [
+          },
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
           }
         ],
-        "path": "Observation.performer.display",
-        "fixedString": "Organisation"
+        "constraint": [
+          {
+            "key": "inv-obs-exm-pract-001",
+            "requirements": "Person who is clinically responsible for the undertaking of the exam shall be present",
+            "severity": "error",
+            "human": "Person who is clinically responsible for the undertaking of the exam shall be present",
+            "expression": "Observation.performer.resolve().where($this is Practitioner).exists() implies Observation.performer.resolve().where($this is Practitioner).count()>0"
+          },
+          {
+            "key": "inv-obs-exm-org-002",
+            "requirements": "An organisation which captures the relevant details shall be present",
+            "severity": "error",
+            "human": "An organisation which captures the relevant details shall be present",
+            "expression": "Observation.performer.entry.resolve().where($this is Organization).exists() implies Observation.performer.entry.resolve().where($this is Organization).count()>0"
+          }
+        ]
       },
       {
         "id": "Observation.dataAbsentReason",
         "path": "Observation.dataAbsentReason",
         "mustSupport": true,
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationValueAbsentReason"
-            }
-          ],
           "strength": "extensible",
           "valueSetReference": {
             "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-valueabsentreason-1"

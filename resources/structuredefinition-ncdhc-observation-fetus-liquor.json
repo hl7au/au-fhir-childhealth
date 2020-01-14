@@ -10,7 +10,7 @@
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "liquour is the amniotic fluid, the protective liquid contained by the amniotic sac of a gravid amniote",
   "purpose": "To record measure of amniotic fluid (liquor)",
-  "fhirVersion": "3.0.1",
+  "fhirVersion": "3.0.2",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",

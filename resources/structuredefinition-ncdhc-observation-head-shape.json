@@ -31,7 +31,7 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -48,16 +48,6 @@
           "system": "http://snomed.info/sct",
           "code": "364407007"
         }
-      },
-      {
-        "id": "Observation.code.coding.system",
-        "path": "Observation.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "364407007"
       },
       {
         "id": "Observation.subject",
