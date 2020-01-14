@@ -243,21 +243,41 @@
       "base": "StructureDefinition-ncdhc-observation-vitalsign-bodyweight.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-bodyweight-definitions.html"
     },
+    "Observation/observation-vitalsign-bodyweight-example": {
+      "source": "ncdhc-observation-vitalsign-bodyweight-example.json",
+      "base": "ncdhc-observation-vitalsign-bodyweight-example.html"
+    },
+    "Observation/observation-vitalsign-birthweight-example": {
+      "source": "ncdhc-observation-vitalsign-birthweight-example.json",
+      "base": "ncdhc-observation-vitalsign-birthweight-example.html"
+    },
     "StructureDefinition/ncdhc-observation-vitalsign-bodyheight": {
       "base": "StructureDefinition-ncdhc-observation-vitalsign-bodyheight.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-bodyheight-definitions.html"
+    },
+    "Observation/observation-vitalsign-birthlength-example": {
+      "source": "ncdhc-observation-vitalsign-birthlength-example.json",
+      "base": "ncdhc-observation-vitalsign-birthlength-example.html"
+    },
+    "Observation/observation-vitalsign-bodyheight-example": {
+      "source": "ncdhc-observation-vitalsign-bodyheight-example.json",
+      "base": "ncdhc-observation-vitalsign-bodyheight-example.html"
     },
     "StructureDefinition/ncdhc-observation-vitalsign-headcircum": {
       "base": "StructureDefinition-ncdhc-observation-vitalsign-headcircum.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-headcircum-definitions.html"
     },
+    "Observation/observation-vitalsign-headcircum-example": {
+      "source": "ncdhc-observation-vitalsign-headcircum-example.json",
+      "base": "ncdhc-observation-vitalsign-headcircum-example.html"
+    },
     "StructureDefinition/ncdhc-observation-vitalsign-bmi": {
       "base": "StructureDefinition-ncdhc-observation-vitalsign-bmi.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-bmi-definitions.html"
     },
-    "StructureDefinition/ncdhc-observation-bmi": {
-      "base": "StructureDefinition-ncdhc-observation-bmi.html",
-      "defns": "StructureDefinition-ncdhc-observation-bmi-definitions.html"
+    "Observation/observation-vitalsign-bmi-example": {
+      "source": "ncdhc-observation-vitalsign-bmi-example.json",
+      "base": "ncdhc-observation-vitalsign-bmi-example.html"
     },
     "StructureDefinition/ncdhc-observation-vitalsign-heart-rate": {
       "base": "StructureDefinition-ncdhc-observation-vitalsign-heart-rate.html",
@@ -422,10 +442,6 @@
     "Bundle/ncdhc-nbdelivery-payload": {
       "source": "ncdhc-nbdelivery-payload.json",
       "base": "ncdhc-nbdelivery-payload.html"
-    },
-    "Observation/ncdhc-observation-vitalsign-bodyweight-example": {
-      "source": "ncdhc-observation-vitalsign-bodyweight-example.json",
-      "base": "ncdhc-observation-vitalsign-bodyweight-example.html"
     },
     "Organization/examiner-organization": {
       "source": "ncdhc-examiner-organization-example.json",
