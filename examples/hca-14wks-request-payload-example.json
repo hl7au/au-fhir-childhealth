@@ -51,7 +51,7 @@
           "display": "Baby of Eve Bill"
         },
         "encounter":{
-          "reference": "urn:uuid:741a72a8-df75-4484-ac89-ac4923f03b42"
+          "reference": "urn:uuid:741a72a8-df75-4484-ac89-ac4923f04b42"
         },
         "date": "2018-12-24T12:30:02Z",
         "author": [
@@ -467,7 +467,7 @@
     },
 
     {
-      "fullUrl": "urn:uuid:741a72a8-df75-4484-ac89-ac4923f03b42",
+      "fullUrl": "urn:uuid:741a72a8-df75-4484-ac89-ac4923f04b42",
       "resource":{
         "resourceType": "Encounter",
         "contained": [
@@ -478,7 +478,7 @@
             "name": "Blacktown Hospital"
           }
         ],
-        "id": "ncdhc-encounter-example",
+        "id": "741a72a8-df75-4484-ac89-ac4923f04b42",
         "meta": {
           "versionId": "1",
           "lastUpdated": "2019-11-19T00:00:00Z",

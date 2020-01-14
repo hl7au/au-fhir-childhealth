@@ -1,6 +1,6 @@
 {
   "resourceType" : "MedicationStatement",
-  "id" : "141a72a8-df75-4484-ac89-ac4923f03b10",
+  "id" : "medication-statement-k1-example",
   "meta" : {
     "versionId" : "1",
     "lastUpdated" : "2018-12-27T16:13:03Z",
