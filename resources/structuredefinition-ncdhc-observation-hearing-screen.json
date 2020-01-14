@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-hearing-screen",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-hearing-screen",
-  "version": "v1.0.0",
+  "version": "v1.1.0",
   "name": "NCDHC Hearing Screen Observation Profile",
   "title": "NCDHC Hearing Screen Observation",
   "status": "draft",
@@ -22,18 +22,11 @@
         "id": "Observation",
         "path": "Observation",
         "short": "NCDHC Hearing Screen Observation Profile"
-      },
-      {
-        "id": "Observation.category",
-        "path": "Observation.category",
-        "patternCodeableConcept": {
-          "text": "This needs to be discussed and finalised"
-        }
-      },
+      },      
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "short": "Bloospot Screen code"
+        "short": "Hearing Screen code"
       },
       {
         "id": "Observation.code.coding",
