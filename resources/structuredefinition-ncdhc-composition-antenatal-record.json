@@ -1,0 +1,335 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-composition-antenatal-record",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-antenatal-record",
+  "version": "dv0.0.1",
+  "name": "NCDHC Composition Antenatal Record Profile",
+  "title": "NCDHC Composition Antenatal Record",
+  "status": "draft",
+  "date": "2020-01-10",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.section",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code.coding"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.section:MaternalHealthCheck",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "MaternalHealthCheck",
+        "short": "Section for Maternal Health Check",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:MaternalHealthCheck.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "18114009"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:MaternalHealthCheck.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "resolve()"
+            }
+          ],
+          "rules": "closed"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Resource",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:MaternalHealthCheck.entry:vitalSigns",
+        "path": "Composition.section.entry",
+        "sliceName": "vitalSigns",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bp",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bp",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bodyweight",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bodyweight",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:MaternalHealthCheck.entry:gestation",
+        "path": "Composition.section.entry",
+        "sliceName": "gestation",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-estimated-gestation",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:MaternalHealthCheck.entry:otherHealthConditions",
+        "path": "Composition.section.entry",
+        "sliceName": "otherHealthConditions",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-urinalysis-protein",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-breastfeeding-intention",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-emotional-health-wellbeing",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:MaternalHealthCheck.entry:briefIntervention",
+        "path": "Composition.section.entry",
+        "sliceName": "briefIntervention",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-tobacco-usage",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-illicit-drugs-gestation",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-alcohol-intake",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:FetalHealthCheck",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "FetalHealthCheck",
+        "short": "Section For Fetal Health Check"
+      },
+      {
+        "id": "Composition.section:FetalHealthCheck.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "713117007"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:FetalHealthCheck.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "resolve()"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.section:FetalHealthCheck.entry:otherHealthConditions",
+        "path": "Composition.section.entry",
+        "sliceName": "otherHealthConditions",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fetal-movement",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-symphyseal-fundal-height",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fetus-presentation",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fifths-above-brim",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fetus-position",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fetus-lie",
+            "aggregation": [
+              "bundled"
+            ]
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fetus-liquor",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:FetalHealthCheck.entry:vitalSign",
+        "path": "Composition.section.entry",
+        "sliceName": "vitalSign",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-heart-rate"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:ProgressNotes",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "ProgressNotes",
+        "short": "Section For Progress Notes",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:ProgressNotes.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "371530004"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:ProgressNotes.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-documentreference-progress-notes"
+          }
+        ]
+      }
+    ]
+  }
+}
