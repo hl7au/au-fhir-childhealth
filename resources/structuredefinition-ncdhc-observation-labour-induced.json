@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-labour-induced",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-labour-induced",
-  "version": "v1.0.0",
+  "version": "v1.1.0",
   "name": "NCDHC Labour Initiation Observation Profile",
   "title": "NCDHC Labour Initiation",
   "status": "draft",

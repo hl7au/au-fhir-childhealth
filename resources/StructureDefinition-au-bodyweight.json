@@ -1,34 +1,30 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "bmi",
+  "id": "au-bodyweight",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">to do</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/STU3/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-au-bodyweight-definitions.html#Observation\" title=\"null\">Observation</a><a name=\"Observation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.4\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.4\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">An observation of body weight in an Australian healthcare context</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-au-bodyweight-definitions.html#Observation.code\" title=\"null\">code</a><a name=\"Observation.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.4\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.4\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.4\" href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Required body weight code</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-au-bodyweight-definitions.html#Observation.code.coding\" title=\"null\">coding</a><a name=\"Observation.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.4\" href=\"http://hl7.org/fhir/STU3/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Required coding</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck005.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-au-bodyweight-definitions.html#Observation.code.coding:BodyWeightCode\" title=\"Slice BodyWeightCode: null\">coding:BodyWeightCode</a><a name=\"Observation.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.4\" href=\"http://hl7.org/fhir/STU3/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Body weight code</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0050.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-au-bodyweight-definitions.html#Observation.code.coding:BodyWeightCode.system\" title=\"null\">system</a><a name=\"Observation.code.coding.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.4\" href=\"http://hl7.org/fhir/STU3/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">LOINC coding system</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0040.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-au-bodyweight-definitions.html#Observation.code.coding:BodyWeightCode.code\" title=\"null\">code</a><a name=\"Observation.code.coding.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.4\" href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Body weight LOINC code</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/STU3/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-summary",
-      "valueMarkdown": "####Complete Summary of the Mandatory Requirements\r\r1.  One code in `Observation.code` which must have\r    -   a fixed `Observation.code.coding.system`=**'http ://loinc.org'**\r    -   a fixed  `Observation.code.coding.code`= **'39156-5'**\r    -   Other additional codes are allowed - e.g. more specific LOINC\r        Codes, SNOMED CT concepts, system specific codes. All codes\r        SHALL have an system value\r2.  a fixed`Observation.valueQuantity.code` = **'kg/m2'**"
-    }
-  ],
-  "url": "http://hl7.org/fhir/StructureDefinition/bmi",
-  "name": "Vital Signs Profile",
-  "title": "VitalSigns",
+  "url": "http://hl7.org.au/fhir/StructureDefinition/au-bodyweight",
+  "version": "1.1.0",
+  "name": "AUBodyWeight",
+  "title": "AU Body Weight",
   "status": "draft",
-  "experimental": false,
-  "date": "2016-03-25",
-  "publisher": "Health Level Seven International (Orders and Observations Workgroup)",
+  "date": "2019-10-17T09:44:15+11:00",
+  "publisher": "Health Level Seven Australia (Orders and Observations WG)",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://www.hl7.org/Special/committees/orders/index.cfm Orders and Observations"
+          "value": "http://hl7.org.au/fhir",
+          "use": "work"
         }
       ]
     }
   ],
-  "description": "FHIR Body Mass Index (BMI) Profile",
+  "description": "This profile defines a body weight information structure for use in an Australian context that tightens the BodyWeightCode slice, aligning to the proposed [R4 Observation Body Weight](http://build.fhir.org/bodyweight.html) profile.",
+  "copyright": "This resource contains content from LOINC™ (http://loinc.org). The LOINC Table, LOINC Table Core, LOINC Panels and Forms File, LOINC Answer File, LOINC Part File, LOINC Group File, LOINC Document Ontology File, LOINC Hierarchies, LOINC Linguistic Variants File, LOINC/RSNA Radiology Playbook, and LOINC/IEEE Medical Device Code Mapping Table are copyright © 1995-2017, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license.",
   "fhirVersion": "3.0.1",
   "mapping": [
     {
@@ -65,15 +61,15 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/vitalsigns",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/bodyweight",
   "derivation": "constraint",
   "snapshot": {
     "element": [
       {
         "id": "Observation",
         "path": "Observation",
-        "short": "FHIR Body Mass Index (BMI) Profile",
-        "definition": "This profile defines  how to represent Body Mass Index (BMI) observations in FHIR using a standard LOINC code and UCUM units of measure.",
+        "short": "An observation of body weight in an Australian healthcare context",
+        "definition": "This profile defines  how to represent body weight observations in FHIR using a standard LOINC code and UCUM units of measure.",
         "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc.",
         "alias": [
           "Vital Signs",
@@ -617,8 +613,8 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "short": "Body Mass Index (BMI)",
-        "definition": "Body Mass Index (BMI).",
+        "short": "Required body weight code",
+        "definition": "Body Weight.",
         "comment": "additional codes that translate or map to this code are allowed.  For example a more granular LOINC code or code that is used locally in a system.",
         "requirements": "5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).",
         "alias": [
@@ -759,11 +755,11 @@
           "ordered": false,
           "rules": "open"
         },
-        "short": "Code defined by a terminology system",
+        "short": "Required coding",
         "definition": "A reference to a code defined by a terminology system.",
         "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "CodeableConcept.coding",
@@ -792,15 +788,15 @@
         ]
       },
       {
-        "id": "Observation.code.coding:bmicode",
+        "id": "Observation.code.coding:BodyWeightCode",
         "path": "Observation.code.coding",
-        "sliceName": "BMICode",
-        "short": "Code defined by a terminology system",
+        "sliceName": "BodyWeightCode",
+        "short": "Body weight code",
         "definition": "A reference to a code defined by a terminology system.",
         "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "CodeableConcept.coding",
           "min": 0,
@@ -828,7 +824,7 @@
         ]
       },
       {
-        "id": "Observation.code.coding:bmicode.id",
+        "id": "Observation.code.coding:BodyWeightCode.id",
         "path": "Observation.code.coding.id",
         "representation": [
           "xmlAttr"
@@ -855,7 +851,7 @@
         ]
       },
       {
-        "id": "Observation.code.coding:bmicode.extension",
+        "id": "Observation.code.coding:BodyWeightCode.extension",
         "path": "Observation.code.coding.extension",
         "slicing": {
           "discriminator": [
@@ -894,13 +890,13 @@
         ]
       },
       {
-        "id": "Observation.code.coding:bmicode.system",
+        "id": "Observation.code.coding:BodyWeightCode.system",
         "path": "Observation.code.coding.system",
-        "short": "Identity of the terminology system",
+        "short": "LOINC coding system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
         "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.system",
@@ -930,7 +926,7 @@
         ]
       },
       {
-        "id": "Observation.code.coding:bmicode.version",
+        "id": "Observation.code.coding:BodyWeightCode.version",
         "path": "Observation.code.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -964,12 +960,12 @@
         ]
       },
       {
-        "id": "Observation.code.coding:bmicode.code",
+        "id": "Observation.code.coding:BodyWeightCode.code",
         "path": "Observation.code.coding.code",
-        "short": "Symbol in syntax defined by the system",
+        "short": "Body weight LOINC code",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.code",
@@ -981,7 +977,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "39156-5",
+        "fixedCode": "29463-7",
         "isSummary": true,
         "mapping": [
           {
@@ -999,7 +995,7 @@
         ]
       },
       {
-        "id": "Observation.code.coding:bmicode.display",
+        "id": "Observation.code.coding:BodyWeightCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -1039,7 +1035,7 @@
         ]
       },
       {
-        "id": "Observation.code.coding:bmicode.userSelected",
+        "id": "Observation.code.coding:BodyWeightCode.userSelected",
         "path": "Observation.code.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -1119,7 +1115,7 @@
         "path": "Observation.subject",
         "short": "Who and/or what this is about",
         "definition": "The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor,  other observer (for example a relative or EMT), or any observation made about the subject.",
-        "comment": "One would expect this element to be a cardinality  of 1..1.  The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.\r\rIf the target of the observation is different than the subject, the general extension [observation-focal-subject](extension-observation-focal-subject.html).  may be used.  However, the distinction between the patient's own value for an observation versus that of the fetus, or the donor or blood product unit, etc., are often specified in the observation code.",
+        "comment": "One would expect this element to be a cardinality  of 1..1.  The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.\r\rIf the target of the observation is different than the subject, the general extension [observation-focal-subject](http://hl7.org/fhir/STU3/extension-observation-focal-subject.html).  may be used.  However, the distinction between the patient's own value for an observation versus that of the fetus, or the donor or blood product unit, etc., are often specified in the observation code.",
         "requirements": "Observations have no value if you don't know who or what they're about.",
         "min": 1,
         "max": "1",
@@ -1346,7 +1342,7 @@
         "path": "Observation.valueQuantity",
         "short": "Vital Sign Value recorded with UCUM",
         "definition": "Vital Sign Value recorded with UCUM.",
-        "comment": "Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is \"'value' + the type name\" with a capital on the first letter of the type).\r\r\rIf the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below.",
+        "comment": "Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is \"'value' + the type name\" with a capital on the first letter of the type).\r\r\rIf the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](http://hl7.org/fhir/STU3/observation.html#notes) below.",
         "requirements": "9. SHALL contain exactly one [1..1] value with @xsi:type=\"PQ\" (CONF:7305).",
         "min": 0,
         "max": "1",
@@ -1636,9 +1632,21 @@
             "code": "code"
           }
         ],
-        "fixedCode": "kg/m2",
         "mustSupport": true,
         "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "BodyWeightUnits"
+            }
+          ],
+          "strength": "required",
+          "description": "Common UCUM units for Body Weight",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/ucum-bodyweight"
+          }
+        },
         "mapping": [
           {
             "identity": "v2",
@@ -1791,7 +1799,7 @@
         "path": "Observation.bodySite",
         "short": "Observed body part",
         "definition": "Indicates the site on the subject's body where the observation was made (i.e. the target site).",
-        "comment": "Only used if not implicit in code found in Observation.code.  In many systems, this may be represented as a related observation instead of an inline component.   If the use case requires BodySite to be handled as a separate resource (e.g. to identify and track separately) then use the standard extension[ body-site-instance](extension-body-site-instance.html).",
+        "comment": "Only used if not implicit in code found in Observation.code.  In many systems, this may be represented as a related observation instead of an inline component.   If the use case requires BodySite to be handled as a separate resource (e.g. to identify and track separately) then use the standard extension[ body-site-instance](http://hl7.org/fhir/STU3/extension-body-site-instance.html).",
         "min": 0,
         "max": "1",
         "base": {
@@ -2310,7 +2318,7 @@
         "path": "Observation.related",
         "short": "Used when reporting vital signs panel components",
         "definition": "Used when reporting vital signs panel components.",
-        "comment": "For a discussion on the ways Observations can assembled in groups together see [Notes below](observation.html#4.20.4).",
+        "comment": "For a discussion on the ways Observations can assembled in groups together see [Notes below](http://hl7.org/fhir/STU3/observation.html#4.20.4).",
         "requirements": "Normally, an observation will have either a value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and a set of related observations or sometimes a QuestionnaireResponse from which the measure is derived.",
         "min": 0,
         "max": "*",
@@ -2484,7 +2492,7 @@
         "id": "Observation.related.target",
         "path": "Observation.related.target",
         "short": "Resource that is related to this one",
-        "definition": "A reference to the observation or [QuestionnaireResponse](questionnaireresponse.html#) resource that is related to this observation.",
+        "definition": "A reference to the observation or [QuestionnaireResponse](http://hl7.org/fhir/STU3/questionnaireresponse.html#) resource that is related to this observation.",
         "min": 1,
         "max": "1",
         "base": {
@@ -2511,7 +2519,7 @@
         "path": "Observation.component",
         "short": "Used when reporting systolic and diastolic blood pressure.",
         "definition": "Used when reporting systolic and diastolic blood pressure.",
-        "comment": "For a discussion on the ways Observations can be assembled in groups together see [Notes](observation.html#notes) below.",
+        "comment": "For a discussion on the ways Observations can be assembled in groups together see [Notes](http://hl7.org/fhir/STU3/observation.html#notes) below.",
         "requirements": "Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.",
         "min": 0,
         "max": "*",
@@ -3129,74 +3137,38 @@
       {
         "id": "Observation",
         "path": "Observation",
-        "short": "FHIR Body Mass Index (BMI) Profile",
-        "definition": "This profile defines  how to represent Body Mass Index (BMI) observations in FHIR using a standard LOINC code and UCUM units of measure.",
-        "min": 0,
-        "max": "*"
+        "short": "An observation of body weight in an Australian healthcare context"
       },
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "short": "Body Mass Index (BMI)",
-        "definition": "Body Mass Index (BMI).",
-        "comment": "additional codes that translate or map to this code are allowed.  For example a more granular LOINC code or code that is used locally in a system.",
-        "alias": [
-          "Test",
-          "Name"
-        ]
+        "short": "Required body weight code"
       },
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "code"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
+        "short": "Required coding",
+        "min": 1
       },
       {
-        "id": "Observation.code.coding:bmicode",
+        "id": "Observation.code.coding:BodyWeightCode",
         "path": "Observation.code.coding",
-        "sliceName": "BMICode"
+        "sliceName": "BodyWeightCode",
+        "short": "Body weight code",
+        "min": 1,
+        "max": "1"
       },
       {
-        "id": "Observation.code.coding:bmicode.system",
+        "id": "Observation.code.coding:BodyWeightCode.system",
         "path": "Observation.code.coding.system",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://loinc.org"
+        "short": "LOINC coding system",
+        "min": 1
       },
       {
-        "id": "Observation.code.coding:bmicode.code",
+        "id": "Observation.code.coding:BodyWeightCode.code",
         "path": "Observation.code.coding.code",
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "fixedCode": "39156-5"
-      },
-      {
-        "id": "Observation.valueQuantity",
-        "path": "Observation.valueQuantity"
-      },
-      {
-        "id": "Observation.valueQuantity.code",
-        "path": "Observation.valueQuantity.code",
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "fixedCode": "kg/m2"
+        "short": "Body weight LOINC code",
+        "min": 1
       }
     ]
   }

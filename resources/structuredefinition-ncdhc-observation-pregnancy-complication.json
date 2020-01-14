@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-pregnancy-complication",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-pregnancy-complication",
-  "version": "v1.0.0",
+  "version": "v1.1.0",
   "name": "NCDHC Pregnancy Complication Observation Profile",
   "title": "NCDHC Pregnancy Complication",
   "status": "draft",

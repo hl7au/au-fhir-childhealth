@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-hearing-check",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-hearing-check",
-  "version": "v1.0.0",
+  "version": "v1.1.0",
   "name": "NCDHC Hearing Check Observation Profile",
   "title": "NCDHC Hearing Check Observation",
   "status": "draft",

@@ -24,7 +24,7 @@
     }
   ],
   "description": "Australian realm Base Composition profile.",
-  "fhirVersion": "3.0.1",
+  "fhirVersion": "3.0.2",
   "mapping": [
     {
       "identity": "rim",

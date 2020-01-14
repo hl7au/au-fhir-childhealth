@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-abdomen",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-abdomen",
-  "version": "v1.0.0",
+  "version": "v1.1.0",
   "name": "NCDHC Abdomen Observation Profile",
   "title": "NCDHC Abdomen Observation",
   "status": "draft",

@@ -48,7 +48,9 @@
       {
         "id": "MedicationStatement.medication[x]:medicationCodeableConcept.coding:amt",
         "path": "MedicationStatement.medication[x].coding",
-        "sliceName": "amt"
+        "sliceName": "amt",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "MedicationStatement.medication[x]:medicationCodeableConcept.coding:amt.code",

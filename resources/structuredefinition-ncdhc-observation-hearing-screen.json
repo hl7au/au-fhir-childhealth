@@ -22,7 +22,7 @@
         "id": "Observation",
         "path": "Observation",
         "short": "NCDHC Hearing Screen Observation Profile"
-      },      
+      },
       {
         "id": "Observation.code",
         "path": "Observation.code",
@@ -51,16 +51,6 @@
           "system": "http://snomed.info/sct",
           "code": "252957005"
         }
-      },
-      {
-        "id": "Observation.code.coding:hearingScreenSNOMEDCT-AU.system",
-        "path": "Observation.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding:hearingScreenSNOMEDCT-AU.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "252957005"
       },
       {
         "id": "Observation.subject",
