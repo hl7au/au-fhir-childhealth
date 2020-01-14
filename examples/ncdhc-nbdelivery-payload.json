@@ -14,7 +14,7 @@
         "id": "27700024-070c-4141-8109-9d9fa34dd24b",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2018-12-27T16:13:03Z",
+          "lastUpdated": "2020-01-13T14:36:03Z",
           "profile": [
             "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-nbdelivery"
           ]
@@ -34,16 +34,16 @@
           "text": "Newborn Delivery Health Interaction"
         },
         "subject": {
-          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f",
           "display": "Baby of Eve Bill"
         },
         "encounter": {
-          "reference": "urn:uuid:03140540-3e2a-486b-8993-aab0e8d5c20a"
+          "reference": "urn:uuid:03140538-3e2a-486b-8993-aab0e8d5c20a"
         },
         "date": "2018-12-24T12:30:02Z",
         "author": [
           {
-            "reference": "urn:uuid:3db74777-fd3d-4d3b-92ec-d405977a11a5",
+            "reference": "Practitioner/3db74777-fd3d-4d3b-92ec-d405977a11a5",
             "display": "Dr. Adam Dev"
           }
         ],
@@ -54,7 +54,7 @@
             "mode": "professional",
             "time": "2018-12-24T12:30:02Z",
             "party": {
-              "reference": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f"
+              "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f"
             }
           }
         ],
@@ -80,66 +80,6 @@
             ]
           },
           {
-            "title": "Abnormalities noted at birth",
-            "code": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "414025005"
-                }
-              ]
-            },
-            "text": {
-              "status": "additional",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Physical problems identified with the baby at, or shortly after birth. E.g. cleft lip/palate, extensive bruising, cephalohematoma etc.</div>"
-            },
-            "entry": [
-              {
-                "reference": "urn:uuid:841a72a8-df75-4484-ac89-ac4923f03b42"
-              }
-            ]
-          },
-          {
-            "title": "Apgar scores",
-            "code": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "302083008"
-                }
-              ]
-            },
-            "text": {
-              "status": "additional",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Apgar scores</div>"
-            },
-            "entry": [
-              {
-                "reference": "urn:uuid:901a72a8-df75-4484-ac89-ac4923f03b01"
-              }
-            ]
-          },
-          {
-            "title": "Medication administered",
-            "code": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "18629005"
-                }
-              ]
-            },
-            "text": {
-              "status": "additional",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vitamin K1 administered</div>"
-            },
-            "entry": [
-              {
-                "reference": "urn:uuid:141a72a8-df75-4484-ac89-ac4923f03b10"
-              }
-            ]
-          },
-          {
             "title": "Vital signs and measurements",
             "code": {
               "coding": [
@@ -156,365 +96,8 @@
             "entry": [
               {
                 "reference": "urn:uuid:741a72a8-df75-4484-ac89-ac4923f03b44"
-              },
-              {
-                "reference": "urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b47"
-              },
-              {
-                "reference": "urn:uuid:308a72a8-df75-4484-ac89-ac4923f03b47"
               }
             ]
-          },
-          {
-            "title": "Maternal morbidity",
-            "code": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "609496007"
-                }
-              ]
-            },
-            "text": {
-              "status": "additional",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Details on Birth Complications and Pregnancy Complications</div>"
-            },
-            "entry": [
-              {
-                "reference": "urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b52"
-              },
-              {
-                "reference": "urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b53"
-              }
-            ]
-          },
-          {
-            "title": "Labour and delivery",
-            "code": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "118215003"
-                }
-              ]
-            },
-            "text": {
-              "status": "additional",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Details on Type of Birth and Labour Induced</div>"
-            },
-            "entry": [
-              {
-                "reference": "urn:uuid:641a72a8-df75-4484-ac89-ac4923f03b41"
-              },
-              {
-                "reference": "urn:uuid:641a72a8-df75-4l484-ac89-ac4923f03b42"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:03140540-3e2a-486b-8993-aab0e8d5c20a",
-      "resource": {
-        "resourceType": "Encounter",
-        "contained": [
-          {
-            "resourceType": "Location",
-            "id": "lc78393f-37ca-4738-81d6-d9595b2e5d0f",
-            "status": "active",
-            "name": "Blacktown Hospital"
-          }
-        ],
-        "id": "ncdhc-encounter-example",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2019-11-19T00:00:00Z",
-          "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-encounter"
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Sample Encounter</b></p></div>"
-        },
-        "status": "finished",
-        "subject": {
-          "reference": "Patient/patient-baby-example"
-        },
-        "participant": [
-          {
-            "type": [
-              {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/v3/ParticipationType",
-                    "code": "CALLBCK",
-                    "display": "callback contact"
-                  }
-                ],
-                "text": "Clinically responsible person"
-              }
-            ],
-            "individual": {
-              "reference": "Practitioner/examiner-practitioner"
-            }
-          }
-        ],
-        "period": {
-          "start": "2019-11-17T16:00:00+10:00",
-          "end": "2019-11-17T16:00:00+10:00"
-        },
-        "serviceProvider": {
-          "reference": "Organization/examiner-organization"
-        },
-        "location": [
-          {
-            "location": {
-              "reference": "#lc78393f-37ca-4738-81d6-d9595b2e5d0f"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:641a72a8-df75-4l484-ac89-ac4923f03b42",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "641a72a8-df75-4l484-ac89-ac4923f03b42",
-        "meta": {
-          "profile": [
-            "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-labour-induced"
-          ]
-        },
-        "text": {
-          "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Labour Initiation</div>"
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "249120008",
-              "display": "Onset of labor first stage"
-            }
-          ],
-          "text": "Labour Initiation"
-        },
-        "subject": {
-          "reference": "Patient/patient-baby-example"
-        },
-        "effectiveDateTime": "2019-01-02",
-        "performer": [
-          {
-            "reference": "Practitioner/examiner-practitioner",
-            "display": "Examiner"
-          },
-          {
-            "reference": "Organization/examiner-organization",
-            "display": "Organisation"
-          }
-        ],
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "112070001",
-              "display": "Onset of labor induced"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b47",
-      "resource": {
-        "resourceType": "Observation",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2018-12-27T16:13:03Z",
-          "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bodyheight"
-        },
-        "text": {
-          "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Birth Length</div>"
-        },
-        "id": "541a72a8-df75-4484-ac89-ac4923f03b47",
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/observation-category",
-                "code": "vital-signs",
-                "display": "Vital Signs"
-              }
-            ],
-            "text": "Vital Signs"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8302-2"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "248334005"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "169886007"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "50373000"
-            }
-          ],
-          "text": "Birth Length"
-        },
-        "subject": {
-          "reference": "Patient/patient-baby-example",
-          "display": "Baby of Eve Bill"
-        },
-        "effectiveDateTime": "2018-12-27T16:13:03Z",
-        "performer": [
-          {
-            "reference": "Practitioner/examiner-practitioner",
-            "display": "Examiner"
-          },
-          {
-            "reference": "Organization/examiner-organization",
-            "display": "Organisation"
-          }
-        ],
-        "valueQuantity": {
-          "value": 25,
-          "unit": "cm",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:308a72a8-df75-4484-ac89-ac4923f03b47",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "308a72a8-df75-4484-ac89-ac4923f03b47",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2018-12-27T16:13:03Z",
-          "profile": [
-            "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-headcircum"
-          ]
-        },
-        "text": {
-          "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Birth head circumference</div>"
-        },
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/observation-category",
-                "code": "vital-signs",
-                "display": "Vital Signs"
-              }
-            ],
-            "text": "Vital Signs"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8287-5"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "363812007"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "169876006"
-            }
-          ],
-          "text": "Birth Head Circumference"
-        },
-        "subject": {
-          "reference": "Patient/patient-baby-example",
-          "display": "Baby of Eve Bill"
-        },
-        "effectiveDateTime": "2018-12-27T16:13:03Z",
-        "performer": [
-          {
-            "reference": "Practitioner/examiner-practitioner",
-            "display": "Examiner"
-          },
-          {
-            "reference": "Organization/examiner-organization",
-            "display": "Organisation"
-          }
-        ],
-        "valueQuantity": {
-          "value": 35,
-          "unit": "cm",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:141a72a8-df75-4484-ac89-ac4923f03b10",
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "141a72a8-df75-4484-ac89-ac4923f03b10",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2018-12-27T16:13:03Z",
-          "profile": [
-            "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-medicationstatement-vitamink"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<p>Vitamin K1</p>\n\t\t\t\t\t\n</div>"
-        },
-        "status": "completed",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "66656000",
-              "display": "Phytomenadione"
-            }
-          ],
-          "text": "Vitamin K1"
-        },
-        "effectiveDateTime": "2018-12-27T16:13:03Z",
-        "dateAsserted": "2018-12-27T16:13:03Z",
-        "informationSource": {
-          "reference": "Practitioner/examiner-practitioner",
-          "display": "Dr. Rob Boston"
-        },
-        "subject": {
-          "reference": "Patient/patient-baby-example",
-          "display": "Baby of Eve Bill"
-        },
-        "taken": "y",
-        "dosage": [
-          {
-            "sequence": 1,
-            "route": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "59108006",
-                  "display": "Injection"
-                }
-              ]
-            }
           }
         ]
       }
@@ -658,11 +241,18 @@
         },
         "identifier": [
           {
-            "type": {
-              "text": "ABN"
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "http://hl7.org.au/fhir/v2/0203",
+                  "code" : "NOI",
+                  "display" : "National Organisation Identifier"
+                }
+              ],
+              "text" : "HPI-O"
             },
-            "system": "http://hl7.org.au/id/abn",
-            "value": "51824753556"
+            "system" : "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
+            "value" : "8003621566684455"
           }
         ],
         "type": [
@@ -830,6 +420,67 @@
       }
     },
     {
+      "fullUrl": "urn:uuid:03140538-3e2a-486b-8993-aab0e8d5c20a",
+      "resource": {
+        "resourceType": "Encounter",
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "lc78393f-37ca-4738-81d6-d9595b2e5d0f",
+            "status": "active",
+            "name": "Blacktown Hospital"
+          }
+        ],
+        "id": "ncdhc-encounter-example",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-19T00:00:00Z",
+          "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-encounter"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Sample Encounter</b></p></div>"
+        },
+        "status": "finished",
+        "subject": {
+          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CALLBCK",
+                    "display": "callback contact"
+                  }
+                ],
+                "text": "Clinically responsible person"
+              }
+            ],
+            "individual": {
+              "reference": "Practitioner/examiner-practitioner"
+            }
+          }
+        ],
+        "period": {
+          "start": "2019-11-17T16:00:00+10:00",
+          "end": "2019-11-17T16:00:00+10:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/examiner-organization"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "#lc78393f-37ca-4738-81d6-d9595b2e5d0f"
+            }
+          }
+        ]
+      }
+    },
+    {
       "fullUrl": "urn:uuid:241a72a8-df75-4484-ac89-ac4923f03b42",
       "resource": {
         "resourceType": "Observation",
@@ -838,9 +489,16 @@
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Estimated length of gestation noted as : 28 wks</div>"
         },
         "id": "241a72a8-df75-4484-ac89-ac4923f03b42",
+        "meta" : {
+          "versionId" : "1",
+          "lastUpdated" : "2020-01-12T16:13:03Z",
+          "profile" : [
+            "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-estimated-gestation"
+          ]
+        },
         "status": "final",
         "code": {
-          "coding": [
+          "coding": [            
             {
               "system": "http://snomed.info/sct",
               "code": "5703600",
@@ -873,258 +531,21 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:841a72a8-df75-4484-ac89-ac4923f03b42",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "841a72a8-df75-4484-ac89-ac4923f03b42",
-        "text": {
-          "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Multiple Birth Abnormalities noted at birth</div>"
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "414025005"
-            }
-          ],
-          "text": "Abnormalities noted at Birth"
-        },
-        "subject": {
-          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f"
-        },
-        "effectiveDateTime": "2019-01-02",
-        "performer": [
-          {
-            "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Examiner"
-          },
-          {
-            "reference": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
-            "display": "Organisation"
-          }
-        ],
-        "valueString": "The foot is twisted out of shape or position"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:641a72a8-df75-4484-ac89-ac4923f03b41",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "641a72a8-df75-4484-ac89-ac4923f03b41",
-        "text": {
-          "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Method of Delivery used during the brirthing process</div>"
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "289258004"
-            }
-          ],
-          "text": "Method of Delivery"
-        },
-        "subject": {
-          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f"
-        },
-        "effectiveDateTime": "2019-01-02",
-        "performer": [
-          {
-            "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Examiner"
-          },
-          {
-            "reference": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
-            "display": "Organisation"
-          }
-        ],
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "200130005"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:901a72a8-df75-4484-ac89-ac4923f03b01",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "901a72a8-df75-4484-ac89-ac4923f03b01",
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">1 minute Apgar Score</div>"
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "9272-6",
-              "display": "1 minute Apgar Score"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "169895004",
-              "display": "Apgar at 1 minute"
-            }
-          ],
-          "text": "1 minute Apgar Score"
-        },
-        "subject": {
-          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
-          "display": "Baby of Eve Bill"
-        },
-        "effectiveDateTime": "2019-05-18T22:33:22Z",
-        "performer": [
-          {
-            "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Examiner"
-          },
-          {
-            "reference": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
-            "display": "Organisation"
-          }
-        ],
-        "valueQuantity": {
-          "value": 0,
-          "system": "http://unitsofmeasure.org",
-          "code": "{score}"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:641a72a8-df75-4484-ac89-ac4923f03b42",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "641a72a8-df75-4484-ac89-ac4923f03b42",
-        "text": {
-          "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Labour Initiation</div>"
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "20236002"
-            }
-          ],
-          "text": "Labour Initiation"
-        },
-        "subject": {
-          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f"
-        },
-        "effectiveDateTime": "2019-01-02",
-        "performer": [
-          {
-            "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Examiner"
-          },
-          {
-            "reference": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
-            "display": "Organisation"
-          }
-        ],
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "84457005",
-              "display": "Spontaneous onset of labor (finding)"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b52",
-      "resource": {
-        "resourceType": "Observation",
-        "text": {
-          "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Birth Complication</div>"
-        },
-        "id": "541a72a8-df75-4484-ac89-ac4923f03b52",
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "198609003"
-            }
-          ],
-          "text": "Complication of pregnancy, childbirth and/or the puerperium"
-        },
-        "subject": {
-          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
-          "display": "Baby of Eve Bill"
-        },
-        "effectiveDateTime": "2018-12-27T16:13:03Z",
-        "performer": [
-          {
-            "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Examiner"
-          },
-          {
-            "reference": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
-            "display": "Organisation"
-          }
-        ],
-        "valueString": "Cephalopelvic disproportion (CPD)"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b53",
-      "resource": {
-        "resourceType": "Observation",
-        "text": {
-          "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Pregnancy Complication</div>"
-        },
-        "id": "541a72a8-df75-4484-ac89-ac4923f03b53",
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "198609003"
-            }
-          ],
-          "text": "Complication of pregnancy, childbirth and/or the puerperium"
-        },
-        "subject": {
-          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
-          "display": "Baby of Eve Bill"
-        },
-        "effectiveDateTime": "2018-12-27T16:13:03Z",
-        "performer": [
-          {
-            "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Examiner"
-          },
-          {
-            "reference": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
-            "display": "Organisation"
-          }
-        ],
-        "valueString": "High blood pressure"
-      }
-    },
-    {
       "fullUrl": "urn:uuid:741a72a8-df75-4484-ac89-ac4923f03b44",
       "resource": {
         "resourceType": "Observation",
+        "id": "741a72a8-df75-4484-ac89-ac4923f03b44",
+        "meta" : {
+          "versionId" : "1",
+          "lastUpdated" : "2020-01-12T16:13:03Z",
+          "profile" : [
+            "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
+          ]
+        },
         "text": {
           "status": "additional",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Birth Weight recorded : 6.09414 kg</div>"
-        },
-        "id": "741a72a8-df75-4484-ac89-ac4923f03b44",
+        },       
         "status": "final",
         "category": [
           {
@@ -1174,68 +595,7 @@
           "code": "kg"
         }
       }
-    },
-    {
-      "fullUrl": "urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b42",
-      "resource": {
-        "resourceType": "Observation",
-        "text": {
-          "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Birth Length</div>"
-        },
-        "id": "541a72a8-df75-4484-ac89-ac4923f03b42",
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/observation-category",
-                "code": "vital-signs",
-                "display": "Vital Signs"
-              }
-            ],
-            "text": "Vital Signs"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8302-2"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "248334005"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "169886007"
-            }
-          ],
-          "text": "Birth Length"
-        },
-        "subject": {
-          "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
-          "display": "Baby of Eve Bill"
-        },
-        "effectiveDateTime": "2018-12-27T16:13:03Z",
-        "performer": [
-          {
-            "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0d",
-            "display": "Examiner"
-          },
-          {
-            "reference": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
-            "display": "Organisation"
-          }
-        ],
-        "valueQuantity": {
-          "value": 25,
-          "unit": "cm",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm"
-        }
-      }
-    }
+    }   
+    
   ]
 }
