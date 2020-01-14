@@ -215,6 +215,10 @@
       "base": "StructureDefinition-ncdhc-observation-birth-complication.html",
       "defns": "StructureDefinition-ncdhc-observation-birth-complication-definitions.html"
     },
+    "StructureDefinition/ncdhc-observation-apgar-score": {
+      "base": "StructureDefinition-ncdhc-observation-apgar-score.html",
+      "defns": "StructureDefinition-ncdhc-observation-apgar-score-definitions.html"
+    },
     "StructureDefinition/ncdhc-observation-labour-induced": {
       "base": "StructureDefinition-ncdhc-observation-labour-induced.html",
       "defns": "StructureDefinition-ncdhc-observation-labour-induced-definitions.html"
@@ -418,6 +422,18 @@
     "Bundle/ncdhc-nbdelivery-payload": {
       "source": "ncdhc-nbdelivery-payload.json",
       "base": "ncdhc-nbdelivery-payload.html"
+    },
+    "Observation/ncdhc-observation-vitalsign-bodyweight-example": {
+      "source": "ncdhc-observation-vitalsign-bodyweight-example.json",
+      "base": "ncdhc-observation-vitalsign-bodyweight-example.html"
+    },
+    "Organization/examiner-organization": {
+      "source": "ncdhc-examiner-organization-example.json",
+      "base": "ncdhc-examiner-organization-example.html"
+    },
+    "Practitioner/examiner-practitioner": {
+      "source": "ncdhc-examiner-practitioner-example.json",
+      "base": "ncdhc-examiner-practitioner-example.html"
     },
     "Observation/observation-estimated-gestation-example": {
       "source": "ncdhc-observation-estimated-gestation-example.json",

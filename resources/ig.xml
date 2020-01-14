@@ -125,6 +125,12 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-vitalsign-bodyweight-example" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bodyheight" />
@@ -153,6 +159,21 @@
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bp" />
 			</sourceReference>
+		</resource>
+		<!--Samples on HL7 AU profiles -->
+
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Organization/examiner-organization" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Practitioner/examiner-practitioner" />
+			</sourceReference>
+
 		</resource>
 		<!-- NCDHC Common Observation Profiles -->
 		<resource>
@@ -195,7 +216,7 @@
 
 
 		<!-- CDHR Health Interactions - Start -->
-		
+
 		<!-- Health Check Assessment -->
 		<!-- Health Check Assessment Composition -->
 		<resource>
@@ -616,7 +637,6 @@
 			</sourceReference>
 		</resource>
 		<!-- DPHR Health Interactions - End -->
-
 
 
 		<!-- NCDHC Custom Operations -->
