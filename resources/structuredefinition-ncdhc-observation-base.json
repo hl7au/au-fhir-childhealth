@@ -29,6 +29,20 @@
             "human": "If there is no component or related element then either a value[x] or a data absent reason must be present",
             "expression": "(component.empty() and related.empty()) implies (dataAbsentReason or value)",
             "xpath": "exists(f:component) or exists(f:related) or exists(f:*[starts-with(local-name(.), 'value')]) or exists(f:dataAbsentReason)"
+          },
+          {
+            "key": "inv-obs-exm-pract-001",
+            "requirements": "Person who is clinically responsible for the undertaking of the exam shall be present",
+            "severity": "error",
+            "human": "Person who is clinically responsible for the undertaking of the exam shall be present",
+            "expression": "performer.reference.resolve().where($this is Practitioner).exists()"
+          },
+          {
+            "key": "inv-obs-exm-org-002",
+            "requirements": "An organisation which captures the relevant details shall be present",
+            "severity": "error",
+            "human": "An organisation which captures the relevant details shall be present",
+            "expression": "performer.refernce.resolve().where($this is Organization).exists()"
           }
         ]
       },
@@ -91,22 +105,6 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          }
-        ],
-        "constraint": [
-          {
-            "key": "inv-obs-exm-pract-001",
-            "requirements": "Person who is clinically responsible for the undertaking of the exam shall be present",
-            "severity": "error",
-            "human": "Person who is clinically responsible for the undertaking of the exam shall be present",
-            "expression": "Observation.performer.reference.resolve().where($this is Practitioner).exists()"
-          },
-          {
-            "key": "inv-obs-exm-org-002",
-            "requirements": "An organisation which captures the relevant details shall be present",
-            "severity": "error",
-            "human": "An organisation which captures the relevant details shall be present",
-            "expression": "Observation.performer.refernce.entry.resolve().where($this is Organization).exists()"
           }
         ]
       },
