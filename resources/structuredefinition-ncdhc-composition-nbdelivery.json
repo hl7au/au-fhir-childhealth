@@ -184,7 +184,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "57036006"
+              "code": "5703600"
             }
           ]
         }
@@ -483,7 +483,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "609496007"
+              "code": "198609003"
             }
           ]
         }
