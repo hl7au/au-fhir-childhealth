@@ -155,7 +155,7 @@
 			</sourceReference>
 		</resource>
 		<!-- NCDHC Common Observation Profiles -->
-		<!--resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-bodyweight" />
@@ -190,7 +190,7 @@
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-bp" />
 			</sourceReference>
-		</resource-->
+		</resource>
 		<!-- NCDHC Common Observation Profile - End -->
 
 

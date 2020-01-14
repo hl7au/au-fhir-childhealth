@@ -40,6 +40,22 @@
   "differential": {
     "element": [
       {
+        "id": "MedicationStatement.medication[x]:medicationCodeableConcept",
+        "path": "MedicationStatement.medication[x]",
+        "sliceName": "medicationCodeableConcept",
+        "min": 1
+      },
+      {
+        "id": "MedicationStatement.medication[x]:medicationCodeableConcept.coding:amt",
+        "path": "MedicationStatement.medication[x].coding",
+        "sliceName": "amt"
+      },
+      {
+        "id": "MedicationStatement.medication[x]:medicationCodeableConcept.coding:amt.code",
+        "path": "MedicationStatement.medication[x].coding.code",
+        "fixedCode": "66656000"
+      },
+      {
         "id": "MedicationStatement.effective[x]",
         "path": "MedicationStatement.effective[x]",
         "min": 1
@@ -73,12 +89,6 @@
         "path": "MedicationStatement.dosage.route",
         "short": "Route of Administration",
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "RouteOfAdministration"
-            }
-          ],
           "strength": "required",
           "valueSetReference": {
             "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-meds-route-admins-type-1"
