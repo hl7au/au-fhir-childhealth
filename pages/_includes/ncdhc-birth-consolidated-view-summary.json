@@ -1,0 +1,1007 @@
+{
+  "resourceType": "Bundle",
+  "id": "ncdhc-composition-view-birth-sample",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2019-01-01T00:00:00Z"
+  },
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:0c4151bd-1cbf-4d64-b04d-cd9187a4c6e0"
+  },
+  "type": "document",
+  "entry": [
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Composition/480f219f-97a8-486d-99d9-ed631fe4fc57",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "480f219f-97a8-486d-99d9-ed631fe4fc57",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-05-21T00:00:00Z",
+          "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-view-birth"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type",
+              "code": "BIRTHCONVW"
+            }
+          ],
+          "text": "NCDHC Birth Consolidated view"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/patient-baby-example",
+          "display": "Baby of Eve Bill"
+        },
+        "date": "2018-12-24T12:30:02Z",
+        "author": [
+          {
+            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Device/3db74777-fd3d-4d3b-92ec-d405977a11a5",
+            "display": "Child Data Hub"
+          }
+        ],
+        "title": "NCDHC Birth Consolidated view",
+        "confidentiality": "N",
+        "attester": [
+          {
+            "mode": "professional",
+            "time": "2018-12-24T12:30:02Z",
+            "party": {
+              "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Organization/examiner-organization"
+            }
+          }
+        ],
+        "section": [
+          {
+            "title": "Newborn Delivery",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "67795-5"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/QuestionnaireResponse/nb-delivery-qa-1"
+              }
+            ]
+          },
+          {
+            "title": "Newborn Immunisation",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11370-4"
+                }
+              ]
+            },
+            "emptyReason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/list-empty-reason",
+                  "code": "unavailable",
+                  "display": "Unavailable"
+                }
+              ],
+              "text": "Sorry, the Newborn Immunisation record is currently unavailable"
+            }
+          },
+          {
+            "title": "Newborn Examination",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "52524-6"
+                }
+              ]
+            },
+            "emptyReason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/list-empty-reason",
+                  "code": "unavailable",
+                  "display": "Unavailable"
+                }
+              ],
+              "text": "Sorry, the Newborn Examination record is currently unavailable"
+            }
+          },
+          {
+            "title": "Newborn Bloodspot Screen",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP67167-4"
+                }
+              ]
+            },
+            "emptyReason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/list-empty-reason",
+                  "code": "unavailable",
+                  "display": "Unavailable"
+                }
+              ],
+              "text": "Sorry, the Newborn Bloodspot Screen record is currently unavailable"
+            }
+          },
+          {
+            "title": "Newborn Hearing Screen",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP76356-2"
+                }
+              ]
+            },
+            "emptyReason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/list-empty-reason",
+                  "code": "unavailable",
+                  "display": "Unavailable"
+                }
+              ],
+              "text": "Sorry, the Newborn Hearing Screen record is currently unavailable"
+            }
+          },
+          {
+            "title": "Newborn Discharge",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "52524-6"
+                }
+              ]
+            },
+            "emptyReason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/list-empty-reason",
+                  "code": "unavailable",
+                  "display": "Unavailable"
+                }
+              ],
+              "text": "Sorry, the Newborn Discharge record is currently unavailable"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/patient-baby-example",
+      "resource": {
+        "resourceType": "Patient",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<h1>Baby of Eve Bill</h1>\n\t\t\t\t\t\n</div>"
+        },
+        "id": "patient-baby",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/birthPlace",
+            "valueAddress": {
+              "text": "Blacktown Hospital"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "NI",
+                  "display": "National unique individual identifier"
+                }
+              ],
+              "text": "IHI"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
+            "value": "8003608000024083"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "MR",
+                  "display": "Medical Record Number"
+                }
+              ],
+              "text": "Medical Record Number"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0",
+            "value": "8003620000000000",
+            "assigner": {
+              "display": "Blacktown Hospital"
+            }
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "text": "Baby of Eve Bill",
+            "family": "Bill",
+            "given": [
+              "Baby of Eve"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2018-12-24",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+              "valueDateTime": "2018-12-24T14:35:45-05:00"
+            }
+          ]
+        },
+        "address": [
+          {
+            "text": "home",
+            "line": [
+              "31 Pacquola Street"
+            ],
+            "city": "Blacktown",
+            "state": "NSW",
+            "postalCode": "2148",
+            "country": "Australia"
+          }
+        ],
+        "contact": [
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/RoleCode",
+                    "code": "MTH",
+                    "display": "mother"
+                  }
+                ],
+                "text": "Mother"
+              }
+            ],
+            "name": {
+              "text": "Eve Bill",
+              "family": "Bill",
+              "given": [
+                "Eve"
+              ]
+            }
+          },
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/RoleCode",
+                    "code": "FTH",
+                    "display": "father"
+                  }
+                ],
+                "text": "Father"
+              }
+            ],
+            "name": {
+              "text": "Simmons Bill",
+              "family": "Bill",
+              "given": [
+                "Simmons"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Organization/examiner-organization",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "examiner-organization",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: examiner-organization</p><p><b>identifier</b>: ABN = 51824753556</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/organization-type code 'prov' = 'Healthcare Provider', given as 'Healthcare Provider'})</span></p><p><b>name</b>: Blacktown Hospital</p><p><b>telecom</b>: enquiries@blacktownhospital.com.au(WORK)</p></div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "text": "ABN"
+            },
+            "system": "http://hl7.org.au/id/abn",
+            "value": "51824753556"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ]
+          }
+        ],
+        "name": "Blacktown Hospital",
+        "telecom": [
+          {
+            "system": "email",
+            "value": "enquiries@blacktownhospital.com.au",
+            "use": "work"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Device/3db74777-fd3d-4d3b-92ec-d405977a11a5",
+      "resource": {
+        "resourceType": "Device",
+        "id": "3db74777-fd3d-4d3b-92ec-d405977a11a5",
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "86184003",
+              "display": "Electrocardiographic monitor and recorder"
+            }
+          ],
+          "text": "ECG"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org.au/fhir/v2/0203",
+                  "code": "NDI",
+                  "display": "National Device Identifier"
+                }
+              ],
+              "text": "PAI-D"
+            },
+            "system": "http://ns.electronichealth.net.au/id/pcehr/paid/1.0",
+            "value": "8003640003999995"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "http://hl7.org.au/fhir/StructureDefinition/au-device"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">GP Best Practice</div>"
+        },
+        "udi": {
+          "deviceIdentifier": "00844588003288",
+          "name": "BP GP System"
+        },
+        "version": "v1.0.0",
+        "status": "active",
+        "contact": [
+          {
+            "system": "phone",
+            "value": "0255554352"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Practitioner/examiner-practitioner",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "examiner-practitioner",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: dd78393f-37ca-4738-81d6-d9595b2e5d0d</p><p><b>identifier</b>: HPI-I = 8003611234567893</p><p><b>name</b>: Dr. Carla Smith </p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>AHPRA Registration number = MED0000932850</td><td>AHPRA qualification for General Practitioner <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0 code '253111' = '253111', given as 'General Medical Practitioner'})</span></td><td>AHPRA</td></tr></table></div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "NPI",
+                  "display": "National provider identifier"
+                }
+              ],
+              "text": "HPI-I"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hi/hpii/1.0",
+            "value": "8003611234567893"
+          }
+        ],
+        "name": [
+          {
+            "family": "Carla",
+            "given": [
+              "Smith"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ],
+        "qualification": [
+          {
+            "identifier": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org.au/fhir/v2/0203",
+                      "code": "AHPRA",
+                      "display": "Australian Health Practitioner Regulation Agency Registration Number"
+                    }
+                  ],
+                  "text": "AHPRA Registration number"
+                },
+                "system": "http://hl7.org.au/id/ahpra-registration-number",
+                "value": "MED0000932850"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0",
+                  "code": "253111",
+                  "display": "General Medical Practitioner"
+                }
+              ],
+              "text": "AHPRA qualification for General Practitioner"
+            },
+            "issuer": {
+              "display": "AHPRA"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/QuestionnaireResponse/nb-delivery-qa-1",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "nb-delivery-qa-1",
+        "questionnaire": {
+          "reference": "Questionnaire/nb-delivery-q-en-s1",
+          "display": "Birth"
+        },
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/patient-baby-example"
+        },
+        "item": [
+          {
+            "id": "1.0.0.0",
+            "linkId": "1",
+            "text": "Facility / Location",
+            "subject": {
+              "reference": "Patient/patient-baby-example"
+            },
+            "answer": [
+              {
+                "valueString": "Blacktown Hospital"
+              }
+            ]
+          },
+          {
+            "id": "2.0.0.0",
+            "linkId": "2",
+            "text": "Birth Date / Time",
+            "subject": {
+              "reference": "Patient/patient-baby-example"
+            },
+            "answer": [
+              {
+                "valueDateTime": "2018-01-19T14:15:00-05:00"
+              }
+            ]
+          },
+          {
+            "id": "3.0.0.0",
+            "linkId": "3",
+            "text": "Sex",
+            "subject": {
+              "reference": "Patient/patient-baby-example"
+            },
+            "answer": [
+              {
+                "valueCoding": {
+                  "system": "http://hl7.org/fhir/administrative-gender",
+                  "code": "female",
+                  "display": "Female"
+                }
+              }
+            ]
+          },
+          {
+            "id": "4.0.0.0",
+            "linkId": "4",
+            "text": "Estimated Gestation",
+            "subject": {
+              "reference": "Observation/observation-estimated-gestation-example"
+            },
+            "answer": [
+              {
+                "valueString": "41 weeks 5 days"
+              }
+            ]
+          },
+          {
+            "id": "5.0.0.0",
+            "linkId": "5",
+            "text": "Type of Birth",
+            "subject": {
+              "reference": "Observation/observation-method-of-delivery-example"
+            },
+            "answer": [
+              {
+                "valueCoding": {
+                  "system": "http://snomed.info/sct",
+                  "code": "289259007",
+                  "display": "Vaginal delivery"
+                }
+              }
+            ]
+          },
+          {
+            "id": "6.0.0.0",
+            "linkId": "6",
+            "text": "Labour Initiation",
+            "subject": {
+              "reference": "Observation/observation-labour-induced-example"
+            },
+            "answer": [
+              {
+                "valueCoding": {
+                  "system": "http://snomed.info/sct",
+                  "code": "84457005",
+                  "display": "Spontaneous onset of labor"
+                }
+              }
+            ]
+          },
+          {
+            "id": "7.0.0.0",
+            "linkId": "7",
+            "text": "Pregnancy Complications",
+            "answer": [
+              {
+                "valueString": "Yes",
+                "item": [
+                  {
+                    "id": "7.1.0.1",
+                    "linkId": "7.1",
+                    "subject": {
+                      "reference": "Observation/observation-pregnancy-complication-example"
+                    },
+                    "item": [
+                      {
+                        "id": "7.1.1.1",
+                        "linkId": "7.1.1",
+                        "answer": [
+                          {
+                            "valueString": "High blood pressure"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "7.1.2.1",
+                        "linkId": "7.1.2",
+                        "answer": [
+                          {
+                            "valueString": "Not Applicable"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "7.1.0.2",
+                    "linkId": "7.1",
+                    "subject": {
+                      "reference": "Observation/observation-pregnancy-complication-example"
+                    },
+                    "item": [
+                      {
+                        "id": "7.1.1.2",
+                        "linkId": "7.1.1",
+                        "answer": [
+                          {
+                            "valueString": "Medical Problem - Infection"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "7.1.2.2",
+                        "linkId": "7.1.2",
+                        "answer": [
+                          {
+                            "valueString": "Infection found"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "8.0.0.0",
+            "linkId": "8",
+            "text": "Abnormalities Noted",
+            "subject": {
+              "reference": "Observation/observation-birth-abnormalities-example"
+            },
+            "answer": [
+              {
+                "valueString": "Yes",
+                "item": [
+                  {
+                    "id": "8.1.0.1",
+                    "linkId": "8.1",
+                    "text": "Abnormalities Noted",
+                    "subject": {
+                      "reference": "Observation/observation-birth-abnormalities-example"
+                    },
+                    "answer": [
+                      {
+                        "valueString": "The foot is twisted out of shape or position"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "9.0.0.0",
+            "linkId": "9",
+            "text": "Birth Complications",
+            "subject": {
+              "reference": "Observation/observation-birth-complication-example"
+            },
+            "answer": [
+              {
+                "valueCoding": {
+                  "display": "Not Applicable"
+                }
+              }
+            ]
+          },
+          {
+            "id": "10.0.0.0",
+            "linkId": "10",
+            "text": "APGAR",
+            "answer": [
+              {
+                "valueString": "1m: 9",
+                "item": [
+                  {
+                    "id": "10.1.0.1",
+                    "linkId": "10.1",
+                    "text": "1 minute",
+                    "subject": {
+                      "reference": "Observation/observation-apgar-score-normal-example"
+                    },
+                    "answer": [
+                      {
+                        "valueQuantity": {
+                          "value": 9,
+                          "system": "http://unitsofmeasure.org",
+                          "code": "{score}"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "10.2.0.1",
+                    "linkId": "10.2",
+                    "text": "5 minute",
+                    "subject": {
+                      "reference": "Observation/observation-apgar-score-normal-example"
+                    },
+                    "answer": [
+                      {
+                        "valueQuantity": {
+                          "value": 16,
+                          "system": "http://unitsofmeasure.org",
+                          "code": "{score}"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "10.3.0.1",
+                    "linkId": "10.3",
+                    "text": "10 minute",
+                    "subject": {
+                      "reference": "Observation/observation-apgar-score-normal-example"
+                    },
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "display": "Not Available"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "11.0.0.0",
+            "linkId": "11",
+            "text": "Birth Weight",
+            "subject": {
+              "reference": "Observation/observation-vitalsign-bodyweight-example"
+            },
+            "answer": [
+              {
+                "valueQuantity": {
+                  "value": 3.09414,
+                  "unit": "kg",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "kg"
+                }
+              }
+            ]
+          },
+          {
+            "id": "12.0.0.0",
+            "linkId": "12",
+            "text": "Birth Length",
+            "subject": {
+              "reference": "Observation/observation-vitalsign-bodyheight-example"
+            },
+            "answer": [
+              {
+                "valueQuantity": {
+                  "value": 51.5,
+                  "unit": "cm",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "cm"
+                }
+              }
+            ]
+          },
+          {
+            "id": "13.0.0.0",
+            "linkId": "13",
+            "text": "Head Circumference",
+            "subject": {
+              "reference": "Observation/observation-vitalsign-headcircum-example"
+            },
+            "answer": [
+              {
+                "valueQuantity": {
+                  "value": 34.5,
+                  "unit": "cm",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "cm"
+                }
+              }
+            ]
+          },
+          {
+            "id": "14.0.0.0",
+            "linkId": "14",
+            "text": "Vitamin K",
+            "answer": [
+              {
+                "valueString": "Given",
+                "item": [
+                  {
+                    "id": "14.1.0.1",
+                    "linkId": "14.1",
+                    "text": "Vitamin K1",
+                    "subject": {
+                      "reference": "MedicationStatement/medication-statement-k1-example"
+                    },
+                    "item": [
+                      {
+                        "id": "14.1.1.1",
+                        "linkId": "14.1.1",
+                        "text": "Dose",
+                        "answer": [
+                          {
+                            "valueCoding": {
+                              "system": "http://snomed.info/sct",
+                              "code": "66656000",
+                              "display": "Vitamin K>1<"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "14.1.2.1",
+                        "linkId": "14.1.2",
+                        "text": "Date",
+                        "answer": [
+                          {
+                            "valueDateTime": "2018-01-19T14:15:00-05:00"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "14.1.3.1",
+                        "linkId": "14.1.3",
+                        "text": "Given",
+                        "answer": [
+                          {
+                            "valueString": "Yes"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "14.1.5.1",
+                        "linkId": "14.1.5",
+                        "text": "Route",
+                        "answer": [
+                          {
+                            "valueCoding": {
+                              "system": "http://snomed.info/sct",
+                              "code": "738956005",
+                              "display": "Oral"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "15.0.0.0",
+            "linkId": "15",
+            "text": "Examiner",
+            "answer": [
+              {
+                "valueString": "Judith NORMAN",
+                "item": [
+                  {
+                    "id": "15.1.0.1",
+                    "linkId": "15.1",
+                    "text": "Designation",
+                    "subject": {
+                      "reference": "Practitioner/examiner-practitioner"
+                    },
+                    "answer": [
+                      {
+                        "valueString": "Midwife"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "15.1.0.1",
+                    "linkId": "15.2",
+                    "text": "Venue",
+                    "subject": {
+                      "reference": "Encounter/ncdhc-encounter-example"
+                    },
+                    "answer": [
+                      {
+                        "valueString": "Blacktown Hospital"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "15.1.0.1",
+                    "linkId": "15.3",
+                    "text": "Date & Time",
+                    "subject": {
+                      "reference": "Encounter/ncdhc-encounter-example"
+                    },
+                    "answer": [
+                      {
+                        "valueDateTime": "2018-01-19T14:15:00-05:00"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "od78393f-37ca-4738-81d6-d9595b2e5d0f",
+        "target": [
+          {
+            "reference": "Patient/patient-baby-example"
+          },
+          {
+            "reference": "Observation/observation-estimated-gestation-example"
+          },
+          {
+            "reference": "Observation/observation-method-of-delivery-example"
+          },
+          {
+            "reference": "Observation/observation-labour-induced-example"
+          },
+          {
+            "reference": "Observation/observation-pregnancy-complication-example"
+          },
+          {
+            "reference": "Observation/observation-birth-abnormalities-example"
+          },
+          {
+            "reference": "Observation/observation-birth-complication-example"
+          },
+          {
+            "reference": "Observation/observation-apgar-score-normal-example"
+          },
+          {
+            "reference": "Observation/observation-vitalsign-bodyweight-example"
+          },
+          {
+            "reference": "Observation/observation-vitalsign-bodyheight-example"
+          },
+          {
+            "reference": "Observation/observation-vitalsign-headcircum-example"
+          },
+          {
+            "reference": "MedicationStatement/medication-statement-k1-example"
+          }
+        ],
+        "period": {
+          "start": "2019-05-27",
+          "end": "2019-05-27"
+        },
+        "recorded": "2019-05-27T08:39:24+10:00",
+        "agent": [
+          {
+            "role": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "DEV"
+                  }
+                ]
+              }
+            ],
+            "whoReference": {
+              "reference": "Device/3db74777-fd3d-4d3b-92ec-d405977a11a5"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "whatReference": {
+              "reference": "DocumentReference/original-source-fhir-document-metadata",
+              "display": "Reference to the  FHIR Document in repository"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
