@@ -6,7 +6,7 @@
     "lastUpdated": "2019-10-14T03:06:34.061+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablecodesystem",
-	  "https://healthterminologies.gov.au/fhir/StructureDefinition/complete-code-system-2"
+      "https://healthterminologies.gov.au/fhir/StructureDefinition/complete-code-system-2"
     ]
   },
   "text": {
@@ -54,27 +54,32 @@
       "display": "Newborn Discharge",
       "definition": "A newborn child is discharged from care - discharge summary is generated"
     },
-	{
+    {
       "code": "NBEXAM",
       "display": "Newborn Examination",
       "definition": "A newborn examination has been completed with an outcome recorded"
     },
-	{
+    {
       "code": "REGREP",
       "display": "Register Representative",
       "definition": "Register Representative"
     },
-	{
+    {
       "code": "REGCHLD",
       "display": "Register Child",
       "definition": "Register Child"
     },
-	{
+    {
       "code": "HCSSUMVW",
       "display": "Health Check Summary",
       "definition": "View Health Check Summary based on Jurisdiction"
     },
-	{
+    {
+      "code": "BIRTHCONVW",
+      "display": "NCDHC Birth Consolidated view",
+      "definition": "NCDHC Birth Consolidated view"
+    },
+    {
       "code": "HCSSCHEDVW",
       "display": "Health Check Schedule",
       "definition": "View Health Check Schedule based on Jurisdiction"
@@ -84,37 +89,37 @@
       "display": "Health Check Assessment 0-4 weeks",
       "definition": "A child health assessment has been completed with an outcome recorded"
     },
-	{
+    {
       "code": "HEALTHCKASSMT68W",
       "display": "Health Check Assessment 6-8 weeks",
       "definition": "A child health assessment has been completed with an outcome recorded"
     },
-	{
+    {
       "code": "HEALTHCKASSMT49M",
       "display": "Health Check Assessment 4-9 months",
       "definition": "A child health assessment has been completed with an outcome recorded"
     },
-	{
+    {
       "code": "HEALTHCKASSMT12M",
       "display": "Health Check Assessment 12 months",
       "definition": "A child health assessment has been completed with an outcome recorded"
     },
-	{
+    {
       "code": "HEALTHCKASSMT18M",
       "display": "Health Check Assessment 18 months",
       "definition": "A child health assessment has been completed with an outcome recorded"
     },
-	{
+    {
       "code": "HEALTHCKASSMT23Y",
       "display": "Health Check Assessment 2-3 yrs",
       "definition": "A child health assessment has been completed with an outcome recorded"
     },
-	{
+    {
       "code": "HEALTHCKASSMT34Y",
       "display": "Health Check Assessment 3-4 yrs",
       "definition": "A child health assessment has been completed with an outcome recorded"
     },
-	{
+    {
       "code": "HEALTHCKASSMT45Y",
       "display": "Health Check Assessment 4-5 yrs",
       "definition": "A child health assessment has been completed with an outcome recorded"
@@ -169,7 +174,6 @@
       "display": "Consumer Entered Milestone",
       "definition": "An achievement or milestone is observed and recorded by a carer or parent"
     },
-    
     {
       "code": "CHILDPRESEMRCY",
       "display": "Child Presented In Emergency",
