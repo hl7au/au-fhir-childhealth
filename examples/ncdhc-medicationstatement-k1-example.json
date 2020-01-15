@@ -1,6 +1,6 @@
 {
   "resourceType" : "MedicationStatement",
-  "id" : "medication-statement-k1-example",
+  "id" : "ncdhc-medicationstatement-k1-example",
   "meta" : {
     "versionId" : "1",
     "lastUpdated" : "2018-12-27T16:13:03Z",

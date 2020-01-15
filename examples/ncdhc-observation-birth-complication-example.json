@@ -18,10 +18,10 @@
       {
         "system": "http://snomed.info/sct",
         "code": "199745000",
-        "display": "Complication occurring during labour and delivery"
+        "display": "Complication occurring during labor and delivery"
       }
     ],
-    "text": "Complication occurring during labour and delivery"
+    "text": "Complication occurring during labor and delivery"
   },
   "subject": {
     "reference": "Patient/patient-baby-example",

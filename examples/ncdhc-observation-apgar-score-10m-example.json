@@ -1,6 +1,6 @@
 {
   "resourceType" : "Observation",
-  "id" : "observation-apgar-score-1m-example",
+  "id" : "observation-apgar-score-10m-example",
   "meta" : {
     "versionId" : "1",
     "lastUpdated" : "2019-05-18T16:13:03Z",
@@ -10,23 +10,22 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">1 minute Apgar Score</div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">10 minute Apgar Score</div>"
   },
   "status" : "final",
   "code" : {
     "coding" : [
-      
       {
         "system" : "http://snomed.info/sct",
-        "code" : "169895004",
-        "display" : "Apgar at 1 minute"
+        "code" : "169922007",
+        "display" : "Apgar score at 10 minutes"
       },
       {
         "system" : "http://loinc.org",
-        "code" : "9272-6"
+        "code" : "9271-8"
       }
     ],
-    "text" : "1 minute Apgar Score"
+    "text" : "Apgar score at 10 minutes"
   },
   "subject" : {
     "reference" : "Patient/patient-baby-example",
