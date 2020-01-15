@@ -183,9 +183,17 @@
       "base": "StructureDefinition-ncdhc-composition-rep-registration.html",
       "defns": "StructureDefinition-ncdhc-composition-rep-registration-definitions.html"
     },
+    "Bundle/ncdhc-bundle-document-create-authrep": {
+      "source": "ncdhc-bundle-document-create-authrep.json",
+      "base": "ncdhc-bundle-document-create-authrep.html"
+    },
     "StructureDefinition/ncdhc-composition-child-registration": {
       "base": "StructureDefinition-ncdhc-composition-child-registration.html",
       "defns": "StructureDefinition-ncdhc-composition-child-registration-definitions.html"
+    },
+    "Bundle/ncdhc-bundle-document-create-child": {
+      "source": "ncdhc-bundle-document-create-child.json",
+      "base": "ncdhc-bundle-document-create-child.html"
     },
     "StructureDefinition/ncdhc-observation-tobacco-usage": {
       "base": "StructureDefinition-ncdhc-observation-tobacco-usage.html",

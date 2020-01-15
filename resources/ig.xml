@@ -909,9 +909,21 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-bundle-document-create-authrep" />
+			</sourceReference>
+		</resource>		
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-composition-child-registration" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-bundle-document-create-child" />
 			</sourceReference>
 		</resource>
 		<!-- NCDHC Admin Profiles - End -->
@@ -929,8 +941,6 @@
 				<reference value="CapabilityStatement/ncdhc-metadata-consumer" />
 			</sourceReference>
 		</resource>
-
-
 	</package>
 	<page>
 		<source value="index.html" />
