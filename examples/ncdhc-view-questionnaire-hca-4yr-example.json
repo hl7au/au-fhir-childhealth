@@ -692,7 +692,7 @@
     },
     {
       "linkId": "21",
-      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-ageaprImmcomp-definitions.html#Observation.valueCodeableConcept",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-hearing-screen-definitions.html#Observation.valueCodeableConcept",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -708,7 +708,7 @@
     },
     {
       "linkId": "22",
-      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-ageaprImmcomp-definitions.html#Observation.valueCodeableConcept",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vision-screen-definitions.html#Observation.valueCodeableConcept",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -729,7 +729,7 @@
       "item": [
         {
           "linkId": "23.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.type",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.individual",
           "text": "Designation",
           "type": "open-choice"
         },
