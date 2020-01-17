@@ -116,10 +116,6 @@
         {
           "system": "http://snomed.info/sct",
           "code": "169886007"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "50373000"
         }
       ],
       "text": "Length",
@@ -161,15 +157,7 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "169876006"
-        },
-        {
-          "system": "http://snomed.info/sct",
           "code": "363812007"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "50373000"
         },
         {
           "system": "http://loinc.org",
@@ -296,7 +284,7 @@
       "type": "group",
       "item": [
         {
-          "linkId": "90.1",
+          "linkId": "9.1",
           "type": "question",
           "text": "Show Details",
           "item": [
@@ -563,7 +551,7 @@
       "item": [
         {
           "linkId": "17.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.type",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.individual",
           "text": "Designation",
           "type": "open-choice"
         },

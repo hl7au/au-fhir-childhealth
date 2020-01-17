@@ -18,13 +18,9 @@
       {
         "system" : "http://snomed.info/sct",
         "code" : "363812007"
-      },
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "169876006"
       }
     ],
-    "text" : "Birth Head Circumference "
+    "text" : "Birth Head Circumference"
   },
   "subject" : {
     "reference" : "Patient/patient-baby-example",

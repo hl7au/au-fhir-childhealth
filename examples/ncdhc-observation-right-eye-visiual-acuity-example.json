@@ -27,11 +27,11 @@
   "effectiveDateTime": "2019-11-21T16:13:03Z",
   "performer": [
     {
-      "reference": "urn:uuid:pp78393f-37ca-4738-81d6-d9595b2e5d0d",
+      "reference": "Practitioner/examiner-practitioner",
       "display": "Examiner"
     },
     {
-      "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "reference": "Organization/examiner-organization",
       "display": "Organisation"
     }
   ],

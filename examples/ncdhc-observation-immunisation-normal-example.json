@@ -51,7 +51,7 @@
             {
               "system" : "http://snomed.info/sct",
               "code" : "171258008",
-              "display" : "Up-to-date with vaccinations"
+              "display" : "Up-to-date with immunizations"
             }
           ]
         },

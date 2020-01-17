@@ -17,7 +17,7 @@
   "description": "Question model to represent Health Check Summary",
   "code": [
     {
-      "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type",
+      "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
       "code": "HCSSUMVW",
       "display": "Health Check Summary"
     }

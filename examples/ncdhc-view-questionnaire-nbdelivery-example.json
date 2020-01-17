@@ -17,9 +17,9 @@
   "description": "Question model to represent Newborn Delivery Section of the longitudinal summary",
   "code": [
     {
-      "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-questionnaire-type-1",
-      "code": "NBDELQ",
-      "display": "Newborn Delivery Questionnaire"
+      "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
+      "code": "NEWBRNDEL",
+      "display": "Newborn Delivery"
     }
   ],
   "subjectType": [
@@ -248,7 +248,7 @@
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "363812007"
+          "code": "169876006"
         }
       ],
       "text": "Head Circumference",
@@ -311,7 +311,7 @@
       "item": [
         {
           "linkId": "15.1",
-          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.type",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter-definitions.html#Encounter.participant.individual",
           "text": "Designation",
           "type": "open-choice"
         },

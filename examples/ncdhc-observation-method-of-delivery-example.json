@@ -39,8 +39,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "271370008",
-        "display": "Deliveries by breech extraction"
+        "code": "302383004",
+        "display": "Forceps delivery"
       }
     ]
   }

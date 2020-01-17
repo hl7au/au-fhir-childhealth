@@ -344,20 +344,20 @@
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: od78393f-37ca-4738-81d6-d9595b2e5d0f</p><p><b>identifier</b>: ABN = 51824753556</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/organization-type code 'prov' = 'Healthcare Provider', given as 'Healthcare Provider'})</span></p><p><b>name</b>: Blacktown Hospital</p><p><b>telecom</b>: enquiries@blacktownhospital.com.au(WORK)</p></div>"
         },
-        "identifier" : [
+        "identifier": [
           {
-            "type" : {
-              "coding" : [
+            "type": {
+              "coding": [
                 {
-                  "system" : "http://hl7.org.au/fhir/v2/0203",
-                  "code" : "NOI",
-                  "display" : "National Organisation Identifier"
+                  "system": "http://hl7.org.au/fhir/v2/0203",
+                  "code": "NOI",
+                  "display": "National Organisation Identifier"
                 }
               ],
-              "text" : "HPI-O"
+              "text": "HPI-O"
             },
-            "system" : "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
-            "value" : "8003621566684455"
+            "system": "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
+            "value": "8003621566684455"
           }
         ],
         "type": [
@@ -433,16 +433,16 @@
         },
         "resourceType": "Observation",
         "status": "final",
-        "category" : [
+        "category": [
           {
-            "coding" : [
+            "coding": [
               {
                 "system": "http://hl7.org/fhir/observation-category",
                 "code": "vital-signs",
                 "display": "Vital Signs"
               }
             ],
-            "text" : "Vital Signs"
+            "text": "Vital Signs"
           }
         ],
         "code": {
@@ -455,13 +455,7 @@
             },
             {
               "system": "http://snomed.info/sct",
-              "code": "27113001",
-              "display": "Body weight"
-            },
-            {
-              "system" : "http://snomed.info/sct",
-              "code" : "364589006",
-              "display" : "Birth weight"
+              "code": "27113001"
             }
           ]
         },
@@ -527,20 +521,12 @@
           "text": "Height",
           "coding": [
             {
-              "system" : "http://loinc.org",
-              "code" : "8302-2"
+              "system": "http://loinc.org",
+              "code": "8302-2"
             },
             {
-              "system" : "http://snomed.info/sct",
-              "code" : "248334005"
-            },
-            {
-              "system" : "http://snomed.info/sct",
-              "code" : "169886007"
-            },
-            {
-              "system" : "http://snomed.info/sct",
-              "code" : "50373000"
+              "system": "http://snomed.info/sct",
+              "code": "248334005"
             }
           ]
         },
@@ -606,16 +592,16 @@
           "text": "Head circumference",
           "coding": [
             {
-              "system" : "http://loinc.org",
-              "code" : "8287-5"
+              "system": "http://loinc.org",
+              "code": "8287-5"
             },
             {
-              "system" : "http://snomed.info/sct",
-              "code" : "363812007"
+              "system": "http://snomed.info/sct",
+              "code": "363812007"
             },
             {
-              "system" : "http://snomed.info/sct",
-              "code" : "169876006"
+              "system": "http://snomed.info/sct",
+              "code": "169876006"
             }
           ]
         },
@@ -665,18 +651,6 @@
         },
         "resourceType": "Observation",
         "status": "final",
-        "category" : [
-          {
-            "coding" : [
-              {
-                "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
-                "code": "HEALTHCKASSMT49M",
-                "display": "Health Check Assessment 4-9 months"
-              }
-            ],
-            "text" : "Health Check Assessment 4-9 months"
-          }
-        ],
         "code": {
           "text": "Head shape",
           "coding": [
@@ -698,12 +672,12 @@
           }
         ],
         "comment": "comment4",
-        "valueCodeableConcept" : {
-          "coding" : [
+        "valueCodeableConcept": {
+          "coding": [
             {
-              "system" : "http://snomed.info/sct",
-              "code" : "443938003",
-              "display" : "Procedure carried out on subject"
+              "system": "http://snomed.info/sct",
+              "code": "443938003",
+              "display": "Procedure carried out on subject"
             }
           ]
         },
@@ -736,13 +710,13 @@
         "resourceType": "Observation",
         "status": "final",
         "code": {
-          "text": "Eyes",
           "coding": [
             {
               "system": "http://snomed.info/sct",
               "code": "281004000"
             }
-          ]
+          ],
+          "text": "Eyes"
         },
         "effectiveDateTime": "2019-11-21",
         "performer": [
@@ -922,12 +896,12 @@
           }
         ],
         "comment": "comment10",
-        "valueCodeableConcept" : {
-          "coding" : [
+        "valueCodeableConcept": {
+          "coding": [
             {
-              "system" : "http://snomed.info/sct",
-              "code" : "443938003",
-              "display" : "Procedure carried out on subject"
+              "system": "http://snomed.info/sct",
+              "code": "443938003",
+              "display": "Procedure carried out on subject"
             }
           ]
         },
@@ -980,12 +954,12 @@
           }
         ],
         "comment": "comment9",
-        "valueCodeableConcept" : {
-          "coding" : [
+        "valueCodeableConcept": {
+          "coding": [
             {
-              "system" : "http://snomed.info/sct",
-              "code" : "443938003",
-              "display" : "Procedure carried out on subject"
+              "system": "http://snomed.info/sct",
+              "code": "443938003",
+              "display": "Procedure carried out on subject"
             }
           ]
         },
@@ -1038,12 +1012,12 @@
           }
         ],
         "comment": "comment11",
-        "valueCodeableConcept" : {
-          "coding" : [
+        "valueCodeableConcept": {
+          "coding": [
             {
-              "system" : "http://snomed.info/sct",
-              "code" : "443938003",
-              "display" : "Procedure carried out on subject"
+              "system": "http://snomed.info/sct",
+              "code": "443938003",
+              "display": "Procedure carried out on subject"
             }
           ]
         },
@@ -1099,43 +1073,43 @@
         "subject": {
           "reference": "urn:uuid:43140538-3e2a-486b-8993-aab0e8d5c20a"
         },
-        "component":  [
+        "component": [
           {
-            "code" : {
-              "coding" : [
+            "code": {
+              "coding": [
                 {
-                  "system" : "http://snomed.info/sct",
-                  "code" : "250889006",
-                  "display" : "Hearing level"
+                  "system": "http://snomed.info/sct",
+                  "code": "250889006",
+                  "display": "Hearing level"
                 }
               ]
             },
-            "interpretation" : {
-              "coding" : [
+            "interpretation": {
+              "coding": [
                 {
-                  "system" : "http://snomed.info/sct",
-                  "code" : "17621005",
-                  "display" : "Normal"
+                  "system": "http://snomed.info/sct",
+                  "code": "17621005",
+                  "display": "Normal"
                 }
               ]
             }
           },
           {
-            "code" : {
-              "coding" : [
+            "code": {
+              "coding": [
                 {
-                  "system" : "http://snomed.info/sct",
-                  "code" : "364004008",
-                  "display" : "Tympanic membrane observable"
+                  "system": "http://snomed.info/sct",
+                  "code": "364004008",
+                  "display": "Tympanic membrane observable"
                 }
               ]
             },
-            "interpretation" : {
-              "coding" : [
+            "interpretation": {
+              "coding": [
                 {
-                  "system" : "http://snomed.info/sct",
-                  "code" : "17621005",
-                  "display" : "Normal"
+                  "system": "http://snomed.info/sct",
+                  "code": "17621005",
+                  "display": "Normal"
                 }
               ]
             }
@@ -1177,12 +1151,12 @@
           }
         ],
         "comment": "comment8",
-        "valueCodeableConcept" : {
-          "coding" : [
+        "valueCodeableConcept": {
+          "coding": [
             {
-              "system" : "http://snomed.info/sct",
-              "code" : "443938003",
-              "display" : "Procedure carried out on subject"
+              "system": "http://snomed.info/sct",
+              "code": "443938003",
+              "display": "Procedure carried out on subject"
             }
           ]
         },
@@ -1235,12 +1209,12 @@
           }
         ],
         "comment": "comment12",
-        "valueCodeableConcept" : {
-          "coding" : [
+        "valueCodeableConcept": {
+          "coding": [
             {
-              "system" : "http://snomed.info/sct",
-              "code" : "443938003",
-              "display" : "Procedure carried out on subject"
+              "system": "http://snomed.info/sct",
+              "code": "443938003",
+              "display": "Procedure carried out on subject"
             }
           ]
         },
@@ -1309,14 +1283,9 @@
         },
         "related": [
           {
-            "target": [
-              {
-                "reference": "urn:uuid:3f3e0d50-72da-4dd2-8a54-7fb088f707c9"
-              },
-              {
-                "reference": "urn:uuid:313e0d50-72da-4dd2-8a54-7fb088f707c9"
-              }
-            ]
+            "target": {
+              "reference": "urn:uuid:3f3e0d50-72da-4dd2-8a54-7fb088f707c9"
+            }
           }
         ]
       },
@@ -1343,6 +1312,9 @@
               "display": "Serum ferritin measurement"
             }
           ]
+        },
+        "subject": {
+          "reference": "urn:uuid:43140538-3e2a-486b-8993-aab0e8d5c20a"
         },
         "effectiveDateTime": "2019-11-21",
         "performer": [
@@ -1429,7 +1401,7 @@
         },
         "effectiveDateTime": "2019-11-21",
         "performer": [
-           {
+          {
             "reference": "urn:uuid:b763b0ba-079e-4276-b527-7f1b30271243",
             "display": "Examiner"
           },
