@@ -2,7 +2,7 @@
   "resourceType": "QuestionnaireResponse",
   "id": "hca-2year-qa-en-s1",
   "questionnaire": {
-    "reference": "Questionnaire/hca-2year-q-en-s1",
+    "reference": "Questionnaire/hca-2yr-q-en-s1",
     "display": "2 Year"
   },
   "status": "completed",
@@ -61,7 +61,7 @@
               "id": "4.1.0.1",
               "linkId": "4.1",
               "subject": {
-                "reference": "Observation/observation-vitalsign-bodyweight-example"
+                "reference": "Observation/ncdhc-observation-vitalsign-bodyweight-example"
               },
               "item": [
                 {

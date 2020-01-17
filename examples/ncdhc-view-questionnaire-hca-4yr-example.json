@@ -109,9 +109,13 @@
     {
       "linkId": "5",
       "code": [
-        {
+         {
           "system": "http://snomed.info/sct",
           "code": "50373000"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "248334005"
         }
       ],
       "text": "Height",

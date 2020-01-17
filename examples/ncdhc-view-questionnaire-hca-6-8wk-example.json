@@ -115,7 +115,7 @@
         },
         {
           "system": "http://snomed.info/sct",
-          "code": "169886007"
+          "code": "248334005"
         }
       ],
       "text": "Length",
@@ -158,10 +158,6 @@
         {
           "system": "http://snomed.info/sct",
           "code": "363812007"
-        },
-        {
-          "system": "http://loinc.org",
-          "code": "8287-5"
         }
       ],
       "text": "Head Circumference",

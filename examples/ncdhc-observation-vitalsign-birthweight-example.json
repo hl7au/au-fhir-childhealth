@@ -35,10 +35,6 @@
       {
         "system": "http://snomed.info/sct",
         "code": "364589006"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "27113001"
       }
     ],
     "text": "Birth Weight"

@@ -112,6 +112,10 @@
         {
           "system": "http://snomed.info/sct",
           "code": "50373000"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "248334005"
         }
       ],
       "text": "Height",
@@ -154,10 +158,6 @@
         {
           "system": "http://snomed.info/sct",
           "code": "363812007"
-        },
-        {
-          "system": "http://loinc.org",
-          "code": "8287-5"
         }
       ],
       "text": "Head Circumference",

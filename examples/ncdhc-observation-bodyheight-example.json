@@ -17,10 +17,11 @@
         
         {
           "system": "http://snomed.info/sct",
-          "code": "248334005"
+          "code": "50373000",
+          "display": "Body height measure"
         }
       ],
-      "text": "Body Height Length"
+      "text": "Body Height"
     },
     "subject": {
       "reference": "Patient/patient-baby-example",

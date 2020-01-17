@@ -106,7 +106,7 @@
               "id": "5.1.0.1",
               "linkId": "4.1",
               "subject": {
-                "reference": "Observation/observation-vitalsign-bodyweight-example"
+                "reference": "Observation/ncdhc-observation-vitalsign-bodyweight-example"
               },
               "item": [
                 {
