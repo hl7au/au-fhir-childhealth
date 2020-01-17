@@ -65,7 +65,8 @@
       {
         "id": "Observation.code.coding:eyesMonocularlyTestedSNOMED.system",
         "path": "Observation.code.coding.system",
-        "min": 1
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.code.coding:eyesMonocularlyTestedSNOMED.code",
@@ -141,7 +142,7 @@
               "path": "target.reference"
             }
           ],
-          "rules": "open"
+          "rules": "closed"
         },
         "short": "Provide Refernces for Left and Right Eye",
         "max": "2"
