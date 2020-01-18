@@ -906,6 +906,10 @@
       "base": "StructureDefinition-ncdhc-observation-iron-haemoglobin-level.html",
       "defns": "StructureDefinition-ncdhc-observation-iron-haemoglobin-level-definitions.html"
     },
+    "Observation/ncdhc-observation-iron-haemoglobin-level-example": {
+      "source": "ncdhc-observation-iron-haemoglobin-level-example.json",
+      "base": "ncdhc-observation-iron-haemoglobin-level-example.html"
+    },
     "AuditEvent/audit-event-insert-example": {
       "source": "audit-event-insert.json",
       "base": "audit-event-insert.html"

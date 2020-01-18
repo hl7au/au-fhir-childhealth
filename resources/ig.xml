@@ -61,7 +61,7 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Patient/patient-baby-example"/>
+				<reference value="Patient/patient-baby-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -389,8 +389,8 @@
 			<sourceReference>
 				<reference value="Observation/observation-bodyweight-example" />
 			</sourceReference>
-		</resource>  
-		
+		</resource>
+
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -534,7 +534,7 @@
 			<sourceReference>
 				<reference value="Observation/observation-immunisation-normal-example" />
 			</sourceReference>
-		</resource>	
+		</resource>
 
 		<resource>
 			<example value="false" />
@@ -574,7 +574,7 @@
 				<reference value="Observation/observation-eyes-normal-example" />
 			</sourceReference>
 		</resource>
-		
+
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -769,7 +769,7 @@
 				<reference value="Observation/observation-gait-normal-example" />
 			</sourceReference>
 		</resource>
-		
+
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -789,6 +789,12 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-iron-haemoglobin-level-example" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-iron-serum-ferritin" />
@@ -800,7 +806,7 @@
 				<reference value="Observation/ncdhc-observation-iron-serum-ferritin-example" />
 			</sourceReference>
 		</resource>
-	   <resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-fluoride-varnish" />
