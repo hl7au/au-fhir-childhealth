@@ -18,10 +18,10 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Each MedicationStatement must have:**
 
 1.  a status  
-1.  a medication SNOMED code which tells you what medication was administered
-1.  a time indicating when the medication was given
+1.  a medication SNOMED code (indicating what medication was administered)
+1.  a time (indicating when the medication was given)
 1.  a subject (Patient)
-1.  tekn to indicate the medication was applied
+1.  taken (to indicate the medication was applied)
 
 
 **Profile specific implementation guidance:**
