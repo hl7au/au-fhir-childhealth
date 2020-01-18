@@ -65,7 +65,7 @@
         }
       ],
       "reference": {
-        "reference": "Patient/example-mother"
+        "reference": "Patient/ncdhc-patient-mother-example"
       },
       "userId": {
         "system": "http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0",
@@ -151,7 +151,7 @@
   "entity": [
     {
       "reference": {
-        "reference": "Bundle/27700024-070c-4141-8109-9d9fa34dd24b"
+        "reference": "Bundle/ncdhc-bundle-transaction-nbdelivery-request-payload"
       }
     }
   ]
