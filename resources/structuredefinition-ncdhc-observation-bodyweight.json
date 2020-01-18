@@ -35,6 +35,10 @@
             {
               "type": "value",
               "path": "system"
+            },
+            {
+              "type": "value",
+              "path": "code"
             }
           ],
           "rules": "open"
@@ -61,7 +65,8 @@
       {
         "id": "Observation.code.coding:BirthWeightSNOMEDCTAUCode.code",
         "path": "Observation.code.coding.code",
-        "min": 1
+        "min": 1,
+        "fixedCode": "364589006"
       },
       {
         "id": "Observation.code.coding:BodyWeightSNOMEDCTAUCode",
@@ -83,7 +88,8 @@
       {
         "id": "Observation.code.coding:BodyWeightSNOMEDCTAUCode.code",
         "path": "Observation.code.coding.code",
-        "min": 1
+        "min": 1,
+        "fixedCode": "27113001"
       },
       {
         "id": "Observation.effectiveDateTime:effectiveDateTime",

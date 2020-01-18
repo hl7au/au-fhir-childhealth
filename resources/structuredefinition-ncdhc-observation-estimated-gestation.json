@@ -27,15 +27,73 @@
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Code to represent Estimated Gestation noted during the birthing process",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "5703600"
-            }
-          ]
-        },
         "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
+            },
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:EstimatedFetalGestationAgeSNOMED-CT",
+        "path": "Observation.code.coding",
+        "sliceName": "EstimatedFetalGestationAgeSNOMED-CT",
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "444135009"
+        }
+      },
+      {
+        "id": "Observation.code.coding:EstimatedFetalGestationAgeSNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:EstimatedFetalGestationAgeSNOMED-CT.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "fixedCode": "444135009"
+      },
+      {
+        "id": "Observation.code.coding:FetalGestationAgeSNOMED-CT",
+        "path": "Observation.code.coding",
+        "sliceName": "FetalGestationAgeSNOMED-CT",
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "5703600"
+        }
+      },
+      {
+        "id": "Observation.code.coding:FetalGestationAgeSNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:FetalGestationAgeSNOMED-CT.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "fixedCode": "5703600"
       },
       {
         "id": "Observation.subject",
