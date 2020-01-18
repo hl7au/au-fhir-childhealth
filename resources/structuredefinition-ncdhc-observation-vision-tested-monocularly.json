@@ -139,7 +139,7 @@
           "discriminator": [
             {
               "type": "profile",
-              "path": "target.reference"
+              "path": "target.resolve()"
             }
           ],
           "rules": "closed"

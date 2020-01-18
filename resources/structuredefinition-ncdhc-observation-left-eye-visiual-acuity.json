@@ -126,15 +126,11 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "code.coding.system"
-            },
-            {
-              "type": "value",
-              "path": "code.coding.code"
+              "type": "pattern",
+              "path": "code"
             }
           ],
-          "rules": "open"
+          "rules": "closed"
         },
         "short": "Visual acuity Test type and Result"
       },
@@ -155,14 +151,16 @@
         "max": "1"
       },
       {
-        "id": "Observation.component:VisualAcuity3M.code.coding.system",
-        "path": "Observation.component.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.component:VisualAcuity3M.code.coding.code",
-        "path": "Observation.component.code.coding.code",
-        "fixedCode": "1368901000168106"
+        "id": "Observation.component:VisualAcuity3M.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1368901000168106"
+            }
+          ]
+        }
       },
       {
         "id": "Observation.component:VisualAcuity3M.value[x]:valueQuantity",
@@ -181,14 +179,16 @@
         "max": "1"
       },
       {
-        "id": "Observation.component:VisualAcuity6M.code.coding.system",
-        "path": "Observation.component.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.component:VisualAcuity6M.code.coding.code",
-        "path": "Observation.component.code.coding.code",
-        "fixedCode": "1368911000168109"
+        "id": "Observation.component:VisualAcuity6M.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1368911000168109"
+            }
+          ]
+        }
       },
       {
         "id": "Observation.component:VisualAcuity6M.value[x]:valueQuantity",
