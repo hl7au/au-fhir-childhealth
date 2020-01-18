@@ -35,7 +35,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-- [Newborn Delivery Health Interaction (Request Payload)](ncdhc-bundle-transaction-nbdelivery-request-payload.html)
+- [Newborn Delivery Health Interaction (Request Payload)](ncdhc-nbdelivery-payload.html)
 
 [Composition]: http://hl7.org.au/fhir/base2018Oct/StructureDefinition-au-composition.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
