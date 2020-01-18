@@ -7,7 +7,7 @@
       "fullUrl": "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0a",
       "resource": {
         "resourceType": "Bundle",
-        "id": "ncdhc-nbdelivery-payload",
+        "id": "61ebe359-bfdc-4613-8bf2-c5e300945f0a",
         "identifier": {
           "system": "urn:ietf:rfc:3986",
           "value": "urn:uuid:0c4151bd-1cbf-4d64-b04d-cd9187a4c6e0"
