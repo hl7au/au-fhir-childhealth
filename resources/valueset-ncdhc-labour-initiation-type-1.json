@@ -1,12 +1,12 @@
 {
-    "resourceType": "ValueSet",
+  "resourceType": "ValueSet",
   "id": "ncdhc-labour-initiation-type-1",
   "meta": {
     "versionId": "1",
     "lastUpdated": "2019-10-11T03:05:02.360+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
-	  "https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-2"
+      "https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-2"
     ]
   },
   "text": {
@@ -26,7 +26,7 @@
   "status": "draft",
   "experimental": true,
   "date": "2019-10-31",
- "publisher": "Australian Digital Health Agency",
+  "publisher": "Australian Digital Health Agency",
   "contact": [
     {
       "telecom": [
@@ -43,11 +43,18 @@
     "include": [
       {
         "system": "http://snomed.info/sct",
-         "filter": [
+        "concept": [
           {
-            "property": "constraint",
-            "op": "=",
-            "value": "(84457005|Spontaneous onset of labour| OR 112070001|Onset of labour induced| OR 48975005|Stimulated labour|)"
+            "code": "84457005",
+            "display": "Spontaneous onset of labour"
+          },
+          {
+            "code": "112070001",
+            "display": "Onset of labour induced"
+          },
+          {
+            "code": "48975005",
+            "display": "Stimulated labour"
           }
         ]
       }

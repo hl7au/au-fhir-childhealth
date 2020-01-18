@@ -6,7 +6,7 @@
     "lastUpdated": "2019-10-11T03:05:02.360+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
-	  "https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-2"
+      "https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-2"
     ]
   },
   "text": {
@@ -26,7 +26,7 @@
   "status": "draft",
   "experimental": true,
   "date": "2019-10-31",
-   "publisher": "Australian Digital Health Agency",
+  "publisher": "Australian Digital Health Agency",
   "contact": [
     {
       "telecom": [
@@ -43,11 +43,54 @@
     "include": [
       {
         "system": "http://snomed.info/sct",
-         "filter": [
+        "concept": [
           {
-            "property": "constraint",
-            "op": "=",
-            "value": "(700000006|Vaginal delivery of fetus| OR 302383004|Forceps delivery| OR 61586001|Delivery by vacuum extraction| OR 11466000|Caesarean section| OR 274130007|Emergency caesarean section| OR 177141003|Elective caesarean section| OR 417121007|Breech extraction| OR 16819009|Delivery of face presentation| OR 236974004|Instrumental delivery| OR 450798003|Delivery of occipitoposterior presentation| OR 1364451000168109|Delivery of brow presentation| OR 1364441000168107|Delivery of compound presentation|)"
+            "code": "700000006",
+            "display": "Vaginal delivery of fetus"
+          },
+          {
+            "code": "302383004",
+            "display": "Forceps delivery"
+          },
+          {
+            "code": "61586001",
+            "display": "Delivery by vacuum extraction"
+          },
+          {
+            "code": "11466000",
+            "display": "Caesarean section"
+          },
+          {
+            "code": "274130007",
+            "display": "Emergency caesarean section"
+          },
+          {
+            "code": "177141003",
+            "display": "Elective caesarean section"
+          },
+          {
+            "code": "417121007",
+            "display": "Breech extraction"
+          },
+          {
+            "code": "16819009",
+            "display": "Delivery of face presentation"
+          },
+          {
+            "code": "236974004",
+            "display": "Instrumental delivery"
+          },
+          {
+            "code": "450798003",
+            "display": "Delivery of occipitoposterior presentation"
+          },
+          {
+            "code": "1364451000168109",
+            "display": "Delivery of brow presentation"
+          },
+          {
+            "code": "1364441000168107",
+            "display": "Delivery of compound presentation"
           }
         ]
       }

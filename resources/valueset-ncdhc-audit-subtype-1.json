@@ -6,7 +6,7 @@
     "lastUpdated": "2019-10-10T03:05:02.360+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
-	  "https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-2"
+      "https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-2"
     ]
   },
   "text": {
@@ -22,7 +22,7 @@
   ],
   "version": "1.0.0",
   "name": "ncdhc-audit-subtype",
-  "title": "NCDHC Audit Subtype", 
+  "title": "NCDHC Audit Subtype",
   "status": "draft",
   "experimental": true,
   "date": "2019-10-31",
@@ -43,7 +43,7 @@
     "include": [
       {
         "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
-		}
-        ]
       }
+    ]
   }
+}
