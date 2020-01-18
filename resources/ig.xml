@@ -84,6 +84,98 @@
 				<reference value="StructureDefinition/ncdhc-consent" />
 			</sourceReference>
 		</resource>
+		<!-- NCDHC OperationOutcome Profile -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-operation-outcome" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-400-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-401-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-403-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-404-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-405-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-409-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-410-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-422-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/operationoutcome-500-example" />
+			</sourceReference>
+		</resource>		
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/ncdhc-operationoutcome-bundle-404-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/ncdhc-operationoutcome-bundle-410-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/ncdhc-operationoutcome-bundle-412-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/ncdhc-operationoutcome-information-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="OperationOutcome/ncdhc-operationoutcome-informational-example" />
+			</sourceReference>
+		</resource>
+
 		<!-- NCDHC AuditEvent Profile -->
 		<resource>
 			<example value="false" />
@@ -908,9 +1000,21 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-hca-1-4weeks-view-summary" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-composition-view-hca-68wks" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-hca-6-8weeks-view-summary" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -920,9 +1024,21 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-hca-6mnths-view-summary" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-composition-view-hca-12m" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-hca-12mnths-view-summary" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -932,9 +1048,21 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-hca-18mnths-view-summary" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-composition-view-hca-2yr" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-hca-2year-view-summary" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -944,9 +1072,20 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-hca-3year-view-summary" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-composition-view-hca-4yr" />
+			</sourceReference>
+		</resource><resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-hca-4year-view-summary" />
 			</sourceReference>
 		</resource>
 

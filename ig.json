@@ -131,6 +131,70 @@
       "base": "StructureDefinition-ncdhc-audit-event.html",
       "defns": "StructureDefinition-ncdhc-audit-event-definitions.html"
     },
+    "StructureDefinition/ncdhc-operation-outcome": {
+      "base": "StructureDefinition-ncdhc-operation-outcome.html",
+      "defns": "StructureDefinition-ncdhc-operation-outcome-definitions.html"
+    },
+    "OperationOutcome/operationoutcome-400-example": {
+      "source": "ncdhc-operationoutcome-400-example.json",
+      "base": "ncdhc-operationoutcome-400-example.html"
+    },
+    "OperationOutcome/operationoutcome-401-example": {
+      "source": "ncdhc-operationoutcome-401-example.json",
+      "base": "ncdhc-operationoutcome-401-example.html"
+    },
+    "OperationOutcome/operationoutcome-403-example": {
+      "source": "ncdhc-operationoutcome-403-example.json",
+      "base": "ncdhc-operationoutcome-403-example.html"
+    },
+    "OperationOutcome/operationoutcome-404-example": {
+      "source": "ncdhc-operationoutcome-404-example.json",
+      "base": "ncdhc-operationoutcome-404-example.html"
+    },
+    "OperationOutcome/operationoutcome-405-example": {
+      "source": "ncdhc-operationoutcome-405-example.json",
+      "base": "ncdhc-operationoutcome-405-example.html"
+    },
+    "OperationOutcome/operationoutcome-409-example": {
+      "source": "ncdhc-operationoutcome-409-example.json",
+      "base": "ncdhc-operationoutcome-409-example.html"
+    },
+    "OperationOutcome/operationoutcome-410-example": {
+      "source": "ncdhc-operationoutcome-410-example.json",
+      "base": "ncdhc-operationoutcome-410-example.html"
+    },
+    "OperationOutcome/operationoutcome-412-example": {
+      "source": "ncdhc-operationoutcome-412-example.json",
+      "base": "ncdhc-operationoutcome-412-example.html"
+    },
+    "OperationOutcome/operationoutcome-422-example": {
+      "source": "ncdhc-operationoutcome-422-example.json",
+      "base": "ncdhc-operationoutcome-422-example.html"
+    },
+    "OperationOutcome/operationoutcome-500-example": {
+      "source": "ncdhc-operationoutcome-500-example.json",
+      "base": "ncdhc-operationoutcome-500-example.html"
+    },
+    "OperationOutcome/ncdhc-operationoutcome-bundle-404-example": {
+      "source": "ncdhc-operationoutcome-bundle-404-example.json",
+      "base": "ncdhc-operationoutcome-bundle-404-example.html"
+    },
+    "OperationOutcome/ncdhc-operationoutcome-bundle-410-example": {
+      "source": "ncdhc-operationoutcome-bundle-410-example.json",
+      "base": "ncdhc-operationoutcome-bundle-410-example.html"
+    },
+    "OperationOutcome/ncdhc-operationoutcome-bundle-412-example": {
+      "source": "ncdhc-operationoutcome-bundle-412-example.json",
+      "base": "ncdhc-operationoutcome-bundle-412-example.html"
+    },
+    "OperationOutcome/ncdhc-operationoutcome-information-example": {
+      "source": "ncdhc-operationoutcome-information-example.json",
+      "base": "ncdhc-operationoutcome-information-example.html"
+    },
+    "OperationOutcome/ncdhc-operationoutcome-informational-example": {
+      "source": "ncdhc-operationoutcome-informational-example.json",
+      "base": "ncdhc-operationoutcome-informational-example.html"
+    },
     "StructureDefinition/ncdhc-composition-health-check-assessment": {
       "base": "StructureDefinition-ncdhc-composition-health-check-assessment.html",
       "defns": "StructureDefinition-ncdhc-composition-health-check-assessment-definitions.html"
@@ -155,33 +219,65 @@
       "base": "StructureDefinition-ncdhc-composition-view-hca-14wks.html",
       "defns": "StructureDefinition-ncdhc-composition-view-hca-14wks-definitions.html"
     },
+    "Bundle/ncdhc-hca-1-4weeks-view-summary": {
+      "source": "ncdhc-hca-1-4weeks-view-summary.json",
+      "base": "ncdhc-hca-1-4weeks-view-summary.html"
+    },
     "StructureDefinition/ncdhc-composition-view-hca-68wks": {
       "base": "StructureDefinition-ncdhc-composition-view-hca-68wks.html",
       "defns": "StructureDefinition-ncdhc-composition-view-hca-68wks-definitions.html"
+    },
+    "Bundle/ncdhc-hca-6-8weeks-view-summary": {
+      "source": "ncdhc-hca-6-8weeks-view-summary.json",
+      "base": "ncdhc-hca-6-8weeks-view-summary.html"
     },
     "StructureDefinition/ncdhc-composition-view-hca-6m": {
       "base": "StructureDefinition-ncdhc-composition-view-hca-6m.html",
       "defns": "StructureDefinition-ncdhc-composition-view-hca-6m-definitions.html"
     },
+    "Bundle/ncdhc-hca-6mnths-view-summary": {
+      "source": "ncdhc-hca-6mnths-view-summary.json",
+      "base": "ncdhc-hca-6mnths-view-summary.html"
+    },
     "StructureDefinition/ncdhc-composition-view-hca-12m": {
       "base": "StructureDefinition-ncdhc-composition-view-hca-12m.html",
       "defns": "StructureDefinition-ncdhc-composition-view-hca-12m-definitions.html"
+    },
+    "Bundle/ncdhc-hca-12mnths-view-summary": {
+      "source": "ncdhc-hca-12mnths-view-summary.json",
+      "base": "ncdhc-hca-12mnths-view-summary.html"
     },
     "StructureDefinition/ncdhc-composition-view-hca-18m": {
       "base": "StructureDefinition-ncdhc-composition-view-hca-18m.html",
       "defns": "StructureDefinition-ncdhc-composition-view-hca-18m-definitions.html"
     },
+    "Bundle/ncdhc-hca-18mnths-view-summary": {
+      "source": "ncdhc-hca-18mnths-view-summary.json",
+      "base": "ncdhc-hca-18mnths-view-summary.html"
+    },
     "StructureDefinition/ncdhc-composition-view-hca-2yr": {
       "base": "StructureDefinition-ncdhc-composition-view-hca-2yr.html",
       "defns": "StructureDefinition-ncdhc-composition-view-hca-2yr-definitions.html"
+    },
+    "Bundle/ncdhc-hca-2year-view-summary": {
+      "source": "ncdhc-hca-2year-view-summary.json",
+      "base": "ncdhc-hca-2year-view-summary.html"
     },
     "StructureDefinition/ncdhc-composition-view-hca-3yr": {
       "base": "StructureDefinition-ncdhc-composition-view-hca-3yr.html",
       "defns": "StructureDefinition-ncdhc-composition-view-hca-3yr-definitions.html"
     },
+    "Bundle/ncdhc-hca-3year-view-summary": {
+      "source": "ncdhc-hca-3year-view-summary.json",
+      "base": "ncdhc-hca-3year-view-summary.html"
+    },
     "StructureDefinition/ncdhc-composition-view-hca-4yr": {
       "base": "StructureDefinition-ncdhc-composition-view-hca-4yr.html",
       "defns": "StructureDefinition-ncdhc-composition-view-hca-4yr-definitions.html"
+    },
+    "Bundle/ncdhc-hca-4year-view-summary": {
+      "source": "ncdhc-hca-4year-view-summary.json",
+      "base": "ncdhc-hca-4year-view-summary.html"
     },
     "StructureDefinition/ncdhc-composition-antenatal-record": {
       "base": "StructureDefinition-ncdhc-composition-antenatal-record.html",
@@ -657,6 +753,10 @@
     "Observation/observation-method-of-delivery-example": {
       "source": "ncdhc-observation-method-of-delivery-example.json",
       "base": "ncdhc-observation-method-of-delivery-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-pregnancy-complication": {
+      "base": "StructureDefinition-ncdhc-observation-pregnancy-complication.html",
+      "defns": "StructureDefinition-ncdhc-observation-pregnancy-complication-definitions.html"
     },
     "Observation/observation-pregnancy-complication-example": {
       "source": "ncdhc-observation-pregnancy-complication-example.json",
