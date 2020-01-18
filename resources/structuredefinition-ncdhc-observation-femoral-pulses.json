@@ -43,6 +43,10 @@
             {
               "type": "value",
               "path": "system"
+            },
+            {
+              "type": "pattern",
+              "path": "code"
             }
           ],
           "rules": "closed"
@@ -58,6 +62,17 @@
           "system": "http://snomed.info/sct",
           "code": "67316000"
         }
+      },
+      {
+        "id": "Observation.code.coding:FemoralPulsesSNOMEDCT-AU.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:FemoralPulsesSNOMEDCT-AU.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -99,7 +114,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "pattern",
               "path": "code"
             }
           ],
@@ -115,7 +130,7 @@
       {
         "id": "Observation.component:leftFemoralPulses.code",
         "path": "Observation.component.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -123,16 +138,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Observation.component:leftFemoralPulses.code.coding.system",
-        "path": "Observation.component.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.component:leftFemoralPulses.code.coding.code",
-        "path": "Observation.component.code.coding.code",
-        "fixedCode": "113270003"
       },
       {
         "id": "Observation.component:leftFemoralPulses.interpretation",
@@ -154,7 +159,7 @@
       {
         "id": "Observation.component:rightFemoralPulses.code",
         "path": "Observation.component.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -162,16 +167,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Observation.component:rightFemoralPulses.code.coding.system",
-        "path": "Observation.component.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.component:rightFemoralPulses.code.coding.code",
-        "path": "Observation.component.code.coding.code",
-        "fixedCode": "69833005"
       },
       {
         "id": "Observation.component:rightFemoralPulses.interpretation",

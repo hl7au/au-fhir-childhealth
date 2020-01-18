@@ -79,42 +79,37 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "pattern",
               "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "open"
         }
       },
       {
-        "id": "Observation.code.coding:birthHeightLOINC",
+        "id": "Observation.code.coding:birthLengthSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "birthHeightLOINC",
+        "sliceName": "birthLengthSNOMED-CT",
         "max": "1",
-        "fixedCoding": {
-          "system": "http://loinc.org",
-          "code": "89269-5"
-        }
-      },
-      {
-        "id": "Observation.code.coding:birthHeightSNOMED-CT",
-        "path": "Observation.code.coding",
-        "sliceName": "birthHeightSNOMED-CT",
-        "max": "1",
-        "fixedCoding": {
+        "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "169886007"
         }
       },
       {
-        "id": "Observation.code.coding:birthHeightSNOMED-CT.system",
+        "id": "Observation.code.coding:birthLengthSNOMED-CT.system",
         "path": "Observation.code.coding.system",
+        "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:birthHeightSNOMED-CT.code",
+        "id": "Observation.code.coding:birthLengthSNOMED-CT.code",
         "path": "Observation.code.coding.code",
-        "fixedCode": "169886007"
+        "min": 1
       },
       {
         "id": "Observation.subject",

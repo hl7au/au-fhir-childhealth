@@ -35,6 +35,106 @@
         "min": 1
       },
       {
+        "id": "Patient.identifier:ihiNumber.system",
+        "path": "Patient.identifier.system",
+        "example": [
+          {
+            "label": "General",
+            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986"
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier:medicareNumber",
+        "path": "Patient.identifier",
+        "sliceName": "medicareNumber"
+      },
+      {
+        "id": "Patient.identifier:medicareNumber.system",
+        "path": "Patient.identifier.system",
+        "example": [
+          {
+            "label": "General",
+            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986"
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier:dvaNumber",
+        "path": "Patient.identifier",
+        "sliceName": "dvaNumber"
+      },
+      {
+        "id": "Patient.identifier:dvaNumber.system",
+        "path": "Patient.identifier.system",
+        "example": [
+          {
+            "label": "General",
+            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986"
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier:healthcareCard",
+        "path": "Patient.identifier",
+        "sliceName": "healthcareCard"
+      },
+      {
+        "id": "Patient.identifier:healthcareCard.system",
+        "path": "Patient.identifier.system",
+        "example": [
+          {
+            "label": "General",
+            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986"
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier:pensionerConcessionCard",
+        "path": "Patient.identifier",
+        "sliceName": "pensionerConcessionCard"
+      },
+      {
+        "id": "Patient.identifier:pensionerConcessionCard.system",
+        "path": "Patient.identifier.system",
+        "example": [
+          {
+            "label": "General",
+            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986"
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier:commonwealthSeniorsHealthCard",
+        "path": "Patient.identifier",
+        "sliceName": "commonwealthSeniorsHealthCard"
+      },
+      {
+        "id": "Patient.identifier:commonwealthSeniorsHealthCard.system",
+        "path": "Patient.identifier.system",
+        "example": [
+          {
+            "label": "General",
+            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986"
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier:medicalRecordNumber",
+        "path": "Patient.identifier",
+        "sliceName": "medicalRecordNumber"
+      },
+      {
+        "id": "Patient.identifier:medicalRecordNumber.system",
+        "path": "Patient.identifier.system",
+        "example": [
+          {
+            "label": "General",
+            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986"
+          }
+        ]
+      },
+      {
         "id": "Patient.name",
         "path": "Patient.name",
         "short": "Baby's Name",

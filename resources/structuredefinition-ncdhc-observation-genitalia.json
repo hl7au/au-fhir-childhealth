@@ -10,7 +10,7 @@
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "Outcome of physical examination of Genitalia",
   "purpose": "To record observations on Genitalia",
-  "fhirVersion": "3.0.2",
+  "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -43,6 +43,10 @@
             {
               "type": "pattern",
               "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "open"
@@ -58,6 +62,17 @@
           "system": "http://snomed.info/sct",
           "code": "364204002"
         }
+      },
+      {
+        "id": "Observation.code.coding:GenitaliaSNOMEDCT-AU.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:GenitaliaSNOMEDCT-AU.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
       },
       {
         "id": "Observation.subject",

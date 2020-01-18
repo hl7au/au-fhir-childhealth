@@ -44,6 +44,10 @@
             {
               "type": "pattern",
               "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "open"
@@ -63,12 +67,13 @@
       {
         "id": "Observation.code.coding:VisualAcuityLeftEyeSNOMEDCT-AU.system",
         "path": "Observation.code.coding.system",
+        "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.code.coding:VisualAcuityLeftEyeSNOMEDCT-AU.code",
         "path": "Observation.code.coding.code",
-        "fixedCode": "386708005"
+        "min": 1
       },
       {
         "id": "Observation.subject",

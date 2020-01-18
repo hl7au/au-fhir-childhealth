@@ -47,12 +47,6 @@
         "short": "Code to represent Birth head circumference",
         "mustSupport": true,
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationCode"
-            }
-          ],
           "strength": "preferred"
         }
       },
@@ -62,21 +56,15 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "pattern",
               "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "open"
-        }
-      },
-      {
-        "id": "Observation.code.coding:birthHeadCircumferenceLOINC",
-        "path": "Observation.code.coding",
-        "sliceName": "birthHeadCircumferenceLOINC",
-        "max": "1",
-        "fixedCoding": {
-          "system": "http://loinc.org",
-          "code": "8287-5"
         }
       },
       {
@@ -85,10 +73,21 @@
         "sliceName": "birthHeadCircumferenceSNOMED-CT",
         "min": 1,
         "max": "1",
-        "fixedCoding": {
+        "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "363812007"
+          "code": "169876006"
         }
+      },
+      {
+        "id": "Observation.code.coding:birthHeadCircumferenceSNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:birthHeadCircumferenceSNOMED-CT.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -100,20 +99,6 @@
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
         "min": 1
-      },
-      {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
-          }
-        ]
       },
       {
         "id": "Observation.value[x]:valueQuantity",

@@ -44,6 +44,10 @@
             {
               "type": "pattern",
               "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "open"
@@ -63,12 +67,13 @@
       {
         "id": "Observation.code.coding:HearingCheckSNOMEDCT-AU.system",
         "path": "Observation.code.coding.system",
+        "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.code.coding:HearingCheckSNOMEDCT-AU.code",
         "path": "Observation.code.coding.code",
-        "fixedCode": "252957005"
+        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -110,7 +115,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "pattern",
               "path": "code"
             }
           ],
@@ -127,7 +132,7 @@
       {
         "id": "Observation.component:PureToneAudiometry.code",
         "path": "Observation.component.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -139,12 +144,12 @@
       {
         "id": "Observation.component:PureToneAudiometry.code.coding.system",
         "path": "Observation.component.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
+        "min": 1
       },
       {
         "id": "Observation.component:PureToneAudiometry.code.coding.code",
         "path": "Observation.component.code.coding.code",
-        "fixedCode": "250889006"
+        "min": 1
       },
       {
         "id": "Observation.component:PureToneAudiometry.interpretation",
@@ -166,7 +171,7 @@
       {
         "id": "Observation.component:TympanometryScreen.code",
         "path": "Observation.component.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -178,12 +183,12 @@
       {
         "id": "Observation.component:TympanometryScreen.code.coding.system",
         "path": "Observation.component.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
+        "min": 1
       },
       {
         "id": "Observation.component:TympanometryScreen.code.coding.code",
         "path": "Observation.component.code.coding.code",
-        "fixedCode": "364004008"
+        "min": 1
       },
       {
         "id": "Observation.component:TympanometryScreen.value[x]",

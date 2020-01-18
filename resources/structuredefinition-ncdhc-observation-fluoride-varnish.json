@@ -10,7 +10,7 @@
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "Record outcome of the child's fluoride varnish assessemen",
   "purpose": "To record Fluoride Varnish result",
-  "fhirVersion": "3.0.2",
+  "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -44,6 +44,10 @@
             {
               "type": "pattern",
               "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "open"
@@ -59,6 +63,17 @@
           "system": "http://snomed.info/sct",
           "code": "313042009"
         }
+      },
+      {
+        "id": "Observation.code.coding:FluorideVarnishSNOMEDCT-AU.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:FluorideVarnishSNOMEDCT-AU.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
       },
       {
         "id": "Observation.subject",

@@ -24,30 +24,46 @@
         "short": "NCDHC Head Shape Observation Profile"
       },
       {
-        "id": "Observation.category",
-        "path": "Observation.category",
-        "min": 1
-      },
-      {
         "id": "Observation.code",
         "path": "Observation.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "364407007"
-            }
-          ]
-        },
         "mustSupport": true
       },
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "fixedCoding": {
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            },
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.code.coding:headShapeSNOMED",
+        "path": "Observation.code.coding",
+        "sliceName": "headShapeSNOMED",
+        "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "364407007"
         }
+      },
+      {
+        "id": "Observation.code.coding:headShapeSNOMED.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:headShapeSNOMED.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -63,17 +79,7 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "short": "Person who is clinically responsible for the undetaking of the exam",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
-          }
-        ]
+        "short": "Person who is clinically responsible for the undetaking of the exam"
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept",

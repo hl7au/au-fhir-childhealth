@@ -33,7 +33,7 @@
               "path": "system"
             },
             {
-              "type": "value",
+              "type": "pattern",
               "path": "code"
             }
           ],
@@ -44,7 +44,9 @@
         "id": "Observation.code.coding:HeadCircumferenceSNOMEDCT",
         "path": "Observation.code.coding",
         "sliceName": "HeadCircumferenceSNOMEDCT",
-        "fixedCoding": {
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "363812007"
         }
@@ -52,40 +54,13 @@
       {
         "id": "Observation.code.coding:HeadCircumferenceSNOMEDCT.system",
         "path": "Observation.code.coding.system",
+        "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.code.coding:HeadCircumferenceSNOMEDCT.code",
         "path": "Observation.code.coding.code",
-        "fixedCode": "363812007"
-      },
-      {
-        "id": "Observation.code.coding:BirthHeadCircumferenceSNOMED",
-        "path": "Observation.code.coding",
-        "sliceName": "BirthHeadCircumferenceSNOMED",
-        "fixedCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "363812007"
-        }
-      },
-      {
-        "id": "Observation.code.coding:BirthHeadCircumferenceSNOMED.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "363812007"
-      },
-      {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
-          }
-        ]
+        "min": 1
       },
       {
         "id": "Observation.value[x]:valueQuantity",

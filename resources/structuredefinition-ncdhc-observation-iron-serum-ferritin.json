@@ -43,6 +43,10 @@
             {
               "type": "pattern",
               "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "open"
@@ -62,12 +66,13 @@
       {
         "id": "Observation.code.coding:SerumFerritinSNOMEDCT-AU.system",
         "path": "Observation.code.coding.system",
+        "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.code.coding:SerumFerritinSNOMEDCT-AU.code",
         "path": "Observation.code.coding.code",
-        "fixedCode": "269821003"
+        "min": 1
       },
       {
         "id": "Observation.subject",

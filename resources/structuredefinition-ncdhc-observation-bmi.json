@@ -41,6 +41,10 @@
         "slicing": {
           "discriminator": [
             {
+              "type": "pattern",
+              "path": "code"
+            },
+            {
               "type": "value",
               "path": "system"
             }
@@ -54,7 +58,7 @@
         "sliceName": "BMISNOMEDCT-AU",
         "min": 1,
         "max": "1",
-        "fixedCoding": {
+        "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "60621009"
         }
@@ -62,12 +66,13 @@
       {
         "id": "Observation.code.coding:BMISNOMEDCT-AU.system",
         "path": "Observation.code.coding.system",
+        "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.code.coding:BMISNOMEDCT-AU.code",
         "path": "Observation.code.coding.code",
-        "fixedCode": "60621009"
+        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -83,17 +88,7 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "short": "Person who is clinically responsible for the undetaking of the exam",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
-          }
-        ]
+        "short": "Person who is clinically responsible for the undetaking of the exam"
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept",

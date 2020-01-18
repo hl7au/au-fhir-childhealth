@@ -44,6 +44,10 @@
             {
               "type": "pattern",
               "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "open"
@@ -59,6 +63,17 @@
           "system": "http://snomed.info/sct",
           "code": "249237009"
         }
+      },
+      {
+        "id": "Observation.code.coding:TestesDcendedSNOMEDCT-AU.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:TestesDcendedSNOMEDCT-AU.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -106,7 +121,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "pattern",
               "path": "code"
             }
           ],
@@ -124,7 +139,7 @@
       {
         "id": "Observation.component:StructureRightTestis.code",
         "path": "Observation.component.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -132,16 +147,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Observation.component:StructureRightTestis.code.coding.system",
-        "path": "Observation.component.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.component:StructureRightTestis.code.coding.code",
-        "path": "Observation.component.code.coding.code",
-        "fixedCode": "15598003"
       },
       {
         "id": "Observation.component:StructureRightTestis.interpretation",
@@ -164,7 +169,7 @@
       {
         "id": "Observation.component:StructureLeftTestis.code",
         "path": "Observation.component.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -172,16 +177,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Observation.component:StructureLeftTestis.code.coding.system",
-        "path": "Observation.component.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.component:StructureLeftTestis.code.coding.code",
-        "path": "Observation.component.code.coding.code",
-        "fixedCode": "63239009"
       },
       {
         "id": "Observation.component:StructureLeftTestis.interpretation",

@@ -43,6 +43,10 @@
             {
               "type": "pattern",
               "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "open"
@@ -62,12 +66,13 @@
       {
         "id": "Observation.code.coding:HaemoglobinLevelSNOMEDCT-AU.system",
         "path": "Observation.code.coding.system",
+        "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.code.coding:HaemoglobinLevelSNOMEDCT-AU.code",
         "path": "Observation.code.coding.code",
-        "fixedCode": "271026005"
+        "min": 1
       },
       {
         "id": "Observation.subject",

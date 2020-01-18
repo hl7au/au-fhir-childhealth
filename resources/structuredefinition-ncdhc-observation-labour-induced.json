@@ -44,15 +44,44 @@
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Code to represent Labour initiation",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "249120008"
-            }
-          ]
-        },
         "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "Observation.code.coding:LabourInducedSNOMED-CT",
+        "path": "Observation.code.coding",
+        "sliceName": "LabourInducedSNOMED-CT",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "249120008"
+        }
+      },
+      {
+        "id": "Observation.code.coding:LabourInducedSNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:LabourInducedSNOMED-CT.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -64,20 +93,6 @@
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
         "min": 1
-      },
-      {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
-          }
-        ]
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept",

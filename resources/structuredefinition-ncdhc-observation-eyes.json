@@ -42,6 +42,10 @@
         "slicing": {
           "discriminator": [
             {
+              "type": "pattern",
+              "path": "code"
+            },
+            {
               "type": "value",
               "path": "system"
             }
@@ -59,6 +63,17 @@
           "system": "http://snomed.info/sct",
           "code": "281004000"
         }
+      },
+      {
+        "id": "Observation.code.coding:EyeTestSNOMEDCT-AU.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:EyeTestSNOMEDCT-AU.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -104,7 +119,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "pattern",
               "path": "code"
             }
           ],
@@ -120,7 +135,7 @@
       {
         "id": "Observation.component:leftEyeAssessment.code",
         "path": "Observation.component.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -128,16 +143,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Observation.component:leftEyeAssessment.code.coding.system",
-        "path": "Observation.component.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.component:leftEyeAssessment.code.coding.code",
-        "path": "Observation.component.code.coding.code",
-        "fixedCode": "8966001"
       },
       {
         "id": "Observation.component:leftEyeAssessment.interpretation",
@@ -159,7 +164,7 @@
       {
         "id": "Observation.component:rightEyeAssessment.code",
         "path": "Observation.component.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -169,20 +174,10 @@
         }
       },
       {
-        "id": "Observation.component:rightEyeAssessment.code.coding.system",
-        "path": "Observation.component.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.component:rightEyeAssessment.code.coding.code",
-        "path": "Observation.component.code.coding.code",
-        "fixedCode": "18944008"
-      },
-      {
         "id": "Observation.component:rightEyeAssessment.interpretation",
         "path": "Observation.component.interpretation",
         "binding": {
-          "strength": "extensible",
+          "strength": "required",
           "description": "Normal | Review | Refer",
           "valueSetReference": {
             "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-1"

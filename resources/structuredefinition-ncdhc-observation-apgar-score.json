@@ -122,6 +122,12 @@
         }
       },
       {
+        "id": "Observation.code.coding:scoreTypeLOINC.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
         "id": "Observation.code.coding:scoreTypeSNOMED-CT",
         "path": "Observation.code.coding",
         "sliceName": "scoreTypeSNOMED-CT",
@@ -136,6 +142,12 @@
         }
       },
       {
+        "id": "Observation.code.coding:scoreTypeSNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
         "id": "Observation.subject",
         "path": "Observation.subject",
         "short": "Reference to the Baby Patient"
@@ -145,20 +157,6 @@
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
         "min": 1
-      },
-      {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
-          }
-        ]
       },
       {
         "id": "Observation.value[x]:valueQuantity",
@@ -213,12 +211,6 @@
         "id": "Observation.component:colourScore.code",
         "path": "Observation.component.code",
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationCode"
-            }
-          ],
           "strength": "required",
           "description": "Colour observation",
           "valueSetReference": {
@@ -255,12 +247,6 @@
         "id": "Observation.component:heartRateScore.code",
         "path": "Observation.component.code",
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationCode"
-            }
-          ],
           "strength": "required",
           "description": "Heart rate observation",
           "valueSetReference": {
@@ -297,12 +283,6 @@
         "id": "Observation.component:muscleToneScore.code",
         "path": "Observation.component.code",
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationCode"
-            }
-          ],
           "strength": "required",
           "description": "Muscle tone observation",
           "valueSetReference": {
@@ -339,12 +319,6 @@
         "id": "Observation.component:respiratoryEffortScore.code",
         "path": "Observation.component.code",
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationCode"
-            }
-          ],
           "strength": "required",
           "description": "Respiratory effort observation",
           "valueSetReference": {
@@ -381,12 +355,6 @@
         "id": "Observation.component:reflexIrritability.code",
         "path": "Observation.component.code",
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationCode"
-            }
-          ],
           "strength": "required",
           "description": "Reflex irritability observation",
           "valueSetReference": {

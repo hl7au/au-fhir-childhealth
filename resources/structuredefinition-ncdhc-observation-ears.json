@@ -44,6 +44,10 @@
             {
               "type": "pattern",
               "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "open"
@@ -59,6 +63,17 @@
           "system": "http://snomed.info/sct",
           "code": "363991003"
         }
+      },
+      {
+        "id": "Observation.code.coding:EarsSNOMEDCT-AU.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:EarsSNOMEDCT-AU.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -104,7 +119,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "pattern",
               "path": "code"
             }
           ],
@@ -121,7 +136,7 @@
       {
         "id": "Observation.component:leftEar.code",
         "path": "Observation.component.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -129,16 +144,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Observation.component:leftEar.code.coding.system",
-        "path": "Observation.component.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.component:leftEar.code.coding.code",
-        "path": "Observation.component.code.coding.code",
-        "fixedCode": "89644007"
       },
       {
         "id": "Observation.component:leftEar.interpretation",
@@ -160,7 +165,7 @@
       {
         "id": "Observation.component:rightEar.code",
         "path": "Observation.component.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -168,16 +173,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Observation.component:rightEar.code.coding.system",
-        "path": "Observation.component.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.component:rightEar.code.coding.code",
-        "path": "Observation.component.code.coding.code",
-        "fixedCode": "25577004"
       },
       {
         "id": "Observation.component:rightEar.interpretation",

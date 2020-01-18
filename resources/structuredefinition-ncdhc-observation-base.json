@@ -42,7 +42,7 @@
             "requirements": "An organisation which captures the relevant details shall be present",
             "severity": "error",
             "human": "An organisation which captures the relevant details shall be present",
-            "expression": "performer.refernce.resolve().where($this is Organization).exists()"
+            "expression": "performer.reference.resolve().where($this is Organization).exists()"
           }
         ]
       },

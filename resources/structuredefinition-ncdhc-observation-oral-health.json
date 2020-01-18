@@ -41,6 +41,10 @@
         "slicing": {
           "discriminator": [
             {
+              "type": "pattern",
+              "path": "code"
+            },
+            {
               "type": "value",
               "path": "system"
             }
@@ -58,6 +62,17 @@
           "system": "http://snomed.info/sct",
           "code": "364111005"
         }
+      },
+      {
+        "id": "Observation.code.coding:OralHealthSNOMEDCT-AU.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:OralHealthSNOMEDCT-AU.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
       },
       {
         "id": "Observation.subject",

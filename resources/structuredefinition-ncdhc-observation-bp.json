@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-bp",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bp",
+  "version": "v1.1.0",
   "name": "NCDHC Blood Pressure Observation Profile",
   "title": "NCDHC Blood Pressure Observation",
   "status": "draft",
@@ -9,7 +10,7 @@
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "This profile allows the system to send Blood Pressure details to DataHub using SNOMED Code only.",
   "purpose": "This profile allows the system to send Blood Pressure details to DataHub using SNOMED Code only.",
-  "fhirVersion": "3.0.2",
+  "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -28,8 +29,12 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "pattern",
               "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "closed"
@@ -41,10 +46,21 @@
         "sliceName": "BP-SNOMED",
         "min": 1,
         "max": "1",
-        "fixedCoding": {
+        "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "75367002"
         }
+      },
+      {
+        "id": "Observation.code.coding:BP-SNOMED.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:BP-SNOMED.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
       },
       {
         "id": "Observation.subject",
