@@ -45,6 +45,12 @@
 				<reference value="StructureDefinition/ncdhc-encounter" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Encounter/ncdhc-encounter-example" />
+			</sourceReference>
+		</resource>
 		<!-- NCDHC Patient Profiles -->
 		<resource>
 			<example value="false" />
@@ -55,7 +61,7 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Patient/ncdhc-patient-baby-example" />
+				<reference value="Patient/patient-baby-example"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -292,13 +298,13 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Observation/ncdhc-observation-vitalsign-bodyheight-example" />
+				<reference value="Observation/observation-vitalsign-bodyheight-example" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Observation/ncdhc-observation-vitalsign-birthlength-example" />
+				<reference value="Observation/observation-vitalsign-birthlength-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -310,7 +316,7 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Observation/ncdhc-observation-vitalsign-headcircum-example" />
+				<reference value="Observation/observation-vitalsign-headcircum-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -379,9 +385,34 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-bodyweight-example" />
+			</sourceReference>
+		</resource>  
+		
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-bodyheight" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-bodyheight-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-birth-length" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-birth-length-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -391,9 +422,33 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-bmi-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-headcircum" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-headcircum-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-birth-head-circumference" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-birth-head-circumference-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -436,11 +491,25 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-hearingscreen-normal-example" />
+			</sourceReference>
+		</resource>
+
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-testes-fully-descended" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-testes-normal-example" />
+			</sourceReference>
+		</resource>
+
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -448,11 +517,25 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-deworming-normal-example" />
+			</sourceReference>
+		</resource>
+
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-ageaprImmcomp" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-immunisation-normal-example" />
+			</sourceReference>
+		</resource>	
+
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -460,11 +543,25 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-head-shape-normal-example" />
+			</sourceReference>
+		</resource>
+
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-sutures-fontanelles" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-fontanelles-normal-example" />
+			</sourceReference>
+		</resource>
+
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -472,11 +569,25 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-eyes-normal-example" />
+			</sourceReference>
+		</resource>
+		
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-vision-tested-monocularly" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-vision-tested-monocularly-example" />
+			</sourceReference>
+		</resource>
+
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -484,11 +595,25 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-left-eye-visiual-acuity-example" />
+			</sourceReference>
+		</resource>
+
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-right-eye-visiual-acuity" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-right-eye-visiual-acuity-example" />
+			</sourceReference>
+		</resource>
+
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -496,11 +621,25 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-visionscreen-normal-example" />
+			</sourceReference>
+		</resource>
+
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-ears" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-ears-normal-example" />
+			</sourceReference>
+		</resource>
+
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -508,11 +647,25 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-hearingcheck-normal-example" />
+			</sourceReference>
+		</resource>
+
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-mouth-palate" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-mouthpalate-normal-example" />
+			</sourceReference>
+		</resource>
+
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -520,11 +673,25 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-oralhealth-normal-example" />
+			</sourceReference>
+		</resource>
+
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-cardiovascular-dr" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-cardiovascular-normal-example" />
+			</sourceReference>
+		</resource>
+
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -532,11 +699,25 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-femoralpulse-normal-example" />
+			</sourceReference>
+		</resource>
+
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-development" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-development-normal-example" />
+			</sourceReference>
+		</resource>
+
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -544,11 +725,25 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-abdomen-normal-example" />
+			</sourceReference>
+		</resource>
+
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-umbilicus" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-umbilicus-normal-example" />
+			</sourceReference>
+		</resource>
+
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -556,11 +751,25 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-anus-normal-example" />
+			</sourceReference>
+		</resource>
+
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-gait" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-gait-normal-example" />
+			</sourceReference>
+		</resource>
+		
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -568,11 +777,42 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-irontesting-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-iron-haemoglobin-level" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-iron-serum-ferritin" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-iron-serum-ferritin-example" />
+			</sourceReference>
+		</resource>
+	   <resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-fluoride-varnish" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-fluoridevarnish-normal-example" />
+			</sourceReference>
+		</resource>
+
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -580,11 +820,31 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-hips-normal-example" />
+			</sourceReference>
+		</resource>
+
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-skin" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-skin-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-skin-review-example" />
+			</sourceReference>
+		</resource>
+
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -592,9 +852,22 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-genitalia-normal-example" />
+			</sourceReference>
+		</resource>
+
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-reflexes" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-reflexes-normal-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -1112,6 +1385,30 @@
 			<example value="false" />
 			<sourceReference>
 				<reference value="ValueSet/apgar-muscle-tone-finding" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-completion-status-display-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-observation-completion-status-display-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-interpretation-display-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-observation-interpretation-display-1" />
 			</sourceReference>
 		</resource>
 

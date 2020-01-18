@@ -111,6 +111,10 @@
       "base": "StructureDefinition-ncdhc-encounter.html",
       "defns": "StructureDefinition-ncdhc-encounter-definitions.html"
     },
+    "Encounter/ncdhc-encounter-example": {
+      "source": "ncdhc-encounter-example.json",
+      "base": "ncdhc-encounter-example.html"
+    },
     "StructureDefinition/ncdhc-patient-baby": {
       "base": "StructureDefinition-ncdhc-patient-baby.html",
       "defns": "StructureDefinition-ncdhc-patient-baby-definitions.html"
@@ -215,6 +219,10 @@
       "base": "StructureDefinition-ncdhc-composition-nbdelivery.html",
       "defns": "StructureDefinition-ncdhc-composition-nbdelivery-definitions.html"
     },
+    "Observation/ncdhc-bundle-transaction-nbdelivery-request-payload": {
+      "source": "ncdhc-bundle-transaction-nbdelivery-request-payload.json",
+      "base": "ncdhc-bundle-transaction-nbdelivery-request-payload.html"
+    },
     "StructureDefinition/ncdhc-observation-estimated-gestation": {
       "base": "StructureDefinition-ncdhc-observation-estimated-gestation.html",
       "defns": "StructureDefinition-ncdhc-observation-estimated-gestation-definitions.html"
@@ -263,9 +271,41 @@
       "base": "StructureDefinition-ncdhc-observation-bodyweight.html",
       "defns": "StructureDefinition-ncdhc-observation-bodyweight-definitions.html"
     },
+    "Observation/observation-bodyweight-example": {
+      "source": "ncdhc-observation-bodyweight-example.json",
+      "base": "ncdhc-observation-bodyweight-example.html"
+    },
     "StructureDefinition/ncdhc-observation-bodyheight": {
       "base": "StructureDefinition-ncdhc-observation-bodyheight.html",
       "defns": "StructureDefinition-ncdhc-observation-bodyheight-definitions.html"
+    },
+    "Observation/observation-bodyheight-example": {
+      "source": "ncdhc-observation-bodyheight-example.json",
+      "base": "ncdhc-observation-bodyheight-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-bmi": {
+      "base": "StructureDefinition-ncdhc-observation-bmi.html",
+      "defns": "StructureDefinition-ncdhc-observation-bmi-definitions.html"
+    },
+    "Observation/observation-bmi-normal-example": {
+      "source": "ncdhc-observation-bmi-normal-example.json",
+      "base": "ncdhc-observation-bmi-normal-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-headcircum": {
+      "base": "StructureDefinition-ncdhc-observation-headcircum.html",
+      "defns": "StructureDefinition-ncdhc-observation-headcircum-definitions.html"
+    },
+    "Observation/observation-headcircum-example": {
+      "source": "ncdhc-observation-headcircum-example.json",
+      "base": "ncdhc-observation-headcircum-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-birth-head-circumference": {
+      "base": "StructureDefinition-ncdhc-observation-birth-head-circumference.html",
+      "defns": "StructureDefinition-ncdhc-observation-birth-head-circumference-definitions.html"
+    },
+    "Observation/ncdhc-observation-birth-head-circumference": {
+      "source": "ncdhc-observation-birth-head-circumference-example.json",
+      "base": "ncdhc-observation-birth-head-circumference-example.html"
     },
     "StructureDefinition/ncdhc-observation-vitalsign-bodyweight": {
       "base": "StructureDefinition-ncdhc-observation-vitalsign-bodyweight.html",
@@ -283,13 +323,13 @@
       "base": "StructureDefinition-ncdhc-observation-vitalsign-bodyheight.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-bodyheight-definitions.html"
     },
-    "Observation/observation-vitalsign-birthlength-example": {
-      "source": "ncdhc-observation-vitalsign-birthlength-example.json",
-      "base": "ncdhc-observation-vitalsign-birthlength-example.html"
-    },
     "Observation/observation-vitalsign-bodyheight-example": {
       "source": "ncdhc-observation-vitalsign-bodyheight-example.json",
       "base": "ncdhc-observation-vitalsign-bodyheight-example.html"
+    },
+    "Observation/observation-vitalsign-birthlength-example": {
+      "source": "ncdhc-observation-vitalsign-birthlength-example.json",
+      "base": "ncdhc-observation-vitalsign-birthlength-example.html"
     },
     "StructureDefinition/ncdhc-observation-vitalsign-headcircum": {
       "base": "StructureDefinition-ncdhc-observation-vitalsign-headcircum.html",
@@ -318,6 +358,14 @@
     "StructureDefinition/ncdhc-observation-bp": {
       "base": "StructureDefinition-ncdhc-observation-bp.html",
       "defns": "StructureDefinition-ncdhc-observation-bp-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-birth-length": {
+      "base": "StructureDefinition-ncdhc-observation-birth-length.html",
+      "defns": "StructureDefinition-ncdhc-observation-birth-length-definitions.html"
+    },
+    "Observation/ncdhc-observation-birth-length-example": {
+      "source": "ncdhc-observation-birth-length-example.json",
+      "base": "ncdhc-observation-birth-length-example.html"
     },
     "StructureDefinition/ncdhc-observation-heart-rate": {
       "base": "StructureDefinition-ncdhc-observation-heart-rate.html",
@@ -438,7 +486,7 @@
     "OperationDefinition/ncdhc-patient-access": {
       "base": "OperationDefinition-ncdhc-patient-access.html",
       "defns": "OperationDefinition-ncdhc-patient-access-definitions.html"
-    },    
+    },
     "ValueSet/ncdhc-document-type-1": {
       "base": "ValueSet-ncdhc-document-type-1.html"
     },
@@ -562,6 +610,18 @@
     "ValueSet/ncdhc-observation-vac-sch-comp-status-1": {
       "base": "ValueSet-ncdhc-observation-vac-sch-comp-status-1.html"
     },
+    "CodeSystem/ncdhc-observation-completion-status-display-1": {
+      "base": "CodeSystem-ncdhc-observation-completion-status-display-1.html"
+    },
+    "ValueSet/ncdhc-observation-completion-status-display-1": {
+      "base": "ValueSet-ncdhc-observation-completion-status-display-1.html"
+    },
+    "ValueSet/ncdhc-observation-interpretation-display-1": {
+      "base": "ValueSet-ncdhc-observation-interpretation-display-1.html"
+    },
+    "CodeSystem/ncdhc-observation-interpretation-display-1": {
+      "base": "CodeSystem-ncdhc-observation-interpretation-display-1.html"
+    },
     "Patient/patient-baby-example": {
       "source": "ncdhc-patient-baby-example.json",
       "base": "ncdhc-patient-baby-example.html"
@@ -606,101 +666,205 @@
       "base": "StructureDefinition-ncdhc-observation-head-shape.html",
       "defns": "StructureDefinition-ncdhc-observation-head-shape-definitions.html"
     },
+    "Observation/observation-head-shape-normal-example": {
+      "source": "ncdhc-observation-head-shape-normal-example.json",
+      "base": "ncdhc-observation-head-shape-normal-example.html"
+    },
     "StructureDefinition/ncdhc-observation-sutures-fontanelles": {
       "base": "StructureDefinition-ncdhc-observation-sutures-fontanelles.html",
       "defns": "StructureDefinition-ncdhc-observation-sutures-fontanelles-definitions.html"
+    },
+    "Observation/observation-fontanelles-normal-example": {
+      "source": "ncdhc-observation-fontanelles-normal-example.json",
+      "base": "ncdhc-observation-fontanelles-normal-example.html"
     },
     "StructureDefinition/ncdhc-observation-eyes": {
       "base": "StructureDefinition-ncdhc-observation-eyes.html",
       "defns": "StructureDefinition-ncdhc-observation-eyes-definitions.html"
     },
+    "Observation/observation-eyes-normal-example": {
+      "source": "ncdhc-observation-eyes-normal-example.json",
+      "base": "ncdhc-observation-eyes-normal-example.html"
+    },
     "StructureDefinition/ncdhc-observation-vision-tested-monocularly": {
       "base": "StructureDefinition-ncdhc-observation-vision-tested-monocularly.html",
       "defns": "StructureDefinition-ncdhc-observation-vision-tested-monocularly-definitions.html"
+    },
+    "Observation/ncdhc-observation-vision-tested-monocularly-example": {
+      "source": "ncdhc-observation-vision-tested-monocularly-example.json",
+      "base": "ncdhc-observation-vision-tested-monocularly-example.html"
     },
     "StructureDefinition/ncdhc-observation-left-eye-visiual-acuity": {
       "base": "StructureDefinition-ncdhc-observation-left-eye-visiual-acuity.html",
       "defns": "StructureDefinition-ncdhc-observation-left-eye-visiual-acuity-definitions.html"
     },
+    "Observation/ncdhc-observation-left-eye-visiual-acuity-example": {
+      "source": "ncdhc-observation-left-eye-visiual-acuity-example.json",
+      "base": "ncdhc-observation-left-eye-visiual-acuity-example.html"
+    },
     "StructureDefinition/ncdhc-observation-right-eye-visiual-acuity": {
       "base": "StructureDefinition-ncdhc-observation-right-eye-visiual-acuity.html",
       "defns": "StructureDefinition-ncdhc-observation-right-eye-visiual-acuity-definitions.html"
+    },
+    "Observation/ncdhc-observation-right-eye-visiual-acuity-example": {
+      "source": "ncdhc-observation-right-eye-visiual-acuity-example.json",
+      "base": "ncdhc-observation-right-eye-visiual-acuity-example.html"
     },
     "StructureDefinition/ncdhc-observation-vision-screen": {
       "base": "StructureDefinition-ncdhc-observation-vision-screen.html",
       "defns": "StructureDefinition-ncdhc-observation-vision-screen-definitions.html"
     },
+    "Observation/observation-visionscreen-normal-example": {
+      "source": "ncdhc-observation-visionscreen-normal-example.json",
+      "base": "ncdhc-observation-visionscreen-normal-example.html"
+    },
     "StructureDefinition/ncdhc-observation-ears": {
       "base": "StructureDefinition-ncdhc-observation-ears.html",
       "defns": "StructureDefinition-ncdhc-observation-ears-definitions.html"
+    },
+    "Observation/observation-ears-normal-example": {
+      "source": "ncdhc-observation-ears-normal-example.json",
+      "base": "ncdhc-observation-ears-normal-example.html"
     },
     "StructureDefinition/ncdhc-observation-hearing-check": {
       "base": "StructureDefinition-ncdhc-observation-hearing-check.html",
       "defns": "StructureDefinition-ncdhc-observation-hearing-check-definitions.html"
     },
+    "Observation/observation-hearingcheck-normal-example": {
+      "source": "ncdhc-observation-hearingcheck-normal-example.json",
+      "base": "ncdhc-observation-hearingcheck-normal-example.html"
+    },
     "StructureDefinition/ncdhc-observation-hearing-screen": {
       "base": "StructureDefinition-ncdhc-observation-hearing-screen.html",
       "defns": "StructureDefinition-ncdhc-observation-hearing-screen-definitions.html"
+    },
+    "Observation/observation-hearingscreen-normal-example": {
+      "source": "ncdhc-observation-hearingscreen-normal-example.json",
+      "base": "ncdhc-observation-hearingscreen-normal-example.html"
     },
     "StructureDefinition/ncdhc-observation-mouth-palate": {
       "base": "StructureDefinition-ncdhc-observation-mouth-palate.html",
       "defns": "StructureDefinition-ncdhc-observation-mouth-palate-definitions.html"
     },
+    "Observation/observation-mouthpalate-normal-example": {
+      "source": "ncdhc-observation-mouthpalate-normal-example.json",
+      "base": "ncdhc-observation-mouthpalate-normal-example.html"
+    },
     "StructureDefinition/ncdhc-observation-oral-health": {
       "base": "StructureDefinition-ncdhc-observation-oral-health.html",
       "defns": "StructureDefinition-ncdhc-observation-oral-health-definitions.html"
+    },
+    "Observation/observation-oralhealth-normal-example": {
+      "source": "ncdhc-observation-oralhealth-normal-example.json",
+      "base": "ncdhc-observation-oralhealth-normal-example.html"
     },
     "StructureDefinition/ncdhc-observation-cardiovascular-dr": {
       "base": "StructureDefinition-ncdhc-observation-cardiovascular-dr.html",
       "defns": "StructureDefinition-ncdhc-observation-cardiovascular-dr-definitions.html"
     },
+    "Observation/observation-cardiovascular-normal-example": {
+      "source": "ncdhc-observation-cardiovascular-normal-example.json",
+      "base": "ncdhc-observation-cardiovascular-normal-example.html"
+    },
     "StructureDefinition/ncdhc-observation-femoral-pulses": {
       "base": "StructureDefinition-ncdhc-observation-femoral-pulses.html",
       "defns": "StructureDefinition-ncdhc-observation-femoral-pulses-definitions.html"
+    },
+    "Observation/observation-femoralpulse-normal-example": {
+      "source": "ncdhc-observation-femoralpulse-normal-example.json",
+      "base": "ncdhc-observation-femoralpulse-normal-example.html"
     },
     "StructureDefinition/ncdhc-observation-development": {
       "base": "StructureDefinition-ncdhc-observation-development.html",
       "defns": "StructureDefinition-ncdhc-observation-development-definitions.html"
     },
+    "Observation/observation-development-normal-example": {
+      "source": "ncdhc-observation-development-normal-example.json",
+      "base": "ncdhc-observation-development-normal-example.html"
+    },
     "StructureDefinition/ncdhc-observation-anus": {
       "base": "StructureDefinition-ncdhc-observation-anus.html",
       "defns": "StructureDefinition-ncdhc-observation-anus-definitions.html"
+    },
+    "Observation/observation-anus-normal-example": {
+      "source": "ncdhc-observation-anus-normal-example.json",
+      "base": "ncdhc-observation-anus-normal-example.html"
     },
     "StructureDefinition/ncdhc-observation-abdomen": {
       "base": "StructureDefinition-ncdhc-observation-abdomen.html",
       "defns": "StructureDefinition-ncdhc-observation-abdomen-definitions.html"
     },
+    "Observation/observation-abdomen-normal-example": {
+      "source": "ncdhc-observation-abdomen-normal-example.json",
+      "base": "ncdhc-observation-abdomen-normal-example.html"
+    },
     "StructureDefinition/ncdhc-observation-umbilicus": {
       "base": "StructureDefinition-ncdhc-observation-umbilicus.html",
       "defns": "StructureDefinition-ncdhc-observation-umbilicus-definitions.html"
+    },
+    "Observation/observation-umbilicus-normal-example": {
+      "source": "ncdhc-observation-umbilicus-normal-example.json",
+      "base": "ncdhc-observation-umbilicus-normal-example.html"
     },
     "StructureDefinition/ncdhc-observation-gait": {
       "base": "StructureDefinition-ncdhc-observation-gait.html",
       "defns": "StructureDefinition-ncdhc-observation-gait-definitions.html"
     },
+    "Observation/observation-gait-normal-example": {
+      "source": "ncdhc-observation-gait-normal-example.json",
+      "base": "ncdhc-observation-gait-normal-example.html"
+    },
     "StructureDefinition/ncdhc-observation-iron": {
       "base": "StructureDefinition-ncdhc-observation-iron.html",
       "defns": "StructureDefinition-ncdhc-observation-iron-definitions.html"
+    },
+    "Observation/ncdhc-observation-irontesting-normal-example": {
+      "source": "ncdhc-observation-irontesting-normal-example.json",
+      "base": "ncdhc-observation-irontesting-normal-example.html"
     },
     "StructureDefinition/ncdhc-observation-fluoride-varnish": {
       "base": "StructureDefinition-ncdhc-observation-fluoride-varnish.html",
       "defns": "StructureDefinition-ncdhc-observation-fluoride-varnish-definitions.html"
     },
+    "Observation/observation-fluoridevarnish-normal-example": {
+      "source": "ncdhc-observation-fluoridevarnish-normal-example.json",
+      "base": "ncdhc-observation-fluoridevarnish-normal-example.html"
+    },
     "StructureDefinition/ncdhc-observation-hips": {
       "base": "StructureDefinition-ncdhc-observation-hips.html",
       "defns": "StructureDefinition-ncdhc-observation-hips-definitions.html"
+    },
+    "Observation/observation-hips-normal-example": {
+      "source": "ncdhc-observation-hips-normal-example.json",
+      "base": "ncdhc-observation-hips-normal-example.html"
     },
     "StructureDefinition/ncdhc-observation-skin": {
       "base": "StructureDefinition-ncdhc-observation-skin.html",
       "defns": "StructureDefinition-ncdhc-observation-skin-definitions.html"
     },
+    "Observation/observation-skin-normal-example": {
+      "source": "ncdhc-observation-skin-normal-example.json",
+      "base": "ncdhc-observation-skin-normal-example.html"
+    },
+    "Observation/observation-skin-review-example": {
+      "source": "ncdhc-observation-skin-review-example.json",
+      "base": "ncdhc-observation-skin-review-example.html"
+    },
     "StructureDefinition/ncdhc-observation-genitalia": {
       "base": "StructureDefinition-ncdhc-observation-genitalia.html",
       "defns": "StructureDefinition-ncdhc-observation-genitalia-definitions.html"
     },
+    "Observation/observation-genitalia-normal-example": {
+      "source": "ncdhc-observation-genitalia-normal-example.json",
+      "base": "ncdhc-observation-genitalia-normal-example.html"
+    },
     "StructureDefinition/ncdhc-observation-reflexes": {
       "base": "StructureDefinition-ncdhc-observation-reflexes.html",
       "defns": "StructureDefinition-ncdhc-observation-reflexes-definitions.html"
+    },
+    "Observation/observation-reflexes-normal-example": {
+      "source": "ncdhc-observation-reflexes-normal-example.json",
+      "base": "ncdhc-observation-reflexes-normal-example.html"
     },
     "StructureDefinition/ncdhc-observation-bloodspot-screen": {
       "base": "StructureDefinition-ncdhc-observation-bloodspot-screen.html",
@@ -710,17 +874,33 @@
       "base": "StructureDefinition-ncdhc-observation-testes-fully-descended.html",
       "defns": "StructureDefinition-ncdhc-observation-testes-fully-descended-definitions.html"
     },
+    "Observation/observation-testes-normal-example": {
+      "source": "ncdhc-observation-testes-normal-example.json",
+      "base": "ncdhc-observation-testes-normal-example.html"
+    },
     "StructureDefinition/ncdhc-observation-deworming": {
       "base": "StructureDefinition-ncdhc-observation-deworming.html",
       "defns": "StructureDefinition-ncdhc-observation-deworming-definitions.html"
+    },
+    "Observation/observation-deworming-normal-example": {
+      "source": "ncdhc-observation-deworming-normal-example.json",
+      "base": "ncdhc-observation-deworming-normal-example.html"
     },
     "StructureDefinition/ncdhc-observation-ageaprImmcomp": {
       "base": "StructureDefinition-ncdhc-observation-ageaprImmcomp.html",
       "defns": "StructureDefinition-ncdhc-observation-ageaprImmcomp-definitions.html"
     },
+    "Observation/observation-immunisation-normal-example": {
+      "source": "ncdhc-observation-immunisation-normal-example.json",
+      "base": "ncdhc-observation-immunisation-normal-example.html"
+    },
     "StructureDefinition/ncdhc-observation-iron-serum-ferritin": {
       "base": "StructureDefinition-ncdhc-observation-iron-serum-ferritin.html",
       "defns": "StructureDefinition-ncdhc-observation-iron-serum-ferritin-definitions.html"
+    },
+    "Observation/ncdhc-observation-iron-serum-ferritin-example": {
+      "source": "ncdhc-observation-iron-serum-ferritin-example.json",
+      "base": "ncdhc-observation-iron-serum-ferritin-example.html"
     },
     "StructureDefinition/ncdhc-observation-iron-haemoglobin-level": {
       "base": "StructureDefinition-ncdhc-observation-iron-haemoglobin-level.html",
