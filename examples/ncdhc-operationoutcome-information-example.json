@@ -1,6 +1,6 @@
 {
     "resourceType": "OperationOutcome",
-    "id": "62333608-eb03-40b5-b6c3-daded7910406",
+    "id": "ncdhc-operationoutcome-information-example",
     "text": {
       "status": "additional",
       "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>The requested AuditEvent no longer exists in the Data Hub</p>\n    </div>"

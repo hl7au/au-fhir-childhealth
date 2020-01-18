@@ -3,7 +3,7 @@
   "id": "ncdhc-document-class-1",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NCDHC Document Class</h2><div><p>NCDHC Document Typ</p>\r\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ncdhc-document-class.html\"><code>http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NCDHC Document Class</h2><div><p>NCDHC Document Typ</p>\r\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ncdhc-document-class-1.html\"><code>http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1</code></a></li></ul></div>"
   },
   "url": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-document-class-1",
   "version": "1.0.0",

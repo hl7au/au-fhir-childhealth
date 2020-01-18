@@ -1,6 +1,6 @@
 {
     "resourceType": "OperationOutcome",
-    "id": "62333608-eb05-40b5-b6c3-daded7910406",
+    "id": "ncdhc-operationoutcome-informational-example",
     "text": {
       "status": "additional",
       "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Au</p>\n    </div>"
