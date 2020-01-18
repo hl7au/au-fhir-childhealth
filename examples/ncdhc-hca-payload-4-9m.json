@@ -76,13 +76,16 @@
             },
             "entry": [
               {
-                "reference": "urn:uuid:703736eb-1b26-4057-802f-b19e6c43c258"
+                "reference": "urn:uuid:703736eb-1b26-4057-802f-b19e6c43c258",
+                "display": "Weight"
               },
               {
-                "reference": "urn:uuid:ceb9d0d0-5f43-4ac4-89ea-f0d8570c813c"
+                "reference": "urn:uuid:ceb9d0d0-5f43-4ac4-89ea-f0d8570c813c",
+                "display": "Length / Height"
               },
               {
-                "reference": "urn:uuid:28e1a18c-b033-4431-91d6-d75ca172e9ea"
+                "reference": "urn:uuid:28e1a18c-b033-4431-91d6-d75ca172e9ea",
+                "display": "Head Circumference"
               }
             ]
           },
@@ -98,43 +101,56 @@
             },
             "entry": [
               {
-                "reference": "urn:uuid:b238ee16-acba-4801-ac00-206b7fa3f8b4"
+                "reference": "urn:uuid:b238ee16-acba-4801-ac00-206b7fa3f8b4",
+                "display": "Head Shape"
               },
               {
-                "reference": "urn:uuid:c7e73b0b-6442-4767-942c-bb43e3a7a91f"
+                "reference": "urn:uuid:568532d3-b0f2-4f8f-8ac7-ee93a117da2a",
+                "display": "Ears Right/Left"
               },
               {
-                "reference": "urn:uuid:568532d3-b0f2-4f8f-8ac7-ee93a117da2a"
+                "reference": "urn:uuid:c7e73b0b-6442-4767-942c-bb43e3a7a91f",
+                "display": "Eyes (Right/Left)"
               },
               {
-                "reference": "urn:uuid:57b86502-eb2d-41bf-b1f5-62d8573d3dc1"
+                "reference": "urn:uuid:f78dc491-57e3-479d-a949-6fc4f1821f42",
+                "display": "Hearing Check"
               },
               {
-                "reference": "urn:uuid:122af9a5-3128-4047-8787-77c591e9a067"
+                "reference": "urn:uuid:4efe2ae1-eeda-4938-80fc-91c399d4cfbe",
+                "display": "Development"
               },
               {
-                "reference": "urn:uuid:9524a461-1348-4689-a0ed-a14954462de5"
+                "reference": "urn:uuid:9sfe2ae1-eeda-4938-80fc-91c399d4cfbe",
+                "display": "Testes fully descended R/L"
               },
               {
-                "reference": "urn:uuid:f78dc491-57e3-479d-a949-6fc4f1821f42"
+                "reference": "urn:uuid:122af9a5-3128-4047-8787-77c591e9a067",
+                "display": "Genitalia"
               },
               {
-                "reference": "urn:uuid:4efe2ae1-eeda-4938-80fc-91c399d4cfbe"
+                "reference": "urn:uuid:57b86502-eb2d-41bf-b1f5-62d8573d3dc1",
+                "display": "Hips"
               },
               {
-                "reference": "urn:uuid:929625a7-e26e-4661-8368-a593579bfad1"
+                "reference": "urn:uuid:9524a461-1348-4689-a0ed-a14954462de5",
+                "display": "Skin"
               },
               {
-                "reference": "urn:uuid:fb5f551f-4964-40fb-976e-abadc30d62ce"
+                "reference": "urn:uuid:18eb3151-1d84-4f8e-9e2c-3fa984020324",
+                "display": "Age Appropriate Immunisation completed as per schedule"
               },
               {
-                "reference": "urn:uuid:3f3e0d50-72da-4dd2-8a54-7fb088f707c9"
+                "reference": "urn:uuid:929625a7-e26e-4661-8368-a593579bfad1",
+                "display": "Oral Health"
               },
               {
-                "reference": "urn:uuid:eb85bbef-9cbb-4611-a942-db39385fe661"
+                "reference": "urn:uuid:fb5f551f-4964-40fb-976e-abadc30d62ce",
+                "display": "Iron Testing"
               },
               {
-                "reference": "urn:uuid:18eb3151-1d84-4f8e-9e2c-3fa984020324"
+                "reference": "urn:uuid:eb85bbef-9cbb-4611-a942-db39385fe661",
+                "display": "Deworming"
               }
             ]
           }
@@ -1329,55 +1345,56 @@
         "related": [
           {
             "target": {
-              "reference": "urn:uuid:3f3e0d50-72da-4dd2-8a54-7fb088f707c9"
+              "reference": "urn:uuid:3f3e0d50-72da-4dd2-8a54-9fb088f707c9"
             }
           }
         ]
       }
     },
     {
-      "fullUrl": "urn:uuid:3f3e0d50-72da-4dd2-8a54-7fb088f707c9",
+      "fullUrl": "urn:uuid:3f3e0d50-72da-4dd2-8a54-9fb088f707c9",
       "resource": {
         "resourceType": "Observation",
-        "id": "3f3e0d50-72da-4dd2-8a54-7fb088f707c9",
+        "id": "3f3e0d50-72da-4dd2-8a54-9fb088f707c9",
         "meta": {
           "versionId": "1",
           "lastUpdated": "2019-12-11T14:36:03Z",
           "profile": [
-            "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-iron-serum-ferritin"
+            "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-iron-haemoglobin-level"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ncdhc-observation-iron-serum-ferritin-example</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Serum ferritin measurement <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '269821003' = 'Serum ferritin measurement', given as 'Serum ferritin measurement'})</span></p><p><b>subject</b>: <a href=\"urn:uuid:43140538-3e2a-486b-8993-aab0e8d5c20a\">urn:uuid:43140538-3e2a-486b-8993-aab0e8d5c20a</a></p><p><b>effective</b>: 2019-11-21</p><p><b>performer</b>: </p><ul><li><a href=\"urn:uuid:b763b0ba-079e-4276-b527-7f1b30271243\">Examiner</a></li><li><a href=\"urn:uuid:21b0b1aa-d525-4046-a0a2-df928df48d39\">Organisation</a></li></ul><p><b>value</b>: 4 ug/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code ug/L = 'ug/L')</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ncdhc-observation-iron-haemoglobin-level</p><p><b>meta</b></p></div>"
         },
         "status": "final",
         "code": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "269821003",
-              "display": "Serum ferritin measurement"
+              "code": "271026005",
+              "display": "Hemoglobin estimation level"
             }
           ],
-          "text": "Serum ferritin measurement"
+          "text": "Haemoglobin level estimation"
         },
         "subject": {
-          "reference": "urn:uuid:43140538-3e2a-486b-8993-aab0e8d5c20a"
+          "reference": "Patient/patient-baby-example",
+          "display": "Baby of Eve Bill"
         },
         "effectiveDateTime": "2019-11-21",
         "performer": [
           {
-            "reference": "urn:uuid:b763b0ba-079e-4276-b527-7f1b30271243",
+            "reference": "Practitioner/examiner-practitioner",
             "display": "Examiner"
           },
           {
-            "reference": "urn:uuid:21b0b1aa-d525-4046-a0a2-df928df48d39",
+            "reference": "Organization/examiner-organization",
             "display": "Organisation"
           }
         ],
         "valueQuantity": {
-          "value": 4,
+          "value": 6,
           "unit": "ug/L",
           "system": "http://unitsofmeasure.org",
           "code": "ug/L"
@@ -1537,6 +1554,100 @@
           ],
           "text": "Yes"
         }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9sfe2ae1-eeda-4938-80fc-91c399d4cfbe",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9sfe2ae1-eeda-4938-80fc-91c399d4cfbe",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": [
+            "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-testes-fully-descended"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Both testes assessed normal.</div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "249237009",
+              "display": "Position of testicle"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:43140538-3e2a-486b-8993-aab0e8d5c20a"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:b763b0ba-079e-4276-b527-7f1b30271243",
+            "display": "Examiner"
+          },
+          {
+            "reference": "urn:uuid:21b0b1aa-d525-4046-a0a2-df928df48d39",
+            "display": "Organisation"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "443938003",
+              "display": "Procedure carried out on subject"
+            }
+          ]
+        },
+        "comment": "Completed",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "15598003",
+                  "display": "Right testis"
+                }
+              ]
+            },
+            "interpretation": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "17621005",
+                  "display": "Normal"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "63239009",
+                  "display": "Left testis"
+                }
+              ]
+            },
+            "interpretation": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "17621005",
+                  "display": "Normal"
+                }
+              ]
+            }
+          }
+        ]
       }
     }
   ]
