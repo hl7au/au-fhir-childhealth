@@ -275,7 +275,7 @@
       "linkId": "11",
       "text": "Birth Weight",
       "subject": {
-        "reference": "Observation/observation-vitalsign-bodyweight-example"
+        "reference": "Observation/ncdhc-observation-vitalsign-bodyweight-example"
       },
       "answer": [
         {
