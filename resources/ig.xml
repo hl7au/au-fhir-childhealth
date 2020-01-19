@@ -148,7 +148,7 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="OperationOutcome/operationoutcome-500-example" />
+				<reference value="OperationOutcome/ncdhc-operationoutcome-500-example" />
 			</sourceReference>
 		</resource>
 		<resource>
