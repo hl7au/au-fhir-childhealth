@@ -148,25 +148,25 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="OperationOutcome/ncdhc-operationoutcome-500-example" />
+				<reference value="OperationOutcome/operationoutcome-500-example" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="OperationOutcome/ncdhc-operationoutcome-bundle-404-example" />
+				<reference value="Bundle/ncdhc-operationoutcome-bundle-404-example" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="OperationOutcome/ncdhc-operationoutcome-bundle-410-example" />
+				<reference value="Bundle/ncdhc-operationoutcome-bundle-410-example" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="OperationOutcome/ncdhc-operationoutcome-bundle-412-example" />
+				<reference value="Bundle/ncdhc-operationoutcome-bundle-412-example" />
 			</sourceReference>
 		</resource>
 		<resource>

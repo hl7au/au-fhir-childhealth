@@ -183,19 +183,19 @@
       "source": "ncdhc-operationoutcome-422-example.json",
       "base": "ncdhc-operationoutcome-422-example.html"
     },
-    "OperationOutcome/ncdhc-operationoutcome-500-example": {
+    "OperationOutcome/operationoutcome-500-example": {
       "source": "ncdhc-operationoutcome-500-example.json",
       "base": "ncdhc-operationoutcome-500-example.html"
     },
-    "OperationOutcome/ncdhc-operationoutcome-bundle-404-example": {
+    "Bundle/ncdhc-operationoutcome-bundle-404-example": {
       "source": "ncdhc-operationoutcome-bundle-404-example.json",
       "base": "ncdhc-operationoutcome-bundle-404-example.html"
     },
-    "OperationOutcome/ncdhc-operationoutcome-bundle-410-example": {
+    "Bundle/ncdhc-operationoutcome-bundle-410-example": {
       "source": "ncdhc-operationoutcome-bundle-410-example.json",
       "base": "ncdhc-operationoutcome-bundle-410-example.html"
     },
-    "OperationOutcome/ncdhc-operationoutcome-bundle-412-example": {
+    "Bundle/ncdhc-operationoutcome-bundle-412-example": {
       "source": "ncdhc-operationoutcome-bundle-412-example.json",
       "base": "ncdhc-operationoutcome-bundle-412-example.html"
     },
@@ -606,6 +606,10 @@
     "OperationDefinition/ncdhc-patient-access": {
       "base": "OperationDefinition-ncdhc-patient-access.html",
       "defns": "OperationDefinition-ncdhc-patient-access-definitions.html"
+    },
+    "OperationDefinition/ncdhc-composition-view-document": {
+      "base": "OperationDefinition-ncdhc-composition-view-document.html",
+      "defns": "OperationDefinition-ncdhc-composition-view-document-definitions.html"
     },
     "ValueSet/ncdhc-document-type-1": {
       "base": "ValueSet-ncdhc-document-type-1.html"
