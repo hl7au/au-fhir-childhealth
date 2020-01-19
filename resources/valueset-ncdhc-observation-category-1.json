@@ -41,10 +41,10 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
+        "system": "http://hl7.org/fhir/observation-category"
       },
       {
-        "system": "http://hl7.org/fhir/observation-category"
+        "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
       }
     ]
   }
