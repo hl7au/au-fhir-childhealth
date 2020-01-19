@@ -84,6 +84,12 @@
 				<reference value="StructureDefinition/ncdhc-consent" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Consent/ncdhc-consent-registration-authrep-example" />
+			</sourceReference>
+		</resource>
 		<!-- NCDHC OperationOutcome Profile -->
 		<resource>
 			<example value="false" />

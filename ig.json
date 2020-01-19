@@ -126,7 +126,11 @@
     "StructureDefinition/ncdhc-consent": {
       "base": "StructureDefinition-ncdhc-consent.html",
       "defns": "StructureDefinition-ncdhc-consent-definitions.html"
-    },
+    },    
+    "Consent/ncdhc-consent-registration-authrep-example": {
+      "source": "ncdhc-consent-registration-authrep-example.json",
+      "base": "ncdhc-consent-registration-authrep-example.html"
+    },    
     "StructureDefinition/ncdhc-audit-event": {
       "base": "StructureDefinition-ncdhc-audit-event.html",
       "defns": "StructureDefinition-ncdhc-audit-event-definitions.html"
@@ -472,8 +476,8 @@
       "base": "ncdhc-observation-birth-length-example.html"
     },
     "Observation/observation-birthweight-example": {
-      "source": "observation-birthweight-example.json",
-      "base": "observation-birthweight-example.html"
+      "source": "ncdhc-observation-birthweight-example.json",
+      "base": "ncdhc-observation-birthweight-example.html"
     },
     "StructureDefinition/ncdhc-observation-heart-rate": {
       "base": "StructureDefinition-ncdhc-observation-heart-rate.html",
