@@ -18,10 +18,10 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Each Observation must have:**
 
 1.  a status  
-1.  a SNOMED code which tells you what was recorded.
+1.  a SNOMED code (indicating what was recorded)
 1.  a subject (Patient)
-1.  a time indicating when the details was taken
-1.	a performer detailing who has recorded the details.
+1.  a time (indicating when the details were recorded)
+1.	a performer (detailing who has recorded the details)
 
 
 **Profile specific implementation guidance:**

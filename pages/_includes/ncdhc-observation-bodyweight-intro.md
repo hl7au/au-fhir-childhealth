@@ -18,16 +18,12 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Each Observation must have:**
 
 1.  a status  
-1.  a SNOMED code which tells you what is being recorded.
+1.  a SNOMED code (indicating what was recorded)
 1.  a subject (Patient)
-1.  a time indicating when the details was recorded.
-1.	a performer detailing who has recorded the details.
+1.  a time (indicating when the details were recorded)
+1.	a performer (detailing who has recorded the details)
 1.  a numeric result value and standard UCUM unit.
-    -   note: if there is no numeric result then you have to supply a reason
-
-**Profile specific implementation guidance:**
-
-* The server **SHALL** accept the Gestational age in days and convert it to weeks and days in the 'comments' element while persisting .
+    -   Note: A reason needs to be supplied in-case there is no numeric result value.
 
 
 

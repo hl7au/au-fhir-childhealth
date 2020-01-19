@@ -19,10 +19,10 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Each Composition must have:**
 
 1.  a status  
-1.  a LOINC code to represent the document type. Optional Class codes as required
+1.  a LOINC code (to represent the document type. Optional Class codes as required)
 1.  a subject (Patient)
-1.  a date indicating when the details was taken
-1.	a author detailing who has recorded the details.
+1.  a date (indicating when the details were taken)
+1.	an author (detailing who has recorded the details)
 1.  title of the document
 
 **Profile specific implementation guidance:**

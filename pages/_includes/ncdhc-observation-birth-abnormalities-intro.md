@@ -1,6 +1,6 @@
 **NCDHC Abnormalities noted at birth Observation Profile**
 
-This profile sets minimum expectations for the [Observation] resource to record, search and fetch Physical problems identified with the baby at, or shortly after birth. E.g. cleft lip/palate, extensive bruising, cephalohematoma etc. associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. The profile is at draft stage and under review by the Child Health Working Group. 
+This profile sets minimum expectations for the [Observation] resource to record, search and fetch physical problems identified with the baby at, or shortly after birth e.g. cleft lip/palate, extensive bruising, cephalohematoma etc. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. The profile is at draft stage and under review by the Child Health Working Group. 
 
 **Example Usage Scenarios:**
 
@@ -18,10 +18,10 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Each Observation must have:**
 
 1.  a status  
-1.  a SNOMED code which tells you what was recorded.
+1.  a SNOMED code (indicating what was recorded)
 1.  a subject (Patient)
-1.  a time indicating when the details was taken
-1.	a performer detailing who has recorded the details.
+1.  a time (indicating when the details were recorded)
+1.	a performer (detailing who has recorded the details)
 
 
 **Profile specific implementation guidance:**

@@ -1,6 +1,6 @@
 **NCDHC Method Of Delivery Observation Profile**
 
-This profile sets minimum expectations for the [Observation] resource to record, search and fetch Birth Type associated with the baby patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. The profile is at draft stage and under review by the Child Health Working Group. 
+This profile sets minimum expectations for the [Observation] resource to record, search and fetch birth type/method of delivery associated with the baby patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. The profile is at draft stage and under review by the Child Health Working Group. 
 
 **Example Usage Scenarios:**
 
@@ -18,20 +18,12 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Each Observation must have:**
 
 1.  a status  
-1.  a SNOMED code which tells you what was recorded.
+1.  a SNOMED code (indicating what was recorded)
 1.  a subject (Patient)
-1.  a time indicating when the details was recorded
-1.	a performer detailing who has recorded the details.
-1.  a CodableConcept representation of the Types reported. Applicable types are defined in the ValueSet: http://hl7.org.au/fhir/ch/v1/ValueSet/type-of-birth-snomed
+1.  a time (indicating when the details were recorded)
+1.	a performer (detailing who has recorded the details)
+1.  a CodeableConcept representation of the birth types reported (Applicable types are defined in the ValueSet: http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-type-of-birth-1 )
     
-
-**Profile specific implementation guidance:**
-
-* To be added
-
-
-
-
 
 #### Examples
 

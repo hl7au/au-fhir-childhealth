@@ -1,6 +1,6 @@
 **NCDHC Immunization Profile**
 
-This profile sets minimum expectations for the [Immunization] resource to record, search and fetch Immunization associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. The profile is at draft stage and under review by the Child Health Working Group. 
+This profile sets minimum expectations for the [Immunization] resource to record, search and fetch immunisation associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. The profile is at draft stage and under review by the Child Health Working Group. 
 
 **Example Usage Scenarios:**
 
@@ -19,43 +19,14 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 1.  a status  
 1.  indicate if the Immunization was given or not
-1.  a SNOMED code which tells you what vaccine was administered from the "SNOMED CT" columns in the table below.
-1.  a patient
-1.  a date indicating when the Immunization was given
-1.	details of the practitioner who has given the immunisation.
+1.  a SNOMED code (indicating what was recorded)
+1.  a subject (Patient)
+1.  a date (indicating when the immunisation was given)
+1.	a performer(who has given the immunisation)
 
 **Profile specific implementation guidance:**
 
 * To be added
-
-
-
----
-
-<table class="grid">
-  <thead>
-    <tr>
-      <th>Immunization</th>      
-	  <th>SNOMED Code</th>
-      <th><em>SNOMED Name </em>and Comments</th>      
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>HepB Immunoglobin</td>
-      <td>116802006</td>
-      <td>Intramuscular injection of Hepatitis B Virus immune globulin, human</td>       
-    </tr>
-	<tr>
-      <td>HepB Immunisation</td>
-      <td>170370000</td>      
-	  <td>First hepatitis B vaccination</td>	 
-    </tr>
-    
-  </tbody>
-</table>
-
----
 
 
 #### Examples

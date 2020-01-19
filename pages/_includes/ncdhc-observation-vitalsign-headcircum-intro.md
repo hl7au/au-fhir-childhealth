@@ -22,12 +22,12 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Each Observation must have:**
 
 1.  a status  
-1.  a LOINC and SNOMED code which tells you what was measured and is taken from the “LOINC Code” & "SNOMED CT" columns respectively in the table below.
+1.  a LOINC and SNOMED code (indicating what was measured and is taken from the “LOINC” & "SNOMED CT" codes)
 1.  a subject (Patient)
-1.  a time indicating when the details was taken
-1.	a performer detailing who has recorded the details.
-1.  a numeric result value and standard UCUM unit which is taken from the “UCUM Unit Code” column in the table below. Applicable units are defined in the ValueSet: http://hl7.org/fhir/ValueSet/ucum-bodylength
-    -   note: if there is no numeric result then you have to supply a reason
+1.  a time (indicating when the details were taken)
+1.	a performer (detailing who has recorded the details)
+1.  a numeric result value and standard UCUM unit (applicable units are defined in the ValueSet: http://hl7.org/fhir/ValueSet/ucum-bodylength)
+    -   Note: A reason needs to be supplied in-case there is no numeric result value.
 
 #### Examples
 

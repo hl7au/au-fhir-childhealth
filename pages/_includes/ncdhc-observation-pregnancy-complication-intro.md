@@ -1,6 +1,6 @@
 **NCDHC Pregnancy Complications Observation Profile**
 
-This profile sets minimum expectations for the [Observation] resource to record, search and fetch Pregnancy Complications associated with the patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. The profile is at draft stage and under review by the Child Health Working Group. 
+This profile sets minimum expectations for the [Observation] resource to record, search and fetch pregnancy complications associated with the patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. The profile is at draft stage and under review by the Child Health Working Group. 
 
 **Example Usage Scenarios:**
 
@@ -18,16 +18,11 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Each Observation must have:**
 
 1.  a status  
-1.  a SNOMED code which tells you what is being measured.
+1.  a SNOMED code (indicating what was measured)
 1.  a subject (Patient)
-1.  a time indicating when the details was taken
-1.	a performer detailing who has recorded the details.
+1.  a time (indicating when the details were taken)
+1.	a performer (detailing who has recorded the details)
 1.  a textual representation of the complications reported.
-
-**Profile specific implementation guidance:**
-
-* To be added
-
 
 
 #### Examples
