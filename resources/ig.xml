@@ -384,7 +384,7 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Observation/observation-vitalsign-bodyweight-example" />
+				<reference value="Observation/ncdhc-observation-vitalsign-bodyweight-example" />
 			</sourceReference>
 		</resource>
 		<resource>

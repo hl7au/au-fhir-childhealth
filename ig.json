@@ -183,7 +183,7 @@
       "source": "ncdhc-operationoutcome-422-example.json",
       "base": "ncdhc-operationoutcome-422-example.html"
     },
-    "OperationOutcome/operationoutcome-500-example": {
+    "OperationOutcome/ncdhc-operationoutcome-500-example": {
       "source": "ncdhc-operationoutcome-500-example.json",
       "base": "ncdhc-operationoutcome-500-example.html"
     },
@@ -427,7 +427,7 @@
       "base": "StructureDefinition-ncdhc-observation-vitalsign-bodyweight.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-bodyweight-definitions.html"
     },
-    "Observation/observation-vitalsign-bodyweight-example": {
+    "Observation/ncdhc-observation-vitalsign-bodyweight-example": {
       "source": "ncdhc-observation-vitalsign-bodyweight-example.json",
       "base": "ncdhc-observation-vitalsign-bodyweight-example.html"
     },
