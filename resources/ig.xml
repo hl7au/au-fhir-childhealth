@@ -144,7 +144,7 @@
 			<sourceReference>
 				<reference value="OperationOutcome/operationoutcome-500-example" />
 			</sourceReference>
-		</resource>		
+		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
@@ -988,9 +988,21 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-hca-nsw-schedule-sample" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-composition-view-summary" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-hca-nsw-summary-sample" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -1082,7 +1094,8 @@
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-composition-view-hca-4yr" />
 			</sourceReference>
-		</resource><resource>
+		</resource>
+		<resource>
 			<example value="true" />
 			<sourceReference>
 				<reference value="Bundle/ncdhc-hca-4year-view-summary" />

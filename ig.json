@@ -203,9 +203,17 @@
       "base": "StructureDefinition-ncdhc-composition-view-schedule.html",
       "defns": "StructureDefinition-ncdhc-composition-view-schedule-definitions.html"
     },
+    "Bundle/ncdhc-hca-nsw-schedule-sample": {
+      "source": "ncdhc-hca-nsw-schedule-sample.json",
+      "base": "ncdhc-hca-nsw-schedule-sample.html"
+    },
     "StructureDefinition/ncdhc-composition-view-summary": {
       "base": "StructureDefinition-ncdhc-composition-view-summary.html",
       "defns": "StructureDefinition-ncdhc-composition-view-summary-definitions.html"
+    },
+    "Bundle/ncdhc-hca-nsw-summary-sample": {
+      "source": "ncdhc-hca-nsw-summary-sample.json",
+      "base": "ncdhc-hca-nsw-summary-sample.html"
     },
     "StructureDefinition/ncdhc-composition-view-birth": {
       "base": "StructureDefinition-ncdhc-composition-view-birth.html",
