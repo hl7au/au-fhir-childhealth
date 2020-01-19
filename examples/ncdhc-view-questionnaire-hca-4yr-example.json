@@ -505,7 +505,7 @@
       "type": "group",
       "item": [
         {
-          "linkId": "16.1",
+          "linkId": "15.1",
           "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bmi-definitions.html#Observation.interpretation",
           "type": "question",
           "options": {
@@ -514,19 +514,19 @@
           },
           "item": [
             {
-              "linkId": "16.1.1",
+              "linkId": "15.1.1",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bmi-definitions.html#Observation.valueQuantity:valueQuantity",
               "text": "Value",
               "type": "text"
             },
             {
-              "linkId": "16.1.2",
+              "linkId": "15.1.2",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bmi-definitions.html#Observation.interpretation",
               "text": "Outcome",
               "type": "open-choice"
             },
             {
-              "linkId": "16.1.3",
+              "linkId": "15.1.3",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bmi-definitions.html#Observation.comment",
               "text": "Comments",
               "type": "text"
