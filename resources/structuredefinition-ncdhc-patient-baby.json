@@ -40,7 +40,7 @@
         "example": [
           {
             "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986"
+            "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ]
       },
@@ -55,7 +55,7 @@
         "example": [
           {
             "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986"
+            "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ]
       },
@@ -70,7 +70,7 @@
         "example": [
           {
             "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986"
+            "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ]
       },
@@ -85,7 +85,7 @@
         "example": [
           {
             "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986"
+            "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ]
       },
@@ -100,7 +100,7 @@
         "example": [
           {
             "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986"
+            "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ]
       },
@@ -115,7 +115,7 @@
         "example": [
           {
             "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986"
+            "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ]
       },
@@ -130,7 +130,7 @@
         "example": [
           {
             "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986"
+            "valueUri": "http://www.acme.com/identifiers/patient"
           }
         ]
       },
