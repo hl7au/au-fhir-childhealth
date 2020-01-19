@@ -21,8 +21,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  a status  
 1.  a category
 1.  a patient
-1.  a date confirming when this Consent was created or indexed
-1.  a policy reference or a policyRule reference SHOULD be provided.
+1.  a date (confirming when this Consent was created or indexed)
+1.  a policy reference or a policyRule reference
 
 **Profile specific implementation guidance:**
 
@@ -36,8 +36,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-- [Authorsied Representative Consent](ncdhc-consent-registration-authrep-example.html)
-- [Nominated Representative Consent](ncdhc-consent-registration-nomrep-example.html)
+- [Authorised Representative Consent](ncdhc-consent-registration-authrep-example.html)
 - [Consent To Participate](ncdhc-consent-participation-authrep-example.html)
 
 

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-fluoride-varnish",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fluoride-varnish",
-  "version": "v1.1.0",
+  "version": "r1.0.0",
   "name": "NCDHC Fluoride Varnish Observation Profile",
   "title": "NCDHC Fluoride Varnish Observation",
   "status": "draft",

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-spine",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-spine",
-  "version": "v1.0.0",
+  "version": "r1.0.0",
   "name": "NCDHC Spine Test Observation Profile",
   "title": "NCDHC Spine Test Observation",
   "status": "draft",

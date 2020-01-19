@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-composition-view-hca-3yr",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-view-hca-3yr",
-  "version": "v1.0.0",
+  "version": "r1.0.0",
   "name": "NCDHC HCA View 3 Years Composition Profile",
   "title": "NCDHC HCA View 3 Years Composition Profile",
   "status": "draft",

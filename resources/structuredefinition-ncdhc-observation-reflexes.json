@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-reflexes",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-reflexes",
-  "version": "v1.1.0",
+  "version": "r1.0.0",
   "name": "NCDHC Reflexes Observation Profile",
   "title": "NCDHC Reflexes Test Observation",
   "status": "draft",

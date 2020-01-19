@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-composition-rep-registration",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-rep-registration",
-  "version": "v1.0.0",
+  "version": "r1.0.0",
   "name": "NCDHC Rep Registration Composition Profile",
   "title": "NCDHC Rep Registration Composition",
   "status": "draft",

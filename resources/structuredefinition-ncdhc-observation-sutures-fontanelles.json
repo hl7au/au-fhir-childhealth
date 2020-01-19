@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-sutures-fontanelles",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-sutures-fontanelles",
-  "version": "v1.0.0",
+  "version": "r1.0.0",
   "name": "NCDHC Fontanelles and Sutures Observation Profile",
   "title": "NCDHC Fontanelles and Sutures Observation",
   "status": "draft",

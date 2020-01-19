@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-bloodspot-screen",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bloodspot-screen",
-  "version": "v1.1.0",
+  "version": "r1.0.0",
   "name": "NCDHC Blood Spot Screen Observation Profile",
   "title": "NCDHC Blood Spot Screen Observation",
   "status": "draft",

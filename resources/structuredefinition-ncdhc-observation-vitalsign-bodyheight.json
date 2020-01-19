@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-vitalsign-bodyheight",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bodyheight",
-  "version": "v1.1.0",
+  "version": "r1.0.0",
   "name": "NCDHC Body Height Vital Sign Profile",
   "title": "NCDHC Body Height Vital Sign",
   "status": "draft",

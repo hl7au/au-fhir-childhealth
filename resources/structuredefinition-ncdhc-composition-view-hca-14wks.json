@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-composition-view-hca-14wks",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-view-hca-14wks",
-  "version": "v1.0.0",
+  "version": "r1.0.0",
   "name": "NCDHC HCA View 1-4 Weeks Composition Profile",
   "title": "NCDHC HCA View 1-4 Weeks Composition Profile",
   "status": "draft",

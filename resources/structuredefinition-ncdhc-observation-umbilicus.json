@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-umbilicus",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-umbilicus",
-  "version": "v1.1.0",
+  "version": "r1.0.0",
   "name": "NCDHC Umbilicus Observation Profile",
   "title": "NCDHC Umbilicus Observation",
   "status": "draft",

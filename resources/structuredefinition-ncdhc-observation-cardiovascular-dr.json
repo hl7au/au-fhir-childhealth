@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-cardiovascular-dr",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-cardiovascular-dr",
-  "version": "v1.1.0",
+  "version": "r1.0.0",
   "name": "NCDHC Cardiovascular Test Observation Profile",
   "title": "NCDHC Cardiovascular Test Observation",
   "status": "draft",

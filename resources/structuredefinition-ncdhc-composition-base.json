@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-composition-base",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-base",
-  "version": "v1.0.0",
+  "version": "r1.0.0",
   "name": "NCDHC Composition Base Profile",
   "title": "NCDHC Composition Base",
   "status": "draft",

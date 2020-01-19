@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-vision-screen",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vision-screen",
-  "version": "v1.1.0",
+  "version": "r1.0.0",
   "name": "NCDHC Vision Screen Observation Profile",
   "title": "NCDHC Vision Screen Observation",
   "status": "draft",

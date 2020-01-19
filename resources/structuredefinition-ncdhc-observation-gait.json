@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-gait",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-gait",
-  "version": "v1.1.0",
+  "version": "r1.0.0",
   "name": "NCDHC Gait Test Observation Profile",
   "title": "NCDHC Gait Test Observation",
   "status": "draft",
