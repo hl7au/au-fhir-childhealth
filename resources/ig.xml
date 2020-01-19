@@ -242,7 +242,7 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Questionnaire/nb-delivery-qa-1" />
+				<reference value="QuestionnaireResponse/nb-delivery-qa-1" />
 			</sourceReference>
 		</resource>
 		<resource>
