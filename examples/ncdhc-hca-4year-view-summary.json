@@ -443,7 +443,7 @@
                     "id": "4.1.0.1",
                     "linkId": "4.1",
                     "subject": {
-                      "reference": "Observation/observation-vitalsign-bodyweight-example"
+                      "reference": "Observation/ncdhc-observation-vitalsign-bodyweight-example"
                     },
                     "item": [
                       {
@@ -553,7 +553,7 @@
                     "id": "6.1.0.1",
                     "linkId": "6.1",
                     "subject": {
-                      "reference": "Observation/observation-vision-tested-monocularly-example"
+                      "reference": "Observation/ncdhc-observation-vision-tested-monocularly-example"
                     },
                     "item": [
                       {
@@ -1181,7 +1181,7 @@
                     "id": "18.1.0.1",
                     "linkId": "17.1",
                     "subject": {
-                      "reference": "Observation/observation-iron-normal-example"
+                      "reference": "Observation/ncdhc-observation-irontesting-normal-example"
                     },
                     "item": [
                       {
@@ -1379,10 +1379,10 @@
             "reference": "Encounter/ncdhc-encounter-example"
           },
           {
-            "reference": "Observation/observation-vision-tested-monocularly-example"
+            "reference": "Observation/ncdhc-observation-vision-tested-monocularly-example"
           },
           {
-            "reference": "Observation/observation-vitalsign-bodyweight-example"
+            "reference": "Observation/ncdhc-observation-vitalsign-bodyweight-example"
           },
           {
             "reference": "Observation/observation-vitalsign-bodyheight-example"
@@ -1421,7 +1421,7 @@
             "reference": "Observation/observation-hearingcheck-normal-example"
           },
           {
-            "reference": "Observation/observation-iron-normal-example"
+            "reference": "Observation/ncdhc-observation-irontesting-normal-example"
           },
           {
             "reference": "Observation/observation-deworming-normal-example"
@@ -1459,7 +1459,7 @@
           {
             "role": "source",
             "whatReference": {
-              "reference": "DocumentReference/original-source-fhir-document-metadata",
+              "reference": "DocumentReference/ncdhc-doc-ref-current-example",
               "display": "Reference to the  FHIR Document in repository"
             }
           }

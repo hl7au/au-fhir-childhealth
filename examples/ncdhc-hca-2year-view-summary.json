@@ -384,7 +384,7 @@
         "resourceType": "QuestionnaireResponse",
         "id": "hca-2year-qa-en-s1",
         "questionnaire": {
-          "reference": "Questionnaire/hca-2year-q-en-s1",
+          "reference": "Questionnaire/hca-2yr-q-en-s1",
           "display": "2 Year"
         },
         "status": "completed",
@@ -443,7 +443,7 @@
                     "id": "4.1.0.1",
                     "linkId": "4.1",
                     "subject": {
-                      "reference": "Observation/observation-vitalsign-bodyweight-example"
+                      "reference": "Observation/ncdhc-observation-vitalsign-bodyweight-example"
                     },
                     "item": [
                       {
@@ -1048,7 +1048,7 @@
             "reference": "Patient/patient-baby-example"
           },
           {
-            "reference": "Observation/observation-vitalsign-bodyweight-example"
+            "reference": "Observation/ncdhc-observation-vitalsign-bodyweight-example"
           },
           {
             "reference": "Observation/observation-vitalsign-bodyheight-example"
@@ -1066,7 +1066,7 @@
             "reference": "Observation/observation-development-normal-example"
           },
           {
-            "reference": "Observation/Observation/observation-gait-normal-example"
+            "reference": "Observation/observation-gait-normal-example"
           },
           {
             "reference": "Observation/observation-skin-normal-example"
@@ -1110,7 +1110,7 @@
           {
             "role": "source",
             "whatReference": {
-              "reference": "DocumentReference/original-source-fhir-document-metadata",
+              "reference": "DocumentReference/ncdhc-doc-ref-current-example",
               "display": "Reference to the  FHIR Document in repository"
             }
           }

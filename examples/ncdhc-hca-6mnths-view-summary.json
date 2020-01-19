@@ -488,7 +488,7 @@
                     "id": "5.1.0.1",
                     "linkId": "4.1",
                     "subject": {
-                      "reference": "Observation/observation-vitalsign-bodyweight-example"
+                      "reference": "Observation/ncdhc-observation-vitalsign-bodyweight-example"
                     },
                     "item": [
                       {
@@ -1155,7 +1155,7 @@
             "reference": "Encounter/ncdhc-encounter-example"
           },
           {
-            "reference": "Observation/observation-vitalsign-bodyweight-example"
+            "reference": "Observation/ncdhc-observation-vitalsign-bodyweight-example"
           },
           {
             "reference": "Observation/observation-vitalsign-bodyheight-example"
@@ -1214,7 +1214,7 @@
           {
             "role": "source",
             "whatReference": {
-              "reference": "DocumentReference/original-source-fhir-document-metadata",
+              "reference": "DocumentReference/ncdhc-doc-ref-current-example",
               "display": "Reference to the  FHIR Document in repository"
             }
           }
