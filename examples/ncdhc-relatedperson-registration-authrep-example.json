@@ -1,7 +1,7 @@
 {
   "resourceType": "RelatedPerson",
-  "id": "ea287411-5ab7-4ff8-9023-42933b73bc17",
+  "id": "ncdhc-relatedperson-registration-authrep-example",
   "patient": {
-    "reference": "Patient/dd78393f-37ca-4738-81d6-d9595b2e5d0f"
+    "reference": "Patient/patient-baby-example"
   }
 }

@@ -1,6 +1,6 @@
 {
     "resourceType": "Consent",
-    "id": "dc0f07d7-425f-4f32-92cd-a8abd2c0fd36",
+    "id": "ncdhc-consent-participation-nb-example",
     "text": {
       "status": "generated",
       "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Derived Consent for Baby to participate in NCDHC Program</div>"
