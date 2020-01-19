@@ -1,6 +1,6 @@
 {
   "resourceType": "OperationOutcome",
-  "id": "ncdhc-operationoutcome-500-example",
+  "id": "operationoutcome-500-example",
   "text": {
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Sorry, We are experiencing technical difficulties at this time. Please try again later.</p>\n    </div>"

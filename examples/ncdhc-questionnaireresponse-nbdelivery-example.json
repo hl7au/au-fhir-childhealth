@@ -222,7 +222,7 @@
               "linkId": "10.1",
               "text": "1 minute",
               "subject": {
-                "reference": "Observation/observation-apgar-score-normal-example"
+                "reference": "Observation/observation-apgar-score-1m-example"
               },
               "answer": [
                 {
@@ -239,7 +239,7 @@
               "linkId": "10.2",
               "text": "5 minute",
               "subject": {
-                "reference": "Observation/observation-apgar-score-normal-example"
+                "reference": "Observation/observation-apgar-score-5m-example"
               },
               "answer": [
                 {
@@ -256,7 +256,7 @@
               "linkId": "10.3",
               "text": "10 minute",
               "subject": {
-                "reference": "Observation/observation-apgar-score-normal-example"
+                "reference": "Observation/observation-apgar-score-10m-example"
               },
               "answer": [
                 {
@@ -293,7 +293,7 @@
       "linkId": "12",
       "text": "Birth Length",
       "subject": {
-        "reference": "observation-vitalsign-bodyheight-example"
+        "reference": "observation-vitalsign-birthlength-example"
       },
       "answer": [
         {
@@ -337,7 +337,7 @@
               "linkId": "14.1",
               "text": "Vitamin K1",
               "subject": {
-                "reference": "MedicationStatement/medication-statement-k1-example"
+                "reference": "MedicationStatement/ncdhc-medicationstatement-k1-example"
               },
               "item": [
                 {

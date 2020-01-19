@@ -1045,6 +1045,9 @@
         "id": "od78393f-37ca-4738-81d6-d9595b2e5d0f",
         "target": [
           {
+            "reference": "Composition/780f219f-97a8-486d-99d9-ed631fe4fc57"
+          },
+          {
             "reference": "Patient/patient-baby-example"
           },
           {
