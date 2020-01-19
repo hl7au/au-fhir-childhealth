@@ -10,10 +10,6 @@
         "profile": [
           "http://hl7.org.au/fhir/StructureDefinition/au-patient"
         ]
-      },
-      "text": {
-        "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Machine Processable Patient Instance</div>"
       }
     }
   ],
