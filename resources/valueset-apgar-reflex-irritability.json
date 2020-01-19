@@ -12,16 +12,6 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n        <p>APGAR reflex irritability observation type</p>\n    </div>"
   },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
-      "valueString": "Informative"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger": 0
-    }
-  ],
   "url": "http://hl7.org.au/fhir/ch/v1/ValueSet/apgar-reflex-irritability",
   "version": "3.0.1",
   "name": "APGARReflexIrritabilityObservationTypes",
