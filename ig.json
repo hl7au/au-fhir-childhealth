@@ -471,6 +471,10 @@
       "source": "ncdhc-observation-birth-length-example.json",
       "base": "ncdhc-observation-birth-length-example.html"
     },
+    "Observation/observation-birthweight-example": {
+      "source": "observation-birthweight-example.json",
+      "base": "observation-birthweight-example.html"
+    },
     "StructureDefinition/ncdhc-observation-heart-rate": {
       "base": "StructureDefinition-ncdhc-observation-heart-rate.html",
       "defns": "StructureDefinition-ncdhc-observation-heart-rate-definitions.html"

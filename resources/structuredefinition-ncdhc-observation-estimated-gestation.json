@@ -41,37 +41,11 @@
             {
               "type": "value",
               "path": "system"
-            },
-            {
-              "type": "value",
-              "path": "code"
             }
           ],
           "rules": "closed"
         },
         "min": 1
-      },
-      {
-        "id": "Observation.code.coding:EstimatedFetalGestationAgeSNOMED-CT",
-        "path": "Observation.code.coding",
-        "sliceName": "EstimatedFetalGestationAgeSNOMED-CT",
-        "max": "1",
-        "patternCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "444135009"
-        }
-      },
-      {
-        "id": "Observation.code.coding:EstimatedFetalGestationAgeSNOMED-CT.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding:EstimatedFetalGestationAgeSNOMED-CT.code",
-        "path": "Observation.code.coding.code",
-        "min": 1,
-        "fixedCode": "444135009"
       },
       {
         "id": "Observation.code.coding:FetalGestationAgeSNOMED-CT",

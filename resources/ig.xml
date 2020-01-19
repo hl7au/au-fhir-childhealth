@@ -482,6 +482,12 @@
 				<reference value="Observation/observation-bodyweight-example" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-birthweight-example" />
+			</sourceReference>
+		</resource>
 
 		<resource>
 			<example value="false" />
