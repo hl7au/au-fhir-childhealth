@@ -123,14 +123,22 @@
       "base": "StructureDefinition-ncdhc-patient-mother.html",
       "defns": "StructureDefinition-ncdhc-patient-mother-definitions.html"
     },
+    "Patient/ncdhc-patient-mother-example": {
+      "source": "ncdhc-patient-mother-example.json",
+      "base": "ncdhc-patient-mother-example.html"
+    },
     "StructureDefinition/ncdhc-consent": {
       "base": "StructureDefinition-ncdhc-consent.html",
       "defns": "StructureDefinition-ncdhc-consent-definitions.html"
-    },    
+    },
     "Consent/ncdhc-consent-registration-authrep-example": {
       "source": "ncdhc-consent-registration-authrep-example.json",
       "base": "ncdhc-consent-registration-authrep-example.html"
-    },    
+    },
+    "Consent/ncdhc-consent-participation-authrep-example": {
+      "source": "ncdhc-consent-participation-authrep-example.json",
+      "base": "ncdhc-consent-participation-authrep-example.html"
+    },
     "StructureDefinition/ncdhc-audit-event": {
       "base": "StructureDefinition-ncdhc-audit-event.html",
       "defns": "StructureDefinition-ncdhc-audit-event-definitions.html"
@@ -1057,6 +1065,18 @@
     "DocumentReference/ncdhc-doc-ref-superseded-example": {
       "source": "ncdhc-doc-ref-superseded-example.json",
       "base": "ncdhc-doc-ref-superseded-example.html"
+    },
+    "RelatedPerson/ncdhc-relatedoersib-registration-self-example": {
+      "source": "ncdhc-relatedoersib-registration-self-example.json",
+      "base": "ncdhc-relatedoersib-registration-self-example.html"
+    },
+    "RelatedPerson/ncdhc-relatedperson-registration-authrep-example": {
+      "source": "ncdhc-relatedperson-registration-authrep-example.json",
+      "base": "ncdhc-relatedperson-registration-authrep-example.html"
+    },
+    "RelatedPerson/ncdhc-relatedperson-registration-nomrep-example": {
+      "source": "ncdhc-relatedperson-registration-nomrep-example.json",
+      "base": "ncdhc-relatedperson-registration-nomrep-example.html"
     },
     "Device/ncdhc-nsw-jt": {
       "source": "ncdhc-device-example.json",
