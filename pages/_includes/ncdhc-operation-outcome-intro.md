@@ -14,7 +14,7 @@
 - [Resource previously remvoed](ncdhc-operationoutcome-410-example.html)
 - [Pre-condition failed](ncdhc-operationoutcome-bundle-412-example.html)
 - [Unprocessable Entity](ncdhc-operationoutcome-422-example.html)
-- [Internal Server Error](ncdhc-operationoutcome-500-example)
+- [Internal Server Error](ncdhc-operationoutcome-500-example.html)
 
 
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
