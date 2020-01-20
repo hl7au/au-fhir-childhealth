@@ -66,8 +66,7 @@
       {
         "id": "Observation.code.coding:FetalGestationAgeSNOMED-CT.code",
         "path": "Observation.code.coding.code",
-        "min": 1,
-        "fixedCode": "5703600"
+        "min": 1
       },
       {
         "id": "Observation.subject",
