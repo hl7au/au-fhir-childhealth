@@ -1013,6 +1013,10 @@
       "base": "StructureDefinition-ncdhc-observation-bloodspot-screen.html",
       "defns": "StructureDefinition-ncdhc-observation-bloodspot-screen-definitions.html"
     },
+    "StructureDefinition/ncdhc-observation-symphyseal-fundal-height": {
+      "base": "StructureDefinition-ncdhc-observation-symphyseal-fundal-height.html",
+      "defns": "StructureDefinition-ncdhc-observation-symphyseal-fundal-height-definitions.html"
+    },
     "StructureDefinition/ncdhc-observation-testes-fully-descended": {
       "base": "StructureDefinition-ncdhc-observation-testes-fully-descended.html",
       "defns": "StructureDefinition-ncdhc-observation-testes-fully-descended-definitions.html"
