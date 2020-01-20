@@ -39,12 +39,8 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "code.coding.system"
-            },
-            {
-              "type": "value",
-              "path": "code.coding.code"
+              "type": "pattern",
+              "path": "code"
             }
           ],
           "rules": "closed"
@@ -70,14 +66,16 @@
         "fixedString": "Consent Details"
       },
       {
-        "id": "Composition.section:consent.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Composition.section:consent.code.coding.code",
-        "path": "Composition.section.code.coding.code",
-        "fixedCode": "721914005"
+        "id": "Composition.section:consent.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "721914005"
+            }
+          ]
+        }
       },
       {
         "id": "Composition.section:consent.entry",
@@ -108,14 +106,16 @@
         "fixedString": "Representative Details"
       },
       {
-        "id": "Composition.section:person.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Composition.section:person.code.coding.code",
-        "path": "Composition.section.code.coding.code",
-        "fixedCode": "184140000"
+        "id": "Composition.section:person.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "184140000"
+            }
+          ]
+        }
       },
       {
         "id": "Composition.section:person.entry",

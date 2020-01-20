@@ -150,7 +150,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "pattern",
               "path": "code"
             }
           ],
@@ -180,7 +180,7 @@
         "id": "Composition.section:estimatedGestation.code",
         "path": "Composition.section.code",
         "min": 1,
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -188,16 +188,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Composition.section:estimatedGestation.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Composition.section:estimatedGestation.code.coding.code",
-        "path": "Composition.section.code.coding.code",
-        "fixedCode": "57036006"
       },
       {
         "id": "Composition.section:estimatedGestation.entry",
@@ -237,7 +227,7 @@
         "id": "Composition.section:abnormalitiesNotedAtBirth.code",
         "path": "Composition.section.code",
         "min": 1,
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -245,16 +235,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Composition.section:abnormalitiesNotedAtBirth.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Composition.section:abnormalitiesNotedAtBirth.code.coding.code",
-        "path": "Composition.section.code.coding.code",
-        "fixedCode": "414025005"
       },
       {
         "id": "Composition.section:abnormalitiesNotedAtBirth.entry",
@@ -293,7 +273,7 @@
         "id": "Composition.section:apgarScore.code",
         "path": "Composition.section.code",
         "min": 1,
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -301,16 +281,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Composition.section:apgarScore.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Composition.section:apgarScore.code.coding.code",
-        "path": "Composition.section.code.coding.code",
-        "fixedCode": "302083008"
       },
       {
         "id": "Composition.section:apgarScore.entry",
@@ -348,7 +318,7 @@
         "id": "Composition.section:medicationsAdministered.code",
         "path": "Composition.section.code",
         "min": 1,
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -356,16 +326,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Composition.section:medicationsAdministered.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Composition.section:medicationsAdministered.code.coding.code",
-        "path": "Composition.section.code.coding.code",
-        "fixedCode": "18629005"
       },
       {
         "id": "Composition.section:medicationsAdministered.entry",
@@ -404,7 +364,7 @@
         "id": "Composition.section:vitalSignsAndMeasurements.code",
         "path": "Composition.section.code",
         "min": 1,
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -579,7 +539,7 @@
         "id": "Composition.section:maternalMorbidity.code",
         "path": "Composition.section.code",
         "min": 1,
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -587,16 +547,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Composition.section:maternalMorbidity.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Composition.section:maternalMorbidity.code.coding.code",
-        "path": "Composition.section.code.coding.code",
-        "fixedCode": "198609003"
       },
       {
         "id": "Composition.section:maternalMorbidity.entry",
@@ -672,7 +622,7 @@
         "id": "Composition.section:labourAndDelivery.code",
         "path": "Composition.section.code",
         "min": 1,
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -680,16 +630,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Composition.section:labourAndDelivery.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Composition.section:labourAndDelivery.code.coding.code",
-        "path": "Composition.section.code.coding.code",
-        "fixedCode": "118215003"
       },
       {
         "id": "Composition.section:labourAndDelivery.entry",

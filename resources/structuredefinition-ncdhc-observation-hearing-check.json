@@ -50,7 +50,7 @@
               "path": "system"
             }
           ],
-          "rules": "open"
+          "rules": "closed"
         }
       },
       {
@@ -142,16 +142,6 @@
         }
       },
       {
-        "id": "Observation.component:PureToneAudiometry.code.coding.system",
-        "path": "Observation.component.code.coding.system",
-        "min": 1
-      },
-      {
-        "id": "Observation.component:PureToneAudiometry.code.coding.code",
-        "path": "Observation.component.code.coding.code",
-        "min": 1
-      },
-      {
         "id": "Observation.component:PureToneAudiometry.interpretation",
         "path": "Observation.component.interpretation",
         "short": "Normal | Review | Refer",
@@ -179,16 +169,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Observation.component:TympanometryScreen.code.coding.system",
-        "path": "Observation.component.code.coding.system",
-        "min": 1
-      },
-      {
-        "id": "Observation.component:TympanometryScreen.code.coding.code",
-        "path": "Observation.component.code.coding.code",
-        "min": 1
       },
       {
         "id": "Observation.component:TympanometryScreen.value[x]",

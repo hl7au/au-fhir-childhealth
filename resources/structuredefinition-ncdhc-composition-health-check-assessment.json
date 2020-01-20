@@ -82,7 +82,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "pattern",
               "path": "code"
             }
           ],
@@ -110,7 +110,7 @@
       {
         "id": "Composition.section:VitalSignsAndMeasurements.code",
         "path": "Composition.section.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://loinc.org",
@@ -283,7 +283,7 @@
       {
         "id": "Composition.section:HealthConditionsSection.code",
         "path": "Composition.section.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://loinc.org",

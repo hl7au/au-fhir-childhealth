@@ -34,11 +34,11 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
+              "type": "pattern",
               "path": "code"
             }
           ],
-          "rules": "open"
+          "rules": "closed"
         }
       },
       {
@@ -61,7 +61,7 @@
       {
         "id": "Composition.section:NewbornDelivery.code",
         "path": "Composition.section.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -69,16 +69,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Composition.section:NewbornDelivery.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Composition.section:NewbornDelivery.code.coding.code",
-        "path": "Composition.section.code.coding.code",
-        "fixedCode": "169811007"
       },
       {
         "id": "Composition.section:NewbornDelivery.emptyReason",
@@ -106,7 +96,7 @@
       {
         "id": "Composition.section:NewbornImmunisation.code",
         "path": "Composition.section.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -114,16 +104,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Composition.section:NewbornImmunisation.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Composition.section:NewbornImmunisation.code.coding.code",
-        "path": "Composition.section.code.coding.code",
-        "fixedCode": "1347121000168105"
       },
       {
         "id": "Composition.section:NewbornImmunisation.emptyReason",
@@ -151,7 +131,7 @@
       {
         "id": "Composition.section:NewbornExamination.code",
         "path": "Composition.section.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -159,16 +139,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Composition.section:NewbornExamination.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Composition.section:NewbornExamination.code.coding.code",
-        "path": "Composition.section.code.coding.code",
-        "fixedCode": "170099002"
       },
       {
         "id": "Composition.section:NewbornExamination.emptyReason",
@@ -196,7 +166,7 @@
       {
         "id": "Composition.section:NewbornBloodspotScreen.code",
         "path": "Composition.section.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -204,16 +174,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Composition.section:NewbornBloodspotScreen.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Composition.section:NewbornBloodspotScreen.code.coding.code",
-        "path": "Composition.section.code.coding.code",
-        "fixedCode": "428447008"
       },
       {
         "id": "Composition.section:NewbornBloodspotScreen.emptyReason",
@@ -241,7 +201,7 @@
       {
         "id": "Composition.section:NewbornHearingScreen.code",
         "path": "Composition.section.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -249,16 +209,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Composition.section:NewbornHearingScreen.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Composition.section:NewbornHearingScreen.code.coding.code",
-        "path": "Composition.section.code.coding.code",
-        "fixedCode": "417491009"
       },
       {
         "id": "Composition.section:NewbornHearingScreen.emptyReason",
@@ -286,7 +236,7 @@
       {
         "id": "Composition.section:NewbornDischarge.code",
         "path": "Composition.section.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
@@ -294,16 +244,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Composition.section:NewbornDischarge.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Composition.section:NewbornDischarge.code.coding.code",
-        "path": "Composition.section.code.coding.code",
-        "fixedCode": "58000006"
       },
       {
         "id": "Composition.section:NewbornDischarge.emptyReason",

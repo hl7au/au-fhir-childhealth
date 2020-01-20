@@ -39,12 +39,8 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "code.coding.system"
-            },
-            {
-              "type": "value",
-              "path": "code.coding.code"
+              "type": "pattern",
+              "path": "code"
             }
           ],
           "rules": "closed"
@@ -70,14 +66,16 @@
         "fixedString": "Child Patient Details"
       },
       {
-        "id": "Composition.section:patient.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Composition.section:patient.code.coding.code",
-        "path": "Composition.section.code.coding.code",
-        "fixedCode": "302147001"
+        "id": "Composition.section:patient.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "302147001"
+            }
+          ]
+        }
       },
       {
         "id": "Composition.section:patient.entry",
@@ -108,14 +106,16 @@
         "fixedString": "Auth Representative Details"
       },
       {
-        "id": "Composition.section:authRep.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Composition.section:authRep.code.coding.code",
-        "path": "Composition.section.code.coding.code",
-        "fixedCode": "184140000"
+        "id": "Composition.section:authRep.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "184140000"
+            }
+          ]
+        }
       },
       {
         "id": "Composition.section:authRep.entry",
