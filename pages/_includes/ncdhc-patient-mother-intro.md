@@ -26,7 +26,7 @@ The profile covers up Expected Mother Patient instances in the NCDHC context.
 
 #### Examples
 
-- [Expected Mother Patient](Patient-example-mother.html)
+- [Expected Mother Patient](ncdhc-patient-mother-example.html)
 
 [Patient]: http://hl7.org/fhir/STU3/patient.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
