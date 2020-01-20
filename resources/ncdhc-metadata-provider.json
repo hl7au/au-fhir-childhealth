@@ -29,7 +29,7 @@
   },
   "implementation": {
     "description": "NCDHC FHIR Server",
-    "url": "https://ncdhc.gov.au"
+    "url": "https://prov.ncdhc.health.nsw.gov.au"
   },
   "fhirVersion": "3.0.2",
   "acceptUnknown": "no",

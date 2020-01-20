@@ -8,7 +8,7 @@
   "name": "National Children's Digital Health Collaborative CapabilityStatement (Consumer)",
   "title": "National Children's Digital Health Collaborative CapabilityStatement (Consumer)",
   "status": "draft",
-  "date": "2018-12-18",
+  "date": "2020-01-19",
   "publisher": "National Children's Digital Health Collaborative",
   "contact": [
     {
@@ -25,11 +25,11 @@
   "software": {
     "name": "NCDHC FHIR Server",
     "version": "v1.0.0",
-    "releaseDate": "2019-12-02"
+    "releaseDate": "2020-04-31"
   },
   "implementation": {
     "description": "NCDHC FHIR Server",
-    "url": "https://ncdhc.gov.au"
+    "url": "https://con.ncdhc.health.nsw.gov.au"
   },
   "fhirVersion": "3.0.2",
   "acceptUnknown": "no",
