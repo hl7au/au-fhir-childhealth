@@ -273,6 +273,16 @@
       "code": "ADDREP",
       "display": "Add Representative",
       "definition": "A consumer can add, manage and remove nominated representatives to view their child’s health record"
-    }
+    },
+    {
+			"code": "REMDOC",
+			"display": "Remove Document",
+			"definition": "Document is deprecated from the hub"
+		},
+		{
+			"code": "REINSTDOC",
+			"display": "Reinstate Document",
+			"definition": "Document is reinstated and viewable to the providers/consumers"
+		}
   ]
 }
