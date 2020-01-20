@@ -293,7 +293,7 @@
       "linkId": "12",
       "text": "Birth Length",
       "subject": {
-        "reference": "observation-vitalsign-birthlength-example"
+        "reference": "Observation/observation-vitalsign-birthlength-example"
       },
       "answer": [
         {
