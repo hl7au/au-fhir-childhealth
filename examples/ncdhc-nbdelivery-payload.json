@@ -65,7 +65,7 @@
               "coding": [
                 {
                   "system": "http://snomed.info/sct",
-                  "code": "5703600"
+                  "code": "57036006"
                 }
               ]
             },
@@ -613,8 +613,8 @@
           "coding": [
             {
               "system" : "http://snomed.info/sct",
-              "code" : "444135009",
-              "display" : "Estimated fetal gestational age at delivery"
+              "code" : "57036006",
+              "display" : "Fetal gestational age"
             }
           ],
           "text": "Estimated length of Gestation"

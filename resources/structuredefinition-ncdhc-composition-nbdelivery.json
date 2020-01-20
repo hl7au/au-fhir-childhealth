@@ -184,7 +184,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "5703600"
+              "code": "57036006"
             }
           ]
         }
@@ -197,7 +197,7 @@
       {
         "id": "Composition.section:estimatedGestation.code.coding.code",
         "path": "Composition.section.code.coding.code",
-        "fixedCode": "5703600"
+        "fixedCode": "57036006"
       },
       {
         "id": "Composition.section:estimatedGestation.entry",
