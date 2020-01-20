@@ -1,5 +1,4 @@
 {
-  "sct-edition": "http://snomed.info/sct/32506021000036107",
   "version": "3.0.2",
   "paths": {
     "output": "output",
@@ -14,6 +13,7 @@
     "specification": "http://hl7.org/fhir/STU3/",
     "txCache": "txCache"
   },
+  "sct-edition": "http://snomed.info/sct/32506021000036107",
   "source": "ig.xml",
   "dependencyList": [
     {
@@ -37,6 +37,7 @@
     "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0",
     "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0",
     "https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1",
+    "http://terminology.hl7.org/CodeSystrestrem/v3-ActReason codesystem",
     "https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1",
     "https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1",
     "https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1",
@@ -98,6 +99,10 @@
     "StructureDefinition/ncdhc-composition-base": {
       "base": "StructureDefinition-ncdhc-composition-base.html",
       "defns": "StructureDefinition-ncdhc-composition-base-definitions.html"
+    },
+    "Composition/780f219f-97a8-486d-99d9-ed631fe4fc57": {
+      "source": "ncdhc-composition-hca-example.json",
+      "base": "ncdhc-composition-hca-example.html"
     },
     "StructureDefinition/ncdhc-composition-view-base": {
       "base": "StructureDefinition-ncdhc-composition-view-base.html",
@@ -611,8 +616,18 @@
       "base": "OperationDefinition-ncdhc-composition-view-document.html",
       "defns": "OperationDefinition-ncdhc-composition-view-document-definitions.html"
     },
+    "OperationDefinition/ncdhc-document-update": {
+      "base": "OperationDefinition-ncdhc-document-update.html",
+      "defns": "OperationDefinition-ncdhc-document-update-definitions.html"
+    },
     "ValueSet/ncdhc-document-type-1": {
       "base": "ValueSet-ncdhc-document-type-1.html"
+    },
+    "ValueSet/ncdhc-document-action-type-1": {
+      "base": "ValueSet-ncdhc-document-action-type-1.html"
+    },
+    "CodeSystem/ncdhc-document-action-type-1": {
+      "base": "CodeSystem-ncdhc-document-action-type-1.html"
     },
     "ValueSet/ncdhc-hi-type-1": {
       "base": "ValueSet-ncdhc-hi-type-1.html"

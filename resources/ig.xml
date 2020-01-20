@@ -28,6 +28,12 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Composition/780f219f-97a8-486d-99d9-ed631fe4fc57" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-composition-view-base" />
@@ -1351,6 +1357,12 @@
 				<reference value="OperationDefinition/ncdhc-composition-view-document" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="OperationDefinition/ncdhc-document-update" />
+			</sourceReference>
+		</resource>
 
 		<!-- NCDHC Terminologies -->
 		<resource>
@@ -1369,6 +1381,18 @@
 			<example value="false" />
 			<sourceReference>
 				<reference value="CodeSystem/ncdhc-hi-type-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-document-action-type-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-document-action-type-1" />
 			</sourceReference>
 		</resource>
 		<resource>
