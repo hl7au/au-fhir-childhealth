@@ -7,6 +7,7 @@
   "title": "NCDHC Composition View Base",
   "status": "draft",
   "date": "2019-12-06",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -15,6 +16,64 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+          }
+        ]
+      },
+      {
+        "id": "Composition.author",
+        "path": "Composition.author",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-device"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+          }
+        ]
+      },
+      {
+        "id": "Composition.attester.party",
+        "path": "Composition.attester.party",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Organization"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
+          }
+        ]
+      },
       {
         "id": "Composition.section.title",
         "path": "Composition.section.title",
