@@ -19,7 +19,7 @@
     {
       "name": "aubase",
       "location": "http://hl7.org.au/fhir",
-      "version": "1.1.0"
+      "version": "1.1.1"
     }
   ],
   "extraTemplates": [
@@ -37,7 +37,7 @@
     "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0",
     "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0",
     "https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1",
-    "http://terminology.hl7.org/CodeSystrestrem/v3-ActReason codesystem",
+    "http://terminology.hl7.org/CodeSystrestrem/v3-ActReason",
     "https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1",
     "https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1",
     "https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1",
@@ -424,7 +424,7 @@
       "base": "StructureDefinition-ncdhc-observation-birth-head-circumference.html",
       "defns": "StructureDefinition-ncdhc-observation-birth-head-circumference-definitions.html"
     },
-    "Observation/ncdhc-observation-birth-head-circumference": {
+    "Observation/ncdhc-observation-birth-head-circumference-example": {
       "source": "ncdhc-observation-birth-head-circumference-example.json",
       "base": "ncdhc-observation-birth-head-circumference-example.html"
     },
