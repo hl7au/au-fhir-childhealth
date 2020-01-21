@@ -5,7 +5,7 @@
 * Clinically responsible person shall be recorded using the following way:
 1.  Composition.author ([AUBasePractitioner])
 1.  Composition.encounter.participant.type=”CALLBCK”
-1.  Composition.encounter.participant. individual ([AUBasePractitioner])
+1.  Composition.encounter.participant.individual ([AUBasePractitioner])
 * Clinically responsible Organisation shall be recorded using Composition.encounter.serviceProvider([AUBaseOrganisation])
 * Client System shall provide a reference to [Encounter] instance. 
 * The Venue shall be recorded using Composition.encounter.location.location ([Location]). Use Location.name as the Name of the location as used by humans
