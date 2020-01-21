@@ -8,7 +8,7 @@
     },
     "text": {
         "status": "additional",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Body Height</div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Birth Length</div>"
     },
     "status": "final",
     "code": {
@@ -18,7 +18,7 @@
                 "code": "169886007"
             }
         ],
-        "text": "Body Height Length"
+        "text": "Birth length"
     },
     "subject": {
         "reference": "Patient/patient-baby-example",

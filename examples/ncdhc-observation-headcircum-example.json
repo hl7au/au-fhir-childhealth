@@ -20,7 +20,7 @@
         "code" : "363812007"
       }
     ],
-    "text" : "Birth Head Circumference"
+    "text" : "Head Circumference"
   },
   "subject" : {
     "reference" : "Patient/patient-baby-example",

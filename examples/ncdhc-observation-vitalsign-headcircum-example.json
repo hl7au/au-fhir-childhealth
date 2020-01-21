@@ -10,7 +10,7 @@
   },
   "text" : {
     "status" : "additional",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Birth head circumference</div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Head circumference</div>"
   },
   "status" : "final",
   "category" : [
@@ -40,7 +40,7 @@
         "code" : "169876006"
       }
     ],
-    "text" : "Birth Head Circumference"
+    "text" : "Head Circumference"
   },
   "subject" : {
     "reference" : "Patient/patient-baby-example",
