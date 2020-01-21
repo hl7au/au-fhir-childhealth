@@ -33,7 +33,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  a date (indicating when the details were recorded)
 1.	an author (detailing who has recorded the details)
 1.  title of the document
-1.  a reference to Encounter instance.
+1.  a reference to [Encounter] instance.
 
 **Profile specific implementation guidance:**
 * Refer to the Base Profile: [NCDHC Base Composition] for more guidance 
@@ -49,6 +49,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 [Composition]: http://hl7.org.au/fhir/base2018Oct/StructureDefinition-au-composition.html
 [NCDHC Base Composition]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-composition-base.html
+[Encounter]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-encounter.html
 [Patient]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
 [General Guidance Section]: definitions.html
