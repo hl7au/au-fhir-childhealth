@@ -9,8 +9,7 @@ profile:
 
 -   Upload Newborn Delivery Health Interaction FHIR document from jurisdiction system
 -   Update existing Newborn Delivery Health Interaction FHIR document
--   Consumers to view the details of the birth delivery
--   Non-Jurisdictional user to view birth details
+
 
 
 ##### Mandatory Data Elements and Terminology
@@ -21,15 +20,18 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Each Composition must have:**
 
 1.  a status  
-1.  a LOINC code to represent the document type. Optional Class codes as required
-1.  a subject (Patient)
-1.  a date indicating when the details was taken
-1.	a author detailing who has recorded the details.
+1.  a code to represent the document type.
+1.  a class code to represent this document as Health Check Assessment document.
+1.  a subject ([Patient])
+1.  a date (indicating when the details were recorded)
+1.	an author (detailing who has recorded the details)
 1.  title of the document
+1.  a reference to Encounter instance.
 
 **Profile specific implementation guidance:**
-
-* Client system should fill-up all sections and subsections as defined in the profile. If data for any section/entries are not known or not available, then empty reason should be provided.
+* Refer to the Base Profile: [NCDHC Base Composition] for more guidance 
+* If data for any section/sub-sections are not known or not available, then empty reason SHALL be provided.
+* All resources SHALL provide the reference to the profile url used in the resource instance.
 
 
 
@@ -37,7 +39,10 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 - [Newborn Delivery Health Interaction (Request Payload)](ncdhc-nbdelivery-payload.html)
 
+
 [Composition]: http://hl7.org.au/fhir/base2018Oct/StructureDefinition-au-composition.html
+[NCDHC Base Composition]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-composition-base.html
+[Patient]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
 [General Guidance Section]: definitions.html
 

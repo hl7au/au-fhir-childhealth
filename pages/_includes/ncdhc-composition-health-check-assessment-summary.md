@@ -8,10 +8,13 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  a status  
 1.  a code to represent the document type.
 1.  a class code to represent this document as Health Check Assessment document.
-1.  a subject (Patient)
+1.  a subject ([Patient])
 1.  a date (indicating when the details were recorded)
 1.	an author (detailing who has recorded the details)
 1.  title of the document
 1.  a reference to Encounter instance.
 
-* Refer to the Base Profile: ncdhc-composition-base for base rules that are applied in this profile. 
+* Refer to the Base Profile: [NCDHC Base Composition] for base rules that are applied in this profile. 
+
+[NCDHC Base Composition]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-composition-base.html
+[Patient]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby.html
