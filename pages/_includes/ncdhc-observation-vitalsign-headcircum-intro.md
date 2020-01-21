@@ -31,7 +31,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-- [Birth Head Circumference ](ncdhc-observation-vitalsign-headcircum-example.html)
+- [Head Circumference ](ncdhc-observation-vitalsign-headcircum-example.html)
 
 [Vitalsign]: http://hl7.org/fhir/STU3/observation-vitalsigns.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible

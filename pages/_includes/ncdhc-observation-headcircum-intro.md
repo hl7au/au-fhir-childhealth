@@ -1,3 +1,3 @@
 #### Examples
 
-- [Head Circumference Normal](ncdhc-observation-headcircum-example.html)
+- [Head Circumference](ncdhc-observation-headcircum-example.html)
