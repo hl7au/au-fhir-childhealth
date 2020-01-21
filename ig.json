@@ -340,9 +340,9 @@
       "base": "StructureDefinition-ncdhc-composition-nbdelivery.html",
       "defns": "StructureDefinition-ncdhc-composition-nbdelivery-definitions.html"
     },
-    "Observation/ncdhc-bundle-transaction-nbdelivery-request-payload": {
-      "source": "ncdhc-bundle-transaction-nbdelivery-request-payload.json",
-      "base": "ncdhc-bundle-transaction-nbdelivery-request-payload.html"
+    "Bundle/ncdhc-bundle-transaction-nbdelivery-request-payload": {
+      "source": "ncdhc-document-transaction-nbdelivery-request-payload.json",
+      "base": "ncdhc-document-transaction-nbdelivery-request-payload.html"
     },
     "StructureDefinition/ncdhc-observation-estimated-gestation": {
       "base": "StructureDefinition-ncdhc-observation-estimated-gestation.html",
