@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Child Digital Health Record (CDHR)**, intends to capture child’s valuable health and development information digitally instead of hard-copy baby books.
+**Child Digital Health Record (CDHR)**,intends to capture child’s valuable health and development information digitally instead of hard-copy baby books.
 This would enable the easy and secure access of the child's health records by the parents and health-care providers when and where it is needed.
 
 At this stage, the National Children’s Digital Health Collaborative is not making changes to existing processes,or what is recorded in local systems, 
@@ -38,38 +38,44 @@ This document is a working specification that is expected to be implemented and 
 **CDHR Release 1.0.0** scope is limited to following health interactions:
 
 >**Consent to Participate**   
->(Administrative Health Interaction representing various administrative and operational consents applicable to NCDHC program)
+>Its an Administrative Health Interaction.It creates a consent record for the consumer's acknowledgment to participate in the Child Digital Health Record initiative.
 
 
 
->**Audit Event**  
->(Administrative Health Interaction recording the audit details of all actions performed)
+>**Consumer Audit View**  
+>Its an Administrative Health Interaction.It lets a consumer view an audit trail of consumers, providers and organisations who have accessed their child health record, including the data sets viewed.
 
 
 
 >**Child and Representative Registration**   
->(Administrative Health Interaction to register a child or representative)
+>Its an Administrative Health Interaction.It creates a registration record for the child or representative in the CDHR system.
 
 
 
->**Health Check Assessment**   
->(Clinical Health Interaction recording health checks, screening or other health assessments which are conducted across Australia based on each jurisdictions health check schedule)
-
-     - Health Check Assessment 0-4 weeks
-     - Health Check Assessment 6-8 weeks
-     - Health Check Assessment 6 months
-     - Health Check Assessment 12 months
-     - Health Check Assessment 18 months
-     - Health Check Assessment 2 years
-     - Health Check Assessment 3 years
-     - Health Check Assessment 4 years
-     - Health Check Schedule
-     - Health Check Summary
+>**Health Check Assessment**    
+>Its a Clinical Health Interaction.It records the health checks, screening or other health assessments which are conducted across Australia based on each jurisdictions health check schedule.
 
 	 
 >**Newborn Delivery**  
->(Clinical Health Interaction recording all the identifying and clinical health information of a newborn in the system. This forms the basis of the child’s longitudinal health record) 
- 
+>Its a Clinical Health Interaction.It records all the identifying and clinical health information of a newborn in the system. This forms the basis of the child’s longitudinal health record.
+
+
+>**Withdrawal of Consent to Participate**    
+>Its an Administrative Health Interaction.It records a consumer's consent withdrawal to be part of the longitudinal child health record program.
+
+
+
+>**View Longitudinal Record**   
+>Its an Administrative Health Interaction.It lets a clinician or consumer view a child's longitudinal health record in context of the child's clinical record or via the consumer app.
+
+
+
+>**Consent Check**    
+>Its an Administrative Health Interaction.Prior to the creation of the Longitudinal Health record and during an attempt to access or view the Longitudinal Health record,
+ a consent check if the consent isn't withdrawn.
+
+
+
 
 For detailed description and complete list of profiles with relevant samples,refer [NCDHC Profiles]
 
