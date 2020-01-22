@@ -69,32 +69,8 @@ This document is a working specification that is expected to be implemented and 
 	 
 >**Newborn Delivery**  
 >(Clinical Health Interaction recording all the identifying and clinical health information of a newborn in the system. This forms the basis of the child’s longitudinal health record) 
+ 
 
-
-
->**Questionnaire**  
->(Clinical and Consumer Health Interaction,records the health check questionnaire related to upcoming health check assessment either by Clinician/Consumer)
-
-     - Health Check Questionnaire 0-4 weeks
-     - Health Check Questionnaire 6-8 weeks
-     - Health Check Questionnaire 6 months
-     - Health Check Questionnaire 12 months
-     - Health Check Questionnaire 18 months
-     - Health Check Questionnaire 2 years
-     - Health Check Questionnaire 3 years
-     - Health Check Questionnaire 4 years
-     - Health Check Schedule
-     - Health Check Summary
-
-
-
->**Observation**  
-(Clinical and Consumer Health Interaction,records an observation(e.g. height, weight or head circumference) by parent/healthcare provider)
-
-
-
->**Encounter**  
-(Clinical and Consumer Health Interaction,records the encounter e.g. GP appointment,hospital appointment,hospital admission, hospital outpatient etc)  
 For detailed description and complete list of profiles with relevant samples,refer [NCDHC Profiles]
 
 
