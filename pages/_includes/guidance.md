@@ -36,7 +36,7 @@ The content of each page is structured as follows:
 * Known Issues includes the list of unintended or unexpected behaviours associated with that profile we are aware of that have an impact that implementers should take note of.
 
 The Formal Views of Profile Content contains:
-* The canonical url e.g. http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-head-shape 
+* The canonical url e.g. *http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-head-shape*
 * A free text natural language description of the structure and its use that also includes the information on meaning of must support
 * Identification of the base resource from which this profile is derived from; included in this implementation guide as “This profile builds on [base resource]”
 * A set of metadata that describes the version of the profile, publisher and the date of publishing; included as “This profile was published on [date] as a [status] by [publisher “National Children's Digital Health Collaborative (NCDHC)”].”
@@ -93,7 +93,7 @@ The content of this implementation guide is a set of FHIR [StructureDefinition](
 
 This implementation guide includes FHIR profiles that are a set of constraints and/or extensions to FHIR base resources or a data types in the format of a StructureDefinition resource. A StructureDefinition describes a structure - a set of data element definitions, and their associated rules of usage – and is hereafter referred to as a ‘profile’ or an ‘extension’.
 
-A profile or extension is identified by its canonical URL (e.g. http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/composition-es-1). These canonical URLs are unique to each profile or extension. When valued in an instance, the URL signals the imposition of a set of defined constraints. The URL value provides a globally unique identifier for the profile or extension in question and in the case of a profile or extension described in this implementation guide the major version number is identified by the final digit of the URL.
+A profile or extension is identified by its canonical URL e.g. *http://hl7.org.au/fhir/ch/v1/StructureDefinition/composition-es-1*. These canonical URLs are unique to each profile or extension. When valued in an instance, the URL signals the imposition of a set of defined constraints. The URL value provides a globally unique identifier for the profile or extension in question and in the case of a profile or extension described in this implementation guide the major version number is identified by the final digit of the URL.
 
 ### Must Support
 A must support flag, when present in this implementation guide, is displayed as letter “S” with red background in the Flag column of the Differential Table and Snapshot Table of a profile or extension, as such <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>.
