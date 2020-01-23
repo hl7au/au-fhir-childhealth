@@ -304,6 +304,14 @@
       "source": "ncdhc-hca-4year-view-summary.json",
       "base": "ncdhc-hca-4year-view-summary.html"
     },
+    "StructureDefinition/ncdhc-documentreference-clinical-notes": {
+      "base": "StructureDefinition-ncdhc-documentreference-clinical-notes.html",
+      "defns": "StructureDefinition-ncdhc-documentreference-clinical-notes-definitions.html"
+    },
+    "StructureDefinition/ncdhc-dphr-encounter": {
+      "base": "StructureDefinition-ncdhc-dphr-encounter.html",
+      "defns": "StructureDefinition-ncdhc-dphr-encounter-definitions.html"
+    },
     "StructureDefinition/ncdhc-composition-antenatal-record": {
       "base": "StructureDefinition-ncdhc-composition-antenatal-record.html",
       "defns": "StructureDefinition-ncdhc-composition-antenatal-record-definitions.html"
@@ -504,14 +512,10 @@
       "base": "StructureDefinition-ncdhc-observation-fetus-liquor.html",
       "defns": "StructureDefinition-ncdhc-observation-fetus-liquor-definitions.html"
     },
-    "StructureDefinition/ncdhc-observation-fetus-presentation": {
-      "base": "StructureDefinition-ncdhc-observation-fetus-presentation.html",
-      "defns": "StructureDefinition-ncdhc-observation-fetus-presentation-definitions.html"
-    },
-    "StructureDefinition/ncdhc-observation-fetus-position": {
-      "base": "StructureDefinition-ncdhc-observation-fetus-position.html",
-      "defns": "StructureDefinition-ncdhc-observation-fetus-position-definitions.html"
-    },
+    "StructureDefinition/ncdhc-observation-fetus-arrangement": {
+      "base": "StructureDefinition-ncdhc-observation-fetus-arrangement.html",
+      "defns": "StructureDefinition-ncdhc-observation-fetus-arrangement-definitions.html"
+    },    
     "StructureDefinition/ncdhc-questionnaire-base": {
       "base": "StructureDefinition-ncdhc-questionnaire-base.html",
       "defns": "StructureDefinition-ncdhc-questionnaire-base-definitions.html"
@@ -757,6 +761,15 @@
     },
     "ValueSet/ncdhc-observation-interpretation-display-1": {
       "base": "ValueSet-ncdhc-observation-interpretation-display-1.html"
+    },
+    "ValueSet/ncdhc-quantity-of-liquor-1": {
+      "base": "ValueSet-ncdhc-quantity-of-liquor-1.html"
+    },
+    "ValueSet/ncdhc-arrangement-of-fetus-1": {
+      "base": "ValueSet-ncdhc-arrangement-of-fetus-1.html"
+    },
+    "ValueSet/ncdhc-first-fetal-movements-1": {
+      "base": "ValueSet-ncdhc-first-fetal-movements-1.html"
     },
     "CodeSystem/ncdhc-observation-interpretation-display-1": {
       "base": "CodeSystem-ncdhc-observation-interpretation-display-1.html"

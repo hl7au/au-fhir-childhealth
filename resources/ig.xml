@@ -1291,6 +1291,20 @@
 		<!-- CDHR Health Interactions - End -->
 
 		<!-- DPHR Health Interactions - Start -->
+		<!-- DPHR Encounter -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-documentreference-clinical-notes" />
+			</sourceReference>
+		</resource>
+		<!-- DPHR Clinical Notes -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-dphr-encounter" />
+			</sourceReference>
+		</resource>
 		<!-- Antenatal Visit Composition -->
 		<resource>
 			<example value="false" />
@@ -1308,15 +1322,15 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-fetus-presentation" />
+				<reference value="StructureDefinition/ncdhc-observation-fetus-arrangement" />
 			</sourceReference>
 		</resource>
-		<resource>
+		<!--<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-fetus-position" />
 			</sourceReference>
-		</resource>
+		</resource>-->
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -1627,6 +1641,25 @@
 			<example value="false" />
 			<sourceReference>
 				<reference value="CodeSystem/ncdhc-observation-interpretation-display-1" />
+			</sourceReference>
+		</resource>
+		<!-- DPHR Terminologies -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-quantity-of-liquor-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-arrangement-of-fetus-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-first-fetal-movements-1" />
 			</sourceReference>
 		</resource>
 
