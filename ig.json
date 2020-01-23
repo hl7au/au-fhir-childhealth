@@ -25,7 +25,8 @@
   "extraTemplates": [
     "mappings"
   ],
-  "do-transforms": "true",
+  "gen-examples" : false,
+  "do-transforms": true,
   "spreadsheets": [],
   "special-urls": [
     "urn:iso:std:iso:3166",
@@ -91,6 +92,38 @@
       "template-format": "ex-format.html"
     },
     "Organization": {
+      "template-base": "ex.html",
+      "template-format": "ex-format.html"
+    },
+    "Composition": {
+      "template-base": "ex.html",
+      "template-format": "ex-format.html"
+    },
+    "Encounter": {
+      "template-base": "ex.html",
+      "template-format": "ex-format.html"
+    },
+    "DocumentReference": {
+      "template-base": "ex.html",
+      "template-format": "ex-format.html"
+    },
+    "AuditEvent": {
+      "template-base": "ex.html",
+      "template-format": "ex-format.html"
+    },
+    "Consent": {
+      "template-base": "ex.html",
+      "template-format": "ex-format.html"
+    },
+    "MedicationStatement": {
+      "template-base": "ex.html",
+      "template-format": "ex-format.html"
+    },
+    "Questionnaire": {
+      "template-base": "ex.html",
+      "template-format": "ex-format.html"
+    },
+    "QuestionnaireResponse": {
       "template-base": "ex.html",
       "template-format": "ex-format.html"
     }
@@ -515,7 +548,7 @@
     "StructureDefinition/ncdhc-observation-fetus-arrangement": {
       "base": "StructureDefinition-ncdhc-observation-fetus-arrangement.html",
       "defns": "StructureDefinition-ncdhc-observation-fetus-arrangement-definitions.html"
-    },    
+    },
     "StructureDefinition/ncdhc-questionnaire-base": {
       "base": "StructureDefinition-ncdhc-questionnaire-base.html",
       "defns": "StructureDefinition-ncdhc-questionnaire-base-definitions.html"
