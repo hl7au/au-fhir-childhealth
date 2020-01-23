@@ -1031,7 +1031,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "249120008 ",
+              "code": "249120008",
               "display": "Onset of labour first stage"
             }
           ],
