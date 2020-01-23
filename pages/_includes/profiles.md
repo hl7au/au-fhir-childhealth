@@ -65,8 +65,7 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Deworming](StructureDefinition-ncdhc-observation-deworming.html) - Observation profile to record outcome of Deworming
 * [NCDHC Age Appropriate Immunisation completed as per schedule](StructureDefinition-ncdhc-observation-ageaprImmcomp.html) - Observation profile to record vaccination status as per schedule
 * [NCDHC Fetal Movement](StructureDefinition-ncdhc-observation-fetal-movement.html) - Observation profile used to record first movement, known as quickening, between weeks 14 and 26
-* [NCDHC Fetus Presentation](StructureDefinition-ncdhc-observation-fetus-presentation.html) - Observation profile to record Fetus Presentation
-* [NCDHC Fetus Position](StructureDefinition-ncdhc-observation-fetus-position.html) - Observation profile used to record orientation of the fetus in the womb
+* [NCDHC Arrangement Of Fetus](StructureDefinition-ncdhc-observation-fetus-arrangement.html) - Observation profile used to record the presentation, position or lie of the fetus
 * [NCDHC Fetus Liquor](StructureDefinition-ncdhc-observation-fetus-liquor.html) - Observation profile used to record amniotic fluid
 
 ### MedicationStatement Profiles
@@ -98,9 +97,15 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Health Check Assessment 3 Years view](StructureDefinition-ncdhc-composition-view-hca-3yr.html) - Consolidated view to represent Health Check Assessment performed during 3 years of Birth.
 * [NCDHC Health Check Assessment 4 Years view](StructureDefinition-ncdhc-composition-view-hca-4yr.html) - Consolidated view to represent Health Check Assessment performed during 4 years of Birth. 
 
-## Digital Pregnancy Health Record Profiles 
+
+## Digital Pregnancy Health Record Profiles
+
+### Clinical Notes Profile
+ * [NCDHC Progress Notes](StructureDefinition-ncdhc-documentreference-clinical-notes.html) - DocumentReference profile to represent progress notes
+
 ### FHIR Document Profiles 
 * [NCDHC Antenatal Record Collection Health Interaction](StructureDefinition-ncdhc-composition-antenatal-record.html) - Composition profile to collect Antenatal Record and associated details
+
 
 ## NCDHC Admin Profiles
 * [NCDHC Rep Registration](StructureDefinition-ncdhc-composition-rep-registration.html) - Composition profile to register representative
