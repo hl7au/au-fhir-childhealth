@@ -1059,6 +1059,10 @@
       "base": "StructureDefinition-ncdhc-observation-bloodspot-screen.html",
       "defns": "StructureDefinition-ncdhc-observation-bloodspot-screen-definitions.html"
     },
+    "Observation/ncdhc-observation-bloodspot-screen-normal-example": {
+      "source": "ncdhc-observation-bloodspot-screen-normal-example.json",
+      "base": "ncdhc-observation-bloodspot-screen-normal-example.html"
+    },
     "StructureDefinition/ncdhc-observation-symphyseal-fundal-height": {
       "base": "StructureDefinition-ncdhc-observation-symphyseal-fundal-height.html",
       "defns": "StructureDefinition-ncdhc-observation-symphyseal-fundal-height-definitions.html"
