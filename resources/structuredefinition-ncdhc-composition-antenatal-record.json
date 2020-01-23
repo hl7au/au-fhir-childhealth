@@ -16,6 +16,19 @@
   "differential": {
     "element": [
       {
+        "id": "Composition.encounter",
+        "path": "Composition.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-encounter",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Composition.section",
         "extension": [
           {
@@ -28,7 +41,7 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "code.coding"
+              "path": "code"
             }
           ],
           "rules": "closed"
@@ -36,7 +49,7 @@
         "min": 1
       },
       {
-        "id": "Composition.section:MaternalHealthCheck",
+        "id": "Composition.section:MaternalHealthChecks",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
@@ -44,12 +57,12 @@
           }
         ],
         "path": "Composition.section",
-        "sliceName": "MaternalHealthCheck",
-        "short": "Section for Maternal Health Check",
+        "sliceName": "MaternalHealthChecks",
+        "short": "Maternal Health Checks",
         "max": "1"
       },
       {
-        "id": "Composition.section:MaternalHealthCheck.code",
+        "id": "Composition.section:MaternalHealthChecks.code",
         "path": "Composition.section.code",
         "min": 1,
         "patternCodeableConcept": {
@@ -62,7 +75,7 @@
         }
       },
       {
-        "id": "Composition.section:MaternalHealthCheck.entry",
+        "id": "Composition.section:MaternalHealthChecks.entry",
         "path": "Composition.section.entry",
         "slicing": {
           "discriminator": [
@@ -84,7 +97,7 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthCheck.entry:vitalSigns",
+        "id": "Composition.section:MaternalHealthChecks.entry:vitalSigns",
         "path": "Composition.section.entry",
         "sliceName": "vitalSigns",
         "type": [
@@ -119,7 +132,7 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthCheck.entry:gestation",
+        "id": "Composition.section:MaternalHealthChecks.entry:gestation",
         "path": "Composition.section.entry",
         "sliceName": "gestation",
         "max": "1",
@@ -134,7 +147,7 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthCheck.entry:otherHealthConditions",
+        "id": "Composition.section:MaternalHealthChecks.entry:otherHealthConditions",
         "path": "Composition.section.entry",
         "sliceName": "otherHealthConditions",
         "type": [
@@ -162,7 +175,7 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthCheck.entry:briefIntervention",
+        "id": "Composition.section:MaternalHealthChecks.entry:briefIntervention",
         "path": "Composition.section.entry",
         "sliceName": "briefIntervention",
         "type": [
@@ -199,7 +212,7 @@
         ],
         "path": "Composition.section",
         "sliceName": "FetalHealthCheck",
-        "short": "Section For Fetal Health Check"
+        "short": "Fetal Health Checks"
       },
       {
         "id": "Composition.section:FetalHealthCheck.code",
@@ -248,28 +261,7 @@
           },
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fetus-presentation",
-            "aggregation": [
-              "bundled"
-            ]
-          },
-          {
-            "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fifths-above-brim",
-            "aggregation": [
-              "bundled"
-            ]
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fetus-position",
-            "aggregation": [
-              "bundled"
-            ]
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fetus-lie",
             "aggregation": [
               "bundled"
             ]
@@ -295,6 +287,22 @@
         ]
       },
       {
+        "id": "Composition.section:FetalHealthCheck.entry:ArrangementOfFetus",
+        "path": "Composition.section.entry",
+        "sliceName": "ArrangementOfFetus",
+        "short": "The presentation, position or lie of the fetus",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fetus-arrangement",
+            "aggregation": [
+              "bundled"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Composition.section:ProgressNotes",
         "extension": [
           {
@@ -304,7 +312,8 @@
         ],
         "path": "Composition.section",
         "sliceName": "ProgressNotes",
-        "short": "Section For Progress Notes",
+        "short": "Progress notes / Comments",
+        "comment": "Refer to the https://build.fhir.org/ig/HL7/US-Core-R4/clinical-notes-guidance.html for more details.\r\n\r\n\"All of these clinical notes SHALL be exposed via DocumentReference. This requirement is necessary because some systems scan lab reports and don’t store them in the DiagnosticReport resource. See FHIR Resources to Exchange Clinical Notes for more detail.\"\r\n\r\nIn NCDHC, we are using Encounter instance (the same encoutner instance as referred from the Composition in context) referenced from the DocumentReference to record the following details:\r\n1. Registered interpreter present during the examination\r\n2. Next Visit Date and Time",
         "max": "1"
       },
       {
@@ -321,12 +330,24 @@
         }
       },
       {
+        "id": "Composition.section:ProgressNotes.text",
+        "path": "Composition.section.text",
+        "short": "Progress notes / Comments goes here",
+        "comment": "Notes and comments on the progress of the pregnancy",
+        "min": 1
+      },
+      {
         "id": "Composition.section:ProgressNotes.entry",
         "path": "Composition.section.entry",
+        "short": "Progress notes / Comments",
+        "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-documentreference-progress-notes"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-documentreference-clinical-notes",
+            "aggregation": [
+              "bundled"
+            ]
           }
         ]
       }
