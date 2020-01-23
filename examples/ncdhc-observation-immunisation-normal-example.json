@@ -18,7 +18,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "408864009",
-        "display": "Vaccination status (observable entity)"
+        "display": "Vaccination status"
       }
     ]
   },
@@ -51,7 +51,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "171258008",
-        "display": "Up-to-date with immunizations"
+        "display": "Up-to-date with immunisations"
       }
     ]
   },

@@ -16,7 +16,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "249120008",
-        "display": "Onset of labor first stage"
+        "display": "Onset of labour first stage"
       }
     ],
     "text": "Onset of labor first stage"
@@ -40,7 +40,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "112070001",
-        "display": "Onset of labor induced"
+        "display": "Onset of labour induced"
       }
     ]
   }

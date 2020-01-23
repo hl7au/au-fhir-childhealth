@@ -60,7 +60,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "1368901000168106",
-            "display": "Visual acuity tested at 3 meters"
+            "display": "Visual acuity tested at 3 metres"
           }
         ]
       },
@@ -74,7 +74,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "1368911000168109",
-            "display": "Visual acuity tested at 6 meters"
+            "display": "Visual acuity tested at 6 metres"
           }
         ]
       },
