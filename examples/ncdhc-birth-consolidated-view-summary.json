@@ -530,7 +530,7 @@
                 "valueCoding": {
                   "system": "http://snomed.info/sct",
                   "code": "84457005",
-                  "display": "Spontaneous onset of labor"
+                  "display": "Spontaneous onset of labour"
                 }
               }
             ]

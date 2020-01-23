@@ -1354,7 +1354,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "271026005",
-              "display": "Hemoglobin estimation level"
+              "display": "Haemoglobin level estimation"
             }
           ],
           "text": "Haemoglobin level estimation"

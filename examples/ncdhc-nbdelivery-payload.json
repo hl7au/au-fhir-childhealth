@@ -1031,11 +1031,11 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "249120008",
-              "display": "Onset of labor first stage"
+              "code": "249120008 ",
+              "display": "Onset of labour first stage"
             }
           ],
-          "text": "Onset of labor first stage"
+          "text": "Onset of labour first stage"
         },
         "subject": {
           "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
@@ -1057,7 +1057,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "112070001",
-              "display": "Onset of labor induced"
+              "display": "Onset of labour induced"
             }
           ]
         }
@@ -1084,10 +1084,10 @@
             {
               "system": "http://snomed.info/sct",
               "code": "199745000",
-              "display": "Complication occurring during labor and delivery"
+              "display": "Complication occurring during labour and delivery"
             }
           ],
-          "text": "Complication occurring during labor and delivery"
+          "text": "Complication occurring during labour and delivery"
         },
         "subject": {
           "reference": "urn:uuid:dd78393f-37ca-4738-81d6-d9595b2e5d0f",
