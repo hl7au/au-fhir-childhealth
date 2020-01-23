@@ -45,7 +45,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-baby"
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-patient"
           }
         ]
       },
