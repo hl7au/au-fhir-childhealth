@@ -24,11 +24,6 @@
         "short": "NCDHC Reflexes Test Observation Profile"
       },
       {
-        "id": "Observation.category",
-        "path": "Observation.category",
-        "min": 1
-      },
-      {
         "id": "Observation.code",
         "path": "Observation.code",
         "mustSupport": true
