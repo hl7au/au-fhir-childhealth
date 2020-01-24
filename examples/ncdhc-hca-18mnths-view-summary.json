@@ -49,7 +49,7 @@
         "date": "2018-12-24T12:30:02Z",
         "author": [
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Device/3db74777-fd3d-4d3b-92ec-d405977a11a5",
+            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Device/ncdhc-device-child-data-hub-example",
             "display": "Best Practice GP"
           }
         ],
@@ -249,10 +249,10 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Device/3db74777-fd3d-4d3b-92ec-d405977a11a5",
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Device/ncdhc-device-child-data-hub-example",
       "resource": {
         "resourceType": "Device",
-        "id": "3db74777-fd3d-4d3b-92ec-d405977a11a5",
+        "id": "ncdhc-device-child-data-hub-example",
         "meta": {
           "profile": [
             "http://hl7.org.au/fhir/StructureDefinition/au-device"
