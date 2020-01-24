@@ -19,7 +19,7 @@ between systems collecting child health information.It is intended that these sy
 
      - a Clinical Health Interaction with a health-care provider e.g. a child’s health assessment with a GP or community nurse
 
-     - a Consumer Health Interaction allows the consumer to input or view information through the consumer application e.g. height information. For the      CDHR, the consumer who has access to this information is the authorised representative of the child (e.g. parent/guardian) or a nominated             representative granted access to the record by the authorised representative (e.g. grandparent). 
+     - a Consumer Health Interaction allows the consumer to input or view information through the consumer application e.g. height information. For the CDHR,the consumer who has access to this information is the authorised representative of the child (e.g. parent/guardian) or a nominated representative granted access to the record by the authorised representative (e.g. grandparent). 
 
      - a Technical Health Interaction e.g. a notification sent to a consumer e.g. a notification advising of a missed immunisation 
 
@@ -34,51 +34,43 @@ This document is a working specification that is expected to be implemented and 
 
 **CDHR Release 1.0.0** scope is limited to following health interactions:
 
->**Consent to Participate**   
->This is an Administrative Health Interaction.It creates a consent record that indicates the consumers agreement to participate in the Child Digital Health Record initiative.
+**Consent to Participate**   
+This is an Administrative Health Interaction.It creates a consent record that indicates the consumers agreement to participate in the Child Digital Health Record initiative.
 
 
-
->**Consumer Audit View**  
->This is an Administrative Health Interaction.It lets a consumer view an audit trail of consumers(representatives), , providers and organisations who have accessed their child health record, including the data sets viewed.
-
+**Consumer Audit View**  
+This is an Administrative Health Interaction.It lets a consumer view an audit trail of consumers(representatives), , providers and organisations who have accessed their child health record, including the data sets viewed.
 
 
->**Child and Representative Registration**   
->This an Administrative Health Interaction.It creates a registration record for the child or representative in the CDHR system.
+**Child and Representative Registration**   
+This an Administrative Health Interaction.It creates a registration record for the child or representative in the CDHR system.
 
 
-
->**Health Check Assessment**    
->This is a Clinical Health Interaction.It captures information related to health checks, screening or other health assessments which are conducted across Australia based on each jurisdictions' defined health check schedule.
+**Health Check Assessment**    
+This is a Clinical Health Interaction.It captures information related to health checks, screening or other health assessments which are conducted across Australia based on each jurisdictions' defined health check schedule.
 
 	 
->**Newborn Delivery**  
->This is a Clinical Health Interaction.It records all the identifying and clinical health information of a newbirth in the system. This interaction forms the basis of the child’s longitudinal health record.
+**Newborn Delivery**  
+This is a Clinical Health Interaction.It records all the identifying and clinical health information of a newbirth in the system. This interaction forms the basis of the child’s longitudinal health record.
 
 
->**Withdrawal of Consent to Participate**    
->This is an Administrative Health Interaction.It records a consumer's consent withdrawal to be part of the longitudinal child health record program.
+**Withdrawal of Consent to Participate**    
+This is an Administrative Health Interaction.It records a consumer's consent withdrawal to be part of the longitudinal child health record program.
 
 
-
->**View Longitudinal Record**   
->This is an Administrative Health Interaction.It lets a clinician or consumer view a child's longitudinal health record in context of the child's clinical record or via the consumer app.
-
+**View Longitudinal Record**   
+This is an Administrative Health Interaction.It lets a clinician or consumer view a child's longitudinal health record in context of the child's clinical record or via the consumer app.
 
 
->**Consent Check**    
->This an Administrative Health Interaction.Prior to the creation of the Longitudinal Health record and during an attempt to access or view the Longitudinal Health record,
+**Consent Check**    
+This an Administrative Health Interaction.Prior to the creation of the Longitudinal Health record and during an attempt to access or view the Longitudinal Health record,
  a consent check to ensure the consent is current and active.
-
-
 
 
 For detailed description and complete list of profiles with relevant samples,refer [NCDHC Profiles]
 
 
-
-More details on the Australian Child Health Working Group are available here: https://confluence.hl7australia.com/display/CHWG/Child+Health+Working+Group
+More details on the Australian Child Health Working Group are available here: [Child Health Working Group](https://confluence.hl7australia.com/display/CHWG/Child+Health+Working+Group)
 
 ## Usage
 This document is a working specification that may be directly implemented by FHIR®© system producers.

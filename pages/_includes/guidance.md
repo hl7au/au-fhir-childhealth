@@ -18,7 +18,13 @@ The following references are recommended to gain a better understanding of FHIR:
 
 
 ## NCDHC FHIR Profiling Approach  
-CDHR profiles leverages [HL7 Australian Profiles](http://hl7.org.au/fhir/base/aubase1.1/profiles.html) wherever applicable.Its based on [FHIR, Release 3 (STU)](http://hl7.org/fhir/STU3/).
+
+NCDHC profiling approach :  
+* Adopts [FHIR, Release 3 (STU)](http://hl7.org/fhir/STU3/) as the standard for implementation. 
+
+* Inherits the [HL7 Australian Profiles](http://hl7.org.au/fhir/base/aubase1.1/profiles.html) and standards wherever possible. However there are occasions where NCDHC profiles are derived directly from the [HL7 International profiles](http://hl7.org/fhir/STU3/resourcelist.html).
+
+* Consults with other national programs including [AU Base Profiles](http://www.hl7.org/fhir/us/core/), Digital Agency Profiles and Terminologies and AU [Argonaut Profiles](http://build.fhir.org/ig/hl7au/argonaut-au/profiles.html). 
 
 ![NCHDC FHIR Profiling](assets/images/cdhrFHIRProfiling.png)
 
@@ -70,14 +76,36 @@ Readers of this implementation guide are encouraged to actively participate in t
     <th>Reference</th>
   </tr>
   <tr>
-    <td>Invariants may not constrain as intended</td>
+    <td>Use of 'pattern' in NCDHC Profiles</td>
     <td>
-        <p>Currently the FHIR Validator (which is used by IG Publisher) does not fully support all constraints defined in the FHIR specification. For example invariants using conformsTo() have not been able to be confirmed and do not reject resources that are expected to fail.</p>
+        <p>NCDHC team consulted with HL7 FHIR Community and as per the recommendations, NCDHC adopted pattern based slicing over fixed code slice</p>
     </td>
-    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179177-conformance">conformance</a> stream</td>
+    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Fixed.20Code.20vs.20Pattern">Fixed vs Pattern</a> stream</td>
   </tr>  
  </tbody>
 </table> 
+
+## Open Issues and Decisions NCDHC Profile Implementation
+
+The table below describes the open issues and decisions in implementing the profiling for the described usage scenarios.
+
+
+<table border="1" cellpadding="1" valign="middle">
+<tbody>
+  <tr bgcolor="#DCDCDC">
+    <th>Summary</th>
+    <th>Description</th>
+    <th>Reference (if any)</th>
+  </tr>
+  <tr>
+    <td>Issues in MedicationStatement Vitamin K Profile</td>
+    <td>
+        <p>The IG Publisher reported error in NCDHC Vitamin K profiles. NCDHC team is working with HL7 Australia and FHIR community to fix this issue.</p>
+    </td>
+    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179173-australia/topic/Error.20with.20MedicationStatement"></a> stream</td>
+  </tr>  
+ </tbody>
+</table>
 
 The following resources are available to raise questions or issues relating to FHIR and FHIR tooling:
 * [FHIR Chat Channel Zulip](https://chat.fhir.org/)
@@ -93,7 +121,7 @@ The content of this implementation guide is a set of FHIR [StructureDefinition](
 
 This implementation guide includes FHIR profiles that are a set of constraints and/or extensions to FHIR base resources or a data types in the format of a StructureDefinition resource. A StructureDefinition describes a structure - a set of data element definitions, and their associated rules of usage – and is hereafter referred to as a ‘profile’ or an ‘extension’.
 
-A profile or extension is identified by its canonical URL e.g. *http://hl7.org.au/fhir/ch/v1/StructureDefinition/composition-es-1*. These canonical URLs are unique to each profile or extension. When valued in an instance, the URL signals the imposition of a set of defined constraints. The URL value provides a globally unique identifier for the profile or extension in question and in the case of a profile or extension described in this implementation guide the major version number is identified by the final digit of the URL.
+A profile or extension is identified by its canonical URL e.g. *http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-view-hca-14wks*. These canonical URLs are unique to each profile or extension. When valued in an instance, the URL signals the imposition of a set of defined constraints. The URL value provides a globally unique identifier for the profile or extension in question and in the case of a profile or extension described in this implementation guide the major version number is identified by the final digit of the URL.
 
 ### Must Support
 A must support flag, when present in this implementation guide, is displayed as letter “S” with red background in the Flag column of the Differential Table and Snapshot Table of a profile or extension, as such <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>.
