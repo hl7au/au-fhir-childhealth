@@ -49,8 +49,8 @@
         "date": "2018-12-24T12:30:02Z",
         "author": [
           {
-            "reference": "Device/3db74777-fd3d-4d3b-92ec-d405977a11a7",
-            "display": "Best Practice GP"
+            "reference": "Device/3db74777-fd3d-4d3b-92ec-d405977a11a5",
+            "display": "Child Data Hub"
           }
         ],
         "title": "Health Check Schedule",
@@ -249,36 +249,10 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Device/3db74777-fd3d-4d3b-92ec-d405977a11a7",
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Device/3db74777-fd3d-4d3b-92ec-d405977a11a5",
       "resource": {
         "resourceType": "Device",
-        "id": "3db74777-fd3d-4d3b-92ec-d405977a11a7",
-        "type": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "86184003",
-              "display": "Electrocardiographic monitor and recorder"
-            }
-          ],
-          "text": "ECG"
-        },
-        "identifier": [
-          {
-            "type": {
-              "coding": [
-                {
-                  "system": "http://hl7.org.au/fhir/v2/0203",
-                  "code": "NDI",
-                  "display": "National Device Identifier"
-                }
-              ],
-              "text": "PAI-D"
-            },
-            "system": "http://ns.electronichealth.net.au/id/pcehr/paid/1.0",
-            "value": "8003640003999995"
-          }
-        ],
+        "id": "3db74777-fd3d-4d3b-92ec-d405977a11a5",
         "meta": {
           "profile": [
             "http://hl7.org.au/fhir/StructureDefinition/au-device"
@@ -286,20 +260,10 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">GP Best Practice</div>"
-        },
-        "udi": {
-          "deviceIdentifier": "00844588003288",
-          "name": "BP GP System"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Child Data Hub</div>"
         },
         "version": "v1.0.0",
-        "status": "active",
-        "contact": [
-          {
-            "system": "phone",
-            "value": "0255554352"
-          }
-        ]
+        "status": "active"
       }
     },
     {
