@@ -476,6 +476,12 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
+				<reference value="Device/ncdhc-device-child-data-hub-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
 				<reference value="RelatedPerson/ncdhc-relatedoersib-registration-self-example" />
 			</sourceReference>
 		</resource>
