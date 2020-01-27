@@ -560,17 +560,7 @@
           ],
           "rules": "closed"
         },
-        "short": "Section to represent Maternal Morbidity details which includes Birth Complications and Pregnancy Complications.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-birth-complication"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-pregnancy-complication"
-          }
-        ]
+        "short": "Section to represent Maternal Morbidity details which includes Birth Complications and Pregnancy Complications.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided."
       },
       {
         "id": "Composition.section:maternalMorbidity.entry:BirthComplication",
@@ -644,17 +634,7 @@
           "rules": "closed"
         },
         "short": "Section to represent labour and delivery details which includes  capturing details on labour induced and method of delivery.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
-        "max": "2",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-method-of-delivery"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-labour-induced"
-          }
-        ]
+        "max": "2"
       },
       {
         "id": "Composition.section:labourAndDelivery.entry:MethodOfDelivery",

@@ -8,7 +8,7 @@
   "status": "draft",
   "date": "2019-03-01",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "description": "Define a bsae profile for NCDHC Observation",
+  "description": "Base profile for NCDHC Observation",
   "purpose": "To define NCDHC base profile",
   "fhirVersion": "3.0.1",
   "kind": "resource",
