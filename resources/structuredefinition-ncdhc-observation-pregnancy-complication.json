@@ -36,7 +36,7 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "short": "Code to represent Pregency Complications noted",
+        "short": "Code to represent Pregnancy Complications noted",
         "mustSupport": true
       },
       {

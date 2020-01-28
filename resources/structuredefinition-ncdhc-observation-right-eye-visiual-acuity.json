@@ -33,7 +33,6 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "short": "Bloospot Screen code",
         "mustSupport": true
       },
       {

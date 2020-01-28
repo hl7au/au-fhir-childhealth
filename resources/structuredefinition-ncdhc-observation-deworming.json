@@ -31,11 +31,6 @@
         }
       },
       {
-        "id": "Observation.code",
-        "path": "Observation.code",
-        "short": "Bloospot Screen code"
-      },
-      {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
         "slicing": {

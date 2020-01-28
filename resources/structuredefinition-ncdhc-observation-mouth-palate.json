@@ -33,7 +33,6 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "short": "Ears Exam code",
         "mustSupport": true
       },
       {
