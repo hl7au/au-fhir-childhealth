@@ -143,7 +143,7 @@ The table below describes the open issues and decisions in implementing the prof
 </table>
 
 The following resources are available to raise questions or issues relating to FHIR and FHIR tooling:
-* [FHIR Chat Channel Zulip](https://chat.fhir.org/)
+* [NCDHC FHIR Chat Channel Zulip](https://chat.fhir.org/#narrow/stream/179284-australia-child-health)
 * [FHIR Community Forum](http://community.fhir.org/)
 * [StackOverflow](https://stackoverflow.com/questions/tagged/hl7_fhir)
 * [HL7 Jira Issues](https://jira.hl7.org/secure/Dashboard.jspa)
