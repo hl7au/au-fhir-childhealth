@@ -18,8 +18,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Each Observation must have:**
 
 1.  a status  
-1.  a LOINC and SNOMED code (indicating what was recorded)
-1.  a subject (Patient)
+1.  a SNOMED code (indicating what was recorded)
+1.  a subject ([Patient])
 1.  a time (indicating when the details were recorded)
 1.	a performer (detailing who has recorded the details)
     -   Note: A reason needs to be supplied in-case there is no numeric result value.
@@ -30,3 +30,5 @@ To be added
 [Observation]: http://hl7.org/fhir/observation.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
 [General Guidance Section]: definitions.html
+
+[Patient]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby.html

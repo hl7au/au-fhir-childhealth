@@ -23,7 +23,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 1.  a status  
 1.  a LOINC and SNOMED code (indicating what was measured and is taken from the “LOINC” & "SNOMED CT" codes)
-1.  a subject (Patient)
+1.  a subject ([Patient])
 1.  a time (indicating when the details were taken)
 1.	a performer (detailing who has recorded the details)
 1.  a numeric result value and standard UCUM unit (applicable units are defined in the ValueSet: http://hl7.org/fhir/ValueSet/ucum-bodylength)
@@ -36,3 +36,4 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 [Vitalsign]: http://hl7.org/fhir/STU3/observation-vitalsigns.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
 [General Guidance Section]: definitions.html
+[Patient]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby.html

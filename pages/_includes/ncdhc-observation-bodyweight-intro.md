@@ -19,7 +19,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 1.  a status  
 1.  a SNOMED code (indicating what was recorded)
-1.  a subject (Patient)
+1.  a subject ([Patient])
 1.  a time (indicating when the details were recorded)
 1.	a performer (detailing who has recorded the details)
 1.  a numeric result value and standard UCUM unit.
@@ -35,3 +35,5 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 [Observation]: http://hl7.org/fhir/observation.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
 [General Guidance Section]: definitions.html
+
+[Patient]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby.html

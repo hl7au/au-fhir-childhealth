@@ -6,9 +6,12 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Each Observation must have:**
 
 1.  a status  
-1.  a LOINC and SNOMED code (indicating what was measured and is taken from the “LOINC” &  "SNOMED CT" codes )
-1.  a subject (Patient)
+1.  a SNOMED code (indicating what was measured)
+1.  a subject ([Patient])
 1.  a time (indicating when the details were taken)
 1.	a performer (detailing who has recorded the details)
 
 *Refer to the Base Profile: [NCDHC Observation Base Profile](http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-base.html) for base rules that are applied in this profile.	
+
+
+[Patient]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby.html
