@@ -84,7 +84,7 @@
         "id": "Observation.effectiveDateTime:effectiveDateTime",
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
-        "short": "Date Bloodspot Screen Test performed"
+        "short": "Date when Right Eye Visual Acuity assessment was performed"
       },
       {
         "id": "Observation.performer",

@@ -80,6 +80,12 @@
         "short": "Reference to the Baby Patient"
       },
       {
+        "id": "Observation.effectiveDateTime:effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "sliceName": "effectiveDateTime",
+        "short": "Date when Anus assessment was performed"
+      },
+      {
         "id": "Observation.performer",
         "path": "Observation.performer",
         "short": "Person who is clinically responsible for the undetaking of the exam"

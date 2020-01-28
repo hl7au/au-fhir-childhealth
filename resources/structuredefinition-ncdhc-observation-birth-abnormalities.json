@@ -61,21 +61,8 @@
         "id": "Observation.effectiveDateTime:effectiveDateTime",
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
+        "short": "Date when Birth Abnormalities were recorded",
         "min": 1
-      },
-      {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
-          }
-        ]
       },
       {
         "id": "Observation.value[x]",

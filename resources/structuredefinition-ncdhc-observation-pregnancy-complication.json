@@ -85,6 +85,7 @@
         "id": "Observation.effectiveDateTime:effectiveDateTime",
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
+        "short": "Date when Pregnancy Complications were recorded",
         "min": 1
       },
       {

@@ -53,22 +53,12 @@
         "id": "Observation.effectiveDateTime:effectiveDateTime",
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
-        "short": "Date Bloodspot Screen Test performed"
+        "short": "Date when Fontanelles Sutures assessment was performed"
       },
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "short": "Person who is clinically responsible for the undetaking of the exam",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
-          }
-        ]
+        "short": "Person who is clinically responsible for the undetaking of the exam"
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept",

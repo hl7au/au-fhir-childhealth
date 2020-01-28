@@ -81,7 +81,7 @@
     <element id="Observation.effective[x]:effectiveDateTime">
       <path value="Observation.effectiveDateTime" />
       <sliceName value="effectiveDateTime" />
-      <short value="Date Bloodspot Screen Test performed" />
+      <short value="Date when Musculo Skeletal assessment was performed" />
       <type>
         <code value="dateTime" />
       </type>

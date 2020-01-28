@@ -86,6 +86,7 @@
         "id": "Observation.effectiveDateTime:effectiveDateTime",
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
+        "short": "Date when Estimated Gestation was recorded",
         "min": 1
       },
       {

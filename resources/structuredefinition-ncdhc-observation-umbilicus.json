@@ -83,7 +83,7 @@
         "id": "Observation.effectiveDateTime:effectiveDateTime",
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
-        "short": "Date Bloodspot Screen Test performed"
+        "short": "Date when Umbilicus assessment was performed"
       },
       {
         "id": "Observation.performer",
