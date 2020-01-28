@@ -80,8 +80,43 @@ Readers of this implementation guide are encouraged to actively participate in t
     <td>
         <p>NCDHC team consulted with HL7 FHIR Community and as per the recommendations, NCDHC adopted pattern based slicing over fixed code slice</p>
     </td>
-    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Fixed.20Code.20vs.20Pattern">Fixed vs Pattern</a> stream</td>
-  </tr>  
+    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Fixed.20Code.20vs.20Pattern">Fixed vs Pattern</a> discussion</td>
+  </tr>
+  <tr>
+    <td>SMART-On-FHIR Launch</td>
+    <td>
+        <p>NCDHC team consulted with HL7 FHIR Community to understand and model the Person, Patient and RelatedPerson based model driven with Consent</p>
+    </td>
+    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179170-smart/topic/Launch.20SMARTly">Launch SMARTly</a> discussion</td>
+  </tr> 
+  <tr>
+    <td>SMART Backend Model</td>
+    <td>
+        <p>NCDHC team consulted with HL7 FHIR Community to determin which SMART-On-FHIR model to use</p>
+    </td>
+    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179170-smart/topic/Smart.20Backend.20Auth.20Model">SMART Backend Model</a> discussion</td>
+  </tr>
+  <tr>
+    <td>Immutable FHIR document</td>
+    <td>
+        <p>NCDHC team consulted with HL7 FHIR Community model Immutable FHIR document and what it means</p>
+    </td>
+    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Immutable.20FHIR.20Document">Immutable FHIR Document</a> discussion</td>
+  </tr>
+  <tr>
+    <td>Slicing Composition Entry and use of profile=resolve()</td>
+    <td>
+        <p>NCDHC team consulted with HL7 FHIR Community to use Composition Section entry slicing and how to use profile=resolve() as Discriminator </p>
+    </td>
+    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Slicing.20Composition.20Entries">Slicing Composition Entries</a> discussion</td>
+  </tr>
+  <tr>
+    <td>FHIR Document Search</td>
+    <td>
+        <p>NCDHC team consulted with HL7 FHIR Community to get suggestion on FHIR document search and inclusion of Provenance</p>
+    </td>
+    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179166-implementers/topic/FHIR.20document.20search.20and.20inclusion.20of.20Provenance">FHIR document search and inclusion of Provenance</a> discussion</td>
+  </tr>     
  </tbody>
 </table> 
 
@@ -102,7 +137,7 @@ The table below describes the open issues and decisions in implementing the prof
     <td>
         <p>The IG Publisher reported error in NCDHC Vitamin K profiles. NCDHC team is working with HL7 Australia and FHIR community to fix this issue.</p>
     </td>
-    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179173-australia/topic/Error.20with.20MedicationStatement"></a> stream</td>
+    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179173-australia/topic/Error.20with.20MedicationStatement"></a> discussions</td>
   </tr>  
  </tbody>
 </table>
@@ -111,7 +146,7 @@ The following resources are available to raise questions or issues relating to F
 * [FHIR Chat Channel Zulip](https://chat.fhir.org/)
 * [FHIR Community Forum](http://community.fhir.org/)
 * [StackOverflow](https://stackoverflow.com/questions/tagged/hl7_fhir)
-* [gForge](https://gforge.hl7.org/gf/project/fhir/)
+* [HL7 Jira Issues](https://jira.hl7.org/secure/Dashboard.jspa)
 
 
 ## Conformance conventions
