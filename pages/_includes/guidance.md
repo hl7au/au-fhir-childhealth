@@ -8,7 +8,7 @@ A FHIR resource may be supplied in one of the following formats: [XML](http://hl
 
 This implementation guide describes FHIR resources built following the rules described in [FHIR, Release 3 (STU)](http://hl7.org/fhir/STU3/).
 
-The FHIR specification is evolving; the current FHIR specification is available at [http://hl7.org/fhir](http://hl7.org/fhir). A [Publication (Version) History](http://www.hl7.org/fhir/directory.cfml) of past and current working versions, including [FHIR Release 4 (First Normative content)](http://hl7.org/fhir/index.html) is available.
+The FHIR specification is evolving; the current FHIR specification is available at [HL7 FHIR](http://hl7.org/fhir). A [Publication (Version) History](http://www.hl7.org/fhir/directory.cfml) of past and current working versions, including [FHIR Release 4 (First Normative content)](http://hl7.org/fhir/index.html) is available.
 
 
 The following references are recommended to gain a better understanding of FHIR:
@@ -24,7 +24,7 @@ NCDHC profiling approach :
 
 * Inherits the [HL7 Australian Profiles](http://hl7.org.au/fhir/base/aubase1.1/profiles.html) and standards wherever possible. However there are occasions where NCDHC profiles are derived directly from the [HL7 International profiles](http://hl7.org/fhir/STU3/resourcelist.html).
 
-* Consults with other national programs including [AU Base Profiles](http://www.hl7.org/fhir/us/core/), Digital Agency Profiles and Terminologies and AU [Argonaut Profiles](http://build.fhir.org/ig/hl7au/argonaut-au/profiles.html). 
+* Consults with other national programs including [AU Base Profiles](http://hl7.org.au/fhir/base/aubase1.1/profiles.html), Digital Agency Profiles and Terminologies and AU [Argonaut Profiles](http://build.fhir.org/ig/hl7au/argonaut-au/profiles.html). 
 
 ![NCHDC FHIR Profiling](assets/images/cdhrFHIRProfiling.png)
 
@@ -35,7 +35,7 @@ NCDHC profiling approach :
 Each profile or extension (StructureDefinition) described by this implementation guide has a separate page that presents the normative definition of that profile or extension and informative content to support implementation.
 
 The content of each page is structured as follows:
-* Profile title followed by the profile status hyperlinked to FHIR [PublicationStatus](http://hl7.org/fhir/stu3/valueset-publication-status.html).
+* Profile title followed by the profile status hyperlinked to FHIR [Publication Status](http://hl7.org/fhir/stu3/valueset-publication-status.html).
 * Usage scenarios, if present, includes a short description of the example or expected usage scenarios for that profile that are supported by this implementation guide. Usage scenarios are only present if a profile is of the primary grouping resource for exchange purposes.
 * Implementation guidance includes guidance specific to the usage scenarios supported by this implementation guide. This content is informative; there may be valid reasons not to follow this guidance, but the full implications must be understood and carefully weighed before choosing a different course.
 * Formal Views of Profile Content includes the human readable view of the normative definition of the profile or extension.
@@ -120,7 +120,7 @@ Readers of this implementation guide are encouraged to actively participate in t
  </tbody>
 </table> 
 
-## Open Issues and Decisions NCDHC Profile Implementation
+## Open Issues and Decisions in NCDHC Profile Implementation
 
 The table below describes the open issues and decisions in implementing the profiling for the described usage scenarios.
 
@@ -137,7 +137,7 @@ The table below describes the open issues and decisions in implementing the prof
     <td>
         <p>The IG Publisher reported error in NCDHC Vitamin K profiles. NCDHC team is working with HL7 Australia and FHIR community to fix this issue.</p>
     </td>
-    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179173-australia/topic/Error.20with.20MedicationStatement"></a> discussions</td>
+    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179173-australia/topic/Error.20with.20MedicationStatement">Error with AU MedicationStatement</a>discussion</td>
   </tr>  
  </tbody>
 </table>
@@ -168,7 +168,7 @@ The conformance verbs used in this implementation guide are defined in [FHIR Con
 The terminology binding rules are defined in [Controlling the use of Coded Values](http://hl7.org/fhir/stu3/terminologies.html#binding). Terminology is specified in this implementation guide, 
 in some cases binding an element to a value set or binding to a single fixed code. For guidance on coding see [Using Codes in Resources](http://hl7.org/fhir/stu3/terminologies.html).
 
-A value set binding, if present in this specification, will be specified in the "Description & Constraints" column of a profile as the title of the value set (hyperlinked to its definition) followed by identification of the binding strength (hyperlinked to its definition), e.g. [Health Summary Non-Clinical Empty Reason](https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-1) ([required](http://hl7.org/fhir/stu3/terminologies.html#code)).
+A value set binding, if present in this specification, will be specified in the "Description & Constraints" column of a profile as the title of the value set (hyperlinked to its definition) followed by identification of the binding strength (hyperlinked to its definition), e.g. [NCDHC Health Interaction Type](http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet-ncdhc-hi-type-1.html) ([required](http://hl7.org/fhir/stu3/terminologies.html#code)).
 
 
 ### Cardinality
