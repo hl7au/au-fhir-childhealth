@@ -65,7 +65,8 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "max": "1"
       },
       {
         "id": "Observation.code.coding:birthHeadCircumferenceSNOMED-CT",
@@ -87,7 +88,8 @@
       {
         "id": "Observation.code.coding:birthHeadCircumferenceSNOMED-CT.code",
         "path": "Observation.code.coding.code",
-        "min": 1
+        "min": 1,
+        "fixedCode": "169876006"
       },
       {
         "id": "Observation.subject",
