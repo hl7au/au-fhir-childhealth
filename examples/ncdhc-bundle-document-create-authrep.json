@@ -3,7 +3,7 @@
   "id": "ncdhc-bundle-document-create-authrep",
   "identifier": {
     "system": "urn:ietf:rfc:3986",
-    "value": "urn:uuid:83c6b096-3038-4ed8-a3c4-7dc55a6869ce"
+    "value": "urn:uuid:e921a97f-eb7f-4af9-b4bb-7f67ea693544"
   },
   "type": "document",
   "entry": [
@@ -11,7 +11,7 @@
       "fullUrl": "urn:uuid:37700024-070c-4141-8109-9d9fa34dd24b",
       "resource": {
         "resourceType": "Composition",
-        "id": "33d63d08-6c53-4a8c-86e0-b2933472ec3b",
+        "id": "d2b4d038-bc5c-4b83-bca1-4cf82fec8d62",
         "meta": {
           "versionId": "1",
           "lastUpdated": "2019-11-05T00:00:00Z",
@@ -21,7 +21,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 33d63d08-6c53-4a8c-86e0-b2933472ec3b</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>type</b>: Register Representative </p><p><b>title</b>: Register Representative</p><p><b>confidentiality</b>: N</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: d2b4d038-bc5c-4b83-bca1-4cf82fec8d62</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>type</b>: Register Representative </p><p><b>title</b>: Register Representative</p><p><b>confidentiality</b>: N</p></div>"
         },
         "status": "final",
         "type": {
@@ -34,7 +34,7 @@
           ],
           "text": "Register Representative"
         },
-        "date": "2019-12-16T03:35:02Z",
+        "date": "2020-01-28T11:20:15Z",
         "author": [
           {
             "reference": "urn:uuid:3db74777-fd3d-4d3b-92ec-d405977a11a5",
@@ -46,7 +46,7 @@
         "attester": [
           {
             "mode": "professional",
-            "time": "2019-12-16T03:35:02Z",
+            "time": "2020-01-28T11:20:15Z",
             "party": {
               "reference": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
               "display": "NSW Health"
@@ -95,7 +95,7 @@
         ],
         "identifier": {
           "system": "urn:ietf:rfc:3986",
-          "value": "urn:uuid:33d63d08-6c53-4a8c-86e0-b2933472ec3b"
+          "value": "urn:uuid:d2b4d038-bc5c-4b83-bca1-4cf82fec8d62"
         },
         "subject": {
           "reference": "urn:uuid:eb78393f-37ca-4738-81d6-d9595b2e5d0f"
@@ -107,6 +107,7 @@
       "resource": {
         "resourceType": "Patient",
         "id": "eb78393f-37ca-4738-81d6-d9595b2e5d0f",
+        "active": true,
         "meta": {
           "versionId": "1",
           "lastUpdated": "2019-11-05T00:00:00Z",
@@ -126,7 +127,8 @@
         "resourceType": "RelatedPerson",
         "patient": {
           "reference": "urn:uuid:eb78393f-37ca-4738-81d6-d9595b2e5d0f"
-        }
+        },
+        "active": true
       }
     },
     {
@@ -135,7 +137,7 @@
         "resourceType": "Person",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Rosie Wagner Registered as Authorised Representative</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Deepthi Jagdish Registered as Authorised Representative</div>"
         },
         "meta": {
           "versionId": "1",
@@ -148,27 +150,27 @@
         "identifier": [
           {
             "system": "http://schemas.microsoft.com/identity/claims/objectidentifier",
-            "value": "c5e4915d-6c7a-4465-99dd-835257f65122"
+            "value": "7d1ccb5d-078a-4feb-b008-1be308c15d3b"
           }
         ],
         "name": [
           {
-            "text": "RosieWagner",
-            "family": "Wagner",
+            "text": "DeepthiJagdish",
+            "family": "Jagdish",
             "given": [
-              "Rosie"
+              "Deepthi"
             ]
           }
         ],
         "telecom": [
           {
             "system": "email",
-            "value": "rosie.wagner@gmail.com",
+            "value": "deepthi.halbhaviramesh@health.nsw.gov.au",
             "use": "home"
           },
           {
             "system": "phone",
-            "value": "405898112",
+            "value": "415224653",
             "use": "mobile"
           }
         ],
@@ -177,11 +179,11 @@
           {
             "use": "home",
             "line": [
-              "44 Kirkland Dr"
+              "Zenith Towers, Chatswood"
             ],
-            "city": "Chatswood",
+            "city": "Sydney",
             "state": "NSW",
-            "postalCode": "2025"
+            "postalCode": "2112"
           }
         ],
         "active": true
@@ -215,22 +217,6 @@
             "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
           ]
         },
-        "identifier": [
-          {
-            "type": {
-              "coding": [
-                {
-                  "system": "http://hl7.org.au/fhir/v2/0203",
-                  "code": "NOI",
-                  "display": "National Organisation Identifier"
-                }
-              ],
-              "text": "HPI-O"
-            },
-            "system": "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
-            "value": "8003621566684455"
-          }
-        ],
         "active": true,
         "name": "eHealth NSW"
       }
@@ -258,11 +244,11 @@
         "patient": {
           "reference": "urn:uuid:eb78393f-37ca-4738-81d6-d9595b2e5d0f"
         },
-        "dateTime": "2019-12-16T03:35:02Z",
+        "dateTime": "2020-01-28T11:20:15Z",
         "consentingParty": [
           {
             "reference": "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c",
-            "display": "Rosie Wagner"
+            "display": "Deepthi Jagdish"
           }
         ],
         "policyRule": "urn:uuid:44847642-b160-4e0b-9ce7-69611bf5b303",
@@ -286,7 +272,7 @@
             },
             "reference": {
               "reference": "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c",
-              "display": "Rosie Wagner"
+              "display": "Deepthi Jagdish"
             }
           }
         ]
@@ -322,11 +308,11 @@
         "patient": {
           "reference": "urn:uuid:eb78393f-37ca-4738-81d6-d9595b2e5d0f"
         },
-        "dateTime": "2019-12-16T03:35:02Z",
+        "dateTime": "2020-01-28T11:20:15Z",
         "consentingParty": [
           {
             "reference": "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c",
-            "display": "Rosie Wagner"
+            "display": "Deepthi Jagdish"
           }
         ],
         "policyRule": "urn:uuid:44847642-b160-4e0b-9ce7-69611bf5b303"
@@ -362,11 +348,11 @@
         "patient": {
           "reference": "urn:uuid:eb78393f-37ca-4738-81d6-d9595b2e5d0f"
         },
-        "dateTime": "2019-12-16T03:35:02Z",
+        "dateTime": "2020-01-28T11:20:15Z",
         "consentingParty": [
           {
             "reference": "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c",
-            "display": "RosieWagner"
+            "display": "DeepthiJagdish"
           }
         ],
         "policyRule": "urn:uuid:44847642-b160-4e0b-9ce7-69611bf5b303"
