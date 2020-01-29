@@ -92,28 +92,28 @@ Readers of this implementation guide are encouraged to actively participate in t
   <tr>
     <td>SMART Backend Model</td>
     <td>
-        <p>NCDHC team consulted with HL7 FHIR Community to determin which SMART-On-FHIR model to use</p>
+        <p>NCDHC team consulted with HL7 FHIR Community to determine which SMART-On-FHIR model to use. NCDHC Team is still working on this model. The approach is to make use of <a href="https://github.com/HL7/bulk-data/blob/master/spec/authorization/index.md">Smart-BackEnd Model</a></p>
     </td>
     <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179170-smart/topic/Smart.20Backend.20Auth.20Model">SMART Backend Model</a> discussion</td>
   </tr>
   <tr>
     <td>Immutable FHIR document</td>
     <td>
-        <p>NCDHC team consulted with HL7 FHIR Community model Immutable FHIR document and what it means</p>
+        <p>NCDHC team consulted with HL7 FHIR Community model Immutable FHIR document and what it means. NCDHC is storing a Binary representation of the FHIR document along with breaking the FHIR document and storing it as discrete resources. A corresponding DocumentReference is being created.</p>
     </td>
     <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Immutable.20FHIR.20Document">Immutable FHIR Document</a> discussion</td>
   </tr>
   <tr>
     <td>Slicing Composition Entry and use of profile=resolve()</td>
     <td>
-        <p>NCDHC team consulted with HL7 FHIR Community to use Composition Section entry slicing and how to use profile=resolve() as Discriminator </p>
+        <p>NCDHC team consulted with HL7 FHIR Community to use Composition Section entry slicing and how to use profile=resolve() as discriminator</p>
     </td>
     <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Slicing.20Composition.20Entries">Slicing Composition Entries</a> discussion</td>
   </tr>
   <tr>
     <td>FHIR Document Search</td>
     <td>
-        <p>NCDHC team consulted with HL7 FHIR Community to get suggestion on FHIR document search and inclusion of Provenance</p>
+        <p>NCDHC team consulted with HL7 FHIR Community to get suggestion on FHIR document search and inclusion of Provenance. NCDHC has modeled a new cust View FHIR operation $view-document</p>
     </td>
     <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179166-implementers/topic/FHIR.20document.20search.20and.20inclusion.20of.20Provenance">FHIR document search and inclusion of Provenance</a> discussion</td>
   </tr>     
@@ -137,8 +137,15 @@ The table below describes the open issues and decisions in implementing the prof
     <td>
         <p>The IG Publisher reported error in NCDHC Vitamin K profiles. NCDHC team is working with HL7 Australia and FHIR community to fix this issue.</p>
     </td>
-    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179173-australia/topic/Error.20with.20MedicationStatement">Error with AU MedicationStatement</a>discussion</td>
-  </tr>  
+    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179173-australia/topic/Error.20with.20MedicationStatement">Error with AU MedicationStatement</a> discussion</td>
+  </tr> 
+  <tr>
+    <td>Issues with external links referrred from NCDHC Profile</td>
+    <td>
+        <p>The IG Publisher reported multiple errors related to links used in the NCDHC Profiles. We are worknig with the HL7 FHIR group on this<a href="https://healthterminologies.gov.au/fhir/ValueSet/route-of-administration-1"></a> Example: Unable to resolve resource</p>
+    </td>
+    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179173-australia/topic/Profile.20reference.20could.20not.20be.20resolved.20error">Profile reference could not be resolved error</a> discussion</td>
+  </tr> 
  </tbody>
 </table>
 
