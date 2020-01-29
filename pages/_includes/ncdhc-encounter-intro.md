@@ -18,7 +18,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Each Encounter must have:**
 
 1.  a status
-1.  a subject (Patient)
+1.  a subject ([Patient])
 1.  a period  indicating the start and end time of the encounter.
 1.  a location stating the Venue where the encounter has happened. 
 1.  participant to represent Clinically responsible person 
@@ -42,3 +42,6 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 [Encounter]: http://hl7.org/fhir/encounter.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
 [General Guidance Section]: definitions.html
+
+
+[Patient]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby.html	

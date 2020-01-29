@@ -20,7 +20,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 1.  a status  
 1.  a category
-1.  a patient
+1.  a patient ([Patient])
 1.  a date (confirming when this Consent was created or indexed)
 1.  a policy reference or a policyRule reference
 
@@ -44,5 +44,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 [Consent]: http://hl7.org/fhir/STU3/consent.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
 [General Guidance Section]: definitions.html
+[Patient]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby.html
+
 
 

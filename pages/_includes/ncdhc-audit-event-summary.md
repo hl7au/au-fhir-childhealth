@@ -17,6 +17,6 @@ This profile contains the following variations from [AuditEvent](http://hl7.org/
    * one or more <span style='color:green'> entity </span> may be added to capture the referenced instances. For an example, if the event is related to creation of Newborn Delivery Health Interaction, then the Composition instance of that HI may be provided. 
 
 
--[NCDHC Audit Type]: ValueSet-ncdhc-audit-type-1.html
--[NCDHC Audit SubType]: ValueSet-ncdhc-audit-subtype-1.html
--[NCDHC Audit Role Type]: ValueSet-ncdhc-audit-role-type-1.html
+[NCDHC Audit Type]: ValueSet-ncdhc-audit-type-1.html
+[NCDHC Audit SubType]: ValueSet-ncdhc-audit-subtype-1.html
+[NCDHC Audit Role Type]: ValueSet-ncdhc-audit-role-type-1.html

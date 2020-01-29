@@ -411,7 +411,7 @@
               "text": "HPI-I",
               "coding": [
                 {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "system": "http://hl7.org/fhir/v2/0203",
                   "code": "NPI"
                 }
               ]
@@ -1395,7 +1395,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 313e0d50-72da-4dd2-8a54-7fb088f707c9</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Hemoglobin estimation level <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '271026005' = 'Hemoglobin estimation level', given as 'Hemoglobin estimation level'})</span></p><p><b>effective</b>: 2019-11-21</p><p><b>performer</b>: </p><ul><li><a href=\"urn:uuid:b763b0ba-079e-4276-b527-7f1b30271243\">Examiner</a></li><li><a href=\"urn:uuid:21b0b1aa-d525-4046-a0a2-df928df48d39\">Organisation</a></li></ul><p><b>value</b>: 13 ug/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code ug/L = 'ug/L')</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 313e0d50-72da-4dd2-8a54-7fb088f707c9</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Haemoglobin level estimation <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '271026005' = 'Haemoglobin level estimation', given as 'Haemoglobin level estimation'})</span></p><p><b>effective</b>: 2019-11-21</p><p><b>performer</b>: </p><ul><li><a href=\"urn:uuid:b763b0ba-079e-4276-b527-7f1b30271243\">Examiner</a></li><li><a href=\"urn:uuid:21b0b1aa-d525-4046-a0a2-df928df48d39\">Organisation</a></li></ul><p><b>value</b>: 13 ug/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code ug/L = 'ug/L')</span></p></div>"
         },
         "status": "final",
         "code": {
@@ -1403,10 +1403,10 @@
             {
               "system": "http://snomed.info/sct",
               "code": "271026005",
-              "display": "Hemoglobin estimation level"
+              "display": "Haemoglobin level estimation"
             }
           ],
-          "text": "Hemoglobin estimation level"
+          "text": "Haemoglobin level estimation"
         },
         "subject": {
           "reference": "urn:uuid:43140538-3e2a-486b-8993-aab0e8d5c20a"
