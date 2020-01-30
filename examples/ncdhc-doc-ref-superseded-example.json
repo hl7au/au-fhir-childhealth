@@ -73,62 +73,62 @@
     "related": [
       {
         "ref": {
-          "reference": "Composition/ncdhc-hca-14wks-composition-sup-example"
+          "display": "Refernce to superseded Composition goes here"
         }
       },
       {
         "ref": {
-          "reference": "Encounter/ncdhc-encounter-sup-example"
+          "display": "Refernce to Encounter goes here"
         }
       },
       {
         "ref": {
-          "reference": "Observation/observation-skin-review-sup-example"
+          "display": "Refernce to supsuperseded Skin Observation goes here"
         }
       },
       {
         "ref": {
-          "reference": "Observation/observation-vitalsign-bodyweight-sup-example"
+          "display": "Refernce to supsuperseded Body Weight Observation goes here"
         }
       },
       {
         "ref": {
-          "reference": "Observation/observation-vitalsign-bodyheight-sup-example"
+          "display": "Refernce to supsuperseded Body Height Observation goes here"
         }
       },
       {
         "ref": {
-          "reference": "Observation/observation-vitalsign-headcircum-sup-example"
+          "display": "Refernce to supsuperseded Head Curm Observation goes here"
         }
       },
       {
         "ref": {
-          "reference": "Observation/observation-head-shape-normal-sup-example"
+          "display": "Refernce to supsuperseded Head Shape Observation goes here"
         }
       },
       {
         "ref": {
-          "reference": "Observation/observation-fontanelles-normal-sup-example"
+          "display": "Refernce to supsuperseded Fontanelles Observation goes here"
         }
       },
       {
         "ref": {
-          "reference": "Observation/observation-ears-normal-sup-example"
+          "display": "Refernce to supsuperseded Ears Observation goes here"
         }
       },
       {
         "ref": {
-          "reference": "Observation/observation-eyes-normal-sup-example"
+          "display": "Refernce to supsuperseded Eye Observation goes here"
         }
       },
       {
         "ref": {
-          "reference": "Observation/observation-mouthpalate-normal-sup-example"
+          "display": "Refernce to supsuperseded Mouthpalate Observation goes here"
         }
       },
       {
         "ref": {
-          "reference": "Observation/observation-cardiovascular-normal-sup-example"
+          "display": "Refernce to supsuperseded Cardiovascular Observation goes here"
         }
       }
     ]
