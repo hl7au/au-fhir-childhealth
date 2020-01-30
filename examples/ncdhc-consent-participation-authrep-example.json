@@ -10,20 +10,20 @@
       {
       "coding": [
         {
-          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-consent-category",
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-consent-category-1",
           "code": "NBCR"
         }
       ]
     }
     ],
     "patient": {
-      "reference": "Patient/ea287411-5ab7-4ff8-9023-42933b73bc17",
+      "reference": "urn:uuid:eb78393f-37ca-4738-81d6-d9595b2e5d0f",
       "display": "Eve Bill"
     },
     "dateTime": "2019-06-04T16:13:03Z",
     "consentingParty": [
       {
-        "reference": "RelatedPerson/ea287411-5ab7-4ff8-9023-42933b73bc17"
+        "reference": "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c"
       }
     ],    
     "policyRule": "urn:uuid:44847642-b160-4e0b-9ce7-69611bf5b303"
