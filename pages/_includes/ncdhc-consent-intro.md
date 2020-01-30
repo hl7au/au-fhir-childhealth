@@ -37,7 +37,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 #### Examples
 
 - [Authorised Representative Consent](ncdhc-consent-registration-authrep-example.html)
-- [Consent To Participate](ncdhc-consent-participation-authrep-example.html)
+
 
 
 
