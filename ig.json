@@ -424,7 +424,7 @@
     "StructureDefinition/ncdhc-medicationstatement-vitamink": {
       "base": "StructureDefinition-ncdhc-medicationstatement-vitamink.html",
       "defns": "StructureDefinition-ncdhc-medicationstatement-vitamink-definitions.html"
-    },
+    },    
     "MedicationStatement/ncdhc-medicationstatement-k1-example": {
       "source": "ncdhc-medicationstatement-k1-example.json",
       "base": "ncdhc-medicationstatement-k1-example.html"
@@ -657,6 +657,10 @@
       "base": "OperationDefinition-ncdhc-document-update.html",
       "defns": "OperationDefinition-ncdhc-document-update-definitions.html"
     },
+    "StructureDefinition/composed-value-set-2": {
+      "base": "StructureDefinition-composed-value-set-2.html",
+      "defns": "StructureDefinition-composed-value-set-2-definitions.html"
+    },
     "ValueSet/ncdhc-document-type-1": {
       "base": "ValueSet-ncdhc-document-type-1.html"
     },
@@ -806,6 +810,9 @@
     },
     "CodeSystem/ncdhc-observation-interpretation-display-1": {
       "base": "CodeSystem-ncdhc-observation-interpretation-display-1.html"
+    },
+    "ValueSet/ncdhc-smoking-status-1": {
+      "base": "ValueSet-ncdhc-smoking-status-1.html"
     },
     "Patient/patient-baby-example": {
       "source": "ncdhc-patient-baby-example.json",
