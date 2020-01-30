@@ -96,6 +96,12 @@
 				<reference value="Consent/ncdhc-consent-registration-authrep-example" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Consent/ncdhc-consent-participation-authrep-example" />
+			</sourceReference>
+		</resource>
 		<!-- NCDHC OperationOutcome Profile -->
 		<resource>
 			<example value="false" />
@@ -380,6 +386,7 @@
 		<!-- NCDHC Questionnaire and QuestionnaireResponse -End-->
 
 		<!-- NCDHC Common Profiles -->
+		
 		<!-- HL7 Vital Sign Profiles -->
 		<resource>
 			<example value="false" />
@@ -387,6 +394,12 @@
 				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bodyweight" />
 			</sourceReference>
 		</resource>
+		<!--resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/hack-a-thon-example" />
+			</sourceReference>
+		</resource-->
 		<resource>
 			<example value="true" />
 			<sourceReference>
@@ -1389,6 +1402,14 @@
 				<reference value="OperationDefinition/ncdhc-document-update" />
 			</sourceReference>
 		</resource>
+
+		<!-- Dependant Terminologies 
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ihi-status-1" />
+			</sourceReference>
+		</resource>-->
 
 		<!-- NCDHC Terminologies -->
 		<resource>
