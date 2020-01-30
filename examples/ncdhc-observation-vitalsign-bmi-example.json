@@ -53,14 +53,11 @@
       "display": "Organisation"
     }
   ],
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "443938003",
-        "display": "Procedure carried out on subject"
-      }
-    ]
+  "valueQuantity": {
+    "value": 16.2,
+    "unit": "kg/m2",
+    "system": "http://unitsofmeasure.org",
+    "code": "kg/m2"
   },
   "interpretation": {
     "coding": [
