@@ -25,7 +25,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  a subject ([Patient])
 1.  a time (indicating when the details were recorded)
 1.	a performer (detailing who has recorded the details)
-1.  a numeric result value and standard UCUM unit (applicable unit codes are defined in the ValueSet http://hl7.org/fhir/ValueSet/ucum-bodyweight )
+1.  a numeric result value and standard UCUM unit (applicable unit codes are defined in the [ValueSet](http://hl7.org/fhir/ValueSet/ucum-bodyweight) )
     -   Note: A reason needs to be supplied in-case there is no numeric result value.
 
 **Profile specific implementation guidance:**
