@@ -133,11 +133,11 @@ The table below describes the open issues and decisions in implementing the prof
     <th>Reference (if any)</th>
   </tr>
   <tr>
-    <td>Issues in MedicationStatement Vitamin K Profile</td>
+    <td>Issue with Device Identifier</td>
     <td>
-        <p>The IG Publisher reported error in NCDHC Vitamin K profiles. NCDHC team is working with HL7 Australia and FHIR community to fix this issue.</p>
+        <p>At this moment NCDHC system doesn't include any Device Identifier. This is a known issue and will be addressed in upcoming releases</p>
     </td>
-    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179173-australia/topic/Error.20with.20MedicationStatement">Error with AU MedicationStatement</a> discussion</td>
+    <td>NA</td>
   </tr> 
   <tr>
     <td>Issues with external links referrred from NCDHC Profile</td>
