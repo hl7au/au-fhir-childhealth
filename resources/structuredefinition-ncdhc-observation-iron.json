@@ -125,6 +125,15 @@
       {
         "id": "Observation.related",
         "path": "Observation.related",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "target.resolve()"
+            }
+          ],
+          "rules": "closed"
+        },
         "max": "1"
       },
       {
@@ -133,8 +142,36 @@
         "type": [
           {
             "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Observation"
+          }
+        ]
+      },
+      {
+        "id": "Observation.related:SerumFerritin",
+        "path": "Observation.related",
+        "sliceName": "SerumFerritin",
+        "max": "1"
+      },
+      {
+        "id": "Observation.related:SerumFerritin.target",
+        "path": "Observation.related.target",
+        "type": [
+          {
+            "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-iron-serum-ferritin"
-          },
+          }
+        ]
+      },
+      {
+        "id": "Observation.related:HaemoglobinLevel",
+        "path": "Observation.related",
+        "sliceName": "HaemoglobinLevel",
+        "max": "1"
+      },
+      {
+        "id": "Observation.related:HaemoglobinLevel.target",
+        "path": "Observation.related.target",
+        "type": [
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-iron-haemoglobin-level"

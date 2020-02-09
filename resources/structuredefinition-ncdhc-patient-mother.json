@@ -3,12 +3,12 @@
   "id": "ncdhc-patient-mother",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-mother",
   "version": "dv0.0.1",
-  "name": "NCDHC Expected Mother Patient Profile",
-  "title": "NCDHC Expected Mother Patient",
+  "name": "NCDHC Expectant Mother Patient Profile",
+  "title": "NCDHC Expectant Mother Patient",
   "status": "draft",
   "date": "2019-04-17",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "purpose": "To represent Expected Mother Patient in NCDHC context",
+  "purpose": "To represent Expectant Mother Patient in NCDHC context",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -26,7 +26,7 @@
           }
         ],
         "path": "Patient",
-        "short": "Expected Mother Patient in NCDHC healthcare context",
+        "short": "Expectant Mother Patient in NCDHC healthcare context",
         "definition": "Demographics and other administrative information about an individual receiving care or other health-related services.",
         "alias": [
           "SubjectOfCare Client Resident"
@@ -10722,7 +10722,7 @@
           }
         ],
         "path": "Patient",
-        "short": "Expected Mother Patient in NCDHC healthcare context"
+        "short": "Expectant Mother Patient in NCDHC healthcare context"
       },
       {
         "id": "Patient.identifier:ihiNumber",
