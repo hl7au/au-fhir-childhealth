@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+	<id value="ncdhc" />
+	<url value="http://hl7.org.au/fhir/ch/v1/ImplementationGuide/ncdhc" />
+	<version value="v1" />
+	<name value="National Child Digital Health Implementation Guide" />
+	<status value="draft" />
+	<experimental value="true" />
+	<date value="2020-03-31" />
+	<publisher value="National Children's Digital Health Collaborative (NCDHC)" />
+	<contact>
+		<name value="HL7 Australia Child Digital Health Working Group" />
+		<telecom>
+			<system value="url" />
+			<value value="https://confluence.hl7australia.com/display/CHWG/Child+Health+Working+Group" />
+			<use value="work" />
+		</telecom>
+	</contact>
+	<fhirVersion value="3.0.2" />
+	<package>
+		<name value="base" />
+		<description value="Guidance on the implementation of child health related content using FHIR in an Australian usage context" />
+		<!-- NCDHC Base Profiles -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-base" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-view-base" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-base" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-encounter" />
+			</sourceReference>
+		</resource>
+		<!-- NCDHC Patient Profiles -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-patient-baby" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Patient/patient-baby-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-patient-mother" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Patient/ncdhc-patient-mother-example" />
+			</sourceReference>
+		</resource>
+
+		<!-- NCDHC Questionnaire and QuestionnaireResponse -Start-->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-questionnaire-base" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-questionnaireresponse-base" />
+			</sourceReference>
+		</resource>
+
+
+		<!-- NCDHC Questionnaire and QuestionnaireResponse -End-->
+
+		<!-- NCDHC Common Profiles -->
+
+		<!-- HL7 Vital Sign Profiles -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bodyweight" />
+			</sourceReference>
+		</resource>
+		<!--resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/hack-a-thon-example" />
+			</sourceReference>
+		</resource-->
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-vitalsign-bodyweight-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bodyheight" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-vitalsign-bodyheight-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-vitalsign-headcircum" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-vitalsign-headcircum-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-vitalsign-heart-rate" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bmi" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-vitalsign-bmi-example" />
+			</sourceReference>
+		</resource>
+		<!--resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bp" />
+			</sourceReference>
+		</resource-->
+		<!--Samples on HL7 AU profiles -->
+
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Organization/examiner-organization" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Practitioner/examiner-practitioner" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Device/ncdhc-nsw-jt" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Device/ncdhc-device-child-data-hub-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="RelatedPerson/ncdhc-relatedoersib-registration-self-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="RelatedPerson/ncdhc-relatedperson-registration-authrep-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="RelatedPerson/ncdhc-relatedperson-registration-nomrep-example" />
+			</sourceReference>
+		</resource>
+		<!--Samples on HL7 Base profiles -->
+
+
+		<!-- NCDHC Common Observation Profiles -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-bodyweight" />
+			</sourceReference>
+		</resource>
+
+
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-bodyheight" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-bodyheight-example" />
+			</sourceReference>
+		</resource>
+
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-bmi" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-bmi-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-headcircum" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-headcircum-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-heart-rate" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-bp" />
+			</sourceReference>
+		</resource>
+		<!-- NCDHC Common Observation Profile - End -->
+
+
+		<!-- DPHR Health Interactions - Start -->
+		<!-- DPHR Encounter -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-documentreference-clinical-notes" />
+			</sourceReference>
+		</resource>
+		<!-- DPHR Clinical Notes -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-dphr-encounter" />
+			</sourceReference>
+		</resource>
+		<!-- Antenatal Visit Composition -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-antenatal-record" />
+			</sourceReference>
+		</resource>
+		<!-- Antenatal Visit Observations -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-fetal-movement" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-fetus-arrangement" />
+			</sourceReference>
+		</resource>
+		<!--<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-fetus-position" />
+			</sourceReference>
+		</resource>-->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-fetus-liquor" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-tobacco-usage" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-illicit-drugs-gestation" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-fetal-gestational-age" />
+			</sourceReference>
+		</resource>
+		<!-- DPHR Health Interactions - End -->
+
+
+		<!-- NCDHC Custom Operations -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="OperationDefinition/ncdhc-patient-access" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="OperationDefinition/ncdhc-composition-view-document" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="OperationDefinition/ncdhc-document-update" />
+			</sourceReference>
+		</resource>
+
+
+		<!-- NCDHC Terminologies -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-document-type-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-hi-type-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-hi-type-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-document-action-type-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-document-action-type-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-document-class-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-document-class-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-consent-category-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-consent-category-1" />
+			</sourceReference>
+		</resource>
+		
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-security-role-type-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-security-role-type-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-encounter-type-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-category-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-valueabsentreason-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-completion-status-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-Illicit-drugs-intake-status-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-labour-initiation-type-1" />
+			</sourceReference>
+		</resource>
+
+
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-interpretation-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-vac-sch-comp-status-1" />
+			</sourceReference>
+		</resource>
+
+
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-completion-status-display-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-observation-completion-status-display-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-interpretation-display-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-observation-interpretation-display-1" />
+			</sourceReference>
+		</resource>
+		<!-- DPHR Terminologies -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-quantity-of-liquor-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-arrangement-of-fetus-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-first-fetal-movements-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-smoking-status-1" />
+			</sourceReference>
+		</resource>
+
+
+	</package>
+	<page>
+		<source value="index.html" />
+		<title value="National Child Digital Health Implementation Guide" />
+		<kind value="page" />
+	</page>
+</ImplementationGuide>
