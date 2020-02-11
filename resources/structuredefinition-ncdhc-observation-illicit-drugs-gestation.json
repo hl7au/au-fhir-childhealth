@@ -85,12 +85,17 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.related.type",
+        "path": "Observation.related.type",
+        "fixedCode": "has-member"
+      },
+      {
         "id": "Observation.related.target",
         "path": "Observation.related.target",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fetal-gestational-age"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-estimated-gestation"
           }
         ]
       },
