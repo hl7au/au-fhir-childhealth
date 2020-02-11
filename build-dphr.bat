@@ -12,11 +12,6 @@ cd qa
 del *.* /s/ q
 cd..
 
-echo Clearing Cache...
-
-cd txCache
-del *.* /s/ q
-cd..
 
 echo Building profiles...
 

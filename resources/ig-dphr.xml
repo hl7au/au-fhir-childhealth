@@ -325,9 +325,27 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-illicit-drugs-gestation-example" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-fetal-gestational-age" />
+				<reference value="StructureDefinition/ncdhc-observation-urinalysis-protein" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-estimated-gestation" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-estimated-gestation-example" />
 			</sourceReference>
 		</resource>
 		<!-- DPHR Health Interactions - End -->

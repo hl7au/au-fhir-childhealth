@@ -185,13 +185,13 @@
       "base": "StructureDefinition-ncdhc-observation-illicit-drugs-gestation.html",
       "defns": "StructureDefinition-ncdhc-observation-illicit-drugs-gestation-definitions.html"
     },
-    "StructureDefinition/ncdhc-observation-fetal-gestational-age": {
-      "base": "StructureDefinition-ncdhc-observation-fetal-gestational-age.html",
-      "defns": "StructureDefinition-ncdhc-observation-fetal-gestational-age-definitions.html"
-    },
     "StructureDefinition/ncdhc-observation-estimated-gestation": {
       "base": "StructureDefinition-ncdhc-observation-estimated-gestation.html",
       "defns": "StructureDefinition-ncdhc-observation-estimated-gestation-definitions.html"
+    },
+    "Observation/observation-estimated-gestation-example": {
+      "source": "ncdhc-observation-estimated-gestation-example.json",
+      "base": "ncdhc-observation-estimated-gestation-example.html"
     },
     "StructureDefinition/ncdhc-observation-bodyweight": {
       "base": "StructureDefinition-ncdhc-observation-bodyweight.html",
@@ -285,6 +285,10 @@
       "base": "StructureDefinition-ncdhc-observation-fetus-arrangement.html",
       "defns": "StructureDefinition-ncdhc-observation-fetus-arrangement-definitions.html"
     },
+    "StructureDefinition/ncdhc-observation-urinalysis-protein": {
+      "base": "StructureDefinition-ncdhc-observation-urinalysis-protein.html",
+      "defns": "StructureDefinition-ncdhc-observation-urinalysis-protein-definitions.html"
+    },
     "StructureDefinition/ncdhc-questionnaire-base": {
       "base": "StructureDefinition-ncdhc-questionnaire-base.html",
       "defns": "StructureDefinition-ncdhc-questionnaire-base-definitions.html"
@@ -353,7 +357,7 @@
     },
     "ValueSet/ncdhc-encounter-type-1": {
       "base": "ValueSet-ncdhc-encounter-type-1.html"
-    },    
+    },
     "ValueSet/ncdhc-observation-completion-status-1": {
       "base": "ValueSet-ncdhc-observation-completion-status-1.html"
     },
