@@ -95,7 +95,7 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "short": "Person who is clinically responsible for the undetaking of the exam"
+        "short": "Person and Organisation who is clinically responsible for the undertaking of the examination/assessment"
       },
       {
         "id": "Observation.value[x]:valueQuantity",

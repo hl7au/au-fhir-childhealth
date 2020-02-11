@@ -89,7 +89,7 @@
     </element>
     <element id="Observation.performer">
       <path value="Observation.performer" />
-      <short value="Person who is clinically responsible for the undetaking of the exam" />
+      <short value="Person and Organisation who is clinically responsible for the undertaking of the examination/assessment" />
       <min value="1" />
       <type>
         <code value="Reference" />

@@ -96,6 +96,7 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
+        "short": "Person and Organisation who is clinically responsible for the undertaking of the examination/assessment",
         "min": 2,
         "type": [
           {
