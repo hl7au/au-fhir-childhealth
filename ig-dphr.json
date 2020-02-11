@@ -289,6 +289,10 @@
       "base": "StructureDefinition-ncdhc-observation-urinalysis-protein.html",
       "defns": "StructureDefinition-ncdhc-observation-urinalysis-protein-definitions.html"
     },
+    "StructureDefinition/ncdhc-observation-symphyseal-fundal-height": {
+      "base": "StructureDefinition-ncdhc-observation-symphyseal-fundal-height.html",
+      "defns": "StructureDefinition-ncdhc-observation-symphyseal-fundal-height-definitions.html"
+    },
     "StructureDefinition/ncdhc-questionnaire-base": {
       "base": "StructureDefinition-ncdhc-questionnaire-base.html",
       "defns": "StructureDefinition-ncdhc-questionnaire-base-definitions.html"
