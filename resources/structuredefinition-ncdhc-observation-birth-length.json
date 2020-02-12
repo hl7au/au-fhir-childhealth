@@ -149,7 +149,6 @@
         "path": "Observation.valueQuantity",
         "sliceName": "valueQuantity",
         "short": "Vital Sign Value recorded with UCUM",
-        "min": 1,
         "type": [
           {
             "code": "Quantity"

@@ -94,7 +94,6 @@
         "path": "Observation.valueQuantity",
         "sliceName": "valueQuantity",
         "short": "Gestational age in days",
-        "min": 1,
         "type": [
           {
             "code": "Quantity"

@@ -82,7 +82,6 @@
         "id": "Observation.value[x]:valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
         "sliceName": "valueCodeableConcept",
-        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"

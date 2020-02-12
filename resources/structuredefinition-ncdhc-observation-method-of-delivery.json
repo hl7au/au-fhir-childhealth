@@ -83,7 +83,6 @@
         "path": "Observation.valueCodeableConcept",
         "sliceName": "valueCodeableConcept",
         "short": "Type of birth observed during the birthing procedure",
-        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"

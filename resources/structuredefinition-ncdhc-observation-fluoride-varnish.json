@@ -86,16 +86,10 @@
         "short": "Date when Fluride Varnish assessment was performed"
       },
       {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "short": "Person and Organisation who is clinically responsible for the undertaking of the examination/assessment"
-      },
-      {
         "id": "Observation.value[x]:valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
         "sliceName": "valueCodeableConcept",
         "short": "Outcome of the child's fluoride varnish assessement.",
-        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"

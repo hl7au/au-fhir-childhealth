@@ -92,7 +92,6 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "short": "Maternal medical conditions or infectious diseases arising in pregnancy which may have an impact on the fetus, e.g. gestational diabetes, infection etc.",
-        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"

@@ -100,7 +100,6 @@
         "path": "Observation.valueCodeableConcept",
         "sliceName": "valueCodeableConcept",
         "short": "Labour initiation eg spontaneous, induced",
-        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"
