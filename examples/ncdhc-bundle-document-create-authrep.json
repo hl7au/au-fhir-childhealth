@@ -105,7 +105,7 @@
     {
       "fullUrl": "urn:uuid:eb78393f-37ca-4738-81d6-d9595b2e5d0f",
       "resource": {
-        "resourceType": "Patient",        
+        "resourceType": "Patient",
         "active": true,
         "meta": {
           "versionId": "1",
@@ -145,11 +145,27 @@
             "http://hl7.org/fhir/StructureDefinition/Person"
           ]
         },
-        
         "identifier": [
           {
             "system": "http://schemas.microsoft.com/identity/claims/objectidentifier",
             "value": "7d1ccb5d-078a-4feb-b008-1be308c15d3b"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "MR",
+                  "display": "Medical Record Number"
+                }
+              ],
+              "text": "Medical Record Number"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0/8003620000000000/D203",
+            "value": "02134000",
+            "assigner": {
+              "display": "Blacktown Hospital"
+            }
           }
         ],
         "name": [
