@@ -6,9 +6,41 @@
   "name": "NCDHC Fetal Movements Observation Profile",
   "title": "NCDHC Fetal Movements (FM) observation",
   "status": "draft",
-  "date": "2019-06-21",
+  "date": "2019-06-21T00:00:00+10:00",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "fhirVersion": "3.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Mapping"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/w5",
+      "name": "W5 Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.info/sct",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -77,19 +109,38 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueString",
+        "path": "Observation.value[x]",
+        "sliceName": "valueString",
         "type": [
-          {
-            "code": "CodeableConcept"
-          },
           {
             "code": "string"
           }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
         ],
         "binding": {
-          "strength": "preferred",
-          "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-first-fetal-movements-1"
-          }
+          "strength": "required",
+          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-first-fetal-movements-1"
         }
       }
     ]

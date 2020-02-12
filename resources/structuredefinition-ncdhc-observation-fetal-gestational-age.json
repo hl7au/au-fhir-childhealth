@@ -64,24 +64,13 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "short": "Person who is clinically responsible for the undetaking of the assessment",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
-          }
-        ]
+        "short": "Person who is clinically responsible for the undetaking of the assessment"
       },
       {
         "id": "Observation.value[x]:valueQuantity",
         "path": "Observation.valueQuantity",
         "sliceName": "valueQuantity",
         "short": "Illicit drug usage during gestation",
-        "min": 1,
         "type": [
           {
             "code": "Quantity"

@@ -86,7 +86,6 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "short": "Urinalysis assessment status",
-        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"

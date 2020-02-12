@@ -102,6 +102,12 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
       <mustSupport value="false" />
     </element>
     <element id="Observation.interpretation">

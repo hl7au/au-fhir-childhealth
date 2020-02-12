@@ -72,7 +72,6 @@
         "path": "Observation.valueCodeableConcept",
         "sliceName": "valueCodeableConcept",
         "short": "Smoking Status",
-        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"

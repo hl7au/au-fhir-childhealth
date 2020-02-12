@@ -10,6 +10,7 @@
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "Drug usage during gestation period",
   "purpose": "To record Drug usage during gestation period",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -80,17 +81,7 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "short": "Person who is clinically responsible for the undetaking of the assessment",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
-          }
-        ]
+        "short": "Person who is clinically responsible for the undetaking of the assessment"
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept",
@@ -98,7 +89,6 @@
         "sliceName": "valueCodeableConcept",
         "short": "Drinking Status",
         "definition": "Create a value Set from taking few codes from SNMOED 307052004?",
-        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"

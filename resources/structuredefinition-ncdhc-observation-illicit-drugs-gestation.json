@@ -67,7 +67,6 @@
         "path": "Observation.valueCodeableConcept",
         "sliceName": "valueCodeableConcept",
         "short": "Illicit drug usage during gestation",
-        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"

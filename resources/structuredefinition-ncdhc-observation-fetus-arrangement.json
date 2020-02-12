@@ -93,15 +93,9 @@
         "short": "Date when Position of fetus was assessed"
       },
       {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "short": "Person and Organisation who is clinically responsible for the undertaking of the examination/assessment"
-      },
-      {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "short": "The presentation, position or lie of the fetus",
-        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"
