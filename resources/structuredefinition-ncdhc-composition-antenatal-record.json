@@ -115,6 +115,11 @@
         }
       },
       {
+        "id": "Composition.section:MaternalHealthChecks.text",
+        "path": "Composition.section.text",
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section:MaternalHealthChecks.entry",
         "path": "Composition.section.entry",
         "slicing": {
@@ -372,6 +377,11 @@
         }
       },
       {
+        "id": "Composition.section:FetalHealthCheck.text",
+        "path": "Composition.section.text",
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section:FetalHealthCheck.entry",
         "path": "Composition.section.entry",
         "slicing": {
@@ -504,7 +514,6 @@
         "path": "Composition.section.text",
         "short": "Progress notes / Comments goes here",
         "comment": "Notes and comments on the progress of the pregnancy",
-        "min": 1,
         "mustSupport": true
       },
       {

@@ -68,7 +68,6 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "short": "Physical problems identified with the baby at, or shortly after birth. E.g. cleft lip/palate, extensive bruising, cephalohematoma etc.",
-        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"
