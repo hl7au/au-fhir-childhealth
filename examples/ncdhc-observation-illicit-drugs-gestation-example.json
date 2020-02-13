@@ -23,7 +23,7 @@
     "text": "Illicit Drug Usage Assessment"
   },
   "subject": {
-    "reference": "Patient/ncdhc-patient-mother-example",
+    "reference": "Patient/ncdhc-patient-expectant-mother-example",
     "display": "Eve Bill"
   },
   "effectiveDateTime": "2020-02-12T14:36:03Z",

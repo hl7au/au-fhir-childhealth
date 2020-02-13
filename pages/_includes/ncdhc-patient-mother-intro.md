@@ -1,4 +1,4 @@
-**NCDHC Child Health Mother Patient Profile**
+**NCDHC Child Health Expectant Mother Patient Profile**
 
 This profile sets minimum expectations for the [Patient] resource to record, search and fetch Patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. The profile is at draft stage and under review by the Child Health Working Group. 
 
@@ -26,7 +26,7 @@ The profile covers up Expectant Mother Patient instances in the NCDHC context.
 
 #### Examples
 
-- [Expectant Mother Patient](ncdhc-patient-mother-example.html)
+- [Expectant Mother Patient](ncdhc-patient-expectant-mother-example.html)
 
 [Patient]: http://hl7.org/fhir/STU3/patient.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible

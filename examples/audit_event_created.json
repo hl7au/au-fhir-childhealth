@@ -65,7 +65,7 @@
         }
       ],
       "reference": {
-        "reference": "Patient/ncdhc-patient-mother-example"
+        "reference": "Patient/ncdhc-patient-expectant-mother-example"
       },
       "userId": {
         "system": "http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0",

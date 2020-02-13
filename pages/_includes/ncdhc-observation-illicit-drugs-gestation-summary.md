@@ -14,4 +14,4 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 *Refer to the Base Profile: [NCDHC Observation Base Profile](http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-base.html) for base rules that are applied in this profile.	
 
-[Patient]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-mother.html
+[Patient]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-expectant-mother.html
