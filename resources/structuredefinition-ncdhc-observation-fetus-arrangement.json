@@ -8,6 +8,7 @@
   "status": "draft",
   "date": "2020-02-07",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
   "description": "The presentation, position or lie of the fetus",
   "purpose": "To record The presentation, position or lie of the fetus",
   "fhirVersion": "3.0.1",
@@ -82,7 +83,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-mother"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-expectant-mother"
           }
         ]
       },
