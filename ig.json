@@ -25,7 +25,7 @@
   "extraTemplates": [
     "mappings"
   ],
-  "gen-examples" : false,
+  "gen-examples": false,
   "do-transforms": true,
   "spreadsheets": [],
   "special-urls": [
@@ -157,13 +157,13 @@
       "base": "StructureDefinition-ncdhc-patient-baby.html",
       "defns": "StructureDefinition-ncdhc-patient-baby-definitions.html"
     },
-    "StructureDefinition/ncdhc-patient-mother": {
-      "base": "StructureDefinition-ncdhc-patient-mother.html",
-      "defns": "StructureDefinition-ncdhc-patient-mother-definitions.html"
+    "StructureDefinition/ncdhc-patient-expectant-mother": {
+      "base": "StructureDefinition-ncdhc-patient-expectant-mother.html",
+      "defns": "StructureDefinition-ncdhc-patient-expectant-mother-definitions.html"
     },
-    "Patient/ncdhc-patient-mother-example": {
-      "source": "ncdhc-patient-mother-example.json",
-      "base": "ncdhc-patient-mother-example.html"
+    "Patient/ncdhc-patient-expectant-mother-example": {
+      "source": "ncdhc-patient-expectant-mother-example.json",
+      "base": "ncdhc-patient-expectant-mother-example.html"
     },
     "StructureDefinition/ncdhc-consent": {
       "base": "StructureDefinition-ncdhc-consent.html",
@@ -373,10 +373,6 @@
       "base": "StructureDefinition-ncdhc-observation-illicit-drugs-gestation.html",
       "defns": "StructureDefinition-ncdhc-observation-illicit-drugs-gestation-definitions.html"
     },
-    "StructureDefinition/ncdhc-observation-fetal-gestational-age": {
-      "base": "StructureDefinition-ncdhc-observation-fetal-gestational-age.html",
-      "defns": "StructureDefinition-ncdhc-observation-fetal-gestational-age-definitions.html"
-    },
     "StructureDefinition/ncdhc-composition-nbdelivery": {
       "base": "StructureDefinition-ncdhc-composition-nbdelivery.html",
       "defns": "StructureDefinition-ncdhc-composition-nbdelivery-definitions.html"
@@ -424,7 +420,7 @@
     "StructureDefinition/ncdhc-medicationstatement-vitamink": {
       "base": "StructureDefinition-ncdhc-medicationstatement-vitamink.html",
       "defns": "StructureDefinition-ncdhc-medicationstatement-vitamink-definitions.html"
-    },    
+    },
     "MedicationStatement/ncdhc-medicationstatement-k1-example": {
       "source": "ncdhc-medicationstatement-k1-example.json",
       "base": "ncdhc-medicationstatement-k1-example.html"
@@ -512,14 +508,6 @@
     "StructureDefinition/ncdhc-observation-vitalsign-heart-rate": {
       "base": "StructureDefinition-ncdhc-observation-vitalsign-heart-rate.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-heart-rate-definitions.html"
-    },
-    "StructureDefinition/ncdhc-observation-vitalsign-bp": {
-      "base": "StructureDefinition-ncdhc-observation-vitalsign-bp.html",
-      "defns": "StructureDefinition-ncdhc-observation-vitalsign-bp-definitions.html"
-    },
-    "StructureDefinition/ncdhc-observation-bp": {
-      "base": "StructureDefinition-ncdhc-observation-bp.html",
-      "defns": "StructureDefinition-ncdhc-observation-bp-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-birth-length": {
       "base": "StructureDefinition-ncdhc-observation-birth-length.html",

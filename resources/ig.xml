@@ -73,13 +73,13 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-patient-mother" />
+				<reference value="StructureDefinition/ncdhc-patient-expectant-mother" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Patient/ncdhc-patient-mother-example" />
+				<reference value="Patient/ncdhc-patient-expectant-mother-example" />
 			</sourceReference>
 		</resource>
 
@@ -460,12 +460,12 @@
 				<reference value="Observation/observation-vitalsign-bmi-example" />
 			</sourceReference>
 		</resource>
-		<resource>
+		<!--resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bp" />
 			</sourceReference>
-		</resource>
+		</resource-->
 		<!--Samples on HL7 AU profiles -->
 
 		<resource>
@@ -478,6 +478,12 @@
 			<example value="true" />
 			<sourceReference>
 				<reference value="Practitioner/examiner-practitioner" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Practitioner/ncdhc-examiner-practitioner-lsi-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -660,6 +666,12 @@
 			<example value="true" />
 			<sourceReference>
 				<reference value="Observation/observation-testes-normal-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-testes-na-example" />
 			</sourceReference>
 		</resource>
 
@@ -1186,9 +1198,16 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
+				<reference value="Bundle/ncdhc-nbdelivery-empty-section-payload" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
 				<reference value="Bundle/ncdhc-bundle-transaction-nbdelivery-request-payload" />
 			</sourceReference>
 		</resource>
+		
 		<!-- Newborn Delivery Observation -->
 		<resource>
 			<example value="false" />
@@ -1741,7 +1760,7 @@
 			<sourceReference>
 				<reference value="CapabilityStatement/ncdhc-metadata-consumer" />
 			</sourceReference>
-		</resource>
+		</resource> 
 	</package>
 	<page>
 		<source value="index.html" />
