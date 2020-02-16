@@ -8,6 +8,7 @@
   "status": "draft",
   "date": "2018-12-21",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "description": "Physical problems identified with the baby at, or shortly after birth. E.g. cleft lip/palate, extensive bruising, cephalohematoma etc.",
   "purpose": "To record physical problems identified with the baby at, or shortly after birth. E.g. cleft lip/palate, extensive bruising, cephalohematoma etc.",
   "fhirVersion": "3.0.1",

@@ -8,6 +8,7 @@
   "status": "draft",
   "date": "2019-11-01",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "purpose": "To generate a Custom View to represent Health Check Schedule view",
   "fhirVersion": "3.0.1",
   "kind": "resource",

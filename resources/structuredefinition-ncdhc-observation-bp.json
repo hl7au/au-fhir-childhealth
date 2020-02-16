@@ -8,7 +8,7 @@
   "status": "draft",
   "date": "2019-06-28",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
+  "copyright": "Copyright Â© 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "description": "This profile allows the system to send Blood Pressure details to DataHub using SNOMED Code only.",
   "purpose": "This profile allows the system to send Blood Pressure details to DataHub using SNOMED Code only.",
   "fhirVersion": "3.0.1",

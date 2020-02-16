@@ -8,9 +8,9 @@
   "status": "draft",
   "date": "2019-03-21",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "description": "Gestational age in weeks and days (usually equivalent to length of pregnancy).",
   "purpose": "To record Gestational age in weeks and days (usually equivalent to length of pregnancy).",
-  "copyright": "Copyright � 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -87,7 +87,7 @@
         "id": "Observation.effectiveDateTime:effectiveDateTime",
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
-        "short": "Date when gestation was estimated",
+        "short": "Date when Estimated Gestation was recorded",
         "min": 1
       },
       {
@@ -116,19 +116,14 @@
           }
         ],
         "path": "Observation.valueQuantity.unit",
-        "short": "days"
+        "min": 1,
+        "fixedString": "days"
       },
       {
         "id": "Observation.value[x]:valueQuantity.system",
         "path": "Observation.valueQuantity.system",
         "min": 1,
         "fixedUri": "http://unitsofmeasure.org"
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity.code",
-        "path": "Observation.valueQuantity.code",
-        "min": 1,
-        "fixedCode": "d"
       },
       {
         "id": "Observation.comment",
