@@ -61,13 +61,13 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-patient-mother" />
+				<reference value="StructureDefinition/ncdhc-patient-expectant-mother" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Patient/ncdhc-patient-mother-example" />
+				<reference value="Patient/ncdhc-patient-expectant-mother-example" />
 			</sourceReference>
 		</resource>
 
@@ -169,6 +169,12 @@
 			<example value="true" />
 			<sourceReference>
 				<reference value="Practitioner/examiner-practitioner" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Practitioner/ncdhc-examiner-practitioner-lsi-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -433,7 +439,7 @@
 				<reference value="CodeSystem/ncdhc-consent-category-1" />
 			</sourceReference>
 		</resource>
-		
+
 		<resource>
 			<example value="false" />
 			<sourceReference>

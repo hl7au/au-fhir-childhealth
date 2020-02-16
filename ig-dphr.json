@@ -149,13 +149,13 @@
       "base": "StructureDefinition-ncdhc-patient-baby.html",
       "defns": "StructureDefinition-ncdhc-patient-baby-definitions.html"
     },
-    "StructureDefinition/ncdhc-patient-mother": {
-      "base": "StructureDefinition-ncdhc-patient-mother.html",
-      "defns": "StructureDefinition-ncdhc-patient-mother-definitions.html"
+    "StructureDefinition/ncdhc-patient-expectant-mother": {
+      "base": "StructureDefinition-ncdhc-patient-expectant-mother.html",
+      "defns": "StructureDefinition-ncdhc-patient-expectant-mother-definitions.html"
     },
-    "Patient/ncdhc-patient-mother-example": {
-      "source": "ncdhc-patient-mother-example.json",
-      "base": "ncdhc-patient-mother-example.html"
+    "Patient/ncdhc-patient-expectant-mother-example": {
+      "source": "ncdhc-patient-expectant-mother-example.json",
+      "base": "ncdhc-patient-expectant-mother-example.html"
     },
     "StructureDefinition/ncdhc-consent": {
       "base": "StructureDefinition-ncdhc-consent.html",
