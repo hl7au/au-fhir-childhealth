@@ -3,13 +3,14 @@
   "id": "ncdhc-observation-vision-screen",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vision-screen",
   "version": "r1.0.0",
-  "name": "NCDHC Vision Screen Observation Profile",
+  "name": "NCDHCVisionScreenObservationProfile",
   "title": "NCDHC Vision Screen Observation",
   "status": "draft",
   "date": "2019-02-01",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "Vision Screen test aimed to detect children with vision problems at a young age",
   "purpose": "To record Vision Screen result",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -54,9 +55,9 @@
         }
       },
       {
-        "id": "Observation.code.coding:VisionScreenSNOMEDCT-AU",
+        "id": "Observation.code.coding:VisionScreenSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "VisionScreenSNOMEDCT-AU",
+        "sliceName": "VisionScreenSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -65,13 +66,13 @@
         }
       },
       {
-        "id": "Observation.code.coding:VisionScreenSNOMEDCT-AU.system",
+        "id": "Observation.code.coding:VisionScreenSNOMED-CT.system",
         "path": "Observation.code.coding.system",
         "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:VisionScreenSNOMEDCT-AU.code",
+        "id": "Observation.code.coding:VisionScreenSNOMED-CT.code",
         "path": "Observation.code.coding.code",
         "min": 1
       },

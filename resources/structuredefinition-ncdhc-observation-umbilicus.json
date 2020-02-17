@@ -3,13 +3,14 @@
   "id": "ncdhc-observation-umbilicus",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-umbilicus",
   "version": "r1.0.0",
-  "name": "NCDHC Umbilicus Observation Profile",
+  "name": "NCDHCUmbilicusObservationProfile",
   "title": "NCDHC Umbilicus Observation",
   "status": "draft",
   "date": "2019-02-15",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "Umbilicus",
   "purpose": "To record observations on Umbilicus test",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -53,9 +54,9 @@
         }
       },
       {
-        "id": "Observation.code.coding:UmbilicusSNOMEDCT-AU",
+        "id": "Observation.code.coding:UmbilicusSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "UmbilicusSNOMEDCT-AU",
+        "sliceName": "UmbilicusSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -64,13 +65,13 @@
         }
       },
       {
-        "id": "Observation.code.coding:UmbilicusSNOMEDCT-AU.system",
+        "id": "Observation.code.coding:UmbilicusSNOMED-CT.system",
         "path": "Observation.code.coding.system",
         "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:UmbilicusSNOMEDCT-AU.code",
+        "id": "Observation.code.coding:UmbilicusSNOMED-CT.code",
         "path": "Observation.code.coding.code",
         "min": 1
       },
@@ -84,11 +85,6 @@
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
         "short": "Date when Umbilicus assessment was performed"
-      },
-      {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "short": "Person and Organisation who is clinically responsible for the undertaking of the examination/assessment"
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept",

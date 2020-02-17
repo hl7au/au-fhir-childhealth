@@ -3,14 +3,14 @@
   "id": "ncdhc-observation-hearing-check",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-hearing-check",
   "version": "r1.0.0",
-  "name": "NCDHC Hearing Check Observation Profile",
+  "name": "NCDHCHearingCheckObservationProfile",
   "title": "NCDHC Hearing Check Observation",
   "status": "draft",
   "date": "2019-02-15",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "description": "Hearing Check",
   "purpose": "To record Hearing Check outcomes",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -55,9 +55,9 @@
         }
       },
       {
-        "id": "Observation.code.coding:HearingCheckSNOMEDCT-AU",
+        "id": "Observation.code.coding:HearingCheckSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "HearingCheckSNOMEDCT-AU",
+        "sliceName": "HearingCheckSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -66,13 +66,13 @@
         }
       },
       {
-        "id": "Observation.code.coding:HearingCheckSNOMEDCT-AU.system",
+        "id": "Observation.code.coding:HearingCheckSNOMED-CT.system",
         "path": "Observation.code.coding.system",
         "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:HearingCheckSNOMEDCT-AU.code",
+        "id": "Observation.code.coding:HearingCheckSNOMED-CT.code",
         "path": "Observation.code.coding.code",
         "min": 1
       },
@@ -86,11 +86,6 @@
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
         "short": "Date when Hearing Check was performed"
-      },
-      {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "short": "Person and Organisation who is clinically responsible for the undertaking of the examination/assessment"
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept",

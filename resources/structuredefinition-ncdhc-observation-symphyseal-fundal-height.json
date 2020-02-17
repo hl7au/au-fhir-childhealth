@@ -3,7 +3,7 @@
   "id": "ncdhc-observation-symphyseal-fundal-height",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-symphyseal-fundal-height",
   "version": "r1.0.0",
-  "name": "NCDHC Symphyseal-fundal height Observation Profile",
+  "name": "NCDHCSymphysealFundalHeightObservationProfile",
   "title": "NCDHC Symphyseal-fundal height Observation",
   "status": "draft",
   "date": "2019-06-21",
@@ -54,9 +54,9 @@
         }
       },
       {
-        "id": "Observation.code.coding:SFH-SNOMEDCT-AU",
+        "id": "Observation.code.coding:SFHSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "SFH-SNOMEDCT-AU",
+        "sliceName": "SFHSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -65,13 +65,13 @@
         }
       },
       {
-        "id": "Observation.code.coding:SFH-SNOMEDCT-AU.system",
+        "id": "Observation.code.coding:SFHSNOMED-CT.system",
         "path": "Observation.code.coding.system",
         "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:SFH-SNOMEDCT-AU.code",
+        "id": "Observation.code.coding:SFHSNOMED-CT.code",
         "path": "Observation.code.coding.code",
         "min": 1
       },

@@ -3,14 +3,14 @@
   "id": "ncdhc-observation-iron",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-test-iron",
   "version": "r1.0.0",
-  "name": "NCDHC Iron Test Observation Profile",
+  "name": "NCDHCIronTestObservationProfile",
   "title": "NCDHC Iron Test Observation",
   "status": "draft",
   "date": "2019-02-15",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
   "description": "Iron Testing Outcome",
   "purpose": "To record observations on Iron Testing",
+  "copyright": "Copyright ï¿½ 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -54,9 +54,9 @@
         }
       },
       {
-        "id": "Observation.code.coding:IronTestSNOMEDCT-AU",
+        "id": "Observation.code.coding:IronTestSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "IronTestSNOMEDCT-AU",
+        "sliceName": "IronTestSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -65,13 +65,13 @@
         }
       },
       {
-        "id": "Observation.code.coding:IronTestSNOMEDCT-AU.system",
+        "id": "Observation.code.coding:IronTestSNOMED-CT.system",
         "path": "Observation.code.coding.system",
         "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:IronTestSNOMEDCT-AU.code",
+        "id": "Observation.code.coding:IronTestSNOMED-CT.code",
         "path": "Observation.code.coding.code",
         "min": 1
       },
@@ -85,11 +85,6 @@
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
         "short": "Date when Iron Level assessment was performed"
-      },
-      {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "short": "Person and Organisation who is clinically responsible for the undertaking of the examination/assessment"
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept",

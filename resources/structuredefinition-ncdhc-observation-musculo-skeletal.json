@@ -1,16 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-birth-length",
-  "url": "http://hl7.org.au/fhir/StructureDefinition/ncdhc-observation-birth-length",
-  "version": "r1.0.0",
-  "name": "NCDHCBirthlengthObservationProfile",
-  "title": "NCDHC Birth Length",
+  "id": "ncdhc-observation-musculo-skeletal",
+  "url": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-observation-musculo-skeletal",
+  "version": "v1.0.0",
+  "name": "NCDHCMusculoSkeletalTestObservationProfile",
+  "title": "NCDHC Musculo-Skeletal Test Observation",
   "status": "draft",
-  "date": "2018-12-21",
+  "date": "2019-02-15",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "description": "Represents length of baby recorded at birth",
-  "purpose": "Length of baby recorded at birth",
-  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
+  "description": "Outcome of Musculo-Skeletal Check (physical examination of the skeleton and muscle groups)",
+  "purpose": "To record observations on Musculo-Skeletal",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -22,8 +21,7 @@
       {
         "id": "Observation",
         "path": "Observation",
-        "short": "NCDHC Birth Length Observation Profile",
-        "definition": "Represents length of baby recorded at birth",
+        "short": "NCDHC Musculo-Skeletal Test Observation Profile",
         "constraint": [
           {
             "key": "ncdhc-obs-1",
@@ -56,23 +54,9 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.category.coding.system",
-        "path": "Observation.category.coding.system",
-        "fixedUri": "http://hl7.org/fhir/observation-category"
-      },
-      {
-        "id": "Observation.category.coding.code",
-        "path": "Observation.category.coding.code",
-        "fixedCode": "vital-signs"
-      },
-      {
         "id": "Observation.code",
         "path": "Observation.code",
-        "short": "Code to represent Birth length",
-        "mustSupport": true,
-        "binding": {
-          "strength": "preferred"
-        }
+        "mustSupport": true
       },
       {
         "id": "Observation.code.coding",
@@ -82,35 +66,21 @@
             {
               "type": "pattern",
               "path": "code"
-            },
-            {
-              "type": "value",
-              "path": "system"
             }
           ],
           "rules": "open"
         }
       },
       {
-        "id": "Observation.code.coding:birthLengthSNOMED-CT",
+        "id": "Observation.code.coding:MusculoSkeletalSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "birthLengthSNOMED-CT",
+        "sliceName": "MusculoSkeletalSNOMED-CT",
+        "min": 1,
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "169886007"
+          "code": "164830005"
         }
-      },
-      {
-        "id": "Observation.code.coding:birthLengthSNOMED-CT.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding:birthLengthSNOMED-CT.code",
-        "path": "Observation.code.coding.code",
-        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -120,10 +90,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-patient",
-            "aggregation": [
-              "referenced"
-            ]
+            "targetProfile": "http://hl7.org.au/fhir/ch/StructureDefinition/v1.0.0/ncdhc-patient-baby"
           }
         ],
         "mustSupport": true
@@ -132,7 +99,7 @@
         "id": "Observation.effective[x]:effectiveDateTime",
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
-        "min": 1,
+        "short": "Date when Musculo Skeletal assessment was performed",
         "type": [
           {
             "code": "dateTime"
@@ -143,50 +110,69 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "min": 1
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity",
-        "path": "Observation.valueQuantity",
-        "sliceName": "valueQuantity",
-        "short": "Vital Sign Value recorded with UCUM",
+        "short": "Person and Organisation who is clinically responsible for the undertaking of the examination/assessment",
+        "min": 1,
         "type": [
           {
-            "code": "Quantity"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
           }
-        ],
-        "mustSupport": true,
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": false
+      },
+      {
+        "id": "Observation.value[x]:valueString",
+        "path": "Observation.value[x]",
+        "sliceName": "valueString",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "short": "Normal | Review | Refer",
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/ucum-vitals-common"
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-interpretation-1"
           }
-        }
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity.value",
-        "path": "Observation.valueQuantity.value",
-        "min": 1
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity.system",
-        "path": "Observation.valueQuantity.system",
-        "fixedUri": "http://unitsofmeasure.org"
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity.code",
-        "path": "Observation.valueQuantity.code",
-        "binding": {
-          "strength": "required",
-          "description": "Coded responses from the common UCUM units for vital signs value set.",
-          "valueSetUri": "http://hl7.org/fhir/ValueSet/ucum-bodylength"
         }
       },
       {
         "id": "Observation.comment",
         "path": "Observation.comment",
-        "short": "System represents the user provided 'days' in weeks and days",
-        "comment": "The server may represent the input Quantity into weeks and days"
+        "short": "Additional comments",
+        "comment": "Additional comments"
       }
     ]
   }

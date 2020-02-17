@@ -3,7 +3,7 @@
   "id": "ncdhc-observation-method-of-delivery",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-method-of-delivery",
   "version": "r1.0.0",
-  "name": "NCDHC Type of Birth Observation Profile",
+  "name": "NCDHCTypeOfBirthObservationProfile",
   "title": "NCDHC Type of Birth",
   "status": "draft",
   "date": "2018-12-21",
@@ -75,7 +75,7 @@
         "id": "Observation.effectiveDateTime:effectiveDateTime",
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
-        "short": "Date when Type of Birth was recorded",
+        "short": "Date when Type of Birth was noted",
         "min": 1
       },
       {

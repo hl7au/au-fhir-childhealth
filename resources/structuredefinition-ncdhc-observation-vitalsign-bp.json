@@ -49,9 +49,9 @@
   "differential": {
     "element": [
       {
-        "id": "Observation.code.coding:BPSNOMEDCT-AU",
+        "id": "Observation.code.coding:BPSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "BPSNOMEDCT-AU",
+        "sliceName": "BPSNOMED-CT",
         "fixedCoding": {
           "system": "http://snomed.info/sct",
           "code": "75367002"

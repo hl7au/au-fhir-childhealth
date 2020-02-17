@@ -3,7 +3,7 @@
   "id": "ncdhc-observation-left-eye-visiual-acuity",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-left-eye-visiual-acuity",
   "version": "r1.0.0",
-  "name": "NCDHC Left Eye Visual Acuity Observation Profile",
+  "name": "NCDHCLeftEyeVisualAcuityObservationProfile",
   "title": "NCDHC Left Eye Visual Acuity Observation",
   "status": "draft",
   "date": "2019-11-22",
@@ -53,9 +53,9 @@
         }
       },
       {
-        "id": "Observation.code.coding:VisualAcuityLeftEyeSNOMEDCT-AU",
+        "id": "Observation.code.coding:VisualAcuityLeftEyeSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "VisualAcuityLeftEyeSNOMEDCT-AU",
+        "sliceName": "VisualAcuityLeftEyeSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -64,13 +64,13 @@
         }
       },
       {
-        "id": "Observation.code.coding:VisualAcuityLeftEyeSNOMEDCT-AU.system",
+        "id": "Observation.code.coding:VisualAcuityLeftEyeSNOMED-CT.system",
         "path": "Observation.code.coding.system",
         "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:VisualAcuityLeftEyeSNOMEDCT-AU.code",
+        "id": "Observation.code.coding:VisualAcuityLeftEyeSNOMED-CT.code",
         "path": "Observation.code.coding.code",
         "min": 1
       },
@@ -126,16 +126,6 @@
           "rules": "closed"
         },
         "short": "Visual acuity Test type and Result"
-      },
-      {
-        "id": "Observation.component.value[x]:valueQuantity",
-        "path": "Observation.component.valueQuantity",
-        "sliceName": "valueQuantity",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
       },
       {
         "id": "Observation.component:VisualAcuity3M",

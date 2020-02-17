@@ -3,14 +3,14 @@
   "id": "ncdhc-observation-bloodspot-screen",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bloodspot-screen",
   "version": "r1.0.0",
-  "name": "NCDHC Blood Spot Screen Observation Profile",
+  "name": "NCDHCBloodSpotScreenObservationProfile",
   "title": "NCDHC Blood Spot Screen Observation",
   "status": "draft",
   "date": "2019-02-01",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
   "description": "A test used to detect certain rare genetic conditions and disorders of the metabolism",
   "purpose": "To record Bloodspt screen result",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -56,9 +56,9 @@
         }
       },
       {
-        "id": "Observation.code.coding:bloodSpotScreenSNOMEDCT-AU",
+        "id": "Observation.code.coding:bloodSpotScreenSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "bloodSpotScreenSNOMEDCT-AU",
+        "sliceName": "bloodSpotScreenSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -67,13 +67,13 @@
         }
       },
       {
-        "id": "Observation.code.coding:bloodSpotScreenSNOMEDCT-AU.system",
+        "id": "Observation.code.coding:bloodSpotScreenSNOMED-CT.system",
         "path": "Observation.code.coding.system",
         "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:bloodSpotScreenSNOMEDCT-AU.code",
+        "id": "Observation.code.coding:bloodSpotScreenSNOMED-CT.code",
         "path": "Observation.code.coding.code",
         "min": 1
       },

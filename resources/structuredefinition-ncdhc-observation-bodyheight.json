@@ -3,14 +3,14 @@
   "id": "ncdhc-observation-bodyheight",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bodyheight",
   "version": "r1.0.0",
-  "name": "NCDHC Body Height-Length Observation Profile",
+  "name": "NCDHCBodyHeightLengthObservationProfile",
   "title": "NCDHC Body Height Observation",
   "status": "draft",
   "date": "2019-03-22",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
   "description": "Height of baby recorded at birth or body weight recorded during assessment",
   "purpose": "To allow delivery by vendors in the POC timelines, an additional tactical profile for vital signs is built that only requires SCT – this will only be enabled on a vendor by vendor basis for the pilot with vendors encouraged to use the FHIR conformant profile unless not practical for the POC . On receipt of a measurement using this profile the data hub will enrich the message with the respective LOINC code to ensure outbound messaging adheres to the FHIR conformant profiles. The use of this non Conformant profile will be re-visited at the end of the POC.",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -46,9 +46,9 @@
         }
       },
       {
-        "id": "Observation.code.coding:BodyHeightSNOMEDCTAUCode",
+        "id": "Observation.code.coding:BodyHeightSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "BodyHeightSNOMEDCTAUCode",
+        "sliceName": "BodyHeightSNOMED-CT",
         "short": "SNOMED CT code to represent Body Height",
         "max": "1",
         "patternCoding": {
@@ -57,13 +57,13 @@
         }
       },
       {
-        "id": "Observation.code.coding:BodyHeightSNOMEDCTAUCode.system",
+        "id": "Observation.code.coding:BodyHeightSNOMED-CT.system",
         "path": "Observation.code.coding.system",
         "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:BodyHeightSNOMEDCTAUCode.code",
+        "id": "Observation.code.coding:BodyHeightSNOMED-CT.code",
         "path": "Observation.code.coding.code",
         "min": 1,
         "fixedCode": "50373000"

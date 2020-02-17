@@ -3,13 +3,14 @@
   "id": "ncdhc-observation-urinalysis-protein",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-urinalysis-protein",
   "version": "v1.1.0",
-  "name": "NCDHC Urinalysis Observation Profile",
+  "name": "NCDHCUrinalysisObservationProfile",
   "title": "NCDHC Urinalysis Observation",
   "status": "draft",
   "date": "2019-06-21",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "Urine dipstick screening for Leukocytes, nitrite, urobilinogen, protein, pH, blood, specific gravity, ketones, glucose, bilirubin",
   "purpose": "To record Urinalysis result",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -44,21 +45,36 @@
             {
               "type": "pattern",
               "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
-          "rules": "open"
+          "rules": "closed"
         }
       },
       {
-        "id": "Observation.code.coding:Urinalysis-SNOMEDCT-AU",
+        "id": "Observation.code.coding:Urinalysis-SNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "Urinalysis-SNOMEDCT-AU",
+        "sliceName": "Urinalysis-SNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "27171005"
         }
+      },
+      {
+        "id": "Observation.code.coding:Urinalysis-SNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:Urinalysis-SNOMED-CT.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -75,7 +91,7 @@
         "id": "Observation.effectiveDateTime:effectiveDateTime",
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
-        "short": "Date when amniotic fluid was assessed"
+        "short": "Date when urinalysis proteinwas assessed"
       },
       {
         "id": "Observation.performer",
@@ -85,21 +101,40 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "short": "Urinalysis assessment status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueString",
+        "path": "Observation.value[x]",
+        "sliceName": "valueString",
         "type": [
-          {
-            "code": "CodeableConcept"
-          },
           {
             "code": "string"
           }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
         ],
-        "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-urinalysis-assessment"
-          }
+          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-urinalysis-assessment-1"
         }
       },
       {
@@ -112,6 +147,11 @@
             "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-urinalysis-interpretation"
           }
         }
+      },
+      {
+        "id": "Observation.comment",
+        "path": "Observation.comment",
+        "mustSupport": true
       }
     ]
   }

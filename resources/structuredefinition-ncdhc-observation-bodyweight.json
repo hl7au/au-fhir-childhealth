@@ -3,14 +3,14 @@
   "id": "ncdhc-observation-bodyweight",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bodyweight",
   "version": "r1.0.0",
-  "name": "NCDHC Body Weight Observation Profile",
+  "name": "NCDHCBodyWeightObservationProfile",
   "title": "NCDHC Body Weight Observation",
   "status": "draft",
   "date": "2019-03-22",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "description": "Weight of baby recorded at birth or body weight recored during assessment",
   "purpose": "To allow delivery by vendors in the POC timelines, an additional tactical profile for vital signs is built that only requires SCT – this will only be enabled on a vendor by vendor basis for the pilot with vendors encouraged to use the FHIR conformant profile unless not practical for the POC . On receipt of a measurement using this profile the data hub will enrich the message with the respective LOINC code to ensure outbound messaging adheres to the FHIR conformant profiles. The use of this non Conformant profile will be re-visited at the end of the POC.",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -47,9 +47,9 @@
         "max": "1"
       },
       {
-        "id": "Observation.code.coding:BirthWeightSNOMEDCTAUCode",
+        "id": "Observation.code.coding:BirthWeightSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "BirthWeightSNOMEDCTAUCode",
+        "sliceName": "BirthWeightSNOMED-CT",
         "short": "SNOMED CT code to represent Birth Weight",
         "max": "1",
         "patternCoding": {
@@ -58,21 +58,21 @@
         }
       },
       {
-        "id": "Observation.code.coding:BirthWeightSNOMEDCTAUCode.system",
+        "id": "Observation.code.coding:BirthWeightSNOMED-CT.system",
         "path": "Observation.code.coding.system",
         "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:BirthWeightSNOMEDCTAUCode.code",
+        "id": "Observation.code.coding:BirthWeightSNOMED-CT.code",
         "path": "Observation.code.coding.code",
         "min": 1,
         "fixedCode": "364589006"
       },
       {
-        "id": "Observation.code.coding:BodyWeightSNOMEDCTAUCode",
+        "id": "Observation.code.coding:BodyWeightSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "BodyWeightSNOMEDCTAUCode",
+        "sliceName": "BodyWeightSNOMED-CT",
         "short": "SNOMED CT code to represent Body Weight",
         "max": "1",
         "patternCoding": {
@@ -81,13 +81,13 @@
         }
       },
       {
-        "id": "Observation.code.coding:BodyWeightSNOMEDCTAUCode.system",
+        "id": "Observation.code.coding:BodyWeightSNOMED-CT.system",
         "path": "Observation.code.coding.system",
         "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:BodyWeightSNOMEDCTAUCode.code",
+        "id": "Observation.code.coding:BodyWeightSNOMED-CT.code",
         "path": "Observation.code.coding.code",
         "min": 1,
         "fixedCode": "27113001"

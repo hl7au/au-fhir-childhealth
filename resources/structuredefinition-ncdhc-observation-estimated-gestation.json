@@ -3,14 +3,14 @@
   "id": "ncdhc-observation-estimated-gestation",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-estimated-gestation",
   "version": "r1.0.0",
-  "name": "NCDHC Estimated Gestation Observation Profile",
+  "name": "NCDHCEstimatedGestationObservationProfile",
   "title": "NCDHC Estimated Gestation Observation",
   "status": "draft",
   "date": "2019-03-21",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "description": "Gestational age in weeks and days (usually equivalent to length of pregnancy).",
   "purpose": "To record Gestational age in weeks and days (usually equivalent to length of pregnancy).",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -87,7 +87,7 @@
         "id": "Observation.effectiveDateTime:effectiveDateTime",
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
-        "short": "Date when Estimated Gestation was recorded",
+        "short": "Date when Gestation age was estimated",
         "min": 1
       },
       {
@@ -116,14 +116,18 @@
           }
         ],
         "path": "Observation.valueQuantity.unit",
-        "min": 1,
-        "fixedString": "days"
+        "min": 1
       },
       {
         "id": "Observation.value[x]:valueQuantity.system",
         "path": "Observation.valueQuantity.system",
         "min": 1,
         "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.valueQuantity.code",
+        "fixedCode": "d"
       },
       {
         "id": "Observation.comment",

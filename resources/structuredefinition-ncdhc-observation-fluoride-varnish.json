@@ -3,14 +3,14 @@
   "id": "ncdhc-observation-fluoride-varnish",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fluoride-varnish",
   "version": "r1.0.0",
-  "name": "NCDHC Fluoride Varnish Observation Profile",
+  "name": "NCDHCFluorideVarnishObservationProfile",
   "title": "NCDHC Fluoride Varnish Observation",
   "status": "draft",
   "date": "2019-02-01",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "description": "Record outcome of the child's fluoride varnish assessemen",
   "purpose": "To record Fluoride Varnish result",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -54,9 +54,9 @@
         }
       },
       {
-        "id": "Observation.code.coding:FluorideVarnishSNOMEDCT-AU",
+        "id": "Observation.code.coding:FluorideVarnishSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "FluorideVarnishSNOMEDCT-AU",
+        "sliceName": "FluorideVarnishSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -65,13 +65,13 @@
         }
       },
       {
-        "id": "Observation.code.coding:FluorideVarnishSNOMEDCT-AU.system",
+        "id": "Observation.code.coding:FluorideVarnishSNOMED-CT.system",
         "path": "Observation.code.coding.system",
         "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:FluorideVarnishSNOMEDCT-AU.code",
+        "id": "Observation.code.coding:FluorideVarnishSNOMED-CT.code",
         "path": "Observation.code.coding.code",
         "min": 1
       },

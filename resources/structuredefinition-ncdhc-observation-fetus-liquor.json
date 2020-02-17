@@ -55,9 +55,9 @@
         }
       },
       {
-        "id": "Observation.code.coding:Liquor-SNOMEDCT-AU",
+        "id": "Observation.code.coding:Liquor-SNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "Liquor-SNOMEDCT-AU",
+        "sliceName": "Liquor-SNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -66,13 +66,13 @@
         }
       },
       {
-        "id": "Observation.code.coding:Liquor-SNOMEDCT-AU.system",
+        "id": "Observation.code.coding:Liquor-SNOMED-CT.system",
         "path": "Observation.code.coding.system",
         "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:Liquor-SNOMEDCT-AU.code",
+        "id": "Observation.code.coding:Liquor-SNOMED-CT.code",
         "path": "Observation.code.coding.code",
         "min": 1
       },

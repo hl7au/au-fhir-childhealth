@@ -3,7 +3,7 @@
   "id": "ncdhc-observation-spine",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-spine",
   "version": "r1.0.0",
-  "name": "NCDHC Spine Test Observation Profile",
+  "name": "NCDHCSpineTestObservationProfile",
   "title": "NCDHC Spine Test Observation",
   "status": "draft",
   "date": "2019-02-15",
@@ -50,9 +50,9 @@
         }
       },
       {
-        "id": "Observation.code.coding:SpineSNOMEDCT-AU",
+        "id": "Observation.code.coding:SpineSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "SpineSNOMEDCT-AU",
+        "sliceName": "SpineSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -70,11 +70,6 @@
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
         "short": "Date when Spine assessment was performed"
-      },
-      {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "short": "Person and Organisation who is clinically responsible for the undertaking of the examination/assessment"
       },
       {
         "id": "Observation.value[x]",

@@ -7,14 +7,14 @@
   },
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-apgar-score",
   "version": "r1.0.0",
-  "name": "NCDHC APGAR Scores Observation Profile",
+  "name": "NCDHCAPGARScoresObservationProfile",
   "title": "NCDHC APGAR Scores",
   "status": "draft",
   "date": "2018-12-21",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "description": "A set of observations made on the baby following birth to check adaptation to life outside the womb.  This includes 1 minute, 5 minutes and 10 minutes",
   "purpose": "To record APGAR Scores reported",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "fhirVersion": "3.0.1",
   "mapping": [
     {
@@ -164,7 +164,6 @@
         "id": "Observation.value[x]:valueQuantity",
         "path": "Observation.valueQuantity",
         "sliceName": "valueQuantity",
-        "min": 1,
         "type": [
           {
             "code": "Quantity"
