@@ -17,8 +17,8 @@
           "coding" : [
             {
               "system" : "http://snomed.info/sct",
-              "code" : "252957005",
-              "display" : "Children's hearing test"
+              "code" : "710076008",
+              "display" : "Screening for hearing loss"
             }
           ]
         },

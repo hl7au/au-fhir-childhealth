@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "ncdhc-observation-breastfeeding-education-example",
+  "meta": {
+    "versionId": "1",
+    "profile": [
+      "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-breastfeeding-education"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "243094003"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ncdhc-patient-mother-example",
+    "display": "Eve Bill"
+  },
+  "effectiveDateTime": "2019-12-27T16:13:03Z",
+  "performer": [
+    {
+      "reference": "Practitioner/examiner-practitioner",
+      "display": "Examiner"
+    },
+    {
+      "reference": "Organization/examiner-organization",
+      "display": "Organisation"
+    }
+  ],
+  "valueString": "Education was provided"
+}

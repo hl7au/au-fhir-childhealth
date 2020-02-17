@@ -564,7 +564,7 @@
             },
             {
               "linkId": "17.1.2",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-iron-serum-ferritin-definitions.html#Observation.code.coding:SerumFerritinSNOMEDCT-AU.display",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-iron-serum-ferritin-definitions.html#Observation.code.coding:SerumFerritinSNOMED-CT.display",
               "text": "Type",
               "type": "text",
               "enableWhen": [
@@ -600,7 +600,7 @@
             },
             {
               "linkId": "17.1.5",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-iron-haemoglobin-level-definitions.html#Observation.code.coding:HaemoglobinLevelSNOMEDCT-AU.display",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-iron-haemoglobin-level-definitions.html#Observation.code.coding:HaemoglobinLevelSNOMED-CT.display",
               "text": "Result",
               "type": "text",
               "enableWhen": [
