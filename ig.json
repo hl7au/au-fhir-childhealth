@@ -365,9 +365,9 @@
       "source": "ncdhc-bundle-document-create-child.json",
       "base": "ncdhc-bundle-document-create-child.html"
     },
-    "StructureDefinition/ncdhc-observation-tobacco-usage": {
-      "base": "StructureDefinition-ncdhc-observation-tobacco-usage.html",
-      "defns": "StructureDefinition-ncdhc-observation-tobacco-usage-definitions.html"
+    "StructureDefinition/ncdhc-observation-bi-tobacco-usage": {
+      "base": "StructureDefinition-ncdhc-observation-bi-tobacco-usage.html",
+      "defns": "StructureDefinition-ncdhc-observation-bi-tobacco-usage-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-illicit-drugs-gestation": {
       "base": "StructureDefinition-ncdhc-observation-illicit-drugs-gestation.html",

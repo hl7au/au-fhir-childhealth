@@ -1384,7 +1384,7 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-tobacco-usage" />
+				<reference value="StructureDefinition/ncdhc-observation-bi-tobacco-usage" />
 			</sourceReference>
 		</resource>
 		<resource>
