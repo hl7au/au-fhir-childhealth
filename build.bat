@@ -1,7 +1,25 @@
 @echo off 
 
-echo You have to edit the path to the publisher...
-pause
+echo Clearing Files...
+
+cd output
+del *.* /s/ q
+cd..
+cd temp
+del *.* /s/ q
+cd..
+cd qa
+del *.* /s/ q
+cd..
+
+echo Clearing Cache...
+
+cd txCache
+del *.* /s/ q
+cd..
+
+echo Building profiles...
+
 
 java.exe -Xmx4096m -jar "..\au-fhir-base-jar\r4\org.hl7.fhir.publisher.jar" -ig ig.json -watch
 

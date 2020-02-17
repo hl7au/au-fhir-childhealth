@@ -321,7 +321,25 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-tobacco-usage" />
+				<reference value="StructureDefinition/ncdhc-observation-bi-tobacco-usage" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-bi-alcohol-intake" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-bi-other" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-breastfeeding-education" />
 			</sourceReference>
 		</resource>
 		<resource>

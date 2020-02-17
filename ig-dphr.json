@@ -177,9 +177,21 @@
       "base": "StructureDefinition-ncdhc-composition-antenatal-record.html",
       "defns": "StructureDefinition-ncdhc-composition-antenatal-record-definitions.html"
     },
-    "StructureDefinition/ncdhc-observation-tobacco-usage": {
-      "base": "StructureDefinition-ncdhc-observation-tobacco-usage.html",
-      "defns": "StructureDefinition-ncdhc-observation-tobacco-usage-definitions.html"
+    "StructureDefinition/ncdhc-observation-bi-tobacco-usage": {
+      "base": "StructureDefinition-ncdhc-observation-bi-tobacco-usage.html",
+      "defns": "StructureDefinition-ncdhc-observation-bi-tobacco-usage-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-bi-alcohol-intake": {
+      "base": "StructureDefinition-ncdhc-observation-bi-alcohol-intake.html",
+      "defns": "StructureDefinition-ncdhc-observation-bi-alcohol-intake-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-bi-other": {
+      "base": "StructureDefinition-ncdhc-observation-bi-other.html",
+      "defns": "StructureDefinition-ncdhc-observation-bi-other-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-breastfeeding-education": {
+      "base": "StructureDefinition-ncdhc-observation-breastfeeding-education.html",
+      "defns": "StructureDefinition-ncdhc-observation-breastfeeding-education-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-illicit-drugs-gestation": {
       "base": "StructureDefinition-ncdhc-observation-illicit-drugs-gestation.html",
