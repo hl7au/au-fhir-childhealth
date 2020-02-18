@@ -193,6 +193,14 @@
       "base": "StructureDefinition-ncdhc-observation-breastfeeding-education.html",
       "defns": "StructureDefinition-ncdhc-observation-breastfeeding-education-definitions.html"
     },
+    "StructureDefinition/ncdhc-observation-medication-pres-change": {
+      "base": "StructureDefinition-ncdhc-observation-medication-pres-change.html",
+      "defns": "StructureDefinition-ncdhc-observation-medication-pres-change-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-head-engagement": {
+      "base": "StructureDefinition-ncdhc-observation-head-engagement.html",
+      "defns": "StructureDefinition-ncdhc-observation-head-engagement-definitions.html"
+    },
     "StructureDefinition/ncdhc-observation-illicit-drugs-gestation": {
       "base": "StructureDefinition-ncdhc-observation-illicit-drugs-gestation.html",
       "defns": "StructureDefinition-ncdhc-observation-illicit-drugs-gestation-definitions.html"
@@ -285,6 +293,14 @@
       "base": "StructureDefinition-ncdhc-observation-heart-rate.html",
       "defns": "StructureDefinition-ncdhc-observation-heart-rate-definitions.html"
     },
+    "StructureDefinition/ncdhc-observation-vitalsign-bp": {
+      "base": "StructureDefinition-ncdhc-observation-vitalsign-bp.html",
+      "defns": "StructureDefinition-ncdhc-observation-vitalsign-bp-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-bp": {
+      "base": "StructureDefinition-ncdhc-observation-bp.html",
+      "defns": "StructureDefinition-ncdhc-observation-bp-definitions.html"
+    },
     "StructureDefinition/ncdhc-observation-fetal-movement": {
       "base": "StructureDefinition-ncdhc-observation-fetal-movement.html",
       "defns": "StructureDefinition-ncdhc-observation-fetal-movement-definitions.html"
@@ -300,6 +316,10 @@
     "StructureDefinition/ncdhc-observation-urinalysis-protein": {
       "base": "StructureDefinition-ncdhc-observation-urinalysis-protein.html",
       "defns": "StructureDefinition-ncdhc-observation-urinalysis-protein-definitions.html"
+    },
+    "StructureDefinition/ncdhc-observation-emotional-health-and-wellbeing": {
+      "base": "StructureDefinition-ncdhc-observation-emotional-health-and-wellbeing.html",
+      "defns": "StructureDefinition-ncdhc-observation-emotional-health-and-wellbeing-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-symphyseal-fundal-height": {
       "base": "StructureDefinition-ncdhc-observation-symphyseal-fundal-height.html",
