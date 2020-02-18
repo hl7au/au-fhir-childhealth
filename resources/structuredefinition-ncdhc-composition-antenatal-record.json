@@ -89,7 +89,13 @@
         "min": 1
       },
       {
-        "id": "Composition.section:MaternalHealthChecks",
+        "id": "Composition.section.title",
+        "path": "Composition.section.title",
+        "short": "Maternal Health Checks, Fetal Health Checks and Progress notes",
+        "fixedString": "Antenatal Visit Health Interaction"
+      },
+      {
+        "id": "Composition.section:maternal-health-checks",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
@@ -97,12 +103,18 @@
           }
         ],
         "path": "Composition.section",
-        "sliceName": "MaternalHealthChecks",
+        "sliceName": "maternal-health-checks",
         "short": "Maternal Health Checks",
         "max": "1"
       },
       {
-        "id": "Composition.section:MaternalHealthChecks.code",
+        "id": "Composition.section:maternal-health-checks.title",
+        "path": "Composition.section.title",
+        "fixedString": "Maternal Health Checks",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:maternal-health-checks.code",
         "path": "Composition.section.code",
         "min": 1,
         "patternCodeableConcept": {
@@ -115,12 +127,12 @@
         }
       },
       {
-        "id": "Composition.section:MaternalHealthChecks.text",
+        "id": "Composition.section:maternal-health-checks.text",
         "path": "Composition.section.text",
         "mustSupport": true
       },
       {
-        "id": "Composition.section:MaternalHealthChecks.entry",
+        "id": "Composition.section:maternal-health-checks.entry",
         "path": "Composition.section.entry",
         "slicing": {
           "discriminator": [
@@ -142,9 +154,10 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthChecks.entry:vitalSigns-bp",
+        "id": "Composition.section:maternal-health-checks.entry:vitalsign-bp",
         "path": "Composition.section.entry",
-        "sliceName": "vitalSigns-bp",
+        "sliceName": "vitalsign-bp",
+        "short": "Blood Pressure (Vital Sign - BP)",
         "max": "1",
         "type": [
           {
@@ -157,9 +170,10 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthChecks.entry:bp",
+        "id": "Composition.section:maternal-health-checks.entry:bp",
         "path": "Composition.section.entry",
         "sliceName": "bp",
+        "short": "Blood Pressure (BP)",
         "max": "1",
         "type": [
           {
@@ -172,9 +186,10 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthChecks.entry:vitalsign-bodyweight",
+        "id": "Composition.section:maternal-health-checks.entry:vitalsign-bodyweight",
         "path": "Composition.section.entry",
         "sliceName": "vitalsign-bodyweight",
+        "short": "Weight Vital Sign (Kg)",
         "max": "1",
         "type": [
           {
@@ -187,9 +202,10 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthChecks.entry:bodyweight",
+        "id": "Composition.section:maternal-health-checks.entry:bodyweight",
         "path": "Composition.section.entry",
         "sliceName": "bodyweight",
+        "short": "Weight (Kg)",
         "max": "1",
         "type": [
           {
@@ -202,9 +218,10 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthChecks.entry:gestation",
+        "id": "Composition.section:maternal-health-checks.entry:gestation",
         "path": "Composition.section.entry",
         "sliceName": "gestation",
+        "short": "Weeks / Gestation (weeks/days)",
         "max": "1",
         "type": [
           {
@@ -217,9 +234,10 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthChecks.entry:urinalysis-protein",
+        "id": "Composition.section:maternal-health-checks.entry:urinalysis-protein",
         "path": "Composition.section.entry",
         "sliceName": "urinalysis-protein",
+        "short": "Urinalysis",
         "max": "1",
         "type": [
           {
@@ -232,9 +250,10 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthChecks.entry:breastfeeding-intention",
+        "id": "Composition.section:maternal-health-checks.entry:breastfeeding-intention",
         "path": "Composition.section.entry",
         "sliceName": "breastfeeding-intention",
+        "short": "Breastfeeding education",
         "max": "1",
         "type": [
           {
@@ -247,24 +266,10 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthChecks.entry:emotional-health-wellbeing",
-        "path": "Composition.section.entry",
-        "sliceName": "emotional-health-wellbeing",
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-emotional-health-wellbeing",
-            "aggregation": [
-              "bundled"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Composition.section:MaternalHealthChecks.entry:briefIntervention-smoking",
+        "id": "Composition.section:maternal-health-checks.entry:briefIntervention-smoking",
         "path": "Composition.section.entry",
         "sliceName": "briefIntervention-smoking",
+        "short": "Brief Smoking intervention",
         "max": "1",
         "type": [
           {
@@ -277,9 +282,10 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthChecks.entry:briefIntervention-alcohol",
+        "id": "Composition.section:maternal-health-checks.entry:briefIntervention-alcohol",
         "path": "Composition.section.entry",
         "sliceName": "briefIntervention-alcohol",
+        "short": "Brief Alcohol intervention",
         "max": "1",
         "type": [
           {
@@ -292,9 +298,10 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthChecks.entry:briefIntervention-other",
+        "id": "Composition.section:maternal-health-checks.entry:briefIntervention-other",
         "path": "Composition.section.entry",
         "sliceName": "briefIntervention-other",
+        "short": "Other Brief Interventions",
         "max": "1",
         "type": [
           {
@@ -307,9 +314,10 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthChecks.entry:illicit-drugs-gestation",
+        "id": "Composition.section:maternal-health-checks.entry:illicit-drugs-gestation",
         "path": "Composition.section.entry",
         "sliceName": "illicit-drugs-gestation",
+        "short": "Illicit drugs - Gestation",
         "max": "1",
         "type": [
           {
@@ -322,14 +330,15 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthChecks.entry:medication-prescriptions-changes",
+        "id": "Composition.section:maternal-health-checks.entry:medication-prescriptions-changes",
         "path": "Composition.section.entry",
         "sliceName": "medication-prescriptions-changes",
+        "short": "Medication / Prescriptions changes",
         "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Resource",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-medication-pres-change",
             "aggregation": [
               "bundled"
             ]
@@ -337,14 +346,15 @@
         ]
       },
       {
-        "id": "Composition.section:MaternalHealthChecks.entry:other-general-comment",
+        "id": "Composition.section:maternal-health-checks.entry:emotional-health-and-wellbeing",
         "path": "Composition.section.entry",
-        "sliceName": "other-general-comment",
+        "sliceName": "emotional-health-and-wellbeing",
+        "short": "Emotional Health and Wellbeing",
         "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Resource",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-emotional-health-and-wellbeing",
             "aggregation": [
               "bundled"
             ]
@@ -352,7 +362,12 @@
         ]
       },
       {
-        "id": "Composition.section:FetalHealthCheck",
+        "id": "Composition.section:maternal-health-checks.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:fetal-health-check",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
@@ -360,11 +375,17 @@
           }
         ],
         "path": "Composition.section",
-        "sliceName": "FetalHealthCheck",
+        "sliceName": "fetal-health-check",
         "short": "Fetal Health Checks"
       },
       {
-        "id": "Composition.section:FetalHealthCheck.code",
+        "id": "Composition.section:fetal-health-check.title",
+        "path": "Composition.section.title",
+        "fixedString": "Fetal Health Checks",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:fetal-health-check.code",
         "path": "Composition.section.code",
         "min": 1,
         "patternCodeableConcept": {
@@ -377,12 +398,12 @@
         }
       },
       {
-        "id": "Composition.section:FetalHealthCheck.text",
+        "id": "Composition.section:fetal-health-check.text",
         "path": "Composition.section.text",
         "mustSupport": true
       },
       {
-        "id": "Composition.section:FetalHealthCheck.entry",
+        "id": "Composition.section:fetal-health-check.entry",
         "path": "Composition.section.entry",
         "slicing": {
           "discriminator": [
@@ -395,9 +416,10 @@
         }
       },
       {
-        "id": "Composition.section:FetalHealthCheck.entry:FetalHeartRate",
+        "id": "Composition.section:fetal-health-check.entry:fetal-heart-rate",
         "path": "Composition.section.entry",
-        "sliceName": "FetalHeartRate",
+        "sliceName": "fetal-heart-rate",
+        "short": "Fetal Heart Rate (FHR)",
         "max": "1",
         "type": [
           {
@@ -407,9 +429,10 @@
         ]
       },
       {
-        "id": "Composition.section:FetalHealthCheck.entry:FetalMovements",
+        "id": "Composition.section:fetal-health-check.entry:fetal-movements",
         "path": "Composition.section.entry",
-        "sliceName": "FetalMovements",
+        "sliceName": "fetal-movements",
+        "short": "Fetal Movements (FM)",
         "max": "1",
         "type": [
           {
@@ -422,9 +445,9 @@
         ]
       },
       {
-        "id": "Composition.section:FetalHealthCheck.entry:ArrangementOfFetus",
+        "id": "Composition.section:fetal-health-check.entry:arrangement-of-fetus",
         "path": "Composition.section.entry",
-        "sliceName": "ArrangementOfFetus",
+        "sliceName": "arrangement-of-fetus",
         "short": "The presentation, position or lie of the fetus",
         "max": "1",
         "type": [
@@ -438,9 +461,10 @@
         ]
       },
       {
-        "id": "Composition.section:FetalHealthCheck.entry:SymphysealFundalHeight",
+        "id": "Composition.section:fetal-health-check.entry:symphyseal-fundal-height",
         "path": "Composition.section.entry",
-        "sliceName": "SymphysealFundalHeight",
+        "sliceName": "symphyseal-fundal-height",
+        "short": "Symphyseal-fundal height (SFH)",
         "max": "1",
         "type": [
           {
@@ -453,14 +477,15 @@
         ]
       },
       {
-        "id": "Composition.section:FetalHealthCheck.entry:FifthsAboveBrim",
+        "id": "Composition.section:fetal-health-check.entry:head-engagement",
         "path": "Composition.section.entry",
-        "sliceName": "FifthsAboveBrim",
+        "sliceName": "head-engagement",
+        "short": "Descent \\ Engagement \\ Station (Fifths above brim)",
         "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fifths-above-brim",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-head-engagement",
             "aggregation": [
               "bundled"
             ]
@@ -468,9 +493,10 @@
         ]
       },
       {
-        "id": "Composition.section:FetalHealthCheck.entry:Liquor",
+        "id": "Composition.section:fetal-health-check.entry:liquor",
         "path": "Composition.section.entry",
-        "sliceName": "Liquor",
+        "sliceName": "liquor",
+        "short": "Liquor",
         "max": "1",
         "type": [
           {
@@ -483,7 +509,12 @@
         ]
       },
       {
-        "id": "Composition.section:ProgressNotes",
+        "id": "Composition.section:fetal-health-check.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:progress-notes",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
@@ -491,13 +522,19 @@
           }
         ],
         "path": "Composition.section",
-        "sliceName": "ProgressNotes",
+        "sliceName": "progress-notes",
         "short": "Progress notes / Comments",
         "comment": "Refer to the https://build.fhir.org/ig/HL7/US-Core-R4/clinical-notes-guidance.html for more details.\r\n\r\n\"All of these clinical notes SHALL be exposed via DocumentReference. This requirement is necessary because some systems scan lab reports and don’t store them in the DiagnosticReport resource. See FHIR Resources to Exchange Clinical Notes for more detail.\"\r\n\r\nIn NCDHC, we are using Encounter instance (the same encoutner instance as referred from the Composition in context) referenced from the DocumentReference to record the following details:\r\n1. Registered interpreter present during the examination\r\n2. Next Visit Date and Time",
         "max": "1"
       },
       {
-        "id": "Composition.section:ProgressNotes.code",
+        "id": "Composition.section:progress-notes.title",
+        "path": "Composition.section.title",
+        "fixedString": "Progress notes",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:progress-notes.code",
         "path": "Composition.section.code",
         "min": 1,
         "patternCodeableConcept": {
@@ -510,14 +547,14 @@
         }
       },
       {
-        "id": "Composition.section:ProgressNotes.text",
+        "id": "Composition.section:progress-notes.text",
         "path": "Composition.section.text",
         "short": "Progress notes / Comments goes here",
         "comment": "Notes and comments on the progress of the pregnancy",
         "mustSupport": true
       },
       {
-        "id": "Composition.section:ProgressNotes.entry",
+        "id": "Composition.section:progress-notes.entry",
         "path": "Composition.section.entry",
         "short": "Progress notes / Comments. If the section is present, then an entry must be present",
         "max": "1",
@@ -530,6 +567,11 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Composition.section:progress-notes.section",
+        "path": "Composition.section.section",
+        "max": "0"
       }
     ]
   }
