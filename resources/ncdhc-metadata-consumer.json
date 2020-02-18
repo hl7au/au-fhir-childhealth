@@ -43,17 +43,17 @@
       "security": {
         "extension": [
           {
-            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris",
             "extension": [
               {
-                "url": "authorize",
-                "valueUri": "https://authncdhc.b2clogin.com/authncdhc.onmicrosoft.com/oauth2/v2.0/authorize"
+                "url": "token",
+                "valueUri": "https://authncdhc.b2clogin.com/authncdhc.onmicrosoft.com/B2C_1_NCDHC_Connect_Signin/oauth2/v2.0/token"
               },
               {
-                "url": "token",
-                "valueUri": "https://authncdhc.b2clogin.com/authncdhc.onmicrosoft.com/B2C_1_signin/oauth2/v2.0/token"
+                "url": "authorize",
+                "valueUri": "https://authncdhc.b2clogin.com/authncdhc.onmicrosoft.com/B2C_1_NCDHC_Connect_Signin/oauth2/v2.0/authorize"
               }
-            ]
+            ],
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris"
           }
         ],
         "cors": true,
@@ -66,7 +66,7 @@
               }
             ]
           },
-		  {
+          {
             "coding": [
               {
                 "system": "http://hl7.org/fhir/restful-security-service",
