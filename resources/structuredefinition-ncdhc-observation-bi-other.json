@@ -35,14 +35,6 @@
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Other Brief  interventions",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "771155005"
-            }
-          ]
-        },
         "mustSupport": true
       },
       {

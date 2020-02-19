@@ -35,14 +35,6 @@
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Brief Alcohol intervention",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1373571000168106"
-            }
-          ]
-        },
         "mustSupport": true
       },
       {
