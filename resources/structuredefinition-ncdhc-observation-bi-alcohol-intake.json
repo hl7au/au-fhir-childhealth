@@ -35,14 +35,6 @@
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Brief Alcohol intervention",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "771155005"
-            }
-          ]
-        },
         "mustSupport": true
       },
       {
@@ -158,16 +150,51 @@
         }
       },
       {
+        "id": "Observation.component:AvgStdDringsPerDay.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
         "id": "Observation.component:AvgStdDringsPerDay.value[x]:valueQuantity",
         "path": "Observation.component.valueQuantity",
         "sliceName": "valueQuantity",
-        "short": "Cigarettes Consumption",
-        "definition": "Proposal is to create a ValueSet with options: 266921000: Ex-trivial cigarette smoker (<1/day), 266924008: Ex-heavy cigarette smoker (20-39/day), 160605003: Heavy cigarette smoker (20-39 cigs/day), 160603005: Light cigarette smoker (1-9 cigs/day)",
+        "short": "Average standard drinks per day",
+        "min": 1,
         "type": [
           {
             "code": "Quantity"
           }
         ]
+      },
+      {
+        "id": "Observation.component:AvgStdDringsPerDay.value[x]:valueQuantity.value",
+        "path": "Observation.component.valueQuantity.value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:AvgStdDringsPerDay.value[x]:valueQuantity.unit",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Observation.component.valueQuantity.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:AvgStdDringsPerDay.value[x]:valueQuantity.system",
+        "path": "Observation.component.valueQuantity.system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:AvgStdDringsPerDay.value[x]:valueQuantity.code",
+        "path": "Observation.component.valueQuantity.code",
+        "min": 1,
+        "fixedCode": "{Drinks}/d",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:AlcoholQuitDate",
@@ -192,6 +219,8 @@
         "id": "Observation.component:AlcoholQuitDate.value[x]:valueDateTime",
         "path": "Observation.component.valueDateTime",
         "sliceName": "valueDateTime",
+        "short": "Alcohol quit date",
+        "min": 1,
         "type": [
           {
             "code": "dateTime"

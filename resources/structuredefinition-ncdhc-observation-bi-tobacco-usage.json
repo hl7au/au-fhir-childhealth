@@ -164,6 +164,7 @@
         "sliceName": "valueQuantity",
         "short": "Cigarettes Consumption",
         "definition": "Proposal is to create a ValueSet with options: 266921000: Ex-trivial cigarette smoker (<1/day), 266924008: Ex-heavy cigarette smoker (20-39/day), 160605003: Heavy cigarette smoker (20-39 cigs/day), 160603005: Light cigarette smoker (1-9 cigs/day)",
+        "min": 1,
         "type": [
           {
             "code": "Quantity"
@@ -171,9 +172,41 @@
         ]
       },
       {
+        "id": "Observation.component:CigarettesPerDay.value[x]:valueQuantity.value",
+        "path": "Observation.component.valueQuantity.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:CigarettesPerDay.value[x]:valueQuantity.unit",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Observation.component.valueQuantity.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:CigarettesPerDay.value[x]:valueQuantity.system",
+        "path": "Observation.component.valueQuantity.system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:CigarettesPerDay.value[x]:valueQuantity.code",
+        "path": "Observation.component.valueQuantity.code",
+        "min": 1,
+        "fixedCode": "/d",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.component:SmokingQuitDate",
         "path": "Observation.component",
         "sliceName": "SmokingQuitDate",
+        "short": "Smoking - Quit date",
         "max": "1"
       },
       {
@@ -192,6 +225,7 @@
         "id": "Observation.component:SmokingQuitDate.value[x]:valueDateTime",
         "path": "Observation.component.valueDateTime",
         "sliceName": "valueDateTime",
+        "min": 1,
         "type": [
           {
             "code": "dateTime"
