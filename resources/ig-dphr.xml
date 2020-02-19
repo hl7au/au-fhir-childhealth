@@ -157,6 +157,12 @@
 				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bp" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-vitalsign-bp-example" />
+			</sourceReference>
+		</resource>
 		<!--Samples on HL7 AU profiles -->
 
 		<resource>
@@ -268,6 +274,12 @@
 				<reference value="StructureDefinition/ncdhc-observation-bp" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-bp-example" />
+			</sourceReference>
+		</resource>
 		<!-- NCDHC Common Observation Profile - End -->
 
 
@@ -310,6 +322,12 @@
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-emotional-health-and-wellbeing" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-emotional-health-and-wellbeing-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -367,9 +385,21 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-medication-pres-change-example" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-head-engagement" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-head-engagement-example" />
 			</sourceReference>
 		</resource>
 		<resource>
