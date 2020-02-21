@@ -8,13 +8,9 @@
       "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-documentreference-clinical-notes"
     ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Antenatal Visits progress notes</div>"
-  },
   "masterIdentifier": {
     "system": "urn:ietf:rfc:3986",
-    "value": "urn:uuid:0h4151bd-1cbf-4d64-b04d-cd9187a4c6e1"
+    "value": "urn:uuid:0h4151bd-1cbf-4d64-b09d-cd9187a4c6e1"
   },
   "status": "current",
   "type": {

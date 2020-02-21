@@ -4,10 +4,6 @@
   "meta": {
     "lastUpdated": "2019-11-28T13:11:33Z"
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">DocumentReference corresponding to HCA 1-4 Weeks</div>"
-  },
   "masterIdentifier": {
     "system": "urn:ietf:rfc:3986",
     "value": "urn:uuid:0h4151bd-1cbf-4d64-b04d-cd9187a4c6e1"

@@ -8,10 +8,6 @@
       "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-baby"
     ]
   },
-  "text" : {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<h1>Baby of Eve Bill</h1>\n\t\t\t\t\t\n</div>"
-  },
   "extension" : [
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/birthPlace",

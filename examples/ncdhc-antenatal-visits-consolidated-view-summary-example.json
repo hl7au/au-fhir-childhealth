@@ -129,10 +129,6 @@
       "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/mm78393f-37ca-4738-81d6-d9595b2e5d0f",
       "resource": {
         "resourceType": "Patient",
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<h1>Eve Bill</h1>\n\t\t\t\t\t\n</div>"
-        },
         "id": "mm78393f-37ca-4738-81d6-d9595b2e5d0f",
         "meta": {
           "versionId": "1",
@@ -185,12 +181,12 @@
           }
         ],
         "gender": "female",
-        "birthDate": "2018-12-24",
+        "birthDate": "2004-12-24",
         "_birthDate": {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
-              "valueDateTime": "2018-12-24T14:35:45-05:00"
+              "valueDateTime": "2004-12-24T14:35:45-05:00"
             }
           ]
         },

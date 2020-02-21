@@ -16,10 +16,6 @@
       "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-dphr-encounter"
     ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Sample DPHR Encounter</b></p></div>"
-  },
   "status": "finished",
   "subject": {
     "reference": "Patient/ncdhc-patient-expectant-mother-example"
