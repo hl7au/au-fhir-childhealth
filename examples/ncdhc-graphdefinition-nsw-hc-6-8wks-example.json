@@ -63,7 +63,7 @@
       "target": [
         {
           "type": "Observation",
-          "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-anus"
+          "profile": ["http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-anus"
         }
       ]
     },
@@ -73,7 +73,7 @@
       "target": [
         {
           "type": "Observation",
-          "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-hearing-checke"
+          "profile": ["http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-hearing-checke"
         }
       ]
     }

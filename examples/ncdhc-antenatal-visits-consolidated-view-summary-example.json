@@ -1,0 +1,230 @@
+{
+  "resourceType": "Bundle",
+  "id": "ncdhc-antenatal-visits-consolidated-view-summary-example",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-02-21T00:00:00Z"
+  },
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:0c4151bd-1cbf-4d68-b04d-cd9187a4c6e0"
+  },
+  "type": "document",
+  "entry": [
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Composition/080f219f-97a8-486d-99d9-ed631fe4fc57",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "080f219f-97a8-486d-99d9-ed631fe4fc57",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-05-21T00:00:00Z",
+          "profile": [
+            "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-view-antenatal-visits"
+          ]
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
+              "code": "ANTVSTVW"
+            }
+          ],
+          "text": "My Check-ups"
+        },
+        "subject": {
+          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/mm78393f-37ca-4738-81d6-d9595b2e5d0f",
+          "display": "Eve Bill"
+        },
+        "date": "2020-02-21T12:30:02Z",
+        "author": [
+          {
+            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Device/3db74777-fd3d-4d3b-92ec-d405977a11a5",
+            "display": "Child Data Hub"
+          }
+        ],
+        "title": "My Check-ups",
+        "confidentiality": "N",
+        "section": [
+          {
+            "title": "My Check-up Information",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "18114009"
+                }
+              ]
+            },
+            "emptyReason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/list-empty-reason",
+                  "code": "unavailable",
+                  "display": "Unavailable"
+                }
+              ],
+              "text": "Sorry, your chck-up information is currently unavailable"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<h1>Sorry, your chck-up information is currently unavailable</h1>\n\t\t\t\t\t\n</div>"
+            }
+          },
+          {
+            "title": "Baby's Check-up Information",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "713117007"
+                }
+              ]
+            },
+            "emptyReason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/list-empty-reason",
+                  "code": "unavailable",
+                  "display": "Unavailable"
+                }
+              ],
+              "text": "Sorry, the baby's check-up information is currently unavailable"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<h1>Sorry, the baby's check-up information is currently unavailable</h1>\n\t\t\t\t\t\n</div>"
+            }
+          },
+          {
+            "title": "Alcohol, Tobacco and Other Drug screening",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "170099002"
+                }
+              ]
+            },
+            "emptyReason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/list-empty-reason",
+                  "code": "unavailable",
+                  "display": "Unavailable"
+                }
+              ],
+              "text": "Sorry, the requested information is currently unavailable"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<h1>Sorry, the requested information is currently unavailable</h1>\n\t\t\t\t\t\n</div>"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/mm78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "resource": {
+        "resourceType": "Patient",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<h1>Eve Bill</h1>\n\t\t\t\t\t\n</div>"
+        },
+        "id": "mm78393f-37ca-4738-81d6-d9595b2e5d0f",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-12-27T16:13:03Z",
+          "profile": [
+            "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-expectant-mother"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "NI",
+                  "display": "National unique individual identifier"
+                }
+              ],
+              "text": "IHI"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
+            "value": "8003608000024083"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "MR",
+                  "display": "Medical Record Number"
+                }
+              ],
+              "text": "Medical Record Number"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0/8003620000000000/02134000",
+            "value": "02134000",
+            "assigner": {
+              "display": "Blacktown Hospital"
+            }
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "text": "Eve Bill",
+            "family": "Bill",
+            "given": [
+              "Eve"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2018-12-24",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+              "valueDateTime": "2018-12-24T14:35:45-05:00"
+            }
+          ]
+        },
+        "address": [
+          {
+            "text": "home",
+            "line": [
+              "31 Pacquola Street"
+            ],
+            "city": "Blacktown",
+            "state": "NSW",
+            "postalCode": "2148",
+            "country": "Australia"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Device/3db74777-fd3d-4d3b-92ec-d405977a11a5",
+      "resource": {
+        "resourceType": "Device",
+        "id": "3db74777-fd3d-4d3b-92ec-d405977a11a5",
+        "meta": {
+          "profile": [
+            "http://hl7.org.au/fhir/StructureDefinition/au-device"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Child Data Hub</div>"
+        },
+        "status": "active",
+        "version": "v1.0.0"
+      }
+    }
+  ]
+}

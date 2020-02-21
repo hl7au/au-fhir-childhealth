@@ -377,7 +377,9 @@
               "meta": {
                 "versionId": "1",
                 "lastUpdated": "2019-11-19T00:00:00Z",
-                "profile": "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
+                "profile": [
+                  "http://hl7.org.au/fhir/StructureDefinition/au-organisation"
+                ]
               },
               "text": {
                 "status": "generated",
@@ -506,7 +508,9 @@
               "meta": {
                 "versionId": "1",
                 "lastUpdated": "2019-11-19T00:00:00Z",
-                "profile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-encounter"
+                "profile": [
+                  "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-encounter"
+                ]
               },
               "text": {
                 "status": "generated",
