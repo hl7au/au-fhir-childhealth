@@ -1,4 +1,4 @@
-**NCDHC Labour Induced Observation Profile**
+**NCDHC Labour Initiation Observation Profile**
 
 This profile sets minimum expectations for the [Observation] resource to record, search and fetch labour initiation details associated with the patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. The profile is at draft stage and under review by the Child Health Working Group. 
 
@@ -22,7 +22,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  a subject ([Patient])
 1.  a time (indicating when the details were taken)
 1.	a performer (detailing who has recorded the details)
-1.  a CodeableConcept using SNOMED CT to represent Induced/Spontaneous
+1.  a CodeableConcept using SNOMED CT to represent Initiation/Spontaneous
 
 
 #### Examples
