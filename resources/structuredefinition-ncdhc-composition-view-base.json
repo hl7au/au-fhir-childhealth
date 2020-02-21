@@ -3,7 +3,7 @@
   "id": "ncdhc-composition-view-base",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-view-base",
   "version": "r1.0.0",
-  "name": "NCDHC Composition View Base Profile",
+  "name": "NCDHCCompositionViewBaseProfile",
   "title": "NCDHC Composition View Base",
   "status": "draft",
   "date": "2019-12-06",

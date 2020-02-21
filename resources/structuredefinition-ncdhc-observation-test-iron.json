@@ -78,7 +78,13 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "short": "Reference to the Baby Patient"
+        "short": "Reference to the Baby Patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-baby"
+          }
+        ]
       },
       {
         "id": "Observation.effectiveDateTime:effectiveDateTime",
@@ -105,12 +111,6 @@
       },
       {
         "id": "Observation.value[x]:valueQuantity.unit",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
         "path": "Observation.valueQuantity.unit",
         "min": 1,
         "mustSupport": true

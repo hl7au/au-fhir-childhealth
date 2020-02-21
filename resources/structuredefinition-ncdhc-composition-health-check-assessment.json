@@ -9,8 +9,8 @@
   "date": "2019-02-01",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "This profile is used to represent Health Check Assessment.",
-  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "purpose": "to record Health Check Assessment",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -27,7 +27,13 @@
       {
         "id": "Composition.subject",
         "path": "Composition.subject",
-        "short": "Reference to the Baby Patient"
+        "short": "Reference to the Baby Patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-baby"
+          }
+        ]
       },
       {
         "id": "Composition.encounter",
@@ -73,12 +79,6 @@
       },
       {
         "id": "Composition.section",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "Section"
-          }
-        ],
         "path": "Composition.section",
         "slicing": {
           "discriminator": [
@@ -92,12 +92,6 @@
       },
       {
         "id": "Composition.section:VitalSignsAndMeasurements",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "Section"
-          }
-        ],
         "path": "Composition.section",
         "sliceName": "VitalSignsAndMeasurements",
         "short": "Represents 'Vital Signs and Measurements' section for this document.",
@@ -266,12 +260,6 @@
       },
       {
         "id": "Composition.section:HealthConditionsSection",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "Section"
-          }
-        ],
         "path": "Composition.section",
         "sliceName": "HealthConditionsSection",
         "max": "1"

@@ -56,7 +56,13 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "short": "Reference to the Baby Patient"
+        "short": "Reference to the Baby Patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-baby"
+          }
+        ]
       },
       {
         "id": "Observation.effectiveDateTime:effectiveDateTime",
@@ -68,7 +74,6 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "short": "Physical problems identified with the baby at, or shortly after birth. E.g. cleft lip/palate, extensive bruising, cephalohematoma etc.",
         "slicing": {
           "discriminator": [
             {
@@ -78,6 +83,7 @@
           ],
           "rules": "open"
         },
+        "short": "Physical problems identified with the baby at, or shortly after birth. E.g. cleft lip/palate, extensive bruising, cephalohematoma etc.",
         "mustSupport": true
       },
       {

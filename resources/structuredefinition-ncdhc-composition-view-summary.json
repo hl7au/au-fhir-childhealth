@@ -8,8 +8,8 @@
   "status": "draft",
   "date": "2019-11-08",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "purpose": "To generate a Custom View to represent Health Check Summary view",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
@@ -44,6 +44,16 @@
         }
       },
       {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-baby"
+          }
+        ]
+      },
+      {
         "id": "Composition.author",
         "path": "Composition.author",
         "type": [
@@ -68,12 +78,6 @@
       },
       {
         "id": "Composition.section",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "Section"
-          }
-        ],
         "path": "Composition.section",
         "min": 1,
         "max": "1"

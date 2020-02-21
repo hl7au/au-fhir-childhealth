@@ -19,20 +19,32 @@
       {
         "id": "Observation.code.coding:FetalHeartRateSNOMEDCode",
         "path": "Observation.code.coding",
-        "sliceName": "FetalHeartRateSNOMEDCode",
-        "fixedCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "289437007"
-        }
+        "sliceName": "FetalHeartRateSNOMEDCode"
+      },
+      {
+        "id": "Observation.code.coding:FetalHeartRateSNOMEDCode.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:FetalHeartRateSNOMEDCode.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "249043002"
       },
       {
         "id": "Observation.code.coding:HeartRateSNOMED",
         "path": "Observation.code.coding",
-        "sliceName": "HeartRateSNOMED",
-        "fixedCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "364075005"
-        }
+        "sliceName": "HeartRateSNOMED"
+      },
+      {
+        "id": "Observation.code.coding:HeartRateSNOMED.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:HeartRateSNOMED.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "364075005"
       },
       {
         "id": "Observation.subject",

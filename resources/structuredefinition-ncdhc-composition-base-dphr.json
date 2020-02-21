@@ -1,15 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-composition-base",
-  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-base",
+  "id": "ncdhc-composition-base-dphr",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-base-dphr",
   "version": "r1.0.0",
-  "name": "NCDHCBaseCompositionProfile",
-  "title": "NCDHC Base Composition",
+  "name": "DPHRBaseCompositionProfile",
+  "title": "DPHR Base Composition",
   "status": "draft",
   "date": "2019-03-01",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "description": "This profile is used to represent NCDHC Base Composition profile.",
-  "purpose": "Define NCDHC Base Composition pfofile for all document types",
+  "description": "This profile is used to represent DPHR Base Composition profile.",
+  "purpose": "Define DPHR Base Composition pfofile for all document types",
   "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "fhirVersion": "3.0.1",
   "kind": "resource",
@@ -22,7 +22,7 @@
       {
         "id": "Composition",
         "path": "Composition",
-        "short": "CHDR Base Composition Profile"
+        "short": "DPHR Base Composition Profile"
       },
       {
         "id": "Composition.type",
@@ -51,7 +51,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-expectant-mother"
           }
         ]
       },

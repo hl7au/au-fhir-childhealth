@@ -3,13 +3,13 @@
   "id": "ncdhc-documentreference-clinical-notes",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-documentreference-clinical-notes",
   "version": "dv0.0.1",
-  "name": "NCDHC Antenatal Visit Progress Notes DocumentReference Profile",
+  "name": "NCDHCAntenatalVisitProgressNotesDocumentReferenceProfile",
   "title": "NCDHC Antenatal Visit Progress Notes DocumentReference",
   "status": "draft",
   "date": "2020-01-31",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "description": "We are leveraging the concept from https://build.fhir.org/ig/HL7/US-Core-R4/clinical-notes-guidance.html#fhir-resources-to-exchange-clinical-notes to represent DocumentReference as Clinical Notes",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "fhirVersion": "3.0.1",
   "mapping": [
     {
@@ -91,7 +91,8 @@
       {
         "id": "DocumentReference.content.attachment.data",
         "path": "DocumentReference.content.attachment.data",
-        "min": 1
+        "short": "The Clinical Note in base64 format",
+        "mustSupport": true
       },
       {
         "id": "DocumentReference.context",
@@ -105,10 +106,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-dphr-encounter",
-            "aggregation": [
-              "bundled"
-            ]
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-dphr-encounter"
           }
         ]
       }

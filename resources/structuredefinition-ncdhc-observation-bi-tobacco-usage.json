@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-bi-tobacco-usage",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bi-tobacco-usage",
-  "version": "dv1.0.0",
+  "version": "dv0.0.1",
   "name": "NCDHCBriefInterventionTobaccoObservationProfile",
   "title": "NCDHC Brief Intervention Smoking Observation",
   "status": "draft",
@@ -68,7 +68,8 @@
       {
         "id": "Observation.code.coding:BriefInterventionSmokingSNOMED-CT.system",
         "path": "Observation.code.coding.system",
-        "min": 1
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.code.coding:BriefInterventionSmokingSNOMED-CT.code",
@@ -133,7 +134,7 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "code.coding"
+              "path": "code"
             }
           ],
           "rules": "open"
@@ -169,7 +170,8 @@
           {
             "code": "Quantity"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.component:CigarettesPerDay.value[x]:valueQuantity.value",
@@ -230,7 +232,8 @@
           {
             "code": "dateTime"
           }
-        ]
+        ],
+        "mustSupport": true
       }
     ]
   }

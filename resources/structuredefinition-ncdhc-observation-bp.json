@@ -71,6 +71,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-expectant-mother"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-baby"
           }
         ]
       },
@@ -143,12 +147,6 @@
       },
       {
         "id": "Observation.component:SystolicBP.value[x]:valueQuantity.unit",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
         "path": "Observation.component.valueQuantity.unit",
         "min": 1,
         "mustSupport": true
@@ -203,12 +201,6 @@
       },
       {
         "id": "Observation.component:DiastolicBP.value[x]:valueQuantity.unit",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
         "path": "Observation.component.valueQuantity.unit",
         "min": 1,
         "mustSupport": true

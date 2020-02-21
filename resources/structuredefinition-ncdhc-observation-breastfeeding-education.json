@@ -129,7 +129,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-breastfeeding-education-discussion-status-1"
+          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-completion-status-1"
         }
       },
       {

@@ -1,0 +1,200 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-composition-view-antenatal-visits",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-view-antenatal-visits",
+  "version": "dv0.0.1",
+  "name": "NCDHCViewAntenatalVisitsCompositionProfile",
+  "title": "NCDHC View Antenatal Visits Composition",
+  "status": "draft",
+  "date": "2020-02-21",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "Enables to view  pregnancy check-up information recorded by health care provider.",
+  "purpose": "To generate a Custom View to represent pregnancy check-up information consolidated view",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-view-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition",
+        "path": "Composition",
+        "short": "NCDHC View Antenatal Visits Composition"
+      },
+      {
+        "id": "Composition.type.coding.system",
+        "path": "Composition.type.coding.system",
+        "fixedUri": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
+      },
+      {
+        "id": "Composition.type.coding.code",
+        "path": "Composition.type.coding.code",
+        "fixedCode": "ANTVSTVW"
+      },
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-expectant-mother"
+          }
+        ]
+      },
+      {
+        "id": "Composition.title",
+        "path": "Composition.title",
+        "fixedString": "My Check-ups",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "Composition.section:my-check-up-information",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "my-check-up-information",
+        "short": "This section represents details related to the check up information of the pregnant lady",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:my-check-up-information.title",
+        "path": "Composition.section.title",
+        "definition": "Hub SHALL populate the Title based on the gestation weeks",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:my-check-up-information.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "18114009"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:my-check-up-information.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "short": "Why the section is empty. A generic message \"Sorry, your chck-up information is currently unavailable\" can be shown if the data is not yet available to the system."
+      },
+      {
+        "id": "Composition.section:my-check-up-information.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:baby-check-up-information",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "baby-check-up-information",
+        "short": "This section represents details related to the check up information of the to be born baby",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:baby-check-up-information.title",
+        "path": "Composition.section.title",
+        "definition": "Hub SHALL populate the Title based on the gestation weeks",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:baby-check-up-information.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "713117007"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:baby-check-up-information.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "short": "Why the section is empty. A generic message \"Sorry, the baby's check-up information is currently unavailable\" can be shown if the data is not yet available to the system."
+      },
+      {
+        "id": "Composition.section:baby-check-up-information.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:my-lifestyle-factors",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "my-lifestyle-factors",
+        "short": "This section represents details of Lifestyle Factors of the pregnant lady",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:my-lifestyle-factors.title",
+        "path": "Composition.section.title",
+        "definition": "Hub SHALL populate the Title based on the gestation weeks",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:my-lifestyle-factors.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "170099002"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:my-lifestyle-factors.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "short": "Why the section is empty. A generic message \"Sorry, the requested information is currently unavailable\" can be shown if the data is not yet available to the system."
+      },
+      {
+        "id": "Composition.section:my-lifestyle-factors.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      }
+    ]
+  }
+}
