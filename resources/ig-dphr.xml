@@ -140,6 +140,12 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-vitalsign-heart-rate-example" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-vitalsign-bmi" />
@@ -269,6 +275,12 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-heart-rate-example" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-bp" />
@@ -291,6 +303,12 @@
 				<reference value="StructureDefinition/ncdhc-documentreference-clinical-notes" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="DocumentReference/ncdhc-documentreference-clinical-notes-example" />
+			</sourceReference>
+		</resource>
 		<!-- DPHR Clinical Notes -->
 		<resource>
 			<example value="false" />
@@ -298,11 +316,33 @@
 				<reference value="StructureDefinition/ncdhc-dphr-encounter" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Encounter/ncdhc-dphr-encounter-example" />
+			</sourceReference>
+		</resource>
+		<!-- Antenatal Visit Composition View -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-view-antenatal-visits" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-antenatal-visits-consolidated-view-summary-example" />
+			</sourceReference>
+		</resource>
+		<!-- Antenatal Visit Questionnaire -->
+		<!-- End Antenatal Visit Composition View -->
+
 		<!-- Antenatal Visit Composition -->
 		<resource>
 			<example value="false" />
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-composition-antenatal-record" />
+				<reference value="StructureDefinition/ncdhc-composition-antenatal-visits" />
 			</sourceReference>
 		</resource>
 		<!-- Antenatal Visit Observations -->
@@ -316,6 +356,12 @@
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-fetus-arrangement" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-fetus-arrangement-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -337,9 +383,21 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-fetus-liquor-example" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-bi-tobacco-usage" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-bi-tobacco-usage-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -349,15 +407,33 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-bi-alcohol-intake-example" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-bi-other" />
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-bi-other-example" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-breastfeeding-education" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-breastfeeding-education-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -376,6 +452,12 @@
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-urinalysis-protein" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-urinalysis-protein-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -406,6 +488,12 @@
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-symphyseal-fundal-height" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-symphyseal-fundal-height-example" />
 			</sourceReference>
 		</resource>
 		<resource>

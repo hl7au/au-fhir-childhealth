@@ -1350,12 +1350,12 @@
 			</sourceReference>
 		</resource>
 		<!-- Antenatal Visit Composition -->
-		<resource>
+		<!-- resource>
 			<example value="false" />
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-composition-antenatal-record" />
+				<reference value="StructureDefinition/ncdhc-composition-antenatal-viits" />
 			</sourceReference>
-		</resource>
+		</resource-->
 		<!-- Antenatal Visit Observations -->
 		<resource>
 			<example value="false" />

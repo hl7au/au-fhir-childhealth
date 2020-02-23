@@ -173,9 +173,13 @@
       "base": "StructureDefinition-ncdhc-dphr-encounter.html",
       "defns": "StructureDefinition-ncdhc-dphr-encounter-definitions.html"
     },
-    "StructureDefinition/ncdhc-composition-antenatal-record": {
-      "base": "StructureDefinition-ncdhc-composition-antenatal-record.html",
-      "defns": "StructureDefinition-ncdhc-composition-antenatal-record-definitions.html"
+    "StructureDefinition/ncdhc-composition-view-antenatal-visits": {
+      "base": "StructureDefinition-ncdhc-composition-view-antenatal-visits.html",
+      "defns": "StructureDefinition-ncdhc-composition-view-antenatal-visits-definitions.html"
+    },
+    "StructureDefinition/ncdhc-composition-antenatal-visits": {
+      "base": "StructureDefinition-ncdhc-composition-antenatal-visits.html",
+      "defns": "StructureDefinition-ncdhc-composition-antenatal-visits-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-bi-tobacco-usage": {
       "base": "StructureDefinition-ncdhc-observation-bi-tobacco-usage.html",
