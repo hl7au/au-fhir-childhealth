@@ -56,99 +56,55 @@
         }
       ]
     },
-    {
-      "id": "4.0.0.0",
-      "linkId": "20",
-      "text": "Skin",
-      "answer": [
-        {
-          "valueString": "Review",
-          "item": [
-            {
-              "id": "4.1.0.1",
-              "linkId": "20.1",
-              "subject": {
-                "reference": "Observation/observation-skin-review-example"
-              },
-              "item": [
-                {
-                  "id": "4.1.1.1",
-                  "linkId": "20.1.1",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "1222461000168103",
-                        "display": "Follow-up review of patient requested"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "id": "4.1.2.1",
-                  "linkId": "20.1.2",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Mascular rash that was detected at birth still present on the infants left arm.Review required at next health check assessment."
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
+    
     {
       "id": "5.0.0.0",
       "linkId": "4",
       "text": "Weight",
-      "answer": [
+      "item": [
         {
-          "valueString": "Normal",
+          "id": "5.1.0.1",
+          "linkId": "4.1",
+          "subject": {
+            "reference": "Observation/ncdhc-observation-vitalsign-bodyweight-example"
+          },
+          "answer": [
+            {
+              "valueString": "Normal"
+            }
+          ],
           "item": [
             {
-              "id": "5.1.0.1",
-              "linkId": "4.1",
-              "subject": {
-                "reference": "Observation/ncdhc-observation-vitalsign-bodyweight-example"
-              },
-              "item": [
+              "id": "5.1.1.1",
+              "linkId": "4.1.1",
+              "text": "Value",
+              "answer": [
                 {
-                  "id": "5.1.1.1",
-                  "linkId": "4.1.1",
-                  "text": "Value",
-                  "answer": [
-                    {
-                      "valueString": "4.12kg"
-                    }
-                  ]
-                },
+                  "valueString": "4.12kg"
+                }
+              ]
+            },
+            {
+              "id": "5.1.2.1",
+              "linkId": "4.1.2",
+              "text": "Outcome",
+              "answer": [
                 {
-                  "id": "5.1.2.1",
-                  "linkId": "4.1.2",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "5.1.3.1",
+              "linkId": "4.1.3",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "5.1.3.1",
-                  "linkId": "4.1.3",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
+                  "valueString": "Comment goes here"
                 }
               ]
             }
@@ -160,50 +116,50 @@
       "id": "6.0.0.0",
       "linkId": "5",
       "text": "Length",
-      "answer": [
+      "item": [
         {
-          "valueString": "Normal",
+          "id": "6.1.0.1",
+          "linkId": "5.1",
+          "subject": {
+            "reference": "Observation/observation-vitalsign-bodyheight-example"
+          },
+          "answer": [
+            {
+              "valueString": "Normal"
+            }
+          ],
           "item": [
             {
-              "id": "6.1.0.1",
-              "linkId": "5.1",
-              "subject": {
-                "reference": "Observation/observation-vitalsign-bodyheight-example"
-              },
-              "item": [
+              "id": "6.1.1.1",
+              "linkId": "5.1.1",
+              "text": "Value",
+              "answer": [
                 {
-                  "id": "6.1.1.1",
-                  "linkId": "5.1.1",
-                  "text": "Value",
-                  "answer": [
-                    {
-                      "valueString": "53cm"
-                    }
-                  ]
-                },
+                  "valueString": "53cm"
+                }
+              ]
+            },
+            {
+              "id": "6.1.2.1",
+              "linkId": "5.1.2",
+              "text": "Outcome",
+              "answer": [
                 {
-                  "id": "6.1.2.1",
-                  "linkId": "5.1.2",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "6.1.3.1",
+              "linkId": "5.1.3",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "6.1.3.1",
-                  "linkId": "5.1.3",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "NA"
-                    }
-                  ]
+                  "valueString": "NA"
                 }
               ]
             }
@@ -215,50 +171,50 @@
       "id": "7.0.0.0",
       "linkId": "6",
       "text": "Head Circumference",
-      "answer": [
+      "item": [
         {
-          "valueString": "Normal",
+          "id": "7.1.0.1",
+          "linkId": "6.1",
+          "subject": {
+            "reference": "Observation/observation-vitalsign-headcircum-example"
+          },
+          "answer": [
+            {
+              "valueString": "Normal"
+            }
+          ],
           "item": [
             {
-              "id": "7.1.0.1",
-              "linkId": "6.1",
-              "subject": {
-                "reference": "Observation/observation-vitalsign-headcircum-example"
-              },
-              "item": [
+              "id": "7.1.1.1",
+              "linkId": "6.1.1",
+              "text": "Value",
+              "answer": [
                 {
-                  "id": "7.1.1.1",
-                  "linkId": "6.1.1",
-                  "text": "Value",
-                  "answer": [
-                    {
-                      "valueString": "36.6cm"
-                    }
-                  ]
-                },
+                  "valueString": "36.6cm"
+                }
+              ]
+            },
+            {
+              "id": "7.1.2.1",
+              "linkId": "6.1.2",
+              "text": "Outcome",
+              "answer": [
                 {
-                  "id": "7.1.2.1",
-                  "linkId": "6.1.2",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "7.1.3.1",
+              "linkId": "6.1.3",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "7.1.3.1",
-                  "linkId": "6.1.3",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
+                  "valueString": "Comment goes here"
                 }
               ]
             }
@@ -270,40 +226,40 @@
       "id": "8.0.0.0",
       "linkId": "7",
       "text": "Head Shape",
-      "answer": [
+      "item": [
         {
-          "valueString": "Not available",
+          "id": "8.1.0.1",
+          "linkId": "7.1",
+          "subject": {
+            "reference": "Observation/observation-head-shape-normal-example"
+          },
+          "answer": [
+            {
+              "valueString": "Not available"
+            }
+          ],
           "item": [
             {
-              "id": "8.1.0.1",
-              "linkId": "7.1",
-              "subject": {
-                "reference": "Observation/observation-head-shape-normal-example"
-              },
-              "item": [
+              "id": "8.1.1.1",
+              "linkId": "7.1.1",
+              "text": "Outcome",
+              "answer": [
                 {
-                  "id": "8.1.1.1",
-                  "linkId": "7.1.1",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://hl7.org/fhir/data-absent-reason",
-                        "code": "not-performed",
-                        "display": "Not Performed"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://hl7.org/fhir/data-absent-reason",
+                    "code": "not-performed",
+                    "display": "Not Performed"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "8.1.2.1",
+              "linkId": "7.1.2",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "8.1.2.1",
-                  "linkId": "7.1.2",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
+                  "valueString": "Comment goes here"
                 }
               ]
             }
@@ -315,40 +271,40 @@
       "id": "9.0.0.0",
       "linkId": "8",
       "text": "Fontanelles",
-      "answer": [
+      "item": [
         {
-          "valueString": "Normal",
+          "id": "9.1.0.1",
+          "linkId": "8.1",
+          "subject": {
+            "reference": "Observation/observation-fontanelles-normal-example"
+          },
+          "answer": [
+            {
+              "valueString": "Normal"
+            }
+          ],
           "item": [
             {
-              "id": "9.1.0.1",
-              "linkId": "8.1",
-              "subject": {
-                "reference": "Observation/observation-fontanelles-normal-example"
-              },
-              "item": [
+              "id": "9.1.1.1",
+              "linkId": "8.1.1",
+              "text": "Outcome",
+              "answer": [
                 {
-                  "id": "9.1.1.1",
-                  "linkId": "8.1.1",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "9.1.2.1",
+              "linkId": "8.1.2",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "9.1.2.1",
-                  "linkId": "8.1.2",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
+                  "valueString": "Comment goes here"
                 }
               ]
             }
@@ -360,54 +316,54 @@
       "id": "10.0.0.0",
       "linkId": "9",
       "text": "Ears",
-      "answer": [
+      "item": [
         {
-          "valueString": "Show Details",
+          "id": "10.1.0.1",
+          "linkId": "9.1",
+          "subject": {
+            "reference": "Observation/observation-ears-normal-example"
+          },
+          "answer": [
+            {
+              "valueString": "Show Details"
+            }
+          ],
           "item": [
             {
-              "id": "10.1.0.1",
-              "linkId": "9.1",
-              "subject": {
-                "reference": "Observation/observation-ears-normal-example"
-              },
-              "item": [
+              "id": "10.1.1.1",
+              "linkId": "9.1.1",
+              "text": "Left",
+              "answer": [
                 {
-                  "id": "10.1.1.1",
-                  "linkId": "9.1.1",
-                  "text": "Left",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "10.1.2.1",
+              "linkId": "9.1.2",
+              "text": "Right",
+              "answer": [
                 {
-                  "id": "10.1.2.1",
-                  "linkId": "9.1.2",
-                  "text": "Right",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "10.1.3.1",
+              "linkId": "9.1.3",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "10.1.3.1",
-                  "linkId": "9.1.3",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
+                  "valueString": "Comment goes here"
                 }
               ]
             }
@@ -419,54 +375,54 @@
       "id": "11.0.0.0",
       "linkId": "10",
       "text": "Eyes",
-      "answer": [
+      "item": [
         {
-          "valueString": "Show Details",
+          "id": "11.1.0.1",
+          "linkId": "10.1",
+          "subject": {
+            "reference": "Observation/observation-eyes-normal-example"
+          },
+          "answer": [
+            {
+              "valueString": "Show Details"
+            }
+          ],
           "item": [
             {
-              "id": "11.1.0.1",
-              "linkId": "10.1",
-              "subject": {
-                "reference": "Observation/observation-eyes-normal-example"
-              },
-              "item": [
+              "id": "11.1.1.1",
+              "linkId": "10.1.1",
+              "text": "Left",
+              "answer": [
                 {
-                  "id": "11.1.1.1",
-                  "linkId": "10.1.1",
-                  "text": "Left",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "11.1.2.1",
+              "linkId": "10.1.2",
+              "text": "Right",
+              "answer": [
                 {
-                  "id": "11.1.2.1",
-                  "linkId": "10.1.2",
-                  "text": "Right",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "11.1.3.1",
+              "linkId": "10.1.3",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "11.1.3.1",
-                  "linkId": "10.1.3",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Both eyes assessed as normal"
-                    }
-                  ]
+                  "valueString": "Both eyes assessed as normal"
                 }
               ]
             }
@@ -478,40 +434,40 @@
       "id": "12.0.0.0",
       "linkId": "11",
       "text": "Mouth Palate",
-      "answer": [
+      "item": [
         {
-          "valueString": "Normal",
+          "id": "12.1.0.1",
+          "linkId": "11.1",
+          "subject": {
+            "reference": "Observation/observation-mouthpalate-normal-example"
+          },
+          "answer": [
+            {
+              "valueString": "Normal"
+            }
+          ],
           "item": [
             {
-              "id": "12.1.0.1",
-              "linkId": "11.1",
-              "subject": {
-                "reference": "Observation/observation-mouthpalate-normal-example"
-              },
-              "item": [
+              "id": "12.1.1.1",
+              "linkId": "11.1.1",
+              "text": "Outcome",
+              "answer": [
                 {
-                  "id": "12.1.1.1",
-                  "linkId": "11.1.1",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "12.1.2.1",
+              "linkId": "11.1.2",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "12.1.2.1",
-                  "linkId": "11.1.2",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
+                  "valueString": "Comment goes here"
                 }
               ]
             }
@@ -523,40 +479,40 @@
       "id": "13.0.0.0",
       "linkId": "12",
       "text": "Cardiovascular",
-      "answer": [
+      "item": [
         {
-          "valueString": "Not available",
+          "id": "13.1.0.1",
+          "linkId": "12.1",
+          "subject": {
+            "reference": "Observation/observation-cardiovascular-normal-example"
+          },
+          "answer": [
+            {
+              "valueString": "Not available"
+            }
+          ],
           "item": [
             {
-              "id": "13.1.0.1",
-              "linkId": "12.1",
-              "subject": {
-                "reference": "Observation/observation-cardiovascular-normal-example"
-              },
-              "item": [
+              "id": "13.1.1.1",
+              "linkId": "12.1.1",
+              "text": "Outcome",
+              "answer": [
                 {
-                  "id": "13.1.1.1",
-                  "linkId": "12.1.1",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://hl7.org/fhir/data-absent-reason",
-                        "code": "not-performed",
-                        "display": "Not Performed"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://hl7.org/fhir/data-absent-reason",
+                    "code": "not-performed",
+                    "display": "Not Performed"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "13.1.2.1",
+              "linkId": "12.1.2",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "13.1.2.1",
-                  "linkId": "12.1.2",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
+                  "valueString": "Comment goes here"
                 }
               ]
             }
@@ -568,40 +524,40 @@
       "id": "14.0.0.0",
       "linkId": "13",
       "text": "Reflexes",
-      "answer": [
+      "item": [
         {
-          "valueString": "Normal",
+          "id": "14.1.0.1",
+          "linkId": "13.1",
+          "subject": {
+            "reference": "Observation/observation-reflexes-normal-example"
+          },
+          "answer": [
+            {
+              "valueString": "Normal"
+            }
+          ],
           "item": [
             {
-              "id": "14.1.0.1",
-              "linkId": "13.1",
-              "subject": {
-                "reference": "Observation/observation-reflexes-normal-example"
-              },
-              "item": [
+              "id": "14.1.1.1",
+              "linkId": "13.1.1",
+              "text": "Outcome",
+              "answer": [
                 {
-                  "id": "14.1.1.1",
-                  "linkId": "13.1.1",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "14.1.2.1",
+              "linkId": "13.1.2",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "14.1.2.1",
-                  "linkId": "13.1.2",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
+                  "valueString": "Comment goes here"
                 }
               ]
             }
@@ -613,54 +569,54 @@
       "id": "15.0.0.0",
       "linkId": "14",
       "text": "Femoral Pulse",
-      "answer": [
+      "item": [
         {
-          "valueString": "Show Details",
+          "id": "15.1.0.1",
+          "linkId": "14.1",
+          "subject": {
+            "reference": "Observation/observation-femoralpulse-normal-example"
+          },
+          "answer": [
+            {
+              "valueString": "Show Details"
+            }
+          ],
           "item": [
             {
-              "id": "15.1.0.1",
-              "linkId": "14.1",
-              "subject": {
-                "reference": "Observation/observation-femoralpulse-normal-example"
-              },
-              "item": [
+              "id": "15.1.1.1",
+              "linkId": "14.1.1",
+              "text": "Left",
+              "answer": [
                 {
-                  "id": "15.1.1.1",
-                  "linkId": "14.1.1",
-                  "text": "Left",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "15.1.2.1",
+              "linkId": "14.1.2",
+              "text": "Right",
+              "answer": [
                 {
-                  "id": "15.1.2.1",
-                  "linkId": "14.1.2",
-                  "text": "Right",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "15.1.3.1",
+              "linkId": "14.1.3",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "15.1.3.1",
-                  "linkId": "14.1.3",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Both femoral pulses assessed as normal"
-                    }
-                  ]
+                  "valueString": "Both femoral pulses assessed as normal"
                 }
               ]
             }
@@ -672,40 +628,40 @@
       "id": "16.0.0.0",
       "linkId": "15",
       "text": "Development",
-      "answer": [
+      "item": [
         {
-          "valueString": "Normal",
+          "id": "16.1.0.1",
+          "linkId": "15.1",
+          "subject": {
+            "reference": "Observation/observation-development-normal-example"
+          },
+          "answer": [
+            {
+              "valueString": "Normal"
+            }
+          ],
           "item": [
             {
-              "id": "16.1.0.1",
-              "linkId": "15.1",
-              "subject": {
-                "reference": "Observation/observation-development-normal-example"
-              },
-              "item": [
+              "id": "16.1.1.1",
+              "linkId": "15.1.1",
+              "text": "Outcome",
+              "answer": [
                 {
-                  "id": "16.1.1.1",
-                  "linkId": "15.1.1",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "16.1.2.1",
+              "linkId": "15.1.2",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "16.1.2.1",
-                  "linkId": "15.1.2",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
+                  "valueString": "Comment goes here"
                 }
               ]
             }
@@ -717,40 +673,40 @@
       "id": "17.0.0.0",
       "linkId": "16",
       "text": "Umbilicus",
-      "answer": [
+      "item": [
         {
-          "valueString": "Normal",
+          "id": "17.1.0.1",
+          "linkId": "16.1",
+          "subject": {
+            "reference": "Observation/observation-umbilicus-normal-example"
+          },
+          "answer": [
+            {
+              "valueString": "Normal"
+            }
+          ],
           "item": [
             {
-              "id": "17.1.0.1",
-              "linkId": "16.1",
-              "subject": {
-                "reference": "Observation/observation-umbilicus-normal-example"
-              },
-              "item": [
+              "id": "17.1.1.1",
+              "linkId": "16.1.1",
+              "text": "Outcome",
+              "answer": [
                 {
-                  "id": "17.1.1.1",
-                  "linkId": "16.1.1",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "17.1.2.1",
+              "linkId": "16.1.2",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "17.1.2.1",
-                  "linkId": "16.1.2",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
+                  "valueString": "Comment goes here"
                 }
               ]
             }
@@ -762,54 +718,54 @@
       "id": "18.0.0.0",
       "linkId": "17",
       "text": "Testes fully descended",
-      "answer": [
+      "item": [
         {
-          "valueString": "Not applicable",
+          "id": "18.1.0.1",
+          "linkId": "17.1",
+          "subject": {
+            "reference": "Observation/observation-testes-normal-example"
+          },
+          "answer": [
+            {
+              "valueString": "Not applicable"
+            }
+          ],
           "item": [
             {
-              "id": "18.1.0.1",
-              "linkId": "17.1",
-              "subject": {
-                "reference": "Observation/observation-testes-normal-example"
-              },
-              "item": [
+              "id": "18.1.1.1",
+              "linkId": "17.1.1",
+              "text": "Left",
+              "answer": [
                 {
-                  "id": "18.1.1.1",
-                  "linkId": "17.1.1",
-                  "text": "Left",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://hl7.org/fhir/data-absent-reason",
-                        "code": "not-performed",
-                        "display": "Not Performed"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://hl7.org/fhir/data-absent-reason",
+                    "code": "not-performed",
+                    "display": "Not Performed"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "18.1.2.1",
+              "linkId": "17.1.2",
+              "text": "Right",
+              "answer": [
                 {
-                  "id": "18.1.2.1",
-                  "linkId": "17.1.2",
-                  "text": "Right",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://hl7.org/fhir/data-absent-reason",
-                        "code": "not-performed",
-                        "display": "Not Performed"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://hl7.org/fhir/data-absent-reason",
+                    "code": "not-performed",
+                    "display": "Not Performed"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "18.1.3.1",
+              "linkId": "17.1.3",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "18.1.3.1",
-                  "linkId": "17.1.3",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comments go here"
-                    }
-                  ]
+                  "valueString": "Comments go here"
                 }
               ]
             }
@@ -821,40 +777,40 @@
       "id": "19.0.0.0",
       "linkId": "18",
       "text": "Genitalia",
-      "answer": [
+      "item": [
         {
-          "valueString": "Normal",
+          "id": "19.1.0.1",
+          "linkId": "18.1",
+          "subject": {
+            "reference": "Observation/observation-genitalia-normal-example"
+          },
+          "answer": [
+            {
+              "valueString": "Normal"
+            }
+          ],
           "item": [
             {
-              "id": "19.1.0.1",
-              "linkId": "18.1",
-              "subject": {
-                "reference": "Observation/observation-genitalia-normal-example"
-              },
-              "item": [
+              "id": "19.1.1.1",
+              "linkId": "18.1.1",
+              "text": "Outcome",
+              "answer": [
                 {
-                  "id": "19.1.1.1",
-                  "linkId": "18.1.1",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "19.1.2.1",
+              "linkId": "18.1.2",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "19.1.2.1",
-                  "linkId": "18.1.2",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
+                  "valueString": "Comment goes here"
                 }
               ]
             }
@@ -866,40 +822,85 @@
       "id": "20.0.0.0",
       "linkId": "19",
       "text": "Anus",
-      "answer": [
+      "item": [
         {
-          "valueString": "Not available",
+          "id": "20.1.0.1",
+          "linkId": "19.1",
+          "subject": {
+            "reference": "Observation/observation-anus-normal-example"
+          },
+          "answer": [
+            {
+              "valueString": "Not available"
+            }
+          ],
           "item": [
             {
-              "id": "20.1.0.1",
-              "linkId": "19.1",
-              "subject": {
-                "reference": "Observation/observation-anus-normal-example"
-              },
-              "item": [
+              "id": "20.1.1.1",
+              "linkId": "19.1.1",
+              "text": "Outcome",
+              "answer": [
                 {
-                  "id": "20.1.1.1",
-                  "linkId": "19.1.1",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://hl7.org/fhir/data-absent-reason",
-                        "code": "not-performed",
-                        "display": "Not Performed"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://hl7.org/fhir/data-absent-reason",
+                    "code": "not-performed",
+                    "display": "Not Performed"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "20.1.2.1",
+              "linkId": "19.1.2",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "20.1.2.1",
-                  "linkId": "19.1.2",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
+                  "valueString": "Comment goes here"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.0.0.0",
+      "linkId": "20",
+      "text": "Skin",
+      "item": [
+        {
+          "id": "4.1.0.1",
+          "linkId": "20.1",
+          "subject": {
+            "reference": "Observation/observation-skin-review-example"
+          },
+          "answer": [
+            {
+              "valueString": "Review"
+            }
+          ],
+          "item": [
+            {
+              "id": "4.1.1.1",
+              "linkId": "20.1.1",
+              "text": "Outcome",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "1222461000168103",
+                    "display": "Follow-up review of patient requested"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "4.1.2.1",
+              "linkId": "20.1.2",
+              "text": "Comments",
+              "answer": [
+                {
+                  "valueString": "Mascular rash that was detected at birth still present on the infants left arm.Review required at next health check assessment."
                 }
               ]
             }
@@ -911,40 +912,40 @@
       "id": "21.0.0.0",
       "linkId": "21",
       "text": "Hips",
-      "answer": [
+      "item": [
         {
-          "valueString": "Normal",
+          "id": "21.1.0.1",
+          "linkId": "21.1",
+          "subject": {
+            "reference": "Observation/observation-hips-normal-example"
+          },
+          "answer": [
+            {
+              "valueString": "Normal"
+            }
+          ],
           "item": [
             {
-              "id": "21.1.0.1",
-              "linkId": "21.1",
-              "subject": {
-                "reference": "Observation/observation-hips-normal-example"
-              },
-              "item": [
+              "id": "21.1.1.1",
+              "linkId": "21.1.1",
+              "text": "Outcome",
+              "answer": [
                 {
-                  "id": "21.1.1.1",
-                  "linkId": "21.1.1",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "21.1.2.1",
+              "linkId": "21.1.2",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "21.1.2.1",
-                  "linkId": "21.1.2",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
+                  "valueString": "Comment goes here"
                 }
               ]
             }
@@ -956,40 +957,40 @@
       "id": "22.0.0.0",
       "linkId": "22",
       "text": "Abdomen",
-      "answer": [
+      "item": [
         {
-          "valueString": "Normal",
+          "id": "22.1.0.1",
+          "linkId": "22.1",
+          "subject": {
+            "reference": "Observation/observation-abdomen-normal-example"
+          },
+          "answer": [
+            {
+              "valueString": "Normal"
+            }
+          ],
           "item": [
             {
-              "id": "22.1.0.1",
-              "linkId": "22.1",
-              "subject": {
-                "reference": "Observation/observation-abdomen-normal-example"
-              },
-              "item": [
+              "id": "22.1.1.1",
+              "linkId": "22.1.1",
+              "text": "Outcome",
+              "answer": [
                 {
-                  "id": "22.1.1.1",
-                  "linkId": "22.1.1",
-                  "text": "Outcome",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "17621005",
-                        "display": "Normal"
-                      }
-                    }
-                  ]
-                },
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "17621005",
+                    "display": "Normal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "22.1.2.1",
+              "linkId": "22.1.2",
+              "text": "Comments",
+              "answer": [
                 {
-                  "id": "22.1.2.1",
-                  "linkId": "22.1.2",
-                  "text": "Comments",
-                  "answer": [
-                    {
-                      "valueString": "Comment goes here"
-                    }
-                  ]
+                  "valueString": "Comment goes here"
                 }
               ]
             }
@@ -1001,48 +1002,43 @@
       "id": "23.0.0.0",
       "linkId": "23",
       "text": "Examiner",
-      "answer": [
+      "item": [
         {
-          "valueString": "Judith NORMAN",
-          "item": [
+          "id": "23.1.0.1",
+          "linkId": "23.1",
+          "text": "Designation",
+          "subject": {
+            "reference": "Practitioner/examiner-practitioner"
+          },
+          "answer": [
             {
-              "id": "23.1.0.1",
-              "linkId": "23.1",
-              "text": "Designation",
-              "subject": {
-                "reference": "Practitioner/examiner-practitioner"
-              },
-              "answer": [
-                {
-                  "valueString": "Child and Family Health Nurse"
-                }
-              ]
-            },
+              "valueString": "Child and Family Health Nurse"
+            }
+          ]
+        },
+        {
+          "id": "23.1.0.1",
+          "linkId": "23.2",
+          "text": "Venue",
+          "subject": {
+            "reference": "Encounter/ncdhc-encounter-example"
+          },
+          "answer": [
             {
-              "id": "23.1.0.1",
-              "linkId": "23.2",
-              "text": "Venue",
-              "subject": {
-                "reference": "Encounter/ncdhc-encounter-example"
-              },
-              "answer": [
-                {
-                  "valueString": "Blacktown CHC"
-                }
-              ]
-            },
+              "valueString": "Blacktown CHC"
+            }
+          ]
+        },
+        {
+          "id": "23.1.0.1",
+          "linkId": "23.3",
+          "text": "Date & Time",
+          "subject": {
+            "reference": "Encounter/ncdhc-encounter-example"
+          },
+          "answer": [
             {
-              "id": "23.1.0.1",
-              "linkId": "23.3",
-              "text": "Date & Time",
-              "subject": {
-                "reference": "Encounter/ncdhc-encounter-example"
-              },
-              "answer": [
-                {
-                  "valueDateTime": "2018-01-07T14:15:00-05:00"
-                }
-              ]
+              "valueDateTime": "2018-01-07T14:15:00-05:00"
             }
           ]
         }

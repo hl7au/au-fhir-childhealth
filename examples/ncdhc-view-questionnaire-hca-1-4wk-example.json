@@ -7,7 +7,6 @@
     ]
   },
   "language": "en-AU",
-  "url": "http://hl7.org.au/fhir/ch/v1/Questionnaire/hca-1-4wk-q-en-s1",
   "version": "hca-1-4wk-q-en-s1",
   "title": "Health Check Assessment 1-4 Week Questionnaire",
   "experimental": false,
@@ -71,7 +70,7 @@
           "system": "http://snomed.info/sct",
           "code": "27113001"
         },
-		{
+        {
           "system": "http://snomed.info/sct",
           "code": "364589006"
         }
@@ -121,7 +120,7 @@
           "system": "http://snomed.info/sct",
           "code": "169886007"
         },
-		    {
+        {
           "system": "http://snomed.info/sct",
           "code": "248334005"
         }
@@ -163,7 +162,7 @@
     {
       "linkId": "6",
       "code": [
-	  {
+        {
           "system": "http://snomed.info/sct",
           "code": "363812007"
         }
