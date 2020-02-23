@@ -283,6 +283,17 @@
 			"code": "REINSTDOC",
 			"display": "Reinstate Document",
 			"definition": "Document is reinstated and viewable to the providers/consumers"
-		}
+    },
+    {
+			"code": "ANTVSTVW",
+			"display": "My Check-ups",
+			"definition": "View  pregnancy check-up information recorded by health care provider"
+    },
+    {
+      "code": "ANTVSTPRGRSNT",
+      "display": "Antenatal Visit Progress Notes",
+      "definition": "Antenatal Visit Progress Notes"
+    }
+    
   ]
 }
