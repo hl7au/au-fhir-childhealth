@@ -67,6 +67,17 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Fetal Movement](StructureDefinition-ncdhc-observation-fetal-movement.html) - Observation profile used to record first movement, known as quickening, between weeks 14 and 26
 * [NCDHC Arrangement Of Fetus](StructureDefinition-ncdhc-observation-fetus-arrangement.html) - Observation profile used to record the presentation, position or lie of the fetus
 * [NCDHC Fetus Liquor](StructureDefinition-ncdhc-observation-fetus-liquor.html) - Observation profile used to record amniotic fluid
+* [NCDHC Urinalysis Protein](StructureDefinition-ncdhc-observation-urinalysis-protein.html) - Observation profile used to record urine dipstick screening for  leukocytes, nitrite, urobilinogen, protein etc
+* [NCDHC Breastfeeding Education](StructureDefinition-ncdhc-observation-breastfeeding-education.html) - Observation profile used to record provision of education about breastfeeding to the patient.
+* [NCDHC Brief Intervention Tobacco Usage](StructureDefinition-ncdhc-observation-bi-tobacco-usage.html) - Observation profile used to record provision of education about breastfeeding to the patient.
+* [NCDHC Brief Intervention Alcohol Intake](StructureDefinition-ncdhc-observation-bi-alcohol-intake.html) - Observation profile used to record alcohol usage of the patient
+* [NCDHC Brief Intervention Other](StructureDefinition-ncdhc-observation-bi-other.html) - Observation profile used to record any other details of the patient. 
+* [NCDHC Illicit Drugs Gestation](StructureDefinition-ncdhc-observation-illicit-drugs-gestation.html) - Observation profile used to record the illicit drugs used by the mother patient during the gestation.
+* [NCDHC Medical Prescription Change](StructureDefinition-ncdhc-observation-medication-pres-change.html) - Observation profile used to record any change to the medical prescription.
+* [NCDHC Emotional Health and Wellbeing](StructureDefinition-ncdhc-observation-emotional-health-and-wellbeing.html) - Observation profile used to record the issues affecting the mental, emotional state of the patient
+* [NCDHC Symphyseal Fundal Height](StructureDefinition-ncdhc-observation-symphyseal-fundal-height.html) - Observation profile used to the fundal height of the fetus
+* [NCDHC Head Engagement](StructureDefinition-ncdhc-observation-head-engagement.html) - Observation profile used to record the fetus head engagement inside the womb
+
 
 ### MedicationStatement Profiles
 * [NCDHC Medication Vitamin K](StructureDefinition-ncdhc-medicationstatement-vitamink.html) - MedicationStatement profile to record Vitamin K1 details administered to the newborn at birth
@@ -104,9 +115,12 @@ These Profiles have been defined for this implementation guide.
  * [NCDHC Progress Notes](StructureDefinition-ncdhc-documentreference-clinical-notes.html) - DocumentReference profile to represent progress notes
 
 ### FHIR Document Profiles 
-* [NCDHC Antenatal Record Collection Health Interaction](StructureDefinition-ncdhc-composition-antenatal-record.html) - Composition profile to collect Antenatal Record and associated details
+* [NCDHC Antenatal Record Collection Health Interaction](StructureDefinition-ncdhc-composition-antenatal-visit.html) - Composition profile to collect Antenatal Visit and associated details
 
+### FHIR View Profiles
+* [NCDHC Antenatal Visit Detailed view](StructureDefinition-ncdhc-composition-view-antenatal-visit.html) - Consolidated details of antenatal visit as shared by clinical providers and to be aware of the issues being managed during my pregnancy
 
+ 
 ## NCDHC Admin Profiles
 * [NCDHC Rep Registration](StructureDefinition-ncdhc-composition-rep-registration.html) - Composition profile to register representative
 * [NCDHC Child Registration](StructureDefinition-ncdhc-composition-child-registration.html) - Composition profile to register child
