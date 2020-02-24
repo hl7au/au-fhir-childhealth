@@ -115,7 +115,7 @@ These Profiles have been defined for this implementation guide.
  * [NCDHC Progress Notes](StructureDefinition-ncdhc-documentreference-clinical-notes.html) - DocumentReference profile to represent progress notes
 
 ### FHIR Document Profiles 
-* [NCDHC Antenatal Record Collection Health Interaction](StructureDefinition-ncdhc-composition-antenatal-visit.html) - Composition profile to collect Antenatal Visit and associated details
+* [NCDHC Antenatal Visit Collection Health Interaction](StructureDefinition-ncdhc-composition-antenatal-visit.html) - Composition profile to collect Antenatal Visit and associated details
 
 ### FHIR View Profiles
 * [NCDHC Antenatal Visit Detailed view](StructureDefinition-ncdhc-composition-view-antenatal-visit.html) - Consolidated details of antenatal visit as shared by clinical providers and to be aware of the issues being managed during my pregnancy
