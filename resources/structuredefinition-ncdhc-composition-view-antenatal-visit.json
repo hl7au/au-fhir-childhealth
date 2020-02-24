@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-composition-view-antenatal-visits",
-  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-view-antenatal-visits",
+  "id": "ncdhc-composition-view-antenatal-visit",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-view-antenatal-visit",
   "version": "dv0.0.1",
-  "name": "NCDHCViewAntenatalVisitsCompositionProfile",
+  "name": "NCDHCViewAntenatalVisitCompositionProfile",
   "title": "NCDHC View Antenatal Visits Composition",
   "status": "draft",
   "date": "2020-02-21",
@@ -22,7 +22,7 @@
       {
         "id": "Composition",
         "path": "Composition",
-        "short": "NCDHC View Antenatal Visits Composition"
+        "short": "NCDHC View Antenatal Visit Composition"
       },
       {
         "id": "Composition.type.coding.system",

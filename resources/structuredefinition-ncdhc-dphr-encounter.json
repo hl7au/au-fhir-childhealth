@@ -37,6 +37,12 @@
         "path": "Encounter.appointment",
         "short": "Next Visit Date and Time",
         "mustSupport": true
+      },
+      {
+        "id": "Encounter.period",
+        "path": "Encounter.period",
+        "min": 1,
+        "mustSupport": true
       }
     ]
   }
