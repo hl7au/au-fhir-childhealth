@@ -110,6 +110,7 @@
         "path": "Composition.section",
         "sliceName": "maternal-health-checks",
         "short": "Maternal Health Checks",
+        "min": 1,
         "max": "1"
       },
       {
@@ -227,6 +228,7 @@
         "path": "Composition.section.entry",
         "sliceName": "gestation",
         "short": "Weeks / Gestation (weeks/days)",
+        "min": 1,
         "max": "1",
         "type": [
           {

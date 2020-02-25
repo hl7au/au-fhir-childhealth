@@ -57,7 +57,12 @@
       {
         "id": "Composition.date",
         "path": "Composition.date",
-        "short": "Date Time when the view is generated"
+        "type": [
+          {
+            "code": "dateTime",
+            "profile": "Date Time when the view is generated"
+          }
+        ]
       },
       {
         "id": "Composition.author",
@@ -108,6 +113,11 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Composition.section.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "mustSupport": true
       }
     ]
   }
