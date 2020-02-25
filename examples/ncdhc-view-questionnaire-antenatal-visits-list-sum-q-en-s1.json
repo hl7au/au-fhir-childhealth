@@ -41,7 +41,7 @@
           "item": [
             {
               "linkId": "1.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-dphr-encounter-definitions.html#Encounter.participant.period",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-dphr-encounter-definitions.html#Encounter.period",
               "type": "dateTime"
             },
             {
