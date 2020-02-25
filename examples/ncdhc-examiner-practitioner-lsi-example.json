@@ -24,7 +24,7 @@
           ],
           "text": "HPI-O scoped local identifier"
         },
-        "system": "http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/8003620000000000/1234533454",
+        "system": "http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/8003620000000000",
         "value": "1234533454"
       }
     ],
