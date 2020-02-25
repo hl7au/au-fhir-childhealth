@@ -275,25 +275,34 @@
       "definition": "A consumer can add, manage and remove nominated representatives to view their child’s health record"
     },
     {
-			"code": "REMDOC",
-			"display": "Remove Document",
-			"definition": "Document is deprecated from the hub"
-		},
-		{
-			"code": "REINSTDOC",
-			"display": "Reinstate Document",
-			"definition": "Document is reinstated and viewable to the providers/consumers"
+      "code": "REMDOC",
+      "display": "Remove Document",
+      "definition": "Document is deprecated from the hub"
     },
     {
-			"code": "ANTVSTVW",
-			"display": "My Check-ups",
-			"definition": "View  pregnancy check-up information recorded by health care provider"
+      "code": "REINSTDOC",
+      "display": "Reinstate Document",
+      "definition": "Document is reinstated and viewable to the providers/consumers"
+    },
+    {
+      "code": "ANTVSTCLC",
+      "display": "Antenatal Visit ",
+      "definition": "Antenatal Visit details collection"
+    },
+    {
+      "code": "ANTVSTVW",
+      "display": "Antenatal Visit View",
+      "definition": "View  pregnancy check-up information recorded by health care provider"
     },
     {
       "code": "ANTVSTPRGRSNT",
       "display": "Antenatal Visit Progress Notes",
       "definition": "Antenatal Visit Progress Notes"
+    },
+    {
+      "code": "ANTVSTLST",
+      "display": "Antenatal Visit List",
+      "definition": "Antenatal Visit List"
     }
-    
   ]
 }
