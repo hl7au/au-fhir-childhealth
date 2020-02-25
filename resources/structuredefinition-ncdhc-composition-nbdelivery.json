@@ -7,12 +7,11 @@
   },
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-nbdelivery",
   "version": "dv0.0.1",
-  "name": "NCDHC Newborn Delivery Health Interaction Composition Profile",
+  "name": "NCDHCNewbornDeliveryHealthInteractionCompositionProfile",
   "title": "NCDHC Newborn Delivery Composition",
   "status": "draft",
   "date": "2020-01-17",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
   "contact": [
     {
       "telecom": [
@@ -26,6 +25,7 @@
   ],
   "description": "Composition profile for NCDHC Newborn Delivery Health Interaction",
   "purpose": "The purpose is to capture all the relevant details associated to the Newborn Delivery Event.",
+  "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
   "fhirVersion": "3.0.1",
   "mapping": [
     {
@@ -240,7 +240,7 @@
       {
         "id": "Composition.section:abnormalitiesNotedAtBirth.entry",
         "path": "Composition.section.entry",
-        "short": "Section to represent Congenital anomalies of the newborn data.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
+        "short": "Section to represent anomalies of the newborn data.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
         "comment": "If there are no entries in the list, an emptyReason SHOULD be provided. There could be multiple type of Congenital anomalies. The card proposed as 1...*.",
         "type": [
           {

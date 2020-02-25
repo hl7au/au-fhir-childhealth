@@ -76,11 +76,7 @@
         "path": "Observation.code.coding",
         "sliceName": "FetalMovementsSNOMED-CT",
         "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "364617005"
-        }
+        "max": "1"
       },
       {
         "id": "Observation.code.coding:FetalMovementsSNOMED-CT.system",
@@ -91,7 +87,8 @@
       {
         "id": "Observation.code.coding:FetalMovementsSNOMED-CT.code",
         "path": "Observation.code.coding.code",
-        "min": 1
+        "min": 1,
+        "fixedCode": "364617005"
       },
       {
         "id": "Observation.subject",

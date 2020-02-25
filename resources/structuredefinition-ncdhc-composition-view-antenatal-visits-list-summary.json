@@ -57,12 +57,7 @@
       {
         "id": "Composition.date",
         "path": "Composition.date",
-        "type": [
-          {
-            "code": "dateTime",
-            "profile": "Date Time when the view is generated"
-          }
-        ]
+        "short": "Date Time when the view is generated"
       },
       {
         "id": "Composition.author",
