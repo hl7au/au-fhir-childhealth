@@ -46,8 +46,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "278092006",
-        "display": "Normal liquor volume"
+        "code": "17621005",
+        "display": "Normal"
       }
     ]
   }

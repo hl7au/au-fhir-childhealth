@@ -41,8 +41,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "1222461000168103",
-        "display": "Follow-up review of patient requested"
+        "code": "17326005",
+        "display": "Well in self"
       }
     ]
   },
