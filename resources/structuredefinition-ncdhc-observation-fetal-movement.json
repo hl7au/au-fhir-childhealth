@@ -114,31 +114,8 @@
         "short": "Date when Fetal Movements were assessed"
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Observation.value[x]:valueString",
-        "path": "Observation.value[x]",
-        "sliceName": "valueString",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
         "id": "Observation.value[x]:valueCodeableConcept",
-        "path": "Observation.value[x]",
+        "path": "Observation.valueCodeableConcept",
         "sliceName": "valueCodeableConcept",
         "type": [
           {
