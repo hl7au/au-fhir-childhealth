@@ -130,7 +130,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-medication-pres-change-status-1"
+          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-generic-yes-no-1"
         }
       },
       {
