@@ -653,9 +653,9 @@
         ]
       },
       {
-        "id": "Composition.section:labourAndDelivery.entry:LabourInduced",
+        "id": "Composition.section:labourAndDelivery.entry:LabourInitiation",
         "path": "Composition.section.entry",
-        "sliceName": "LabourInduced",
+        "sliceName": "LabourInitiation",
         "max": "1",
         "type": [
           {
