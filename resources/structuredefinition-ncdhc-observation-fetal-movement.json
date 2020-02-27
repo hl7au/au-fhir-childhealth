@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-observation-fetal-movement",
   "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fetal-movement",
-  "version": "v1.0.0",
-  "name": "NCDHC Fetal Movements Observation Profile",
+  "version": "dv.0.0.1",
+  "name": "NCDHCFetalMovementsObservationProfile",
   "title": "NCDHC Fetal Movements (FM) observation",
   "status": "draft",
-  "date": "2019-06-21T00:00:00+10:00",
+  "date": "2020-02-27",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "fhirVersion": "3.0.1",
@@ -76,7 +76,11 @@
         "path": "Observation.code.coding",
         "sliceName": "FetalMovementsSNOMED-CT",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "364617005"
+        }
       },
       {
         "id": "Observation.code.coding:FetalMovementsSNOMED-CT.system",
@@ -87,8 +91,7 @@
       {
         "id": "Observation.code.coding:FetalMovementsSNOMED-CT.code",
         "path": "Observation.code.coding.code",
-        "min": 1,
-        "fixedCode": "364617005"
+        "min": 1
       },
       {
         "id": "Observation.subject",
