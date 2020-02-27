@@ -33,7 +33,15 @@
       "display": "Organisation"
     }
   ],
-  "valueString": "No active elements found",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "443938003",
+        "display": "Procedure carried out on subject"
+      }
+    ]
+  },
   "interpretation": {
     "coding": [
       {

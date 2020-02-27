@@ -45,10 +45,6 @@
             {
               "type": "pattern",
               "path": "code"
-            },
-            {
-              "type": "value",
-              "path": "system"
             }
           ],
           "rules": "closed"
@@ -99,43 +95,21 @@
         "short": "Person who is clinically responsible for the undetaking of the assessment"
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "short": "Urinalysis assessment status",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueString",
-        "path": "Observation.value[x]",
-        "sliceName": "valueString",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
         "id": "Observation.value[x]:valueCodeableConcept",
-        "path": "Observation.value[x]",
+        "path": "Observation.valueCodeableConcept",
         "sliceName": "valueCodeableConcept",
-        "definition": "The information determined as a antresult of making the observation, if the information has a simple value.",
+        "short": "Urinalysis assessment completion status",
         "type": [
           {
             "code": "CodeableConcept"
           }
         ],
+        "mustSupport": false,
         "binding": {
           "strength": "required",
-          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-urinalysis-assessment-1"
+          "valueSetReference": {
+            "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-completion-status-1"
+          }
         }
       },
       {

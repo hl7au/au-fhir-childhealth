@@ -50,6 +50,27 @@
   "differential": {
     "element": [
       {
+        "id": "Observation",
+        "path": "Observation"
+      },
+      {
+        "id": "Observation.code.coding:BPCode",
+        "path": "Observation.code.coding",
+        "sliceName": "BPCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:BPCode.system",
+        "path": "Observation.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:BPCode.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
+      },
+      {
         "id": "Observation.code.coding:BPSNOMED-CT",
         "path": "Observation.code.coding",
         "sliceName": "BPSNOMED-CT",
@@ -58,11 +79,13 @@
       {
         "id": "Observation.code.coding:BPSNOMED-CT.system",
         "path": "Observation.code.coding.system",
+        "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.code.coding:BPSNOMED-CT.code",
         "path": "Observation.code.coding.code",
+        "min": 1,
         "fixedCode": "75367002"
       },
       {
@@ -78,7 +101,27 @@
       {
         "id": "Observation.component:SystolicBP",
         "path": "Observation.component",
-        "sliceName": "SystolicBP"
+        "sliceName": "SystolicBP",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:SystolicBP.code.coding:SBPCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "SBPCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:SystolicBP.code.coding:SBPCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:SystolicBP.code.coding:SBPCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Observation.component:SystolicBP.code.coding:SBPSNOMED-CT",
@@ -89,31 +132,56 @@
       {
         "id": "Observation.component:SystolicBP.code.coding:SBPSNOMED-CT.system",
         "path": "Observation.component.code.coding.system",
+        "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.component:SystolicBP.code.coding:SBPSNOMED-CT.code",
         "path": "Observation.component.code.coding.code",
+        "min": 1,
         "fixedCode": "271649006"
       },
       {
         "id": "Observation.component:DiastolicBP",
         "path": "Observation.component",
-        "sliceName": "DiastolicBP"
+        "sliceName": "DiastolicBP",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:DiastolicBP.code.coding:DBPCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "DBPCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:DiastolicBP.code.coding:DBPCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:DiastolicBP.code.coding:DBPCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Observation.component:DiastolicBP.code.coding:DBPSNOMED-CT",
         "path": "Observation.component.code.coding",
-        "sliceName": "DBPSNOMED-CT"
+        "sliceName": "DBPSNOMED-CT",
+        "max": "1"
       },
       {
         "id": "Observation.component:DiastolicBP.code.coding:DBPSNOMED-CT.system",
         "path": "Observation.component.code.coding.system",
+        "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.component:DiastolicBP.code.coding:DBPSNOMED-CT.code",
         "path": "Observation.component.code.coding.code",
+        "min": 1,
         "fixedCode": "271650006"
       }
     ]
