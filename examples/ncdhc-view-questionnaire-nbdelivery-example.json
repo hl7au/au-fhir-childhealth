@@ -7,7 +7,6 @@
     ]
   },
   "language": "en-AU",
-  "url": "http://hl7.org.au/fhir/ch/v1/Questionnaire/nb-delivery-q-en-s1",
   "version": "nbdelivery-v1",
   "title": "Newborn Delivery Questionnaire",
   "experimental": false,

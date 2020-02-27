@@ -19,14 +19,14 @@
   "item": [
     {
       "id": "1.0.0.0",
-      "linkId": "6",
-      "text": "6 month",
+      "linkId": "8",
+      "text": "1-4 week",
       "subject": {
-        "display": "Reference to fetch 6 months HCA goes here"
+        "display": "Reference to fetch 1-4 weeks HCA goes here"
       },
       "answer": [
         {
-          "valueString": "14 Jun 2018 - Dubbo Doctors"
+          "valueString": "7 Jan 2018 - Blacktown CHC"
         }
       ]
     },
@@ -58,14 +58,14 @@
     },
     {
       "id": "4.0.0.0",
-      "linkId": "8",
-      "text": "1-4 week",
+      "linkId": "6",
+      "text": "6 months",
       "subject": {
-        "display": "Reference to fetch 1-4 weeks HCA goes here"
+        "display": "Reference to fetch 6 months HCA goes here"
       },
       "answer": [
         {
-          "valueString": "7 Jan 2018 - Blacktown CHC"
+          "valueString": "14 Jun 2018 - Dubbo Doctors"
         }
       ]
     }
