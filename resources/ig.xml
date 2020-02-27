@@ -386,7 +386,7 @@
 		<!-- NCDHC Questionnaire and QuestionnaireResponse -End-->
 
 		<!-- NCDHC Common Profiles -->
-		
+
 		<!-- HL7 Vital Sign Profiles -->
 		<resource>
 			<example value="false" />
@@ -1083,10 +1083,10 @@
 				<reference value="StructureDefinition/ncdhc-observation-symphyseal-fundal-height" />
 			</sourceReference>
 		</resource>
-			<resource>
+		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Observation/ncdhc-observation-symphyseal-fundal-height-example"/>
+				<reference value="Observation/ncdhc-observation-symphyseal-fundal-height-example" />
 			</sourceReference>
 		</resource>
 		<!-- Health Check Assessment View Composition -->
@@ -1237,7 +1237,7 @@
 				<reference value="Bundle/ncdhc-bundle-transaction-nbdelivery-request-payload" />
 			</sourceReference>
 		</resource>
-		
+
 		<!-- Newborn Delivery Observation -->
 		<resource>
 			<example value="false" />
@@ -1412,7 +1412,7 @@
 				<reference value="StructureDefinition/ncdhc-composition-antenatal-visit" />
 			</sourceReference>
 		</resource>
-		<!-- Antenatal Visit Observations -->		
+		<!-- Antenatal Visit Observations -->
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -1425,7 +1425,7 @@
 				<reference value="Observation/ncdhc-observation-head-engagement-example" />
 			</sourceReference>
 		</resource>
-			<resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-medication-pres-change" />
@@ -1446,7 +1446,7 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Observation/ncdhc-observation-urinalysis-protein-example"/>
+				<reference value="Observation/ncdhc-observation-urinalysis-protein-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -1482,7 +1482,7 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Observation/ncdhc-observation-bi-other-example"/>
+				<reference value="Observation/ncdhc-observation-bi-other-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -1494,7 +1494,7 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Observation/ncdhc-observation-breastfeeding-education-example"/>
+				<reference value="Observation/ncdhc-observation-breastfeeding-education-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -1509,7 +1509,7 @@
 				<reference value="Observation/ncdhc-observation-illicit-drugs-gestation-example" />
 			</sourceReference>
 		</resource>
-			<resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-fetal-movement" />
@@ -1558,7 +1558,7 @@
 			</sourceReference>
 		</resource>
 		<!-- DPHR Health Interactions - End -->
-	
+
 		<!-- NCDHC Custom Operations -->
 		<resource>
 			<example value="false" />
@@ -1857,6 +1857,37 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
+				<reference value="ValueSet/ncdhc-descent-of-head-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-emotional-health-discussion-outcome-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-head-engagement-status-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-urinalysis-interpretation-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-generic-yes-no-1" />
+			</sourceReference>
+		</resource>
+
+		<resource>
+			<example value="false" />
+			<sourceReference>
 				<reference value="ValueSet/ncdhc-quantity-of-liquor-1" />
 			</sourceReference>
 		</resource>
@@ -1918,7 +1949,7 @@
 			<sourceReference>
 				<reference value="CapabilityStatement/ncdhc-metadata-consumer" />
 			</sourceReference>
-		</resource> 
+		</resource>
 	</package>
 	<page>
 		<source value="index.html" />

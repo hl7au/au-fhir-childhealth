@@ -377,7 +377,6 @@
       "source": "ncdhc-observation-bi-tobacco-usage-example.json",
       "base": "ncdhc-observation-bi-tobacco-usage-example.html"
     },
-
     "StructureDefinition/ncdhc-observation-bi-alcohol-intake": {
       "base": "StructureDefinition-ncdhc-observation-bi-alcohol-intake.html",
       "defns": "StructureDefinition-ncdhc-observation-bi-alcohol-intake-definitions.html"
@@ -877,6 +876,21 @@
     },
     "ValueSet/ncdhc-arrangement-of-fetus-1": {
       "base": "ValueSet-ncdhc-arrangement-of-fetus-1.html"
+    },
+    "ValueSet/ncdhc-descent-of-head-1": {
+      "base": "ValueSet-ncdhc-descent-of-head-1.html"
+    },
+    "ValueSet/ncdhc-emotional-health-discussion-outcome-1": {
+      "base": "ValueSet-ncdhc-emotional-health-discussion-outcome-1.html"
+    },
+    "ValueSet/ncdhc-head-engagement-status-1": {
+      "base": "ValueSet-ncdhc-head-engagement-status-1.html"
+    },
+    "ValueSet/ncdhc-urinalysis-interpretation-1": {
+      "base": "ValueSet-ncdhc-urinalysis-interpretation-1.html"
+    },
+    "ValueSet/ncdhc-generic-yes-no-1": {
+      "base": "ValueSet-ncdhc-generic-yes-no-1.html"
     },
     "ValueSet/ncdhc-first-fetal-movements-1": {
       "base": "ValueSet-ncdhc-first-fetal-movements-1.html"
