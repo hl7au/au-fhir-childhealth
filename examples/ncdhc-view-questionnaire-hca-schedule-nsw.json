@@ -7,7 +7,6 @@
       ]
     },
     "language": "en-AU",
-    "url": "http://hl7.org.au/fhir/ch/v1/Questionnaire/hca-1-4wk-q-en-s1",
     "version": "hca-sch-nsw-q-en-s1",
     "title": "Health Check Schedule",
     "experimental": false,

@@ -7,7 +7,7 @@
     ]
   },
   "language": "en-AU",
-  "url": "http://hl7.org.au/fhir/ch/v1/Questionnaire/hca-sum-nsw-q-en-s1",
+  "url":"Questionnaire/hca-sum-nsw-q-en-s1",
   "version": "hca-sum-nsw-q-en-s1",
   "title": "Health Check Summary",
   "experimental": false,
@@ -36,6 +36,7 @@
       ],
       "text": "1-4 week",
       "type": "string",
+      "repeats": true,
       "item": [
         {
           "linkId": "8.1",
@@ -66,6 +67,7 @@
       ],
       "text": "6-8 week",
       "type": "string",
+      "repeats": true,
       "item": [
         {
           "linkId": "7.1",
@@ -96,6 +98,7 @@
       ],
       "text": "6 months",
       "type": "string",
+      "repeats": true,
       "item": [
         {
           "linkId": "6.1",
@@ -126,6 +129,7 @@
       ],
       "text": "12 months",
       "type": "string",
+      "repeats": true,
       "item": [
         {
           "linkId": "5.1",
@@ -156,6 +160,7 @@
       ],
       "text": "18 months",
       "type": "string",
+      "repeats": true,
       "item": [
         {
           "linkId": "4.1",
@@ -186,6 +191,7 @@
       ],
       "text": "2 years",
       "type": "string",
+      "repeats": true,
       "item": [
         {
           "linkId": "3.1",
@@ -216,6 +222,7 @@
       ],
       "text": "3 years",
       "type": "string",
+      "repeats": true,
       "item": [
         {
           "linkId": "2.1",
@@ -246,6 +253,7 @@
       ],
       "text": "4 years",
       "type": "string",
+      "repeats": true,
       "item": [
         {
           "linkId": "1.1",

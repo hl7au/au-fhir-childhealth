@@ -7,7 +7,6 @@
     ]
   },
   "language": "en-AU",
-  "url": "http://hl7.org.au/fhir/ch/v1/Questionnaire/nb-delivery-q-en-s1",
   "version": "hca06-v1",
   "title": "Health Check Assessment 0-6 Questionnaire",
   "experimental": "false",
