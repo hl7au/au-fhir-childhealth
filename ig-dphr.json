@@ -173,13 +173,17 @@
       "base": "StructureDefinition-ncdhc-dphr-encounter.html",
       "defns": "StructureDefinition-ncdhc-dphr-encounter-definitions.html"
     },
-    "StructureDefinition/ncdhc-composition-view-antenatal-visits": {
-      "base": "StructureDefinition-ncdhc-composition-view-antenatal-visits.html",
-      "defns": "StructureDefinition-ncdhc-composition-view-antenatal-visits-definitions.html"
+    "StructureDefinition/ncdhc-composition-view-antenatal-visit": {
+      "base": "StructureDefinition-ncdhc-composition-view-antenatal-visit.html",
+      "defns": "StructureDefinition-ncdhc-composition-view-antenatal-visit-definitions.html"
     },
-    "StructureDefinition/ncdhc-composition-antenatal-visits": {
-      "base": "StructureDefinition-ncdhc-composition-antenatal-visits.html",
-      "defns": "StructureDefinition-ncdhc-composition-antenatal-visits-definitions.html"
+    "StructureDefinition/ncdhc-composition-antenatal-visit": {
+      "base": "StructureDefinition-ncdhc-composition-antenatal-visit.html",
+      "defns": "StructureDefinition-ncdhc-composition-antenatal-visit-definitions.html"
+    },
+    "StructureDefinition/ncdhc-composition-view-antenatal-visits-list-summary": {
+      "base": "StructureDefinition-ncdhc-composition-view-antenatal-visits-list-summary.html",
+      "defns": "StructureDefinition-ncdhc-composition-view-antenatal-visits-list-summary-definitions.html"
     },
     "StructureDefinition/ncdhc-observation-bi-tobacco-usage": {
       "base": "StructureDefinition-ncdhc-observation-bi-tobacco-usage.html",
@@ -337,6 +341,14 @@
       "base": "StructureDefinition-ncdhc-questionnaireresponse-base.html",
       "defns": "StructureDefinition-ncdhc-questionnaireresponse-base-definitions.html"
     },
+    "Questionnaire/antenatal-visits-list-sum-q-en-s1": {
+      "source": "ncdhc-view-questionnaire-antenatal-visits-list-sum-q-en-s1.json",
+      "base": "ncdhc-view-questionnaire-antenatal-visits-list-sum-q-en-s1.html"
+    },
+    "QuestionnaireResponse/antenatal-visits-list-qa-en-s1": {
+      "source": "ncdhc-questionnaireresponse-antenatal-visits-list-example.json",
+      "base": "ncdhc-questionnaireresponse-antenatal-visits-list-example.html"
+    },
     "OperationDefinition/ncdhc-patient-access": {
       "base": "OperationDefinition-ncdhc-patient-access.html",
       "defns": "OperationDefinition-ncdhc-patient-access-definitions.html"
@@ -385,6 +397,21 @@
     },
     "ValueSet/ncdhc-security-role-type-1": {
       "base": "ValueSet-ncdhc-security-role-type-1.html"
+    },
+    "ValueSet/ncdhc-descent-of-head-1": {
+      "base": "ValueSet-ncdhc-descent-of-head-1.html"
+    },
+    "ValueSet/ncdhc-emotional-health-discussion-outcome-1": {
+      "base": "ValueSet-ncdhc-emotional-health-discussion-outcome-1.html"
+    },
+    "ValueSet/ncdhc-head-engagement-status-1": {
+      "base": "ValueSet-ncdhc-head-engagement-status-1.html"
+    },
+    "ValueSet/ncdhc-urinalysis-interpretation-1": {
+      "base": "ValueSet-ncdhc-urinalysis-interpretation-1.html"
+    },
+    "ValueSet/ncdhc-generic-yes-no-1": {
+      "base": "ValueSet-ncdhc-generic-yes-no-1.html"
     },
     "CodeSystem/ncdhc-security-role-type-1": {
       "base": "CodeSystem-ncdhc-security-role-type-1.html"

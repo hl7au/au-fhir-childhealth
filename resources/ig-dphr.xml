@@ -296,7 +296,26 @@
 
 
 		<!-- DPHR Health Interactions - Start -->
-		<!-- DPHR Encounter -->
+		<!-- DPHR Clinical Notes -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-view-antenatal-visits-list-summary" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Questionnaire/antenatal-visits-list-sum-q-en-s1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="QuestionnaireResponse/antenatal-visits-list-qa-en-s1" />
+			</sourceReference>
+		</resource>
+		<!-- DPHR Clinical Notes -->
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -309,7 +328,7 @@
 				<reference value="DocumentReference/ncdhc-documentreference-clinical-notes-example" />
 			</sourceReference>
 		</resource>
-		<!-- DPHR Clinical Notes -->
+		<!-- DPHR Encounter -->
 		<resource>
 			<example value="false" />
 			<sourceReference>
@@ -326,15 +345,15 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-composition-view-antenatal-visits" />
+				<reference value="StructureDefinition/ncdhc-composition-view-antenatal-visit" />
 			</sourceReference>
 		</resource>
-		<resource>
+		<!--<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Bundle/ncdhc-antenatal-visits-consolidated-view-summary-example" />
+				<reference value="Bundle/ncdhc-antenatal-visit-consolidated-view-summary-example" />
 			</sourceReference>
-		</resource>
+		</resource>-->
 		<!-- Antenatal Visit Questionnaire -->
 		<!-- End Antenatal Visit Composition View -->
 
@@ -342,7 +361,7 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-composition-antenatal-visits" />
+				<reference value="StructureDefinition/ncdhc-composition-antenatal-visit" />
 			</sourceReference>
 		</resource>
 		<!-- Antenatal Visit Observations -->
@@ -699,6 +718,36 @@
 			<example value="false" />
 			<sourceReference>
 				<reference value="ValueSet/ncdhc-smoking-status-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-descent-of-head-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-emotional-health-discussion-outcome-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-head-engagement-status-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-urinalysis-interpretation-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-generic-yes-no-1" />
 			</sourceReference>
 		</resource>
 
