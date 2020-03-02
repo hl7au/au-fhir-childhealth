@@ -128,8 +128,7 @@
       {
         "id": "Observation.comment",
         "path": "Observation.comment",
-        "short": "System represents the user provided 'days' in weeks and days",
-        "comment": "Reason / Comment for why the labour was induced."
+        "mustSupport": true
       }
     ]
   }

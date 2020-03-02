@@ -25,13 +25,6 @@
         "short": "NCDHC Urinalysis (Protein / Glucose) Observation Profile"
       },
       {
-        "id": "Observation.category",
-        "path": "Observation.category",
-        "patternCodeableConcept": {
-          "text": "This needs to be discussed and finalised"
-        }
-      },
-      {
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Urinalysis (Protein / Glucose)",
@@ -44,7 +37,7 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "code"
+              "path": "$this"
             }
           ],
           "rules": "closed"
