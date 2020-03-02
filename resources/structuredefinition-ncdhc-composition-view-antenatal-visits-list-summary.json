@@ -35,6 +35,16 @@
         }
       },
       {
+        "id": "Composition.type.coding.system",
+        "path": "Composition.type.coding.system",
+        "fixedUri": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
+      },
+      {
+        "id": "Composition.type.coding.code",
+        "path": "Composition.type.coding.code",
+        "fixedCode": "ANTVSTLST"
+      },
+      {
         "id": "Composition.class",
         "path": "Composition.class",
         "binding": {
@@ -108,11 +118,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Composition.section.emptyReason",
-        "path": "Composition.section.emptyReason",
-        "mustSupport": true
       }
     ]
   }
