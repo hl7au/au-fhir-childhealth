@@ -45,9 +45,19 @@
       "definition": "A child health assessment details are available for viewing"
     },
     {
-			"code": "PRGRSNT",
-			"display": "Progress Notes",
-			"definition": "Progress Notes"
-		}
+      "code": "PRGRSNT",
+      "display": "Progress Notes",
+      "definition": "Progress Notes"
+    },
+    {
+      "code": "PREGDTCLC",
+      "display": "Pregnancy details collection",
+      "definition": "Pregnancy details collection"
+    },
+    {
+      "code": "ANTVSTVW",
+      "display": "Antenatal Visit View",
+      "definition": "View  pregnancy check-up information recorded by health care provider"
+    }
   ]
 }

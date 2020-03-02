@@ -23,6 +23,26 @@
         "short": "NCDHC Antenatal Visit Composition Profile"
       },
       {
+        "id": "Composition.type.coding.system",
+        "path": "Composition.type.coding.system",
+        "fixedUri": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
+      },
+      {
+        "id": "Composition.type.coding.code",
+        "path": "Composition.type.coding.code",
+        "fixedCode": "ANTVSTCLC"
+      },
+      {
+        "id": "Composition.class.coding.system",
+        "path": "Composition.class.coding.system",
+        "fixedUri": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
+      },
+      {
+        "id": "Composition.class.coding.code",
+        "path": "Composition.class.coding.code",
+        "fixedCode": "PREGDTCLC"
+      },
+      {
         "id": "Composition.subject",
         "path": "Composition.subject",
         "type": [
@@ -86,11 +106,12 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "code"
+              "path": "$this"
             }
           ],
           "rules": "closed"
         },
+        "comment": "BR06: The antenatal visit record must at least contain Maternal Health Check HI - Weeks / Gestation data element. And at least one section from the following three maternal health check, fetal health check or Progress Notes must be included in its entirety.  The attachment DPHR-58-BR-07 to provides further guidance on requirements for Encounter, Patient and document sections.",
         "min": 1
       },
       {
@@ -224,9 +245,9 @@
         ]
       },
       {
-        "id": "Composition.section:maternal-health-checks.entry:gestation",
+        "id": "Composition.section:maternal-health-checks.entry:gestation-age",
         "path": "Composition.section.entry",
-        "sliceName": "gestation",
+        "sliceName": "gestation-age",
         "short": "Weeks / Gestation (weeks/days)",
         "min": 1,
         "max": "1",
@@ -383,7 +404,8 @@
         ],
         "path": "Composition.section",
         "sliceName": "fetal-health-check",
-        "short": "Fetal Health Checks"
+        "short": "Fetal Health Checks",
+        "min": 1
       },
       {
         "id": "Composition.section:fetal-health-check.title",
@@ -532,6 +554,7 @@
         "sliceName": "progress-notes",
         "short": "Progress notes / Comments",
         "comment": "Refer to the https://build.fhir.org/ig/HL7/US-Core-R4/clinical-notes-guidance.html for more details.\r\n\r\n\"All of these clinical notes SHALL be exposed via DocumentReference. This requirement is necessary because some systems scan lab reports and don’t store them in the DiagnosticReport resource. See FHIR Resources to Exchange Clinical Notes for more detail.\"\r\n\r\nIn NCDHC, we are using Encounter instance (the same encoutner instance as referred from the Composition in context) referenced from the DocumentReference to record the following details:\r\n1. Registered interpreter present during the examination\r\n2. Next Visit Date and Time",
+        "min": 1,
         "max": "1"
       },
       {
