@@ -634,7 +634,7 @@
           ],
           "rules": "closed"
         },
-        "short": "Section to represent labour and delivery details which includes  capturing details on labour induced and method of delivery.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
+        "short": "Section to represent labour and delivery details which includes  capturing details on labour initiation and method of delivery.  If the section is present in the document, then it should have an entry. Otherwise empty reason has to be provided.",
         "max": "2"
       },
       {
