@@ -45,9 +45,9 @@
       "definition": "A child health assessment details are available for viewing"
     },
     {
-      "code": "PRGRSNT",
-      "display": "Progress Notes",
-      "definition": "Progress Notes"
+      "code": "CLNNT",
+      "display": "Clinical Note",
+      "definition": "Part of health record where healthcare professionals record details to document a patient's clinical status or achievements during the course of a hospitalization or over the course of outpatient care ([Wikipedia](https://en.wikipedia.org/wiki/Progress_note))"
     },
     {
       "code": "PREGDTCLC",
