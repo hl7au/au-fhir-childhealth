@@ -18,20 +18,20 @@
       {
         "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
         "code": "ANTVSTPRGRSNT",
-        "display": "Antenatal Visit Progress Notes"
+        "display": "Antenatal Visit Progress Note"
       }
     ],
-    "text": "Antenatal Visit Progress Notes"
+    "text": "Antenatal Visit Progress Note"
   },
   "class": {
     "coding": [
       {
         "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1",
-        "code": "PRGRSNT",
-        "display": "Progress Notes"
+        "code": "CLNNT",
+        "display": "Clinical Note"
       }
     ],
-    "text": "Progress Notes"
+    "text": "Clinical Note"
   },
   "subject": {
     "reference": "Patient/ncdhc-patient-expectant-mother-example",
