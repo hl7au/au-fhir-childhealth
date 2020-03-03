@@ -169,6 +169,10 @@
       "base": "StructureDefinition-ncdhc-documentreference-clinical-notes.html",
       "defns": "StructureDefinition-ncdhc-documentreference-clinical-notes-definitions.html"
     },
+   "DocumentReference/ncdhc-documentreference-clinical-notes-example": {
+      "source": "ncdhc-documentreference-clinical-notes-example.json",
+      "base": "ncdhc-documentreference-clinical-notes-example.html"
+    },
     "StructureDefinition/ncdhc-dphr-encounter": {
       "base": "StructureDefinition-ncdhc-dphr-encounter.html",
       "defns": "StructureDefinition-ncdhc-dphr-encounter-definitions.html"
@@ -180,6 +184,10 @@
     "StructureDefinition/ncdhc-composition-antenatal-visit": {
       "base": "StructureDefinition-ncdhc-composition-antenatal-visit.html",
       "defns": "StructureDefinition-ncdhc-composition-antenatal-visit-definitions.html"
+    },
+    "Bundle/ncdhc-antenatal-visit-collection-payload-example": {
+      "source": "ncdhc-antenatal-visit-collection-payload-example.json",
+      "base": "ncdhc-antenatal-visit-collection-payload-example.html"
     },
     "StructureDefinition/ncdhc-composition-view-antenatal-visits-list-summary": {
       "base": "StructureDefinition-ncdhc-composition-view-antenatal-visits-list-summary.html",
@@ -205,9 +213,17 @@
       "base": "StructureDefinition-ncdhc-observation-medication-pres-change.html",
       "defns": "StructureDefinition-ncdhc-observation-medication-pres-change-definitions.html"
     },
+    "Observation/ncdhc-observation-medication-pres-change-example": {
+      "source": "ncdhc-observation-medication-pres-change-example.json",
+      "base": "ncdhc-observation-medication-pres-change-example.html"
+    },
     "StructureDefinition/ncdhc-observation-head-engagement": {
       "base": "StructureDefinition-ncdhc-observation-head-engagement.html",
       "defns": "StructureDefinition-ncdhc-observation-head-engagement-definitions.html"
+    },
+    "Observation/ncdhc-observation-head-engagement-example": {
+      "source": "ncdhc-observation-head-engagement-example.json",
+      "base": "ncdhc-observation-head-engagement-example.html"
     },
     "StructureDefinition/ncdhc-observation-illicit-drugs-gestation": {
       "base": "StructureDefinition-ncdhc-observation-illicit-drugs-gestation.html",

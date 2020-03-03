@@ -1412,6 +1412,12 @@
 				<reference value="StructureDefinition/ncdhc-composition-antenatal-visit" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-antenatal-visit-collection-payload-example" />
+			</sourceReference>
+		</resource>
 		<!-- Antenatal Visit Observations -->
 		<resource>
 			<example value="false" />
