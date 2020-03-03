@@ -67,12 +67,8 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "system"
-            },
-            {
               "type": "pattern",
-              "path": "code"
+              "path": "$this"
             }
           ],
           "rules": "closed"
@@ -88,17 +84,6 @@
           "system": "http://snomed.info/sct",
           "code": "243094003"
         }
-      },
-      {
-        "id": "Observation.code.coding:BreastfeedingEducationSNOMED-CT.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding:BreastfeedingEducationSNOMED-CT.code",
-        "path": "Observation.code.coding.code",
-        "min": 1
       },
       {
         "id": "Observation.subject",

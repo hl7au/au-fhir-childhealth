@@ -60,12 +60,8 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "system"
-            },
-            {
               "type": "pattern",
-              "path": "code"
+              "path": "$this"
             }
           ],
           "rules": "closed"

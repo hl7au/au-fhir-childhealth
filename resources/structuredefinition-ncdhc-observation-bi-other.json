@@ -44,11 +44,7 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "code"
-            },
-            {
-              "type": "value",
-              "path": "system"
+              "path": "$this"
             }
           ],
           "rules": "closed"
@@ -64,17 +60,6 @@
           "system": "http://snomed.info/sct",
           "code": "409063005"
         }
-      },
-      {
-        "id": "Observation.code.coding:BriefInterventionOtherSNOMED-CT.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding:BriefInterventionOtherSNOMED-CT.code",
-        "path": "Observation.code.coding.code",
-        "min": 1
       },
       {
         "id": "Observation.subject",

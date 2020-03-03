@@ -43,12 +43,8 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "system"
-            },
-            {
               "type": "pattern",
-              "path": "code"
+              "path": "$this"
             }
           ],
           "rules": "open"
@@ -64,17 +60,6 @@
           "system": "http://snomed.info/sct",
           "code": "771155005"
         }
-      },
-      {
-        "id": "Observation.code.coding:BriefInterventionSmokingSNOMED-CT.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding:BriefInterventionSmokingSNOMED-CT.code",
-        "path": "Observation.code.coding.code",
-        "min": 1
       },
       {
         "id": "Observation.subject",

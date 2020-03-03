@@ -88,17 +88,6 @@
         }
       },
       {
-        "id": "Observation.code.coding:EmotionalHealthAndWellbeingSNOMED-CT.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding:EmotionalHealthAndWellbeingSNOMED-CT.code",
-        "path": "Observation.code.coding.code",
-        "min": 1
-      },
-      {
         "id": "Observation.subject",
         "path": "Observation.subject",
         "type": [
