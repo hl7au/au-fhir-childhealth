@@ -102,9 +102,12 @@
         "fixedString": "My Check-ups"
       },
       {
-        "id": "Composition.section.code.coding.system",
-        "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
+        "id": "Composition.section.code.coding",
+        "path": "Composition.section.code.coding",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "268469004"
+        }
       },
       {
         "id": "Composition.section.entry",
