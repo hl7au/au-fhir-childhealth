@@ -27,6 +27,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
+- [Fundal Height Observation](ncdhc-observation-symphyseal-fundal-height-example.html)
 
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
 [General Guidance Section]: definitions.html

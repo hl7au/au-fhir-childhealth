@@ -30,6 +30,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
+- [Illicit Drugs Gestation Observation](ncdhc-observation-illicit-drugs-gestation-example.html)
 
 [Observation]: http://hl7.org/fhir/observation.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible

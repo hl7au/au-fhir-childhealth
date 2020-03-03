@@ -21,7 +21,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 1.  a status  
 1.  a SNOMED code (indicating what was observed)
-1.  a subject ([Patient as expectatnt mother](http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-mother.html))
+1.  a subject ([Expectant Mother Patient](http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-mother.html))
 1.  a effective time (indicating when the details were observed)
 1.	2 or more performers (including a person and an organisation)
 1.  a value or a data absent reason

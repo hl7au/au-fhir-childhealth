@@ -83,7 +83,8 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Medication Vitamin K](StructureDefinition-ncdhc-medicationstatement-vitamink.html) - MedicationStatement profile to record Vitamin K1 details administered to the newborn at birth
 
 ### Encounter Profiles
-* [NCDHC Encounter](StructureDefinition-ncdhc-encounter.html) - Encounter profile to record  administrative details (e.g.: date and time of discharge, name of the service or facility the baby was discharged from etc.)
+* [NCDHC CDHR Encounter](StructureDefinition-ncdhc-encounter.html) - Encounter profile to record  administrative details (e.g.: date and time of discharge, name of the service or facility the baby was discharged from etc.)
+* [NCDHC DPHR Encounter](StructureDefinition-ncdhc-dphr-encounter.html) - Encounter profile to record administrative details (e.g.: date and time of visit, name of the service or facility the expectant mother patient received) 
 
 ### Questionnaire Profiles
 * [NCDHC Questionnaire](StructureDefinition-ncdhc-questionnaire-base.html) - Questionnaire profile 
