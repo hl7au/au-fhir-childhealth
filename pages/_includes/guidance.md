@@ -22,7 +22,7 @@ The following references are recommended to gain a better understanding of FHIR:
 NCDHC profiling approach :  
 * Adopts [FHIR, Release 3 (STU)](http://hl7.org/fhir/STU3/) as the standard for implementation. 
 
-* Inherits the [HL7 Australian Profiles](http://hl7.org.au/fhir/base/aubase1.1/profiles.html) and standards wherever possible. However there are occasions where NCDHC profiles are derived directly from the [HL7 International profiles](http://hl7.org/fhir/STU3/resourcelist.html).
+* Inherits the [HL7 Australian Profiles](http://hl7.org.au/fhir/aubase1.1/profiles.html) and standards wherever possible. However there are occasions where NCDHC profiles are derived directly from the [HL7 International profiles](http://hl7.org/fhir/STU3/resourcelist.html).
 
 * Consults with other national programs including [AU Base Profiles](http://hl7.org.au/fhir/base/aubase1.1/profiles.html), Digital Agency Profiles and Terminologies and AU [Argonaut Profiles](http://build.fhir.org/ig/hl7au/argonaut-au/profiles.html). 
 
@@ -167,6 +167,7 @@ A profile or extension is identified by its canonical URL e.g. *http://hl7.org.a
 
 ### Must Support
 A must support flag, when present in this implementation guide, is displayed as letter “S” with red background in the Flag column of the Differential Table and Snapshot Table of a profile or extension, as such <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>.
+This is a boolean flag which can be declared on profiles but not on resource or data type definitions.If true, it expects that the systems using the profile must "support" the element. This is distinct from cardinality. It is possible to have an element with a minimum cardinality of "0", but still expect systems to support the element.
 
 ### Conformance verbs
 The conformance verbs used in this implementation guide are defined in [FHIR Conformance Rules](http://hl7.org/fhir/STU3/conformance-rules.html#conflang). Conformance verbs are also present in invariants which are visible in the “Description & Constraints” column of the Differential Table and Snapshot Table of a profile or extension.
@@ -200,7 +201,15 @@ Slicing rules are:
 
 ## Resource notation:
 
-The interactions on IG page are defined like this:
+The FHIR specification describes a set of resources and several different [Frameworks](https://www.hl7.org/fhir/exchange-module.html) like RESTful FHIR,FHIR messaging,FHIR documents etc for exchanging and/or storing data in order to solve a wide range of healthcare related problems, both clinical and administrative. 
+
+A resource is an entity that:
+* has a known identity (a URL) by which it can be addressed
+* identifies itself as one of the types of resource defined in this specification
+* contains a set of structured data items as described by the definition of the resource type
+* has an identified version that changes if the contents of the resource change
+
+The various resource interactions in this IG are defined like this:
 
 GET ***[base]/[Resource-type]/[id] {parameters}***
 
