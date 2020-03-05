@@ -286,7 +286,7 @@
     },
     {
       "code": "ANTVSTCLC",
-      "display": "Antenatal Visit ",
+      "display": "Antenatal Visit",
       "definition": "Antenatal Visit details collection"
     },
     {
@@ -301,7 +301,7 @@
     },
     {
       "code": "ANTVSTLST",
-      "display": "Antenatal Visit List",
+      "display": "My Check-Ups",
       "definition": "Antenatal Visit List"
     }
   ]
