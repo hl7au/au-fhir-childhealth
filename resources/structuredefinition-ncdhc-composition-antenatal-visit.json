@@ -106,19 +106,13 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "$this"
+              "path": "code"
             }
           ],
           "rules": "closed"
         },
         "comment": "BR06: The antenatal visit record must at least contain Maternal Health Check HI - Weeks / Gestation data element. And at least one section from the following three maternal health check, fetal health check or Progress Notes must be included in its entirety.  The attachment DPHR-58-BR-07 to provides further guidance on requirements for Encounter, Patient and document sections.",
         "min": 1
-      },
-      {
-        "id": "Composition.section.title",
-        "path": "Composition.section.title",
-        "short": "Maternal Health Checks, Fetal Health Checks and Progress notes",
-        "fixedString": "Antenatal Visit Health Interaction"
       },
       {
         "id": "Composition.section:maternal-health-checks",
@@ -478,7 +472,6 @@
         "path": "Composition.section.entry",
         "sliceName": "arrangement-of-fetus",
         "short": "The presentation, position or lie of the fetus",
-        "max": "1",
         "type": [
           {
             "code": "Reference",
