@@ -34,7 +34,7 @@
         ],
         "text": "Medical Record Number"
       },
-      "system": "http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0/8003620000000000/02134000",
+      "system": "http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0/8003620000000000",
       "value": "02134000",
       "assigner": {
         "display": "Blacktown Hospital"
@@ -44,6 +44,7 @@
   "active": true,
   "name": [
     {
+      "prefix": "Ms",
       "text": "Eve Bill",
       "family": "Bill",
       "given": [
@@ -71,6 +72,18 @@
       "state": "NSW",
       "postalCode": "2148",
       "country": "Australia"
+    }
+  ],
+  "telecom" : [
+    {
+      "system" : "email",
+      "value" : "testemail.evebill@gmail.com.au",
+      "use" : "home"
+    },
+    {
+      "system" : "phone",
+      "value" : "0411111567",
+      "use" : "mobile"
     }
   ]
 }
