@@ -6,6 +6,26 @@
       "id": "lc78393f-37ca-4738-81d6-d9595b2e5d0f",
       "status": "active",
       "name": "Blacktown Hospital"
+    },
+    {
+      "resourceType": "Appointment",
+      "id": "2c78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "status": "proposed",
+      "participant": [
+        {
+          "actor": {
+            "reference": "Patient/ncdhc-patient-expectant-mother-example"
+          },
+          "required": "required",
+          "status": "accepted"
+        }
+      ],
+      "requestedPeriod": [
+        {
+          "start": "2020-04-23T08:00:00+11:00",
+          "end": "2020-04-23T08:01:00+11:00"
+        }
+      ]
     }
   ],
   "id": "ncdhc-dphr-encounter-example",
@@ -26,6 +46,23 @@
         {
           "coding": [
             {
+              "system": "http://hl7.org/fhir/participant-type",
+              "code": "translator",
+              "display": "Translator"
+            }
+          ],
+          "text": "Registered Interpreter"
+        }
+      ],
+      "individual": {
+        "reference": "Practitioner/examiner-practitioner"
+      }
+    },
+    {
+      "type": [
+        {
+          "coding": [
+            {
               "system": "http://hl7.org/fhir/v3/ParticipationType",
               "code": "CALLBCK",
               "display": "callback contact"
@@ -39,6 +76,9 @@
       }
     }
   ],
+  "appointment": {
+    "reference": "#2c78393f-37ca-4738-81d6-d9595b2e5d0f"
+  },
   "period": {
     "start": "2019-12-23T08:00:00+11:00",
     "end": "2019-12-23T08:01:00+11:00"
