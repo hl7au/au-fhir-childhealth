@@ -177,6 +177,10 @@
       "base": "StructureDefinition-ncdhc-dphr-encounter.html",
       "defns": "StructureDefinition-ncdhc-dphr-encounter-definitions.html"
     },
+    "Encounter/ncdhc-dphr-encounter-example": {
+      "source": "ncdhc-dphr-encounter-example.json",
+      "base": "ncdhc-dphr-encounter-example.html"
+    },
     "StructureDefinition/ncdhc-composition-view-antenatal-visit": {
       "base": "StructureDefinition-ncdhc-composition-view-antenatal-visit.html",
       "defns": "StructureDefinition-ncdhc-composition-view-antenatal-visit-definitions.html"
@@ -313,17 +317,33 @@
       "base": "StructureDefinition-ncdhc-observation-vitalsign-heart-rate.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-heart-rate-definitions.html"
     },
+    "Observation/ncdhc-observation-vitalsign-heart-rate-example": {
+      "source": "ncdhc-observation-vitalsign-heart-rate-example.json",
+      "base": "ncdhc-observation-vitalsign-heart-rate-example.html"
+    },
     "StructureDefinition/ncdhc-observation-heart-rate": {
       "base": "StructureDefinition-ncdhc-observation-heart-rate.html",
       "defns": "StructureDefinition-ncdhc-observation-heart-rate-definitions.html"
+    },
+    "Observation/ncdhc-observation-heart-rate-example": {
+      "source": "ncdhc-observation-heart-rate-example.json",
+      "base": "ncdhc-observation-heart-rate-example.html"
     },
     "StructureDefinition/ncdhc-observation-vitalsign-bp": {
       "base": "StructureDefinition-ncdhc-observation-vitalsign-bp.html",
       "defns": "StructureDefinition-ncdhc-observation-vitalsign-bp-definitions.html"
     },
+    "Observation/ncdhc-observation-vitalsign-bp-example": {
+      "source": "ncdhc-observation-vitalsign-bp-example.json",
+      "base": "ncdhc-observation-vitalsign-bp-example.html"
+    },
     "StructureDefinition/ncdhc-observation-bp": {
       "base": "StructureDefinition-ncdhc-observation-bp.html",
       "defns": "StructureDefinition-ncdhc-observation-bp-definitions.html"
+    },
+    "Observation/ncdhc-observation-bp-example": {
+      "source": "ncdhc-observation-bp-example.json",
+      "base": "ncdhc-observation-bp-example.html"
     },
     "StructureDefinition/ncdhc-observation-fetal-movement": {
       "base": "StructureDefinition-ncdhc-observation-fetal-movement.html",
