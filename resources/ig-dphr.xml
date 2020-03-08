@@ -533,6 +533,20 @@
 				<reference value="Observation/observation-estimated-gestation-example" />
 			</sourceReference>
 		</resource>
+		<!-- DPHR DOB - Start -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-estimated-date-birth" />
+			</sourceReference>
+		</resource>
+<!--		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-composition-estimated-date-birth" />
+			</sourceReference>-->
+		<!--</resource>-->
+		<!-- DPHR DOB - End -->
 		<!-- DPHR Health Interactions - End -->
 
 
