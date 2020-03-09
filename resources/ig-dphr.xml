@@ -546,6 +546,18 @@
 				<reference value="Bundle/ncdhc-estimated-date-birth-document-example" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-breastfeeding-time-conception" />
+			</sourceReference>
+		</resource>
+<!--		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-breastfeeding-time-conception-example" />
+			</sourceReference>
+		</resource>-->
 		<!-- DPHR DOB - End -->
 		<!-- DPHR Health Interactions - End -->
 

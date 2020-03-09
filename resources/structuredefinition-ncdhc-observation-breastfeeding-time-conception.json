@@ -1,0 +1,91 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-breastfeeding-time-conception",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-breastfeeding-time-conception",
+  "version": "dv1.0.0",
+  "name": "NCDHCBreastfeedingAtTimeOfConceptionObservationProfile",
+  "title": "NCDHC Breastfeeding at Time of Conception Observation",
+  "status": "draft",
+  "date": "2020-03-10",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "NCDHC Breastfeeding at Time of Conception Observation",
+  "copyright": "Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "NCDHC Breastfeeding at Time of Conception Observation"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1        
+      },
+      {
+        "id": "Observation.code.coding:BriefInterventionOtherSNOMED-CT",
+        "path": "Observation.code.coding",
+        "sliceName": "BreastfeedingTimeConceptionSNOMED-CT",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "1376561000168109"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-expectant-mother"
+          }
+        ]
+      },
+      {
+        "id": "Observation.effectiveDateTime:effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "sliceName": "effectiveDateTime",
+        "min": 1
+      },
+      {
+        "id": "Observation.valueCodeableConcept:valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
+        "sliceName": "valueCodeableConcept",
+        "short": "Statement about what was observed.",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-generic-yes-no-1"
+        }
+      }
+      ]
+  }
+}
