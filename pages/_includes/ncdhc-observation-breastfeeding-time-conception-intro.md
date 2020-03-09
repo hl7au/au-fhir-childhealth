@@ -4,7 +4,7 @@ This profile sets minimum expectations for the [Observation] resource to record 
 
 #### Examples
 
-- TBC
+- [Breastfeeding at Time of Conception Observation](ncdhc-observation-breastfeeding-time-conception-example.html)
 
 [Observation]: http://hl7.org/fhir/observation.html
 
