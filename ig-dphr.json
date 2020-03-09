@@ -201,17 +201,33 @@
       "base": "StructureDefinition-ncdhc-observation-bi-tobacco-usage.html",
       "defns": "StructureDefinition-ncdhc-observation-bi-tobacco-usage-definitions.html"
     },
+    "Observation/ncdhc-observation-bi-tobacco-usage-example": {
+      "source": "ncdhc-observation-bi-tobacco-usage-example.json",
+      "base": "ncdhc-observation-bi-tobacco-usage-example.html"
+    },
     "StructureDefinition/ncdhc-observation-bi-alcohol-intake": {
       "base": "StructureDefinition-ncdhc-observation-bi-alcohol-intake.html",
       "defns": "StructureDefinition-ncdhc-observation-bi-alcohol-intake-definitions.html"
+    },
+    "Observation/ncdhc-observation-bi-alcohol-intake-example": {
+      "source": "ncdhc-observation-bi-alcohol-intake-example.json",
+      "base": "ncdhc-observation-bi-alcohol-intake-example.html"
     },
     "StructureDefinition/ncdhc-observation-bi-other": {
       "base": "StructureDefinition-ncdhc-observation-bi-other.html",
       "defns": "StructureDefinition-ncdhc-observation-bi-other-definitions.html"
     },
+    "Observation/ncdhc-observation-bi-other-example": {
+      "source": "ncdhc-observation-bi-other-example.json",
+      "base": "ncdhc-observation-bi-other-example.html"
+    },
     "StructureDefinition/ncdhc-observation-breastfeeding-education": {
       "base": "StructureDefinition-ncdhc-observation-breastfeeding-education.html",
       "defns": "StructureDefinition-ncdhc-observation-breastfeeding-education-definitions.html"
+    },
+    "Observation/ncdhc-observation-breastfeeding-education-example": {
+      "source": "ncdhc-observation-breastfeeding-education-example.json",
+      "base": "ncdhc-observation-breastfeeding-education-example.html"
     },
     "StructureDefinition/ncdhc-observation-medication-pres-change": {
       "base": "StructureDefinition-ncdhc-observation-medication-pres-change.html",
@@ -232,6 +248,10 @@
     "StructureDefinition/ncdhc-observation-illicit-drugs-gestation": {
       "base": "StructureDefinition-ncdhc-observation-illicit-drugs-gestation.html",
       "defns": "StructureDefinition-ncdhc-observation-illicit-drugs-gestation-definitions.html"
+    },
+    "Observation/ncdhc-observation-illicit-drugs-gestation-example": {
+      "source": "ncdhc-observation-illicit-drugs-gestation-example.json",
+      "base": "ncdhc-observation-illicit-drugs-gestation-example.html"
     },
     "StructureDefinition/ncdhc-observation-estimated-gestation": {
       "base": "StructureDefinition-ncdhc-observation-estimated-gestation.html",
@@ -349,25 +369,49 @@
       "base": "StructureDefinition-ncdhc-observation-fetal-movement.html",
       "defns": "StructureDefinition-ncdhc-observation-fetal-movement-definitions.html"
     },
+    "Observation/ncdhc-observation-fetal-movement-example": {
+      "source": "ncdhc-observation-fetal-movement-example.json",
+      "base": "ncdhc-observation-fetal-movement-example.html"
+    },
     "StructureDefinition/ncdhc-observation-fetus-liquor": {
       "base": "StructureDefinition-ncdhc-observation-fetus-liquor.html",
       "defns": "StructureDefinition-ncdhc-observation-fetus-liquor-definitions.html"
+    },
+    "Observation/ncdhc-observation-fetus-liquor-example": {
+      "source": "ncdhc-observation-fetus-liquor-example.json",
+      "base": "ncdhc-observation-fetus-liquor-example.html"
     },
     "StructureDefinition/ncdhc-observation-fetus-arrangement": {
       "base": "StructureDefinition-ncdhc-observation-fetus-arrangement.html",
       "defns": "StructureDefinition-ncdhc-observation-fetus-arrangement-definitions.html"
     },
+    "Observation/ncdhc-observation-fetus-arrangement-example": {
+      "source": "ncdhc-observation-fetus-arrangement-example.json",
+      "base": "ncdhc-observation-fetus-arrangement-example.html"
+    },
     "StructureDefinition/ncdhc-observation-urinalysis-protein": {
       "base": "StructureDefinition-ncdhc-observation-urinalysis-protein.html",
       "defns": "StructureDefinition-ncdhc-observation-urinalysis-protein-definitions.html"
+    },
+    "Observation/ncdhc-observation-urinalysis-protein-example": {
+      "source": "ncdhc-observation-urinalysis-protein-example.json",
+      "base": "ncdhc-observation-urinalysis-protein-example.html"
     },
     "StructureDefinition/ncdhc-observation-emotional-health-and-wellbeing": {
       "base": "StructureDefinition-ncdhc-observation-emotional-health-and-wellbeing.html",
       "defns": "StructureDefinition-ncdhc-observation-emotional-health-and-wellbeing-definitions.html"
     },
+    "Observation/ncdhc-observation-emotional-health-and-wellbeing-example": {
+      "source": "ncdhc-observation-emotional-health-and-wellbeing-example.json",
+      "base": "ncdhc-observation-emotional-health-and-wellbeing-example.html"
+    },
     "StructureDefinition/ncdhc-observation-symphyseal-fundal-height": {
       "base": "StructureDefinition-ncdhc-observation-symphyseal-fundal-height.html",
       "defns": "StructureDefinition-ncdhc-observation-symphyseal-fundal-height-definitions.html"
+    },
+    "Observation/ncdhc-observation-symphyseal-fundal-height-example": {
+      "source": "ncdhc-observation-symphyseal-fundal-height-example.json",
+      "base": "ncdhc-observation-symphyseal-fundal-height-example.html"
     },
     "StructureDefinition/ncdhc-questionnaire-base": {
       "base": "StructureDefinition-ncdhc-questionnaire-base.html",
