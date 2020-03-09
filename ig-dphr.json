@@ -253,8 +253,10 @@
       "base": "StructureDefinition-ncdhc-observation-breastfeeding-time-conception.html",
       "defns": "StructureDefinition-ncdhc-observation-breastfeeding-time-conception-definitions.html"
     },
-
-
+    "Observation/observation-breastfeeding-time-conception-example": {
+      "source": "ncdhc-observation-breastfeeding-time-conception-example.json",
+      "base": "ncdhc-observation-breastfeeding-time-conception-example.html"
+    },
     "StructureDefinition/ncdhc-observation-bodyweight": {
       "base": "StructureDefinition-ncdhc-observation-bodyweight.html",
       "defns": "StructureDefinition-ncdhc-observation-bodyweight-definitions.html"

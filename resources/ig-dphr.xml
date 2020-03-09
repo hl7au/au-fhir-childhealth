@@ -552,12 +552,12 @@
 				<reference value="StructureDefinition/ncdhc-observation-breastfeeding-time-conception" />
 			</sourceReference>
 		</resource>
-<!--		<resource>
+		<resource>
 			<example value="true" />
 			<sourceReference>
 				<reference value="Observation/observation-breastfeeding-time-conception-example" />
 			</sourceReference>
-		</resource>-->
+		</resource>
 		<!-- DPHR DOB - End -->
 		<!-- DPHR Health Interactions - End -->
 
