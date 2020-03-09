@@ -1,6 +1,9 @@
 {
     "resourceType": "Bundle",
     "id": "ncdhc-estimated-date-birth-document-example",
+    "meta": {
+        "lastUpdated": "2019-12-27T16:13:03Z"
+    },
     "identifier": {
         "system": "urn:ietf:rfc:3986",
         "value": "urn:uuid:301e425c-2be0-443e-8bb6-3b6499d9a17a"
@@ -46,7 +49,7 @@
                 "attester": [
                     {
                         "mode": "professional",
-                        "time": "2018-12-24T12:30:02Z",
+                        "time": "2019-12-24T12:30:02Z",
                         "party": {
                             "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f"
                         }
