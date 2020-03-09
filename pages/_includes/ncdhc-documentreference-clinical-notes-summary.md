@@ -24,6 +24,6 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 
 [DocumentReference]: http://hl7.org/fhir/STU3/documentreference.html
-[Expectant Mother Patient]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-mother.html
-[DPHR Encounter]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-dphr-encounter.html
+[Expectant Mother Patient]: StructureDefinition-ncdhc-patient-expectant-mother.html
+[DPHR Encounter]: StructureDefinition-ncdhc-dphr-encounter.html
 

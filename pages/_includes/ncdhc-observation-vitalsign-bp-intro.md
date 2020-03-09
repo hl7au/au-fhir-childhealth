@@ -1,6 +1,6 @@
 **NCDHC Blood Pressure(BP) Vital Sign Observation Profile**
 
-This profile defines how to represent the heart rate [Vitalsign] in FHIR using a standard LOINC code and SNOMED CT AU code. The profile uses UCUM units of measure. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. 
+This profile defines how to represent the blood pressure [Vitalsign] in FHIR using a standard LOINC code and SNOMED CT AU code. The profile uses UCUM units of measure. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. 
 The profile is at draft stage and under review by the Child Health Working Group. 
 
 **Example Usage Scenarios:**
@@ -21,7 +21,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 1.  a status  
 1.  a LOINC and SNOMED code (indicating what was measured and is taken from the “LOINC” &  "SNOMED CT" codes )
-1.  a subject ([Patient])
+1.  a subject ([Baby Patient]/[Expectant Mother Patient])
 1.  a time (indicating when the details were taken)
 1.	a performer (detailing who has recorded the details)
 1.  a numeric result value and standard UCUM unit (mm[Hg]).
@@ -29,7 +29,16 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 	
 	
 	
+
+#### Examples
+
+- [Vital Sign Blood Pressure](ncdhc-observation-vitalsign-bp-example.html)		
 	
-	
-	
-[Patient]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby.html		
+
+
+[Vitalsign]: http://hl7.org/fhir/STU3/observation-vitalsigns.html
+[extensible]: http://hl7.org/fhir/terminologies.html#extensible
+[General Guidance Section]: definitions.html
+
+[Expectant Mother Patient]: StructureDefinition-ncdhc-patient-expectant-mother.html	
+[Baby Patient]: StructureDefinition-ncdhc-patient-baby.html		
