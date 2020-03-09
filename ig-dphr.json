@@ -241,6 +241,10 @@
       "base": "StructureDefinition-ncdhc-composition-estimated-date-birth.html",
       "defns": "StructureDefinition-ncdhc-composition-estimated-date-birth-definitions.html"
     },
+    "Bundle/ncdhc-estimated-date-birth-document-example": {
+      "source": "ncdhc-estimated-date-birth-document-example.json",
+      "base": "ncdhc-estimated-date-birth-document-example.html"
+    },
     "StructureDefinition/ncdhc-observation-bodyweight": {
       "base": "StructureDefinition-ncdhc-observation-bodyweight.html",
       "defns": "StructureDefinition-ncdhc-observation-bodyweight-definitions.html"
