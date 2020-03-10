@@ -1,6 +1,9 @@
 {
   "resourceType": "Bundle",
   "id": "ncdhc-nbdelivery-empty-section-payload",
+  "meta": {
+    "lastUpdated": "2020-01-13T14:36:03Z"
+  },
   "identifier": {
     "system": "urn:ietf:rfc:3986",
     "value": "urn:uuid:0c4151bd-1cbf-4d64-b04d-cd9187a4c6e0"
