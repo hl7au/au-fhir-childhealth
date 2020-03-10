@@ -158,7 +158,11 @@
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-illicit-drug-type-1"
+        }
       },
       {
         "id": "Observation.component:DrugQuitDate",
