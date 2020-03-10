@@ -108,8 +108,7 @@
     {
       "fullUrl": "urn:uuid:eb78393f-37ca-4738-81d6-d9595b2e5d0f",
       "resource": {
-        "resourceType": "Patient",
-        "active": true,
+        "resourceType": "Patient",       
         "meta": {
           "versionId": "1",
           "lastUpdated": "2019-11-05T00:00:00Z",
@@ -120,7 +119,37 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Machine Processable Patient Instance</div>"
-        }
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "MR",
+                  "display": "Medical Record Number"
+                }
+              ],
+              "text": "Medical Record Number"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0/8003620000000000/D203",
+            "value": "02134000",
+            "assigner": {
+              "display": "Blacktown Hospital"
+            }
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2001-12-24",
+        "name": [
+          {
+            "text": "Amy Watson",
+            "family": "Watson",
+            "given": [
+              "Amy"
+            ]
+          }
+        ]
       }
     },
     {
