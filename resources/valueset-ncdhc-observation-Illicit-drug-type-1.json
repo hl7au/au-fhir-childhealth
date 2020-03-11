@@ -11,7 +11,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NCDHC Illicit drug use</h2><tt>https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-observation-illicit-drug-type-1</tt><p> National Children's Digital Health Collaborative - Illicit drug type ValueSet as applicable to National Children's Digital Health Collaborative</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NCDHC Illicit Drug Type</h2><tt>http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-illicit-drug-type-1</tt><p> National Children's Digital Health Collaborative - Illicit drug type ValueSet as applicable to National Children's Digital Health Collaborative</p></div>"
   },
   "url": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-observation-illicit-drug-type-1",
   "identifier": [
