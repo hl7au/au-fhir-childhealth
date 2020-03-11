@@ -31,6 +31,21 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1        
+      },
+      {
+        "id": "Observation.code.coding:BreastfeedingTimeConceptionSNOMED-CT",
+        "path": "Observation.code.coding",
+        "sliceName": "BreastfeedingTimeConceptionSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
