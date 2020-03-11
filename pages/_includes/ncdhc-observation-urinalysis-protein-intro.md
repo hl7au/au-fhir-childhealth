@@ -35,4 +35,4 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 [Observation]: http://hl7.org/fhir/observation.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
 [General Guidance Section]: definitions.html
-[Expectant Mother Patient]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-expectant-mother.html
+[Expectant Mother Patient]: StructureDefinition-ncdhc-patient-expectant-mother.html

@@ -378,6 +378,12 @@
 			</sourceReference>
 		</resource>
 		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-fetal-movement-example" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-fetus-arrangement" />
@@ -684,11 +690,15 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-illicit-drug-type-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
 				<reference value="ValueSet/ncdhc-labour-initiation-type-1" />
 			</sourceReference>
 		</resource>
-
-
 		<resource>
 			<example value="false" />
 			<sourceReference>

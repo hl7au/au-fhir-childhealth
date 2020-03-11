@@ -32,6 +32,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 * Refer to the Base Profile: [NCDHC Base Composition] for more guidance 
 * If data for any section/sub-sections are not known or not available, then empty reason SHALL be provided.
 * All resources SHALL provide the reference to the profile url used in the resource instance.
+* Either of [Vital-Sign Blood Pressure](StructureDefinition-ncdhc-observation-vitalsign-bp.html) or [Blood Pressure](StructureDefinition-ncdhc-observation-bp.html) SHALL be provided
+* Either of [Vital-Sign Body-Weight](StructureDefinition-ncdhc-observation-vitalsign-bodyweight.html) or [Body Weight](StructureDefinition-ncdhc-observation-bodyweight.html) SHALL be provided
 
 
 
@@ -42,9 +44,10 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 
 [Composition]: http://hl7.org.au/fhir/base2018Oct/StructureDefinition-au-composition.html
-[NCDHC Base Composition]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-composition-base.html
-[Expectant Mother Patient]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-expectant-mother.html
-[DPHR Encounter]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-dphr-encounter.html[extensible]: http://hl7.org/fhir/terminologies.html#extensible
+[NCDHC Base Composition]: StructureDefinition-ncdhc-composition-base.html
+[Expectant Mother Patient]: StructureDefinition-ncdhc-patient-expectant-mother.html
+[DPHR Encounter]: StructureDefinition-ncdhc-dphr-encounter.html 
+[extensible]: http://hl7.org/fhir/terminologies.html#extensible
 [General Guidance Section]: definitions.html
 
 

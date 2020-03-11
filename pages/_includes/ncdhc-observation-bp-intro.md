@@ -21,7 +21,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 1.  a status  
 1.  a SNOMED code (indicating what was measured)
-1.  a subject ([Patient])
+1.  a subject ([Baby Patient]/[Expectant Mother Patient])
 1.  a time (indicating when the details were taken)
 1.	a performer (detailing who has recorded the details)
 1.  a numeric result value and standard UCUM unit (mm[Hg]).
@@ -35,4 +35,5 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 - [Blood Pressure](ncdhc-observation-bp-example.html)		
 	
 	
-[Patient]: http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-patient-baby.html		
+[Expectant Mother Patient]: StructureDefinition-ncdhc-patient-expectant-mother.html	
+[Baby Patient]: StructureDefinition-ncdhc-patient-baby.html			

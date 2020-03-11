@@ -1715,6 +1715,12 @@
 				<reference value="ValueSet/ncdhc-observation-Illicit-drugs-intake-status-1" />
 			</sourceReference>
 		</resource>
+		<!--resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-illicit-drug-type-1" />
+			</sourceReference>
+		</resource-->
 		<resource>
 			<example value="false" />
 			<sourceReference>

@@ -29,7 +29,7 @@ The profile covers up Expectant Mother Patient instances in the NCDHC context.
 		*  <span style='color:green'>address.state</span> to capture state.   
       *  <span style='color:green'>address.postalCode</span> to capture postcode.   
       *  <span style='color:green'>address.country</span> to capture country.  
-   * Expectant Mother's Email details <span style='color:green'>telecom</span> should be provided in the Patient instance. This includes the following details:obile
+   * Expectant Mother's Email details <span style='color:green'>telecom</span> should be provided in the Patient instance. This includes the following details:
 		*  <span style='color:green'>telecom.system</span> to capture type of contact mode as "email"
       *  <span style='color:green'>telecom.value</span> to capture email
       *  <span style='color:green'>telecom.use</span> to capture usage "home" or "work"
