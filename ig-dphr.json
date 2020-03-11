@@ -505,6 +505,12 @@
     "ValueSet/ncdhc-encounter-type-1": {
       "base": "ValueSet-ncdhc-encounter-type-1.html"
     },
+    "ValueSet/ncdhc-observation-Illicit-drugs-intake-status-1": {
+      "base": "ValueSet-ncdhc-observation-Illicit-drugs-intake-status-1.html"
+    },
+    "ValueSet/ncdhc-observation-illicit-drug-type-1": {
+      "base": "ValueSet-ncdhc-observation-illicit-drug-type-1.html"
+    },
     "ValueSet/ncdhc-observation-completion-status-1": {
       "base": "ValueSet-ncdhc-observation-completion-status-1.html"
     },
