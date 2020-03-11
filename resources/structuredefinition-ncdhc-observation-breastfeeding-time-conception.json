@@ -38,12 +38,12 @@
               "path": "$this"
             }
           ],
-          "rules": "closed"
+          "rules": "open"
         },
         "min": 1        
       },
       {
-        "id": "Observation.code.coding:BriefInterventionOtherSNOMED-CT",
+        "id": "Observation.code.coding:BreastfeedingTimeConceptionSNOMED-CT",
         "path": "Observation.code.coding",
         "sliceName": "BreastfeedingTimeConceptionSNOMED-CT",
         "min": 1,
