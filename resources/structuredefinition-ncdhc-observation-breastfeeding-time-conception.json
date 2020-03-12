@@ -40,7 +40,7 @@
           ],
           "rules": "closed"
         },
-        "min": 1        
+        "min": 1
       },
       {
         "id": "Observation.code.coding:BreastfeedingTimeConceptionSNOMED-CT",
@@ -64,7 +64,7 @@
         ]
       },
       {
-        "id": "Observation.valueCodeableConcept:valueCodeableConcept",
+        "id": "Observation.value[x]:valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
         "sliceName": "valueCodeableConcept",
         "short": "Statement about what was observed.",
@@ -79,6 +79,6 @@
           "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-generic-yes-no-1"
         }
       }
-      ]
+    ]
   }
 }

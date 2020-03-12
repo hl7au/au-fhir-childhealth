@@ -434,7 +434,74 @@
       "display": "Organisation"
     }
   ],
-  "valueDateTime": "2020-04-24"
+  "valueDateTime": "2020-04-24",
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "161713000"
+          }
+        ]
+      },
+      "valueDateTime": "2019-07-14"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "161716008"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 28,
+        "unit": "days",
+        "system": "http://unitsofmeasure.org",
+        "code": "d"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "246103008"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "64957009",
+            "display": "Uncertain"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "246202005"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "49608001",
+            "display": "Irregular"
+          }
+        ]
+      }
+    }
+  ]
 }
         }
     ]

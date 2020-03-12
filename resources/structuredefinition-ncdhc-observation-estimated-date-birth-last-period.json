@@ -40,10 +40,10 @@
           ],
           "rules": "closed"
         },
-        "min": 1        
+        "min": 1
       },
       {
-        "id": "Observation.code.coding:BreastfeedingTimeConceptionSNOMED-CT",
+        "id": "Observation.code.coding:EstimatedDateDeliveryLastPeriodSNOMED-CT",
         "path": "Observation.code.coding",
         "sliceName": "EstimatedDateDeliveryLastPeriodSNOMED-CT",
         "min": 1,
@@ -64,7 +64,7 @@
         ]
       },
       {
-        "id": "Observation.valueDateTime:valueDateTime",
+        "id": "Observation.value[x]:valueDateTime",
         "path": "Observation.valueDateTime",
         "sliceName": "valueDateTime",
         "type": [
@@ -73,7 +73,139 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "Observation.component:lMPFirstDay",
+        "path": "Observation.component",
+        "sliceName": "lMPFirstDay",
+        "short": "Last menstrual period - First day",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:lMPFirstDay.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "161713000"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:lMPFirstDay.value[x]:valueDateTime",
+        "path": "Observation.component.valueDateTime",
+        "sliceName": "valueDateTime",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:usualLengthMC",
+        "path": "Observation.component",
+        "sliceName": "usualLengthMC",
+        "short": "Usual length of menstrual cycle",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:usualLengthMC.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "161716008"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:usualLengthMC.value[x]:valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "patternQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "d"
+        }
+      },
+      {
+        "id": "Observation.component:certainty",
+        "path": "Observation.component",
+        "sliceName": "certainty",
+        "short": "Certainty",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:certainty.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "246103008"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:certainty.value[x]:valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "sliceName": "valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:regularity",
+        "path": "Observation.component",
+        "sliceName": "regularity",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:regularity.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "246202005"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:regularity.value[x]:valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "sliceName": "valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
       }
-      ]
+    ]
   }
 }
