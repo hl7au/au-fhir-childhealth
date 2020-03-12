@@ -156,7 +156,20 @@
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-breastfeeding-time-conception"
           }
         ]
-      }
+      },
+      {
+        "id": "Composition.section.entry:estimated-date-birth-last-period",
+        "path": "Composition.section.entry",
+        "sliceName": "estimated-date-birth-last-period",
+        "short": "Estimated date of birth from last known menstral period.",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-estimated-date-birth-last-period"
+          }
+        ]
+      }      
     ]
   }
 }
