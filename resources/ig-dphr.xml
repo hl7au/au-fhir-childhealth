@@ -564,6 +564,18 @@
 				<reference value="Observation/observation-breastfeeding-time-conception-example" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-estimated-date-birth-last-period" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-estimated-date-birth-last-period-example" />
+			</sourceReference>
+		</resource>
 		<!-- DPHR DOB - End -->
 		<!-- DPHR Health Interactions - End -->
 

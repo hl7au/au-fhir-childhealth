@@ -277,6 +277,14 @@
       "source": "ncdhc-observation-breastfeeding-time-conception-example.json",
       "base": "ncdhc-observation-breastfeeding-time-conception-example.html"
     },
+    "StructureDefinition/ncdhc-observation-estimated-date-birth-last-period": {
+      "base": "StructureDefinition-ncdhc-observation-estimated-date-birth-last-period.html",
+      "defns": "StructureDefinition-ncdhc-observation-estimated-date-birth-last-period-definitions.html"
+    },
+    "Observation/observation-estimated-date-birth-last-period-example": {
+      "source": "ncdhc-observation-estimated-date-birth-last-period-example.json",
+      "base": "ncdhc-observation-estimated-date-birth-last-period-example.html"
+    },
     "StructureDefinition/ncdhc-observation-bodyweight": {
       "base": "StructureDefinition-ncdhc-observation-bodyweight.html",
       "defns": "StructureDefinition-ncdhc-observation-bodyweight-definitions.html"
