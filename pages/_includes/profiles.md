@@ -77,6 +77,7 @@ These Profiles have been defined for this implementation guide.
 * [NCDHC Emotional Health and Wellbeing](StructureDefinition-ncdhc-observation-emotional-health-and-wellbeing.html) - Observation profile used to record the issues affecting the mental, emotional state of the patient
 * [NCDHC Symphyseal Fundal Height](StructureDefinition-ncdhc-observation-symphyseal-fundal-height.html) - Observation profile used to the fundal height of the fetus
 * [NCDHC Head Engagement](StructureDefinition-ncdhc-observation-head-engagement.html) - Observation profile used to record the fetus head engagement inside the womb
+* [NCDHC Breastfeeding at Time of Conception](StructureDefinition-ncdhc-observation-breastfeeding-time-conception-definitions.html) - Observation profile used to record whether the expectant mother was breastfeeding at the time of conception.
 
 
 ### MedicationStatement Profiles
@@ -117,6 +118,7 @@ These Profiles have been defined for this implementation guide.
 
 ### FHIR Document Profiles 
 * [NCDHC Antenatal Visit Collection Health Interaction](StructureDefinition-ncdhc-composition-antenatal-visit.html) - Composition profile to collect Antenatal Visit and associated details
+* [NCDHC Estimated Date of Birth Health Interaction](StructureDefinition-ncdhc-composition-estimated-date-birth.html) - Composition profile to collect estimated date of birth and associated details
 
 ### FHIR View Profiles
 * [NCDHC Antenatal Visit Detailed view](StructureDefinition-ncdhc-composition-view-antenatal-visit.html) - Consolidated details of antenatal visit as shared by clinical providers and to be aware of the issues being managed during my pregnancy

@@ -261,6 +261,22 @@
       "source": "ncdhc-observation-estimated-gestation-example.json",
       "base": "ncdhc-observation-estimated-gestation-example.html"
     },
+    "StructureDefinition/ncdhc-composition-estimated-date-birth": {
+      "base": "StructureDefinition-ncdhc-composition-estimated-date-birth.html",
+      "defns": "StructureDefinition-ncdhc-composition-estimated-date-birth-definitions.html"
+    },
+    "Bundle/ncdhc-estimated-date-birth-document-example": {
+      "source": "ncdhc-estimated-date-birth-document-example.json",
+      "base": "ncdhc-estimated-date-birth-document-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-breastfeeding-time-conception": {
+      "base": "StructureDefinition-ncdhc-observation-breastfeeding-time-conception.html",
+      "defns": "StructureDefinition-ncdhc-observation-breastfeeding-time-conception-definitions.html"
+    },
+    "Observation/observation-breastfeeding-time-conception-example": {
+      "source": "ncdhc-observation-breastfeeding-time-conception-example.json",
+      "base": "ncdhc-observation-breastfeeding-time-conception-example.html"
+    },
     "StructureDefinition/ncdhc-observation-bodyweight": {
       "base": "StructureDefinition-ncdhc-observation-bodyweight.html",
       "defns": "StructureDefinition-ncdhc-observation-bodyweight-definitions.html"
