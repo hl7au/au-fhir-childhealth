@@ -29,7 +29,7 @@
           {
             "system": "http://hl7.org/fhir/v2/0203",
             "code": "MR",
-            "display": "Medical Record Number"
+            "display": "Medical record number"
           }
         ],
         "text": "Medical Record Number"
