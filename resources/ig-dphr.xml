@@ -578,6 +578,33 @@
 		</resource>
 		<!-- DPHR DOB - End -->
 		<!-- DPHR Health Interactions - End -->
+		<!-- NCDHC Consent Profile -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-consent" />
+			</sourceReference>
+		</resource>
+
+		<!-- NCDHC Admin Profiles - Start -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-rep-registration" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-bundle-document-create-authrep" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-bundle-document-create-exp-mthr-pt" />
+			</sourceReference>
+		</resource>
 
 
 		<!-- NCDHC Custom Operations -->
