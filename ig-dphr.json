@@ -169,7 +169,7 @@
       "base": "StructureDefinition-ncdhc-documentreference-clinical-notes.html",
       "defns": "StructureDefinition-ncdhc-documentreference-clinical-notes-definitions.html"
     },
-   "DocumentReference/ncdhc-documentreference-clinical-notes-example": {
+    "DocumentReference/ncdhc-documentreference-clinical-notes-example": {
       "source": "ncdhc-documentreference-clinical-notes-example.json",
       "base": "ncdhc-documentreference-clinical-notes-example.html"
     },
@@ -373,22 +373,6 @@
       "source": "ncdhc-observation-heart-rate-example.json",
       "base": "ncdhc-observation-heart-rate-example.html"
     },
-    "StructureDefinition/ncdhc-observation-vitalsign-bp": {
-      "base": "StructureDefinition-ncdhc-observation-vitalsign-bp.html",
-      "defns": "StructureDefinition-ncdhc-observation-vitalsign-bp-definitions.html"
-    },
-    "Observation/ncdhc-observation-vitalsign-bp-example": {
-      "source": "ncdhc-observation-vitalsign-bp-example.json",
-      "base": "ncdhc-observation-vitalsign-bp-example.html"
-    },
-    "StructureDefinition/ncdhc-observation-bp": {
-      "base": "StructureDefinition-ncdhc-observation-bp.html",
-      "defns": "StructureDefinition-ncdhc-observation-bp-definitions.html"
-    },
-    "Observation/ncdhc-observation-bp-example": {
-      "source": "ncdhc-observation-bp-example.json",
-      "base": "ncdhc-observation-bp-example.html"
-    },
     "StructureDefinition/ncdhc-observation-fetal-movement": {
       "base": "StructureDefinition-ncdhc-observation-fetal-movement.html",
       "defns": "StructureDefinition-ncdhc-observation-fetal-movement-definitions.html"
@@ -412,6 +396,22 @@
     "Observation/ncdhc-observation-fetus-arrangement-example": {
       "source": "ncdhc-observation-fetus-arrangement-example.json",
       "base": "ncdhc-observation-fetus-arrangement-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-vitalsign-bp": {
+      "base": "StructureDefinition-ncdhc-observation-vitalsign-bp.html",
+      "defns": "StructureDefinition-ncdhc-observation-vitalsign-bp-definitions.html"
+    },
+    "Observation/ncdhc-observation-vitalsign-bp-example": {
+      "source": "ncdhc-observation-vitalsign-bp-example.json",
+      "base": "ncdhc-observation-vitalsign-bp-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-bp": {
+      "base": "StructureDefinition-ncdhc-observation-bp.html",
+      "defns": "StructureDefinition-ncdhc-observation-bp-definitions.html"
+    },
+    "Observation/ncdhc-observation-bp-example": {
+      "source": "ncdhc-observation-bp-example.json",
+      "base": "ncdhc-observation-bp-example.html"
     },
     "StructureDefinition/ncdhc-observation-urinalysis-protein": {
       "base": "StructureDefinition-ncdhc-observation-urinalysis-protein.html",

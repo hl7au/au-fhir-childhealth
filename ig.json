@@ -449,6 +449,34 @@
       "base": "StructureDefinition-ncdhc-observation-estimated-gestation.html",
       "defns": "StructureDefinition-ncdhc-observation-estimated-gestation-definitions.html"
     },
+    "Observation/observation-estimated-gestation-example": {
+      "source": "ncdhc-observation-estimated-gestation-example.json",
+      "base": "ncdhc-observation-estimated-gestation-example.html"
+    },
+    "StructureDefinition/ncdhc-composition-estimated-date-birth": {
+      "base": "StructureDefinition-ncdhc-composition-estimated-date-birth.html",
+      "defns": "StructureDefinition-ncdhc-composition-estimated-date-birth-definitions.html"
+    },
+    "Bundle/ncdhc-estimated-date-birth-document-example": {
+      "source": "ncdhc-estimated-date-birth-document-example.json",
+      "base": "ncdhc-estimated-date-birth-document-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-breastfeeding-time-conception": {
+      "base": "StructureDefinition-ncdhc-observation-breastfeeding-time-conception.html",
+      "defns": "StructureDefinition-ncdhc-observation-breastfeeding-time-conception-definitions.html"
+    },
+    "Observation/observation-breastfeeding-time-conception-example": {
+      "source": "ncdhc-observation-breastfeeding-time-conception-example.json",
+      "base": "ncdhc-observation-breastfeeding-time-conception-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-estimated-date-birth-last-period": {
+      "base": "StructureDefinition-ncdhc-observation-estimated-date-birth-last-period.html",
+      "defns": "StructureDefinition-ncdhc-observation-estimated-date-birth-last-period-definitions.html"
+    },
+    "Observation/observation-estimated-date-birth-last-period-example": {
+      "source": "ncdhc-observation-estimated-date-birth-last-period-example.json",
+      "base": "ncdhc-observation-estimated-date-birth-last-period-example.html"
+    },
     "StructureDefinition/ncdhc-observation-birth-abnormalities": {
       "base": "StructureDefinition-ncdhc-observation-birth-abnormalities.html",
       "defns": "StructureDefinition-ncdhc-observation-birth-abnormalities-definitions.html"
