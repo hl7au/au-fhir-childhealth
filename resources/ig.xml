@@ -1335,6 +1335,12 @@
 				<reference value="Observation/observation-pregnancy-complication-example" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-no-pregnancy-complication-example" />
+			</sourceReference>
+		</resource>
 		<!-- NCDHC Newborn Delivery MedicationStatement -->
 		<resource>
 			<example value="false" />
@@ -1933,6 +1939,12 @@
 			<example value="true" />
 			<sourceReference>
 				<reference value="Bundle/ncdhc-bundle-document-create-authrep" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-bundle-document-create-exp-mthr-pt" />
 			</sourceReference>
 		</resource>
 		<resource>

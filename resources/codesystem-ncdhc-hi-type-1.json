@@ -303,6 +303,11 @@
       "code": "ANTVSTLST",
       "display": "My Check-Ups",
       "definition": "Antenatal Visit List"
+    },
+    {
+      "code": "REGSLF",
+      "display": "Register Self Record",
+      "definition": "Register Self Record"
     }
   ]
 }
