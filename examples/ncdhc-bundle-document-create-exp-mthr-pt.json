@@ -374,7 +374,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Child Digital Health Record Operation Consent by Authorised Representative</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Digital Pregnancy Health Record Create Consent by Expectant Mother</div>"
         },
         "status": "active",
         "category": [
@@ -456,7 +456,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Consent to Interact with My Health Record by Authorised Representative</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Consent to Interact with My Health Record by Expectant Mother</div>"
         },
         "status": "active",
         "category": [
