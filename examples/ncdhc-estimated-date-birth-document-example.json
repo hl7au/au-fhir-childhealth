@@ -48,7 +48,7 @@
                 "confidentiality": "N",
                 "attester": [
                     {
-                        "mode": "professional",
+                        "mode": ["professional"],
                         "time": "2019-12-24T12:30:02Z",
                         "party": {
                             "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f"

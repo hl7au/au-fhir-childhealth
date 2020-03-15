@@ -59,7 +59,7 @@
         "confidentiality": "N",
         "attester": [
           {
-            "mode": "professional",
+            "mode": ["professional"],
             "time": "2018-12-24T12:30:02Z",
             "party": {
               "reference": "Organization/examiner-organization"

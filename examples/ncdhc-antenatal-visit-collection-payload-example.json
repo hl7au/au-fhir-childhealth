@@ -1012,8 +1012,8 @@
                             "coding": [
                                 {
                                     "system": "http://snomed.info/sct",
-                                    "code": "160573003",
-                                    "display": "Alcohol intake"
+                                    "code": "1414321000168103",
+                                    "display": "Number of standard drinks per day"
                                 }
                             ]
                         },
