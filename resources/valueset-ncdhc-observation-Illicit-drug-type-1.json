@@ -6,7 +6,7 @@
     "lastUpdated": "2019-09-11T03:05:02.360+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
-	"https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-2"
+      "https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-2"
     ]
   },
   "text": {
@@ -25,8 +25,8 @@
   "title": "NCDHC Illicit drug type",
   "status": "draft",
   "experimental": true,
-"date": "2020-03-31",  
- "publisher": "Australian Digital Health Agency",
+  "date": "2020-03-31",
+  "publisher": "Australian Digital Health Agency",
   "contact": [
     {
       "telecom": [
@@ -41,34 +41,34 @@
   "copyright": "Copyright © 2020 Australian Digital Health Agency - All rights reserved. Except for the material identified below, this content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. \n\nThis resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO. \n\nThe rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. \n\nAll copies of this resource must include this copyright statement and all information contained in this statement.",
   "compose": {
     "include": [
-      	{
-         "system": "http://snomed.info/sct",
-         "concept": [
-      		{
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
             "code": "703842006",
-            "display": "Amphetamine" 
+            "display": "Amphetamine"
           },
-		      {
+          {
             "code": "227491007",
             "display": "Betel nut"
           },
-    		  {
+          {
             "code": "387085005",
             "display": "Cocaine"
           },
-    	    {
+          {
             "code": "387499002",
             "display": "Methamphetamine"
           },
-    		  {
+          {
             "code": "761837004",
             "display": "Synthetic cathinone derivative"
           },
-    		  {
+          {
             "code": "372664007",
-          "display": "Benzodiazepine"  
+            "display": "Benzodiazepine"
           },
-    		  {
+          {
             "code": "782540000",
             "display": "Gamma-hydroxybutyrate receptor agonist"
           },
@@ -90,7 +90,7 @@
           },
           {
             "code": "387341002",
-            "display": "Heroin"  
+            "display": "Heroin"
           },
           {
             "code": "387286002",
@@ -116,7 +116,7 @@
             "code": "53513007",
             "display": "Psilocybine"
           },
-          { 
+          {
             "code": "398705004",
             "display": "Cannabis"
           },
@@ -140,7 +140,7 @@
             "code": "87251002",
             "display": "4-methoxyamphetamine"
           }
-    	  ]
+        ]
       }
     ]
   }
