@@ -108,6 +108,25 @@
         ]
       },
       {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "mustSupport": true,
+        "constraint": [
+          {
+            "key": "inv-cmp-edb-001",
+            "severity": "error",
+            "human": "There is at most one Breastfeeding at Time of Conception observation",
+            "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='1376561000168109').count()<2"
+          },
+          {
+            "key": "inv-cmp-edb-002",
+            "severity": "error",
+            "human": "There is at most one Estimated Date of Birth from Last Period observation",
+            "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='289206005').count()<2"
+          }
+        ]
+      },
+      {
         "id": "Composition.section.title",
         "path": "Composition.section.title",
         "fixedString": "Estimated date of birth",
@@ -134,42 +153,17 @@
       {
         "id": "Composition.section.entry",
         "path": "Composition.section.entry",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "resolve().code.coding"
-            }
-          ],
-          "rules": "closed"
-        }
-      },
-      {
-        "id": "Composition.section.entry:breastfeeding-time-conception",
-        "path": "Composition.section.entry",
-        "sliceName": "breastfeeding-time-conception",
-        "short": "Breastfeeding at time of conception.",
-        "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-breastfeeding-time-conception"
-          }
-        ]
-      },
-      {
-        "id": "Composition.section.entry:estimated-date-birth-last-period",
-        "path": "Composition.section.entry",
-        "sliceName": "estimated-date-birth-last-period",
-        "short": "Estimated date of birth from last known menstral period.",
-        "max": "1",
-        "type": [
+          },
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-estimated-date-birth-last-period"
           }
         ]
-      }      
+      }  
     ]
   }
 }
