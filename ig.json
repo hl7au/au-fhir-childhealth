@@ -365,6 +365,18 @@
       "source": "ncdhc-antenatal-visit-collection-payload-example.json",
       "base": "ncdhc-antenatal-visit-collection-payload-example.html"
     },
+    "StructureDefinition/ncdhc-composition-view-antenatal-visits-list-summary": {
+      "base": "StructureDefinition-ncdhc-composition-view-antenatal-visits-list-summary.html",
+      "defns": "StructureDefinition-ncdhc-composition-view-antenatal-visits-list-summary-definitions.html"
+    },
+    "Bundle/ncdhc-composition-view-antenatal-visits-list-summary-example": {
+      "source": "ncdhc-composition-view-antenatal-visits-list-summary-example.json",
+      "base": "ncdhc-composition-view-antenatal-visits-list-summary-example.html"
+    },
+    "Bundle/ncdhc-antenatal-visits-consolidated-view-summary-example": {
+      "source": "ncdhc-antenatal-visits-consolidated-view-summary-example.json",
+      "base": "ncdhc-antenatal-visits-consolidated-view-summary-example.html"
+    },
     "StructureDefinition/ncdhc-composition-rep-registration": {
       "base": "StructureDefinition-ncdhc-composition-rep-registration.html",
       "defns": "StructureDefinition-ncdhc-composition-rep-registration-definitions.html"
@@ -748,6 +760,14 @@
     "QuestionnaireResponse/hca-4year-qa-en-s1": {
       "source": "ncdhc-questionnaireresponse-hca4yr-example.json",
       "base": "ncdhc-questionnaireresponse-hca4yr-example.html"
+    },
+    "Questionnaire/antenatal-visits-list-sum-q-en-s1": {
+      "source": "ncdhc-view-questionnaire-antenatal-visits-list-sum-q-en-s1.json",
+      "base": "ncdhc-view-questionnaire-antenatal-visits-list-sum-q-en-s1.html"
+    },
+    "QuestionnaireResponse/antenatal-visits-list-qa-en-s1": {
+      "source": "ncdhc-questionnaireresponse-antenatal-visits-list-example.json",
+      "base": "ncdhc-questionnaireresponse-antenatal-visits-list-example.html"
     },
     "OperationDefinition/ncdhc-patient-access": {
       "base": "OperationDefinition-ncdhc-patient-access.html",
