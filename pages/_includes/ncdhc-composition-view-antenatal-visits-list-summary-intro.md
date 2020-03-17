@@ -7,9 +7,7 @@ This profile is used to represent the list of antenatal visits list as a FHIR do
 The following are example usage scenarios for the National Child Digital Health interactions
 profile:
 
--   Upload Antenatal Visits List Health Interaction FHIR document
--   Update existing Antenatal Visits List Health Health Interaction FHIR document
-
+-   Consumer is viewing the list of antenatal visits as shared by clinical providers
 
 
 ##### Mandatory Data Elements and Terminology
@@ -33,7 +31,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-- [Antenatal Visits List Summary Document](ncdhc-composition-view-antenatal-visits-list-summary-sample.html)
+- [Antenatal Visits List Summary Document](ncdhc-composition-view-antenatal-visits-list-summary-example.html)
 
 
 

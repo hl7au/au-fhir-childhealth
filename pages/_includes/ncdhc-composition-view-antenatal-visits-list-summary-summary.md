@@ -1,17 +1,3 @@
-**NCDHC Antenatal Visits List Summary Health Interaction Composition Profile**
-
-This profile is used to represent the list of antenatal visits list as a FHIR document using Composition resource. The profile is at draft stage and under review by the Child Health Working Group. 
-
-**Example Usage Scenarios:**
-
-The following are example usage scenarios for the National Child Digital Health interactions
-profile:
-
--   Upload Antenatal Visits List Health Interaction FHIR document
--   Update existing Antenatal Visits List Health Health Interaction FHIR document
-
-
-
 ##### Mandatory Data Elements and Terminology
 
 
