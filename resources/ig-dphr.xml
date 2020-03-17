@@ -555,6 +555,12 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-estimated-date-birth" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-observation-breastfeeding-time-conception" />
 			</sourceReference>
 		</resource>

@@ -115,8 +115,8 @@
           {
             "key": "inv-cmp-edb-001",
             "severity": "error",
-            "human": "There is at most one Breastfeeding at Time of Conception observation",
-            "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='1376561000168109').count()<2"
+            "human": "There is at most one Estimated Date of Birth observation",
+            "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='161714006').count()<2"
           },
           {
             "key": "inv-cmp-edb-002",
@@ -156,7 +156,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-breastfeeding-time-conception"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-estimated-date-birth"
           },
           {
             "code": "Reference",

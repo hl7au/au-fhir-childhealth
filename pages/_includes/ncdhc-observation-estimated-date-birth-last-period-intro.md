@@ -7,4 +7,3 @@ This profile sets minimum expectations for the [Observation] resource to record 
 - [Estimated Date of Birth from Last Period Observation](ncdhc-observation-estimated-date-birth-last-period-example.html)
 
 [Observation]: http://hl7.org/fhir/observation.html
-
