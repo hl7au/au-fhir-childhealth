@@ -122,7 +122,7 @@ These Profiles have been defined for this implementation guide.
 
 ### FHIR View Profiles
 * [NCDHC Antenatal Visit Detailed view](StructureDefinition-ncdhc-composition-view-antenatal-visit.html) - Consolidated details of antenatal visit as shared by clinical providers and to be aware of the issues being managed during my pregnancy
-* [NCDHC Antenatal Visit List Summary View](structuredefinition-ncdhc-composition-view-antenatal-visits-list-summary.html) - List of antenatal visits as shared by clinical providers during the pregnancy
+* [NCDHC Antenatal Visit List Summary View](StructureDefinition-ncdhc-composition-view-antenatal-visits-list-summary.html) - List of antenatal visits as shared by clinical providers during the pregnancy
  
 ## NCDHC Admin Profiles
 * [NCDHC Rep Registration](StructureDefinition-ncdhc-composition-rep-registration.html) - Composition profile to register representative
