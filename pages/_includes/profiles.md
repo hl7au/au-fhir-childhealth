@@ -119,11 +119,11 @@ These Profiles have been defined for this implementation guide.
 
 ### FHIR Document Profiles 
 * [NCDHC Antenatal Visit Collection Health Interaction](StructureDefinition-ncdhc-composition-antenatal-visit.html) - Composition profile to collect Antenatal Visit and associated details
-* [NCDHC Estimated Date of Birth Health Interaction](StructureDefinition-ncdhc-composition-estimated-date-birth.html) - Composition profile to collect estimated date of birth and associated details
+
 
 ### FHIR View Profiles
 * [NCDHC Antenatal Visit Detailed view](StructureDefinition-ncdhc-composition-view-antenatal-visit.html) - Consolidated details of antenatal visit as shared by clinical providers and to be aware of the issues being managed during my pregnancy
-
+* [NCDHC Antenatal Visit List Summary View](StructureDefinition-ncdhc-composition-view-antenatal-visits-list-summary.html) - List of antenatal visits as shared by clinical providers during the pregnancy
  
 ## NCDHC Admin Profiles
 * [NCDHC Rep Registration](StructureDefinition-ncdhc-composition-rep-registration.html) - Composition profile to register representative

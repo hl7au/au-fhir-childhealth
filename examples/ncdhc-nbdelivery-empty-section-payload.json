@@ -53,7 +53,7 @@
         "confidentiality": "N",
         "attester": [
           {
-            "mode": "professional",
+            "mode": ["professional"],
             "time": "2018-12-24T12:30:02Z",
             "party": {
               "reference": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f"

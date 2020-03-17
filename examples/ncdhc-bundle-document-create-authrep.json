@@ -48,7 +48,9 @@
         "confidentiality": "N",
         "attester": [
           {
-            "mode": "professional",
+            "mode": [
+              "professional"
+            ],
             "time": "2020-01-28T11:20:15Z",
             "party": {
               "reference": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
@@ -108,7 +110,7 @@
     {
       "fullUrl": "urn:uuid:eb78393f-37ca-4738-81d6-d9595b2e5d0f",
       "resource": {
-        "resourceType": "Patient",       
+        "resourceType": "Patient",
         "meta": {
           "versionId": "1",
           "lastUpdated": "2019-11-05T00:00:00Z",

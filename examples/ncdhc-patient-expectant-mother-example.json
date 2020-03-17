@@ -44,7 +44,9 @@
   "active": true,
   "name": [
     {
-      "prefix": "Ms",
+      "prefix": [
+        "Ms"
+      ],
       "text": "Eve Bill",
       "family": "Bill",
       "given": [
@@ -74,16 +76,16 @@
       "country": "Australia"
     }
   ],
-  "telecom" : [
+  "telecom": [
     {
-      "system" : "email",
-      "value" : "testemail.evebill@gmail.com.au",
-      "use" : "home"
+      "system": "email",
+      "value": "testemail.evebill@gmail.com.au",
+      "use": "home"
     },
     {
-      "system" : "phone",
-      "value" : "0411111567",
-      "use" : "mobile"
+      "system": "phone",
+      "value": "0411111567",
+      "use": "mobile"
     }
   ]
 }
