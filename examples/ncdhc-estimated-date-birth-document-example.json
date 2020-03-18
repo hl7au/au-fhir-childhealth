@@ -78,6 +78,27 @@
                                 "reference": "urn:uuid:dd74dcc9-5f97-4831-ad5b-acb2ae069823"
                             }
                         ]
+                    },
+                                        {
+                        "title": "Conception",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "247641007",
+                                    "display" : "Puzzled"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "additional",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Sample.</div>"
+                        },
+                        "entry": [
+                            {
+                                "reference": "urn:uuid:88f18b1b-445a-4d79-b3be-34d0fbc94851"
+                            }
+                        ]
                     }
                 ]
                 
@@ -386,7 +407,17 @@
                       "display": "Organisation"
                     }
                   ],
-                  "valueDateTime": "2020-04-24"
+                  "valueDateTime": "2020-04-23",
+                  "related": [
+                    {
+                      "type": "derived-from",
+                      "target":     
+                      {
+                        "reference": "Observation/observation-estimated-date-birth-last-period-example",
+                        "display": "Estimated date of birth from last known menstrual period"
+                      }
+                    }
+                  ]
                 }            
         },
         {
@@ -496,6 +527,54 @@
                     }
                   ]
                 }
+        },
+        {
+            "fullUrl": "urn:uuid:88f18b1b-445a-4d79-b3be-34d0fbc94851",
+            "resource": 
+               {
+                 "resourceType": "Observation",
+                 "id": "88f18b1b-445a-4d79-b3be-34d0fbc94851",
+                 "meta": {
+                   "versionId": "1",
+                   "lastUpdated": "2019-12-27T16:13:03Z",
+                   "profile": [
+                     "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-breastfeeding-time-conception"
+                   ]
+                 },
+                 "status": "final",
+                 "code": {
+                   "coding": [
+                     {
+                       "system": "http://snomed.info/sct",
+                       "code": "1376561000168109"
+                     }
+                   ],
+                   "text": "Breastfeeding at time of conception"
+                 },
+                 "subject": {
+                   "reference": "Patient/ncdhc-patient-expectant-mother-example",
+                   "display": "Eve Bill"
+                 },
+                 "effectiveDateTime": "2019-12-24",
+                 "performer": [
+                   {
+                     "reference": "Practitioner/examiner-practitioner",
+                     "display": "Examiner"
+                   },
+                   {
+                     "reference": "Organization/examiner-organization",
+                     "display": "Organisation"
+                   }
+                 ],
+                 "valueCodeableConcept": {
+                     "coding": [
+                     {
+                       "system": "http://snomed.info/sct",
+                       "code": "373066001"
+                     }
+                   ]
+                 }
+               }            
         }
     ]
 }

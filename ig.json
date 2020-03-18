@@ -473,6 +473,14 @@
       "source": "ncdhc-estimated-date-birth-document-example.json",
       "base": "ncdhc-estimated-date-birth-document-example.html"
     },
+    "StructureDefinition/ncdhc-observation-estimated-date-birth": {
+      "base": "StructureDefinition-ncdhc-observation-estimated-date-birth.html",
+      "defns": "StructureDefinition-ncdhc-observation-estimated-date-birth-definitions.html"
+    },
+    "Observation/observation-estimated-date-birth-example": {
+      "source": "ncdhc-observation-estimated-date-birth-example.json",
+      "base": "ncdhc-observation-estimated-date-birth-example.html"
+    },
     "StructureDefinition/ncdhc-observation-breastfeeding-time-conception": {
       "base": "StructureDefinition-ncdhc-observation-breastfeeding-time-conception.html",
       "defns": "StructureDefinition-ncdhc-observation-breastfeeding-time-conception-definitions.html"
@@ -999,10 +1007,6 @@
     "Practitioner/examiner-practitioner": {
       "source": "ncdhc-examiner-practitioner-example.json",
       "base": "ncdhc-examiner-practitioner-example.html"
-    },
-    "Observation/observation-estimated-gestation-example": {
-      "source": "ncdhc-observation-estimated-gestation-example.json",
-      "base": "ncdhc-observation-estimated-gestation-example.html"
     },
     "Observation/observation-birth-abnormalities-example": {
       "source": "ncdhc-observation-birth-abnormalities-example.json",

@@ -273,6 +273,10 @@
       "base": "StructureDefinition-ncdhc-observation-estimated-date-birth.html",
       "defns": "StructureDefinition-ncdhc-observation-estimated-date-birth-definitions.html"
     },
+    "Observation/observation-estimated-date-birth-example": {
+      "source": "ncdhc-observation-estimated-date-birth-example.json",
+      "base": "ncdhc-observation-estimated-date-birth-example.html"
+    },
     "StructureDefinition/ncdhc-observation-breastfeeding-time-conception": {
       "base": "StructureDefinition-ncdhc-observation-breastfeeding-time-conception.html",
       "defns": "StructureDefinition-ncdhc-observation-breastfeeding-time-conception-definitions.html"

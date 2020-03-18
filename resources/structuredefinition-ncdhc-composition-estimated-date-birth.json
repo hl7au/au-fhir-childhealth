@@ -26,13 +26,13 @@
         "id": "Composition.type.coding",
         "path": "Composition.type.coding",
         "min": 1,
-        "max":"1"
+        "max": "1"
       },
       {
         "id": "Composition.type.coding.system",
         "path": "Composition.type.coding.system",
-        "fixedUri": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
-        "min": 1
+        "min": 1,
+        "fixedUri": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
       },
       {
         "id": "Composition.type.coding.code",
@@ -43,13 +43,13 @@
         "id": "Composition.class.coding",
         "path": "Composition.class.coding",
         "min": 1,
-        "max":"1"
+        "max": "1"
       },
       {
         "id": "Composition.class.coding.system",
         "path": "Composition.class.coding.system",
-        "fixedUri": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
-        "min": 1
+        "min": 1,
+        "fixedUri": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
       },
       {
         "id": "Composition.class.coding.code",
@@ -110,7 +110,15 @@
       {
         "id": "Composition.section",
         "path": "Composition.section",
-        "mustSupport": true,
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "closed"
+        },
         "constraint": [
           {
             "key": "inv-cmp-edb-001",
@@ -124,18 +132,47 @@
             "human": "There is at most one Estimated Date of Birth from Last Period observation",
             "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='289206005').count()<2"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Composition.section.title",
         "path": "Composition.section.title",
-        "fixedString": "Estimated date of birth",
         "mustSupport": true
       },
       {
         "id": "Composition.section.code",
         "path": "Composition.section.code",
         "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.text",
+        "path": "Composition.section.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:EDB",
+        "path": "Composition.section",
+        "sliceName": "EDB",
+        "short": "Estimated date of birth",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:EDB.title",
+        "path": "Composition.section.title",
+        "fixedString": "Estimated date of birth"
+      },
+      {
+        "id": "Composition.section:EDB.code",
+        "path": "Composition.section.code",
         "patternCodeableConcept": {
           "coding": [
             {
@@ -146,12 +183,7 @@
         }
       },
       {
-        "id": "Composition.section.text",
-        "path": "Composition.section.text",
-        "mustSupport": true
-      },
-      {
-        "id": "Composition.section.entry",
+        "id": "Composition.section:EDB.entry",
         "path": "Composition.section.entry",
         "type": [
           {
@@ -163,7 +195,26 @@
             "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-estimated-date-birth-last-period"
           }
         ]
-      }  
+      },
+      {
+        "id": "Composition.section:conception",
+        "path": "Composition.section",
+        "sliceName": "conception",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:conception.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "247641007",
+              "display": "Puzzled"
+            }
+          ]
+        }
+      }
     ]
   }
 }
