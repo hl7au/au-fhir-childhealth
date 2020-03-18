@@ -29,7 +29,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 * Clinically responsible person shall be recorded using the following way:
 1.  Encounter.participant.type=”CALLBCK”
 1.  Encounter.participant.individual ([AUBasePractitioner])
-* Clinically responsible Organisation shall be recorded using Encounter.serviceProvider(AUOrganization)
+* Clinically responsible Organisation shall be recorded using Encounter.serviceProvider([AUOrganization])
 1. The deisgnation of the Clinically responsible person SHALL be provided in  'AUBasePractitioner.qualification.code.text'. is a workaround since the STU3.0 FHIR Encounter doesn’t support inclusion of PractitionerRole as Encounter.participant.individual 
 * The Venue shall be recorded using Encounter.location.location (Location). Use Location.name as the Name of the Venue as used by humans
 
@@ -39,6 +39,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 - [Health Check Assessment Encounter](ncdhc-encounter-example.html)
 
 [AUBasePractitioner]: http://hl7.org.au/fhir/base/aubase1.1/StructureDefinition-au-practitioner.html
+[AUOrganization]: http://hl7.org.au/fhir/aubase1.1/StructureDefinition-au-organisation.html
 [Encounter]: http://hl7.org/fhir/encounter.html
 [extensible]: http://hl7.org/fhir/terminologies.html#extensible
 [General Guidance Section]: definitions.html

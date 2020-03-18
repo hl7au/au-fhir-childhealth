@@ -31,15 +31,12 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "code"
-            },
-            {
-              "type": "value",
-              "path": "system"
+              "path": "$this"
             }
           ],
           "rules": "closed"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Observation.code.coding:BPSNOMED-CT",
@@ -51,17 +48,6 @@
           "system": "http://snomed.info/sct",
           "code": "75367002"
         }
-      },
-      {
-        "id": "Observation.code.coding:BPSNOMED-CT.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding:BPSNOMED-CT.code",
-        "path": "Observation.code.coding.code",
-        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -147,6 +133,12 @@
       },
       {
         "id": "Observation.component:SystolicBP.value[x]:valueQuantity.unit",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
         "path": "Observation.component.valueQuantity.unit",
         "min": 1,
         "mustSupport": true
@@ -201,6 +193,12 @@
       },
       {
         "id": "Observation.component:DiastolicBP.value[x]:valueQuantity.unit",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
         "path": "Observation.component.valueQuantity.unit",
         "min": 1,
         "mustSupport": true
