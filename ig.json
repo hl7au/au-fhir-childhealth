@@ -1292,6 +1292,30 @@
       "source": "ncdhc-observation-iron-haemoglobin-level-example.json",
       "base": "ncdhc-observation-iron-haemoglobin-level-example.html"
     },
+    "StructureDefinition/ncdhc-observation-ultrasound-obstetric": {
+      "base": "StructureDefinition-ncdhc-observation-ultrasound-obstetric.html",
+      "defns": "StructureDefinition-ncdhc-observation-ultrasound-obstetric-definitions.html"
+    },
+    "Observation/ncdhc-observation-ultrasound-obstetric": {
+      "source": "ncdhc-observation-ultrasound-obstetric-example.json",
+      "base": "ncdhc-observation-ultrasound-obstetric-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-gestation-at-ultrasound": {
+      "base": "StructureDefinition-ncdhc-observation-gestation-at-ultrasound.html",
+      "defns": "StructureDefinition-ncdhc-observation-gestation-at-ultrasound-definitions.html"
+    },
+    "Observation/ncdhc-observation-gestation-at-ultrasound": {
+      "source": "ncdhc-observation-gestation-at-ultrasound-example.json",
+      "base": "ncdhc-observation-gestation-at-ultrasound-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-due-date-by-clinical-examination": {
+      "base": "StructureDefinition-ncdhc-observation-due-date-by-clinical-examination.html",
+      "defns": "StructureDefinition-ncdhc-observation-due-date-by-clinical-examination-definitions.html"
+    },
+    "Observation/ncdhc-observation-due-date-by-clinical-examination": {
+      "source": "ncdhc-observation-due-date-by-clinical-examination-example.json",
+      "base": "ncdhc-observation-due-date-by-clinical-examination-example.html"
+    },
     "AuditEvent/audit-event-insert-example": {
       "source": "audit-event-insert.json",
       "base": "audit-event-insert.html"
