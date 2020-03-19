@@ -4,4 +4,4 @@ This profile sets minimum expectations for an Observation, to record an obstetri
 
 #### Examples
 
-- [Obstetric Ultrasound Observation](ncdhc-observation-ultrasound-obstetric-example.html)
+- [Obstetric Ultrasound Observation](Observation-ncdhc-observation-ultrasound-obstetric-example.html)

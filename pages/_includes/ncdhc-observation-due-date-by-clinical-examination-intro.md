@@ -4,4 +4,4 @@ This profile sets minimum expectations for an Observation, to record due date by
 
 #### Examples
 
-- [Due Date by Clinical Examination Observation](ncdhc-observation-due-date-by-clinical-examination-example.html)
+- [Due Date by Clinical Examination Observation](Observation-ncdhc-observation-due-date-by-clinical-examination-example.html)
