@@ -1370,6 +1370,37 @@
 		<!-- CDHR Health Interactions - End -->
 
 		<!-- DPHR Health Interactions - Start -->
+		<!-- DPHR Antenatal Visits List -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-view-antenatal-visits-list-summary" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-composition-view-antenatal-visits-list-summary-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-antenatal-visits-consolidated-view-summary-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Questionnaire/antenatal-visits-list-sum-q-en-s1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="QuestionnaireResponse/antenatal-visits-list-qa-en-s1" />
+			</sourceReference>
+		</resource>
 		<!-- DPHR Clinical Notes -->
 		<resource>
 			<example value="false" />
@@ -1402,13 +1433,7 @@
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-composition-view-antenatal-visit" />
 			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true" />
-			<sourceReference>
-				<reference value="Bundle/ncdhc-antenatal-visits-consolidated-view-summary-example" />
-			</sourceReference>
-		</resource>
+		</resource>		
 		<!-- Antenatal Visit Questionnaire -->
 		<!-- Antenatal Visit Composition -->
 		<resource>
