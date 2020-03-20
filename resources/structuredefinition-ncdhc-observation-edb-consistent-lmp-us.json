@@ -21,7 +21,21 @@
       {
         "id": "Observation",
         "path": "Observation",
-        "short": "NCDHC EDB Consistent between Last Menstrual Period and antenatal Ultrasound Scan Observation"
+        "short": "NCDHC EDB Consistent between Last Menstrual Period and antenatal Ultrasound Scan Observation",
+        "constraint": [
+          {
+            "key": "inv-obs-edblmpus-001",
+            "severity": "error",
+            "human": "There is at most one related Estimated Date of Birth from Last Period observation",
+            "expression": "related.target.resolve().code.coding.where(system='http://snomed.info/sct' and code='289206005').count()<2"
+          },
+          {
+            "key": "inv-obs-edblmpus-002",
+            "severity": "error",
+            "human": "There is at most one related Obsteteric Ultrasound Observation observation",
+            "expression": "related.target.resolve().code.coding.where(system='http://snomed.info/sct' and code='268445003').count()<2"
+          }
+        ]
       },
       {
         "id": "Observation.code",
@@ -78,24 +92,6 @@
           "strength": "required",
           "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-generic-yes-no-1"
         }
-      },
-      {
-        "id": "Observation.related",
-        "path": "Observation.related",
-        "constraint": [
-          {
-            "key": "inv-obs-edblmpus-001",
-            "severity": "error",
-            "human": "There is at most one Estimated Date of Birth from Last Period observation",
-            "expression": "target.resolve().code.coding.where(system='http://snomed.info/sct' and code='289206005').count()<2"
-          },
-          {
-            "key": "inv-obs-edblmpus-002",
-            "severity": "error",
-            "human": "There is at most one Obsteteric Ultrasound Observation observation",
-            "expression": "target.resolve().code.coding.where(system='http://snomed.info/sct' and code='268445003').count()<2"
-          }
-        ]
       },
       {
         "id": "Observation.related.target",

@@ -21,7 +21,33 @@
       {
         "id": "Observation",
         "path": "Observation",
-        "short": "NCDHC Estimated Date of Birth Observation"
+        "short": "NCDHC Estimated Date of Birth Observation",
+        "constraint": [
+          {
+            "key": "inv-obs-edb-001",
+            "severity": "error",
+            "human": "There is at most one related Estimated Date of Birth from Last Period observation",
+            "expression": "related.target.resolve().code.coding.where(system='http://snomed.info/sct' and code='289206005').count()<2"
+          },
+          {
+            "key": "inv-obs-edb-002",
+            "severity": "error",
+            "human": "There is at most one related Obsteteric Ultrasound Observation observation",
+            "expression": "related.target.resolve().code.coding.where(system='http://snomed.info/sct' and code='268445003').count()<2"
+          },
+          {
+            "key": "inv-obs-edb-003",
+            "severity": "error",
+            "human": "There is at most one related Due Date by Clinical Examination observation",
+            "expression": "related.target.resolve().code.coding.where(system='http://snomed.info/sct' and code='1384451000168107').count()<2"
+          },
+          {
+            "key": "inv-obs-edb-004",
+            "severity": "error",
+            "human": "There is at most one related EDB Consistent between Last Menstrual Period and antenatal Ultrasound Scan observation",
+            "expression": "related.target.resolve().code.coding.where(system='http://snomed.info/sct' and code='1377101000168100').count()<2"
+          }
+        ]
       },
       {
         "id": "Observation.code",
@@ -73,6 +99,28 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Observation.related.target",
+        "path": "Observation.related.target",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-estimated-date-birth-last-period"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-ultrasound-obstetric"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-due-date-by-clinical-examination"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-edb-consistent-lmp-us"
+          }
+        ]
       }
     ]
   }
