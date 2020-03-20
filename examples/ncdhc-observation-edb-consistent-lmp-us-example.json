@@ -40,5 +40,23 @@
         "code": "373066001"
       }
     ]
-  }
+  },
+  "related": [
+    {
+      "type": "derived-from",
+      "target":     
+      {
+        "reference": "Observation/observation-estimated-date-birth-last-period-example",
+        "display": "Estimated date of birth from last known menstrual period"
+      }
+    },
+    {
+      "type": "derived-from",
+      "target":     
+      {
+        "reference": "Observation/ncdhc-observation-ultrasound-obstetric-example",
+        "display": "Estimated date of birth from antenatal ultrasound scan"
+      }
+    }
+  ]  
 }

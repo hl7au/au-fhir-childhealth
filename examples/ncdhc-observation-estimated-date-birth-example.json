@@ -42,6 +42,30 @@
         "reference": "Observation/observation-estimated-date-birth-last-period-example",
         "display": "Estimated date of birth from last known menstrual period"
       }
-    }
+    },
+    {
+      "type": "derived-from",
+      "target":     
+      {
+        "reference": "Observation/ncdhc-observation-ultrasound-obstetric-example",
+        "display": "Estimated date of birth from antenatal ultrasound scan"
+      }
+    },
+    {
+      "type": "derived-from",
+      "target":     
+      {
+        "reference": "Observation/ncdhc-observation-due-date-by-clinical-examination-example",
+        "display": "Estimated date of birth by clinical examination"
+      }
+    },
+    {
+      "type": "derived-from",
+      "target":     
+      {
+        "reference": "Observation/observation-edb-consistent-lmp-us-example",
+        "display": "Estimated date of delivery consistent between last menstrual period and antenatal ultrasound scan"
+      }
+    }    
   ]
 }
