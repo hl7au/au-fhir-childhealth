@@ -2039,6 +2039,12 @@
 				<reference value="ValueSet/ncdhc-smoking-status-1" />
 			</sourceReference>
 		</resource>
+		<!--resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="ValueSet/ncdhc-observation-illicit-drug-type-1" />
+			</sourceReference>
+		</resource-->
 
 		<!-- NCDHC Admin Profiles - Start -->
 		<resource>
