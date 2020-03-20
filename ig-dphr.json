@@ -285,6 +285,14 @@
       "source": "ncdhc-observation-breastfeeding-time-conception-example.json",
       "base": "ncdhc-observation-breastfeeding-time-conception-example.html"
     },
+    "StructureDefinition/ncdhc-observation-edb-consistent-lmp-us": {
+      "base": "StructureDefinition-ncdhc-observation-edb-consistent-lmp-us.html",
+      "defns": "StructureDefinition-ncdhc-observation-edb-consistent-lmp-us-definitions.html"
+    },
+    "Observation/observation-edb-consistent-lmp-us-example": {
+      "source": "ncdhc-observation-edb-consistent-lmp-us-example.json",
+      "base": "ncdhc-observation-edb-consistent-lmp-us-example.html"
+    },
     "StructureDefinition/ncdhc-observation-estimated-date-birth-last-period": {
       "base": "StructureDefinition-ncdhc-observation-estimated-date-birth-last-period.html",
       "defns": "StructureDefinition-ncdhc-observation-estimated-date-birth-last-period-definitions.html"
