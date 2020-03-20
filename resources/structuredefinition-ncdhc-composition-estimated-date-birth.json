@@ -251,8 +251,8 @@
           {
             "key": "inv-cmp-edb-008",
             "severity": "error",
-            "human": "There is at most one Use of oral contraceptive status at conception observation",
-            "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='440396009').count()<2"
+            "human": "There is at most one Hormonal contraception observation",
+            "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='1376571000168103').count()<2"
           }
         ]        
       },
