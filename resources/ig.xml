@@ -1367,6 +1367,105 @@
 			</sourceReference>
 		</resource>
 
+		<!-- DPHR DOB - Start -->
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-estimated-date-birth" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-estimated-date-birth-document-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-estimated-date-birth" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-estimated-date-birth-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-breastfeeding-time-conception" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-breastfeeding-time-conception-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-edb-consistent-lmp-us" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-edb-consistent-lmp-us-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-estimated-date-birth-last-period" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/observation-estimated-date-birth-last-period-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-ultrasound-obstetric" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-ultrasound-obstetric-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-gestation-at-ultrasound" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-gestation-at-ultrasound-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-observation-due-date-by-clinical-examination" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Observation/ncdhc-observation-due-date-by-clinical-examination-example" />
+			</sourceReference>
+		</resource>
+		<!-- DPHR DOB - End -->
+		
 		<!-- CDHR Health Interactions - End -->
 
 		<!-- DPHR Health Interactions - Start -->
@@ -1614,44 +1713,7 @@
 				<reference value="OperationDefinition/ncdhc-document-update" />
 			</sourceReference>
 		</resource>
-		<!-- DPHR DOB - Start -->		
-		<resource>
-			<example value="false" />
-			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-ultrasound-obstetric" />
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true" />
-			<sourceReference>
-				<reference value="Observation/ncdhc-observation-ultrasound-obstetric-example" />
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="false" />
-			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-gestation-at-ultrasound" />
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true" />
-			<sourceReference>
-				<reference value="Observation/ncdhc-observation-gestation-at-ultrasound-example" />
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="false" />
-			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-due-date-by-clinical-examination" />
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="true" />
-			<sourceReference>
-				<reference value="Observation/ncdhc-observation-due-date-by-clinical-examination-example" />
-			</sourceReference>
-		</resource>
-		<!-- DPHR DOB - End -->
+
 
 		<!-- Dependant Terminologies 
 		<resource>

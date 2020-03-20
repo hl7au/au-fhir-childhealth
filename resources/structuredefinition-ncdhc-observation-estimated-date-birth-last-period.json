@@ -1,0 +1,211 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-estimated-date-birth-last-period",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-estimated-date-birth-last-period",
+  "version": "dv1.0.0",
+  "name": "NCDHCEstimatedDateBirthLastPeriodObservationProfile",
+  "title": "NCDHC Estimated Date of Birth from Last Period Observation",
+  "status": "draft",
+  "date": "2020-03-12",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "NCDHC Estimated Date of Birth from Last Period Observation",
+  "copyright": "Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "NCDHC Estimated Date of Birth from Last Period Observation"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:EstimatedDateDeliveryLastPeriodSNOMED-CT",
+        "path": "Observation.code.coding",
+        "sliceName": "EstimatedDateDeliveryLastPeriodSNOMED-CT",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "289206005"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-patient-expectant-mother"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueDateTime",
+        "path": "Observation.valueDateTime",
+        "sliceName": "valueDateTime",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "Observation.component:lMPFirstDay",
+        "path": "Observation.component",
+        "sliceName": "lMPFirstDay",
+        "short": "Last menstrual period - First day",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:lMPFirstDay.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "161713000"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:lMPFirstDay.value[x]:valueDateTime",
+        "path": "Observation.component.valueDateTime",
+        "sliceName": "valueDateTime",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:usualLengthMC",
+        "path": "Observation.component",
+        "sliceName": "usualLengthMC",
+        "short": "Usual length of menstrual cycle",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:usualLengthMC.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "161716008"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:usualLengthMC.value[x]:valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "patternQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "d"
+        }
+      },
+      {
+        "id": "Observation.component:certainty",
+        "path": "Observation.component",
+        "sliceName": "certainty",
+        "short": "Certainty",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:certainty.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "246103008"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:certainty.value[x]:valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "sliceName": "valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:regularity",
+        "path": "Observation.component",
+        "sliceName": "regularity",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:regularity.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "246202005"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:regularity.value[x]:valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "sliceName": "valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

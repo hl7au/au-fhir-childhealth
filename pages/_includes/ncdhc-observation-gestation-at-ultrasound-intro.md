@@ -4,5 +4,5 @@ This profile sets minimum expectations for an Observation, to record gestation a
 
 #### Examples
 
-- [Gestation at Ultrasound Observation](ncdhc-observation-gestation-at-ultrasound-example.html)
+- [Gestation at Ultrasound Observation](Observation-ncdhc-observation-gestation-at-ultrasound-example.html)
 

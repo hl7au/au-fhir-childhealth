@@ -169,7 +169,7 @@
       "base": "StructureDefinition-ncdhc-documentreference-clinical-notes.html",
       "defns": "StructureDefinition-ncdhc-documentreference-clinical-notes-definitions.html"
     },
-   "DocumentReference/ncdhc-documentreference-clinical-notes-example": {
+    "DocumentReference/ncdhc-documentreference-clinical-notes-example": {
       "source": "ncdhc-documentreference-clinical-notes-example.json",
       "base": "ncdhc-documentreference-clinical-notes-example.html"
     },
@@ -269,6 +269,14 @@
       "source": "ncdhc-estimated-date-birth-document-example.json",
       "base": "ncdhc-estimated-date-birth-document-example.html"
     },
+    "StructureDefinition/ncdhc-observation-estimated-date-birth": {
+      "base": "StructureDefinition-ncdhc-observation-estimated-date-birth.html",
+      "defns": "StructureDefinition-ncdhc-observation-estimated-date-birth-definitions.html"
+    },
+    "Observation/observation-estimated-date-birth-example": {
+      "source": "ncdhc-observation-estimated-date-birth-example.json",
+      "base": "ncdhc-observation-estimated-date-birth-example.html"
+    },
     "StructureDefinition/ncdhc-observation-breastfeeding-time-conception": {
       "base": "StructureDefinition-ncdhc-observation-breastfeeding-time-conception.html",
       "defns": "StructureDefinition-ncdhc-observation-breastfeeding-time-conception-definitions.html"
@@ -276,6 +284,22 @@
     "Observation/observation-breastfeeding-time-conception-example": {
       "source": "ncdhc-observation-breastfeeding-time-conception-example.json",
       "base": "ncdhc-observation-breastfeeding-time-conception-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-edb-consistent-lmp-us": {
+      "base": "StructureDefinition-ncdhc-observation-edb-consistent-lmp-us.html",
+      "defns": "StructureDefinition-ncdhc-observation-edb-consistent-lmp-us-definitions.html"
+    },
+    "Observation/observation-edb-consistent-lmp-us-example": {
+      "source": "ncdhc-observation-edb-consistent-lmp-us-example.json",
+      "base": "ncdhc-observation-edb-consistent-lmp-us-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-estimated-date-birth-last-period": {
+      "base": "StructureDefinition-ncdhc-observation-estimated-date-birth-last-period.html",
+      "defns": "StructureDefinition-ncdhc-observation-estimated-date-birth-last-period-definitions.html"
+    },
+    "Observation/observation-estimated-date-birth-last-period-example": {
+      "source": "ncdhc-observation-estimated-date-birth-last-period-example.json",
+      "base": "ncdhc-observation-estimated-date-birth-last-period-example.html"
     },
     "StructureDefinition/ncdhc-observation-bodyweight": {
       "base": "StructureDefinition-ncdhc-observation-bodyweight.html",
@@ -365,22 +389,6 @@
       "source": "ncdhc-observation-heart-rate-example.json",
       "base": "ncdhc-observation-heart-rate-example.html"
     },
-    "StructureDefinition/ncdhc-observation-vitalsign-bp": {
-      "base": "StructureDefinition-ncdhc-observation-vitalsign-bp.html",
-      "defns": "StructureDefinition-ncdhc-observation-vitalsign-bp-definitions.html"
-    },
-    "Observation/ncdhc-observation-vitalsign-bp-example": {
-      "source": "ncdhc-observation-vitalsign-bp-example.json",
-      "base": "ncdhc-observation-vitalsign-bp-example.html"
-    },
-    "StructureDefinition/ncdhc-observation-bp": {
-      "base": "StructureDefinition-ncdhc-observation-bp.html",
-      "defns": "StructureDefinition-ncdhc-observation-bp-definitions.html"
-    },
-    "Observation/ncdhc-observation-bp-example": {
-      "source": "ncdhc-observation-bp-example.json",
-      "base": "ncdhc-observation-bp-example.html"
-    },
     "StructureDefinition/ncdhc-observation-fetal-movement": {
       "base": "StructureDefinition-ncdhc-observation-fetal-movement.html",
       "defns": "StructureDefinition-ncdhc-observation-fetal-movement-definitions.html"
@@ -404,6 +412,22 @@
     "Observation/ncdhc-observation-fetus-arrangement-example": {
       "source": "ncdhc-observation-fetus-arrangement-example.json",
       "base": "ncdhc-observation-fetus-arrangement-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-vitalsign-bp": {
+      "base": "StructureDefinition-ncdhc-observation-vitalsign-bp.html",
+      "defns": "StructureDefinition-ncdhc-observation-vitalsign-bp-definitions.html"
+    },
+    "Observation/ncdhc-observation-vitalsign-bp-example": {
+      "source": "ncdhc-observation-vitalsign-bp-example.json",
+      "base": "ncdhc-observation-vitalsign-bp-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-bp": {
+      "base": "StructureDefinition-ncdhc-observation-bp.html",
+      "defns": "StructureDefinition-ncdhc-observation-bp-definitions.html"
+    },
+    "Observation/ncdhc-observation-bp-example": {
+      "source": "ncdhc-observation-bp-example.json",
+      "base": "ncdhc-observation-bp-example.html"
     },
     "StructureDefinition/ncdhc-observation-urinalysis-protein": {
       "base": "StructureDefinition-ncdhc-observation-urinalysis-protein.html",
