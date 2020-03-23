@@ -57,7 +57,7 @@
                 ],
                 "section": [
                     {
-                        "title": "Estimated date of birth",
+                        "title": "Estimated date of delivery",
                         "code": {
                             "coding": [
                                 {
@@ -80,13 +80,12 @@
                         ]
                     },
                                         {
-                        "title": "Conception",
+                        "title": "Obstetric history",
                         "code": {
                             "coding": [
                                 {
                                     "system": "http://snomed.info/sct",
-                                    "code": "247641007",
-                                    "display" : "Puzzled"
+                                    "code": "248983002"
                                 }
                             ]
                         },

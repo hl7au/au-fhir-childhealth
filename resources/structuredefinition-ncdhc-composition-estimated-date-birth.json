@@ -144,58 +144,58 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:EDB",
+        "id": "Composition.section:EDD",
         "path": "Composition.section",
-        "sliceName": "EDB",
-        "short": "Estimated date of birth",
+        "sliceName": "EDD",
+        "short": "Estimated date of delivery",
         "min": 1,
         "max": "1",
         "constraint": [
           {
-            "key": "inv-cmp-edb-001",
+            "key": "inv-cmp-edd-001",
             "severity": "error",
             "human": "There is exactly one Estimated Date of Birth observation",
             "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='161714006').count()=1"
           },
           {
-            "key": "inv-cmp-edb-002",
+            "key": "inv-cmp-edd-002",
             "severity": "error",
             "human": "There is at most one Estimated Date of Birth from Last Period observation",
             "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='289206005').count()<2"
           },
           {
-            "key": "inv-cmp-edb-003",
+            "key": "inv-cmp-edd-003",
             "severity": "error",
             "human": "There is at most one Obsteteric Ultrasound Observation observation",
             "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='268445003').count()<2"
           },
           {
-            "key": "inv-cmp-edb-004",
+            "key": "inv-cmp-edd-004",
             "severity": "error",
             "human": "There is at most one Due Date by Clinical Examination observation",
             "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='1384451000168107').count()<2"
           },
           {
-            "key": "inv-cmp-edb-005",
+            "key": "inv-cmp-edd-005",
             "severity": "error",
             "human": "There is at most one Gestation at Ultrasound Observation observation",
             "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='57036006').count()<2"
           },
           {
-            "key": "inv-cmp-edb-006",
+            "key": "inv-cmp-edd-006",
             "severity": "error",
-            "human": "There is at most one EDB Consistent between Last Menstrual Period and antenatal Ultrasound Scan observation",
+            "human": "There is at most one EDD Consistent between Last Menstrual Period and antenatal Ultrasound Scan observation",
             "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='1377101000168100').count()<2"
           }
         ]
       },
       {
-        "id": "Composition.section:EDB.title",
+        "id": "Composition.section:EDD.title",
         "path": "Composition.section.title",
-        "fixedString": "Estimated date of birth"
+        "fixedString": "Estimated date of delivery"
       },
       {
-        "id": "Composition.section:EDB.code",
+        "id": "Composition.section:EDD.code",
         "path": "Composition.section.code",
         "patternCodeableConcept": {
           "coding": [
@@ -207,7 +207,7 @@
         }
       },
       {
-        "id": "Composition.section:EDB.entry",
+        "id": "Composition.section:EDD.entry",
         "path": "Composition.section.entry",
         "type": [
           {
@@ -243,13 +243,13 @@
         "max": "1",
         "constraint": [
           {
-            "key": "inv-cmp-edb-007",
+            "key": "inv-cmp-edd-007",
             "severity": "error",
             "human": "There is at most one Breastfeeding at Time of Conception observation",
             "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='1376561000168109').count()<2"
           },
           {
-            "key": "inv-cmp-edb-008",
+            "key": "inv-cmp-edd-008",
             "severity": "error",
             "human": "There is at most one Hormonal contraception observation",
             "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='1376571000168103').count()<2"
@@ -257,25 +257,24 @@
         ]        
       },
       {
-        "id": "Composition.section:conception.title",
+        "id": "Composition.section:obstet-hist.title",
         "path": "Composition.section.title",
-        "fixedString": "Conception"
+        "fixedString": "Obstetric history"
       },
       {
-        "id": "Composition.section:conception.code",
+        "id": "Composition.section:obstet-hist.code",
         "path": "Composition.section.code",
         "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "247641007",
-              "display": "Puzzled"
+              "code": "248983002"
             }
           ]
         }
       },
       {
-        "id": "Composition.section:conception.entry",
+        "id": "Composition.section:obstet-hist.entry",
         "path": "Composition.section.entry",
         "type": [
           {
