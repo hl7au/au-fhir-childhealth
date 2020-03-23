@@ -147,7 +147,7 @@
         "id": "Composition.section:EDB",
         "path": "Composition.section",
         "sliceName": "EDB",
-        "short": "Estimated date of birth",
+        "short": "Estimated date of delivery",
         "min": 1,
         "max": "1",
         "constraint": [
@@ -192,7 +192,7 @@
       {
         "id": "Composition.section:EDB.title",
         "path": "Composition.section.title",
-        "fixedString": "Estimated date of birth"
+        "fixedString": "Estimated date of delivery"
       },
       {
         "id": "Composition.section:EDB.code",
@@ -237,9 +237,9 @@
         ]
       },
       {
-        "id": "Composition.section:conception",
+        "id": "Composition.section:obstet-hist",
         "path": "Composition.section",
-        "sliceName": "conception",
+        "sliceName": "obstet-hist",
         "max": "1",
         "constraint": [
           {
@@ -257,25 +257,24 @@
         ]        
       },
       {
-        "id": "Composition.section:conception.title",
+        "id": "Composition.section:obstet-hist.title",
         "path": "Composition.section.title",
-        "fixedString": "Conception"
+        "fixedString": "Obstetric history"
       },
       {
-        "id": "Composition.section:conception.code",
+        "id": "Composition.section:obstet-hist.code",
         "path": "Composition.section.code",
         "patternCodeableConcept": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "247641007",
-              "display": "Puzzled"
+              "code": "248983002"
             }
           ]
         }
       },
       {
-        "id": "Composition.section:conception.entry",
+        "id": "Composition.section:obstet-hist.entry",
         "path": "Composition.section.entry",
         "type": [
           {
