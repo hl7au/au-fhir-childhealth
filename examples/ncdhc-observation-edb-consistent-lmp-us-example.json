@@ -54,7 +54,7 @@
       "type": "derived-from",
       "target":     
       {
-        "reference": "Observation/ncdhc-observation-ultrasound-obstetric-example",
+        "reference": "Observation/ncdhc-observation-ultrasound-scan-obstetric-example",
         "display": "Estimated date of birth from antenatal ultrasound scan"
       }
     }

@@ -1,14 +1,14 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-gestation-at-ultrasound",
-  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-gestation-at-ultrasound",
+  "id": "ncdhc-observation-fetal-gestational-age-at-ultrasound",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fetal-gestational-age-at-ultrasound",
   "version": "dv1.0.0",
-  "name": "NCDHCGestationAtUltrasoundObservationProfile",
-  "title": "NCDHC Gestation at Ultrasound Observation",
+  "name": "NCDHCFetalGestationalAgeAtUltrasoundObservationProfile",
+  "title": "NCDHC Fetal Gestational Age at Ultrasound Observation",
   "status": "draft",
   "date": "2020-03-10",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "description": "NCDHC Gestation at Ultrasound Observation",
+  "description": "NCDHC Fetal Gestational Age at Ultrasound Observation",
   "copyright": "Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "fhirVersion": "3.0.1",
   "kind": "resource",
@@ -38,7 +38,7 @@
         "min": 1
       },
       {
-        "id": "Observation.code.coding:GestationAtUltraSoundSNOMED-CT",
+        "id": "Observation.code.coding:FetalGestationalAgeAtUltraSoundSNOMED-CT",
         "path": "Observation.code.coding",
         "sliceName": "GestationAtUltraSoundSNOMED-CT",
         "min": 1,
@@ -68,7 +68,7 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "short": "Gestational age in days/range",
+        "short": "Fetal gestational age in days/range",
         "type": [
           {
             "code": "Quantity"

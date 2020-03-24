@@ -603,49 +603,49 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-harmonal-contraception-at-time-of-conception" />
+				<reference value="StructureDefinition/ncdhc-observation-hormonal-contraception-at-time-of-conception" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Observation/observation-harmonal-contraception-at-time-of-conception" />
+				<reference value="Observation/ncdhc-observation-hormonal-contraception-at-conception-example" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false" />
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-ultrasound-obstetric" />
+				<reference value="StructureDefinition/ncdhc-observation-ultrasound-scan-obstetric" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Observation/ncdhc-observation-ultrasound-obstetric-example" />
+				<reference value="Observation/ncdhc-observation-ultrasound-scan-obstetric-example" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false" />
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-gestation-at-ultrasound" />
+				<reference value="StructureDefinition/ncdhc-observation-fetal-gestational-age-at-ultrasound" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Observation/ncdhc-observation-gestation-at-ultrasound-example" />
+				<reference value="Observation/ncdhc-observation-fetal-gestational-age-at-ultrasound-example" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false" />
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-observation-due-date-by-clinical-examination" />
+				<reference value="StructureDefinition/ncdhc-observation-edb-by-clinical-examination" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Observation/ncdhc-observation-due-date-by-clinical-examination-example" />
+				<reference value="Observation/ncdhc-observation-edb-by-clinical-examination-example" />
 			</sourceReference>
 		</resource>
 		<!-- DPHR DOB - End -->

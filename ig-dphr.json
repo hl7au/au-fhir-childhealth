@@ -285,13 +285,13 @@
       "source": "ncdhc-observation-breastfeeding-time-conception-example.json",
       "base": "ncdhc-observation-breastfeeding-time-conception-example.html"
     },
-    "StructureDefinition/ncdhc-observation-harmonal-contraception-at-time-of-conception": {
-      "base": "StructureDefinition-ncdhc-observation-harmonal-contraception-at-time-of-conception.html",
-      "defns": "StructureDefinition-ncdhc-observation-harmonal-contraception-at-time-of-conception-definitions.html"
+    "StructureDefinition/ncdhc-observation-hormonal-contraception-at-time-of-conception": {
+      "base": "StructureDefinition-ncdhc-observation-hormonal-contraception-at-time-of-conception.html",
+      "defns": "StructureDefinition-ncdhc-observation-hormonal-contraception-at-time-of-conception-definitions.html"
     },
-    "Observation/observation-harmonal-contraception-at-time-of-conception-example": {
-      "source": "ncdhc-observation-harmonal-contraception-at-time-of-conception.json",
-      "base": "ncdhc-observation-harmonal-contraception-at-time-of-conception-example.html"
+    "Observation/ncdhc-observation-hormonal-contraception-at-conception-example": {
+      "source": "ncdhc-observation-hormonal-contraception-at-conception-example.json",
+      "base": "ncdhc-observation-hormonal-contraception-at-conception-example.html"
     },
     "StructureDefinition/ncdhc-observation-edb-consistent-lmp-us": {
       "base": "StructureDefinition-ncdhc-observation-edb-consistent-lmp-us.html",
@@ -461,29 +461,29 @@
       "source": "ncdhc-observation-symphyseal-fundal-height-example.json",
       "base": "ncdhc-observation-symphyseal-fundal-height-example.html"
     },
-    "StructureDefinition/ncdhc-observation-ultrasound-obstetric": {
-      "base": "StructureDefinition-ncdhc-observation-ultrasound-obstetric.html",
-      "defns": "StructureDefinition-ncdhc-observation-ultrasound-obstetric-definitions.html"
+    "StructureDefinition/ncdhc-observation-ultrasound-scan-obstetric": {
+      "base": "StructureDefinition-ncdhc-observation-ultrasound-scan-obstetric.html",
+      "defns": "StructureDefinition-ncdhc-observation-ultrasound-scan-obstetric-definitions.html"
     },
-    "Observation/ncdhc-observation-ultrasound-obstetric": {
-      "source": "ncdhc-observation-ultrasound-obstetric-example.json",
-      "base": "ncdhc-observation-ultrasound-obstetric-example.html"
+    "Observation/ncdhc-observation-ultrasound-scan-obstetric": {
+      "source": "ncdhc-observation-ultrasound-scan-obstetric-example.json",
+      "base": "ncdhc-observation-ultrasound-scan-obstetric-example.html"
     },
-    "StructureDefinition/ncdhc-observation-gestation-at-ultrasound": {
-      "base": "StructureDefinition-ncdhc-observation-gestation-at-ultrasound.html",
-      "defns": "StructureDefinition-ncdhc-observation-gestation-at-ultrasound-definitions.html"
+    "StructureDefinition/ncdhc-observation-fetal-gestational-age-at-ultrasound": {
+      "base": "StructureDefinition-ncdhc-observation-fetal-gestational-age-at-ultrasound.html",
+      "defns": "StructureDefinition-ncdhc-observation-fetal-gestational-age-at-ultrasound-definitions.html"
     },
-    "Observation/ncdhc-observation-gestation-at-ultrasound": {
-      "source": "ncdhc-observation-gestation-at-ultrasound-example.json",
-      "base": "ncdhc-observation-gestation-at-ultrasound-example.html"
+    "Observation/ncdhc-observation-fetal-gestational-age-at-ultrasound": {
+      "source": "ncdhc-observation-fetal-gestational-age-at-ultrasound-example.json",
+      "base": "ncdhc-observation-fetal-gestational-age-at-ultrasound-example.html"
     },
-    "StructureDefinition/ncdhc-observation-due-date-by-clinical-examination": {
-      "base": "StructureDefinition-ncdhc-observation-due-date-by-clinical-examination.html",
-      "defns": "StructureDefinition-ncdhc-observation-due-date-by-clinical-examination-definitions.html"
+    "StructureDefinition/ncdhc-observation-edb-by-clinical-examination": {
+      "base": "StructureDefinition-ncdhc-observation-edb-by-clinical-examination.html",
+      "defns": "StructureDefinition-ncdhc-observation-edb-by-clinical-examination-definitions.html"
     },
-    "Observation/ncdhc-observation-due-date-by-clinical-examination": {
-      "source": "ncdhc-observation-due-date-by-clinical-examination-example.json",
-      "base": "ncdhc-observation-due-date-by-clinical-examination-example.html"
+    "Observation/ncdhc-observation-edb-by-clinical-examination": {
+      "source": "ncdhc-observation-edb-by-clinical-examination-example.json",
+      "base": "ncdhc-observation-edb-by-clinical-examination-example.html"
     },
     "StructureDefinition/ncdhc-questionnaire-base": {
       "base": "StructureDefinition-ncdhc-questionnaire-base.html",

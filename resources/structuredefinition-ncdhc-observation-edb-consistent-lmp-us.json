@@ -32,7 +32,7 @@
           {
             "key": "inv-obs-edblmpus-002",
             "severity": "error",
-            "human": "There is at most one related Obsteteric Ultrasound Observation observation",
+            "human": "There is at most one related Obsteteric Ultrasound Scan observation",
             "expression": "related.target.resolve().code.coding.where(system='http://snomed.info/sct' and code='268445003').count()<2"
           }
         ]
@@ -103,7 +103,7 @@
           },
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-ultrasound-obstetric"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-ultrasound-scan-obstetric"
           }
         ]
       }

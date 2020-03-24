@@ -1,14 +1,14 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-ultrasound-obstetric",
-  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-ultrasound-obstetric",
+  "id": "ncdhc-observation-ultrasound-scan-obstetric",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-ultrasound-scan-obstetric",
   "version": "dv1.0.0",
-  "name": "NCDHCObstetericUltrasoundObservationProfile",
-  "title": "NCDHC Obsteteric Ultrasound Observation",
+  "name": "NCDHCObstetericUltrasoundScanObservationProfile",
+  "title": "NCDHC Obsteteric Ultrasound Scan Observation",
   "status": "draft",
   "date": "2020-03-10",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "description": "NCDHC Obsteteric Ultrasound Observation",
+  "description": "NCDHC Obsteteric Ultrasound Scan Observation",
   "copyright": "Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "fhirVersion": "3.0.1",
   "kind": "resource",
@@ -38,7 +38,7 @@
         "min": 1
       },
       {
-        "id": "Observation.code.coding:UltrasoundObstetricSNOMED-CT",
+        "id": "Observation.code.coding:UltrasoundScanObstetricSNOMED-CT",
         "path": "Observation.code.coding",
         "sliceName": "UltrasoundObstetricSNOMED-CT",
         "min": 1,

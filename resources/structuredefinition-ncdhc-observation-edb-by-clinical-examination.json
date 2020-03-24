@@ -1,14 +1,14 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-due-date-by-clinical-examination",
-  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-due-date-by-clinical-examination",
+  "id": "ncdhc-observation-edb-by-clinical-examination",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-edb-by-clinical-examination",
   "version": "dv1.0.0",
-  "name": "NCDHCDueDateByClinicalExaminationObservationProfile",
-  "title": "NCDHC Due Date by Clinical Examination Observation",
+  "name": "NCDHCEDBByClinicalExaminationObservationProfile",
+  "title": "NCDHC EDB by Clinical Examination Observation",
   "status": "draft",
   "date": "2020-03-10",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "description": "NCDHC Estimating Due Date by Clinical Examination Observation",
+  "description": "NCDHC EDB by Clinical Examination Observation",
   "copyright": "Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "fhirVersion": "3.0.1",
   "kind": "resource",
@@ -69,12 +69,13 @@
         "id": "Observation.value[x]:valueDateTime",
         "path": "Observation.valueDateTime",
         "sliceName": "valueDateTime",
-        "short": "Estimated date of delivery",
+        "short": "Estimated date of birth",
         "type": [
           {
             "code": "dateTime"
           }
-        ]
+        ],
+        "mustSupport": true
       }
     ]
   }

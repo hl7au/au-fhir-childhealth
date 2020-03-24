@@ -166,19 +166,19 @@
           {
             "key": "inv-cmp-edb-003",
             "severity": "error",
-            "human": "There is at most one Obsteteric Ultrasound Observation observation",
+            "human": "There is at most one Obsteteric Ultrasound Scan observation",
             "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='268445003').count()<2"
           },
           {
             "key": "inv-cmp-edb-004",
             "severity": "error",
-            "human": "There is at most one Due Date by Clinical Examination observation",
+            "human": "There is at most one EDB by Clinical Examination observation",
             "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='1384451000168107').count()<2"
           },
           {
             "key": "inv-cmp-edb-005",
             "severity": "error",
-            "human": "There is at most one Gestation at Ultrasound Observation observation",
+            "human": "There is at most one Fetal Gestational Age at Ultrasound Observation ",
             "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='57036006').count()<2"
           },
           {
@@ -220,15 +220,15 @@
           },
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-ultrasound-obstetric"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-ultrasound-scan-obstetric"
           },
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-due-date-by-clinical-examination"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-edb-by-clinical-examination"
           },
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-gestation-at-ultrasound"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-fetal-gestational-age-at-ultrasound"
           },
           {
             "code": "Reference",
