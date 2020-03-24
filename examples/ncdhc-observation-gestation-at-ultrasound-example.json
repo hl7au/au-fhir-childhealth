@@ -19,7 +19,7 @@
         "reference": "Patient/patient-baby-example",
         "display": "Baby of Eve Bill"
     },
-    "effectiveDateTime": "2020-02-27T10:13:03Z",
+    "effectiveDateTime": "2019-08-27T16:13:03Z",
     "performer": [
         {
             "reference": "Practitioner/examiner-practitioner",
