@@ -57,7 +57,7 @@
         "id": "MedicationStatement.medication[x]:medicationCodeableConcept.coding:amt.code",
         "path": "MedicationStatement.medication[x].coding.code",
         "min": 1,
-        "fixedCode": "66656000"
+        "fixedCode": "69775011000036100"
       },
       {
         "id": "MedicationStatement.effective[x]",
