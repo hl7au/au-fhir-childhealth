@@ -10,7 +10,7 @@
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "purpose": "Administrative Encouter profile to record discharge related details or details related to Observation/Assessments",
-  "fhirVersion": "3.0.1",
+ "fhirVersion": "3.0.2"
   "kind": "resource",
   "abstract": false,
   "type": "Encounter",

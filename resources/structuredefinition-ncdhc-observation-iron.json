@@ -11,7 +11,7 @@
   "description": "Iron Testing Outcome",
   "purpose": "To record observations on Iron Testing",
   "copyright": "Copyright � 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
-  "fhirVersion": "3.0.1",
+ "fhirVersion": "3.0.2"
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -28,7 +28,7 @@
         "id": "Observation.category",
         "path": "Observation.category",
         "patternCodeableConcept": {
-          "text": "This needs to be discussed and finalized"
+          "text": ""
         }
       },
       {

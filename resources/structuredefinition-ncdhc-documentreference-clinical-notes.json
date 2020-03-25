@@ -10,7 +10,7 @@
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "We are leveraging the concept from https://build.fhir.org/ig/HL7/US-Core-R4/clinical-notes-guidance.html#fhir-resources-to-exchange-clinical-notes to represent DocumentReference as Clinical Notes",
   "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
-  "fhirVersion": "3.0.1",
+ "fhirVersion": "3.0.2"
   "mapping": [
     {
       "identity": "rim",

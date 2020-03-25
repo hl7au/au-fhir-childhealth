@@ -10,7 +10,7 @@
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "description": "Vitamin K is a medication given to the newborn at birth.  Either by intramuscular injection or up to three doses orally",
-  "fhirVersion": "3.0.1",
+ "fhirVersion": "3.0.2"
   "mapping": [
     {
       "identity": "workflow",
