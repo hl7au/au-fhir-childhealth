@@ -283,7 +283,7 @@
           },
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-harmonal-contraception-at-time-of-conception"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-hormonal-contraception-at-time-of-conception"
           }
         ]
       }
