@@ -11,7 +11,7 @@
   "description": "Represents length of baby recorded at birth",
   "purpose": "Length of baby recorded at birth",
   "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
- "fhirVersion": "3.0.2",
+  "fhirVersion": "3.0.2",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -36,6 +36,12 @@
       },
       {
         "id": "Observation.status",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint",
+            "valueString": "default: final"
+          }
+        ],
         "path": "Observation.status",
         "mustSupport": true
       },
@@ -44,9 +50,6 @@
         "path": "Observation.category",
         "comment": "In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.\r\n\r\nCWG: Discussion on the Category to match it with Composition.type",
         "max": "1",
-        "patternCodeableConcept": {
-          "text": ""
-        },
         "mustSupport": true
       },
       {
@@ -83,7 +86,8 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Observation.code.coding:birthLengthSNOMED-CT",

@@ -381,7 +381,7 @@
           "discriminator": [
             {
               "type": "profile",
-              "path": "resolve()"
+              "path": "$this.resolve()"
             }
           ],
           "rules": "closed"
