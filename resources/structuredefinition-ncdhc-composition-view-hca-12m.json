@@ -10,7 +10,7 @@
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "purpose": "To generate a Custom View to represent Health Check Assessment Detailed view",
   "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
- "fhirVersion": "3.0.2"
+  "fhirVersion": "3.0.2",
   "kind": "resource",
   "abstract": false,
   "type": "Composition",

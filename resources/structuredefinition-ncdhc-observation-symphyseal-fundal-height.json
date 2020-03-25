@@ -10,7 +10,7 @@
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "It is measured from the top uterus to the top of the pubic symphysis. Fundal height, expressed in centimeters",
   "purpose": "It is measured from the top uterus to the top of the pubic symphysis. Fundal height, expressed in centimeterslt",
- "fhirVersion": "3.0.2"
+  "fhirVersion": "3.0.2",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",

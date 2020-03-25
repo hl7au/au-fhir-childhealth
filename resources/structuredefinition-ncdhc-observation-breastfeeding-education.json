@@ -10,7 +10,7 @@
   "description": "Observation of the provision of education about breastfeeding.",
   "purpose": "To record whether education on breastfeeding has been provided.",
   "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
- "fhirVersion": "3.0.2"
+  "fhirVersion": "3.0.2",
   "mapping": [
     {
       "identity": "workflow",
