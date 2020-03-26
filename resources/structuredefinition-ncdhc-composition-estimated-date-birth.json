@@ -178,7 +178,7 @@
           {
             "key": "inv-cmp-edb-005",
             "severity": "error",
-            "human": "There is at most one Fetal Gestational Age at Ultrasound Observation ",
+            "human": "There is at most one Fetal Gestational Age at Ultrasound Observation",
             "expression": "entry.resolve().code.coding.where(system='http://snomed.info/sct' and code='57036006').count()<2"
           },
           {
@@ -283,7 +283,7 @@
           },
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-hormonal-contraception-at-time-of-conception"
+            "targetProfile": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-hormonal-contraception-at-time-of-conception"
           }
         ]
       }
