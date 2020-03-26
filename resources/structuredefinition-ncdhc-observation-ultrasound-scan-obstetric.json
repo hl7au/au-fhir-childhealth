@@ -1,16 +1,16 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-breastfeeding-time-conception",
-  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-breastfeeding-time-conception",
+  "id": "ncdhc-observation-ultrasound-scan-obstetric",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-ultrasound-scan-obstetric",
   "version": "dv1.0.0",
-  "name": "NCDHCBreastfeedingAtTimeOfConceptionObservationProfile",
-  "title": "NCDHC Breastfeeding at Time of Conception Observation",
+  "name": "NCDHCObstetericUltrasoundScanObservationProfile",
+  "title": "NCDHC Obsteteric Ultrasound Scan Observation",
   "status": "draft",
   "date": "2020-03-10",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "description": "NCDHC Breastfeeding at Time of Conception Observation",
+  "description": "NCDHC Obsteteric Ultrasound Scan Observation",
   "copyright": "Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
-  "fhirVersion": "3.0.2",
+  "fhirVersion": "3.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -18,11 +18,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Observation",
-        "path": "Observation",
-        "short": "NCDHC Breastfeeding at Time of Conception Observation"
-      },
       {
         "id": "Observation.code",
         "path": "Observation.code",
@@ -43,14 +38,14 @@
         "min": 1
       },
       {
-        "id": "Observation.code.coding:BreastfeedingTimeConceptionSNOMED-CT",
+        "id": "Observation.code.coding:UltrasoundScanObstetricSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "BreastfeedingTimeConceptionSNOMED-CT",
+        "sliceName": "UltrasoundObstetricSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "1376561000168109"
+          "code": "268445003"
         }
       },
       {
@@ -64,20 +59,23 @@
         ]
       },
       {
-        "id": "Observation.value[x]:valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
-        "sliceName": "valueCodeableConcept",
-        "short": "Statement about what was observed.",
+        "id": "Observation.effectiveDateTime:effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "sliceName": "effectiveDateTime",
+        "short": "Date/Time when ultrasound scan was performed",
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x]:valueDateTime",
+        "path": "Observation.valueDateTime",
+        "sliceName": "valueDateTime",
+        "short": "Estimated date of delivery",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "dateTime"
           }
         ],
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSetUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-generic-yes-no-1"
-        }
+        "mustSupport": true
       }
     ]
   }
