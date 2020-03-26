@@ -67,7 +67,7 @@
         "id": "Observation.effectiveDateTime:effectiveDateTime",
         "path": "Observation.effectiveDateTime",
         "sliceName": "effectiveDateTime",
-        "short": "Time/time-period of when hormonal contraception was taken"
+        "short": "Date of conception, when hormonal contraception was or was not taken."
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept",
