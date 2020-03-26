@@ -26,7 +26,7 @@
   "description": "Composition profile for NCDHC Newborn Delivery Health Interaction",
   "purpose": "The purpose is to capture all the relevant details associated to the Newborn Delivery Event.",
   "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
-  "fhirVersion": "3.0.1",
+  "fhirVersion": "3.0.2",
   "mapping": [
     {
       "identity": "rim",
@@ -381,7 +381,7 @@
           "discriminator": [
             {
               "type": "profile",
-              "path": "resolve()"
+              "path": "$this.resolve()"
             }
           ],
           "rules": "closed"

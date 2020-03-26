@@ -8,7 +8,7 @@
   "status": "draft",
   "date": "2019-06-21",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "fhirVersion": "3.0.1",
+  "fhirVersion": "3.0.2",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",

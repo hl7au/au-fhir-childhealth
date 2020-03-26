@@ -11,7 +11,7 @@
   "description": "Observation to note issues affecting the mental, emotional state, (e.g. stress, anxiety, depression emotional or psychiatric issues)",
   "purpose": "To record issues affecting the mental, emotional state, (e.g. stress, anxiety, depression emotional or psychiatric issues)",
   "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
-  "fhirVersion": "3.0.1",
+  "fhirVersion": "3.0.2",
   "mapping": [
     {
       "identity": "workflow",

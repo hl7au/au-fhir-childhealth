@@ -355,8 +355,8 @@
                     {
                       "valueCoding": {
                         "system": "http://snomed.info/sct",
-                        "code": "66656000",
-                        "display": "Vitamin K>1<"
+                        "code": "69775011000036100",
+                        "display": "Phytomenadione"
                       }
                     }
                   ]
