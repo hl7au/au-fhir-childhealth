@@ -296,11 +296,23 @@
 
 
 		<!-- DPHR Health Interactions - Start -->
-		<!-- DPHR Clinical Notes -->
+		<!-- DPHR Antenatal Visits List -->
 		<resource>
 			<example value="false" />
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-composition-view-antenatal-visits-list-summary" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-composition-view-antenatal-visits-list-summary-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-antenatal-visits-consolidated-view-summary-example" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -348,6 +360,25 @@
 				<reference value="StructureDefinition/ncdhc-composition-view-antenatal-visit" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="QuestionnaireResponse/antenatal-visit-myinfo-qa-en-s1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="QuestionnaireResponse/antenatal-visit-babyinfo-qa-en-s1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="QuestionnaireResponse/antenatal-visit-alc-tob-drug-screening-qa-en-s1" />
+			</sourceReference>
+		</resource>
+
 		<!--<resource>
 			<example value="true" />
 			<sourceReference>
@@ -717,7 +748,7 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
-				<reference value="ValueSet/ncdhc-observation-illicit-drug-type-1" />
+				<reference value="ValueSet/ncdhc-illicit-drug-type-1" />
 			</sourceReference>
 		</resource>
 		<resource>
