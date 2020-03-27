@@ -461,6 +461,58 @@
       "base": "StructureDefinition-ncdhc-observation-estimated-gestation.html",
       "defns": "StructureDefinition-ncdhc-observation-estimated-gestation-definitions.html"
     },
+    "Observation/observation-estimated-gestation-example": {
+      "source": "ncdhc-observation-estimated-gestation-example.json",
+      "base": "ncdhc-observation-estimated-gestation-example.html"
+    },
+    "StructureDefinition/ncdhc-composition-estimated-date-birth": {
+      "base": "StructureDefinition-ncdhc-composition-estimated-date-birth.html",
+      "defns": "StructureDefinition-ncdhc-composition-estimated-date-birth-definitions.html"
+    },
+    "Bundle/ncdhc-estimated-date-birth-document-example": {
+      "source": "ncdhc-estimated-date-birth-document-example.json",
+      "base": "ncdhc-estimated-date-birth-document-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-estimated-date-birth": {
+      "base": "StructureDefinition-ncdhc-observation-estimated-date-birth.html",
+      "defns": "StructureDefinition-ncdhc-observation-estimated-date-birth-definitions.html"
+    },
+    "Observation/observation-estimated-date-birth-example": {
+      "source": "ncdhc-observation-estimated-date-birth-example.json",
+      "base": "ncdhc-observation-estimated-date-birth-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-breastfeeding-time-conception": {
+      "base": "StructureDefinition-ncdhc-observation-breastfeeding-time-conception.html",
+      "defns": "StructureDefinition-ncdhc-observation-breastfeeding-time-conception-definitions.html"
+    },
+    "Observation/observation-breastfeeding-time-conception-example": {
+      "source": "ncdhc-observation-breastfeeding-time-conception-example.json",
+      "base": "ncdhc-observation-breastfeeding-time-conception-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-hormonal-contraception-at-time-of-conception": {
+      "base": "StructureDefinition-ncdhc-observation-hormonal-contraception-at-time-of-conception.html",
+      "defns": "StructureDefinition-ncdhc-observation-hormonal-contraception-at-time-of-conception-definitions.html"
+    },
+    "Observation/ncdhc-observation-hormonal-contraception-at-conception-example": {
+      "source": "ncdhc-observation-hormonal-contraception-at-conception-example.json",
+      "base": "ncdhc-observation-hormonal-contraception-at-conception-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-edb-consistent-lmp-us": {
+      "base": "StructureDefinition-ncdhc-observation-edb-consistent-lmp-us.html",
+      "defns": "StructureDefinition-ncdhc-observation-edb-consistent-lmp-us-definitions.html"
+    },
+    "Observation/observation-edb-consistent-lmp-us-example": {
+      "source": "ncdhc-observation-edb-consistent-lmp-us-example.json",
+      "base": "ncdhc-observation-edb-consistent-lmp-us-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-estimated-date-birth-last-period": {
+      "base": "StructureDefinition-ncdhc-observation-estimated-date-birth-last-period.html",
+      "defns": "StructureDefinition-ncdhc-observation-estimated-date-birth-last-period-definitions.html"
+    },
+    "Observation/observation-estimated-date-birth-last-period-example": {
+      "source": "ncdhc-observation-estimated-date-birth-last-period-example.json",
+      "base": "ncdhc-observation-estimated-date-birth-last-period-example.html"
+    },
     "StructureDefinition/ncdhc-observation-birth-abnormalities": {
       "base": "StructureDefinition-ncdhc-observation-birth-abnormalities.html",
       "defns": "StructureDefinition-ncdhc-observation-birth-abnormalities-definitions.html"
@@ -973,10 +1025,6 @@
       "source": "ncdhc-examiner-practitioner-example.json",
       "base": "ncdhc-examiner-practitioner-example.html"
     },
-    "Observation/observation-estimated-gestation-example": {
-      "source": "ncdhc-observation-estimated-gestation-example.json",
-      "base": "ncdhc-observation-estimated-gestation-example.html"
-    },
     "Observation/observation-birth-abnormalities-example": {
       "source": "ncdhc-observation-birth-abnormalities-example.json",
       "base": "ncdhc-observation-birth-abnormalities-example.html"
@@ -1260,6 +1308,30 @@
     "Observation/ncdhc-observation-iron-haemoglobin-level-example": {
       "source": "ncdhc-observation-iron-haemoglobin-level-example.json",
       "base": "ncdhc-observation-iron-haemoglobin-level-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-ultrasound-scan-obstetric": {
+      "base": "StructureDefinition-ncdhc-observation-ultrasound-scan-obstetric.html",
+      "defns": "StructureDefinition-ncdhc-observation-ultrasound-scan-obstetric-definitions.html"
+    },
+    "Observation/ncdhc-observation-ultrasound-scan-obstetric": {
+      "source": "ncdhc-observation-ultrasound-scan-obstetric-example.json",
+      "base": "ncdhc-observation-ultrasound-scan-obstetric-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-fetal-gestational-age-at-ultrasound": {
+      "base": "StructureDefinition-ncdhc-observation-fetal-gestational-age-at-ultrasound.html",
+      "defns": "StructureDefinition-ncdhc-observation-fetal-gestational-age-at-ultrasound-definitions.html"
+    },
+    "Observation/ncdhc-observation-fetal-gestational-age-at-ultrasound": {
+      "source": "ncdhc-observation-fetal-gestational-age-at-ultrasound-example.json",
+      "base": "ncdhc-observation-fetal-gestational-age-at-ultrasound-example.html"
+    },
+    "StructureDefinition/ncdhc-observation-edb-by-clinical-examination": {
+      "base": "StructureDefinition-ncdhc-observation-edb-by-clinical-examination.html",
+      "defns": "StructureDefinition-ncdhc-observation-edb-by-clinical-examination-definitions.html"
+    },
+    "Observation/ncdhc-observation-edb-by-clinical-examination": {
+      "source": "ncdhc-observation-edb-by-clinical-examination-example.json",
+      "base": "ncdhc-observation-edb-by-clinical-examination-example.html"
     },
     "AuditEvent/audit-event-insert-example": {
       "source": "audit-event-insert.json",
