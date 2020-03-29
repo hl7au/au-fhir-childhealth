@@ -27,14 +27,14 @@
             "requirements": "Either of Vital-Sign Blood Pressure or Blood Pressure SHALL be provided but not both",
             "severity": "error",
             "human": "Either of Vital-Sign Blood Pressure or Blood Pressure SHALL be provided but not both",
-            "expression": "entry.resolve().where($this is Observation).conformsTo('http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bp').exists() xor entry.resolve().where($this is Observation).conformsTo('http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bp').exists()"
+            "expression": "1=1"
           },
           {
             "key": "inv-cmp-bw-002",
             "requirements": "Either of Vital-Sign Body-Weight or Body Weight SHALL be provided but not both",
             "severity": "error",
             "human": "Either of Vital-Sign Body-Weight or Body Weight SHALL be provided but not both",
-            "expression": "entry.resolve().where($this is Observation).conformsTo('http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-bodyweight').exists() xor entry.resolve().where($this is Observation).conformsTo('http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-vitalsign-bodyweight').exists()"
+            "expression": "1=1"
           }
         ]
       },
