@@ -7,11 +7,7 @@
     "profile" : [
       "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-medicationstatement-vitamink"
     ]
-  },
-  "text" : {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\n<p>Vitamin K1</p>\n\t\t\t\t\t\n</div>"
-  },
+  }, 
   "status" : "completed",
   "medicationCodeableConcept" : {
     "coding" : [
