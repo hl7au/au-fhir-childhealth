@@ -497,7 +497,7 @@
           "valueString": "Normal",
           "item": [
             {
-              "id": "12.1.0.1",
+              "id": "13.1.0.1",
               "linkId": "13.1",
               "subject": {
                 "reference": "Observation/observation-hips-normal-example"
@@ -735,7 +735,7 @@
               ]
             },
             {
-              "id": "17.1.0.1",
+              "id": "17.2.0.1",
               "linkId": "17.2",
               "text": "Venue",
               "subject": {
@@ -748,7 +748,7 @@
               ]
             },
             {
-              "id": "17.1.0.1",
+              "id": "17.3.0.1",
               "linkId": "17.3",
               "text": "Date & Time",
               "subject": {

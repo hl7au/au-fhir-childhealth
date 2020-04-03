@@ -45,13 +45,13 @@
           "text": "Health Check Assessment View"
         },
         "subject": {
-          "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Patient/patient-baby-example",
+          "reference": "Patient/patient-baby-example",
           "display": "Baby of Eve Bill"
         },
         "date": "2018-12-24T12:30:02Z",
         "author": [
           {
-            "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Device/ncdhc-device-child-data-hub-example",
+            "reference": "Device/ncdhc-device-child-data-hub-example",
             "display": "Child Data Hub"
           }
         ],
@@ -59,10 +59,10 @@
         "confidentiality": "N",
         "attester": [
           {
-            "mode": "professional",
+            "mode": ["professional"],
             "time": "2018-12-24T12:30:02Z",
             "party": {
-              "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/Organization/examiner-organization"
+              "reference": "Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f"
             }
           }
         ],
@@ -71,7 +71,7 @@
             "title": "3 Years",
             "entry": [
               {
-                "reference": "https://ncdhc.health.gov.au/fhir/v1.0.0/QuestionnaireResponse/hca-3year-qa-en-s1"
+                "reference": "QuestionnaireResponse/hca-3year-qa-en-s1"
               }
             ]
           }
@@ -214,7 +214,7 @@
       }
     },
     {
-      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Organization/examiner-organization",
+      "fullUrl": "https://ncdhc.health.gov.au/fhir/v1.0.0/Organization/od78393f-37ca-4738-81d6-d9595b2e5d0f",
       "resource": {
         "resourceType": "Organization",
         "id": "od78393f-37ca-4738-81d6-d9595b2e5d0f",
@@ -905,7 +905,7 @@
                     ]
                   },
                   {
-                    "id": "15.1.0.1",
+                    "id": "15.2.0.1",
                     "linkId": "15.2",
                     "text": "Venue",
                     "subject": {
@@ -918,7 +918,7 @@
                     ]
                   },
                   {
-                    "id": "15.1.0.1",
+                    "id": "15.3.0.1",
                     "linkId": "15.3",
                     "text": "Date & Time",
                     "subject": {
@@ -938,10 +938,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:od78393f-37ca-4738-81d6-d9595b2e5d0f",
+      "fullUrl": "urn:uuid:pd78393f-37ca-4738-81d6-d9595b2e5d0f",
       "resource": {
         "resourceType": "Provenance",
-        "id": "od78393f-37ca-4738-81d6-d9595b2e5d0f",
+        "id": "pd78393f-37ca-4738-81d6-d9595b2e5d0f",
         "target": [
           {
             "reference": "Composition/780f219f-97a8-486d-99d9-ed631fe4fc57"
