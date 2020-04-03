@@ -1,0 +1,92 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "antenatal-visit-nextvst-progresnts-q-en-s1",
+  "meta": {
+    "profile": [
+      "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-questionnaire-base"
+    ]
+  },
+  "language": "en-AU",
+  "version": "pnc-v1",
+  "title": "Progress Notes and Next Visit Details Questionnaire",
+  "experimental": false,
+  "status": "active",
+  "date": "2020-04-03",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "Question model to represent Progress Notes and details about Next Visit",
+  "code": [
+    {
+      "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
+      "code": "ANTVSTCLC",
+      "display": "Antenatal Visit"
+    }
+  ],
+  "subjectType": [
+    "DocumentReference",
+    "Encounter"
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-documentreference-clinical-notes-definitions.html#DocumentReference.content.attachment",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "371530004"
+        }
+      ],
+      "text": "Progress Notes",
+      "type": "string"
+    },
+    {
+      "linkId": "2",
+      "text": "Care Provider",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2.1",
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/2StructureDefinition-ncdhc-dphr-encounter-definitions.html#Encounter.participant.individual",
+          "type": "text",
+          "item": [
+            {
+              "linkId": "2.1.1",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/2StructureDefinition-ncdhc-dphr-encounter-definitions.html#Encounter.location.location",
+              "text": "Venue",
+              "type": "string"
+            },
+            {
+              "linkId": "2.1.2",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/2StructureDefinition-ncdhc-dphr-encounter-definitions.html#Encounter.period",
+              "text": "Date & Time",
+              "type": "dateTime"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "definition": "http://hl7.org/fhir/STU3/appointment-definitions.html#Appointment.requestedPeriod",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "185353001"
+        }
+      ],
+      "text": "Next Visit",
+      "type": "dateTime"
+    },
+    {
+      "linkId": "4",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-estimated-gestation-definitions.html#Observation.valueQuantity:valueQuantity",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "314431000"
+        }
+      ],
+      "text": "Registered interpreter present",
+      "type": "string"
+    }
+  ]
+}
