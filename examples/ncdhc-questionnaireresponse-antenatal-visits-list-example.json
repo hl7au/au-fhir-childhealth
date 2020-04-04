@@ -70,7 +70,7 @@
       },
       "item": [
         {
-          "id": "1.1.0.0",
+          "id": "2.1.0.0",
           "linkId": "1.1",
           "subject": {
             "display": "Reference to fetch encounter goes here"
@@ -82,7 +82,7 @@
           ]
         },
         {
-          "id": "1.2.0.0",
+          "id": "2.2.0.0",
           "linkId": "1.2",
           "subject": {
             "display": "Reference to fetch gestation-age observation goes here"
@@ -94,7 +94,7 @@
           ]
         },
         {
-          "id": "1.3.0.0",
+          "id": "2.3.0.0",
           "linkId": "1.3",
           "subject": {
             "display": "Reference to fetch encounter.location goes here"
@@ -115,7 +115,7 @@
       },
       "item": [
         {
-          "id": "1.1.0.0",
+          "id": "3.1.0.0",
           "linkId": "1.1",
           "subject": {
             "display": "Reference to fetch encounter goes here"
@@ -127,7 +127,7 @@
           ]
         },
         {
-          "id": "1.2.0.0",
+          "id": "3.2.0.0",
           "linkId": "1.2",
           "subject": {
             "display": "Reference to fetch gestation-age observation goes here"
@@ -139,7 +139,7 @@
           ]
         },
         {
-          "id": "1.3.0.0",
+          "id": "3.3.0.0",
           "linkId": "1.3",
           "subject": {
             "display": "Reference to fetch encounter.location goes here"

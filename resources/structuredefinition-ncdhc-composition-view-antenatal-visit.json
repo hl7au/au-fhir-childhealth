@@ -47,7 +47,7 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
-        "fixedString": "My Check-ups",
+        "fixedString": "My Visit Information",
         "mustSupport": true
       },
       {
@@ -154,6 +154,43 @@
         "max": "0"
       },
       {
+        "id": "Composition.section:progress-notes-next-visit",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "progress-notes-next-visit",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:progress-notes-next-visit.title",
+        "path": "Composition.section.title",
+        "short": "Progress Notes and Next Visit",
+        "definition": "Hub SHALL populate the Title based on the gestation weeks",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:progress-notes-next-visit.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "11429006"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:progress-notes-next-visit.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
         "id": "Composition.section:my-lifestyle-factors",
         "extension": [
           {
@@ -180,7 +217,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "170099002"
+              "code": "1461961000168106"
             }
           ]
         }
