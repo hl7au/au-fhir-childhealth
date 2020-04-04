@@ -165,6 +165,10 @@
       "source": "ncdhc-patient-expectant-mother-example.json",
       "base": "ncdhc-patient-expectant-mother-example.html"
     },
+    "Bundle/ncdhc-patient-getall-example": {
+      "source": "ncdhc-patient-getall-example.json",
+      "base": "ncdhc-patient-getall-example.html"
+    },
     "StructureDefinition/ncdhc-consent": {
       "base": "StructureDefinition-ncdhc-consent.html",
       "defns": "StructureDefinition-ncdhc-consent-definitions.html"
@@ -356,6 +360,18 @@
     "StructureDefinition/ncdhc-composition-view-antenatal-visit": {
       "base": "StructureDefinition-ncdhc-composition-view-antenatal-visit.html",
       "defns": "StructureDefinition-ncdhc-composition-view-antenatal-visit-definitions.html"
+    },
+    "Bundle/ncdhc-composition-view-antenatal-visit-example": {
+      "source": "ncdhc-composition-view-antenatal-visit-example.json",
+      "base": "ncdhc-composition-view-antenatal-visit-example.html"
+    },
+    "Questionnaire/antenatal-visit-nextvst-progresnts-q-en-s1": {
+      "source": "ncdhc-view-questionnaire-nextvst-progresnts.json",
+      "base": "ncdhc-view-questionnaire-nextvst-progresnts.html"
+    },
+    "QuestionnaireResponse/antenatal-visit-nextvst-progresnts-qa-en-s1": {
+      "source": "ncdhc-questionnaireresponse-nextvst-progresnts-example.json",
+      "base": "ncdhc-questionnaireresponse-nextvst-progresnts-example.html"
     },
     "StructureDefinition/ncdhc-composition-antenatal-visit": {
       "base": "StructureDefinition-ncdhc-composition-antenatal-visit.html",
@@ -951,13 +967,12 @@
     "ValueSet/ncdhc-encounter-type-1": {
       "base": "ValueSet-ncdhc-encounter-type-1.html"
     },
-    "ValueSet/ncdhc-observation-Illicit-drugs-intake-status-1": {      
+    "ValueSet/ncdhc-observation-Illicit-drugs-intake-status-1": {
       "base": "ValueSet-ncdhc-observation-Illicit-drugs-intake-status-1.html"
     },
-    "ValueSet/ncdhc-illicit-drug-type-1": {      
+    "ValueSet/ncdhc-illicit-drug-type-1": {
       "base": "ValueSet-ncdhc-illicit-drug-type-1.html"
     },
-    
     "ValueSet/ncdhc-labour-initiation-type-1": {
       "base": "ValueSet-ncdhc-labour-initiation-type-1.html"
     },

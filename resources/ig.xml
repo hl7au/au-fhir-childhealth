@@ -82,6 +82,12 @@
 				<reference value="Patient/ncdhc-patient-expectant-mother-example" />
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-patient-getall-example" />
+			</sourceReference>
+		</resource>
 
 		<!-- NCDHC Consent Profile -->
 		<resource>
@@ -1477,7 +1483,7 @@
 			</sourceReference>
 		</resource>
 		<!-- DPHR DOB - End -->
-		
+
 		<!-- CDHR Health Interactions - End -->
 
 		<!-- DPHR Health Interactions - Start -->
@@ -1544,7 +1550,51 @@
 			<sourceReference>
 				<reference value="StructureDefinition/ncdhc-composition-view-antenatal-visit" />
 			</sourceReference>
-		</resource>		
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Bundle/ncdhc-composition-view-antenatal-visit-example" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="DocumentReference/ncdhc-dphr-doc-ref-current-example" />
+			</sourceReference>
+		</resource>
+		<!--resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="QuestionnaireResponse/antenatal-visit-myinfo-qa-en-s1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="QuestionnaireResponse/antenatal-visit-babyinfo-qa-en-s1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="QuestionnaireResponse/antenatal-visit-alc-tob-drug-screening-qa-en-s1" />
+			</sourceReference>
+		</resource-->
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Questionnaire/antenatal-visit-nextvst-progresnts-q-en-s1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="QuestionnaireResponse/antenatal-visit-nextvst-progresnts-qa-en-s1" />
+			</sourceReference>
+		</resource>
+
+
 		<!-- Antenatal Visit Questionnaire -->
 		<!-- Antenatal Visit Composition -->
 		<resource>
