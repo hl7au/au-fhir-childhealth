@@ -1825,6 +1825,18 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
+				<reference value="ValueSet/ncdhc-context-type-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="CodeSystem/ncdhc-context-type-1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
 				<reference value="ValueSet/ncdhc-document-class-1" />
 			</sourceReference>
 		</resource>

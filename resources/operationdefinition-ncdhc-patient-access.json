@@ -32,19 +32,26 @@
       "min": 1,
       "max": "*",
       "documentation": "Define the access context.  e.g.: CDHR, DPHR",
-      "type": "Coding"
+      "type": "Coding",
+      "binding": {
+        "strength": "required",
+        "valueSetReference": {
+          "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-context-type-1"
+        }
+      }
+      
     },
     {
       "name": "purposeOfUse",
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "Type of acces request and in which program. e.g. GENERAL means the provider is trying to gain general access on the patient record. The applicable values are referenced from http://terminology.hl7.org/CodeSystrestrem/v3-ActReason codesystem.",
+      "documentation": "Type of acces requested e.g. CAREMGT is used to perform one or more operations on information for provision of health care coordination. The applicable values are referenced from http://terminology.hl7.org/CodeSystrestrem/v3-ActReason codesystem. The details of this CodeSystem can be found at: http://hl7.org/fhir/STU3/v3/ActReason/cs.html",
       "type": "Coding",
       "binding": {
-        "strength": "required",
+        "strength": "preferred",
         "valueSetReference": {
-          "reference": "http://terminology.hl7.org/CodeSystrestrem/v3-ActReason codesystem"
+          "reference": "http://terminology.hl7.org/CodeSystrestrem/v3-ActReason"
         }
       }
     },
