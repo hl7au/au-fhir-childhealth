@@ -856,6 +856,12 @@
     "ValueSet/ncdhc-document-type-1": {
       "base": "ValueSet-ncdhc-document-type-1.html"
     },
+    "ValueSet/ncdhc-context-type-1": {
+      "base": "ValueSet-ncdhc-context-type-1.html"
+    },
+    "CodeSystem/ncdhc-context-type-1": {
+      "base": "CodeSystem-ncdhc-context-type-1.html"
+    },
     "ValueSet/ncdhc-document-action-type-1": {
       "base": "ValueSet-ncdhc-document-action-type-1.html"
     },

@@ -46,12 +46,12 @@
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "Type of acces requested e.g. CAREMGT is used to perform one or more operations on information for provision of health care coordination. The applicable values are referenced from http://terminology.hl7.org/CodeSystrestrem/v3-ActReason codesystem. The details of this CodeSystem can be found at: http://hl7.org/fhir/STU3/v3/ActReason/cs.html",
+      "documentation": "Type of acces requested e.g. CAREMGT is used to perform one or more operations on information for provision of health care coordination. The applicable values are referenced from http://terminology.hl7.org/CodeSystem/v3-ActCode codesystem. The details of this CodeSystem can be found at: http://hl7.org/fhir/STU3/v3/ActReason/cs.html",
       "type": "Coding",
       "binding": {
         "strength": "preferred",
         "valueSetReference": {
-          "reference": "http://terminology.hl7.org/CodeSystrestrem/v3-ActReason"
+          "reference": "http://hl7.org/fhir/ValueSet/v3-ActReason"
         }
       }
     },
