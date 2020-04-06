@@ -78,7 +78,7 @@
     },
     {
       "linkId": "4",
-      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-estimated-gestation-definitions.html#Observation.valueQuantity:valueQuantity",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-dphr-encounter-definitions.html#Encounter.participant",
       "code": [
         {
           "system": "http://snomed.info/sct",
