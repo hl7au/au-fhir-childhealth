@@ -113,7 +113,7 @@
       "text": "Pregnancy Complications",
       "answer": [
         {
-          "valueString": "Yes",
+          "valueString": "Show details",
           "item": [
             {
               "id": "7.1.0.1",
@@ -182,7 +182,7 @@
       },
       "answer": [
         {
-          "valueString": "Yes",
+          "valueString": "Show details",
           "item": [
             {
               "id": "8.1.0.1",
