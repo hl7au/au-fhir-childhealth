@@ -59,7 +59,7 @@
                 ],
                 "section": [
                     {
-                        "title": "My Information  32w+2d",
+                        "title": "My Information",
                         "code": {
                             "coding": [
                                 {
@@ -84,7 +84,7 @@
                         }
                     },
                     {
-                        "title": "Baby's Information  32w+2d",
+                        "title": "Baby's Information",
                         "code": {
                             "coding": [
                                 {
@@ -360,7 +360,7 @@
                                         "linkId": "2.1.1",
                                         "text": "Venue",
                                         "subject": {
-                                            "reference": "Encounter/ncdhc-encounter-example"
+                                            "reference": "Encounter/ncdhc-dphr-encounter-example"
                                         },
                                         "answer": [
                                             {

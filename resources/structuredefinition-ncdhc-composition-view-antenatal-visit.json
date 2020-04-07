@@ -47,7 +47,7 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
-        "fixedString": "My Visit Information",
+        "definition": "Hub SHALL populate the Title based on the gestation weeks",
         "mustSupport": true
       },
       {
@@ -86,7 +86,7 @@
       {
         "id": "Composition.section:my-check-up-information.title",
         "path": "Composition.section.title",
-        "definition": "Hub SHALL populate the Title based on the gestation weeks",
+        "fixedString": "My Information",
         "mustSupport": true
       },
       {
@@ -128,7 +128,7 @@
       {
         "id": "Composition.section:baby-check-up-information.title",
         "path": "Composition.section.title",
-        "definition": "Hub SHALL populate the Title based on the gestation weeks",
+        "fixedString": "Baby's Information",
         "mustSupport": true
       },
       {
@@ -170,7 +170,6 @@
         "id": "Composition.section:progress-notes-next-visit.title",
         "path": "Composition.section.title",
         "short": "Progress Notes and Next Visit",
-        "definition": "Hub SHALL populate the Title based on the gestation weeks",
         "mustSupport": true
       },
       {
@@ -207,7 +206,7 @@
       {
         "id": "Composition.section:my-lifestyle-factors.title",
         "path": "Composition.section.title",
-        "definition": "Hub SHALL populate the Title based on the gestation weeks",
+        "fixedString": "My Alcohol, Tobacco and Other Drug screening",
         "mustSupport": true
       },
       {
