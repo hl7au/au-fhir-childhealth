@@ -50,9 +50,8 @@
   "differential": {
     "element": [
       {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "min": 1
+        "id": "Observation",
+        "path": "Observation"
       },
       {
         "id": "Observation.code.coding:BPCode",
@@ -100,16 +99,6 @@
         ]
       },
       {
-        "id": "Observation.valueQuantity:valueQuantity",
-        "path": "Observation.valueQuantity",
-        "sliceName": "valueQuantity"
-      },
-      {
-        "id": "Observation.component.valueQuantity:valueQuantity",
-        "path": "Observation.component.valueQuantity",
-        "sliceName": "valueQuantity"
-      },
-      {
         "id": "Observation.component:SystolicBP",
         "path": "Observation.component",
         "sliceName": "SystolicBP",
@@ -131,7 +120,8 @@
       {
         "id": "Observation.component:SystolicBP.code.coding:SBPCode.code",
         "path": "Observation.component.code.coding.code",
-        "min": 1
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Observation.component:SystolicBP.code.coding:SBPSNOMED-CT",
@@ -150,11 +140,6 @@
         "path": "Observation.component.code.coding.code",
         "min": 1,
         "fixedCode": "271649006"
-      },
-      {
-        "id": "Observation.component:SystolicBP.valueQuantity:valueQuantity",
-        "path": "Observation.component.valueQuantity",
-        "sliceName": "valueQuantity"
       },
       {
         "id": "Observation.component:DiastolicBP",
@@ -178,7 +163,8 @@
       {
         "id": "Observation.component:DiastolicBP.code.coding:DBPCode.code",
         "path": "Observation.component.code.coding.code",
-        "min": 1
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Observation.component:DiastolicBP.code.coding:DBPSNOMED-CT",
@@ -197,11 +183,6 @@
         "path": "Observation.component.code.coding.code",
         "min": 1,
         "fixedCode": "271650006"
-      },
-      {
-        "id": "Observation.component:DiastolicBP.valueQuantity:valueQuantity",
-        "path": "Observation.component.valueQuantity",
-        "sliceName": "valueQuantity"
       }
     ]
   }
