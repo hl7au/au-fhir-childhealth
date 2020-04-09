@@ -37,7 +37,11 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "$this"
+              "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "closed"
@@ -53,6 +57,11 @@
           "system": "http://snomed.info/sct",
           "code": "57036006"
         }
+      },
+      {
+        "id": "Observation.code.coding:FetalGestationAgeSNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.subject",
