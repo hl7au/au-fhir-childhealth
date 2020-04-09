@@ -69,11 +69,16 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "$this"
+              "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "closed"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Observation.code.coding:HeadEngagementSNOMED-CT",
@@ -85,6 +90,12 @@
           "system": "http://snomed.info/sct",
           "code": "249111004"
         }
+      },
+      {
+        "id": "Observation.code.coding:HeadEngagementSNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.subject",

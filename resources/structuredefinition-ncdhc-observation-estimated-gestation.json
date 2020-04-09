@@ -61,6 +61,7 @@
       {
         "id": "Observation.code.coding:FetalGestationAgeSNOMED-CT.system",
         "path": "Observation.code.coding.system",
+        "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {

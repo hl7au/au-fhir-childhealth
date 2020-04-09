@@ -24,13 +24,6 @@
         "short": "NCDHC Symphyseal-fundal height (SFH) Observation Profile"
       },
       {
-        "id": "Observation.category",
-        "path": "Observation.category",
-        "patternCodeableConcept": {
-          "text": ""
-        }
-      },
-      {
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Symphyseal-fundal height (SFH) code",
@@ -47,7 +40,8 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Observation.code.coding:SFHSNOMED-CT",
@@ -59,6 +53,12 @@
           "system": "http://snomed.info/sct",
           "code": "249016007"
         }
+      },
+      {
+        "id": "Observation.code.coding:SFHSNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.subject",

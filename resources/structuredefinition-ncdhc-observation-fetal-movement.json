@@ -61,11 +61,16 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "$this"
+              "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "closed"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Observation.code.coding:FetalMovementsSNOMED-CT",
@@ -77,6 +82,12 @@
           "system": "http://snomed.info/sct",
           "code": "364617005"
         }
+      },
+      {
+        "id": "Observation.code.coding:FetalMovementsSNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.subject",

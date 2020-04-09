@@ -25,13 +25,6 @@
         "short": "NCDHC Femoral Pulses Observation Profile"
       },
       {
-        "id": "Observation.category",
-        "path": "Observation.category",
-        "patternCodeableConcept": {
-          "text": ""
-        }
-      },
-      {
         "id": "Observation.code",
         "path": "Observation.code",
         "mustSupport": true
@@ -51,7 +44,8 @@
             }
           ],
           "rules": "closed"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Observation.code.coding:FemoralPulsesSNOMED-CT",

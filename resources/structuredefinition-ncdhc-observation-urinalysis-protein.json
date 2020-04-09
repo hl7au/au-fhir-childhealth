@@ -37,7 +37,11 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "$this"
+              "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "closed"
@@ -53,6 +57,12 @@
           "system": "http://snomed.info/sct",
           "code": "27171005"
         }
+      },
+      {
+        "id": "Observation.code.coding:Urinalysis-SNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.subject",

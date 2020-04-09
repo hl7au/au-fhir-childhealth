@@ -69,7 +69,11 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "$this"
+              "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "closed"
@@ -86,6 +90,12 @@
           "system": "http://snomed.info/sct",
           "code": "363800008"
         }
+      },
+      {
+        "id": "Observation.code.coding:EmotionalHealthAndWellbeingSNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.subject",

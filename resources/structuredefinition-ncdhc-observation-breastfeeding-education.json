@@ -76,7 +76,8 @@
             }
           ],
           "rules": "closed"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Observation.code.coding:BreastfeedingEducationSNOMED-CT",
@@ -92,6 +93,7 @@
       {
         "id": "Observation.code.coding:BreastfeedingEducationSNOMED-CT.system",
         "path": "Observation.code.coding.system",
+        "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
