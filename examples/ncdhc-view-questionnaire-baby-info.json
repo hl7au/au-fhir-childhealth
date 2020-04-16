@@ -1,0 +1,108 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "antenatal-visit-baby-info-q-en-s1",
+  "meta": {
+    "profile": [
+      "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-questionnaire-base"
+    ]
+  },
+  "language": "en-AU",
+  "version": "mhc-v1",
+  "title": "Baby's Information Questionnaire",
+  "experimental": false,
+  "status": "active",
+  "date": "2020-04-14",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "Question model to Baby's Information section of Antenatal Visit",
+  "code": [
+    {
+      "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
+      "code": "ANTVSTCLC",
+      "display": "Antenatal Visit"
+    }
+  ],
+  "subjectType": [
+    "Encounter",
+    "Observation"
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/branches/master/StructureDefinition-ncdhc-observation-vitalsign-heart-rate-definitions.html#Observation.valueQuantity:valueQuantity",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "249043002"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "8867-4"
+        }
+      ],
+      "text": "Baby Heart Rate",
+      "type": "string"
+    },
+    {
+      "linkId": "2",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/branches/master/StructureDefinition-ncdhc-observation-fetal-movement-definitions.html#Observation.valueCodeableConcept:valueCodeableConcept",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "364617005"
+        }
+      ],
+      "text": "Baby Movements",
+      "type": "choice"
+    },
+    {
+      "linkId": "3",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "364604007"
+        }
+      ],
+      "text": "Baby Position",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "3.1",
+          "text": "Show Details",
+          "type": "string",
+          "item": [
+            {
+              "linkId": "3.1.1",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-fetus-arrangement-definitions.html#Observation.valueCodeableConcept:valueCodeableConcept",
+              "text": "Orientation",
+              "type": "choice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-head-engagement-definitions.html#Observation.component.valueCodeableConcept:valueCodeableConcept",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "249111004"
+        }
+      ],
+      "text": "Descent",
+      "type": "choice"
+    },
+    {
+      "linkId": "5",
+      "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-fetus-liquor-definitions.html#Observation.interpretation",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "364354005"
+        }
+      ],
+      "text": "Liquor",
+      "type": "choice"
+    }
+  ]
+}
