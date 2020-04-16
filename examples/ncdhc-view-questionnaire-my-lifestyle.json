@@ -177,7 +177,7 @@
               "type": "string"
             },
             {
-              "linkId": "3.1.2",
+              "linkId": "5.1.2",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-illicit-drugs-gestation-definitions.html#Observation.component:DrugQuitDate.valueDateTime:valueDateTime",
               "text": "Illicit drugs - Quit date",
               "type": "dateTime"
