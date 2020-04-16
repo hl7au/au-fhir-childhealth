@@ -43,7 +43,7 @@
           "type": "choice",
           "item": [
             {
-              "linkId": "1.1",
+              "linkId": "1.1.1",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-medication-pres-change-definitions.html#Observation.comment",
               "text": "Comments",
               "type": "string"
@@ -177,7 +177,7 @@
               "type": "string"
             },
             {
-              "linkId": "5.1.2",
+              "linkId": "5.1.3",
               "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-illicit-drugs-gestation-definitions.html#Observation.component:DrugQuitDate.valueDateTime:valueDateTime",
               "text": "Illicit drugs - Quit date",
               "type": "dateTime"
