@@ -1563,7 +1563,13 @@
 				<reference value="DocumentReference/ncdhc-dphr-doc-ref-current-example" />
 			</sourceReference>
 		</resource>
-		<!--resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Questionnaire/antenatal-visit-my-info-q-en-s1" />
+			</sourceReference>
+		</resource>
+		<resource>
 			<example value="true" />
 			<sourceReference>
 				<reference value="QuestionnaireResponse/antenatal-visit-myinfo-qa-en-s1" />
@@ -1572,7 +1578,19 @@
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="QuestionnaireResponse/antenatal-visit-babyinfo-qa-en-s1" />
+				<reference value="Questionnaire/antenatal-visit-baby-info-q-en-s1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="QuestionnaireResponse/antenatal-visit-baby-info-qa-en-s1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Questionnaire/antenatal-visit-alc-tob-drug-screening-qa-en-s1" />
 			</sourceReference>
 		</resource>
 		<resource>
@@ -1580,7 +1598,7 @@
 			<sourceReference>
 				<reference value="QuestionnaireResponse/antenatal-visit-alc-tob-drug-screening-qa-en-s1" />
 			</sourceReference>
-		</resource-->
+		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
@@ -2149,7 +2167,7 @@
 			<sourceReference>
 				<reference value="Bundle/ncdhc-bundle-document-create-authrep" />
 			</sourceReference>
-		</resource>
+		</resource>		
 		<resource>
 			<example value="true" />
 			<sourceReference>

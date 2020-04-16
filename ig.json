@@ -365,6 +365,30 @@
       "source": "ncdhc-composition-view-antenatal-visit-example.json",
       "base": "ncdhc-composition-view-antenatal-visit-example.html"
     },
+    "Questionnaire/antenatal-visit-my-info-q-en-s1": {
+      "source": "ncdhc-view-questionnaire-my-info.json",
+      "base": "ncdhc-view-questionnaire-my-info.html"
+    },
+    "QuestionnaireResponse/antenatal-visit-myinfo-qa-en-s1": {
+      "source": "ncdhc-questionnaireresponse-antvst-myinfo-example.json",
+      "base": "ncdhc-questionnaireresponse-antvst-myinfo-example.html"
+    },
+    "Questionnaire/antenatal-visit-alc-tob-drug-screening-qa-en-s1": {
+      "source": "ncdhc-view-questionnaire-my-lifestyle.json",
+      "base": "ncdhc-view-questionnaire-my-lifestyle.html"
+    },
+    "QuestionnaireResponse/antenatal-visit-alc-tob-drug-screening-qa-en-s1": {
+      "source": "ncdhc-questionnaireresponse-antvst-alc-tob-drug-screening-example.json",
+      "base": "ncdhc-questionnaireresponse-antvst-alc-tob-drug-screening-example.html"
+    },  
+    "Questionnaire/antenatal-visit-baby-info-q-en-s1": {
+      "source": "ncdhc-view-questionnaire-baby-info.json",
+      "base": "ncdhc-view-questionnaire-baby-info.html"
+    },
+    "QuestionnaireResponse/antenatal-visit-baby-info-qa-en-s1": {
+      "source": "ncdhc-questionnaireresponse-antvst-baby-info-example.json",
+      "base": "ncdhc-questionnaireresponse-antvst-baby-info-example.html"
+    },  
     "Questionnaire/antenatal-visit-nextvst-progresnts-q-en-s1": {
       "source": "ncdhc-view-questionnaire-nextvst-progresnts.json",
       "base": "ncdhc-view-questionnaire-nextvst-progresnts.html"

@@ -67,16 +67,9 @@
       "item": [
         {
           "linkId": "3.1",
-          "text": "Show Details",
-          "type": "string",
-          "item": [
-            {
-              "linkId": "3.1.1",
-              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-fetus-arrangement-definitions.html#Observation.valueCodeableConcept:valueCodeableConcept",
-              "text": "Orientation",
-              "type": "choice"
-            }
-          ]
+          "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-fetus-arrangement-definitions.html#Observation.valueCodeableConcept:valueCodeableConcept",
+          "text": "Orientation",
+          "type": "choice"
         }
       ]
     },

@@ -49,22 +49,22 @@
     {
       "id": "3.0.0.0",
       "linkId": "3",
-      "text": "Baby Orientation",
+      "text": "Baby Position",
       "answer": [
         {
-          "valueString": "Show Details",
+          "valueString": "Show details",
           "item": [
             {
               "id": "3.1.0.1",
               "linkId": "3.1",
-              "subject": {
-                "reference": "Observation/ncdhc-observation-fetus-arrangement-example"
-              },
+              "text": "Orientation",
               "item": [
                 {
                   "id": "3.1.1.1",
                   "linkId": "3.1.1",
-                  "text": "Orientation",
+                  "subject": {
+                    "display": "Observation/observation-baby-position-ist-1"
+                  },
                   "answer": [
                     {
                       "valueCoding": {
@@ -72,14 +72,32 @@
                         "code": "73161006",
                         "display": "Transverse lie"
                       }
-                    },
+                    }
+                  ]
+                },
+                {
+                  "id": "3.1.1.2",
+                  "linkId": "3.1.1",
+                  "subject": {
+                    "display": "Observation/observation-baby-position-ist-2"
+                  },
+                  "answer": [
                     {
                       "valueCoding": {
                         "system": "http://snomed.info/sct",
                         "code": "408813008",
                         "display": "Direct occipitoanterior position"
                       }
-                    },
+                    }
+                  ]
+                },
+                {
+                  "id": "3.1.1.3",
+                  "linkId": "3.1.1",
+                  "subject": {
+                    "display": "Observation/observation-baby-position-ist-3"
+                  },
+                  "answer": [
                     {
                       "valueCoding": {
                         "system": "http://snomed.info/sct",
@@ -95,6 +113,7 @@
         }
       ]
     },
+    
     {
       "id": "4.0.0.0",
       "linkId": "4",
