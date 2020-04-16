@@ -201,6 +201,67 @@
             "code": "dateTime"
           }
         ]
+      },
+      {
+        "id": "Observation.component:FetalGestationalAge",
+        "path": "Observation.component",
+        "sliceName": "FetalGestationalAge",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:FetalGestationalAge.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57036006"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:FetalGestationalAge.value[x]:valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "sliceName": "valueQuantity",
+        "short": "Gestational age in days",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:FetalGestationalAge.value[x]:valueQuantity.value",
+        "path": "Observation.component.valueQuantity.value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:FetalGestationalAge.value[x]:valueQuantity.unit",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Observation.component.valueQuantity.unit",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:FetalGestationalAge.value[x]:valueQuantity.system",
+        "path": "Observation.component.valueQuantity.system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:FetalGestationalAge.value[x]:valueQuantity.code",
+        "path": "Observation.component.valueQuantity.code",
+        "type": [
+          {
+            "code": "code",
+            "profile": "d"
+          }
+        ]
       }
     ]
   }

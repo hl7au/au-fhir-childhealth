@@ -33,5 +33,27 @@
       "display": "Organisation"
     }
   ],
-  "valueString": "No significant other details are found"
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "443938003",
+        "display": "Procedure carried out on subject"
+      }
+    ]
+  },
+  "component": [    
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "225334002",
+            "display": "Intervention regime"
+          }
+        ]
+      },
+      "valueString": "NA"
+    }
+  ]
 }

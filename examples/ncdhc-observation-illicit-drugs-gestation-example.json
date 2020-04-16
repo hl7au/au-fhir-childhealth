@@ -79,6 +79,22 @@
         ]
       },
       "valueDateTime": "2020-02-12T14:36:03Z"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "57036006"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 257,
+        "unit": "days",
+        "system": "http://unitsofmeasure.org",
+        "code": "d"
+      }
     }
   ]
 }
