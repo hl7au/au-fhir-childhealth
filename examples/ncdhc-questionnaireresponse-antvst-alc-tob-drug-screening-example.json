@@ -156,7 +156,7 @@
             "linkId": "4",
             "text": "Other Breif intervention",
             "subject": {
-                "reference": "Observation/ncdhc-observation-bi-alcohol-intake-example"
+                "reference": "Observation//ncdhc-observation-bi-other-example"
             },
             "answer": [
                 {
