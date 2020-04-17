@@ -27,7 +27,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Profile specific implementation guidance:**
 
-* The server **SHALL** accept the gestational age in days while collting the Observation.
+* The server **SHALL** accept the gestational age in days while collecting the Observation.
 
 
 
