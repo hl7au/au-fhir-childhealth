@@ -46,7 +46,7 @@
         {
           "linkId": "2.1",
           "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/2StructureDefinition-ncdhc-dphr-encounter-definitions.html#Encounter.participant.individual",
-          "type": "text",
+          "type": "string",
           "item": [
             {
               "linkId": "2.1.1",
