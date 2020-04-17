@@ -7,8 +7,8 @@ This profile sets minimum expectations for the [Observation] resource to record,
 The following are example usage scenarios for the National Child Digital Health interactions
 profile:
 
--   Query the length of pregnancy
--   Record baby patient's gestational age (in weeks and days)
+-   Query tbaby patient's gestational age
+-   Record baby patient's gestational age
 
 ##### Mandatory Data Elements and Terminology
 
@@ -27,7 +27,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Profile specific implementation guidance:**
 
-* The server **SHALL** accept the gestational age in days and convert it to 'weeks and days' and  persist it in the 'comments' element.
+* The server **SHALL** accept the gestational age in days while collting the Observation.
 
 
 
