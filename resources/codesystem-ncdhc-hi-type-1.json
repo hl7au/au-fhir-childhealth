@@ -305,6 +305,11 @@
       "definition": "Antenatal Visit List"
     },
     {
+      "code": "ANTVSTBPINF",
+      "display": "My Blood Pressure",
+      "definition": "Antenatal Visit My Blood Pressure Selected Information"
+    },
+    {
       "code": "REGSLF",
       "display": "Register Self Record",
       "definition": "Register Self Record"

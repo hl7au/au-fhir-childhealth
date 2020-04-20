@@ -213,6 +213,36 @@
 			"code": "REINSTDOC",
 			"display": "Reinstate Document",
 			"definition": "Document is reinstated and viewable to the providers/consumers"
-		}
+		},
+		{
+			"code": "ANTVSTCLC",
+			"display": "Antenatal Visit",
+			"definition": "Antenatal Visit details collection"
+		  },
+		  {
+			"code": "ANTVSTVW",
+			"display": "Antenatal Visit View",
+			"definition": "View  pregnancy check-up information recorded by health care provider"
+		  },
+		  {
+			"code": "ANTVSTPRGRSNT",
+			"display": "Antenatal Visit Progress Note",
+			"definition": "Antenatal Visit Progress Note"
+		  },
+		  {
+			"code": "ANTVSTLST",
+			"display": "My Check-Ups",
+			"definition": "Antenatal Visit List"
+		  },
+		  {
+			"code": "ANTVSTBPINF",
+			"display": "My Blood Pressure",
+			"definition": "Antenatal Visit My Blood Pressure Selected Information"
+		  },
+		  {
+			"code": "REGSLF",
+			"display": "Register Self Record",
+			"definition": "Register Self Record"
+		  }
 	]
 }
