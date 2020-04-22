@@ -36,7 +36,7 @@
           "code": "ANTVSTCLC"
         }
       ],
-      "type": "group",
+      "type": "string",
       "repeats": true,
       "item": [
         {

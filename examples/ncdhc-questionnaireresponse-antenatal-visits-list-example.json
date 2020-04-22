@@ -23,40 +23,44 @@
       "subject": {
         "display": "Reference to fetch 1st antenatal-visit document goes here"
       },
-      "item": [
+      "answer": [
         {
-          "id": "1.1.0.0",
-          "linkId": "1.1",
-          "subject": {
-            "display": "Reference to fetch encounter goes here"
-          },
-          "answer": [
+          "item": [
             {
-              "valueDateTime": "2019-05-22T17:42:00-05:00"
-            }
-          ]
-        },
-        {
-          "id": "1.2.0.0",
-          "linkId": "1.2",
-          "subject": {
-            "display": "Reference to fetch gestation-age observation goes here"
-          },
-          "answer": [
+              "id": "1.1.0.0",
+              "linkId": "1.1",
+              "subject": {
+                "display": "Reference to fetch encounter goes here"
+              },
+              "answer": [
+                {
+                  "valueDateTime": "2019-05-22T17:42:00-05:00"
+                }
+              ]
+            },
             {
-              "valueString": "32w+2d"
-            }
-          ]
-        },
-        {
-          "id": "1.3.0.0",
-          "linkId": "1.3",
-          "subject": {
-            "display": "Reference to fetch encounter.location goes here"
-          },
-          "answer": [
+              "id": "1.2.0.0",
+              "linkId": "1.2",
+              "subject": {
+                "display": "Reference to fetch gestation-age observation goes here"
+              },
+              "answer": [
+                {
+                  "valueString": "32w+2d"
+                }
+              ]
+            },
             {
-              "valueString": "Morning side General Practice Clinic"
+              "id": "1.3.0.0",
+              "linkId": "1.3",
+              "subject": {
+                "display": "Reference to fetch encounter.location goes here"
+              },
+              "answer": [
+                {
+                  "valueString": "Morning side General Practice Clinic"
+                }
+              ]
             }
           ]
         }
@@ -68,40 +72,44 @@
       "subject": {
         "display": "Reference to fetch 2nd antenatal-visit document goes here"
       },
-      "item": [
+      "answer": [
         {
-          "id": "2.1.0.0",
-          "linkId": "1.1",
-          "subject": {
-            "display": "Reference to fetch encounter goes here"
-          },
-          "answer": [
+          "item": [
             {
-              "valueDateTime": "2019-05-22T17:42:00-05:00"
-            }
-          ]
-        },
-        {
-          "id": "2.2.0.0",
-          "linkId": "1.2",
-          "subject": {
-            "display": "Reference to fetch gestation-age observation goes here"
-          },
-          "answer": [
+              "id": "2.1.0.0",
+              "linkId": "1.1",
+              "subject": {
+                "display": "Reference to fetch encounter goes here"
+              },
+              "answer": [
+                {
+                  "valueDateTime": "2019-05-22T17:42:00-05:00"
+                }
+              ]
+            },
             {
-              "valueString": "28w+6d"
-            }
-          ]
-        },
-        {
-          "id": "2.3.0.0",
-          "linkId": "1.3",
-          "subject": {
-            "display": "Reference to fetch encounter.location goes here"
-          },
-          "answer": [
+              "id": "2.2.0.0",
+              "linkId": "1.2",
+              "subject": {
+                "display": "Reference to fetch gestation-age observation goes here"
+              },
+              "answer": [
+                {
+                  "valueString": "28w+6d"
+                }
+              ]
+            },
             {
-              "valueString": "Morning side General Practice Clinic"
+              "id": "2.3.0.0",
+              "linkId": "1.3",
+              "subject": {
+                "display": "Reference to fetch encounter.location goes here"
+              },
+              "answer": [
+                {
+                  "valueString": "Morning side General Practice Clinic"
+                }
+              ]
             }
           ]
         }
@@ -113,40 +121,44 @@
       "subject": {
         "display": "Reference to fetch 3rd antenatal-visit document goes here"
       },
-      "item": [
+      "answer": [
         {
-          "id": "3.1.0.0",
-          "linkId": "1.1",
-          "subject": {
-            "display": "Reference to fetch encounter goes here"
-          },
-          "answer": [
+          "item": [
             {
-              "valueDateTime": "2019-03-30T17:42:00-05:00"
-            }
-          ]
-        },
-        {
-          "id": "3.2.0.0",
-          "linkId": "1.2",
-          "subject": {
-            "display": "Reference to fetch gestation-age observation goes here"
-          },
-          "answer": [
+              "id": "3.1.0.0",
+              "linkId": "1.1",
+              "subject": {
+                "display": "Reference to fetch encounter goes here"
+              },
+              "answer": [
+                {
+                  "valueDateTime": "2019-03-30T17:42:00-05:00"
+                }
+              ]
+            },
             {
-              "valueString": "24w+5d"
-            }
-          ]
-        },
-        {
-          "id": "3.3.0.0",
-          "linkId": "1.3",
-          "subject": {
-            "display": "Reference to fetch encounter.location goes here"
-          },
-          "answer": [
+              "id": "3.2.0.0",
+              "linkId": "1.2",
+              "subject": {
+                "display": "Reference to fetch gestation-age observation goes here"
+              },
+              "answer": [
+                {
+                  "valueString": "24w+5d"
+                }
+              ]
+            },
             {
-              "valueString": "Cairns Hospital"
+              "id": "3.3.0.0",
+              "linkId": "1.3",
+              "subject": {
+                "display": "Reference to fetch encounter.location goes here"
+              },
+              "answer": [
+                {
+                  "valueString": "Cairns Hospital"
+                }
+              ]
             }
           ]
         }
