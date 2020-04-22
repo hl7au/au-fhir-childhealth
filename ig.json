@@ -365,6 +365,18 @@
       "source": "ncdhc-composition-view-antenatal-visit-example.json",
       "base": "ncdhc-composition-view-antenatal-visit-example.html"
     },
+    "Questionnaire/antenatal-visits-selected-information-bp-qa-en-s1": {
+      "source": "ncdhc-view-questionnaire-antenatal-visit-selected-information-bp-q-en-s1.json",
+      "base": "ncdhc-view-questionnaire-antenatal-visit-selected-information-bp-q-en-s1.html"
+    },
+    "StructureDefinition/ncdhc-composition-view-antenatal-visits-selected-information-bp": {
+      "base": "StructureDefinition-ncdhc-composition-view-antenatal-visits-selected-information-bp.html",
+      "defns": "StructureDefinition-ncdhc-composition-view-antenatal-visits-selected-information-bp-definitions.html"
+    },
+    "QuestionnaireResponse/antenatal-visits-selected-information-bp-qa-en-s1": {
+      "source": "ncdhc-questionnaireresponse-antenatal-visit-selected-information-bp-example.json",
+      "base": "ncdhc-questionnaireresponse-antenatal-visit-selected-information-bp-example.html"
+    },
     "Questionnaire/antenatal-visit-my-info-q-en-s1": {
       "source": "ncdhc-view-questionnaire-my-info.json",
       "base": "ncdhc-view-questionnaire-my-info.html"
