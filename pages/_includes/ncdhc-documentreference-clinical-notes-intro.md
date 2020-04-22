@@ -16,12 +16,12 @@ profile:
 
 The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
 
-**Each Observation must have:**
+**Each DocumentReference must have:**
 
-1.  a status  
-1.  a SNOMED code (indicating what is being recorded)
+1.  a type  
+1.  a class
 1.  a subject ([Expectant Mother Patient])
-1.  a period (indicating the duration of the clinical notes)
+1.  a content of the clinical notes
 1.  a reference to [DPHR Encounter] instance.
 
 
