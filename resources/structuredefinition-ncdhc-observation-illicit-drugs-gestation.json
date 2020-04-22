@@ -45,7 +45,11 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "$this"
+              "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
           "rules": "open"
