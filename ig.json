@@ -365,17 +365,41 @@
       "source": "ncdhc-composition-view-antenatal-visit-example.json",
       "base": "ncdhc-composition-view-antenatal-visit-example.html"
     },
-    "Questionnaire/antenatal-visits-selected-information-bp-qa-en-s1": {
-      "source": "ncdhc-view-questionnaire-antenatal-visit-selected-information-bp-q-en-s1.json",
-      "base": "ncdhc-view-questionnaire-antenatal-visit-selected-information-bp-q-en-s1.html"
+    "StructureDefinition/antenatal-visits-information-bp-qa-en-s1": {
+      "base": "StructureDefinition-ncdhc-composition-view-antenatal-visits-information-bp.html",
+      "defns": "StructureDefinition-ncdhc-composition-view-antenatal-visits-information-bp-definitions.html"
     },
-    "StructureDefinition/ncdhc-composition-view-antenatal-visits-selected-information-bp": {
-      "base": "StructureDefinition-ncdhc-composition-view-antenatal-visits-selected-information-bp.html",
-      "defns": "StructureDefinition-ncdhc-composition-view-antenatal-visits-selected-information-bp-definitions.html"
+    "Questionnaire/antenatal-visits-information-bp-qa-en-s1": {
+      "source": "ncdhc-view-questionnaire-antenatal-visit-information-bp-q-en-s1.json",
+      "base": "ncdhc-view-questionnaire-antenatal-visit-information-bp-q-en-s1.html"
     },
-    "QuestionnaireResponse/antenatal-visits-selected-information-bp-qa-en-s1": {
-      "source": "ncdhc-questionnaireresponse-antenatal-visit-selected-information-bp-example.json",
-      "base": "ncdhc-questionnaireresponse-antenatal-visit-selected-information-bp-example.html"
+    "QuestionnaireResponse/antenatal-visits-information-bp-qa-en-s1": {
+      "source": "ncdhc-questionnaireresponse-antenatal-visit-information-bp-example.json",
+      "base": "ncdhc-questionnaireresponse-antenatal-visit-information-bp-example.html"
+    },
+    "StructureDefinition/ncdhc-composition-view-antenatal-visits-information-weight": {
+      "base": "StructureDefinition-ncdhc-composition-view-antenatal-visits-information-weight.html",
+      "defns": "StructureDefinition-ncdhc-composition-view-antenatal-visits-information-weight-definitions.html"
+    },
+    "Questionnaire/antenatal-visits-information-weight-qa-en-s1": {
+      "source": "ncdhc-view-questionnaire-antenatal-visit-information-weight-q-en-s1.json",
+      "base": "ncdhc-view-questionnaire-antenatal-visit-information-weight-q-en-s1.html"
+    },
+    "QuestionnaireResponse/antenatal-visits-information-weight-qa-en-s1": {
+      "source": "ncdhc-questionnaireresponse-antenatal-visit-information-weight-example.json",
+      "base": "ncdhc-questionnaireresponse-antenatal-visit-information-weight-example.html"
+    },
+    "StructureDefinition/ncdhc-composition-view-antenatal-visits-information-fundal-ht": {
+      "base": "StructureDefinition-ncdhc-composition-view-antenatal-visits-information-fundal-ht.html",
+      "defns": "StructureDefinition-ncdhc-composition-view-antenatal-visits-information-fundal-ht-definitions.html"
+    },
+    "Questionnaire/antenatal-visits-information-fundal-ht-qa-en-s1": {
+      "source": "ncdhc-view-questionnaire-antenatal-visit-information-fundal-ht-q-en-s1.json",
+      "base": "ncdhc-view-questionnaire-antenatal-visit-information-fundal-ht-q-en-s1.html"
+    },
+    "QuestionnaireResponse/antenatal-visits-information-fundal-ht-qa-en-s1": {
+      "source": "ncdhc-questionnaireresponse-antenatal-visit-information-fundal-ht-example.json",
+      "base": "ncdhc-questionnaireresponse-antenatal-visit-information-fundal-ht-example.html"
     },
     "Questionnaire/antenatal-visit-my-info-q-en-s1": {
       "source": "ncdhc-view-questionnaire-my-info.json",
@@ -392,7 +416,7 @@
     "QuestionnaireResponse/antenatal-visit-alc-tob-drug-screening-qa-en-s1": {
       "source": "ncdhc-questionnaireresponse-antvst-alc-tob-drug-screening-example.json",
       "base": "ncdhc-questionnaireresponse-antvst-alc-tob-drug-screening-example.html"
-    },  
+    },
     "Questionnaire/antenatal-visit-baby-info-q-en-s1": {
       "source": "ncdhc-view-questionnaire-baby-info.json",
       "base": "ncdhc-view-questionnaire-baby-info.html"
@@ -400,7 +424,7 @@
     "QuestionnaireResponse/antenatal-visit-baby-info-qa-en-s1": {
       "source": "ncdhc-questionnaireresponse-antvst-baby-info-example.json",
       "base": "ncdhc-questionnaireresponse-antvst-baby-info-example.html"
-    },  
+    },
     "Questionnaire/antenatal-visit-nextvst-progresnts-q-en-s1": {
       "source": "ncdhc-view-questionnaire-nextvst-progresnts.json",
       "base": "ncdhc-view-questionnaire-nextvst-progresnts.html"

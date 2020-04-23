@@ -1616,19 +1616,55 @@
 		<resource>
 			<example value="false" />
 			<sourceReference>
-				<reference value="StructureDefinition/ncdhc-composition-view-antenatal-visits-selected-information-bp" />
+				<reference value="StructureDefinition/ncdhc-composition-view-antenatal-visits-information-bp" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="Questionnaire/antenatal-visits-selected-information-bp-qa-en-s1" />
+				<reference value="Questionnaire/antenatal-visits-information-bp-qa-en-s1" />
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="true" />
 			<sourceReference>
-				<reference value="QuestionnaireResponse/antenatal-visits-selected-information-bp-qa-en-s1" />
+				<reference value="QuestionnaireResponse/antenatal-visits-information-bp-qa-en-s1" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-view-antenatal-visits-information-weight" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Questionnaire/antenatal-visits-information-weight-qa-en-s1" />
+			</sourceReference>
+		</resource>	
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="QuestionnaireResponse/antenatal-visits-information-weight-qa-en-s1" />
+			</sourceReference>
+		</resource>		
+		<resource>
+			<example value="false" />
+			<sourceReference>
+				<reference value="StructureDefinition/ncdhc-composition-view-antenatal-visits-information-fundal-ht" />
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="Questionnaire/antenatal-visits-information-fundal-ht-qa-en-s1" />
+			</sourceReference>
+		</resource>	
+		<resource>
+			<example value="true" />
+			<sourceReference>
+				<reference value="QuestionnaireResponse/antenatal-visits-information-fundal-ht-qa-en-s1" />
 			</sourceReference>
 		</resource>
 
