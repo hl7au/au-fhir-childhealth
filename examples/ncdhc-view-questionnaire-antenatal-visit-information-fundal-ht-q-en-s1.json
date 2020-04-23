@@ -80,11 +80,11 @@
     },
     {
       "linkId": "3",
-      "text": "Weight (kgs)",
+      "text": "Fundal Height",
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "27113001"
+          "code": "289625003"
         }
       ],
       "type": "group",
