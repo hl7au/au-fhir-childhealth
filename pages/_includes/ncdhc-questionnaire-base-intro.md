@@ -18,12 +18,12 @@
 - [Health Check Assessment 3 Years](ncdhc-view-questionnaire-hca-3yr-example.html)
 - [Health Check Assessment 4 Years](ncdhc-view-questionnaire-hca-4yr-example.html)
 - [Antenatal Visit List Summary Questionnaire](ncdhc-view-questionnaire-antenatal-visits-list-sum-q-en-s1.html)
-- [Antenatal Visit "My Alcohol, Tobacco and Other Drug Screening Questionnaire](http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ncdhc-view-questionnaire-my-lifestyle.html)
+- [Antenatal Visit "My Alcohol, Tobacco and Other Drug Screening Questionnaire](ncdhc-view-questionnaire-my-lifestyle.html)
 - [Antenatal Visit My Information Questionnaire](ncdhc-view-questionnaire-my-info.html)
 - [Antenatal Visit Baby Information Questionnaire](ncdhc-view-questionnaire-baby-info.html)
 - [Antenatal Visit Progress Notes and Next Visit Questionnaire](ncdhc-view-questionnaire-nextvst-progresnts.html)
 - [Antenatal Visit Selected Information BP Questionnaire](ncdhc-view-questionnaire-antenatal-visit-information-bp-q-en-s1.html)
-- [Antenatal Visit Selected Information Weight Questionnaire](ncdhc-view-questionnaire-antenatal-visit-information-wight-q-en-s1.html)
+- [Antenatal Visit Selected Information Weight Questionnaire](ncdhc-view-questionnaire-antenatal-visit-information-weight-q-en-s1.html)
 - [Antenatal Visit Selected Information Fundal Height Questionnaire](ncdhc-view-questionnaire-antenatal-visit-information-fundal-ht-q-en-s1.html)
 
 
