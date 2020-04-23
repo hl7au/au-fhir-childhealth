@@ -37,7 +37,7 @@
           "code": "406543005"
         }
       ],
-      "type": "string",
+      "type": "group",
       "item": [
         {
           "linkId": "1.1",
@@ -62,7 +62,7 @@
           "code": "57036006"
         }
       ],
-      "type": "string",
+      "type": "group",
       "item": [
         {
           "linkId": "2.1",
@@ -87,7 +87,7 @@
           "code": "27113001"
         }
       ],
-      "type": "string",
+      "type": "group",
       "item": [
         {
           "linkId": "3.1",
