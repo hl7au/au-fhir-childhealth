@@ -1,6 +1,6 @@
 {
   "resourceType": "QuestionnaireResponse",
-  "id": "antenatal-visits-selected-information-bp-qa-en-s1",
+  "id": "antenatal-visits-information-bp-qa-en-s1",
   "meta": {
     "versionId": "1",
     "lastUpdated": "2019-10-31T00:00:00Z",
@@ -9,8 +9,8 @@
     ]
   },
   "questionnaire": {
-    "reference": "Questionnaire/antenatal-visits-selected-information-bp-qa-en-s1",
-    "display": "Antenatal Visit Selected Information View"
+    "reference": "Questionnaire/antenatal-visits-information-bp-qa-en-s1",
+    "display": "Antenatal Visit BP Information View"
   },
   "status": "completed",
   "subject": {

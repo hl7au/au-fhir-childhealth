@@ -1,0 +1,113 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "antenatal-visits-information-fundal-ht-qa-en-s1",
+  "meta": {
+    "profile": [
+      "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-questionnaire-base"
+    ]
+  },
+  "language": "en-AU",
+  "url": "Questionnaire/antenatal-visits-list-sum-q-en-s1",
+  "version": "antenatal-visits-list-sum-q-en-s1",
+  "title": "Antenatal Visit Fundal Height Information View",
+  "experimental": false,
+  "status": "active",
+  "date": "2020-02-24",
+  "publisher": "National Children's Digital Health Collaborative (NCDHC)",
+  "description": "Question model to represent Antenatal Visit Fundal Height Information View",
+  "code": [
+    {
+      "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
+      "code": "ANTVSTFHINF",
+      "display": "My Fundal Height"
+    }
+  ],
+  "subjectType": [
+    "Composition",
+    "Encounter",
+    "Observation"
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Date",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "406543005"
+        }
+      ],
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1.1",
+          "repeats": true,
+          "type": "string",
+          "item": [
+            {
+              "linkId": "1.1.1",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-dphr-encounter-definitions.html#Encounter.period",
+              "type": "dateTime"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Number of Weeks",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "57036006"
+        }
+      ],
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2.1",
+          "repeats": true,
+          "type": "string",
+          "item": [
+            {
+              "linkId": "2.1.1",
+              "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/branches/master/StructureDefinition-ncdhc-observation-estimated-gestation-definitions.html#Observation.valueQuantity:valueQuantity",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Weight (kgs)",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "27113001"
+        }
+      ],
+      "type": "group",
+      "item": [
+        {
+          "linkId": "3.1",
+          "repeats": true,
+          "type": "string",
+          "item": [
+            {
+              "linkId": "3.1.1",
+              "type": "string",
+              "item": [
+                {
+                  "linkId": "3.1.1.1",
+                  "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyweight-definitions.html#Observation.valueQuantity:valueQuantity",
+                  "type": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -53,11 +53,16 @@
       "code": "PREGDTCLC",
       "display": "Pregnancy details collection",
       "definition": "Pregnancy details collection"
-    },
+    },    
     {
       "code": "ANTVSTVW",
       "display": "Antenatal Visit View",
       "definition": "View  pregnancy check-up information recorded by health care provider"
+    },
+    {
+      "code": "LONGVW",
+      "display": "Longitudinal View",
+      "definition": "View a list of the selected information"
     }
   ]
 }

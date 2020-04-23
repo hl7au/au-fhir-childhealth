@@ -310,6 +310,16 @@
       "definition": "Antenatal Visit My Blood Pressure Selected Information"
     },
     {
+      "code": "ANTVSTWTINF",
+      "display": "My Weight",
+      "definition": "Antenatal Visit My Weight Selected Information"
+    },
+    {
+      "code": "ANTVSTFHINF",
+      "display": "My Fundal Height",
+      "definition": "Antenatal Visit My Fundal Height Selected Information"
+    },
+    {
       "code": "REGSLF",
       "display": "Register Self Record",
       "definition": "Register Self Record"

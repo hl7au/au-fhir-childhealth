@@ -1,6 +1,6 @@
 {
   "resourceType": "Questionnaire",
-  "id": "antenatal-visits-selected-information-bp-qa-en-s1",
+  "id": "antenatal-visits-information-weight-qa-en-s1",
   "meta": {
     "profile": [
       "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-questionnaire-base"
@@ -9,17 +9,17 @@
   "language": "en-AU",
   "url": "Questionnaire/antenatal-visits-list-sum-q-en-s1",
   "version": "antenatal-visits-list-sum-q-en-s1",
-  "title": "Antenatal Visit Selected Information View Summary",
+  "title": "Antenatal Visit Weight Information View",
   "experimental": false,
   "status": "active",
   "date": "2020-02-24",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
-  "description": "Question model to represent Antenatal Visit Selected Information View",
+  "description": "Question model to represent Antenatal Visit Weight Information View",
   "code": [
     {
       "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
-      "code": "ANTVSTBPINF",
-      "display": "My Blood Pressure"
+      "code": "ANTVSTWTINF",
+      "display": "My Weight"
     }
   ],
   "subjectType": [
@@ -80,11 +80,11 @@
     },
     {
       "linkId": "3",
-      "text": "BP",
+      "text": "Weight (kgs)",
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "75367002"
+          "code": "27113001"
         }
       ],
       "type": "group",
@@ -100,13 +100,7 @@
               "item": [
                 {
                   "linkId": "3.1.1.1",
-                  "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bp-definitions.html#Observation.component:SystolicBP.valueQuantity.value",
-                  "type": "string"
-                },
-                {
-                  "linkId": "3.1.1.2",
-                  "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bp-definitions.html#Observation.component:DiastolicBP.valueQuantity.value",
-                  "prefix": "/",
+                  "definition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition-ncdhc-observation-vitalsign-bodyweight-definitions.html#Observation.valueQuantity:valueQuantity",
                   "type": "string"
                 }
               ]

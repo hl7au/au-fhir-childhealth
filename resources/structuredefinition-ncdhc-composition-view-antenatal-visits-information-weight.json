@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-composition-view-antenatal-visits-selected-information-bp",
-  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-view-antenatal-visits-selected-information-bp",
+  "id": "ncdhc-composition-view-antenatal-visits-information-weight",
+  "url": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-composition-view-antenatal-visits-information-weight",
   "version": "dv0.0.1",
-  "name": "NCDHCAntenatalVisitsSelectedInformationViewBPCompositionProfile",
-  "title": "NCDHC NCDHC Antenatal Visits Selected Information Composition",
+  "name": "NCDHCAntenatalVisitsSelectedInformationViewWeightCompositionProfile",
+  "title": "NCDHC NCDHC Antenatal Visits Information Weight Composition",
   "status": "draft",
-  "date": "2020-04-22",
+  "date": "2020-04-23",
   "publisher": "National Children's Digital Health Collaborative (NCDHC)",
   "description": "To view all a list of the selected information from antenatal visits as shared by clinical providers",
   "purpose": "To generate a Custom View so that consumer can view all a list of the selected information from antenatal visits as shared by clinical providers",
@@ -22,7 +22,7 @@
       {
         "id": "Composition",
         "path": "Composition",
-        "short": "NCDHC NCDHC Antenatal Visits Selected Information BP Composition"
+        "short": "NCDHC NCDHC Antenatal Visits Information Weight Composition"
       },
       {
         "id": "Composition.type",
@@ -42,7 +42,7 @@
       {
         "id": "Composition.type.coding.code",
         "path": "Composition.type.coding.code",
-        "fixedCode": "ANTVSTBPINF"
+        "fixedCode": "ANTVSTWTINF"
       },
       {
         "id": "Composition.class",
@@ -53,6 +53,16 @@
             "reference": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-document-class-1"
           }
         }
+      },
+      {
+        "id": "Composition.class.coding.system",
+        "path": "Composition.class.coding.system",
+        "fixedUri": "http://hl7.org.au/fhir/ch/v1/ValueSet/ncdhc-document-class-1"
+      },
+      {
+        "id": "Composition.class.coding.code",
+        "path": "Composition.class.coding.code",
+        "fixedCode": "LONGVW"
       },
       {
         "id": "Composition.subject",
@@ -82,7 +92,7 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
-        "fixedString": "My Blood Pressure"
+        "fixedString": "My Weight"
       },
       {
         "id": "Composition.section",
@@ -99,7 +109,7 @@
       {
         "id": "Composition.section.title",
         "path": "Composition.section.title",
-        "fixedString": "My Blood Pressure"
+        "fixedString": "My Weight"
       },
       {
         "id": "Composition.section.code",
@@ -111,7 +121,7 @@
         "path": "Composition.section.code.coding",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "75367002"
+          "code": "27113001"
         }
       },
       {
