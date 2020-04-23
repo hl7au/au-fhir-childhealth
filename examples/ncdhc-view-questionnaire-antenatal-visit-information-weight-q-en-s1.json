@@ -7,8 +7,8 @@
     ]
   },
   "language": "en-AU",
-  "url": "Questionnaire/antenatal-visits-list-sum-q-en-s1",
-  "version": "antenatal-visits-list-sum-q-en-s1",
+  "url": "Questionnaire/antenatal-visits-information-weight-qa-en-s1",
+  "version": "en-s1",
   "title": "Antenatal Visit Weight Information View",
   "experimental": false,
   "status": "active",
@@ -37,7 +37,7 @@
           "code": "406543005"
         }
       ],
-      "type": "group",
+      "type": "string",
       "item": [
         {
           "linkId": "1.1",
@@ -62,7 +62,7 @@
           "code": "57036006"
         }
       ],
-      "type": "group",
+      "type": "string",
       "item": [
         {
           "linkId": "2.1",
@@ -87,7 +87,7 @@
           "code": "27113001"
         }
       ],
-      "type": "group",
+      "type": "string",
       "item": [
         {
           "linkId": "3.1",
