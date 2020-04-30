@@ -24,13 +24,7 @@
         "path": "Observation",
         "short": "NCDHC Deworming Observation Profile"
       },
-      {
-        "id": "Observation.category",
-        "path": "Observation.category",
-        "patternCodeableConcept": {
-          "text": "This needs to be discussed and finalised"
-        }
-      },
+      
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
