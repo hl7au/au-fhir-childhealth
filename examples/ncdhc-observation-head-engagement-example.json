@@ -37,15 +37,7 @@
       "display": "Organisation"
     }
   ],
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "249112006",
-        "display": "Head engaged"
-      }
-    ]
-  },
+ 
   "component": [
     {
       "code": {
