@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NCDHCValueSetObservationCompletionStatus",
+  "id": "ncdhc-observation-completion-status-1",
+  "title": "NCDHC Observation Completion Status",
+  "description": "National Children's Digital Health Collaborative - Values to represent what type of Observation Completion Status are applicable to each completed check/observation.",
+  "version": "current",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-observation-completion-status-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "443938003",
+            "display": "Procedure carried out on subject"
+          },
+          {
+            "code": "416237000",
+            "display": "Procedure not done"
+          },
+          {
+            "code": "439495000",
+            "display": "Counselling declined"
+          }
+        ]
+      }
+    ]
+  }
+}

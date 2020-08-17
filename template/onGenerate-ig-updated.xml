@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+   <id value="hl7.fhir.au.ncdhc"/>
+   <text>
+      <status value="extensions"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h2>NCDHCFHIRR4ImplementationGuide</h2>
+         <p>The official URL for this implementation guide is: </p>
+         <pre>http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ImplementationGuide/hl7.fhir.au.ncdhc</pre>
+         <div>
+            <p>NCDHC Implementation guide using FHIR R4</p>
+         </div>
+      </div>
+   </text>
+   <url value="http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ImplementationGuide/hl7.fhir.au.ncdhc"/>
+   <version value="current"/>
+   <name value="NCDHCFHIRR4ImplementationGuide"/>
+   <title value="NCDHC FHIR R4 Implementation Guide"/>
+   <status value="active"/>
+   <date value="2020-08-17T16:00:00+10:00"/>
+   <publisher value="National Children’s Digital Health Collaborative"/>
+   <contact>
+      <name value="National Children’s Digital Health Collaborative"/>
+      <telecom>
+         <system value="url"/>
+         <value value="https://conversation.digitalhealth.gov.au/childrens-collaborative"/>
+      </telecom>
+      <telecom>
+         <system value="email"/>
+         <value value="EHNSW-ChildCollaborative@health.nsw.gov.au"/>
+      </telecom>
+   </contact>
+   <description value="NCDHC Implementation guide using FHIR R4"/>
+   <jurisdiction>
+      <coding>
+         <system value="urn:iso:std:iso:3166"/>
+         <code value="AU"/>
+      </coding>
+   </jurisdiction>
+   <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/"/>
+   <packageId value="hl7.fhir.au.ncdhc"/>
+   <license value="CC0-1.0"/>
+   <fhirVersion value="4.0.1"/>
+   <dependsOn id="hl7_fhir_au_base">
+      <uri value="http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.base"/>
+      <packageId value="hl7.fhir.au.base"/>
+      <version value="current"/>
+   </dependsOn>
+   <definition>
+
+
+
+
+
+      <grouping id="_str_abstractprofile">
+         <name value="Structures: Abstract Profiles"/>
+         <description value="These are profiles on resources or data types that describe patterns used by other profiles, but can't be instantiated directly.  I.e. instances can conform to profiles *based* on these abstract profiles, but don't declare conformance to the abstract profiles themselves."/>
+      </grouping>
+      <grouping id="_str_profile">
+         <name value="Structures: Resource Profiles"/>
+         <description value="These define constraints on FHIR resources that need to be complied with by conformant implementations"/>
+      </grouping>
+
+
+      <grouping id="_term_valueset">
+         <name value="Terminology: Value Sets"/>
+         <description value="These define sets of codes used by systems conforming with this implementation guide"/>
+      </grouping>
+
+
+
+
+
+      <grouping id="_ex_example">
+         <name value="Example: Example Instances"/>
+         <description value="These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like"/>
+      </grouping>
+
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ncdhc-bundle-document.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ncdhc-bundle-document"/>
+         </reference>
+         <name value="NCDHC FHIR Document Base"/>
+         <description value="This is profile represents a strucutre of a NCDHC FHIR document"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ncdhc-composition-document-nb-bloodspot-screen.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"/>
+         </reference>
+         <name value="NCDHC Composition Newborn Bloodspot Screen"/>
+         <description value="This profile is used to represent Newborn Bloodspot Screen FHIR document for the child in context"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ncdhc-encounter-cdhr.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ncdhc-encounter-cdhr"/>
+         </reference>
+         <name value="NCDHC Encounter CDHR"/>
+         <description value="This is the base profile for NCDHC Encounter profile for CDHR Health Interactions."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ncdhc-observation-base.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ncdhc-observation-base"/>
+         </reference>
+         <name value="NCDHC Observation Base"/>
+         <description value="This is the base profile for NCDHC Obsrevation. All NCDHC Observation profiles SHALL extend this profile (vital-sgins profiles are excluded)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ncdhc-observation-head-fontanelles-exam.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ncdhc-observation-head-fontanelles-exam"/>
+         </reference>
+         <name value="NCDHC Observation Head &amp; Fontanelles Examination"/>
+         <description value="Observation profile to record outcome of the check performed around the anatomical feature of the infant skull"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ncdhc-observation-nb-bloodspot-screen.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ncdhc-observation-nb-bloodspot-screen"/>
+         </reference>
+         <name value="NCDHC Observation Newborn Bloodspot Screen"/>
+         <description value="Observation profile to record completion status and any associated details of the test used to detect certain rare genetic conditions and disorders of the metabolism of the newborn in context."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ncdhc-patient-idnt-slice.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ncdhc-patient-idnt-slice"/>
+         </reference>
+         <name value="NCDHC Child Patient"/>
+         <description value="Profile to represent a Child Patient in NCDHC Context"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource:abstract"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ncdhc-composition-clinical-document-base.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ncdhc-composition-clinical-document-base"/>
+         </reference>
+         <name value="NCDHC Composition Clinical Document Base"/>
+         <description value="This profile is used to represent the Compsition associated with a FHIR Clinical Document"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_abstractprofile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-ncdhc-observation-completion-status-1.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/ncdhc-observation-completion-status-1"/>
+         </reference>
+         <name value="NCDHC Observation Completion Status"/>
+         <description value="National Children's Digital Health Collaborative - Values to represent what type of Observation Completion Status are applicable to each completed check/observation."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-ncdhc-observation-data-absent-reason-1.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/ncdhc-observation-data-absent-reason-1"/>
+         </reference>
+         <name value="NCDHC Observation DataAbsentReason ValueSet"/>
+         <description value="National Children's Digital Health Collaborative - Values to represent what type of Observation Data Absent Reasons are applicable when the Observation instance doesn't contain any value"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-ncdhc-observation-interpretation-1.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/ncdhc-observation-interpretation-1"/>
+         </reference>
+         <name value="NCDHC Observation interpretation"/>
+         <description value="National Children's Digital Health Collaborative - Codes to determine what type of Observation Interpretation are applicable to each completed check/observation."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Organization"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Organization-au-organization-responsibleorg-example.html"/>
+         </extension>
+         <reference>
+            <reference value="Organization/au-organization-responsibleorg-example"/>
+         </reference>
+         <name value="au-organization-responsibleorg-example"/>
+         <description value="Example of AUBaseOrganisation to represent as clinically responsible organisation"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Practitioner"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Practitioner-au-practitioner-examiner-example.html"/>
+         </extension>
+         <reference>
+            <reference value="Practitioner/au-practitioner-examiner-example"/>
+         </reference>
+         <name value="au-practitioner-examiner-example"/>
+         <description value="Example of AUBasePractitioner  to represent as clinically responsible person"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="PractitionerRole"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="PractitionerRole-au-practitionerrole-examiner-example.html"/>
+         </extension>
+         <reference>
+            <reference value="PractitionerRole/au-practitionerrole-examiner-example"/>
+         </reference>
+         <name value="au-practitionerrole-examiner-example"/>
+         <description value="Example of AUBasePractitionerRole  to represent as clinically responsible person"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Composition"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Composition-ncdhc-composition-nb-bloodspot-screen-example.html"/>
+         </extension>
+         <reference>
+            <reference value="Composition/ncdhc-composition-nb-bloodspot-screen-example"/>
+         </reference>
+         <name value="ncdhc-composition-nb-bloodspot-screen-example"/>
+         <description value="Newborn Delivery Composition Example"/>
+         <exampleCanonical value="http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Bundle"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Bundle-ncdhc-document-nb-bloodspot-screen-example.html"/>
+         </extension>
+         <reference>
+            <reference value="Bundle/ncdhc-document-nb-bloodspot-screen-example"/>
+         </reference>
+         <name value="ncdhc-document-nb-bloodspot-screen-example"/>
+         <description value="Newborn Bloodspot Screen FHIR Document Example"/>
+         <exampleCanonical value="http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-document"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Encounter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Encounter-ncdhc-encounter-cdhr-nb-bloodspot-screen-example.html"/>
+         </extension>
+         <reference>
+            <reference value="Encounter/ncdhc-encounter-cdhr-nb-bloodspot-screen-example"/>
+         </reference>
+         <name value="ncdhc-encounter-cdhr-nb-bloodspot-screen-example"/>
+         <description value="Newborn blood spot screening Encounter detils"/>
+         <exampleCanonical value="http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Location"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Location-ncdhc-location-cdhr-nb-bloodspot-screen-example.html"/>
+         </extension>
+         <reference>
+            <reference value="Location/ncdhc-location-cdhr-nb-bloodspot-screen-example"/>
+         </reference>
+         <name value="ncdhc-location-cdhr-nb-bloodspot-screen-example"/>
+         <description value="Newborn blood spot screening Encounter Location"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-ncdhc-observation-head-fontanelles-exam-example-1.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/ncdhc-observation-head-fontanelles-exam-example-1"/>
+         </reference>
+         <name value="ncdhc-observation-head-fontanelles-exam-example-1"/>
+         <description value="Head &amp; Fontanelles Examination example with interpretation only"/>
+         <exampleCanonical value="http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-ncdhc-observation-head-fontanelles-exam-example-2.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/ncdhc-observation-head-fontanelles-exam-example-2"/>
+         </reference>
+         <name value="ncdhc-observation-head-fontanelles-exam-example-2"/>
+         <description value="Head &amp; Fontanelles Examination example with interpretation and comment"/>
+         <exampleCanonical value="http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-ncdhc-observation-head-fontanelles-exam-example-3.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/ncdhc-observation-head-fontanelles-exam-example-3"/>
+         </reference>
+         <name value="ncdhc-observation-head-fontanelles-exam-example-3"/>
+         <description value="Head &amp; Fontanelles Examination example with absent reason"/>
+         <exampleCanonical value="http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-ncdhc-observation-nb-bloodspot-screen-example-1.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/ncdhc-observation-nb-bloodspot-screen-example-1"/>
+         </reference>
+         <name value="ncdhc-observation-nb-bloodspot-screen-example-1"/>
+         <description value="Newborn Bloodspot Screen example"/>
+         <exampleCanonical value="http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-ncdhc-observation-nb-bloodspot-screen-example-2.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/ncdhc-observation-nb-bloodspot-screen-example-2"/>
+         </reference>
+         <name value="ncdhc-observation-nb-bloodspot-screen-example-2"/>
+         <description value="Newborn Bloodspot Screen example"/>
+         <exampleCanonical value="http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-ncdhc-patient-child-example-1.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/ncdhc-patient-child-example-1"/>
+         </reference>
+         <name value="ncdhc-patient-child-example-1"/>
+         <description value="Example of Child Patient to represent new born baby or a living child"/>
+         <exampleCanonical value="http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-idnt-slice"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-ncdhc-patient-child-example-2.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/ncdhc-patient-child-example-2"/>
+         </reference>
+         <name value="ncdhc-patient-child-example-2"/>
+         <description value="Example of Child Patient to represent new born baby or a living child"/>
+         <exampleCanonical value="http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-idnt-slice"/>
+         <groupingId value="_ex_example"/>
+      </resource>
+      <page>
+         <nameUrl value="toc.html"/>
+         <title value="Table of Contents"/>
+         <generation value="html"/>
+         <page>
+            <nameUrl value="artifacts.html"/>
+            <title value="Artifacts Summary"/>
+            <generation value="html"/>
+            <page>
+               <nameUrl value="StructureDefinition-ncdhc-bundle-document.html"/>
+               <title value="NCDHC FHIR Document Base"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ncdhc-observation-base.html"/>
+               <title value="NCDHC Observation Base"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ncdhc-composition-clinical-document-base.html"/>
+               <title value="NCDHC Composition Clinical Document Base"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ncdhc-composition-document-nb-bloodspot-screen.html"/>
+               <title value="NCDHC Composition Newborn Bloodspot Screen"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ncdhc-encounter-cdhr.html"/>
+               <title value="NCDHC Encounter CDHR"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ncdhc-observation-head-fontanelles-exam.html"/>
+               <title value="NCDHC Observation Head &amp; Fontanelles Examination"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ncdhc-observation-nb-bloodspot-screen.html"/>
+               <title value="NCDHC Observation Newborn Bloodspot Screen"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ncdhc-patient-idnt-slice.html"/>
+               <title value="NCDHC Child Patient"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-ncdhc-observation-completion-status-1.html"/>
+               <title value="NCDHC Observation Completion Status"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-ncdhc-observation-data-absent-reason-1.html"/>
+               <title value="NCDHC Observation DataAbsentReason ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-ncdhc-observation-interpretation-1.html"/>
+               <title value="NCDHC Observation interpretation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Organization-au-organization-responsibleorg-example.html"/>
+               <title value="au-organization-responsibleorg-example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Practitioner-au-practitioner-examiner-example.html"/>
+               <title value="au-practitioner-examiner-example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="PractitionerRole-au-practitionerrole-examiner-example.html"/>
+               <title value="au-practitionerrole-examiner-example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Composition-ncdhc-composition-nb-bloodspot-screen-example.html"/>
+               <title value="ncdhc-composition-nb-bloodspot-screen-example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Bundle-ncdhc-document-nb-bloodspot-screen-example.html"/>
+               <title value="ncdhc-document-nb-bloodspot-screen-example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Encounter-ncdhc-encounter-cdhr-nb-bloodspot-screen-example.html"/>
+               <title value="ncdhc-encounter-cdhr-nb-bloodspot-screen-example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Location-ncdhc-location-cdhr-nb-bloodspot-screen-example.html"/>
+               <title value="ncdhc-location-cdhr-nb-bloodspot-screen-example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-ncdhc-observation-head-fontanelles-exam-example-1.html"/>
+               <title value="ncdhc-observation-head-fontanelles-exam-example-1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-ncdhc-observation-head-fontanelles-exam-example-2.html"/>
+               <title value="ncdhc-observation-head-fontanelles-exam-example-2"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-ncdhc-observation-head-fontanelles-exam-example-3.html"/>
+               <title value="ncdhc-observation-head-fontanelles-exam-example-3"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-ncdhc-observation-nb-bloodspot-screen-example-1.html"/>
+               <title value="ncdhc-observation-nb-bloodspot-screen-example-1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-ncdhc-observation-nb-bloodspot-screen-example-2.html"/>
+               <title value="ncdhc-observation-nb-bloodspot-screen-example-2"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-ncdhc-patient-child-example-1.html"/>
+               <title value="ncdhc-patient-child-example-1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-ncdhc-patient-child-example-2.html"/>
+               <title value="ncdhc-patient-child-example-2"/>
+               <generation value="generated"/>
+            </page>
+         </page>
+      </page>
+      <parameter>
+         <code value="copyrightyear"/>
+         <value value="2019+"/>
+      </parameter>
+      <parameter>
+         <code value="releaselabel"/>
+         <value value="R4-STU1"/>
+      </parameter>
+      <parameter>
+         <code value="show-inherited-invariants"/>
+         <value value="false"/>
+      </parameter>
+      <parameter>
+         <code value="apply-copyright"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-jurisdiction"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-publisher"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-version"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="releaselabel"/>
+         <value value="qa-preview"/>
+      </parameter>
+      <parameter>
+         <code value="autoload-resources"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/capabilities"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/examples"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/extensions"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/models"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/operations"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/profiles"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/resources"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/vocabulary"/>
+      </parameter>
+      <parameter>
+         <code value="path-pages"/>
+         <value value="template/config"/>
+      </parameter>
+      <parameter>
+         <code value="path-pages"/>
+         <value value="input/images"/>
+      </parameter>
+      <parameter>
+         <code value="path-qa"/>
+         <value value="temp/qa"/>
+      </parameter>
+      <parameter>
+         <code value="path-temp"/>
+         <value value="temp/pages"/>
+      </parameter>
+      <parameter>
+         <code value="path-output"/>
+         <value value="output"/>
+      </parameter>
+      <parameter>
+         <code value="path-tx-cache"/>
+         <value value="input-cache/txcache"/>
+      </parameter>
+      <parameter>
+         <code value="path-suppressed-warnings"/>
+         <value value="input/ignoreWarnings.txt"/>
+      </parameter>
+      <parameter>
+         <code value="template-html"/>
+         <value value="template-page.html"/>
+      </parameter>
+      <parameter>
+         <code value="template-md"/>
+         <value value="template-page-md.html"/>
+      </parameter>
+      <parameter>
+         <code value="apply-contact"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-context"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-license"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="active-tables"/>
+         <value value="true"/>
+      </parameter>
+   </definition>
+</ImplementationGuide>

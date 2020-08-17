@@ -1,0 +1,43 @@
+{
+  "resourceType": "Observation",
+  "id": "ncdhc-observation-nb-bloodspot-screen-example-1",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "428447008",
+        "system": "http://snomed.info/sct",
+        "display": "Newborn blood spot screening"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/ncdhc-patient-child-example-1",
+    "display": "Baby of Eve Bill"
+  },
+  "effectiveDateTime": "2020-08-12T16:13:03+10:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "443938003",
+        "system": "http://snomed.info/sct",
+        "display": "Procedure carried out on subject"
+      }
+    ]
+  },
+  "performer": [
+    {
+      "reference": "PractitionerRole/au-practitionerrole-examiner-example",
+      "display": "Examiner"
+    },
+    {
+      "reference": "Organization/au-organization-responsibleorg-example",
+      "display": "Clinical Responsible Organisation"
+    }
+  ]
+}
