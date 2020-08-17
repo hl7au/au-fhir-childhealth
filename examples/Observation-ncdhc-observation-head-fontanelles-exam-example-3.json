@@ -1,0 +1,48 @@
+{
+  "resourceType": "Observation",
+  "id": "ncdhc-observation-head-fontanelles-exam-example-3",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "170190000",
+        "system": "http://snomed.info/sct",
+        "display": "Child examination: fontanelle"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/ncdhc-patient-child-example-1",
+    "display": "Baby of Eve Bill"
+  },
+  "effectiveDateTime": "2020-08-12T16:13:03+10:00",
+  "dataAbsentReason": {
+    "coding": [
+      {
+        "code": "not-performed",
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "display": "Not Performed"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Consultation did not happen"
+    }
+  ],
+  "performer": [
+    {
+      "reference": "PractitionerRole/au-practitionerrole-examiner-example",
+      "display": "Examiner"
+    },
+    {
+      "reference": "Organization/au-organization-responsibleorg-example",
+      "display": "Clinical Responsible Organisation"
+    }
+  ]
+}

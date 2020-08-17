@@ -1,0 +1,292 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ch-fhir-sushi-experimental",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ImplementationGuide/ch-fhir-sushi-experimental",
+  "version": "0.1.0",
+  "name": "chfhirsushiexperimental",
+  "status": "draft",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "AU",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "packageId": "ch-fhir-sushi-experimental",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.au.base",
+      "version": "current",
+      "uri": "http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.base",
+      "id": "hl7_fhir_au_base"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-bundle-document"
+        },
+        "name": "NCDHC FHIR Document Base",
+        "description": "This is profile represents a strucutre of a NCDHC FHIR document",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
+        },
+        "name": "NCDHC Composition Newborn Bloodspot Screen",
+        "description": "This profile is used to represent Newborn Bloodspot Screen FHIR document for the child in context",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-encounter-cdhr"
+        },
+        "name": "NCDHC Encounter CDHR",
+        "description": "This is the base profile for NCDHC Encounter profile for CDHR Health Interactions.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-base"
+        },
+        "name": "NCDHC Observation Base",
+        "description": "This is the base profile for NCDHC Obsrevation. All NCDHC Observation profiles SHALL extend this profile (vital-sgins profiles are excluded)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-head-fontanelles-exam"
+        },
+        "name": "NCDHC Observation Head & Fontanelles Examination",
+        "description": "Observation profile to record outcome of the check performed around the anatomical feature of the infant skull",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
+        },
+        "name": "NCDHC Observation Newborn Bloodspot Screen",
+        "description": "Observation profile to record completion status and any associated details of the test used to detect certain rare genetic conditions and disorders of the metabolism of the newborn in context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-patient-idnt-slice"
+        },
+        "name": "NCDHC Child Patient",
+        "description": "Profile to represent a Child Patient in NCDHC Context",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-clinical-document-base"
+        },
+        "name": "NCDHC Composition Clinical Document Base",
+        "description": "This profile is used to represent the Compsition associated with a FHIR Clinical Document",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-observation-completion-status-1"
+        },
+        "name": "NCDHC Observation Completion Status",
+        "description": "National Children's Digital Health Collaborative - Values to represent what type of Observation Completion Status are applicable to each completed check/observation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-observation-data-absent-reason-1"
+        },
+        "name": "NCDHC Observation DataAbsentReason ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent what type of Observation Data Absent Reasons are applicable when the Observation instance doesn't contain any value",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-observation-interpretation-1"
+        },
+        "name": "NCDHC Observation interpretation",
+        "description": "National Children's Digital Health Collaborative - Codes to determine what type of Observation Interpretation are applicable to each completed check/observation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Organization/au-organization-responsibleorg-example"
+        },
+        "name": "au-organization-responsibleorg-example",
+        "description": "Example of AUBaseOrganisation to represent as clinically responsible organisation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/au-practitioner-examiner-example"
+        },
+        "name": "au-practitioner-examiner-example",
+        "description": "Example of AUBasePractitioner  to represent as clinically responsible person",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/au-practitionerrole-examiner-example"
+        },
+        "name": "au-practitionerrole-examiner-example",
+        "description": "Example of AUBasePractitionerRole  to represent as clinically responsible person",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Composition/ncdhc-composition-nb-bloodspot-screen-example"
+        },
+        "name": "ncdhc-composition-nb-bloodspot-screen-example",
+        "description": "Newborn Delivery Composition Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/ncdhc-document-nb-bloodspot-screen-example"
+        },
+        "name": "ncdhc-document-nb-bloodspot-screen-example",
+        "description": "Newborn Bloodspot Screen FHIR Document Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-document"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/ncdhc-encounter-cdhr-nb-bloodspot-screen-example"
+        },
+        "name": "ncdhc-encounter-cdhr-nb-bloodspot-screen-example",
+        "description": "Newborn blood spot screening Encounter detils",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+      },
+      {
+        "reference": {
+          "reference": "Location/ncdhc-location-cdhr-nb-bloodspot-screen-example"
+        },
+        "name": "ncdhc-location-cdhr-nb-bloodspot-screen-example",
+        "description": "Newborn blood spot screening Encounter Location",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/ncdhc-observation-head-fontanelles-exam-example-1"
+        },
+        "name": "ncdhc-observation-head-fontanelles-exam-example-1",
+        "description": "Head & Fontanelles Examination example with interpretation only",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ncdhc-observation-head-fontanelles-exam-example-2"
+        },
+        "name": "ncdhc-observation-head-fontanelles-exam-example-2",
+        "description": "Head & Fontanelles Examination example with interpretation and comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ncdhc-observation-head-fontanelles-exam-example-3"
+        },
+        "name": "ncdhc-observation-head-fontanelles-exam-example-3",
+        "description": "Head & Fontanelles Examination example with absent reason",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ncdhc-observation-nb-bloodspot-screen-example-1"
+        },
+        "name": "ncdhc-observation-nb-bloodspot-screen-example-1",
+        "description": "Newborn Bloodspot Screen example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ncdhc-observation-nb-bloodspot-screen-example-2"
+        },
+        "name": "ncdhc-observation-nb-bloodspot-screen-example-2",
+        "description": "Newborn Bloodspot Screen example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
+      },
+      {
+        "reference": {
+          "reference": "Patient/ncdhc-patient-child-example-1"
+        },
+        "name": "ncdhc-patient-child-example-1",
+        "description": "Example of Child Patient to represent new born baby or a living child",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-idnt-slice"
+      },
+      {
+        "reference": {
+          "reference": "Patient/ncdhc-patient-child-example-2"
+        },
+        "name": "ncdhc-patient-child-example-2",
+        "description": "Example of Child Patient to represent new born baby or a living child",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-idnt-slice"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/ncdhc-qr-nb-bloodspot-screen-example"
+        },
+        "name": "ncdhc-qr-nb-bloodspot-screen-example",
+        "description": "Newborn Bloodspot Screen FHIR Questionnaire Response Example",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/ncdhc-questionnaire-nb-bloodspot-screen-example"
+        },
+        "name": "ncdhc-questionnaire-nb-bloodspot-screen-example",
+        "description": "Newborn Bloodspot Screen FHIR Questionnaire Example",
+        "exampleBoolean": true
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      },
+      {
+        "code": "apply-copyright",
+        "value": "true"
+      },
+      {
+        "code": "apply-jurisdiction",
+        "value": "true"
+      },
+      {
+        "code": "apply-publisher",
+        "value": "true"
+      },
+      {
+        "code": "apply-version",
+        "value": "true"
+      }
+    ]
+  }
+}

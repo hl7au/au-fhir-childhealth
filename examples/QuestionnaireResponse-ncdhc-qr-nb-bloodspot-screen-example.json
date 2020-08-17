@@ -1,0 +1,44 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "ncdhc-qr-nb-bloodspot-screen-example",
+  "status": "completed",
+  "item": [
+    {
+      "linkId": "1.0.0.0",
+      "text": "Newborn Bloodspot Screen",
+      "item": [
+        {
+          "linkId": "1.1.0.0",
+          "text": "Completed",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "443938003",
+                "system": "http://snomed.info/sct",
+                "display": "Procedure carried out on subject"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "1.3.0.0",
+          "text": "Comments",
+          "answer": [
+            {
+              "valueString": "Everything Looks Normal"
+            }
+          ]
+        },
+        {
+          "linkId": "1.2.0.0",
+          "text": "Date",
+          "answer": [
+            {
+              "valueDateTime": "2020-08-12"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
