@@ -2,10 +2,10 @@
   "resourceType": "ImplementationGuide",
   "id": "hl7.fhir.au.ncdhc",
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ImplementationGuide/hl7.fhir.au.ncdhc",
-  "version": "current",
+  "version": "0.1.0",
   "name": "NCDHCFHIRR4ImplementationGuide",
   "title": "NCDHC FHIR R4 Implementation Guide",
-  "status": "active",
+  "status": "draft",
   "publisher": "National Children’s Digital Health Collaborative",
   "contact": [
     {
@@ -35,7 +35,6 @@
   ],
   "copyright": "Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "packageId": "hl7.fhir.au.ncdhc",
-  "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
   ],
@@ -54,7 +53,7 @@
           "reference": "StructureDefinition/ncdhc-bundle-document"
         },
         "name": "NCDHC FHIR Document Base",
-        "description": "This is profile represents a strucutre of a NCDHC FHIR document",
+        "description": "NCDHC FHIR document profile using Bundle resource",
         "exampleBoolean": false
       },
       {
@@ -62,7 +61,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
         },
         "name": "NCDHC Composition Newborn Bloodspot Screen",
-        "description": "This profile is used to represent Newborn Bloodspot Screen FHIR document for the child in context",
+        "description": "This profile is being used to define the structure and narrative content necessary for Newborn Bloodspot Screen FHIR document",
         "exampleBoolean": false
       },
       {
@@ -70,7 +69,7 @@
           "reference": "StructureDefinition/ncdhc-encounter-cdhr"
         },
         "name": "NCDHC Encounter CDHR",
-        "description": "This is the base profile for NCDHC Encounter profile for CDHR Health Interactions.",
+        "description": "This is the base NCDHC Encounter profile for CDHR Health Interactions.",
         "exampleBoolean": false
       },
       {
@@ -99,7 +98,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncdhc-patient-idnt-slice"
+          "reference": "StructureDefinition/ncdhc-patient-child"
         },
         "name": "NCDHC Child Patient",
         "description": "Profile to represent a Child Patient in NCDHC Context",
@@ -222,15 +221,15 @@
           "reference": "Observation/ncdhc-observation-nb-bloodspot-screen-example-1"
         },
         "name": "ncdhc-observation-nb-bloodspot-screen-example-1",
-        "description": "Newborn Bloodspot Screen example",
+        "description": "Newborn Bloodspot Screen example with completion status and effectiveDateTime",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
       },
-      {
+	  {
         "reference": {
           "reference": "Observation/ncdhc-observation-nb-bloodspot-screen-example-2"
         },
         "name": "ncdhc-observation-nb-bloodspot-screen-example-2",
-        "description": "Newborn Bloodspot Screen example",
+        "description": "Newborn Bloodspot Screen example with completion status but without effectiveDateTime",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
       },
       {
@@ -238,36 +237,42 @@
           "reference": "Patient/ncdhc-patient-child-example-1"
         },
         "name": "ncdhc-patient-child-example-1",
-        "description": "Example of Child Patient to represent new born baby or a living child",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-idnt-slice"
+        "description": "Example of Child Patient profile to represent new born baby or a living child. This example contains IHI and MRN of the Child",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
       },
       {
         "reference": {
           "reference": "Patient/ncdhc-patient-child-example-2"
         },
         "name": "ncdhc-patient-child-example-2",
-        "description": "Example of Child Patient to represent new born baby or a living child",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-idnt-slice"
+        "description": "Example of Child Patient profile to represent new born baby or a living child. This example contains only IHI as the identifier with record status",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
       }
     ],
     "page": {
       "nameUrl": "toc.html",
       "title": "Table of Contents",
       "generation": "html",
-      "page": []
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
     },
     "parameter": [
       {
         "code": "copyrightyear",
-        "value": "2019+"
+        "value": "2020+"
       },
       {
         "code": "releaselabel",
-        "value": "R4-STU1"
+        "value": "ci-build"
       },
       {
         "code": "show-inherited-invariants",
-        "value": "false"
+        "value": "true"
       },
       {
         "code": "apply-copyright",
@@ -284,10 +289,6 @@
       {
         "code": "apply-version",
         "value": "true"
-      },
-      {
-        "code": "releaselabel",
-        "value": "qa-preview"
       }
     ]
   }
