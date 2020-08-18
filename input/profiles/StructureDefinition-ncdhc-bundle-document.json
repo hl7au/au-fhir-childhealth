@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-document",
-  "version": "current",
+  "version": "0.1.0",
   "name": "NCDHCBundleDocument",
   "title": "NCDHC FHIR Document Base",
   "status": "active",
@@ -41,7 +41,7 @@
     }
   ],
   "kind": "resource",
-  "abstract": true,
+  "abstract": false,
   "type": "Bundle",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
   "derivation": "constraint",

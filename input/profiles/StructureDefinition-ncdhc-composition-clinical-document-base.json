@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-composition-clinical-document-base",
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-clinical-document-base",
-  "version": "current",
+  "version": "0.1.0",
   "name": "NCDHCompositionClinicalDocumentBase",
   "title": "NCDHC Composition Clinical Document Base",
   "status": "active",

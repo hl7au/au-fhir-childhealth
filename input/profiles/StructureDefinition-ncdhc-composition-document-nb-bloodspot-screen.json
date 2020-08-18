@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-composition-document-nb-bloodspot-screen",
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen",
-  "version": "current",
+  "version": "0.1.0",
   "name": "NCDHCCompositionNewbornBloodspotScreen",
   "title": "NCDHC Composition Newborn Bloodspot Screen",
   "status": "active",
@@ -83,6 +83,14 @@
       {
         "id": "Composition.subject",
         "path": "Composition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

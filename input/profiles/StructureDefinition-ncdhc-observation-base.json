@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-base",
-  "version": "current",
+  "version": "0.1.0",
   "name": "NCDHCObservationBase",
   "title": "NCDHC Observation Base",
   "status": "active",

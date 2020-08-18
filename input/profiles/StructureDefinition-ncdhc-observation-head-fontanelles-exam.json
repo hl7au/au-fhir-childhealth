@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam",
-  "version": "current",
+  "version": "0.1.0",
   "name": "NCDHCObservationHeadAndFontanellesExam",
   "title": "NCDHC Observation Head & Fontanelles Examination",
   "status": "active",
@@ -81,6 +81,14 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

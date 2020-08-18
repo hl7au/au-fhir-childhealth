@@ -5,7 +5,7 @@
   "id": "ncdhc-observation-completion-status-1",
   "title": "NCDHC Observation Completion Status",
   "description": "National Children's Digital Health Collaborative - Values to represent what type of Observation Completion Status are applicable to each completed check/observation.",
-  "version": "current",
+  "version": "0.1.0",
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-observation-completion-status-1",
   "compose": {
     "include": [

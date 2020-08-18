@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen",
-  "version": "current",
+  "version": "0.1.0",
   "name": "NCDHCObservationNewbornBloodspotScreen",
   "title": "NCDHC Observation Newborn Bloodspot Screen",
   "status": "active",
@@ -81,6 +81,14 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

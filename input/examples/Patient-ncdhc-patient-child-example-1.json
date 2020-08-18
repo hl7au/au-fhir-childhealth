@@ -3,7 +3,7 @@
   "id": "ncdhc-patient-child-example-1",
   "meta": {
     "profile": [
-      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-idnt-slice"
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
     ]
   },
   "identifier": [
