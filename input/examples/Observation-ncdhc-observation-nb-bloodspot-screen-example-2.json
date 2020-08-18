@@ -20,6 +20,15 @@
     "reference": "Patient/ncdhc-patient-child-example-1",
     "display": "Baby of Eve Bill"
   },
+  "effectiveDateTime": "",
+  "_effectiveDateTime": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "temp-unknown"
+      }
+    ]
+  },
   "valueCodeableConcept": {
     "coding": [
       {

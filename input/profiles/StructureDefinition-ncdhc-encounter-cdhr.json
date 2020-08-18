@@ -6,7 +6,7 @@
   "name": "NCDHCEncounterCDHR",
   "title": "NCDHC Encounter CDHR",
   "status": "active",
-  "description": "This is the base profile for NCDHC Encounter profile for CDHR Health Interactions.",
+  "description": "This is the base NCDHC Encounter profile for CDHR Health Interactions.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

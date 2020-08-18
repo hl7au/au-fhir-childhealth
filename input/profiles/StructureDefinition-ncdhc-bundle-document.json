@@ -16,7 +16,7 @@
   "name": "NCDHCBundleDocument",
   "title": "NCDHC FHIR Document Base",
   "status": "active",
-  "description": "This is profile represents a strucutre of a NCDHC FHIR document",
+  "description": "NCDHC FHIR document profile using Bundle resource",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -97,7 +97,8 @@
         "id": "Bundle.entry.resource",
         "path": "Bundle.entry.resource",
         "short": "The resource in the entry. Composition should be the first resource in the Bundle document",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Bundle.entry.search",

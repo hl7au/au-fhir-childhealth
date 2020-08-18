@@ -6,7 +6,7 @@
   "name": "NCDHCCompositionNewbornBloodspotScreen",
   "title": "NCDHC Composition Newborn Bloodspot Screen",
   "status": "active",
-  "description": "This profile is used to represent Newborn Bloodspot Screen FHIR document for the child in context",
+  "description": "This Composition profile is being used in Newborn Bloodspot Screen FHIR document for the child in context",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
