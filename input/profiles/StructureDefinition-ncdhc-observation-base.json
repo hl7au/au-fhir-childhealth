@@ -128,7 +128,7 @@
           {
             "key": "ncdhc-obs-inv-001-val-ar",
             "severity": "error",
-            "human": "If there is no component and hasMember and interpretation element present then either a value[x] or a data absent reason must be present",
+            "human": "If neither of component nor hasMember nor interpretation element is present, then either a value[x] or a data absent reason must be present",
             "expression": "(component.empty() and hasMember.empty() and interpretation.empty() and value.empty()) implies (dataAbsentReason.exists())",
             "source": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-base"
           },
