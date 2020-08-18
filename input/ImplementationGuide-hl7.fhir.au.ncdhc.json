@@ -200,6 +200,14 @@
         "description": "Head & Fontanelles Examination example with interpretation only",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam"
       },
+	  {
+        "reference": {
+          "reference": "Observation/ncdhc-observation-nb-bloodspot-screen-example-2"
+        },
+        "name": "ncdhc-observation-nb-bloodspot-screen-example-2",
+        "description": "Newborn Bloodspot Screen example with completion status but without effectiveDateTime",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
+       },
       {
         "reference": {
           "reference": "Observation/ncdhc-observation-head-fontanelles-exam-example-2"
@@ -222,14 +230,6 @@
         },
         "name": "ncdhc-observation-nb-bloodspot-screen-example-1",
         "description": "Newborn Bloodspot Screen example with completion status and effectiveDateTime",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
-      },
-	  {
-        "reference": {
-          "reference": "Observation/ncdhc-observation-nb-bloodspot-screen-example-2"
-        },
-        "name": "ncdhc-observation-nb-bloodspot-screen-example-2",
-        "description": "Newborn Bloodspot Screen example with completion status but without effectiveDateTime",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
       },
       {
@@ -257,6 +257,56 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "capstatements.html",
+          "title": "Capstatements",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "guidance.html",
+          "title": "Guidance",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "intro.html",
+          "title": "Intro",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "operations.html",
+          "title": "Operations",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles-cdhr.html",
+          "title": "Profiles Cdhr",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles-dphr.html",
+          "title": "Profiles Dphr",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
           "generation": "markdown"
         }
       ]

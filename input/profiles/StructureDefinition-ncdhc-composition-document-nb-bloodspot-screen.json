@@ -130,6 +130,7 @@
       {
         "id": "Composition.attester.mode",
         "path": "Composition.attester.mode",
+        "patternCode": "professional",
         "mustSupport": true
       },
       {

@@ -69,6 +69,21 @@
         ]
       },
       {
+        "id": "Composition.author",
+        "path": "Composition.author",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-organization",
+              "http://hl7.org.au/fhir/StructureDefinition/au-practitioner",
+              "http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole",
+              "http://hl7.org/fhir/StructureDefinition/Device"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Composition.attester.time",
         "path": "Composition.attester.time",
         "short": "Date and Time of Examiner attesting the information"

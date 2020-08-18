@@ -6,6 +6,15 @@
       "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
     ]
   },
+  "attester": [
+    {
+      "mode": "professional",
+      "party": {
+        "reference": "urn:uuid:a01bacd2-or5c-11ea-b3de-0242ac130002",
+        "display": "Downunder Hospital"
+      }
+    }
+  ],
   "status": "final",
   "type": {
     "coding": [
@@ -32,15 +41,6 @@
     }
   ],
   "title": "Newborn blood spot screening",
-  "attester": [
-    {
-      "mode": "official",
-      "party": {
-        "reference": "urn:uuid:a01bacd2-or5c-11ea-b3de-0242ac130002",
-        "display": "Downunder Hospital"
-      }
-    }
-  ],
   "custodian": {
     "reference": "urn:uuid:a01bacd2-or5c-11ea-b3de-0242ac130002",
     "display": "Downunder Hospital"
