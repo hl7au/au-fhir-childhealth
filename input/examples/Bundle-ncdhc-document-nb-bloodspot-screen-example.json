@@ -17,7 +17,7 @@
       "fullUrl": "urn:uuid:a01bacd2-bb5c-11ea-b3de-0242ac130000",
       "resource": {
         "resourceType": "Composition",
-        "id": "ncdhc-composition-nb-bloodspot-screen-example",
+        "id": "a01bacd2-bb5c-11ea-b3de-0242ac130000",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
@@ -27,7 +27,7 @@
           {
             "mode": "professional",
             "party": {
-              "reference": "urn:uuid:a01bacd2-or5c-11ea-b3de-0242ac130002",
+              "reference": "Organization/a01bacd2-or5c-11ea-b3de-0242ac130002",
               "display": "Downunder Hospital"
             }
           }
@@ -43,23 +43,23 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:a01bacd2-pt5c-11ea-b3de-0242ac130001",
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
           "display": "Child of Eve Bill"
         },
         "encounter": {
-          "reference": "urn:uuid:a01bacd2-ec5c-11ea-b3de-0242ac130004",
+          "reference": "Encounter/a01bacd2-ec5c-11ea-b3de-0242ac130004",
           "display": "Consultation on 12th Aug 2020 at Downunder Hospital"
         },
         "date": "2020-08-12T16:13:03+10:00",
         "author": [
           {
-            "reference": "urn:uuid:a01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "reference": "PractitionerRole/a01bacd2-pr5c-11ea-b3de-0242ac130003",
             "display": "Helen Mayo"
           }
         ],
         "title": "Newborn blood spot screening",
         "custodian": {
-          "reference": "urn:uuid:a01bacd2-or5c-11ea-b3de-0242ac130002",
+          "reference": "Organization/a01bacd2-or5c-11ea-b3de-0242ac130002",
           "display": "Downunder Hospital"
         },
         "section": [
@@ -76,7 +76,7 @@
             },
             "entry": [
               {
-                "reference": "urn:uuid:a01bacd2-ob1c-01ea-b3de-0242ac130000"
+                "reference": "Observation/a01bacd2-ob1c-01ea-b3de-0242ac130000"
               }
             ]
           }
@@ -87,7 +87,7 @@
       "fullUrl": "urn:uuid:a01bacd2-pt5c-11ea-b3de-0242ac130001",
       "resource": {
         "resourceType": "Patient",
-        "id": "ncdhc-patient-child-example-1",
+        "id": "a01bacd2-pt5c-11ea-b3de-0242ac130001",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
@@ -162,7 +162,7 @@
       "fullUrl": "urn:uuid:a01bacd2-or5c-11ea-b3de-0242ac130002",
       "resource": {
         "resourceType": "Organization",
-        "id": "au-organization-responsibleorg-example",
+        "id": "a01bacd2-or5c-11ea-b3de-0242ac130002",
         "meta": {
           "profile": [
             "http://hl7.org.au/fhir/StructureDefinition/au-organization"
@@ -176,7 +176,7 @@
       "fullUrl": "urn:uuid:a01bacd2-pr5c-11ea-b3de-0242ac130003",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "au-practitionerrole-examiner-example",
+        "id": "a01bacd2-pr5c-11ea-b3de-0242ac130003",
         "meta": {
           "profile": [
             "http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole"
@@ -184,10 +184,10 @@
         },
         "active": true,
         "practitioner": {
-          "reference": "Practitioner/au-practitioner-examiner-example"
+          "reference": "Practitioner/p01bacd2-or5c-11ea-b3de-0242ac130002"
         },
         "organization": {
-          "reference": "Organization/au-organization-responsibleorg-example"
+          "reference": "Organization/a01bacd2-or5c-11ea-b3de-0242ac130002"
         },
         "specialty": [
           {
@@ -206,7 +206,7 @@
       "fullUrl": "urn:uuid:a01bacd2-ec5c-11ea-b3de-0242ac130004",
       "resource": {
         "resourceType": "Encounter",
-        "id": "ncdhc-encounter-cdhr-nb-bloodspot-screen-example",
+        "id": "a01bacd2-ec5c-11ea-b3de-0242ac130004",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
@@ -219,7 +219,7 @@
           "display": "ambulatory"
         },
         "subject": {
-          "reference": "urn:uuid:a01bacd2-pt5c-11ea-b3de-0242ac130001",
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
           "display": "Child of Eve Bill"
         },
         "period": {
@@ -248,7 +248,7 @@
       "fullUrl": "urn:uuid:a01bacd2-ob1c-01ea-b3de-0242ac130000",
       "resource": {
         "resourceType": "Observation",
-        "id": "ncdhc-observation-nb-bloodspot-screen-example-1",
+        "id": "a01bacd2-ob1c-01ea-b3de-0242ac130000",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
@@ -265,7 +265,7 @@
         },
         "status": "final",
         "subject": {
-          "reference": "Patient/ncdhc-patient-child-example-1",
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
           "display": "Baby of Eve Bill"
         },
         "effectiveDateTime": "2020-08-12T16:13:03+10:00",
@@ -280,11 +280,11 @@
         },
         "performer": [
           {
-            "reference": "PractitionerRole/au-practitionerrole-examiner-example",
+            "reference": "PractitionerRole/a01bacd2-pr5c-11ea-b3de-0242ac130003",
             "display": "Examiner"
           },
           {
-            "reference": "Organization/au-organization-responsibleorg-example",
+            "reference": "Organization/a01bacd2-or5c-11ea-b3de-0242ac130002",
             "display": "Clinical Responsible Organisation"
           }
         ]

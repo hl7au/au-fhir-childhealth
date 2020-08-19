@@ -14,7 +14,7 @@
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam",
   "version": "0.1.0",
   "name": "NCDHCObservationHeadAndFontanellesExam",
-  "title": "NCDHC Observation Head & Fontanelles Examination",
+  "title": "NCDHC Observation Head and Fontanelles Examination",
   "status": "active",
   "description": "Observation profile to record outcome of the check performed around the anatomical feature of the infant skull",
   "fhirVersion": "4.0.1",
@@ -94,7 +94,7 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Date when Head & Fontanelles Examination was performed",
+        "short": "Date when Head and Fontanelles Examination was performed",
         "type": [
           {
             "code": "dateTime"
@@ -131,7 +131,7 @@
       {
         "id": "Observation.note",
         "path": "Observation.note",
-        "short": "Additional comments on Head & Fontanelles",
+        "short": "Additional comments on Head and Fontanelles",
         "mustSupport": true
       }
     ]

@@ -1,6 +1,6 @@
 {
   "resourceType": "Composition",
-  "id": "ncdhc-composition-nb-bloodspot-screen-example",
+  "id": "a01bacd2-bb5c-11ea-b3de-0242ac130000",
   "meta": {
     "profile": [
       "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
@@ -10,7 +10,7 @@
     {
       "mode": "professional",
       "party": {
-        "reference": "urn:uuid:a01bacd2-or5c-11ea-b3de-0242ac130002",
+        "reference": "Organization/a01bacd2-or5c-11ea-b3de-0242ac130002",
         "display": "Downunder Hospital"
       }
     }
@@ -26,23 +26,23 @@
     ]
   },
   "subject": {
-    "reference": "urn:uuid:a01bacd2-pt5c-11ea-b3de-0242ac130001",
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
     "display": "Child of Eve Bill"
   },
   "encounter": {
-    "reference": "urn:uuid:a01bacd2-ec5c-11ea-b3de-0242ac130004",
+    "reference": "Encounter/a01bacd2-ec5c-11ea-b3de-0242ac130004",
     "display": "Consultation on 12th Aug 2020 at Downunder Hospital"
   },
   "date": "2020-08-12T16:13:03+10:00",
   "author": [
     {
-      "reference": "urn:uuid:a01bacd2-pr5c-11ea-b3de-0242ac130003",
+      "reference": "PractitionerRole/a01bacd2-pr5c-11ea-b3de-0242ac130003",
       "display": "Helen Mayo"
     }
   ],
   "title": "Newborn blood spot screening",
   "custodian": {
-    "reference": "urn:uuid:a01bacd2-or5c-11ea-b3de-0242ac130002",
+    "reference": "Organization/a01bacd2-or5c-11ea-b3de-0242ac130002",
     "display": "Downunder Hospital"
   },
   "section": [
@@ -59,7 +59,7 @@
       },
       "entry": [
         {
-          "reference": "urn:uuid:a01bacd2-ob1c-01ea-b3de-0242ac130000"
+          "reference": "Observation/a01bacd2-ob1c-01ea-b3de-0242ac130000"
         }
       ]
     }
