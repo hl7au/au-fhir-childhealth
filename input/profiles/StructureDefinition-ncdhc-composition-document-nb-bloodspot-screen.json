@@ -6,7 +6,7 @@
   "name": "NCDHCCompositionNewbornBloodspotScreen",
   "title": "NCDHC Composition Newborn Bloodspot Screen",
   "status": "active",
-  "description": "This profile is being used to define the structure and narrative content necessary for Newborn Bloodspot Screen FHIR document.",
+  "description": "Composition based profile to define the structure and narrative content necessary for Newborn Bloodspot Screen FHIR document.",
   "purpose": " The document at a minimum carries the following details:\n   * The completion status of Newborn Bloodspot Screen\n   * Screening Date and Venue\n   * Details of the person who is clinically responsible for the undetaking of the exam\n   * Attester who has clinically signed off the data\n   * Author of the document \n   * The newborn Patient in context\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -63,8 +63,7 @@
         "path": "Composition.type.coding",
         "patternCoding": {
           "code": "NEWBRNBLDSCR",
-          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
-          "display": "Newborn Bloodspot Screen"
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
         }
       },
       {
@@ -77,8 +76,7 @@
         "path": "Composition.category.coding",
         "patternCoding": {
           "code": "SCREENING",
-          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1",
-          "display": "SCREENING"
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1"
         }
       },
       {
@@ -121,6 +119,7 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
+        "fixedString": "Newborn Bloodspot Screen",
         "mustSupport": true
       },
       {
@@ -136,7 +135,6 @@
       {
         "id": "Composition.attester.mode",
         "path": "Composition.attester.mode",
-        "patternCode": "professional",
         "mustSupport": true
       },
       {
@@ -169,7 +167,7 @@
       {
         "id": "Composition.section.title",
         "path": "Composition.section.title",
-        "patternString": "Newborn blood spot screening",
+        "fixedString": "Newborn blood spot screening",
         "mustSupport": true
       },
       {

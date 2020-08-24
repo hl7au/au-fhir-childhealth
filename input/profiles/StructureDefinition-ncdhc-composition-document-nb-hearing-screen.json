@@ -63,8 +63,7 @@
         "path": "Composition.type.coding",
         "patternCoding": {
           "code": "NEWBRNHRSCR",
-          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
-          "display": "Newborn Hearing Screen"
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
         }
       },
       {
@@ -77,8 +76,7 @@
         "path": "Composition.category.coding",
         "patternCoding": {
           "code": "SCREENING",
-          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1",
-          "display": "SCREENING"
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1"
         }
       },
       {
@@ -121,6 +119,7 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
+        "fixedString": "Newborn Hearing Screen",
         "mustSupport": true
       },
       {
@@ -131,7 +130,6 @@
       {
         "id": "Composition.attester.mode",
         "path": "Composition.attester.mode",
-        "patternCode": "professional",
         "mustSupport": true
       },
       {
@@ -164,7 +162,7 @@
       {
         "id": "Composition.section.title",
         "path": "Composition.section.title",
-        "patternString": "Hearing assessment",
+        "fixedString": "Hearing assessment",
         "mustSupport": true
       },
       {

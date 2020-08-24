@@ -61,7 +61,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
         },
         "name": "NCDHC Composition Newborn Bloodspot Screen",
-        "description": "This profile is being used to define the structure and narrative content necessary for Newborn Bloodspot Screen FHIR document.",
+        "description": "Composition based profile to define the structure and narrative content necessary for Newborn Bloodspot Screen FHIR document.",
         "exampleBoolean": false
       },
       {
@@ -157,7 +157,7 @@
           "reference": "Composition/a01bacd2-bb5c-11ea-b3de-0242ac130000"
         },
         "name": "a01bacd2-bb5c-11ea-b3de-0242ac130000",
-        "description": "Newborn Delivery Composition Example",
+        "description": "Newborn Bloodspot Screen Composition Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
       },
       {
@@ -218,19 +218,19 @@
       },
       {
         "reference": {
+          "reference": "Location/l01bacd2-ec5c-11ea-b3de-0242ac130004"
+        },
+        "name": "l01bacd2-ec5c-11ea-b3de-0242ac130004",
+        "description": "Newborn blood spot screening Encounter Location",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Bundle/ncdhc-document-nb-bloodspot-screen-example"
         },
         "name": "ncdhc-document-nb-bloodspot-screen-example",
         "description": "Newborn Bloodspot Screen FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-document"
-      },
-      {
-        "reference": {
-          "reference": "Location/ncdhc-location-cdhr-nb-bloodspot-screen-example"
-        },
-        "name": "ncdhc-location-cdhr-nb-bloodspot-screen-example",
-        "description": "Newborn blood spot screening Encounter Location",
-        "exampleBoolean": true
       },
       {
         "reference": {

@@ -23,15 +23,7 @@
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
           ]
         },
-        "attester": [
-          {
-            "mode": "professional",
-            "party": {
-              "reference": "Organization/a01bacd2-or5c-11ea-b3de-0242ac130002",
-              "display": "Downunder Hospital"
-            }
-          }
-        ],
+        "title": "Newborn Bloodspot Screen",
         "status": "final",
         "type": {
           "coding": [
@@ -57,7 +49,15 @@
             "display": "Helen Mayo"
           }
         ],
-        "title": "Newborn blood spot screening",
+        "attester": [
+          {
+            "mode": "professional",
+            "party": {
+              "reference": "Organization/a01bacd2-or5c-11ea-b3de-0242ac130002",
+              "display": "Downunder Hospital"
+            }
+          }
+        ],
         "custodian": {
           "reference": "Organization/a01bacd2-or5c-11ea-b3de-0242ac130002",
           "display": "Downunder Hospital"
