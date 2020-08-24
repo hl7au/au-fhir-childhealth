@@ -2,7 +2,7 @@ The following list of profiles are being used in the CDHR (Child Digital Health 
 
 ## CDHR Common Profiles
 * [Child Patient](StructureDefinition-ncdhc-patient-child.html) - Patient profile to represent the Child Patient in context.
-* [CHDR Encounter](StructureDefinition-ncdhc-encounter-cdhr.html) - Encouner profile to represent CDHR patient visit related details.
+* [CDHR Encounter](StructureDefinition-ncdhc-encounter-cdhr.html) - Encouner profile to represent CDHR patient visit related details.
 * [CDHR Clinical Document](StructureDefinition-ncdhc-bundle-document.html) - Bundle profile to represent a FHIR document.
 
 

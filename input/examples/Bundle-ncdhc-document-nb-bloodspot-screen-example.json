@@ -229,14 +229,14 @@
         "contained": [
           {
             "resourceType": "Location",
-            "id": "ncdhc-location-cdhr-nb-bloodspot-screen-example",
+            "id": "l01bacd2-ec5c-11ea-b3de-0242ac130004",
             "name": "Downunder Hospital"
           }
         ],
         "location": [
           {
             "location": {
-              "reference": "#ncdhc-location-cdhr-nb-bloodspot-screen-example",
+              "reference": "#l01bacd2-ec5c-11ea-b3de-0242ac130004",
               "display": "Downunder Hospital"
             },
             "status": "completed"
