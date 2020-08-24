@@ -16,7 +16,8 @@
   "name": "NCDHCObservationNewbornBloodspotScreen",
   "title": "NCDHC Observation Newborn Bloodspot Screen",
   "status": "active",
-  "description": "Observation profile to record completion status and any associated details of the test used to detect certain rare genetic conditions and disorders of the metabolism of the newborn in context.",
+  "description": "Observation profile to record the completion status and any associated details of the test used to detect certain rare genetic conditions and disorders of the metabolism of the newborn in context.",
+  "purpose": "\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -94,7 +95,7 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Date Bloodspot Screen Test performed",
+        "short": "Date Bloodspot Screen test performed",
         "type": [
           {
             "code": "dateTime"

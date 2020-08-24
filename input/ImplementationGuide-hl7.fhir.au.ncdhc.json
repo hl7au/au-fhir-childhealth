@@ -61,7 +61,15 @@
           "reference": "StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
         },
         "name": "NCDHC Composition Newborn Bloodspot Screen",
-        "description": "This profile is being used to define the structure and narrative content necessary for Newborn Bloodspot Screen FHIR document",
+        "description": "This profile is being used to define the structure and narrative content necessary for Newborn Bloodspot Screen FHIR document.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-document-nb-hearing-screen"
+        },
+        "name": "NCDHC Composition Newborn Hearing Screen",
+        "description": "Composition based profile to define the structure and narrative content necessary for Hearing Screen FHIR document.",
         "exampleBoolean": false
       },
       {
@@ -93,7 +101,15 @@
           "reference": "StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
         },
         "name": "NCDHC Observation Newborn Bloodspot Screen",
-        "description": "Observation profile to record completion status and any associated details of the test used to detect certain rare genetic conditions and disorders of the metabolism of the newborn in context.",
+        "description": "Observation profile to record the completion status and any associated details of the test used to detect certain rare genetic conditions and disorders of the metabolism of the newborn in context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-nb-hearing-screen"
+        },
+        "name": "NCDHC Observation Newborn Hearing Screen",
+        "description": "Observation profile to record Hearing Screening Test status and assoicated details for the newborn in context",
         "exampleBoolean": false
       },
       {
@@ -132,7 +148,7 @@
         "reference": {
           "reference": "ValueSet/ncdhc-observation-interpretation-1"
         },
-        "name": "NCDHC Observation interpretation",
+        "name": "NCDHC Observation Interpretation",
         "description": "National Children's Digital Health Collaborative - Codes to determine what type of Observation Interpretation are applicable to each completed check/observation.",
         "exampleBoolean": false
       },
@@ -191,6 +207,14 @@
         "name": "a01bacd2-pt5c-11ea-b3de-0242ac130002",
         "description": "Example of Child Patient profile to represent new born baby or a living child. This example contains only IHI as the identifier with record status",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
+      },
+      {
+        "reference": {
+          "reference": "Observation/h01bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "h01bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Newborn Hearing Screen example with completion status, Outcome Right, Outcome Left, Refer to Audiologist flag and effectiveDateTime",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-hearing-screen"
       },
       {
         "reference": {

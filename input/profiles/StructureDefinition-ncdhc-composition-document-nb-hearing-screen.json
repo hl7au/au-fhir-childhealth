@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-composition-document-nb-bloodspot-screen",
-  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen",
+  "id": "ncdhc-composition-document-nb-hearing-screen",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-hearing-screen",
   "version": "0.1.0",
-  "name": "NCDHCCompositionNewbornBloodspotScreen",
-  "title": "NCDHC Composition Newborn Bloodspot Screen",
+  "name": "NCDHCCompositionNewbornHearingScreen",
+  "title": "NCDHC Composition Newborn Hearing Screen",
   "status": "active",
-  "description": "This profile is being used to define the structure and narrative content necessary for Newborn Bloodspot Screen FHIR document.",
-  "purpose": " The document at a minimum carries the following details:\n   * The completion status of Newborn Bloodspot Screen\n   * Screening Date and Venue\n   * Details of the person who is clinically responsible for the undetaking of the exam\n   * Attester who has clinically signed off the data\n   * Author of the document \n   * The newborn Patient in context\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "description": "Composition based profile to define the structure and narrative content necessary for Hearing Screen FHIR document.",
+  "purpose": "The document at a minimum carries the following details:\n   * The completion status of Newborn Hearing Screen and outcome\n   * Screening Date and Venue\n   * Details of the person who is clinically responsible for the undetaking of the exam\n   * Attester who has clinically signed off the data\n   * Author of the document \n   * The newborn Patient in context\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -62,9 +62,9 @@
         "id": "Composition.type.coding",
         "path": "Composition.type.coding",
         "patternCoding": {
-          "code": "NEWBRNBLDSCR",
+          "code": "NEWBRNHRSCR",
           "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
-          "display": "Newborn Bloodspot Screen"
+          "display": "Newborn Hearing Screen"
         }
       },
       {
@@ -97,7 +97,7 @@
       {
         "id": "Composition.encounter",
         "path": "Composition.encounter",
-        "short": "Use Encounter.peroid to record the Date Bloodspot Screen Test performed",
+        "short": "Use Encounter.peroid to record the Date Hearing Screen Test performed",
         "type": [
           {
             "code": "Reference",
@@ -127,11 +127,6 @@
         "id": "Composition.confidentiality",
         "path": "Composition.confidentiality",
         "mustSupport": true
-      },
-      {
-        "id": "Composition.attester",
-        "path": "Composition.attester",
-        "min": 1
       },
       {
         "id": "Composition.attester.mode",
@@ -169,7 +164,7 @@
       {
         "id": "Composition.section.title",
         "path": "Composition.section.title",
-        "patternString": "Newborn blood spot screening",
+        "patternString": "Hearing assessment",
         "mustSupport": true
       },
       {
@@ -181,7 +176,7 @@
         "id": "Composition.section.code.coding",
         "path": "Composition.section.code.coding",
         "patternCoding": {
-          "code": "428447008",
+          "code": "427247008",
           "system": "http://snomed.info/sct"
         }
       },
@@ -194,7 +189,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-hearing-screen"
             ]
           }
         ],
