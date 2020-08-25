@@ -179,6 +179,14 @@
         "path": "Observation.hasMember",
         "short": "Indication of whether a referral is needed",
         "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
