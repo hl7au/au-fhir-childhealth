@@ -1,0 +1,13 @@
+﻿{
+  "name": "hl7.au.fhir.template",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "HL7 FHIR Template - for use with HL7 Australia-published FHIR IGs",
+  "author": "http://hl7.org/fhir",
+  "canonical": "http://fhir.org/templates/hl7.au.fhir.template",
+  "base": "hl7.au.base.template",
+  "dependencies": {
+    "hl7.au.base.template": "dev"
+  },
+  "version": "0.1.0"
+}
