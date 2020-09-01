@@ -108,15 +108,15 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.performer:performer",
-        "path": "Observation.performer",
-        "sliceName": "performer",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.performer:examiner",
         "path": "Observation.performer",
         "sliceName": "examiner",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer:legalOrg",
+        "path": "Observation.performer",
+        "sliceName": "legalOrg",
         "mustSupport": true
       },
       {
