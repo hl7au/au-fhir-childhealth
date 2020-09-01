@@ -58,6 +58,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
+        },
+        "name": "NCDHC Composition Newborn Bloodspot Screen",
+        "description": "Composition based profile to define the structure and narrative content necessary for Newborn Bloodspot Screen FHIR document.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-composition-document-nb-examination"
         },
         "name": "NCDHC Composition Newborn Examination",
@@ -170,6 +178,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
+        },
+        "name": "NCDHC Observation Newborn Bloodspot Screen",
+        "description": "Observation profile to record the completion status and any associated details of the test used to detect certain rare genetic conditions and disorders of the metabolism of the newborn in context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-nb-hearing-screen"
         },
         "name": "NCDHC Observation Newborn Hearing Screen",
@@ -274,6 +290,30 @@
       },
       {
         "reference": {
+          "reference": "Composition/a01bacd2-bb5c-11ea-b3de-0242ac130000"
+        },
+        "name": "a01bacd2-bb5c-11ea-b3de-0242ac130000",
+        "description": "Newborn Bloodspot Screen Composition Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/a01bacd2-ec5c-11ea-b3de-0242ac130004"
+        },
+        "name": "a01bacd2-ec5c-11ea-b3de-0242ac130004",
+        "description": "Newborn blood spot screening Encounter detils",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+      },
+      {
+        "reference": {
+          "reference": "Observation/a01bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "a01bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Newborn Bloodspot Screen example with completion status and effectiveDateTime",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
+      },
+      {
+        "reference": {
           "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000"
         },
         "name": "a01bacd2-pt5c-11ea-b3de-0242ac130000",
@@ -309,8 +349,16 @@
           "reference": "Location/l01bacd2-ec5c-11ea-b3de-0242ac130004"
         },
         "name": "l01bacd2-ec5c-11ea-b3de-0242ac130004",
-        "description": "Newborn examination Encounter Location",
+        "description": "Newborn blood spot screening Encounter Location",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/ncdhc-document-nb-bloodspot-screen-example"
+        },
+        "name": "ncdhc-document-nb-bloodspot-screen-example",
+        "description": "Newborn Bloodspot Screen FHIR Document Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-document"
       },
       {
         "reference": {
