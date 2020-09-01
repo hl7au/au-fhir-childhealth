@@ -198,25 +198,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.au/fhir/StructureDefinition/au-organization",
-              "http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole",
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-organisation",
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role",
               "http://hl7.org.au/fhir/StructureDefinition/au-patient",
-              "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Observation.performer:performer",
-        "path": "Observation.performer",
-        "sliceName": "performer",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole"
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner"
             ]
           }
         ]
@@ -231,7 +216,22 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.au/fhir/StructureDefinition/au-organization"
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.performer:legalOrg",
+        "path": "Observation.performer",
+        "sliceName": "legalOrg",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-organisation"
             ]
           }
         ]
