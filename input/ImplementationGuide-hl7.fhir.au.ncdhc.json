@@ -58,10 +58,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
+          "reference": "StructureDefinition/ncdhc-composition-document-nb-examination"
         },
-        "name": "NCDHC Composition Newborn Bloodspot Screen",
-        "description": "Composition based profile to define the structure and narrative content necessary for Newborn Bloodspot Screen FHIR document.",
+        "name": "NCDHC Composition Newborn Examination",
+        "description": "Composition based profile to define the structure and narrative content necessary for Newborn Examination FHIR document.",
         "exampleBoolean": false
       },
       {
@@ -82,10 +82,58 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-anus-exam"
+        },
+        "name": "NCDHC Observation Anus Examination",
+        "description": "Observation profile to record outcome of the Anus check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-base"
         },
         "name": "NCDHC Observation Base",
         "description": "This is the base profile for NCDHC Obsrevation. All NCDHC Observation profiles SHALL extend this profile (vital-sgins profiles are excluded)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-cardiovascular-heart-exam"
+        },
+        "name": "NCDHC Observation Cardiovascular / heart Examination",
+        "description": "Observation profile to record outcome of the Cardiovascular / heart check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-ears-exam"
+        },
+        "name": "NCDHC Observation Ears Examination",
+        "description": "Observation profile to record outcome of the Right and Left Ear check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-eyes-exam"
+        },
+        "name": "NCDHC Observation Eyes Examination",
+        "description": "Observation profile to record outcome of the Right and Left Eye check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-femoral-pulses-exam"
+        },
+        "name": "NCDHC Observation Femoral Pulses Examination",
+        "description": "Observation profile to record outcome of the Right and Left Femoral Pulses check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-genitalia-exam"
+        },
+        "name": "NCDHC Observation Genitalia Examination",
+        "description": "Observation profile to record outcome of the Genitalia check performed on the newborn",
         "exampleBoolean": false
       },
       {
@@ -98,10 +146,26 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
+          "reference": "StructureDefinition/ncdhc-observation-hips-exam"
         },
-        "name": "NCDHC Observation Newborn Bloodspot Screen",
-        "description": "Observation profile to record the completion status and any associated details of the test used to detect certain rare genetic conditions and disorders of the metabolism of the newborn in context.",
+        "name": "NCDHC Observation Hips Examination",
+        "description": "Observation profile to record outcome of the Hips check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-mouth-palate-exam"
+        },
+        "name": "NCDHC Observation Mouth / Palate Examination",
+        "description": "Observation profile to record Outcome of the Mouth / Palate check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-musculo-skeletal-exam"
+        },
+        "name": "NCDHC Observation Musculo Skeletal Examination",
+        "description": "Observation profile to record outcome of the Musculo Skeletal check performed on the newborn",
         "exampleBoolean": false
       },
       {
@@ -114,10 +178,66 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-reflexes-neurological-exam"
+        },
+        "name": "NCDHC Observation Reflexes / Neurological Examination",
+        "description": "Observation profile to record Outcome of the Outcome of the Reflexes / Neurological Check (Physical examination checking the involuntary movements or actions to determine the wellbeing of the newborns brain and nervous system) performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-respiratory-rate-exam"
+        },
+        "name": "NCDHC Observation Respiratory Rate Examination",
+        "description": "Observation profile to record outcome of the Respiratory Rate check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-skin-exam"
+        },
+        "name": "NCDHC Observation Skin Examination",
+        "description": "Observation profile to record outcome of the Skin check (Hyperpigmented macule, birthmarks, dry abrasions, bruises) performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-testes-exam"
+        },
+        "name": "NCDHC Observation Testes fully descended R/L Examination",
+        "description": "Observation profile to record outcome of the Testes check performed on the newborn male Patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-organisation"
+        },
+        "name": "NCDHC Organisation",
+        "description": "Profile to represent a Organisation in NCDHC Context",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-patient-child"
         },
         "name": "NCDHC Child Patient",
         "description": "Profile to represent a Child Patient in NCDHC Context",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-practitioner"
+        },
+        "name": "NCDHC Practitioner",
+        "description": "Profile to represent a Practitioner in NCDHC Context",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-practitioner-role"
+        },
+        "name": "NCDHC PractitionerRole",
+        "description": "Profile to represent a PractitionerRole in NCDHC Context",
         "exampleBoolean": false
       },
       {
@@ -154,43 +274,11 @@
       },
       {
         "reference": {
-          "reference": "Composition/a01bacd2-bb5c-11ea-b3de-0242ac130000"
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000"
         },
-        "name": "a01bacd2-bb5c-11ea-b3de-0242ac130000",
-        "description": "Newborn Bloodspot Screen Composition Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
-      },
-      {
-        "reference": {
-          "reference": "Encounter/a01bacd2-ec5c-11ea-b3de-0242ac130004"
-        },
-        "name": "a01bacd2-ec5c-11ea-b3de-0242ac130004",
-        "description": "Newborn blood spot screening Encounter detils",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
-      },
-      {
-        "reference": {
-          "reference": "Observation/a01bacd2-ob1c-01ea-b3de-0242ac130000"
-        },
-        "name": "a01bacd2-ob1c-01ea-b3de-0242ac130000",
-        "description": "Newborn Bloodspot Screen example with completion status and effectiveDateTime",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
-      },
-      {
-        "reference": {
-          "reference": "Organization/a01bacd2-or5c-11ea-b3de-0242ac130002"
-        },
-        "name": "a01bacd2-or5c-11ea-b3de-0242ac130002",
-        "description": "Example of AUBaseOrganisation to represent as clinically responsible organisation",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/a01bacd2-pr5c-11ea-b3de-0242ac130003"
-        },
-        "name": "a01bacd2-pr5c-11ea-b3de-0242ac130003",
-        "description": "Example of AUBasePractitionerRole  to represent as clinically responsible person",
-        "exampleBoolean": true
+        "name": "a01bacd2-pt5c-11ea-b3de-0242ac130000",
+        "description": "Example of Child Patient profile to represent new born baby or a living child. This example contains IHI and MRN of the Child",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
       },
       {
         "reference": {
@@ -221,16 +309,40 @@
           "reference": "Location/l01bacd2-ec5c-11ea-b3de-0242ac130004"
         },
         "name": "l01bacd2-ec5c-11ea-b3de-0242ac130004",
-        "description": "Newborn blood spot screening Encounter Location",
+        "description": "Newborn examination Encounter Location",
         "exampleBoolean": true
       },
       {
         "reference": {
-          "reference": "Bundle/ncdhc-document-nb-bloodspot-screen-example"
+          "reference": "Bundle/ncdhc-document-nb-exam-example"
         },
-        "name": "ncdhc-document-nb-bloodspot-screen-example",
-        "description": "Newborn Bloodspot Screen FHIR Document Example",
+        "name": "ncdhc-document-nb-exam-example",
+        "description": "Newborn Examination FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-document"
+      },
+      {
+        "reference": {
+          "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002"
+        },
+        "name": "o01bacd2-or5c-11ea-b3de-0242ac130002",
+        "description": "Example of NCDHCOrganisation to represent a clinically responsible organisation",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-organisation"
+      },
+      {
+        "reference": {
+          "reference": "Composition/p01bacd2-bb5c-11ea-b3de-0242ac130000"
+        },
+        "name": "p01bacd2-bb5c-11ea-b3de-0242ac130000",
+        "description": "Newborn Examination Composition Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-examination"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/p01bacd2-ec5c-11ea-b3de-0242ac130004"
+        },
+        "name": "p01bacd2-ec5c-11ea-b3de-0242ac130004",
+        "description": "Newborn examination Encounter detils",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
       },
       {
         "reference": {
@@ -261,8 +373,272 @@
           "reference": "Practitioner/p01bacd2-or5c-11ea-b3de-0242ac130002"
         },
         "name": "p01bacd2-or5c-11ea-b3de-0242ac130002",
-        "description": "Example of AUBasePractitioner  to represent as clinically responsible person",
-        "exampleBoolean": true
+        "description": "Example of NCDHCPractitioner  to represent as clinically responsible person",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003"
+        },
+        "name": "p01bacd2-pr5c-11ea-b3de-0242ac130003",
+        "description": "Example of AUBasePractitionerRole  to represent as clinically responsible person",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p02bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p02bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Mouth / Palate Examination example with interpretation only",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-mouth-palate-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p02bacd2-ob1c-01ea-b3de-0242ac130001"
+        },
+        "name": "p02bacd2-ob1c-01ea-b3de-0242ac130001",
+        "description": "Mouth / Palate Examination example with interpretation and comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-mouth-palate-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p02bacd2-ob1c-01ea-b3de-0242ac130002"
+        },
+        "name": "p02bacd2-ob1c-01ea-b3de-0242ac130002",
+        "description": "Mouth / Palate Examination example with absent reason",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-mouth-palate-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p03bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p03bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Cardiovascular / heart Examination example with interpretation only",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-cardiovascular-heart-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p03bacd2-ob1c-01ea-b3de-0242ac130001"
+        },
+        "name": "p03bacd2-ob1c-01ea-b3de-0242ac130001",
+        "description": "Cardiovascular / heart Examination example with interpretation and comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-cardiovascular-heart-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p03bacd2-ob1c-01ea-b3de-0242ac130002"
+        },
+        "name": "p03bacd2-ob1c-01ea-b3de-0242ac130002",
+        "description": "Cardiovascular / heart Examination example with absent reason",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-cardiovascular-heart-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p04bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p04bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Respiratory Rate Examination example with interpretation only",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-respiratory-rate-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p04bacd2-ob1c-01ea-b3de-0242ac130001"
+        },
+        "name": "p04bacd2-ob1c-01ea-b3de-0242ac130001",
+        "description": "Respiratory Rate Examination example with interpretation and comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-respiratory-rate-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p04bacd2-ob1c-01ea-b3de-0242ac130002"
+        },
+        "name": "p04bacd2-ob1c-01ea-b3de-0242ac130002",
+        "description": "Respiratory Rate Examination example with absent reason",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-respiratory-rate-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p05bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p05bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Anus Examination example with interpretation only",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-anus-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p05bacd2-ob1c-01ea-b3de-0242ac130001"
+        },
+        "name": "p05bacd2-ob1c-01ea-b3de-0242ac130001",
+        "description": "Anus Examination example with interpretation and comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-anus-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p05bacd2-ob1c-01ea-b3de-0242ac130002"
+        },
+        "name": "p05bacd2-ob1c-01ea-b3de-0242ac130002",
+        "description": "Anus Examination example with absent reason",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-anus-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p06bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p06bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Genitalia Examination example with interpretation only",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-genitalia-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p06bacd2-ob1c-01ea-b3de-0242ac130001"
+        },
+        "name": "p06bacd2-ob1c-01ea-b3de-0242ac130001",
+        "description": "Genitalia Examination example with interpretation and comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-genitalia-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p06bacd2-ob1c-01ea-b3de-0242ac130002"
+        },
+        "name": "p06bacd2-ob1c-01ea-b3de-0242ac130002",
+        "description": "Genitalia Examination example with absent reason",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-genitalia-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p07bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p07bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Musculo Skeletal  Examination example with interpretation only",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p07bacd2-ob1c-01ea-b3de-0242ac130001"
+        },
+        "name": "p07bacd2-ob1c-01ea-b3de-0242ac130001",
+        "description": "Musculo Skeletal  Examination example with interpretation and comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p07bacd2-ob1c-01ea-b3de-0242ac130002"
+        },
+        "name": "p07bacd2-ob1c-01ea-b3de-0242ac130002",
+        "description": "Musculo Skeletal  Examination example with absent reason",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p08bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p08bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Hips Examination example with interpretation only",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hips-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p08bacd2-ob1c-01ea-b3de-0242ac130001"
+        },
+        "name": "p08bacd2-ob1c-01ea-b3de-0242ac130001",
+        "description": "Hips Examination example with interpretation and comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hips-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p08bacd2-ob1c-01ea-b3de-0242ac130002"
+        },
+        "name": "p08bacd2-ob1c-01ea-b3de-0242ac130002",
+        "description": "Hips Examination example with absent reason",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hips-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p09bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p09bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Skin Examination example with interpretation only",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-skin-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p09bacd2-ob1c-01ea-b3de-0242ac130001"
+        },
+        "name": "p09bacd2-ob1c-01ea-b3de-0242ac130001",
+        "description": "Skin Examination example with interpretation and comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-skin-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p09bacd2-ob1c-01ea-b3de-0242ac130002"
+        },
+        "name": "p09bacd2-ob1c-01ea-b3de-0242ac130002",
+        "description": "Skin Examination example with absent reason",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-skin-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p10bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p10bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Reflexes / Neurological Examination example with interpretation only",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-reflexes-neurological-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p10bacd2-ob1c-01ea-b3de-0242ac130001"
+        },
+        "name": "p10bacd2-ob1c-01ea-b3de-0242ac130001",
+        "description": "Reflexes / Neurological Examination example with interpretation and comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-reflexes-neurological-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p10bacd2-ob1c-01ea-b3de-0242ac130002"
+        },
+        "name": "p10bacd2-ob1c-01ea-b3de-0242ac130002",
+        "description": "Reflexes / Neurological Examination example with absent reason",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-reflexes-neurological-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p11bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p11bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Newborn Femoral Pulses examination example presenting Outcome of the child's femoral pulses right assessment, Outcome of the child's femoral pulses left assessment and effectiveDateTime",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-femoral-pulses-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p12bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p12bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Newborn Ear examination example presenting Outcome of the newborns's right ear, Outcome of the newborns's left ear and effectiveDateTime",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-ears-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p13bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p13bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Newborn Eye examination example presenting Outcome of the newborns's right Eye, Outcome of the newborns's left Eye and effectiveDateTime",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-eyes-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p14bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p14bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Newborn Testes examination example presenting test is not applicable for a female child and effectiveDateTime",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-testes-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p14bacd2-ob1c-01ea-b3de-0242ac130001"
+        },
+        "name": "p14bacd2-ob1c-01ea-b3de-0242ac130001",
+        "description": "Newborn Testes examination example presenting Outcome of the male child's right testes assessement , Outcome of the male child's left testes assessement and effectiveDateTime",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-testes-exam"
       }
     ],
     "page": {
