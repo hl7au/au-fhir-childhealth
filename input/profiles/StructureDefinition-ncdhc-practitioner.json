@@ -1,0 +1,99 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-practitioner",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner",
+  "version": "0.1.0",
+  "name": "NCDHCPractitioner",
+  "title": "NCDHC Practitioner",
+  "status": "active",
+  "description": "Profile to represent a Practitioner in NCDHC Context",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "type"
+            },
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the identifer profile"
+        }
+      },
+      {
+        "id": "Practitioner.identifier:identifierHPII",
+        "path": "Practitioner.identifier",
+        "sliceName": "identifierHPII",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-hpiinumber"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.active",
+        "path": "Practitioner.active",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification",
+        "path": "Practitioner.qualification",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification:ahpraRegistration",
+        "path": "Practitioner.qualification",
+        "sliceName": "ahpraRegistration",
+        "mustSupport": true
+      }
+    ]
+  }
+}

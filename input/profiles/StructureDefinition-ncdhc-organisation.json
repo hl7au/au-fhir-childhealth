@@ -1,0 +1,93 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-organisation",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-organisation",
+  "version": "0.1.0",
+  "name": "NCDHCOrganisation",
+  "title": "NCDHC Organisation",
+  "status": "active",
+  "description": "Profile to represent a Organisation in NCDHC Context",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization.identifier",
+        "path": "Organization.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "type.coding"
+            },
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the identifer profile"
+        }
+      },
+      {
+        "id": "Organization.identifier:identifierHPIO",
+        "path": "Organization.identifier",
+        "sliceName": "identifierHPIO",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-hpionumber"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.active",
+        "path": "Organization.active",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.name",
+        "path": "Organization.name",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.address",
+        "path": "Organization.address",
+        "mustSupport": true
+      }
+    ]
+  }
+}

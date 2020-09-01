@@ -1,0 +1,43 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "p01bacd2-pr5c-11ea-b3de-0242ac130003",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org.au/CodeSystem/v2-0203",
+            "code": "NPIO",
+            "display": "National Provider at Organisation Identifier"
+          }
+        ],
+        "text": "NPIO"
+      },
+      "system": "http://hl7.org.au/id/npio",
+      "value": "8003619900015717@8003621566684455"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/p01bacd2-or5c-11ea-b3de-0242ac130002"
+  },
+  "organization": {
+    "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002"
+  },
+  "specialty": [
+    {
+      "coding": [
+        {
+          "code": "408443003",
+          "system": "http://snomed.info/sct",
+          "display": "General medical practice"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-practitioner-role",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role",
+  "version": "0.1.0",
+  "name": "NCDHCPractitionerRole",
+  "title": "NCDHC PractitionerRole",
+  "status": "active",
+  "description": "Profile to represent a PractitionerRole in NCDHC Context",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.identifier",
+        "path": "PractitionerRole.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "type"
+            },
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the identifer profile"
+        }
+      },
+      {
+        "id": "PractitionerRole.identifier:identifierNPIO",
+        "path": "PractitionerRole.identifier",
+        "sliceName": "identifierNPIO",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-nationalprovideridentifieratorganisation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.identifier:identifierLSI",
+        "path": "PractitionerRole.identifier",
+        "sliceName": "identifierLSI",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-employeenumber"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.active",
+        "path": "PractitionerRole.active",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.specialty",
+        "path": "PractitionerRole.specialty",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}
