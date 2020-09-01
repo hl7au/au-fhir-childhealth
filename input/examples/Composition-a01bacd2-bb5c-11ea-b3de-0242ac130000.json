@@ -7,6 +7,25 @@
     ]
   },
   "title": "Newborn Bloodspot Screen",
+  "section": [
+    {
+      "title": "Newborn blood spot screening",
+      "code": {
+        "coding": [
+          {
+            "code": "428447008",
+            "system": "http://snomed.info/sct",
+            "display": "Newborn blood spot screening"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/a01bacd2-ob1c-01ea-b3de-0242ac130000"
+        }
+      ]
+    }
+  ],
   "status": "final",
   "type": {
     "coding": [
@@ -44,24 +63,5 @@
   "custodian": {
     "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
     "display": "Downunder Hospital"
-  },
-  "section": [
-    {
-      "title": "Newborn blood spot screening",
-      "code": {
-        "coding": [
-          {
-            "code": "428447008",
-            "system": "http://snomed.info/sct",
-            "display": "Newborn blood spot screening"
-          }
-        ]
-      },
-      "entry": [
-        {
-          "reference": "Observation/a01bacd2-ob1c-01ea-b3de-0242ac130000"
-        }
-      ]
-    }
-  ]
+  }
 }
