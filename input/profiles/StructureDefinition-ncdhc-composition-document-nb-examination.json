@@ -1,0 +1,450 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-composition-document-nb-examination",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-examination",
+  "version": "0.1.0",
+  "name": "NCDHCCompositionNewbornExamination",
+  "title": "NCDHC Composition Newborn Examination",
+  "status": "active",
+  "description": "Composition based profile to define the structure and narrative content necessary for Newborn Examination FHIR document.",
+  "purpose": " The document at a minimum carries the following details:\n   * The completion outcome of the following Newborn Examinations:\n   * Examination Date and Venue\n   * Details of the person who is clinically responsible for the undetaking of the exam\n   * Attester who has clinically signed off the data\n   * Author of the document \n   * The newborn Patient in context\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "fhirdocumentreference",
+      "uri": "http://hl7.org/fhir/documentreference",
+      "name": "FHIR DocumentReference"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-clinical-document-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.identifier",
+        "path": "Composition.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.status",
+        "path": "Composition.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.type",
+        "path": "Composition.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.type.coding",
+        "path": "Composition.type.coding",
+        "patternCoding": {
+          "code": "NEWBRNEXM",
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
+        }
+      },
+      {
+        "id": "Composition.category",
+        "path": "Composition.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.category.coding",
+        "path": "Composition.category.coding",
+        "patternCoding": {
+          "code": "EXAM",
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1"
+        }
+      },
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.encounter",
+        "path": "Composition.encounter",
+        "short": "Use Encounter to record the Date and Time of Check, Venue, Examiner details",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.date",
+        "path": "Composition.date",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.author",
+        "path": "Composition.author",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.title",
+        "path": "Composition.title",
+        "fixedString": "Newborn Examination",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.confidentiality",
+        "path": "Composition.confidentiality",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.attester",
+        "path": "Composition.attester",
+        "min": 1
+      },
+      {
+        "id": "Composition.attester.mode",
+        "path": "Composition.attester.mode",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.attester.time",
+        "path": "Composition.attester.time",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.attester.party",
+        "path": "Composition.attester.party",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.custodian",
+        "path": "Composition.custodian",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.relatesTo",
+        "path": "Composition.relatesTo",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "fixedString": "Health conditions section",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "patternString": "Health conditions section"
+      },
+      {
+        "id": "Composition.section.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "$this.resolve()"
+            }
+          ],
+          "rules": "closed",
+          "ordered": false,
+          "description": "Slice based on the profile:resolve()"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.section.entry:headAndFontanelles",
+        "path": "Composition.section.entry",
+        "sliceName": "headAndFontanelles",
+        "short": "Head & Fontanelles",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry:eyes",
+        "path": "Composition.section.entry",
+        "sliceName": "eyes",
+        "short": "Eyes",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-eyes-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry:ears",
+        "path": "Composition.section.entry",
+        "sliceName": "ears",
+        "short": "Ears",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-ears-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry:mouthPalate",
+        "path": "Composition.section.entry",
+        "sliceName": "mouthPalate",
+        "short": "Mouth / Palate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-mouth-palate-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry:cardiovascularHeart",
+        "path": "Composition.section.entry",
+        "sliceName": "cardiovascularHeart",
+        "short": "Cardiovascular / heart",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-cardiovascular-heart-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry:femoralPulses",
+        "path": "Composition.section.entry",
+        "sliceName": "femoralPulses",
+        "short": "Femoral Pulses",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-femoral-pulses-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry:respiratoryRate",
+        "path": "Composition.section.entry",
+        "sliceName": "respiratoryRate",
+        "short": "Respiratory Rate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-respiratory-rate-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry:anus",
+        "path": "Composition.section.entry",
+        "sliceName": "anus",
+        "short": "Anus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-anus-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry:genitalia",
+        "path": "Composition.section.entry",
+        "sliceName": "genitalia",
+        "short": "Genitalia",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-genitalia-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry:testesFullyDescended",
+        "path": "Composition.section.entry",
+        "sliceName": "testesFullyDescended",
+        "short": "Testes fully descended R/L",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-testes-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry:musculoSkeletal",
+        "path": "Composition.section.entry",
+        "sliceName": "musculoSkeletal",
+        "short": "Musculo Skeletal",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry:hips",
+        "path": "Composition.section.entry",
+        "sliceName": "hips",
+        "short": "Hips",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hips-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry:skin",
+        "path": "Composition.section.entry",
+        "sliceName": "skin",
+        "short": "Skin",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-skin-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry:reflexesNeurological",
+        "path": "Composition.section.entry",
+        "sliceName": "reflexesNeurological",
+        "short": "Reflexes / Neurological",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-reflexes-neurological-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      }
+    ]
+  }
+}
