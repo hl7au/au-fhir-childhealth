@@ -1,3 +1,6 @@
+<!-- examples.md {% comment %}
+
+{% endcomment %} -->
 #### Bundle
 {% include list-simple-bundles.xhtml %}
 

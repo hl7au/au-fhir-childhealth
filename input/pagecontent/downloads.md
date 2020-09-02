@@ -1,3 +1,6 @@
+<!-- downloads.md {% comment %}
+
+{% endcomment %} -->
 **Validator Pack and Definitions:**
 
 The following file contains format specific definitions files.

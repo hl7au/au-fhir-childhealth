@@ -1,3 +1,6 @@
+<!-- terminology.md {% comment %}
+
+{% endcomment %} -->
 #### Value Sets
 
 Value sets used in this implementation guide.
