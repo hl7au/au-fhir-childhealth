@@ -189,19 +189,21 @@
           "discriminator": [
             {
               "type": "type",
-              "path": "resolve()"
+              "path": "$this.resolve()"
             }
           ],
-          "rules": "open"
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on type:$this.resolve()"
         },
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-organisation",
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role",
+              "http://hl7.org.au/fhir/StructureDefinition/au-organization",
+              "http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole",
               "http://hl7.org.au/fhir/StructureDefinition/au-patient",
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner"
+              "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
             ]
           }
         ]
@@ -226,7 +228,7 @@
         "path": "Observation.performer",
         "sliceName": "legalOrg",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Reference",

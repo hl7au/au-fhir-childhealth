@@ -77,7 +77,7 @@
         "path": "PractitionerRole.identifier",
         "sliceName": "identifierLSI",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Identifier",
@@ -112,7 +112,6 @@
       {
         "id": "PractitionerRole.specialty",
         "path": "PractitionerRole.specialty",
-        "min": 1,
         "mustSupport": true
       }
     ]
