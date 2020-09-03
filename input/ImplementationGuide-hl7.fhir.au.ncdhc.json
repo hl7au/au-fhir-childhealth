@@ -90,6 +90,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-abdomen-exam"
+        },
+        "name": "NCDHC Observation Abdomen Examination",
+        "description": "Observation profile to record outcome of the Abdomen check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-anus-exam"
         },
         "name": "NCDHC Observation Anus Examination",
@@ -162,6 +170,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-limbs-exam"
+        },
+        "name": "NCDHC Observation Limbs Examination",
+        "description": "Observation profile to record outcome of the Limbs check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-mouth-palate-exam"
         },
         "name": "NCDHC Observation Mouth / Palate Examination",
@@ -218,10 +234,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-spine-exam"
+        },
+        "name": "NCDHC Observation Spine Examination",
+        "description": "Observation profile to record outcome of the Spine check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-testes-exam"
         },
         "name": "NCDHC Observation Testes fully descended R/L Examination",
         "description": "Observation profile to record outcome of the Testes check performed on the newborn male Patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-umbilicus-exam"
+        },
+        "name": "NCDHC Observation Umbilicus Examination",
+        "description": "Observation profile to record outcome of the Umbilicus check performed on the newborn",
         "exampleBoolean": false
       },
       {
@@ -687,6 +719,38 @@
         "name": "p14bacd2-ob1c-01ea-b3de-0242ac130001",
         "description": "Newborn Testes examination example presenting Outcome of the male child's right testes assessement , Outcome of the male child's left testes assessement and effectiveDateTime",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-testes-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p15bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p15bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Abdomen Examination example with interpretation only",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-abdomen-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p16bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p16bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Umbilicus Examination example with interpretation only",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-umbilicus-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p17bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p17bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Spine Examination example with interpretation only",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-spine-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/p18bacd2-ob1c-01ea-b3de-0242ac130000"
+        },
+        "name": "p18bacd2-ob1c-01ea-b3de-0242ac130000",
+        "description": "Limbs Examination example with interpretation only",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-limbs-exam"
       }
     ],
     "page": {
