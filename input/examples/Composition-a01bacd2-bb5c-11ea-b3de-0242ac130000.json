@@ -10,6 +10,7 @@
   "section": [
     {
       "title": "Newborn blood spot screening",
+      "mode": "snapshot",
       "code": {
         "coding": [
           {
