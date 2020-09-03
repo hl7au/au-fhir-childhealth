@@ -174,12 +174,16 @@
         "id": "Composition.section.code",
         "path": "Composition.section.code",
         "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "60151004",
+              "system": "http://snomed.info/sct",
+              "display": "Neonatal screening"
+            }
+          ]
+        },
         "mustSupport": true
-      },
-      {
-        "id": "Composition.section.code.coding.display",
-        "path": "Composition.section.code.coding.display",
-        "patternString": "Health conditions section"
       },
       {
         "id": "Composition.section.entry",
@@ -187,13 +191,13 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "profile",
-              "path": "$this.resolve()"
+              "type": "pattern",
+              "path": "$this.resolve().code.coding"
             }
           ],
           "rules": "closed",
           "ordered": false,
-          "description": "Slice based on the profile:resolve()"
+          "description": "Slice based on the pattern:$this.resolve().code.coding"
         },
         "min": 1
       },
@@ -317,6 +321,40 @@
         "mustSupport": true
       },
       {
+        "id": "Composition.section.entry:abdomen",
+        "path": "Composition.section.entry",
+        "sliceName": "abdomen",
+        "short": "Abdomen",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-abdomen-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry:umbilicus",
+        "path": "Composition.section.entry",
+        "sliceName": "umbilicus",
+        "short": "Umbilicus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-umbilicus-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section.entry:anus",
         "path": "Composition.section.entry",
         "sliceName": "anus",
@@ -379,6 +417,40 @@
             "code": "Reference",
             "targetProfile": [
               "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry:limbs",
+        "path": "Composition.section.entry",
+        "sliceName": "limbs",
+        "short": "Limbs",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-limbs-exam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry:spine",
+        "path": "Composition.section.entry",
+        "sliceName": "spine",
+        "short": "Spine",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-spine-exam"
             ]
           }
         ],

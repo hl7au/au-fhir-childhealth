@@ -9,9 +9,9 @@
   "code": {
     "coding": [
       {
-        "code": "281004000",
+        "code": "363926002",
         "system": "http://snomed.info/sct",
-        "display": "Visual function"
+        "display": "Eye/vision observable"
       }
     ]
   },

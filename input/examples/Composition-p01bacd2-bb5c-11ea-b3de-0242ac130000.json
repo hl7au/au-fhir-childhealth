@@ -13,7 +13,9 @@
       "code": {
         "coding": [
           {
-            "display": "Health conditions section"
+            "code": "60151004",
+            "system": "http://snomed.info/sct",
+            "display": "Neonatal screening"
           }
         ]
       },
@@ -73,6 +75,22 @@
         {
           "reference": "Observation/p14bacd2-ob1c-01ea-b3de-0242ac130000",
           "display": "Position of testicle"
+        },
+        {
+          "reference": "Observation/p15bacd2-ob1c-01ea-b3de-0242ac130000",
+          "display": "Abdominal examination finding"
+        },
+        {
+          "reference": "Observation/p16bacd2-ob1c-01ea-b3de-0242ac130000",
+          "display": "Umbilical stump observable"
+        },
+        {
+          "reference": "Observation/p17bacd2-ob1c-01ea-b3de-0242ac130000",
+          "display": "Spinal region observable"
+        },
+        {
+          "reference": "Observation/p18bacd2-ob1c-01ea-b3de-0242ac130000",
+          "display": "Limb structure observable"
         }
       ]
     }
