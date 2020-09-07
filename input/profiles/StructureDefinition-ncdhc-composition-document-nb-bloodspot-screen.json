@@ -190,7 +190,7 @@
       {
         "id": "Composition.section.mode",
         "path": "Composition.section.mode",
-        "patternCode": "snapshot",
+        "fixedCode": "snapshot",
         "mustSupport": true
       },
       {

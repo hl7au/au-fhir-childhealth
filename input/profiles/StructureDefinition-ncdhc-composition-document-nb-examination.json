@@ -167,7 +167,7 @@
         "id": "Composition.section.title",
         "path": "Composition.section.title",
         "min": 1,
-        "fixedString": "Health conditions section",
+        "fixedString": "Neonatal screening",
         "mustSupport": true
       },
       {
@@ -178,8 +178,7 @@
           "coding": [
             {
               "code": "60151004",
-              "system": "http://snomed.info/sct",
-              "display": "Neonatal screening"
+              "system": "http://snomed.info/sct"
             }
           ]
         },
