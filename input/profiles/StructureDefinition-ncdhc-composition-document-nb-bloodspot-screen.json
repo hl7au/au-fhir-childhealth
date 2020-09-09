@@ -61,6 +61,7 @@
       {
         "id": "Composition.type.coding",
         "path": "Composition.type.coding",
+        "min": 1,
         "patternCoding": {
           "code": "NEWBRNBLDSCR",
           "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
@@ -75,6 +76,7 @@
       {
         "id": "Composition.category.coding",
         "path": "Composition.category.coding",
+        "min": 1,
         "patternCoding": {
           "code": "SCREENING",
           "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1",
