@@ -84,6 +84,21 @@
       {
         "id": "Bundle.entry",
         "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "resource"
+            },
+            {
+              "type": "value",
+              "path": "fullUrl"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the entry pattern"
+        },
         "short": "Document must have atleast one entry",
         "min": 1
       },
@@ -96,7 +111,7 @@
       {
         "id": "Bundle.entry.resource",
         "path": "Bundle.entry.resource",
-        "short": "The resource in the entry. Composition should be the first resource in the Bundle document",
+        "short": "Other resource entries in the document.",
         "min": 1,
         "mustSupport": true
       },
@@ -112,6 +127,51 @@
       },
       {
         "id": "Bundle.entry.response",
+        "path": "Bundle.entry.response",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry:compositionEntry",
+        "path": "Bundle.entry",
+        "sliceName": "compositionEntry",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry:compositionEntry.fullUrl",
+        "path": "Bundle.entry.fullUrl",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:compositionEntry.resource",
+        "path": "Bundle.entry.resource",
+        "short": "Composition should be the first resource in the Bundle document",
+        "min": 1,
+        "type": [
+          {
+            "code": "Composition",
+            "profile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen",
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-examination",
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-hearing-screen"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:compositionEntry.search",
+        "path": "Bundle.entry.search",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry:compositionEntry.request",
+        "path": "Bundle.entry.request",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry:compositionEntry.response",
         "path": "Bundle.entry.response",
         "max": "0"
       }
