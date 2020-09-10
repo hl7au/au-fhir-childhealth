@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-composition-document-nb-hearing-screen",
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-hearing-screen",
-  "version": "0.1.0",
+  "version": "current",
   "name": "NCDHCCompositionNewbornHearingScreen",
   "title": "NCDHC Composition Newborn Hearing Screen",
   "status": "active",

@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-eyes-exam",
-  "version": "0.1.0",
+  "version": "current",
   "name": "NCDHCObservationEyesExam",
   "title": "NCDHC Observation Eyes Examination",
   "status": "active",

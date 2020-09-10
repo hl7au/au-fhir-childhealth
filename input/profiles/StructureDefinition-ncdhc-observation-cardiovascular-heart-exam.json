@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-cardiovascular-heart-exam",
-  "version": "0.1.0",
+  "version": "current",
   "name": "NCDHCObservationCardiovascularHeartExam",
   "title": "NCDHC Observation Cardiovascular / heart Examination",
   "status": "active",

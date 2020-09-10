@@ -5,7 +5,7 @@
   "id": "ncdhc-observation-interpretation-1",
   "title": "NCDHC Observation Interpretation",
   "description": "National Children's Digital Health Collaborative - Codes to determine what type of Observation Interpretation are applicable to each completed check/observation.",
-  "version": "0.1.0",
+  "version": "current",
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-observation-interpretation-1",
   "compose": {
     "include": [

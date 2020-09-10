@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-reflexes-neurological-exam",
-  "version": "0.1.0",
+  "version": "current",
   "name": "NCDHCObservationReflexesNeurologicalExam",
   "title": "NCDHC Observation Reflexes / Neurological Examination",
   "status": "active",

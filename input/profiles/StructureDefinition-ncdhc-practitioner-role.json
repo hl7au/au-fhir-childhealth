@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-practitioner-role",
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role",
-  "version": "0.1.0",
+  "version": "current",
   "name": "NCDHCPractitionerRole",
   "title": "NCDHC PractitionerRole",
   "status": "active",
@@ -97,11 +97,27 @@
         "id": "PractitionerRole.practitioner",
         "path": "PractitionerRole.practitioner",
         "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
         "id": "PractitionerRole.organization",
         "path": "PractitionerRole.organization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-organisation"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

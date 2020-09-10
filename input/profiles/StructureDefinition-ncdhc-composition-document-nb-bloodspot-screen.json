@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-composition-document-nb-bloodspot-screen",
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen",
-  "version": "0.1.0",
+  "version": "current",
   "name": "NCDHCCompositionNewbornBloodspotScreen",
   "title": "NCDHC Composition Newborn Bloodspot Screen",
   "status": "active",

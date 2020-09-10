@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-respiratory-rate-exam",
-  "version": "0.1.0",
+  "version": "current",
   "name": "NCDHCObservationRespiratoryRateExam",
   "title": "NCDHC Observation Respiratory Rate Examination",
   "status": "active",

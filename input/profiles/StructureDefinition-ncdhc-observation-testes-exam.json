@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-testes-exam",
-  "version": "0.1.0",
+  "version": "current",
   "name": "NCDHCObservationTestesExam",
   "title": "NCDHC Observation Testes fully descended R/L Examination",
   "status": "active",

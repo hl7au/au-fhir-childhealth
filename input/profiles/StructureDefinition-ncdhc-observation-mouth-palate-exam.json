@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-mouth-palate-exam",
-  "version": "0.1.0",
+  "version": "current",
   "name": "NCDHCObservationMouthPalateExam",
   "title": "NCDHC Observation Mouth / Palate Examination",
   "status": "active",

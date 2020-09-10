@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-anus-exam",
-  "version": "0.1.0",
+  "version": "current",
   "name": "NCDHCObservationAnusExam",
   "title": "NCDHC Observation Anus Examination",
   "status": "active",

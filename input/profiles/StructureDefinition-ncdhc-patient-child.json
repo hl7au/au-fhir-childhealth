@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncdhc-patient-child",
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child",
-  "version": "0.1.0",
+  "version": "current",
   "name": "NCDHCPatientChild",
   "title": "NCDHC Child Patient",
   "status": "active",

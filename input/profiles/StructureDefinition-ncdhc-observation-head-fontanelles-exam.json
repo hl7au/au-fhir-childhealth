@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam",
-  "version": "0.1.0",
+  "version": "current",
   "name": "NCDHCObservationHeadAndFontanellesExam",
   "title": "NCDHC Observation Head and Fontanelles Examination",
   "status": "active",

@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "hl7.fhir.au.ncdhc",
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ImplementationGuide/hl7.fhir.au.ncdhc",
-  "version": "0.1.0",
+  "version": "current",
   "name": "NCDHCFHIRR4ImplementationGuide",
   "title": "NCDHC FHIR R4 Implementation Guide",
   "status": "draft",
@@ -54,6 +54,14 @@
         },
         "name": "NCDHC FHIR Document Base",
         "description": "NCDHC FHIR document profile using Bundle resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-clinical-document-base"
+        },
+        "name": "NCDHC Composition Clinical Document Base",
+        "description": "This profile is used to represent the Compsition associated with a FHIR Clinical Document",
         "exampleBoolean": false
       },
       {
@@ -286,14 +294,6 @@
         },
         "name": "NCDHC PractitionerRole",
         "description": "Profile to represent a PractitionerRole in NCDHC Context",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ncdhc-composition-clinical-document-base"
-        },
-        "name": "NCDHC Composition Clinical Document Base",
-        "description": "This profile is used to represent the Compsition associated with a FHIR Clinical Document",
         "exampleBoolean": false
       },
       {
