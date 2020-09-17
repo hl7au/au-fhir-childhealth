@@ -87,17 +87,16 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "type",
-              "path": "resource"
-            },
-            {
               "type": "value",
               "path": "fullUrl"
+            },
+            {
+              "type": "type",
+              "path": "resource"
             }
           ],
           "rules": "open",
-          "ordered": false,
-          "description": "Slice based on the entry pattern"
+          "description": "Slice based on the resource type and fullurl"
         },
         "short": "Document must have atleast one entry",
         "min": 1
