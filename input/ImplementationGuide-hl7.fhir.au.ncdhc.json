@@ -114,6 +114,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-audiologist-referral-indication"
+        },
+        "name": "NCDHC Observation Newborn Hearing Audiologist Referral Indication",
+        "description": "Observation profile to record indication on Audiologist Referral decision taken during Hearing Screening Test of the newborn in context",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-base"
         },
         "name": "NCDHC Observation Base",
@@ -298,6 +306,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ncdhc-audiologist-referral-status-1"
+        },
+        "name": "NCDHC Audiologist Referral Status ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHCValueSetAudiologist Referral Status are applicable to each completed check/observation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/ncdhc-observation-completion-status-1"
         },
         "name": "NCDHC Observation Completion Status",
@@ -407,6 +423,14 @@
         "name": "h01bacd2-ob1c-01ea-b3de-0012ac130000",
         "description": "Newborn Hearing Screen example with completion status, Outcome Right, Outcome Left, Refer to Audiologist flag and effectiveDateTime",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-hearing-screen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/h01bacd2-ob1c-01ea-b3de-0012ac230000"
+        },
+        "name": "h01bacd2-ob1c-01ea-b3de-0012ac230000",
+        "description": "Newborn Hearing Screen Hearing Audiologist Referral Indication example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-audiologist-referral-indication"
       },
       {
         "reference": {
