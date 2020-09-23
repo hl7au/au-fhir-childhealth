@@ -190,12 +190,13 @@
         "id": "Observation.hasMember",
         "path": "Observation.hasMember",
         "short": "Indication of whether a referral is needed",
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Observation"
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-audiologist-referral-indication"
             ]
           }
         ],
@@ -214,14 +215,15 @@
           "rules": "open",
           "ordered": false,
           "description": "Slice on component based on the code pattern"
-        }
+        },
+        "min": 2
       },
       {
         "id": "Observation.component:outcomeRight",
         "path": "Observation.component",
         "sliceName": "outcomeRight",
         "short": "Outcome Right",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "mustSupport": true
       },
@@ -271,7 +273,7 @@
         "path": "Observation.component",
         "sliceName": "outcomeLeft",
         "short": "Outcome Left",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "mustSupport": true
       },
@@ -314,56 +316,6 @@
         "binding": {
           "strength": "preferred",
           "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-observation-interpretation-1"
-        }
-      },
-      {
-        "id": "Observation.component:outcomeReferToAudiologist",
-        "path": "Observation.component",
-        "sliceName": "outcomeReferToAudiologist",
-        "short": "Refer to Audiologist ",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:outcomeReferToAudiologist.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "308456006",
-              "system": "http://snomed.info/sct"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Observation.component:outcomeReferToAudiologist.value[x]",
-        "path": "Observation.component.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "Observation.component:outcomeReferToAudiologist.valueCodeableConcept",
-        "path": "Observation.component.valueCodeableConcept",
-        "min": 0,
-        "max": "1",
-        "binding": {
-          "strength": "preferred",
-          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-observation-completion-status-1"
         }
       }
     ]

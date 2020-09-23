@@ -55,26 +55,6 @@
           }
         ]
       }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "308456006",
-            "system": "http://snomed.info/sct",
-            "display": "Referral to audiologist"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "443938003",
-            "system": "http://snomed.info/sct",
-            "display": "Procedure carried out on subject"
-          }
-        ]
-      }
     }
   ],
   "status": "final",
@@ -100,6 +80,12 @@
     {
       "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
       "display": "Clinical Responsible Organisation"
+    }
+  ],
+  "hasMember": [
+    {
+      "reference": "Observation/h01bacd2-ob1c-01ea-b3de-0012ac230000",
+      "display": "Referral to audiologist"
     }
   ]
 }
