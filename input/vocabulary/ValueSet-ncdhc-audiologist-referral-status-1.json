@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NCDHCValueSetAudiologistReferralStatus",
+  "id": "ncdhc-audiologist-referral-status-1",
+  "title": "NCDHC Audiologist Referral Status ValueSet",
+  "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHCValueSetAudiologist Referral Status are applicable to each completed check/observation.",
+  "version": "current",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-audiologist-referral-status-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "183924009",
+            "display": "Referral needed"
+          },
+          {
+            "code": "1494481000168106",
+            "display": "Referral not indicated"
+          }
+        ]
+      }
+    ]
+  }
+}
