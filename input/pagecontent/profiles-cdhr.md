@@ -9,9 +9,10 @@ The following list of profiles are being used in the CDHR (Child Digital Health 
 * [NCDHC Practitioner](StructureDefinition-ncdhc-practitioner.html) - Profile to represent a Practitioner in NCDHC Context.
 * [NCDHC PractitionerRole](StructureDefinition-ncdhc-practitioner-role.html) - Profile to represent a PractitionerRole in NCDHC Context.
 * [NCDHC Organisation](StructureDefinition-ncdhc-organisation.html) - Profile to represent a Organisation in NCDHC Context.
-* [NCDHC FHIR Document](StructureDefinition-ncdhc-bundle-document.html) - Bundle profile to represent a FHIR document.
+* [NCDHC FHIR Document](StructureDefinition-ncdhc-bundle-document.html) - Bundle profile to represent a FHIR document in NCDHC Context.
 
 
 ## CDHR Health Interactions
+* [Newborn Examination](StructureDefinition-ncdhc-composition-document-nb-examination.html) - Details of the examination performed on the newborn.
 * [Newborn Bloodspot Screen](StructureDefinition-ncdhc-composition-document-nb-bloodspot-screen.html) - A test used to detect certain rare genetic conditions and disorders of the metabolism.
-
+* [Newborn Hearing Screen](StructureDefinition-ncdhc-composition-document-nb-hearing-screen.html) - Details of the hearning screen examination performed on the newborn.
