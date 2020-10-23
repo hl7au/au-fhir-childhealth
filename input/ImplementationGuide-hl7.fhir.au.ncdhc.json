@@ -561,6 +561,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/h01bacd2-ob6c-01ea-b3de-0003ac130001"
+        },
+        "name": "h01bacd2-ob6c-01ea-b3de-0003ac130001",
+        "description": "Vital Sign Birth Lenght Observation example with interpretation and value",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyheight"
+      },
+      {
+        "reference": {
           "reference": "Observation/h01bacd2-ob7c-01ea-b3de-0003ac130000"
         },
         "name": "h01bacd2-ob7c-01ea-b3de-0003ac130000",
@@ -662,14 +670,6 @@
         "name": "ncdhc-document-nb-hearing-screen-example",
         "description": "Newborn Hearing Screen FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-hearing-screen-document"
-      },
-      {
-        "reference": {
-          "reference": "Observation/ncdhc-observation-vitalsign-birthlength-example"
-        },
-        "name": "ncdhc-observation-vitalsign-birthlength-example",
-        "description": "Vital Sign Birth Lenght Observation example with interpretation and value",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyheight"
       },
       {
         "reference": {
