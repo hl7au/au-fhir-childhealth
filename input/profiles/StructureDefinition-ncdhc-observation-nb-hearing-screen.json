@@ -187,22 +187,6 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.hasMember",
-        "path": "Observation.hasMember",
-        "short": "Indication of whether a referral is needed",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-audiologist-referral-indication"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
         "id": "Observation.component",
         "path": "Observation.component",
         "slicing": {
@@ -216,7 +200,7 @@
           "ordered": false,
           "description": "Slice on component based on the code pattern"
         },
-        "min": 2
+        "min": 3
       },
       {
         "id": "Observation.component:outcomeRight",
@@ -316,6 +300,55 @@
         "binding": {
           "strength": "preferred",
           "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-observation-interpretation-1"
+        }
+      },
+      {
+        "id": "Observation.component:referralIndication",
+        "path": "Observation.component",
+        "sliceName": "referralIndication",
+        "short": "Indication of whether a referral is needed",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:referralIndication.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "308456006",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:referralIndication.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:referralIndication.valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-audiologist-referral-status-1"
         }
       }
     ]
