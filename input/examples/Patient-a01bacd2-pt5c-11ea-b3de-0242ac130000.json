@@ -8,7 +8,6 @@
   },
   "identifier": [
     {
-      "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
       "type": {
         "coding": [
           {
@@ -19,6 +18,7 @@
         ],
         "text": "IHI"
       },
+      "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
       "value": "8003608833357361"
     },
     {

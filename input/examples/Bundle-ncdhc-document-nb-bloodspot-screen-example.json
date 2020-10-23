@@ -3,7 +3,7 @@
   "id": "ncdhc-document-nb-bloodspot-screen-example",
   "meta": {
     "profile": [
-      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-document"
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-bloodspot-screen-document"
     ]
   },
   "type": "document",
@@ -96,7 +96,6 @@
         },
         "identifier": [
           {
-            "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
             "type": {
               "coding": [
                 {
@@ -107,6 +106,7 @@
               ],
               "text": "IHI"
             },
+            "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
             "value": "8003608166690503"
           },
           {
