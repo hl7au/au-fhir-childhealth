@@ -41,7 +41,7 @@
     }
   ],
   "kind": "resource",
-  "abstract": false,
+  "abstract": true,
   "type": "Bundle",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
   "derivation": "constraint",
@@ -54,27 +54,15 @@
         "min": 1
       },
       {
-        "id": "Bundle.identifier.system",
-        "path": "Bundle.identifier.system",
-        "mustSupport": true
-      },
-      {
-        "id": "Bundle.identifier.value",
-        "path": "Bundle.identifier.value",
-        "mustSupport": true
-      },
-      {
         "id": "Bundle.type",
         "path": "Bundle.type",
-        "fixedCode": "document",
-        "mustSupport": true
+        "fixedCode": "document"
       },
       {
         "id": "Bundle.timestamp",
         "path": "Bundle.timestamp",
         "short": "Document creation time",
-        "min": 1,
-        "mustSupport": true
+        "min": 1
       },
       {
         "id": "Bundle.total",
@@ -104,15 +92,13 @@
       {
         "id": "Bundle.entry.fullUrl",
         "path": "Bundle.entry.fullUrl",
-        "min": 1,
-        "mustSupport": true
+        "min": 1
       },
       {
         "id": "Bundle.entry.resource",
         "path": "Bundle.entry.resource",
         "short": "Other resource entries in the document.",
-        "min": 1,
-        "mustSupport": true
+        "min": 1
       },
       {
         "id": "Bundle.entry.search",
@@ -139,8 +125,7 @@
       {
         "id": "Bundle.entry:compositionEntry.fullUrl",
         "path": "Bundle.entry.fullUrl",
-        "min": 1,
-        "mustSupport": true
+        "min": 1
       },
       {
         "id": "Bundle.entry:compositionEntry.resource",
@@ -151,14 +136,10 @@
           {
             "code": "Composition",
             "profile": [
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen",
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-examination",
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-hearing-screen",
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-discharge"
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-clinical-document-base"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Bundle.entry:compositionEntry.search",

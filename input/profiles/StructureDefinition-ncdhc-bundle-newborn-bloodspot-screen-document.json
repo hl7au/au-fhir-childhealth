@@ -1,0 +1,110 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-bundle-newborn-bloodspot-screen-document",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Foundation.Other"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "not-classified"
+    }
+  ],
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-bloodspot-screen-document",
+  "version": "current",
+  "name": "NCDHCBundleNewbornBloodspotScreenDocument",
+  "title": "NCDHC FHIR Newborn Bloodspot Screen Document",
+  "status": "active",
+  "description": "NCDHC FHIR Newborn Bloodspot Screen document profile using Bundle resource",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-document",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.identifier.system",
+        "path": "Bundle.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.identifier.value",
+        "path": "Bundle.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.timestamp",
+        "path": "Bundle.timestamp",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry"
+      },
+      {
+        "id": "Bundle.entry.fullUrl",
+        "path": "Bundle.entry.fullUrl",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.resource",
+        "path": "Bundle.entry.resource",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:compositionEntry",
+        "path": "Bundle.entry",
+        "sliceName": "compositionEntry"
+      },
+      {
+        "id": "Bundle.entry:compositionEntry.fullUrl",
+        "path": "Bundle.entry.fullUrl",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:compositionEntry.resource",
+        "path": "Bundle.entry.resource",
+        "short": "Newborn Bloodspot Screen Composition Profile",
+        "type": [
+          {
+            "code": "Composition",
+            "profile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}
