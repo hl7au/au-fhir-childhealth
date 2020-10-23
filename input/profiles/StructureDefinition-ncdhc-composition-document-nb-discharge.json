@@ -4,10 +4,10 @@
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-discharge",
   "version": "current",
   "name": "NCDHCCompositionNewbornDischarge",
-  "title": "NCDHC Composition Newborn Hearing Screen",
+  "title": "NCDHC Composition Newborn Discharge",
   "status": "active",
-  "description": "Composition based profile to define the structure and narrative content necessary for Newborn Discharge FHIR document.",
-  "purpose": "The document at a minimum carries the following details:\n   * \n   * Discharge Time and Venue\n   * Admissions\n   * Details of the person who is clinically responsible for the undetaking of the exam\n   * Attester who has clinically signed off the data\n   * Author of the document \n   * The newborn Patient in context\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to a newborn's discharge from a health facility including measurements, date of discharge and other identifying information",
+  "purpose": "The document at a minimum carries the following details:\n   * \n   * Discharge Time and Venue\n   * Admissions\n   * Details of the person who is clinically responsible for the discharge\n   * Attester who has clinically signed off the data\n   * Author of the document \n   * The newborn Patient in context\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -75,7 +75,7 @@
         "id": "Composition.category.coding",
         "path": "Composition.category.coding",
         "patternCoding": {
-          "code": "NEWBRNDSCHRG",
+          "code": "DSCHRG",
           "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1"
         }
       },
@@ -95,7 +95,7 @@
       {
         "id": "Composition.encounter",
         "path": "Composition.encounter",
-        "short": "Use Encounter.peroid to record the Date and Time and the Discharge Venue",
+        "short": "Use Encounter.peroid to record the Date and Time and the Encounter.location to record Discharge Venue",
         "type": [
           {
             "code": "Reference",
@@ -155,55 +155,151 @@
       {
         "id": "Composition.section",
         "path": "Composition.section",
-        "min": 1,
-        "max": "1",
-        "mustSupport": true
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code.coding"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the code pattern"
+        },
+        "min": 2
       },
       {
-        "id": "Composition.section.title",
+        "id": "Composition.section:vitalSignsAndMeasurements",
+        "path": "Composition.section",
+        "sliceName": "vitalSignsAndMeasurements",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:vitalSignsAndMeasurements.title",
         "path": "Composition.section.title",
-        "min": 1,
-        "fixedString": "Hearing assessment",
+        "patternString": "Vital signs and measurements",
         "mustSupport": true
       },
       {
-        "id": "Composition.section.code",
+        "id": "Composition.section:vitalSignsAndMeasurements.code",
         "path": "Composition.section.code",
-        "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Composition.section.code.coding",
+        "id": "Composition.section:vitalSignsAndMeasurements.code.coding",
         "path": "Composition.section.code.coding",
+        "min": 1,
         "patternCoding": {
-          "code": "427247008",
+          "code": "118227000",
           "system": "http://snomed.info/sct"
         }
       },
       {
-        "id": "Composition.section.entry",
+        "id": "Composition.section:vitalSignsAndMeasurements.entry",
         "path": "Composition.section.entry",
-        "min": 1,
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "$this.resolve()"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the profile:$this.resolve()"
+        }
+      },
+      {
+        "id": "Composition.section:vitalSignsAndMeasurements.entry:weight",
+        "path": "Composition.section.entry",
+        "sliceName": "weight",
+        "short": "Discharge Weight",
+        "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-hearing-screen"
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
             ]
           }
         ],
         "mustSupport": true
       },
       {
-        "id": "Composition.section.emptyReason",
-        "path": "Composition.section.emptyReason",
-        "max": "0"
+        "id": "Composition.section:vitalSignsAndMeasurements.entry:length",
+        "path": "Composition.section.entry",
+        "sliceName": "length",
+        "short": "Discharge Length",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyheight"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
-        "id": "Composition.section.section",
-        "path": "Composition.section.section",
-        "max": "0"
+        "id": "Composition.section:vitalSignsAndMeasurements.entry:heaccircum",
+        "path": "Composition.section.entry",
+        "sliceName": "heaccircum",
+        "short": "Head Circumference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-head-circumference"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:feedingStatus",
+        "path": "Composition.section",
+        "sliceName": "feedingStatus",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:feedingStatus.title",
+        "path": "Composition.section.title",
+        "patternString": "Feeding Status",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:feedingStatus.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:feedingStatus.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "364651009",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Composition.section:feedingStatus.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-status"
+            ]
+          }
+        ],
+        "mustSupport": true
       }
     ]
   }

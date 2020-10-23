@@ -1,0 +1,142 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-vitalsign-bodyheight",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyheight",
+  "version": "current",
+  "name": "NCDHCObservationVitalSignBodyHeight",
+  "title": "NCDHC Observation Vital Sign Body Height Profile",
+  "status": "active",
+  "description": "This profile sets minimum expectations for the Observation Vital Sign resource to record, search and fetch Body Height or Birth Length of the patient in context.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/bodyheight",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:BodyHeightCode",
+        "path": "Observation.code.coding",
+        "sliceName": "BodyHeightCode",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:bodyLenghtSNOMED-CT",
+        "path": "Observation.code.coding",
+        "sliceName": "bodyLenghtSNOMED-CT",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:bodyLenghtSNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:bodyLenghtSNOMED-CT.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "fixedCode": "248334005"
+      },
+      {
+        "id": "Observation.code.coding:birthLenghtSNOMED-CT",
+        "path": "Observation.code.coding",
+        "sliceName": "birthLenghtSNOMED-CT",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:birthLenghtSNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:birthLenghtSNOMED-CT.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "fixedCode": "169886007"
+      },
+      {
+        "id": "Observation.code.coding:bodyHeightSNOMED-CT",
+        "path": "Observation.code.coding",
+        "sliceName": "bodyHeightSNOMED-CT",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:bodyHeightSNOMED-CT.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:bodyHeightSNOMED-CT.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "fixedCode": "50373000"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "max": "1",
+        "mustSupport": true
+      }
+    ]
+  }
+}

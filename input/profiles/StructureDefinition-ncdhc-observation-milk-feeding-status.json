@@ -1,0 +1,191 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-milk-feeding-status",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-milk-feeding-status",
+  "version": "current",
+  "name": "NCDHCObservationMilkFeedingStatus",
+  "title": "NCDHC Observation Milk Feeding Status",
+  "status": "active",
+  "description": "Observation profile to record Milk Feeding Status of the newborn in context",
+  "purpose": "\n The following details associated to the newborn in context are recorded:\n   * Test milk feeding status\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:milkFeedingStatusSNOMED-CT",
+        "path": "Observation.code.coding",
+        "sliceName": "milkFeedingStatusSNOMED-CT",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "226408000",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "short": "Discharge Date",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x].extension",
+        "path": "Observation.effective[x].extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.effective[x].extension:data-absent-reason",
+        "path": "Observation.effective[x].extension",
+        "sliceName": "data-absent-reason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer:examiner",
+        "path": "Observation.performer",
+        "sliceName": "examiner",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer:legalOrg",
+        "path": "Observation.performer",
+        "sliceName": "legalOrg",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-milk-feeding-status-1"
+        }
+      },
+      {
+        "id": "Observation.dataAbsentReason",
+        "path": "Observation.dataAbsentReason",
+        "mustSupport": true
+      }
+    ]
+  }
+}

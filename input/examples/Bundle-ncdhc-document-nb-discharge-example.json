@@ -3,13 +3,13 @@
   "id": "ncdhc-document-nb-discharge-example",
   "meta": {
     "profile": [
-      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-document"
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-discharge-document"
     ]
   },
   "type": "document",
   "identifier": {
     "system": "urn:ietf:rfc:3986",
-    "value": "urn:uuid:0c3151bd-1cbf-4d64-b04d-cd9187a4c6e0"
+    "value": "urn:uuid:0c3151bd-1cbf-4d64-b04d-cd0003a4c6e0"
   },
   "timestamp": "2018-12-27T16:13:03+10:00",
   "entry": [
@@ -35,20 +35,48 @@
         },
         "section": [
           {
-            "title": "Hearing assessment",
-            "mode": "snapshot",
             "code": {
               "coding": [
                 {
-                  "code": "427247008",
+                  "code": "118227000",
                   "system": "http://snomed.info/sct",
-                  "display": "Hearing assessment"
+                  "display": "Vital signs finding"
                 }
               ]
             },
+            "mode": "snapshot",
+            "title": "Vital signs and measurements",
             "entry": [
               {
-                "reference": "Observation/h01bacd2-ob1c-01ea-b3de-0012ac130000"
+                "reference": "Observation/h01bacd2-ob6c-01ea-b3de-0003ac130000",
+                "display": "Body weight"
+              },
+              {
+                "reference": "Observation/h01bacd2-ob7c-01ea-b3de-0003ac130000",
+                "display": "Body height measure"
+              },
+              {
+                "reference": "Observation/h01bacd2-ob9c-01ea-b3de-0003ac130000",
+                "display": "Head circumference"
+              }
+            ]
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "364651009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Characteristics of infant feeding"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "title": "Feeding Status",
+            "entry": [
+              {
+                "reference": "Observation/h01bacd2-ob8c-00ea-b3de-0003ac230000",
+                "display": "Characteristics of infant feeding"
               }
             ]
           }
@@ -60,9 +88,9 @@
         },
         "encounter": {
           "reference": "Encounter/a01bacd2-ec5c-11ea-b3de-0003ac130004",
-          "display": "Consultation on 12th Aug 2020 at Blacktown Hospital"
+          "display": "Discharge on 12th October 2020 from Blacktown Hospital"
         },
-        "date": "2020-08-12T16:13:03+10:00",
+        "date": "2020-10-12T16:13:03+10:00",
         "author": [
           {
             "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
@@ -96,7 +124,6 @@
         },
         "identifier": [
           {
-            "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
             "type": {
               "coding": [
                 {
@@ -107,6 +134,7 @@
               ],
               "text": "IHI"
             },
+            "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
             "value": "8003608166690503"
           },
           {
@@ -317,81 +345,162 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:h01bacd2-ob1c-01ea-b3de-0012ac130000",
+      "fullUrl": "urn:uuid:h01bacd2-ob6c-01ea-b3de-0003ac130000",
       "resource": {
         "resourceType": "Observation",
-        "id": "h01bacd2-ob1c-01ea-b3de-0012ac130000",
+        "id": "h01bacd2-ob6c-01ea-b3de-0003ac130000",
         "meta": {
           "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-hearing-screen"
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyheight"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body height"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "50373000",
+              "display": "Body height measure"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "code": "cm",
+          "system": "http://unitsofmeasure.org",
+          "value": 125.1,
+          "unit": "cm"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03+10:00",
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "17621005",
+                "system": "http://snomed.info/sct",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "patient's height is normal"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:h01bacd2-ob7c-01ea-b3de-0003ac130000",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "h01bacd2-ob7c-01ea-b3de-0003ac130000",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27113001",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "code": "kg",
+          "system": "http://unitsofmeasure.org",
+          "value": 2.1,
+          "unit": "kg"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03+10:00",
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:h01bacd2-ob8c-00ea-b3de-0003ac230000",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "h01bacd2-ob8c-00ea-b3de-0003ac230000",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-status"
           ]
         },
         "code": {
           "coding": [
             {
-              "code": "427247008",
+              "code": "364651009",
               "system": "http://snomed.info/sct",
-              "display": "Hearing assessment"
+              "display": "Characteristics of infant feeding"
             }
           ]
         },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "code": "25577004",
-                  "system": "http://snomed.info/sct",
-                  "display": "Right ear structure"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "183924009",
-                  "system": "http://snomed.info/sct",
-                  "display": "Referral needed"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "code": "89644007",
-                  "system": "http://snomed.info/sct",
-                  "display": "Left ear structure"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "183924009",
-                  "system": "http://snomed.info/sct",
-                  "display": "Referral needed"
-                }
-              ]
-            }
-          }
-        ],
         "status": "final",
         "subject": {
           "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
           "display": "Baby of Eve Bill"
         },
         "effectiveDateTime": "2020-08-21T16:13:03+10:00",
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "443938003",
-              "system": "http://snomed.info/sct",
-              "display": "Procedure carried out on subject"
-            }
-          ]
-        },
         "performer": [
           {
             "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
@@ -404,8 +513,162 @@
         ],
         "hasMember": [
           {
-            "reference": "Observation/h01bacd2-ob1c-01ea-b3de-0012ac230000",
-            "display": "Referral to audiologist"
+            "reference": "Observation/h01bacd2-ob8c-01ea-b3de-0003ac230000",
+            "display": "Feeding Method"
+          },
+          {
+            "reference": "Observation/h01bacd2-ob8c-02ea-b3de-0003ac230000",
+            "display": "Milk Feeding Status"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:h01bacd2-ob8c-01ea-b3de-0003ac230000",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "h01bacd2-ob8c-01ea-b3de-0003ac230000",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-method"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "169740003",
+              "system": "http://snomed.info/sct",
+              "display": "Infant feeding method"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2020-08-21T16:13:03+10:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "169741004",
+              "system": "http://snomed.info/sct",
+              "display": "Infant breastfed"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:h01bacd2-ob8c-02ea-b3de-0003ac230000",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "h01bacd2-ob8c-02ea-b3de-0003ac230000",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-milk-feeding-status"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "226408000",
+              "system": "http://snomed.info/sct",
+              "display": "Baby Milk Intake"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2020-08-21T16:13:03+10:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "226789007",
+              "system": "http://snomed.info/sct",
+              "display": "Breast milk"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:h01bacd2-ob9c-01ea-b3de-0003ac130000",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "h01bacd2-ob9c-01ea-b3de-0003ac130000",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-head-circumference"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "9843-4",
+              "display": "Head Occipital-frontal circumference"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "363812007",
+              "display": "Head Circumference"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "code": "cm",
+          "system": "http://unitsofmeasure.org",
+          "value": 35,
+          "unit": "cm"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03+10:00",
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
           }
         ]
       }
