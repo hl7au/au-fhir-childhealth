@@ -5,7 +5,7 @@ The following list of profiles are being used in the CDHR (Child Digital Health 
 
 ## CDHR Common Profiles
 * [Child Patient](StructureDefinition-ncdhc-patient-child.html) - Patient profile to represent the Child Patient in context.
-* [CDHR Encounter](StructureDefinition-ncdhc-encounter-cdhr.html) - Encouner profile to represent CDHR patient visit related details.
+* [CDHR Encounter](StructureDefinition-ncdhc-encounter-cdhr.html) - Encounter profile to represent CDHR patient visit related details.
 * [NCDHC Practitioner](StructureDefinition-ncdhc-practitioner.html) - Profile to represent a Practitioner in NCDHC Context.
 * [NCDHC PractitionerRole](StructureDefinition-ncdhc-practitioner-role.html) - Profile to represent a PractitionerRole in NCDHC Context.
 * [NCDHC Organisation](StructureDefinition-ncdhc-organisation.html) - Profile to represent a Organisation in NCDHC Context.
@@ -13,6 +13,7 @@ The following list of profiles are being used in the CDHR (Child Digital Health 
 
 
 ## CDHR Health Interactions
-* [Newborn Examination](StructureDefinition-ncdhc-composition-document-nb-examination.html) - Details of the examination performed on the newborn.
-* [Newborn Bloodspot Screen](StructureDefinition-ncdhc-composition-document-nb-bloodspot-screen.html) - A test used to detect certain rare genetic conditions and disorders of the metabolism.
-* [Newborn Hearing Screen](StructureDefinition-ncdhc-composition-document-nb-hearing-screen.html) - Details of the hearning screen examination performed on the newborn.
+* [Newborn Bloodspot Screen](StructureDefinition-ncdhc-bundle-newborn-bloodspot-screen-document.html) - A test used to detect certain rare genetic conditions and disorders of the metabolism.
+* [Newborn Hearing Screen](StructureDefinition-ncdhc-bundle-newborn-hearing-screen-document.html) - Details of the hearing screen examination performed on the newborn.
+* [Newborn Examination](StructureDefinition-ncdhc-bundle-newborn-exam-document.html) - Details of the examination performed on the newborn.
+
