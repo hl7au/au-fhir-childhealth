@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NCDHCValueSetObservationInterpretation",
+  "id": "ncdhc-observation-interpretation-1",
+  "title": "NCDHC Observation Interpretation",
+  "description": "National Children's Digital Health Collaborative - Codes to determine what type of Observation Interpretation are applicable to each completed check/observation.",
+  "version": "current",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-observation-interpretation-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "17621005",
+            "display": "Normal"
+          },
+          {
+            "code": "1222461000168103",
+            "display": "Follow-up review of patient requested"
+          },
+          {
+            "code": "183924009",
+            "display": "Referral needed"
+          }
+        ]
+      }
+    ]
+  }
+}
