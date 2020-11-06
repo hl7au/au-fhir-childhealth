@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NCDHCValueSetMilkFeedingStatus",
+  "id": "ncdhc-milk-feeding-status-1",
+  "title": "NCDHC Milk Feeding Status ValueSet",
+  "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Milk Feeding Status.",
+  "version": "current",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-milk-feeding-status-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "226790003",
+            "display": "Expressed breast milk"
+          },
+          {
+            "code": "226789007",
+            "display": "Breast milk"
+          },
+          {
+            "code": "386127005",
+            "display": "Formula Milk"
+          }
+        ]
+      }
+    ]
+  }
+}
