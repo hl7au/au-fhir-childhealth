@@ -1,0 +1,48 @@
+{
+  "resourceType": "Observation",
+  "id": "h01bacd2-ob8c-01ea-b3de-0012ac230010",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-sex-detected-at-birth"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "734000001",
+        "system": "http://snomed.info/sct",
+        "display": "Biological sex"
+      },
+      {
+        "code": "76689-9",
+        "system": "http://loinc.org",
+        "display": "Sex assigned at birth"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
+    "display": "Baby of Eve Bill"
+  },
+  "effectiveDateTime": "2020-08-21T16:13:03+10:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "248153007",
+        "system": "http://snomed.info/sct",
+        "display": "Male"
+      }
+    ]
+  },
+  "performer": [
+    {
+      "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+      "display": "Examiner"
+    },
+    {
+      "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+      "display": "Clinical Responsible Organisation"
+    }
+  ]
+}
