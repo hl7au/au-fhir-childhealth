@@ -87,12 +87,6 @@
         "id": "Practitioner.qualification",
         "path": "Practitioner.qualification",
         "mustSupport": true
-      },
-      {
-        "id": "Practitioner.qualification:ahpraRegistration",
-        "path": "Practitioner.qualification",
-        "sliceName": "ahpraRegistration",
-        "mustSupport": true
       }
     ]
   }
