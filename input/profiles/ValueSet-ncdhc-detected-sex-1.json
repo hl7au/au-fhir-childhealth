@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NCDHCValueSetDetectedSex",
+  "id": "ncdhc-detected-sex-1",
+  "title": "NCDHC Detected Sex ValueSet",
+  "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Detected Sex.",
+  "version": "current",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-detected-sex-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "248153007",
+            "display": "Male"
+          },
+          {
+            "code": "248152002",
+            "display": "Female"
+          },
+          {
+            "code": "32570681000036106",
+            "display": "Indeterminate sex"
+          }
+        ]
+      }
+    ]
+  }
+}
