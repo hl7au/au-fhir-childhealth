@@ -54,7 +54,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
             ]
           }
         ],
@@ -73,7 +73,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole"
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role"
             ]
           }
         ]
@@ -81,7 +81,7 @@
       {
         "id": "Encounter.period",
         "path": "Encounter.period",
-        "short": "Date and time when the encounter took place",
+        "short": "Date and time of the encounter",
         "mustSupport": true
       },
       {
@@ -106,7 +106,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.au/fhir/StructureDefinition/au-organization"
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-organisation"
             ]
           }
         ],

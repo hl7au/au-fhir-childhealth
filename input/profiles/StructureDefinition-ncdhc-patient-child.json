@@ -160,20 +160,16 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.birthDate.extension:accuracyIndicator",
-        "path": "Patient.birthDate.extension",
-        "sliceName": "accuracyIndicator",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.birthDate.extension:birthTime",
-        "path": "Patient.birthDate.extension",
-        "sliceName": "birthTime",
-        "mustSupport": true
-      },
-      {
         "id": "Patient.address",
         "path": "Patient.address",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-address"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
