@@ -1,0 +1,386 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-estimated-date-birth-last-period",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-estimated-date-birth-last-period",
+  "version": "current",
+  "name": "NCDHCObservationEDBLNMP",
+  "title": "NCDHC Observation Estimated date of birth by LNMP",
+  "status": "active",
+  "description": "Observation profile to record Estimated date of birth by LNMP for the expectatnt mother in context",
+  "purpose": "\n The following details associated to the expectant mother in context are recorded:\n   * Estimated Date of Birth\n   * Last menstrual period - 1st day\n   * Usual length of menstrual cycle\n   * Certainty of Menstrual cycle\n   * Regularity of Menstrual cycle\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:edbLNMPSNOMED-CT",
+        "path": "Observation.code.coding",
+        "sliceName": "edbLNMPSNOMED-CT",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "248960000",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-expectant-mother"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "short": "Date and time when the EBD was noted",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x].extension",
+        "path": "Observation.effective[x].extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.effective[x].extension:data-absent-reason",
+        "path": "Observation.effective[x].extension",
+        "sliceName": "data-absent-reason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "Estimated date of birth",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.dataAbsentReason",
+        "path": "Observation.dataAbsentReason",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code.coding"
+            }
+          ],
+          "rules": "open",
+          "description": "Slice on hasMember based on the code.coding pattern"
+        }
+      },
+      {
+        "id": "Observation.component:firstDayOfLNMP",
+        "path": "Observation.component",
+        "sliceName": "firstDayOfLNMP",
+        "short": "Last menstrual period - 1st day",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:firstDayOfLNMP.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:firstDayOfLNMP.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "161713000",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.component:firstDayOfLNMP.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:firstDayOfLNMP.valueDateTime",
+        "path": "Observation.component.valueDateTime",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:cycleLength",
+        "path": "Observation.component",
+        "sliceName": "cycleLength",
+        "short": "Usual length of menstrual cycle",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:cycleLength.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:cycleLength.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "161716008",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.component:cycleLength.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:cycleLength.valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "min": 1,
+        "max": "1",
+        "patternQuantity": {
+          "code": "d",
+          "system": "http://unitsofmeasure.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:cycleCertainty",
+        "path": "Observation.component",
+        "sliceName": "cycleCertainty",
+        "short": "Certainty of Menstrual cycle",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:cycleCertainty.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:cycleCertainty.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "246103008",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.component:cycleCertainty.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:cycleCertainty.valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-observation-certainty-of-menstrual-cycle-1"
+        }
+      },
+      {
+        "id": "Observation.component:cycleRegularity",
+        "path": "Observation.component",
+        "sliceName": "cycleRegularity",
+        "short": "Regularity of Menstrual cycle",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:cycleRegularity.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:cycleRegularity.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "246202005",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.component:cycleRegularity.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:cycleRegularity.valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-regularity-of-menstrual-cycle-1"
+        }
+      }
+    ]
+  }
+}

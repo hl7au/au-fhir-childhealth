@@ -1,0 +1,289 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-composition-document-edb",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-edb",
+  "version": "current",
+  "name": "NCDHCCompositionEDB",
+  "title": "NCDHC Composition Estimated Date Of Birth",
+  "status": "active",
+  "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Estimated Date of Birth",
+  "purpose": "The document at a minimum carries the following details:\n   * \n   * Agreed / Final EDB\n   * Details on EDB Calculation, Breastfeeding at time of conception, Hormonal Contraception\n   * Details of the person who is clinically responsible for the assessment\n   * Attester who has clinically signed off the data\n   * Author of the document \n   * The expectant mother Patient in context\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "fhirdocumentreference",
+      "uri": "http://hl7.org/fhir/documentreference",
+      "name": "FHIR DocumentReference"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-clinical-document-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.identifier",
+        "path": "Composition.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.status",
+        "path": "Composition.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.type",
+        "path": "Composition.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.type.coding",
+        "path": "Composition.type.coding",
+        "patternCoding": {
+          "code": "EDB",
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
+        }
+      },
+      {
+        "id": "Composition.category",
+        "path": "Composition.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.category.coding",
+        "path": "Composition.category.coding",
+        "patternCoding": {
+          "code": "EBD",
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1"
+        }
+      },
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-expectant-mother"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.encounter",
+        "path": "Composition.encounter",
+        "short": "Use Encounter.peroid to record the Date and Time and the Encounter.location to record venue where the consultation took place",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.date",
+        "path": "Composition.date",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.author",
+        "path": "Composition.author",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.title",
+        "path": "Composition.title",
+        "fixedString": "Newborn Discharge",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.confidentiality",
+        "path": "Composition.confidentiality",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.attester.mode",
+        "path": "Composition.attester.mode",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.attester.time",
+        "path": "Composition.attester.time",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.attester.party",
+        "path": "Composition.attester.party",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.custodian",
+        "path": "Composition.custodian",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.relatesTo",
+        "path": "Composition.relatesTo",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code.coding"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the code pattern"
+        },
+        "min": 2
+      },
+      {
+        "id": "Composition.section:edb",
+        "path": "Composition.section",
+        "sliceName": "edb",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:edb.title",
+        "path": "Composition.section.title",
+        "fixedString": "Estimated Date of Birth (EDB)",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:edb.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:edb.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "161714006",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Composition.section:edb.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-edb"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:obstetricHistory",
+        "path": "Composition.section",
+        "sliceName": "obstetricHistory",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:obstetricHistory.title",
+        "path": "Composition.section.title",
+        "fixedString": "Obstetric history",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:obstetricHistory.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:obstetricHistory.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "248983002",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Composition.section:obstetricHistory.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this.resolve().code.coding"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the pattern:$this.resolve().code.coding"
+        }
+      },
+      {
+        "id": "Composition.section:obstetricHistory.entry:breastfeeding",
+        "path": "Composition.section.entry",
+        "sliceName": "breastfeeding",
+        "short": "Breastfeeding at time of conception",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-breastfeeding-time-conception"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:obstetricHistory.entry:hormonalContraception",
+        "path": "Composition.section.entry",
+        "sliceName": "hormonalContraception",
+        "short": "Hormonal Contraception",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hormonal-contraception-at-conception"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}
