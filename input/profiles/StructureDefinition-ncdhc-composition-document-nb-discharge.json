@@ -245,9 +245,9 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:vitalSignsAndMeasurements.entry:heaccircum",
+        "id": "Composition.section:vitalSignsAndMeasurements.entry:headCircum",
         "path": "Composition.section.entry",
-        "sliceName": "heaccircum",
+        "sliceName": "headCircum",
         "short": "Head Circumference",
         "min": 0,
         "max": "1",
