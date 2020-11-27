@@ -3,7 +3,7 @@
   "id": "a01bacd2-ec5c-11ea-b3de-0003ac130004",
   "meta": {
     "profile": [
-      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
     ]
   },
   "status": "finished",
@@ -13,8 +13,8 @@
     "display": "ambulatory"
   },
   "subject": {
-    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-    "display": "Child of Eve Bill"
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+    "display": "Eve Bill"
   },
   "period": {
     "start": "2020-09-30T16:13:03+10:00",

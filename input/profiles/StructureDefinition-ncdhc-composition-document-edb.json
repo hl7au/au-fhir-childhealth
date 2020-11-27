@@ -7,7 +7,7 @@
   "title": "NCDHC Composition Estimated Date Of Birth",
   "status": "active",
   "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Estimated Date of Birth",
-  "purpose": "The document at a minimum carries the following details:\n   * \n   * Agreed / Final EDB\n   * Details on EDB Calculation, Breastfeeding at time of conception, Hormonal Contraception\n   * Details of the person who is clinically responsible for the assessment\n   * Attester who has clinically signed off the data\n   * Author of the document \n   * The expectant mother Patient in context\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "purpose": "The document at a minimum carries the following details:\n\n   * Agreed / Final EDB\n   * Details on EDB Calculation, Breastfeeding at time of conception, Hormonal Contraception\n   * Details of the person who is clinically responsible for the assessment\n   * Attester who has clinically signed off the data\n   * Author of the document \n   * The expectant mother Patient in context\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -119,7 +119,7 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
-        "fixedString": "Newborn Discharge",
+        "fixedString": "Estimated Date of Birth",
         "mustSupport": true
       },
       {
