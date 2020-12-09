@@ -1,0 +1,68 @@
+{
+  "resourceType": "Composition",
+  "id": "0a645a42-fe48-c001-0001-cdhr00hi0081",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
+    ]
+  },
+  "title": "Newborn Bloodspot Screen",
+  "type": {
+    "coding": [
+      {
+        "code": "NEWBRNBLDSCR",
+        "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
+        "display": "Newborn Bloodspot Screen"
+      }
+    ]
+  },
+  "section": [
+    {
+      "title": "Newborn blood spot screening",
+      "mode": "snapshot",
+      "code": {
+        "coding": [
+          {
+            "code": "428447008",
+            "system": "http://snomed.info/sct",
+            "display": "Newborn blood spot screening"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0081"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
+    "display": "Child of Eve Bill"
+  },
+  "encounter": {
+    "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0081",
+    "display": "Consultation on 12th Aug 2020 at Downunder Hospital"
+  },
+  "date": "2020-08-12T16:13:03+10:00",
+  "author": [
+    {
+      "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+      "display": "Helen Mayo"
+    }
+  ],
+  "attester": [
+    {
+      "mode": "professional",
+      "party": {
+        "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+        "display": "Downunder Hospital"
+      }
+    }
+  ],
+  "custodian": {
+    "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+    "display": "Downunder Hospital"
+  }
+}

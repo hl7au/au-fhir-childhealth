@@ -3,7 +3,7 @@
   "id": "ncdhc-document-nb-bloodspot-screen-example",
   "meta": {
     "profile": [
-      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-bloodspot-screen-document"
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-bloodspot-screen-document"
     ]
   },
   "type": "document",
@@ -14,10 +14,10 @@
   "timestamp": "2018-12-27T16:13:03+10:00",
   "entry": [
     {
-      "fullUrl": "urn:uuid:a01bacd2-bb5c-11ea-b3de-0081ac130000",
+      "fullUrl": "urn:uuid:0a645a42-fe48-c001-0001-cdhr00hi0081",
       "resource": {
         "resourceType": "Composition",
-        "id": "a01bacd2-bb5c-11ea-b3de-0081ac130000",
+        "id": "0a645a42-fe48-c001-0001-cdhr00hi0081",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
@@ -48,7 +48,7 @@
             },
             "entry": [
               {
-                "reference": "Observation/a01bacd2-ob1c-01ea-b3de-0242ac130000"
+                "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0081"
               }
             ]
           }
@@ -59,7 +59,7 @@
           "display": "Child of Eve Bill"
         },
         "encounter": {
-          "reference": "Encounter/a01bacd2-ec5c-11ea-b3de-0081ac130004",
+          "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0081",
           "display": "Consultation on 12th Aug 2020 at Downunder Hospital"
         },
         "date": "2020-08-12T16:13:03+10:00",
@@ -275,10 +275,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:a01bacd2-ec5c-11ea-b3de-0081ac130004",
+      "fullUrl": "urn:uuid:0a645a42-fe48-e001-0001-cdhr00hi0081",
       "resource": {
         "resourceType": "Encounter",
-        "id": "a01bacd2-ec5c-11ea-b3de-0081ac130004",
+        "id": "0a645a42-fe48-e001-0001-cdhr00hi0081",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
@@ -317,10 +317,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:a01bacd2-ob1c-01ea-b3de-0242ac130000",
+      "fullUrl": "urn:uuid:0a645a42-fe48-o001-0001-cdhr00hi0081",
       "resource": {
         "resourceType": "Observation",
-        "id": "a01bacd2-ob1c-01ea-b3de-0242ac130000",
+        "id": "0a645a42-fe48-o001-0001-cdhr00hi0081",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
