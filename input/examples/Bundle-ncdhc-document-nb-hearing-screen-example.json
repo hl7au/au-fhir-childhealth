@@ -3,7 +3,7 @@
   "id": "ncdhc-document-nb-hearing-screen-example",
   "meta": {
     "profile": [
-      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-hearing-screen-document"
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-hearing-screen-document"
     ]
   },
   "type": "document",
@@ -48,7 +48,7 @@
             },
             "entry": [
               {
-                "reference": "Observation/h01bacd2-ob1c-01ea-b3de-0012ac130000"
+                "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0012"
               }
             ]
           }
@@ -59,7 +59,7 @@
           "display": "Child of Eve Bill"
         },
         "encounter": {
-          "reference": "Encounter/a01bacd2-ec5c-11ea-b3de-0012ac130004",
+          "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0012",
           "display": "Consultation on 12th Aug 2020 at Blacktown GP Clinic"
         },
         "date": "2020-08-12T16:13:03+10:00",
@@ -275,10 +275,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:a01bacd2-ec5c-11ea-b3de-0012ac130004",
+      "fullUrl": "urn:uuid:0a645a42-fe48-e001-0001-cdhr00hi0012",
       "resource": {
         "resourceType": "Encounter",
-        "id": "a01bacd2-ec5c-11ea-b3de-0012ac130004",
+        "id": "0a645a42-fe48-e001-0001-cdhr00hi0012",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
@@ -317,10 +317,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:h01bacd2-ob1c-01ea-b3de-0012ac130000",
+      "fullUrl": "urn:uuid:0a645a42-fe48-o001-0001-cdhr00hi0012",
       "resource": {
         "resourceType": "Observation",
-        "id": "h01bacd2-ob1c-01ea-b3de-0012ac130000",
+        "id": "0a645a42-fe48-o001-0001-cdhr00hi0012",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-hearing-screen"
@@ -375,26 +375,6 @@
                 }
               ]
             }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "code": "308456006",
-                  "system": "http://snomed.info/sct",
-                  "display": "Referral to audiologist"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "183924009",
-                  "system": "http://snomed.info/sct",
-                  "display": "Referral needed"
-                }
-              ]
-            }
           }
         ],
         "status": "final",
@@ -409,6 +389,58 @@
               "code": "443938003",
               "system": "http://snomed.info/sct",
               "display": "Procedure carried out on subject"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0012",
+            "display": "Referral to audiologist"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o002-0001-cdhr00hi0012",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o002-0001-cdhr00hi0012",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-audiologist-referral-indication"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "308456006",
+              "system": "http://snomed.info/sct",
+              "display": "Referral to audiologist"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2020-08-21T16:13:03+10:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "183924009",
+              "system": "http://snomed.info/sct",
+              "display": "Referral needed"
             }
           ]
         },
