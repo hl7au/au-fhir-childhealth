@@ -133,11 +133,6 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.performer:examiner",
         "path": "Observation.performer",
         "sliceName": "examiner",
@@ -166,8 +161,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Observation.valueCodeableConcept",

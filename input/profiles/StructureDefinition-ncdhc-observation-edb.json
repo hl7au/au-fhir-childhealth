@@ -16,7 +16,7 @@
   "name": "NCDHCObservationEDB",
   "title": "NCDHC Observation Estimated Date of Birth",
   "status": "active",
-  "description": "Observation profile to record Estimated Date of Birth and associated details",
+  "description": "Observation profile to record Estimated Date of Birth and associated details. Date of delivery (birth) is estimated based on a number of clinical factors and the woman’s cycle information",
   "purpose": "\n The following details associated to the expectant mother in context are recorded:\n   * Estimated date of birth\n   * Estimated date of birth by LNMP, USS and clinical observations\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -134,19 +134,42 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.performer",
+        "id": "Observation.performer:examiner",
         "path": "Observation.performer",
+        "sliceName": "examiner",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer:legalOrg",
+        "path": "Observation.performer",
+        "sliceName": "legalOrg",
         "mustSupport": true
       },
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "short": "Estimated date of birth",
         "type": [
           {
             "code": "dateTime"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Observation.valueDateTime",
+        "path": "Observation.valueDateTime",
+        "min": 0,
+        "max": "1",
         "mustSupport": true
       },
       {

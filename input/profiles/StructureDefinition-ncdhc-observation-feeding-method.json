@@ -134,8 +134,15 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.performer",
+        "id": "Observation.performer:examiner",
         "path": "Observation.performer",
+        "sliceName": "examiner",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer:legalOrg",
+        "path": "Observation.performer",
+        "sliceName": "legalOrg",
         "mustSupport": true
       },
       {
@@ -155,14 +162,14 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Observation.valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
         "min": 0,
         "max": "1",
+        "mustSupport": true,
         "binding": {
           "strength": "preferred",
           "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-feeding-method-1"
