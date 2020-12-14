@@ -96,14 +96,7 @@
         "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Estimated Date of Birth",
         "exampleBoolean": false
       },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ncdhc-composition-document-issues-plans"
-        },
-        "name": "NCDHC Composition Issues and Plans",
-        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Issues and Plans",
-        "exampleBoolean": false
-      },
+      
       {
         "reference": {
           "reference": "StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
@@ -232,14 +225,7 @@
         "description": "Observation profile to record Hearing Screening Test status and assoicated details for the newborn in context",
         "exampleBoolean": false
       },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ncdhc-observation-pregnancy-complication"
-        },
-        "name": "NCDHC Observation Pregnancy Complication",
-        "description": "Observation profile to record, search and fetch Pregnancy Complication associated to the child in context.",
-        "exampleBoolean": false
-      },
+      
       {
         "reference": {
           "reference": "StructureDefinition/ncdhc-observation-sex-detected-at-birth"
