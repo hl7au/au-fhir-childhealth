@@ -82,14 +82,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncdhc-careplan-antenatal-care"
-        },
-        "name": "NCDHC CarePlan Antenatal Care",
-        "description": "CarePlan profile to record Antenatal Care and associated details",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/ncdhc-composition-clinical-document-base"
         },
         "name": "NCDHC Composition Clinical Document Base",
