@@ -47,14 +47,7 @@
   ],
   "definition": {
     "resource": [
-      {
-        "reference": {
-          "reference": "StructureDefinition/ncdhc-bundle-antenatal-careplan-document"
-        },
-        "name": "NCDHC FHIR Antenatal Care Plan Document",
-        "description": "NCDHC FHIR Antenatal Care Plan document profile using Bundle resource",
-        "exampleBoolean": false
-      },
+      
       {
         "reference": {
           "reference": "StructureDefinition/ncdhc-bundle-document"

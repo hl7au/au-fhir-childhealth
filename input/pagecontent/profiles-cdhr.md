@@ -16,4 +16,5 @@ The following list of profiles are being used in the CDHR (Child Digital Health 
 * [Newborn Bloodspot Screen](StructureDefinition-ncdhc-bundle-newborn-bloodspot-screen-document.html) - A test used to detect certain rare genetic conditions and disorders of the metabolism.
 * [Newborn Hearing Screen](StructureDefinition-ncdhc-bundle-newborn-hearing-screen-document.html) - Details of the hearing screen examination performed on the newborn.
 * [Newborn Examination](StructureDefinition-ncdhc-bundle-newborn-exam-document.html) - Details of the examination performed on the newborn.
+* [Newborn Discharge](StructureDefinition-ncdhc-bundle-newborn-discharge-document.html) - Details related to the discharge of the newborn.
 
