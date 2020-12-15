@@ -14,10 +14,10 @@
   "timestamp": "2018-12-27T16:13:03+10:00",
   "entry": [
     {
-      "fullUrl": "urn:uuid:a01bacd2-bb5c-11ea-b3de-0012ac130000",
+      "fullUrl": "urn:uuid:0a645a42-fe48-c001-0001-cdhr00hi0012",
       "resource": {
         "resourceType": "Composition",
-        "id": "a01bacd2-bb5c-11ea-b3de-0012ac130000",
+        "id": "0a645a42-fe48-c001-0001-cdhr00hi0012",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-hearing-screen"
