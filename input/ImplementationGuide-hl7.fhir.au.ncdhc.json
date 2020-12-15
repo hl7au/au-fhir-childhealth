@@ -47,7 +47,6 @@
   ],
   "definition": {
     "resource": [
-      
       {
         "reference": {
           "reference": "StructureDefinition/ncdhc-bundle-document"
@@ -74,6 +73,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-bundle-newborn-discharge-document"
+        },
+        "name": "NCDHC FHIR Newborn Discharge Document",
+        "description": "NCDHC FHIR Newborn Discharge document profile using Bundle resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-bundle-newborn-exam-document"
+        },
+        "name": "NCDHC FHIR Newborn Examination Document",
+        "description": "NCDHC FHIR Newborn Examination document profile using Bundle resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-bundle-hearing-screen-document"
         },
         "name": "NCDHC FHIR Hearing Screen Document",
@@ -96,13 +111,28 @@
         "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Estimated Date of Birth",
         "exampleBoolean": false
       },
-      
       {
         "reference": {
           "reference": "StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
         },
         "name": "NCDHC Composition Newborn Bloodspot Screen",
         "description": "Composition based profile to define the structure and narrative content necessary for Newborn Bloodspot Screen FHIR document.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-document-nb-discharge"
+        },
+        "name": "NCDHC Composition Newborn Discharge",
+        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to a newborn's discharge from a health facility including measurements, date of discharge and other identifying information",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-document-nb-examination"
+        },
+        "name": "NCDHC Composition Newborn Examination",
+        "description": "Composition based profile to define the structure and narrative content necessary for Newborn Examination FHIR document.",
         "exampleBoolean": false
       },
       {
@@ -131,6 +161,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-abdomen-exam"
+        },
+        "name": "NCDHC Observation Abdomen Examination",
+        "description": "Observation profile to record outcome of the Abdomen check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-anus-exam"
+        },
+        "name": "NCDHC Observation Anus Examination",
+        "description": "Observation profile to record outcome of the Anus check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-audiologist-referral-indication"
         },
         "name": "NCDHC Observation Newborn Hearing Audiologist Referral Indication",
@@ -151,6 +197,14 @@
         },
         "name": "NCDHC Observation Breast feeding at time of conception",
         "description": "Observation profile to record breast feeding status at time of conception of the expectant mother in context",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-cardiovascular-heart-exam"
+        },
+        "name": "NCDHC Observation Cardiovascular / heart Examination",
+        "description": "Observation profile to record outcome of the Cardiovascular / heart check performed on the newborn",
         "exampleBoolean": false
       },
       {
@@ -187,10 +241,74 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-ears-exam"
+        },
+        "name": "NCDHC Observation Ears Examination",
+        "description": "Observation profile to record outcome of the Right and Left Ear check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-eyes-exam"
+        },
+        "name": "NCDHC Observation Eyes Examination",
+        "description": "Observation profile to record outcome of the Right and Left Eye check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-feeding-method"
+        },
+        "name": "NCDHC Observation Feeding Method",
+        "description": "Observation profile to record Feeding Method for the newborn in context",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-feeding-status"
+        },
+        "name": "NCDHC Observation Newborn Feeding Status",
+        "description": "Observation profile to record Feeding Status of the newborn in context",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-femoral-pulses-exam"
+        },
+        "name": "NCDHC Observation Femoral Pulses Examination",
+        "description": "Observation profile to record outcome of the Right and Left Femoral Pulses check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-genitalia-exam"
+        },
+        "name": "NCDHC Observation Genitalia Examination",
+        "description": "Observation profile to record outcome of the Genitalia check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-gestation-age"
         },
         "name": "NCDHC Observation Gestation Age",
         "description": "Observation profile to set minimum expectations to record and search and fetch gestation age in weeks and days",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-head-fontanelles-exam"
+        },
+        "name": "NCDHC Observation Head and Fontanelles Examination",
+        "description": "Observation profile to record outcome of the check performed around the anatomical feature of the infant skull",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-hips-exam"
+        },
+        "name": "NCDHC Observation Hips Examination",
+        "description": "Observation profile to record outcome of the Hips check performed on the newborn",
         "exampleBoolean": false
       },
       {
@@ -211,6 +329,38 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-limbs-exam"
+        },
+        "name": "NCDHC Observation Limbs Examination",
+        "description": "Observation profile to record outcome of the Limbs check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-milk-feeding-status"
+        },
+        "name": "NCDHC Observation Milk Feeding Status",
+        "description": "Observation profile to record Milk Feeding Status of the newborn in context",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-mouth-palate-exam"
+        },
+        "name": "NCDHC Observation Mouth / Palate Examination",
+        "description": "Observation profile to record Outcome of the Mouth / Palate check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-musculo-skeletal-exam"
+        },
+        "name": "NCDHC Observation Musculo Skeletal Examination",
+        "description": "Observation profile to record outcome of the Musculo Skeletal check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
         },
         "name": "NCDHC Observation Newborn Bloodspot Screen",
@@ -225,13 +375,84 @@
         "description": "Observation profile to record Hearing Screening Test status and assoicated details for the newborn in context",
         "exampleBoolean": false
       },
-      
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-reflexes-neurological-exam"
+        },
+        "name": "NCDHC Observation Reflexes / Neurological Examination",
+        "description": "Observation profile to record Outcome of the Outcome of the Reflexes / Neurological Check (Physical examination checking the involuntary movements or actions to determine the wellbeing of the newborns brain and nervous system) performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-respiratory-rate-exam"
+        },
+        "name": "NCDHC Observation Respiratory Rate Examination",
+        "description": "Observation profile to record outcome of the Respiratory Rate check performed on the newborn",
+        "exampleBoolean": false
+      },
       {
         "reference": {
           "reference": "StructureDefinition/ncdhc-observation-sex-detected-at-birth"
         },
         "name": "NCDHC Observation Sex Detected At Birth",
         "description": "Observation profile to record sex of the baby identified at birth",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-skin-exam"
+        },
+        "name": "NCDHC Observation Skin Examination",
+        "description": "Observation profile to record outcome of the Skin check (Hyperpigmented macule, birthmarks, dry abrasions, bruises) performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-spine-exam"
+        },
+        "name": "NCDHC Observation Spine Examination",
+        "description": "Observation profile to record outcome of the Spine check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-testes-exam"
+        },
+        "name": "NCDHC Observation Testes fully descended R/L Examination",
+        "description": "Observation profile to record outcome of the Testes check performed on the newborn male Patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-umbilicus-exam"
+        },
+        "name": "NCDHC Observation Umbilicus Examination",
+        "description": "Observation profile to record outcome of the Umbilicus check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-vitalsign-bodyheight"
+        },
+        "name": "NCDHC Observation Vital Sign Body Height Profile",
+        "description": "This profile sets minimum expectations for the Observation Vital Sign resource to record, search and fetch Body Height or Birth Length of the patient in context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
+        },
+        "name": "NCDHC Observation Vital Sign Body Weight Profile",
+        "description": "This profile sets minimum expectations for the Observation Vital Sign resource to record, search and fetch Body Weight of the patient in context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-vitalsign-head-circumference"
+        },
+        "name": "NCDHC Observation Vital Sign Head Circumference Profile",
+        "description": "This profile sets minimum expectations for the Observation Vital Sign resource to record, search and fetch Head Circumference of the patient in context.",
         "exampleBoolean": false
       },
       {
@@ -348,19 +569,19 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ncdhc-pregnancy-complications-1"
-        },
-        "name": "NCDHC ValueSet Regularity Of Menstrual Cycle",
-        "description": "National Digital Health Collaborative - Value set to determine what type of pregnancy complication/s occurred during the birthing process",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/ncdhc-regularity-of-menstrual-cycle-1"
         },
         "name": "NCDHC ValueSet Regularity Of Menstrual Cycle",
         "description": "National Children's Digital Health Collaborative - Codes to determine what type of Observation Regularity Of Menstrual Cycle are applicable to each completed check/observation.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0012"
+        },
+        "name": "0a645a42-fe48-c001-0001-cdhr00hi0012",
+        "description": "Newborn Hearing Screen Composition Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-hearing-screen"
       },
       {
         "reference": {
@@ -500,11 +721,35 @@
       },
       {
         "reference": {
-          "reference": "Composition/a01bacd2-bb5c-11ea-b3de-0012ac130000"
+          "reference": "Composition/a01bacd2-bb5c-11ea-b3de-0003ac130000"
         },
-        "name": "a01bacd2-bb5c-11ea-b3de-0012ac130000",
-        "description": "Newborn Hearing Screen Composition Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-hearing-screen"
+        "name": "a01bacd2-bb5c-11ea-b3de-0003ac130000",
+        "description": "Newborn Discharge Composition Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-discharge"
+      },
+      {
+        "reference": {
+          "reference": "Composition/a01bacd2-bb5c-11ea-b3de-0005ac130000"
+        },
+        "name": "a01bacd2-bb5c-11ea-b3de-0005ac130000",
+        "description": "Newborn Examination Composition Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-examination"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/a01bacd2-ec5c-11ea-b3de-0003ac130004"
+        },
+        "name": "a01bacd2-ec5c-11ea-b3de-0003ac130004",
+        "description": "Newborn hearing spot screening Encounter detils",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/a01bacd2-ec5c-11ea-b3de-0005ac130004"
+        },
+        "name": "a01bacd2-ec5c-11ea-b3de-0005ac130004",
+        "description": "Newborn examination Encounter detils",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
       },
       {
         "reference": {
@@ -540,18 +785,18 @@
       },
       {
         "reference": {
-          "reference": "Observation/h01bacd2-ob8c-01ea-b3de-0012ac230010"
-        },
-        "name": "h01bacd2-ob8c-01ea-b3de-0012ac230010",
-        "description": "Newborn detected sex and effectiveDateTime",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-sex-detected-at-birth"
-      },
-      {
-        "reference": {
           "reference": "Location/l01bacd2-ec5c-11ea-b3de-0003ac130004"
         },
         "name": "l01bacd2-ec5c-11ea-b3de-0003ac130004",
         "description": "Estimated Date of birth assessnent Encounter Location",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Location/l01bacd2-ec5c-11ea-b3de-0005ac130004"
+        },
+        "name": "l01bacd2-ec5c-11ea-b3de-0005ac130004",
+        "description": "Newborn examination Encounter Location",
         "exampleBoolean": true
       },
       {
@@ -588,59 +833,27 @@
       },
       {
         "reference": {
+          "reference": "Bundle/ncdhc-document-nb-discharge-example"
+        },
+        "name": "ncdhc-document-nb-discharge-example",
+        "description": "Newborn Discharge FHIR Document Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-discharge-document"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/ncdhc-document-nb-exam-example"
+        },
+        "name": "ncdhc-document-nb-exam-example",
+        "description": "Newborn Examination FHIR Document Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-exam-document"
+      },
+      {
+        "reference": {
           "reference": "Bundle/ncdhc-document-nb-hearing-screen-example"
         },
         "name": "ncdhc-document-nb-hearing-screen-example",
         "description": "Newborn Hearing Screen FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-hearing-screen-document"
-      },
-      {
-        "reference": {
-          "reference": "Observation/ncdhc-observation-pregnancy-complication-1"
-        },
-        "name": "ncdhc-observation-pregnancy-complication-1",
-        "description": "Pregnancy Complication example represented as string with comment",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-complication"
-      },
-      {
-        "reference": {
-          "reference": "Observation/ncdhc-observation-pregnancy-complication-2"
-        },
-        "name": "ncdhc-observation-pregnancy-complication-2",
-        "description": "Pregnancy Complication example represented as CodeableConcept with comment",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-complication"
-      },
-      {
-        "reference": {
-          "reference": "Observation/ncdhc-observation-pregnancy-complication-ar"
-        },
-        "name": "ncdhc-observation-pregnancy-complication-ar",
-        "description": "Pregnancy Complication example with absent reason to represent no complication was noted",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-complication"
-      },
-      {
-        "reference": {
-          "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002"
-        },
-        "name": "o01bacd2-or5c-11ea-b3de-0242ac130002",
-        "description": "Example of NCDHCOrganisation to represent as clinically responsible Organisation",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-organisation"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/p01bacd2-or5c-11ea-b3de-0242ac130002"
-        },
-        "name": "p01bacd2-or5c-11ea-b3de-0242ac130002",
-        "description": "Example of NCDHCPractitioner  to represent as clinically responsible person",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003"
-        },
-        "name": "p01bacd2-pr5c-11ea-b3de-0242ac130003",
-        "description": "Example of NCDHCPractitionerRole  to represent as clinically responsible person",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role"
       }
     ],
     "page": {
