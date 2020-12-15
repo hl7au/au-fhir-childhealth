@@ -719,22 +719,7 @@
         "description": "Example to indicate if Date of last period is consistent with Ultra Sound",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-edb-consistent-lmp-us"
       },
-      {
-        "reference": {
-          "reference": "Composition/a01bacd2-bb5c-11ea-b3de-0003ac130000"
-        },
-        "name": "a01bacd2-bb5c-11ea-b3de-0003ac130000",
-        "description": "Newborn Discharge Composition Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-discharge"
-      },
-      {
-        "reference": {
-          "reference": "Composition/a01bacd2-bb5c-11ea-b3de-0005ac130000"
-        },
-        "name": "a01bacd2-bb5c-11ea-b3de-0005ac130000",
-        "description": "Newborn Examination Composition Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-examination"
-      },
+      
       {
         "reference": {
           "reference": "Encounter/a01bacd2-ec5c-11ea-b3de-0003ac130004"
@@ -743,14 +728,7 @@
         "description": "Newborn hearing spot screening Encounter detils",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
       },
-      {
-        "reference": {
-          "reference": "Encounter/a01bacd2-ec5c-11ea-b3de-0005ac130004"
-        },
-        "name": "a01bacd2-ec5c-11ea-b3de-0005ac130004",
-        "description": "Newborn examination Encounter detils",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
-      },
+      
       {
         "reference": {
           "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000"
