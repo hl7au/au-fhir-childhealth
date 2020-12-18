@@ -38,8 +38,7 @@ between systems collecting child and pregnant mother health information.It is in
 This guide covers the capability requirements of FHIR services to implement various profiles and support interfaces in an Australian context for the purpose of 
 implementation of the CDHR and DPHR.
 This document is a working specification that is expected to be implemented and tested by FHIR®© system producers to enable feedback to improve the content of this guide.
-## Scope
-To be added
+
 ## Usage
 This document is a working specification that may be directly implemented by FHIR®© system producers.
 
@@ -59,7 +58,8 @@ This guide is the product of collaborative work undertaken with participants fro
 
 
 
-[NCDHC Profiles]:http://build.fhir.org/ig/hl7au/au-fhir-childhealth/profiles.html  
+[NCDHC CDHR Profiles]:http://build.fhir.org/ig/hl7au/au-fhir-childhealth/branches/au-fhir-ch-r4/profiles-cdhr.html
+[NCDHC DPHR Profiles]:http://build.fhir.org/ig/hl7au/au-fhir-childhealth/branches/au-fhir-ch-r4/profiles-dphr.html 
 
 
 
