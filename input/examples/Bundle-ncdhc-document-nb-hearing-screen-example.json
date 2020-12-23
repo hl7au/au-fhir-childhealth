@@ -3,7 +3,7 @@
   "id": "ncdhc-document-nb-hearing-screen-example",
   "meta": {
     "profile": [
-      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-hearing-screen-document"
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-hearing-screen-document"
     ]
   },
   "type": "document",

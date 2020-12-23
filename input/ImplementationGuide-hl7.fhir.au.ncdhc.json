@@ -65,10 +65,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncdhc-bundle-bloodspot-screen-document"
+          "reference": "StructureDefinition/ncdhc-bundle-newborn-bloodspot-screen-document"
         },
-        "name": "NCDHC FHIR Bloodspot Screen Document",
-        "description": "NCDHC FHIR Bloodspot Screen document profile using Bundle resource",
+        "name": "NCDHC FHIR Newborn Bloodspot Screen Document",
+        "description": "NCDHC FHIR Newborn Bloodspot Screen document profile using Bundle resource",
         "exampleBoolean": false
       },
       {
@@ -89,10 +89,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncdhc-bundle-hearing-screen-document"
+          "reference": "StructureDefinition/ncdhc-bundle-newborn-hearing-screen-document"
         },
-        "name": "NCDHC FHIR Hearing Screen Document",
-        "description": "NCDHC FHIR Hearing Screen document profile using Bundle resource",
+        "name": "NCDHC FHIR Newborn Hearing Screen Document",
+        "description": "NCDHC FHIR Newborn Hearing Screen document profile using Bundle resource",
         "exampleBoolean": false
       },
       {
@@ -807,7 +807,7 @@
         },
         "name": "ncdhc-document-nb-bloodspot-screen-example",
         "description": "Newborn Bloodspot Screen FHIR Document Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-bloodspot-screen-document"
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-bloodspot-screen-document"
       },
       {
         "reference": {
@@ -831,7 +831,7 @@
         },
         "name": "ncdhc-document-nb-hearing-screen-example",
         "description": "Newborn Hearing Screen FHIR Document Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-hearing-screen-document"
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-hearing-screen-document"
       }
     ],
     "page": {
