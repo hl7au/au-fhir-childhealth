@@ -71,7 +71,7 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "min": 2
+        "min": 1
       },
       {
         "id": "Observation.code.coding:sexDetectedAtBirthSNOMED-CT",
@@ -88,7 +88,7 @@
         "id": "Observation.code.coding:sexDetectedAtBirthLOINC",
         "path": "Observation.code.coding",
         "sliceName": "sexDetectedAtBirthLOINC",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "patternCoding": {
           "code": "76689-9",
