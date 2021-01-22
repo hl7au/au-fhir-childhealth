@@ -811,9 +811,9 @@
       },
       {
         "reference": {
-          "reference": "Bundle/ncdhc-document-nb-discharge-example"
+          "reference": "Bundle/ncdhc-document-newborn-discharge-example"
         },
-        "name": "ncdhc-document-nb-discharge-example",
+        "name": "ncdhc-document-newborn-discharge-example",
         "description": "Newborn Discharge FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-discharge-document"
       },
