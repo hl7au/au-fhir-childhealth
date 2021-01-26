@@ -111,6 +111,11 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Encounter.partOf",
+        "path": "Encounter.partOf",
+        "mustSupport": true
       }
     ]
   }
