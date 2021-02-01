@@ -604,7 +604,7 @@
           "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0012"
         },
         "name": "0a645a42-fe48-e001-0001-cdhr00hi0012",
-        "description": "Newborn hearing spot screening Encounter detils",
+        "description": "Newborn hearing screening Encounter detils",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
       },
       {
@@ -832,6 +832,71 @@
         "name": "ncdhc-document-nb-hearing-screen-example",
         "description": "Newborn Hearing Screen FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-hearing-screen-document"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-o004-0001-cdhr00hi0003",
+        "description": "Example to demonstrate 'Breast fed' feeding method as applied to the baby patient in context",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-method"
+      },
+      
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o005-0001-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-o005-0001-cdhr00hi0003",
+        "description": "Use of different types of milk  being intaken by infant",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-milk-feeding-status"
+      },
+      
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o006-0001-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-o006-0001-cdhr00hi0003",
+        "description": "Example to demonstrate feeding status for Infant Feeding Method",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-status"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o012-0001-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-o012-0001-cdhr00hi0003",
+        "description": "Example to represent Baby's Body Weight at Discharge",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o011-0001-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-o011-0001-cdhr00hi0003",
+        "description": "Example to represent Baby's Body Height at Discharge",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyheight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o013-0001-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-o013-0001-cdhr00hi0003",
+        "description": "Example to represent Baby's Head Circumference at Discharge",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-head-circumference"
+      },{
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c007-0001-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-c007-0001-cdhr00hi0003",
+        "description": "Newborn Discharge Composition Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-discharge"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e008-0001-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-e008-0001-cdhr00hi0003",
+        "description": "Newborn discharge assessnent Encounter details",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
       }
     ],
     "page": {

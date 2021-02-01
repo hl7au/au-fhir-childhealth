@@ -3,7 +3,7 @@
   "id": "0a645a42-fe48-o005-0001-cdhr00hi0003",
   "meta": {
     "profile": [
-      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-milk-intake"
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-milk-feeding-status"
     ]
   },
   "code": {
