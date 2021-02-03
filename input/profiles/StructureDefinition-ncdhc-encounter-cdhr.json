@@ -48,6 +48,15 @@
         "mustSupport": true
       },
       {
+        "id": "Encounter.serviceType",
+        "path": "Encounter.serviceType",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-encounter-service-type-1"
+        }
+      },
+      {
         "id": "Encounter.subject",
         "path": "Encounter.subject",
         "type": [
@@ -81,13 +90,18 @@
       {
         "id": "Encounter.period",
         "path": "Encounter.period",
-        "short": "Date and time of the encounter",
+        "short": "Date and time of the encounter"
+      },
+      {
+        "id": "Encounter.period.start",
+        "path": "Encounter.period.start",
         "mustSupport": true
       },
       {
         "id": "Encounter.period.end",
         "path": "Encounter.period.end",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Encounter.location",
