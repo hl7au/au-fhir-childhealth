@@ -172,12 +172,12 @@
         "path": "Composition.section",
         "sliceName": "pregMgtPlan",
         "min": 0,
-        "max": "1"
+        "max": "*"
       },
       {
         "id": "Composition.section:pregMgtPlan.title",
         "path": "Composition.section.title",
-        "fixedString": "Plan sectionn",
+        "fixedString": "Plan section",
         "mustSupport": true
       },
       {
