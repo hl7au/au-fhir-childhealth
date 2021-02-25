@@ -401,14 +401,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncdhc-observation-sex-detected-at-birth"
-        },
-        "name": "NCDHC Observation Sex Detected At Birth",
-        "description": "Observation profile to record sex of the baby identified at birth",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-skin-exam"
         },
         "name": "NCDHC Observation Skin Examination",
