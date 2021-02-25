@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NCDHCValueSetFamilialRiskFactor",
+  "id": "ncdhc-familial-risk-factor-1",
+  "title": "NCDHC Familial Risk Factor ValueSet",
+  "description": "National Children's Digital Health Collaborative - Values to represent Familial Risk Factor",
+  "version": "current",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-familial-risk-factor-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "439750006",
+            "display": "Family history of hearing loss"
+          },
+          {
+            "code": "430723005",
+            "display": "Family history of visual disturbance"
+          },
+          {
+            "code": "700191004",
+            "display": "Family history of developmental hip dysplasia"
+          }
+        ]
+      }
+    ]
+  }
+}

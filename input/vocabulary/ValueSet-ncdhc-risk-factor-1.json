@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NCDHCValueSetRiskFactor",
+  "id": "ncdhc-risk-factor-1",
+  "title": "NCDHC Risk Factor ValueSet",
+  "description": "National Children's Digital Health Collaborative - Values to represent Familial Risk Factor",
+  "version": "current",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-risk-factor-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1402861000168108",
+            "display": "H/O: neonate requiring oxygen for 48 hours or more"
+          },
+          {
+            "code": "1376591000168102",
+            "display": "H/O: low birth weight status, less than 1500 g"
+          },
+          {
+            "code": "1402871000168102",
+            "display": "H/O: neonate requiring intensive care for 24 hours or more"
+          }
+        ]
+      }
+    ]
+  }
+}
