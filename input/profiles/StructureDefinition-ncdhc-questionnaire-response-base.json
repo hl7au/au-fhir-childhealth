@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-questionnaire-response-base",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-questionnaire-response-base",
+  "version": "current",
+  "name": "NCDHCQuestionnaireResponseBase",
+  "title": "NCDHC QuestionnaireResponse Base",
+  "status": "active",
+  "description": "This is the base NCDHC QuestionnaireResponse base profile to gather information in Question Response form",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": true,
+  "type": "QuestionnaireResponse",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "QuestionnaireResponse.subject",
+        "path": "QuestionnaireResponse.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child",
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-expectant-mother"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "QuestionnaireResponse.author",
+        "path": "QuestionnaireResponse.author",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child",
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-expectant-mother",
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role",
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-organisation"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

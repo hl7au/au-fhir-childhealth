@@ -1,0 +1,177 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-questionnaire-base",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Specialized.Definitional Artifacts"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-questionnaire-base",
+  "version": "current",
+  "name": "NCDHCQuestionnaireBase",
+  "title": "NCDHC Questionnaire Base",
+  "status": "active",
+  "description": "This is the base NCDHC Questionnaire base profile to point to the source Questionnaire for question response",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Questionnaire",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Questionnaire.version",
+        "path": "Questionnaire.version",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.name",
+        "path": "Questionnaire.name",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.title",
+        "path": "Questionnaire.title",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.status",
+        "path": "Questionnaire.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.subjectType",
+        "path": "Questionnaire.subjectType",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.date",
+        "path": "Questionnaire.date",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.publisher",
+        "path": "Questionnaire.publisher",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.description",
+        "path": "Questionnaire.description",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.code",
+        "path": "Questionnaire.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.id",
+        "path": "Questionnaire.item.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.linkId",
+        "path": "Questionnaire.item.linkId",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.definition",
+        "path": "Questionnaire.item.definition",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.code",
+        "path": "Questionnaire.item.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.prefix",
+        "path": "Questionnaire.item.prefix",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.text",
+        "path": "Questionnaire.item.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.type",
+        "path": "Questionnaire.item.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.enableWhen",
+        "path": "Questionnaire.item.enableWhen",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.required",
+        "path": "Questionnaire.item.required",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.repeats",
+        "path": "Questionnaire.item.repeats",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.maxLength",
+        "path": "Questionnaire.item.maxLength",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.answerValueSet",
+        "path": "Questionnaire.item.answerValueSet",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.answerOption",
+        "path": "Questionnaire.item.answerOption",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.initial",
+        "path": "Questionnaire.item.initial",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.item",
+        "path": "Questionnaire.item.item",
+        "mustSupport": true
+      }
+    ]
+  }
+}

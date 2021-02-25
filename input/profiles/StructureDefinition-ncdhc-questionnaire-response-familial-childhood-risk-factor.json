@@ -1,0 +1,126 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-questionnaire-response-familial-childhood-risk-factor",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-questionnaire-response-familial-childhood-risk-factor",
+  "version": "current",
+  "name": "NCDHCQuestionnaireResponseFamilialChildhoodRiskFactor",
+  "title": "NCDHC QuestionnaireResponse",
+  "status": "active",
+  "description": "This is the NCDHC QuestionnaireResponse profile to gather Familial Childhood Risk Factor information in Question Response form",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "QuestionnaireResponse",
+  "baseDefinition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-questionnaire-response-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "QuestionnaireResponse.questionnaire",
+        "path": "QuestionnaireResponse.questionnaire",
+        "short": "Familial childhood risk factor questionnaire",
+        "min": 1,
+        "fixedCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/Questionnaire/ncdhc-questionnaire-familial-childhood-risk-factor-cdhr00hi0023",
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.status",
+        "path": "QuestionnaireResponse.status",
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.subject",
+        "path": "QuestionnaireResponse.subject",
+        "short": "Reference to the child patient in context",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.encounter",
+        "path": "QuestionnaireResponse.encounter",
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.authored",
+        "path": "QuestionnaireResponse.authored",
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.author",
+        "path": "QuestionnaireResponse.author",
+        "short": "Reference to the person who is answering the questions on behalf of the child patient in context",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-expectant-mother",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.item.linkId",
+        "path": "QuestionnaireResponse.item.linkId",
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.item.definition",
+        "path": "QuestionnaireResponse.item.definition",
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.item.text",
+        "path": "QuestionnaireResponse.item.text",
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.item.answer",
+        "path": "QuestionnaireResponse.item.answer",
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.item.item",
+        "path": "QuestionnaireResponse.item.item",
+        "mustSupport": true
+      }
+    ]
+  }
+}

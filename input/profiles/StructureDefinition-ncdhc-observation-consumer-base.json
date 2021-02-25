@@ -1,0 +1,155 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-observation-consumer-base",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-consumer-base",
+  "version": "current",
+  "name": "NCDHCObservationConsumerBase",
+  "title": "NCDHC Consumer Observation Base",
+  "status": "active",
+  "description": "This is the base profile for NCDHC Consumer Obsrevation. All NCDHC Observation profiles SHALL extend this profile (vital-sgins profiles are excluded)",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": true,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "constraint": [
+          {
+            "key": "ncdhc-obs-inv-001-val-ar",
+            "severity": "error",
+            "human": "If neither of component nor hasMember nor interpretation element is present, then either a value[x] or a data absent reason must be present",
+            "expression": "component.exists() or interpretation.exists() or value.exists() or hasMember.exists() or dataAbsentReason.exists()",
+            "source": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-consumer-base"
+          },
+          {
+            "key": "ncdhc-obs-inv-003-exm-org",
+            "severity": "error",
+            "human": "An organisation which captures the relevant details shall be present",
+            "expression": "(dataAbsentReason.empty()) implies (performer.reference.resolve().where($this is Organization).exists())",
+            "source": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-consumer-base"
+          },
+          {
+            "key": "ncdhc-obs-inv-002-exm-pract",
+            "severity": "error",
+            "human": "Person who is clinically responsible for the undertaking of the exam shall be present",
+            "expression": "(dataAbsentReason.empty()) implies (performer.reference.resolve().where($this is PractitionerRole).exists())",
+            "source": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-consumer-base"
+          }
+        ]
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the code.coding pattern"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this.resolve()"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on type:$this.resolve()"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-patient",
+              "http://hl7.org.au/fhir/StructureDefinition/au-relatedperson"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.dataAbsentReason",
+        "path": "Observation.dataAbsentReason",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-observation-data-absent-reason-1"
+        }
+      }
+    ]
+  }
+}
