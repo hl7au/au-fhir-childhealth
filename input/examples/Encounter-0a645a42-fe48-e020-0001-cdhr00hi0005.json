@@ -1,6 +1,6 @@
 {
   "resourceType": "Encounter",
-  "id": "a01bacd2-ec5c-11ea-b3de-0012ac130004",
+  "id": "0a645a42-fe48-e020-0001-cdhr00hi0005",
   "meta": {
     "profile": [
       "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
@@ -13,25 +13,25 @@
     "display": "ambulatory"
   },
   "subject": {
-    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-    "display": "Child of Eve Bill"
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+    "display": "Baby of Lina Smith"
   },
   "period": {
-    "start": "2020-09-12T16:13:03+10:00",
-    "end": "2020-09-12T16:13:03+10:00"
+    "start": "2020-08-10T16:13:03+10:00",
+    "end": "2020-08-10T16:13:03+10:00"
   },
   "contained": [
     {
       "resourceType": "Location",
-      "id": "l01bacd2-ec5c-11ea-b3de-0012ac130004",
-      "name": "Blacktown GP Clinic"
+      "id": "0a645a42-fe48-l021-0001-cdhr00hi0005",
+      "name": "Downunder Hospital"
     }
   ],
   "location": [
     {
       "location": {
-        "reference": "#l01bacd2-ec5c-11ea-b3de-0012ac130004",
-        "display": "Blacktown GP Clinic"
+        "reference": "#0a645a42-fe48-l021-0001-cdhr00hi0005",
+        "display": "Downunder Hospital"
       },
       "status": "completed"
     }

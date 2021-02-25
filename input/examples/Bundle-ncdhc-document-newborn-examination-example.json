@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "ncdhc-document-nb-exam-example",
+  "id": "ncdhc-document-newborn-examination-example",
   "meta": {
     "profile": [
       "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-exam-document"
@@ -9,15 +9,15 @@
   "type": "document",
   "identifier": {
     "system": "urn:ietf:rfc:3986",
-    "value": "urn:uuid:0c3151bd-1cbf-4d64-b04d-cd9187a4c6e0"
+    "value": "urn:uuid:0c3151bd-1abf-4d64-b04d-cd1017a4c6e0"
   },
-  "timestamp": "2020-08-26T16:13:03+10:00",
+  "timestamp": "2018-11-27T16:13:03+10:00",
   "entry": [
     {
-      "fullUrl": "urn:uuid:a01bacd2-bb5c-11ea-b3de-0005ac130000",
+      "fullUrl": "urn:uuid:0a645a42-fe48-c0019-0001-cdhr00hi0005",
       "resource": {
         "resourceType": "Composition",
-        "id": "a01bacd2-bb5c-11ea-b3de-0005ac130000",
+        "id": "0a645a42-fe48-c019-0001-cdhr00hi0005",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-examination"
@@ -28,8 +28,7 @@
           "coding": [
             {
               "code": "NEWBRNEXM",
-              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
-              "display": "Newborn Examination"
+              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
             }
           ]
         },
@@ -45,95 +44,100 @@
                 }
               ]
             },
+            "mode": "snapshot",
             "entry": [
               {
-                "reference": "Observation/p01bacd2-ob1c-01ea-b3de-0242ac130000",
+                "reference": "Observation/0a645a42-fe48-o000-0001-cdhr00hi0005",
+                "display": "Sex"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0005",
                 "display": "Child examination: fontanelle"
               },
               {
-                "reference": "Observation/p02bacd2-ob1c-01ea-b3de-0242ac130000",
-                "display": "Palate finding"
+                "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0005",
+                "display": "Eye/vision observable"
               },
               {
-                "reference": "Observation/p03bacd2-ob1c-01ea-b3de-0242ac130000",
-                "display": "Cardiovascular function"
-              },
-              {
-                "reference": "Observation/p04bacd2-ob1c-01ea-b3de-0242ac130000",
-                "display": "Respiratory rate"
-              },
-              {
-                "reference": "Observation/p05bacd2-ob1c-01ea-b3de-0242ac130000",
-                "display": "Appearance of anus"
-              },
-              {
-                "reference": "Observation/p06bacd2-ob1c-01ea-b3de-0242ac130000",
-                "display": "Genital observable"
-              },
-              {
-                "reference": "Observation/p07bacd2-ob1c-01ea-b3de-0242ac130000",
-                "display": "Musculoskeletal observable"
-              },
-              {
-                "reference": "Observation/p08bacd2-ob1c-01ea-b3de-0242ac130000",
-                "display": "Hip joint stability"
-              },
-              {
-                "reference": "Observation/p09bacd2-ob1c-01ea-b3de-0242ac130000",
-                "display": "Skin observable"
-              },
-              {
-                "reference": "Observation/p10bacd2-ob1c-01ea-b3de-0242ac130000",
-                "display": "Neurological observable"
-              },
-              {
-                "reference": "Observation/p11bacd2-ob1c-01ea-b3de-0242ac130000",
-                "display": "Femoral pulse"
-              },
-              {
-                "reference": "Observation/p12bacd2-ob1c-01ea-b3de-0242ac130000",
+                "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0005",
                 "display": "Ear observable"
               },
               {
-                "reference": "Observation/p13bacd2-ob1c-01ea-b3de-0242ac130000",
-                "display": "Visual function"
+                "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0005",
+                "display": "Palate finding"
               },
               {
-                "reference": "Observation/p14bacd2-ob1c-01ea-b3de-0242ac130000",
-                "display": "Position of testicle"
+                "reference": "Observation/0a645a42-fe48-o005-0001-cdhr00hi0005",
+                "display": "Cardiovascular function"
               },
               {
-                "reference": "Observation/p15bacd2-ob1c-01ea-b3de-0242ac130000",
-                "display": "Abdominal examination finding"
+                "reference": "Observation/0a645a42-fe48-o006-0001-cdhr00hi0005",
+                "display": "Femoral pulse"
               },
               {
-                "reference": "Observation/p16bacd2-ob1c-01ea-b3de-0242ac130000",
+                "reference": "Observation/0a645a42-fe48-o007-0001-cdhr00hi0005",
+                "display": "Respiratory Rate"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o008-0001-cdhr00hi0005",
+                "display": "Abdominal examination"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o009-0001-cdhr00hi0005",
                 "display": "Umbilical stump observable"
               },
               {
-                "reference": "Observation/p17bacd2-ob1c-01ea-b3de-0242ac130000",
-                "display": "Spinal region observable"
+                "reference": "Observation/0a645a42-fe48-o010-0001-cdhr00hi0005",
+                "display": "Appearance of anus"
               },
               {
-                "reference": "Observation/p18bacd2-ob1c-01ea-b3de-0242ac130000",
-                "display": "Limb structure observable"
+                "reference": "Observation/0a645a42-fe48-o011-0001-cdhr00hi0005",
+                "display": "Genital observable"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o012-0001-cdhr00hi0005",
+                "display": "Position of testicle"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o013-0001-cdhr00hi0005",
+                "display": "Musculoskeletal observable"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o014-0001-cdhr00hi0005",
+                "display": "Limb structure"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o015-0001-cdhr00hi0005",
+                "display": "Spinal Region Observation"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o016-0001-cdhr00hi0005",
+                "display": "Hip joint stability"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o017-0001-cdhr00hi0005",
+                "display": "Skin observable"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o018-0001-cdhr00hi0005",
+                "display": "Neurological Observable"
               }
             ]
           }
         ],
         "status": "final",
         "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Child of Eve Bill"
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
         },
         "encounter": {
-          "reference": "Encounter/a01bacd2-ec5c-11ea-b3de-0005ac130004",
-          "display": "Examination on 26th Aug 2020 at Downunder Hospital"
+          "reference": "Encounter/0a645a42-fe48-e020-0001-cdhr00hi0005",
+          "display": "Consultation on 10th Aug 2020 at Downunder Hospital"
         },
-        "date": "2020-08-26T16:13:03+10:00",
+        "date": "2020-08-12T16:13:03+10:00",
         "author": [
           {
-            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "reference": "Practitioner/p01bacd2-or5c-11ea-b3de-0242ac130002",
             "display": "Helen Mayo"
           }
         ],
@@ -153,10 +157,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:a01bacd2-pt5c-11ea-b3de-0242ac130001",
+      "fullUrl": "urn:uuid:a01bacd2-pt5c-11ea-b3de-0242ac130000",
       "resource": {
         "resourceType": "Patient",
-        "id": "a01bacd2-pt5c-11ea-b3de-0242ac130001",
+        "id": "a01bacd2-pt5c-11ea-b3de-0242ac130000",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
@@ -175,7 +179,7 @@
               "text": "IHI"
             },
             "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
-            "value": "8003608166690503"
+            "value": "8003608833357361"
           },
           {
             "type": {
@@ -209,9 +213,9 @@
             ],
             "name": {
               "given": [
-                "Eva"
+                "Lina"
               ],
-              "family": "Bill"
+              "family": "Smith"
             }
           }
         ],
@@ -220,43 +224,55 @@
           {
             "use": "temp",
             "given": [
-              "Baby Of Eve"
+              "Baby of Lina"
             ],
-            "family": "Bill"
+            "family": "Smith"
           }
         ],
-        "gender": "female",
-        "birthDate": "2020-01-01"
+        "gender": "male",
+        "birthDate": "2020-08-01"
       }
     },
     {
-      "fullUrl": "urn:uuid:o01bacd2-or5c-11ea-b3de-0242ac130002",
+      "fullUrl": "urn:uuid:0a645a42-fe48-e020-0001-cdhr00hi0005",
       "resource": {
-        "resourceType": "Organization",
-        "id": "o01bacd2-or5c-11ea-b3de-0242ac130002",
+        "resourceType": "Encounter",
+        "id": "0a645a42-fe48-e020-0001-cdhr00hi0005",
         "meta": {
           "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-organisation"
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
           ]
         },
-        "identifier": [
+        "status": "finished",
+        "class": {
+          "code": "AMB",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
+        },
+        "period": {
+          "start": "2020-08-10T16:13:03+10:00",
+          "end": "2020-08-10T16:13:03+10:00"
+        },
+        "contained": [
           {
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org.au/CodeSystem/v2-0203",
-                  "code": "NOI",
-                  "display": "National Organisation Identifier"
-                }
-              ],
-              "text": "HPI-O"
-            },
-            "system": "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
-            "value": "8003621566684455"
+            "resourceType": "Location",
+            "id": "0a645a42-fe48-l021-0001-cdhr00hi0005",
+            "name": "Downunder Hospital"
           }
         ],
-        "active": true,
-        "name": "Downunder Hospital"
+        "location": [
+          {
+            "location": {
+              "reference": "#0a645a42-fe48-l021-0001-cdhr00hi0005",
+              "display": "Downunder Hospital"
+            },
+            "status": "completed"
+          }
+        ]
       }
     },
     {
@@ -297,13 +313,13 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:p01bacd2-pr5c-11ea-b3de-0242ac130003",
+      "fullUrl": "urn:uuid:o01bacd2-or5c-11ea-b3de-0242ac130002",
       "resource": {
-        "resourceType": "PractitionerRole",
-        "id": "p01bacd2-pr5c-11ea-b3de-0242ac130003",
+        "resourceType": "Organization",
+        "id": "o01bacd2-or5c-11ea-b3de-0242ac130002",
         "meta": {
           "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role"
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-organisation"
           ]
         },
         "identifier": [
@@ -312,467 +328,25 @@
               "coding": [
                 {
                   "system": "http://terminology.hl7.org.au/CodeSystem/v2-0203",
-                  "code": "NPIO",
-                  "display": "National Provider at Organisation Identifier"
+                  "code": "NOI",
+                  "display": "National Organisation Identifier"
                 }
               ],
-              "text": "NPIO"
+              "text": "HPI-O"
             },
-            "system": "http://hl7.org.au/id/npio",
-            "value": "8003619900015717@8003621566684455"
+            "system": "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
+            "value": "8003621566684455"
           }
         ],
         "active": true,
-        "practitioner": {
-          "reference": "Practitioner/p01bacd2-or5c-11ea-b3de-0242ac130002"
-        },
-        "organization": {
-          "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002"
-        },
-        "specialty": [
-          {
-            "coding": [
-              {
-                "code": "408443003",
-                "system": "http://snomed.info/sct",
-                "display": "General medical practice"
-              }
-            ]
-          }
-        ]
+        "name": "Downunder Hospital"
       }
     },
     {
-      "fullUrl": "urn:uuid:a01bacd2-ec5c-11ea-b3de-0005ac130004",
-      "resource": {
-        "resourceType": "Encounter",
-        "id": "a01bacd2-ec5c-11ea-b3de-0005ac130004",
-        "meta": {
-          "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
-          ]
-        },
-        "status": "finished",
-        "class": {
-          "code": "AMB",
-          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-          "display": "ambulatory"
-        },
-        "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Child of Eve Bill"
-        },
-        "period": {
-          "start": "2020-08-26T16:13:03+10:00",
-          "end": "2020-08-26T16:13:03+10:00"
-        },
-        "contained": [
-          {
-            "resourceType": "Location",
-            "id": "l01bacd2-ec5c-11ea-b3de-0005ac130004",
-            "name": "Downunder Hospital"
-          }
-        ],
-        "location": [
-          {
-            "location": {
-              "reference": "#l01bacd2-ec5c-11ea-b3de-0005ac130004",
-              "display": "Downunder Hospital"
-            },
-            "status": "completed"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:p01bacd2-ob1c-01ea-b3de-0242ac130000",
+      "fullUrl": "urn:uuid:0a645a42-fe48-o017-0001-cdhr00hi0005",
       "resource": {
         "resourceType": "Observation",
-        "id": "p01bacd2-ob1c-01ea-b3de-0242ac130000",
-        "meta": {
-          "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam"
-          ]
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "170190000",
-              "system": "http://snomed.info/sct",
-              "display": "Child examination: fontanelle"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
-        },
-        "effectiveDateTime": "2020-08-12T16:13:03+10:00",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "17621005",
-                "system": "http://snomed.info/sct",
-                "display": "Normal"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
-            "display": "Examiner"
-          },
-          {
-            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
-            "display": "Clinical Responsible Organisation"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:p02bacd2-ob1c-01ea-b3de-0242ac130000",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "p02bacd2-ob1c-01ea-b3de-0242ac130000",
-        "meta": {
-          "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-mouth-palate-exam"
-          ]
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "249390006",
-              "system": "http://snomed.info/sct",
-              "display": "Palate finding"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
-        },
-        "effectiveDateTime": "2020-08-12T16:13:03+10:00",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "17621005",
-                "system": "http://snomed.info/sct",
-                "display": "Normal"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
-            "display": "Examiner"
-          },
-          {
-            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
-            "display": "Clinical Responsible Organisation"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:p03bacd2-ob1c-01ea-b3de-0242ac130000",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "p03bacd2-ob1c-01ea-b3de-0242ac130000",
-        "meta": {
-          "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-cardiovascular-heart-exam"
-          ]
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "70337006",
-              "system": "http://snomed.info/sct",
-              "display": "Cardiovascular function"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
-        },
-        "effectiveDateTime": "2020-08-12T16:13:03+10:00",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "17621005",
-                "system": "http://snomed.info/sct",
-                "display": "Normal"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
-            "display": "Examiner"
-          },
-          {
-            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
-            "display": "Clinical Responsible Organisation"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:p04bacd2-ob1c-01ea-b3de-0242ac130000",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "p04bacd2-ob1c-01ea-b3de-0242ac130000",
-        "meta": {
-          "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-respiratory-rate-exam"
-          ]
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "86290005",
-              "system": "http://snomed.info/sct",
-              "display": "Respiratory rate"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
-        },
-        "effectiveDateTime": "2020-08-12T16:13:03+10:00",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "17621005",
-                "system": "http://snomed.info/sct",
-                "display": "Normal"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
-            "display": "Examiner"
-          },
-          {
-            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
-            "display": "Clinical Responsible Organisation"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:p05bacd2-ob1c-01ea-b3de-0242ac130000",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "p05bacd2-ob1c-01ea-b3de-0242ac130000",
-        "meta": {
-          "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-anus-exam"
-          ]
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "364154000",
-              "system": "http://snomed.info/sct",
-              "display": "Appearance of anus"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
-        },
-        "effectiveDateTime": "2020-08-12T16:13:03+10:00",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "17621005",
-                "system": "http://snomed.info/sct",
-                "display": "Normal"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
-            "display": "Examiner"
-          },
-          {
-            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
-            "display": "Clinical Responsible Organisation"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:p06bacd2-ob1c-01ea-b3de-0242ac130000",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "p06bacd2-ob1c-01ea-b3de-0242ac130000",
-        "meta": {
-          "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-genitalia-exam"
-          ]
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "364204002",
-              "system": "http://snomed.info/sct",
-              "display": "Genital observable"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
-        },
-        "effectiveDateTime": "2020-08-12T16:13:03+10:00",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "17621005",
-                "system": "http://snomed.info/sct",
-                "display": "Normal"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
-            "display": "Examiner"
-          },
-          {
-            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
-            "display": "Clinical Responsible Organisation"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:p07bacd2-ob1c-01ea-b3de-0242ac130000",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "p07bacd2-ob1c-01ea-b3de-0242ac130000",
-        "meta": {
-          "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam"
-          ]
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "364561008",
-              "system": "http://snomed.info/sct",
-              "display": "Musculoskeletal observable"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
-        },
-        "effectiveDateTime": "2020-08-12T16:13:03+10:00",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "17621005",
-                "system": "http://snomed.info/sct",
-                "display": "Normal"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
-            "display": "Examiner"
-          },
-          {
-            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
-            "display": "Clinical Responsible Organisation"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:p08bacd2-ob1c-01ea-b3de-0242ac130000",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "p08bacd2-ob1c-01ea-b3de-0242ac130000",
-        "meta": {
-          "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hips-exam"
-          ]
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "250100005",
-              "system": "http://snomed.info/sct",
-              "display": "Hip joint stability"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
-        },
-        "effectiveDateTime": "2020-08-12T16:13:03+10:00",
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "17621005",
-                "system": "http://snomed.info/sct",
-                "display": "Normal"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
-            "display": "Examiner"
-          },
-          {
-            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
-            "display": "Clinical Responsible Organisation"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:p09bacd2-ob1c-01ea-b3de-0242ac130000",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "p09bacd2-ob1c-01ea-b3de-0242ac130000",
+        "id": "0a645a42-fe48-o017-0001-cdhr00hi0005",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-skin-exam"
@@ -789,10 +363,10 @@
         },
         "status": "final",
         "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
         },
-        "effectiveDateTime": "2020-08-12T16:13:03+10:00",
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
         "interpretation": [
           {
             "coding": [
@@ -817,30 +391,30 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:p10bacd2-ob1c-01ea-b3de-0242ac130000",
+      "fullUrl": "urn:uuid:0a645a42-fe48-o001-0001-cdhr00hi0005",
       "resource": {
         "resourceType": "Observation",
-        "id": "p10bacd2-ob1c-01ea-b3de-0242ac130000",
+        "id": "0a645a42-fe48-o001-0001-cdhr00hi0005",
         "meta": {
           "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-reflexes-neurological-exam"
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam"
           ]
         },
         "code": {
           "coding": [
             {
-              "code": "363820009",
+              "code": "170190000",
               "system": "http://snomed.info/sct",
-              "display": "Neurological observable"
+              "display": "Child examination: fontanelle"
             }
           ]
         },
         "status": "final",
         "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
         },
-        "effectiveDateTime": "2020-08-12T16:13:03+10:00",
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
         "interpretation": [
           {
             "coding": [
@@ -865,176 +439,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:p11bacd2-ob1c-01ea-b3de-0242ac130000",
+      "fullUrl": "urn:uuid:0a645a42-fe48-o002-0001-cdhr00hi0005",
       "resource": {
         "resourceType": "Observation",
-        "id": "p11bacd2-ob1c-01ea-b3de-0242ac130000",
-        "meta": {
-          "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-femoral-pulses-exam"
-          ]
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "67316000",
-              "system": "http://snomed.info/sct",
-              "display": "Femoral pulse"
-            }
-          ]
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "code": "69833005",
-                  "system": "http://snomed.info/sct",
-                  "display": "Structure of right femoral artery"
-                }
-              ]
-            },
-            "interpretation": [
-              {
-                "coding": [
-                  {
-                    "code": "183924009",
-                    "system": "http://snomed.info/sct",
-                    "display": "Referral needed"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "code": "113270003",
-                  "system": "http://snomed.info/sct",
-                  "display": "Structure of left femoral artery"
-                }
-              ]
-            },
-            "interpretation": [
-              {
-                "coding": [
-                  {
-                    "code": "183924009",
-                    "system": "http://snomed.info/sct",
-                    "display": "Referral needed"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "status": "final",
-        "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
-        },
-        "effectiveDateTime": "2020-08-21T16:13:03+10:00",
-        "performer": [
-          {
-            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
-            "display": "Examiner"
-          },
-          {
-            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
-            "display": "Clinical Responsible Organisation"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:p12bacd2-ob1c-01ea-b3de-0242ac130000",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "p12bacd2-ob1c-01ea-b3de-0242ac130000",
-        "meta": {
-          "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-ears-exam"
-          ]
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "363991003",
-              "system": "http://snomed.info/sct",
-              "display": "Ear observable"
-            }
-          ]
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "code": "25577004",
-                  "system": "http://snomed.info/sct",
-                  "display": "Right ear structure"
-                }
-              ]
-            },
-            "interpretation": [
-              {
-                "coding": [
-                  {
-                    "code": "183924009",
-                    "system": "http://snomed.info/sct",
-                    "display": "Referral needed"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "code": "89644007",
-                  "system": "http://snomed.info/sct",
-                  "display": "Left ear structure"
-                }
-              ]
-            },
-            "interpretation": [
-              {
-                "coding": [
-                  {
-                    "code": "183924009",
-                    "system": "http://snomed.info/sct",
-                    "display": "Referral needed"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "status": "final",
-        "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
-        },
-        "effectiveDateTime": "2020-08-21T16:13:03+10:00",
-        "performer": [
-          {
-            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
-            "display": "Examiner"
-          },
-          {
-            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
-            "display": "Clinical Responsible Organisation"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:p13bacd2-ob1c-01ea-b3de-0242ac130000",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "p13bacd2-ob1c-01ea-b3de-0242ac130000",
+        "id": "0a645a42-fe48-o002-0001-cdhr00hi0005",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-eyes-exam"
@@ -1064,9 +472,9 @@
               {
                 "coding": [
                   {
-                    "code": "183924009",
+                    "code": "17621005",
                     "system": "http://snomed.info/sct",
-                    "display": "Referral needed"
+                    "display": "Normal"
                   }
                 ]
               }
@@ -1086,9 +494,9 @@
               {
                 "coding": [
                   {
-                    "code": "183924009",
+                    "code": "17621005",
                     "system": "http://snomed.info/sct",
-                    "display": "Referral needed"
+                    "display": "Normal"
                   }
                 ]
               }
@@ -1097,10 +505,10 @@
         ],
         "status": "final",
         "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
         },
-        "effectiveDateTime": "2020-08-21T16:13:03+10:00",
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
         "performer": [
           {
             "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
@@ -1114,39 +522,76 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:p14bacd2-ob1c-01ea-b3de-0242ac130000",
+      "fullUrl": "urn:uuid:0a645a42-fe48-o003-0001-cdhr00hi0005",
       "resource": {
         "resourceType": "Observation",
-        "id": "p14bacd2-ob1c-01ea-b3de-0242ac130000",
+        "id": "0a645a42-fe48-o003-0001-cdhr00hi0005",
         "meta": {
           "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-testes-exam"
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-ears-exam"
           ]
         },
         "code": {
           "coding": [
             {
-              "code": "249237009",
+              "code": "363991003",
               "system": "http://snomed.info/sct",
-              "display": "Position of testicle"
+              "display": "Ear observable"
             }
           ]
         },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "25577004",
+                  "system": "http://snomed.info/sct",
+                  "display": "Right ear structure"
+                }
+              ]
+            },
+            "interpretation": [
+              {
+                "coding": [
+                  {
+                    "code": "17621005",
+                    "system": "http://snomed.info/sct",
+                    "display": "Normal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "89644007",
+                  "system": "http://snomed.info/sct",
+                  "display": "Left ear structure"
+                }
+              ]
+            },
+            "interpretation": [
+              {
+                "coding": [
+                  {
+                    "code": "17621005",
+                    "system": "http://snomed.info/sct",
+                    "display": "Normal"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
         "status": "final",
         "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
         },
-        "effectiveDateTime": "2020-08-12T16:13:03+10:00",
-        "dataAbsentReason": {
-          "coding": [
-            {
-              "code": "not-applicable",
-              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-              "display": "Not Applicable"
-            }
-          ]
-        },
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
         "performer": [
           {
             "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
@@ -1160,10 +605,237 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:p15bacd2-ob1c-01ea-b3de-0242ac130000",
+      "fullUrl": "urn:uuid:0a645a42-fe48-o004-0001-cdhr00hi0005",
       "resource": {
         "resourceType": "Observation",
-        "id": "p15bacd2-ob1c-01ea-b3de-0242ac130000",
+        "id": "0a645a42-fe48-o004-0001-cdhr00hi0005",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-mouth-palate-exam"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "249390006",
+              "system": "http://snomed.info/sct",
+              "display": "Palate finding"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
+        },
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "17621005",
+                "system": "http://snomed.info/sct",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o005-0001-cdhr00hi0005",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o005-0001-cdhr00hi0005",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-cardiovascular-heart-exam"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "70337006",
+              "system": "http://snomed.info/sct",
+              "display": "Cardiovascular function"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
+        },
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "17621005",
+                "system": "http://snomed.info/sct",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o006-0001-cdhr00hi0005",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o006-0001-cdhr00hi0005",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-femoral-pulses-exam"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "67316000",
+              "system": "http://snomed.info/sct",
+              "display": "Femoral pulse"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "69833005",
+                  "system": "http://snomed.info/sct",
+                  "display": "Structure of right femoral artery"
+                }
+              ]
+            },
+            "interpretation": [
+              {
+                "coding": [
+                  {
+                    "code": "17621005",
+                    "system": "http://snomed.info/sct",
+                    "display": "Normal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "113270003",
+                  "system": "http://snomed.info/sct",
+                  "display": "Structure of left femoral artery"
+                }
+              ]
+            },
+            "interpretation": [
+              {
+                "coding": [
+                  {
+                    "code": "17621005",
+                    "system": "http://snomed.info/sct",
+                    "display": "Normal"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
+        },
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o007-0001-cdhr00hi0005",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o007-0001-cdhr00hi0005",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-respiratory-rate-exam"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "86290005",
+              "system": "http://snomed.info/sct",
+              "display": "Respiratory rate"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
+        },
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "17621005",
+                "system": "http://snomed.info/sct",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o008-0001-cdhr00hi0005",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o008-0001-cdhr00hi0005",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-abdomen-exam"
@@ -1180,10 +852,10 @@
         },
         "status": "final",
         "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
         },
-        "effectiveDateTime": "2020-08-12T16:13:03+10:00",
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
         "interpretation": [
           {
             "coding": [
@@ -1208,10 +880,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:p16bacd2-ob1c-01ea-b3de-0242ac130000",
+      "fullUrl": "urn:uuid:0a645a42-fe48-o009-0001-cdhr00hi0005",
       "resource": {
         "resourceType": "Observation",
-        "id": "p16bacd2-ob1c-01ea-b3de-0242ac130000",
+        "id": "0a645a42-fe48-o009-0001-cdhr00hi0005",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-umbilicus-exam"
@@ -1228,10 +900,10 @@
         },
         "status": "final",
         "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
         },
-        "effectiveDateTime": "2020-08-12T16:13:03+10:00",
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
         "interpretation": [
           {
             "coding": [
@@ -1256,30 +928,30 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:p17bacd2-ob1c-01ea-b3de-0242ac130000",
+      "fullUrl": "urn:uuid:0a645a42-fe48-o010-0001-cdhr00hi0005",
       "resource": {
         "resourceType": "Observation",
-        "id": "p17bacd2-ob1c-01ea-b3de-0242ac130000",
+        "id": "0a645a42-fe48-o010-0001-cdhr00hi0005",
         "meta": {
           "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-spine-exam"
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-anus-exam"
           ]
         },
         "code": {
           "coding": [
             {
-              "code": "364415005",
+              "code": "364154000",
               "system": "http://snomed.info/sct",
-              "display": "Spinal region observable"
+              "display": "Appearance of anus"
             }
           ]
         },
         "status": "final",
         "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
         },
-        "effectiveDateTime": "2020-08-12T16:13:03+10:00",
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
         "interpretation": [
           {
             "coding": [
@@ -1304,10 +976,189 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:p18bacd2-ob1c-01ea-b3de-0242ac130000",
+      "fullUrl": "urn:uuid:0a645a42-fe48-o011-0001-cdhr00hi0005",
       "resource": {
         "resourceType": "Observation",
-        "id": "p18bacd2-ob1c-01ea-b3de-0242ac130000",
+        "id": "0a645a42-fe48-o011-0001-cdhr00hi0005",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-genitalia-exam"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "364204002",
+              "system": "http://snomed.info/sct",
+              "display": "Genital observables"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
+        },
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "17621005",
+                "system": "http://snomed.info/sct",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o012-0001-cdhr00hi0005",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o012-0001-cdhr00hi0005",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-testes-exam"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "249237009",
+              "system": "http://snomed.info/sct",
+              "display": "Position of testicle"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "15598003",
+                  "system": "http://snomed.info/sct",
+                  "display": "Structure of right testis"
+                }
+              ]
+            },
+            "interpretation": [
+              {
+                "coding": [
+                  {
+                    "code": "17621005",
+                    "system": "http://snomed.info/sct",
+                    "display": "Normal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "63239009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Structure of left testis"
+                }
+              ]
+            },
+            "interpretation": [
+              {
+                "coding": [
+                  {
+                    "code": "17621005",
+                    "system": "http://snomed.info/sct",
+                    "display": "Normal"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
+        },
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o013-0001-cdhr00hi0005",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o013-0001-cdhr00hi0005",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "364561008",
+              "system": "http://snomed.info/sct",
+              "display": "Musculoskeletal observable"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
+        },
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "17621005",
+                "system": "http://snomed.info/sct",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o014-0001-cdhr00hi0005",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o014-0001-cdhr00hi0005",
         "meta": {
           "profile": [
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-limbs-exam"
@@ -1324,10 +1175,10 @@
         },
         "status": "final",
         "subject": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
-          "display": "Baby of Eve Bill"
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
         },
-        "effectiveDateTime": "2020-08-12T16:13:03+10:00",
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
         "interpretation": [
           {
             "coding": [
@@ -1339,6 +1190,201 @@
             ]
           }
         ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o015-0001-cdhr00hi0005",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o015-0001-cdhr00hi0005",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-spine-exam"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "364415005",
+              "system": "http://snomed.info/sct",
+              "display": "Spinal region observable"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
+        },
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "17621005",
+                "system": "http://snomed.info/sct",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o016-0001-cdhr00hi0005",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o016-0001-cdhr00hi0005",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hips-exam"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "250100005",
+              "system": "http://snomed.info/sct",
+              "display": "Hip joint stability"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
+        },
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "17621005",
+                "system": "http://snomed.info/sct",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o018-0001-cdhr00hi0005",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o018-0001-cdhr00hi0005",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-reflexes-neurological-exam"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "363820009",
+              "system": "http://snomed.info/sct",
+              "display": "Neurological observable"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
+        },
+        "effectiveDateTime": "2020-08-10T16:13:03+10:00",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "17621005",
+                "system": "http://snomed.info/sct",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o000-0001-cdhr00hi0005",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o000-0001-cdhr00hi0005",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-biological-sex-at-birth"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1515311000168102",
+              "display": "Biological sex at birth"
+            },
+            {
+              "code": "76689-9",
+              "system": "http://loinc.org",
+              "display": "Sex assigned at birth"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2020-08-21T16:13:03+10:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "248153007",
+              "system": "http://snomed.info/sct",
+              "display": "Male"
+            }
+          ]
+        },
         "performer": [
           {
             "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
