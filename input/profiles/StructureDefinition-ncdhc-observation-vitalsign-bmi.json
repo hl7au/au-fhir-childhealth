@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-vitalsign-bodyweight",
-  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight",
+  "id": "ncdhc-observation-vitalsign-bmi",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bmi",
   "version": "current",
-  "name": "NCDHCObservationVitalSignBodyWeight",
-  "title": "NCDHC Observation Vital Sign Body Weight Profile",
+  "name": "NCDHCObservationVitalSignBMI",
+  "title": "NCDHC Observation Vital Sign BMI Profile",
   "status": "active",
-  "description": "This profile sets minimum expectations for the Observation Vital Sign resource to record, search and fetch Body Weight of the patient in context.",
+  "description": "This profile sets minimum expectations for the Observation Vital Sign resource to record, search and fetch BMI.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -43,7 +43,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/bodyweight",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/bmi",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -53,24 +53,24 @@
         "min": 1
       },
       {
-        "id": "Observation.code.coding:bodyWeightSNOMED-CT",
+        "id": "Observation.code.coding:bmiSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "bodyWeightSNOMED-CT",
+        "sliceName": "bmiSNOMED-CT",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:bodyWeightSNOMED-CT.system",
+        "id": "Observation.code.coding:bmiSNOMED-CT.system",
         "path": "Observation.code.coding.system",
         "min": 1,
         "patternUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:bodyWeightSNOMED-CT.code",
+        "id": "Observation.code.coding:bmiSNOMED-CT.code",
         "path": "Observation.code.coding.code",
         "min": 1,
-        "patternCode": "27113001"
+        "patternCode": "60621009"
       },
       {
         "id": "Observation.subject",

@@ -123,10 +123,29 @@
         ]
       },
       {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-organization",
+              "http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole",
+              "http://hl7.org.au/fhir/StructureDefinition/au-patient",
+              "http://hl7.org.au/fhir/StructureDefinition/au-relatedperson",
+              "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Observation.interpretation",
         "path": "Observation.interpretation",
-        "max": "1",
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-observation-interpretation-1"
+        }
       }
     ]
   }
