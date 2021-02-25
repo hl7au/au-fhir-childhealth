@@ -1,0 +1,200 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-consent-pregnancy-management-plan",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Foundation.Security"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-consent-pregnancy-management-plan",
+  "version": "current",
+  "name": "NCDHCConsentPregnancyManagementPlan",
+  "title": "NCDHC Consent Pregnancy Management Plan",
+  "status": "active",
+  "description": "CarePlan profile to record Patient's consent to the pregnancy management plan and associated details",
+  "purpose": "\n The following details associated to the consent provided by expectant mother in context are recorded:\n   * Patient's agreement to the plan\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Consent",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Consent",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Consent.status",
+        "path": "Consent.status",
+        "fixedCode": "active",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.scope",
+        "path": "Consent.scope",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "treatment",
+              "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.category",
+        "path": "Consent.category",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "59284-0",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.patient",
+        "path": "Consent.patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-expectant-mother"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.dateTime",
+        "path": "Consent.dateTime",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.performer",
+        "path": "Consent.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-expectant-mother",
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role",
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-organisation",
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.sourceAttachment",
+        "path": "Consent.sourceAttachment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.type",
+        "path": "Consent.provision.type",
+        "short": "To represent acceptance of the plan",
+        "fixedCode": "permit",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.purpose",
+        "path": "Consent.provision.purpose",
+        "patternCoding": {
+          "code": "COC",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.provision",
+        "path": "Consent.provision.provision",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Consent.provision.provision.actor.role",
+        "path": "Consent.provision.provision.actor.role",
+        "short": "To define the role of the person who has provided the consent",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "CONSENTER",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.provision.class",
+        "path": "Consent.provision.provision.class",
+        "short": "What type of resource instance is associated with the Consent",
+        "patternCoding": {
+          "code": "CarePlan",
+          "system": "http://hl7.org/fhir/resource-types"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.provision.data.meaning",
+        "path": "Consent.provision.provision.data.meaning",
+        "fixedCode": "instance",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.provision.data.reference",
+        "path": "Consent.provision.provision.data.reference",
+        "short": "Reference to the CarePlan instance for which the consent is given",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-careplan-pregnancy-management-plan"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}
