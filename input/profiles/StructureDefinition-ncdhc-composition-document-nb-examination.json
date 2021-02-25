@@ -201,6 +201,23 @@
         "min": 1
       },
       {
+        "id": "Composition.section.entry:biologicalSex",
+        "path": "Composition.section.entry",
+        "sliceName": "biologicalSex",
+        "short": "The biological sex of the baby identified at birth",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-biological-sex-at-birth"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section.entry:headAndFontanelles",
         "path": "Composition.section.entry",
         "sliceName": "headAndFontanelles",
