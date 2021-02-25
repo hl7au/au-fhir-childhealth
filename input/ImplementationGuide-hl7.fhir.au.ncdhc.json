@@ -159,6 +159,14 @@
         "description": "This is the base NCDHC Encounter profile for DPHR Health Interactions.",
         "exampleBoolean": false
       },
+	  {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-biological-sex-at-birth"
+        },
+        "name": "NCDHC Observation Biological Sex At Birth",
+        "description": "Observation profile to record the biological sex of the baby identified at birth",
+        "exampleBoolean": false
+      },
       {
         "reference": {
           "reference": "StructureDefinition/ncdhc-observation-abdomen-exam"
@@ -185,10 +193,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncdhc-observation-base"
+          "reference": "StructureDefinition/ncdhc-observation-clinical-base"
         },
-        "name": "NCDHC Observation Base",
-        "description": "This is the base profile for NCDHC Obsrevation. All NCDHC Observation profiles SHALL extend this profile (vital-sgins profiles are excluded)",
+        "name": "NCDHC Observation Clinical Base",
+        "description": "This is the base profile for NCDHC Clinical Obsrevation. All NCDHC Observation profiles SHALL extend this profile (vital-sgins profiles are excluded)",
         "exampleBoolean": false
       },
       {
@@ -599,6 +607,15 @@
         "description": "Estimated Date of Birth Composition Composition Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-edb"
       },
+	  {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c019-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-c019-0001-cdhr00hi0005",
+        "description": "Newborn Examination Composition Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-examination"
+      },
+	  
       {
         "reference": {
           "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0012"
@@ -719,13 +736,174 @@
         "description": "Example to indicate if Date of last period is consistent with Ultra Sound",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-edb-consistent-lmp-us"
       },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o000-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o000-0001-cdhr00hi0005",
+        "description": "Newborn Biological Sex and effectiveDateTime",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-biological-sex-at-birth"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o001-0001-cdhr00hi0005",
+        "description": "Example to demonstrate outcome of the check performed around the anatomical feature of the infant skull",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o002-0001-cdhr00hi0005",
+        "description": "Example to demonstrates outcome of the Right and Left Eye check performed on the newborn",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-eyes-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o003-0001-cdhr00hi0005",
+        "description": "Example to demonstrates outcome of the Right and Left Ear check performed on the newborn",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-ears-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o004-0001-cdhr00hi0005",
+        "description": "Example to demonstrate'Mouth Or Palate' Assesment outcome of the baby patient in context",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-mouth-palate-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o005-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o005-0001-cdhr00hi0005",
+        "description": "Example to demonstrate Outcome of the Cardiovascular or heart check assesment of the baby patient in context",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-cardiovascular-heart-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o006-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o006-0001-cdhr00hi0005",
+        "description": "Example to demonstrates outcome of the Right and Left Femoral Pulses check performed on the newborn",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-femoral-pulses-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o007-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o007-0001-cdhr00hi0005",
+        "description": "Example to demonstrate outcome of the Respiratory Rate check performed on the newborn",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-respiratory-rate-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o008-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o008-0001-cdhr00hi0005",
+        "description": "Example to demonstrate Outcome of the Abdomen Check performed on the newborn",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-abdomen-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o009-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o009-0001-cdhr00hi0005",
+        "description": "Example to demonstrate Outcome of the Umbilicus Check (Smell, discharge, hernia) performed on newborn",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-umbilicus-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o010-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o010-0001-cdhr00hi0005",
+        "description": "Example to demonstrate outcome of the Anus check performed on the newborn",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-anus-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o011-0001-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-o011-0001-cdhr00hi0003",
+        "description": "Example to represent Baby's Body Height at Discharge",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyheight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o011-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o011-0001-cdhr00hi0005",
+        "description": "Example to demonstrate outcome of physical examination of Genitalia performed on the newborn",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-genitalia-exam"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o012-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o012-0001-cdhr00hi0005",
+        "description": "Example to demonstrates left and right testes assesment outcome",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-testes-exam"
+      },
+	  
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o013-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o013-0001-cdhr00hi0005",
+        "description": "Example to demonstrate Outcome of the 'Musculo Skeletal' check performed on the newborn",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o014-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o014-0001-cdhr00hi0005",
+        "description": "Example to demonstrate Outcome of the 'Limbs' check performed on the newborn",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-limbs-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o015-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o015-0001-cdhr00hi0005",
+        "description": "Example to demonstrate Outcome of the 'Spine' check performed on the newborn",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-spine-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o016-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o016-0001-cdhr00hi0005",
+        "description": "Example to demonstrate Outcome of the 'Hips' check performed on the newborn",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hips-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o017-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o017-0001-cdhr00hi0005",
+        "description": "Example to demonstrate Outcome of the 'Skin' check performed on the newborn",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-skin-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o018-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o018-0001-cdhr00hi0005",
+        "description": "Example to demonstrate Outcome of the 'Reflexes / Neurological' check performed on the newborn",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-reflexes-neurological-exam"
+      },
       
       {
         "reference": {
           "reference": "Encounter/a01bacd2-ec5c-11ea-b3de-0003ac130004"
         },
         "name": "a01bacd2-ec5c-11ea-b3de-0003ac130004",
-        "description": "Newborn hearing spot screening Encounter detils",
+        "description": "Newborn hearing screening Encounter detils",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
       },
       
@@ -819,9 +997,9 @@
       },
       {
         "reference": {
-          "reference": "Bundle/ncdhc-document-nb-exam-example"
+          "reference": "Bundle/ncdhc-document-newborn-examination-example"
         },
-        "name": "ncdhc-document-nb-exam-example",
+        "name": "ncdhc-document-newborn-examination-example",
         "description": "Newborn Examination FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-exam-document"
       },
@@ -869,14 +1047,6 @@
       },
       {
         "reference": {
-          "reference": "Observation/0a645a42-fe48-o011-0001-cdhr00hi0003"
-        },
-        "name": "0a645a42-fe48-o011-0001-cdhr00hi0003",
-        "description": "Example to represent Baby's Body Height at Discharge",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyheight"
-      },
-      {
-        "reference": {
           "reference": "Observation/0a645a42-fe48-o013-0001-cdhr00hi0003"
         },
         "name": "0a645a42-fe48-o013-0001-cdhr00hi0003",
@@ -895,6 +1065,14 @@
           "reference": "Encounter/0a645a42-fe48-e008-0001-cdhr00hi0003"
         },
         "name": "0a645a42-fe48-e008-0001-cdhr00hi0003",
+        "description": "Newborn discharge assessnent Encounter details",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+      },
+	  {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e020-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-e020-0001-cdhr00hi0005",
         "description": "Newborn discharge assessnent Encounter details",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
       }

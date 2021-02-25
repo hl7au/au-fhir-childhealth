@@ -1,0 +1,148 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-careplan-pregnancy-complication",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Care Provision"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-careplan-pregnancy-complication",
+  "version": "current",
+  "name": "NCDHCCarePlanPregnancyComplication",
+  "title": "NCDHC CarePlan Antenatal Care",
+  "status": "active",
+  "description": "CarePlan profile to record Antenatal Care and associated details",
+  "purpose": "\n The following details associated to the expectant mother in context are recorded:\n   * Current Pregnancy Complications\n   * Description of plan\n   * Date of plan\n   * Under Care of / Treating Clinican\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "CarePlan",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CarePlan",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CarePlan.status",
+        "path": "CarePlan.status",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.intent",
+        "path": "CarePlan.intent",
+        "fixedCode": "plan",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.category",
+        "path": "CarePlan.category",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.category.coding",
+        "path": "CarePlan.category.coding",
+        "patternCoding": {
+          "code": "129755006",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "CarePlan.title",
+        "path": "CarePlan.title",
+        "fixedString": "Pregnancy Complication Treatement Plan",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.description",
+        "path": "CarePlan.description",
+        "short": "Plan Details"
+      },
+      {
+        "id": "CarePlan.subject",
+        "path": "CarePlan.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-expectant-mother"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.period",
+        "path": "CarePlan.period",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.created",
+        "path": "CarePlan.created",
+        "short": "Plan Date",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.contributor",
+        "path": "CarePlan.contributor",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.careTeam",
+        "path": "CarePlan.careTeam",
+        "short": "Under Care of / Treating Clinican",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.addresses",
+        "path": "CarePlan.addresses",
+        "short": "Current Pregnancy Complications",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-condition-pregnancy-complication"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.goal",
+        "path": "CarePlan.goal",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.note",
+        "path": "CarePlan.note",
+        "short": "Comments on the plan",
+        "mustSupport": true
+      }
+    ]
+  }
+}
