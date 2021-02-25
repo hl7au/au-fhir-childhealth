@@ -38,6 +38,13 @@
   "differential": {
     "element": [
       {
+        "id": "Encounter.extension:encounterDescription",
+        "path": "Encounter.extension",
+        "sliceName": "encounterDescription",
+        "short": "Description or comments on the Encounter",
+        "mustSupport": true
+      },
+      {
         "id": "Encounter.status",
         "path": "Encounter.status",
         "mustSupport": true
@@ -102,6 +109,15 @@
         "path": "Encounter.period.end",
         "min": 1,
         "mustSupport": true
+      },
+      {
+        "id": "Encounter.reasonCode",
+        "path": "Encounter.reasonCode",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-encounter-reason-code-1"
+        }
       },
       {
         "id": "Encounter.location",

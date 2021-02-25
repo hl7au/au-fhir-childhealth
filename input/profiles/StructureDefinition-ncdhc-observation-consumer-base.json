@@ -16,7 +16,7 @@
   "name": "NCDHCObservationConsumerBase",
   "title": "NCDHC Consumer Observation Base",
   "status": "active",
-  "description": "This is the base profile for NCDHC Consumer Obsrevation. All NCDHC Observation profiles SHALL extend this profile (vital-sgins profiles are excluded)",
+  "description": "This is the base profile for NCDHC Consumer Obsrevation. All NCDHC Consumer Observation profiles SHALL extend this profile (vital-sgins profiles are excluded)",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -69,17 +69,10 @@
             "source": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-consumer-base"
           },
           {
-            "key": "ncdhc-obs-inv-003-exm-org",
+            "key": "ncdhc-obs-inv-003-perf-consumer",
             "severity": "error",
-            "human": "An organisation which captures the relevant details shall be present",
-            "expression": "(dataAbsentReason.empty()) implies (performer.reference.resolve().where($this is Organization).exists())",
-            "source": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-consumer-base"
-          },
-          {
-            "key": "ncdhc-obs-inv-002-exm-pract",
-            "severity": "error",
-            "human": "Person who is clinically responsible for the undertaking of the exam shall be present",
-            "expression": "(dataAbsentReason.empty()) implies (performer.reference.resolve().where($this is PractitionerRole).exists())",
+            "human": "A reference to the Patient or RelatedPerson shall be present",
+            "expression": "(dataAbsentReason.empty()) implies (performer.reference.resolve().exists())",
             "source": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-consumer-base"
           }
         ]
@@ -121,17 +114,6 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this.resolve()"
-            }
-          ],
-          "rules": "open",
-          "ordered": false,
-          "description": "Slice based on type:$this.resolve()"
-        },
         "type": [
           {
             "code": "Reference",
