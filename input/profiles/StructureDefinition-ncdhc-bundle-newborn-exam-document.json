@@ -13,7 +13,7 @@
   ],
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-exam-document",
   "version": "current",
-  "name": "NCDHCBundleNewbornExamDocument",
+  "name": "NCDHCBundleNewbornExaminationDocument",
   "title": "NCDHC FHIR Newborn Examination Document",
   "status": "active",
   "description": "NCDHC FHIR Newborn Examination document profile using Bundle resource",

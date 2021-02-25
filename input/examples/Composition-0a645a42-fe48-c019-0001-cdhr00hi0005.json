@@ -1,0 +1,140 @@
+{
+  "resourceType": "Composition",
+  "id": "0a645a42-fe48-c019-0001-cdhr00hi0005",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-examination"
+    ]
+  },
+  "title": "Newborn Examination",
+  "type": {
+    "coding": [
+      {
+        "code": "NEWBRNEXM",
+        "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
+      }
+    ]
+  },
+  "section": [
+    {
+      "title": "Neonatal screening",
+      "code": {
+        "coding": [
+          {
+            "code": "60151004",
+            "system": "http://snomed.info/sct",
+            "display": "Neonatal screening"
+          }
+        ]
+      },
+      "mode": "snapshot",
+      "entry": [
+        {
+          "reference": "Observation/0a645a42-fe48-o000-0001-cdhr00hi0005",
+          "display": "Sex"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0005",
+          "display": "Child examination: fontanelle"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0005",
+          "display": "Eye/vision observable"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0005",
+          "display": "Ear observable"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0005",
+          "display": "Palate finding"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o005-0001-cdhr00hi0005",
+          "display": "Cardiovascular function"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o006-0001-cdhr00hi0005",
+          "display": "Femoral pulse"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o007-0001-cdhr00hi0005",
+          "display": "Respiratory Rate"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o008-0001-cdhr00hi0005",
+          "display": "Abdominal examination"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o009-0001-cdhr00hi0005",
+          "display": "Umbilical stump observable"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o010-0001-cdhr00hi0005",
+          "display": "Appearance of anus"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o011-0001-cdhr00hi0005",
+          "display": "Genital observable"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o012-0001-cdhr00hi0005",
+          "display": "Position of testicle"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o013-0001-cdhr00hi0005",
+          "display": "Musculoskeletal observable"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o014-0001-cdhr00hi0005",
+          "display": "Limb structure"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o015-0001-cdhr00hi0005",
+          "display": "Spinal Region Observation"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o016-0001-cdhr00hi0005",
+          "display": "Hip joint stability"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o017-0001-cdhr00hi0005",
+          "display": "Skin observable"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o018-0001-cdhr00hi0005",
+          "display": "Neurological Observable"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+    "display": "Baby of Lina Smith"
+  },
+  "encounter": {
+    "reference": "Encounter/0a645a42-fe48-e020-0001-cdhr00hi0005",
+    "display": "Consultation on 10th Aug 2020 at Downunder Hospital"
+  },
+  "date": "2020-08-12T16:13:03+10:00",
+  "author": [
+    {
+      "reference": "Practitioner/p01bacd2-or5c-11ea-b3de-0242ac130002",
+      "display": "Helen Mayo"
+    }
+  ],
+  "attester": [
+    {
+      "mode": "professional",
+      "party": {
+        "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+        "display": "Downunder Hospital"
+      }
+    }
+  ],
+  "custodian": {
+    "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+    "display": "Downunder Hospital"
+  }
+}
