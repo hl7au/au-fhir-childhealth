@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-composition-consumer-document-base",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-consumer-document-base",
+  "version": "current",
+  "name": "NCDHCCompositionConsumerDocumentBase",
+  "title": "NCDHC Composition Consumer Document Base",
+  "status": "active",
+  "description": "This profile is used to represent the Compsition associated with a FHIR Consumer Document",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "fhirdocumentreference",
+      "uri": "http://hl7.org/fhir/documentreference",
+      "name": "FHIR DocumentReference"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": true,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-composition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.type.coding",
+        "path": "Composition.type.coding",
+        "min": 1
+      },
+      {
+        "id": "Composition.category.coding",
+        "path": "Composition.category.coding",
+        "min": 1
+      },
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.encounter",
+        "path": "Composition.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.author",
+        "path": "Composition.author",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-patient",
+              "http://hl7.org.au/fhir/StructureDefinition/au-relatedperson",
+              "http://hl7.org/fhir/StructureDefinition/Device"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.attester.time",
+        "path": "Composition.attester.time",
+        "short": "Date and Time of consumer attesting the information"
+      },
+      {
+        "id": "Composition.attester.party",
+        "path": "Composition.attester.party",
+        "short": "Consumer who entered the data",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-patient",
+              "http://hl7.org.au/fhir/StructureDefinition/au-relatedperson",
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-organisation",
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner",
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

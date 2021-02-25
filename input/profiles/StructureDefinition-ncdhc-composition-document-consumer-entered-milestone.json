@@ -1,0 +1,184 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-composition-document-consumer-entered-milestone",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-consumer-entered-milestone",
+  "version": "current",
+  "name": "NCDHCCompositionConsumerEnteredMilestone",
+  "title": "NCDHC Composition Consumer Entered Milestone",
+  "status": "active",
+  "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Milestone entered by the consumer",
+  "purpose": "The document at a minimum carries details on the following areas:\n\n   * Milestones \n   * Date Observed\n   * Details of the person who entered the encounter details\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "fhirdocumentreference",
+      "uri": "http://hl7.org/fhir/documentreference",
+      "name": "FHIR DocumentReference"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-consumer-document-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.identifier",
+        "path": "Composition.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.status",
+        "path": "Composition.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.type",
+        "path": "Composition.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.type.coding",
+        "path": "Composition.type.coding",
+        "patternCoding": {
+          "code": "CONENTRENCT",
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
+        }
+      },
+      {
+        "id": "Composition.category",
+        "path": "Composition.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.category.coding",
+        "path": "Composition.category.coding",
+        "patternCoding": {
+          "code": "CONDOC",
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1"
+        }
+      },
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.encounter",
+        "path": "Composition.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.date",
+        "path": "Composition.date",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.author",
+        "path": "Composition.author",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.title",
+        "path": "Composition.title",
+        "fixedString": "Consumer Entered Encounter",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.confidentiality",
+        "path": "Composition.confidentiality",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.attester.mode",
+        "path": "Composition.attester.mode",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.attester.time",
+        "path": "Composition.attester.time",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.attester.party",
+        "path": "Composition.attester.party",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.relatesTo",
+        "path": "Composition.relatesTo",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.title",
+        "path": "Composition.section.title",
+        "fixedString": "Consumer Entered Milestone",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.code.coding",
+        "path": "Composition.section.code.coding",
+        "patternCoding": {
+          "code": "80943009",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Composition.section.entry",
+        "path": "Composition.section.entry",
+        "short": "infant milestone details as provided by the Consumer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-childhood-milestones"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}
