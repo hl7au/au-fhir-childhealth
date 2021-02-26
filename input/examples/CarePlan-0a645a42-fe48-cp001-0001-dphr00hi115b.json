@@ -1,0 +1,40 @@
+{
+  "resourceType": "CarePlan",
+  "id": "0a645a42-fe48-cp001-0001-dphr00hi115b",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-careplan-pregnancy-management-plan"
+    ]
+  },
+  "intent": "plan",
+  "status": "completed",
+  "title": "Care Plan",
+  "description": "The following investigations are recommended during your pregnancy :\r\n\r\n* Initial tests which includes: Full blood count, blood group and antibodies, Syphilis, Rubella (German Measles) Hepatitis B and C, HIV and a urine culture.\r\n\r\n* Testing for Varicella (Chickenpox), Toxoplasmosis, Parvovirus, Cytomegalovirus is optional – some GP’s may do it up front anyway.\r\n\r\n* First Trimester Ultrasound\r\n\r\n* Screening for Down’s Syndrome and Other Chromosomal Issues\r\n\r\n* Morphology Ultrasound\r\n\r\n* Gestational Diabetes",
+  "subject": {
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+    "display": "Eve Bill"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "773433004",
+          "system": "http://snomed.info/sct",
+          "display": "Antenatal management plan"
+        }
+      ]
+    }
+  ],
+  "careTeam": [
+    {
+      "reference": "CareTeam/0a645a42-fe48-ct001-0001-dphr00hi115b",
+      "display": "Antenatal management care Team"
+    }
+  ],
+  "created": "2020-08-10T16:13:03+10:00",
+  "note": [
+    {
+      "text": "Dr smith suggested this care plan"
+    }
+  ]
+}

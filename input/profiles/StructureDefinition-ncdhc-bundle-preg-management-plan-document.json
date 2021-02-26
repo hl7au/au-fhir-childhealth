@@ -13,7 +13,7 @@
   ],
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-preg-management-plan-document",
   "version": "current",
-  "name": "NCDHCBundlenPregnancyManagementPlan",
+  "name": "NCDHCBundlenPregnancyManagementPlanDocument",
   "title": "NCDHC FHIR Pregnancy Management Plan Document",
   "status": "active",
   "description": "NCDHC FHIR Pregnancy Management Plan document profile using Bundle resource",
