@@ -13,3 +13,5 @@ The following list of profiles are being ussed in the DPHR (Digital Pregnancy He
 
 ## DPHR Health Interactions
 * [Estimated Date of Birth (EDB)](StructureDefinition-ncdhc-bundle-edb-document.html) - Estimated Date of Birth and associated details.
+* [Pregnancy Management Plan](StructureDefinition-ncdhc-bundle-preg-management-plan-document.html) - Deetails on pregnancy management plan.
+* [Pregnancy Complication and Plan](StructureDefinition-ncdhc-bundle-preg-issues-plan-document.html) - Pregnancy complications and associated details.
