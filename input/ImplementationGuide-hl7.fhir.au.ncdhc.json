@@ -49,6 +49,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-bundle-consumer-entered-milestone-document"
+        },
+        "name": "NCDHC FHIR Consumer Entered Milestone Document",
+        "description": "NCDHC FHIR Consumer Entered FMilestone document profile using Bundle resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-bundle-document"
         },
         "name": "NCDHC FHIR Document Base",
@@ -57,10 +65,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncdhc-bundle-edb-document"
+          "reference": "StructureDefinition/ncdhc-bundle-fh-rf-consumer-entered-document"
         },
-        "name": "NCDHC FHIR Estimated Date of Birth Document",
-        "description": "NCDHC FHIR Estimated Date of Birth document profile using Bundle resource",
+        "name": "NCDHC FHIR Consumer Entered Family History and Risk factor Document",
+        "description": "NCDHC FHIR Consumer Entered Family History and Risk factor document profile using Bundle resource",
         "exampleBoolean": false
       },
       {
@@ -97,6 +105,54 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-bundle-parental-observation-document"
+        },
+        "name": "NCDHC FHIR Parental Observation Document",
+        "description": "NCDHC FHIR Parental Observation document profile using Bundle resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-bundle-preg-issues-plan-document"
+        },
+        "name": "NCDHC FHIR Pregnancy Complication Plan Document",
+        "description": "NCDHC FHIR Pregnancy Complication Plan document profile using Bundle resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-bundle-preg-management-plan-document"
+        },
+        "name": "NCDHC FHIR Pregnancy Management Plan Document",
+        "description": "NCDHC FHIR Pregnancy Management Plan document profile using Bundle resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-careplan-pregnancy-complication"
+        },
+        "name": "NCDHC CarePlan Antenatal Care",
+        "description": "CarePlan profile to record Antenatal Care and associated details",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-careplan-pregnancy-management-plan"
+        },
+        "name": "NCDHC CarePlan Pregnancy Management Plan",
+        "description": "CarePlan profile to record pregnancy management plans and associated details",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-care-team"
+        },
+        "name": "NCDHC Care Team",
+        "description": "This profile defines a care Team",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-composition-clinical-document-base"
         },
         "name": "NCDHC Composition Clinical Document Base",
@@ -105,9 +161,41 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-consumer-document-base"
+        },
+        "name": "NCDHC Composition Consumer Document Base",
+        "description": "This profile is used to represent the Compsition associated with a FHIR Consumer Document",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-document-consumer-entered-encounter"
+        },
+        "name": "NCDHC Composition Consumer Entered Encounter",
+        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on encounter details as entered by the consumer",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-document-consumer-entered-milestone"
+        },
+        "name": "NCDHC Composition Consumer Entered Milestone",
+        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Milestone entered by the consumer",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-composition-document-edb"
         },
         "name": "NCDHC Composition Estimated Date Of Birth",
+        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Estimated Date of Birth",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-document-fh-rf-consumer"
+        },
+        "name": "NCDHC Composition Family History and Risk Factors Entered By Consumer",
         "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Estimated Date of Birth",
         "exampleBoolean": false
       },
@@ -145,6 +233,46 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-parental-observation"
+        },
+        "name": "NCDHC Composition Parental Observation",
+        "description": "Composition based profile to define the structure and narrative content necessary for Parental Observation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-document-preg-issues-plans"
+        },
+        "name": "NCDHC Composition Pregnancy Issues And Plans",
+        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Estimated Date of Birth",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-document-preg-management-plans"
+        },
+        "name": "NCDHC Composition Pregnancy Management Plans",
+        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Estimated Date of Birth",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-condition-pregnancy-complication"
+        },
+        "name": "NCDHC Condition Pregnancy Complication",
+        "description": "Condition profile to record pregnancy complications and associated details",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-consent-pregnancy-management-plan"
+        },
+        "name": "NCDHC Consent Pregnancy Management Plan",
+        "description": "CarePlan profile to record Patient's consent to the pregnancy management plan and associated details",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-encounter-cdhr"
         },
         "name": "NCDHC Encounter CDHR",
@@ -157,14 +285,6 @@
         },
         "name": "NCDHC Encounter DPHR",
         "description": "This is the base NCDHC Encounter profile for DPHR Health Interactions.",
-        "exampleBoolean": false
-      },
-	  {
-        "reference": {
-          "reference": "StructureDefinition/ncdhc-observation-biological-sex-at-birth"
-        },
-        "name": "NCDHC Observation Biological Sex At Birth",
-        "description": "Observation profile to record the biological sex of the baby identified at birth",
         "exampleBoolean": false
       },
       {
@@ -193,10 +313,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncdhc-observation-clinical-base"
+          "reference": "StructureDefinition/ncdhc-observation-biological-sex-at-birth"
         },
-        "name": "NCDHC Observation Clinical Base",
-        "description": "This is the base profile for NCDHC Clinical Obsrevation. All NCDHC Observation profiles SHALL extend this profile (vital-sgins profiles are excluded)",
+        "name": "NCDHC Observation Biological Sex Identified At Birth",
+        "description": "Observation profile to record biological sex of the baby as identified at birth",
         "exampleBoolean": false
       },
       {
@@ -213,6 +333,30 @@
         },
         "name": "NCDHC Observation Cardiovascular / heart Examination",
         "description": "Observation profile to record outcome of the Cardiovascular / heart check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-childhood-milestones"
+        },
+        "name": "NCDHC Observation Childhood Milestones",
+        "description": "Observation profile to record childhood milestones as entered by the Consumer",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-clinical-base"
+        },
+        "name": "NCDHC Clinical Observation Base",
+        "description": "This is the base profile for NCDHC Clinical Obsrevation. All NCDHC Observation profiles SHALL extend this profile (vital-sgins profiles are excluded)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-consumer-base"
+        },
+        "name": "NCDHC Consumer Observation Base",
+        "description": "This is the base profile for NCDHC Consumer Obsrevation. All NCDHC Consumer Observation profiles SHALL extend this profile (vital-sgins profiles are excluded)",
         "exampleBoolean": false
       },
       {
@@ -385,6 +529,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-pregnancy-complication"
+        },
+        "name": "NCDHC Observation Pregnancy Complication",
+        "description": "Observation profile to record, search and fetch Pregnancy Complication associated to the child in context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-reflexes-neurological-exam"
         },
         "name": "NCDHC Observation Reflexes / Neurological Examination",
@@ -397,6 +549,14 @@
         },
         "name": "NCDHC Observation Respiratory Rate Examination",
         "description": "Observation profile to record outcome of the Respiratory Rate check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-risk-entered-consumer-entered"
+        },
+        "name": "NCDHC Observation Consumer Entered Risk Factors",
+        "description": "Flag profile to record different risk factors as reported by the Consumer",
         "exampleBoolean": false
       },
       {
@@ -429,6 +589,14 @@
         },
         "name": "NCDHC Observation Umbilicus Examination",
         "description": "Observation profile to record outcome of the Umbilicus check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-vitalsign-bmi"
+        },
+        "name": "NCDHC Observation Vital Sign BMI Profile",
+        "description": "This profile sets minimum expectations for the Observation Vital Sign resource to record, search and fetch BMI.",
         "exampleBoolean": false
       },
       {
@@ -493,6 +661,38 @@
         },
         "name": "NCDHC PractitionerRole",
         "description": "Profile to represent a PractitionerRole in NCDHC Context",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-questionnaire-base"
+        },
+        "name": "NCDHC Questionnaire Base",
+        "description": "This is the base NCDHC Questionnaire base profile to point to the source Questionnaire for question response",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-questionnaire-response-base"
+        },
+        "name": "NCDHC QuestionnaireResponse Base",
+        "description": "This is the base NCDHC QuestionnaireResponse base profile to gather information in Question Response form",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-questionnaire-response-familial-childhood-risk-factor"
+        },
+        "name": "NCDHC QuestionnaireResponse",
+        "description": "This is the NCDHC QuestionnaireResponse profile to gather Familial Childhood Risk Factor information in Question Response form",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-related-person"
+        },
+        "name": "NCDHC Related Person",
+        "description": "This profile defines a related person structure that localises core concepts, including identifiers and terminology",
         "exampleBoolean": false
       },
       {
@@ -1067,6 +1267,46 @@
         "name": "0a645a42-fe48-e020-0001-cdhr00hi0005",
         "description": "Newborn discharge assessnent Encounter details",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+      },
+	  {
+        "reference": {
+          "reference": "CarePlan/0a645a42-fe48-cp001-0001-dphr00hi115b"
+        },
+        "name": "0a645a42-fe48-cp001-0001-dphr00hi115b",
+        "description": "Example to demonstrate pregnancy management plans and associated details",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-careplan-pregnancy-management-plan"
+      },
+	  {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-cp002-0001-dphr00hi115b"
+        },
+        "name": "0a645a42-fe48-cp002-0001-dphr00hi115b",
+        "description": "Pregnancy Management Plans Composition Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-preg-management-plans"
+      },
+	  {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-cp003-0001-dphr00hi115b"
+        },
+        "name": "0a645a42-fe48-cp003-0001-dphr00hi115b",
+        "description": "Pregnancy Management Plans Encounter details",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
+      },
+	  {
+        "reference": {
+          "reference": "CareTeam/0a645a42-fe48-ct001-0001-dphr00hi115b"
+        },
+        "name": "0a645a42-fe48-ct001-0001-dphr00hi115b",
+        "description": "Example to demonstrate care Team",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-care-team"
+      },
+	  {
+        "reference": {
+          "reference": "Bundle/ncdhc-document-pregnancy-management-plan-example"
+        },
+        "name": "ncdhc-document-pregnancy-management-plan-example",
+        "description": "Pregnancy Management Plan FHIR Document Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-preg-management-plan-document"
       }
     ],
     "page": {
