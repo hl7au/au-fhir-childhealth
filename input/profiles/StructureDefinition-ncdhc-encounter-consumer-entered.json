@@ -47,7 +47,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Encounter.participant.individual",
@@ -60,11 +61,13 @@
               "http://hl7.org.au/fhir/StructureDefinition/au-relatedperson"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Encounter.reasonCode",
         "path": "Encounter.reasonCode",
+        "short": "Type of clinical event for which the child was taken to clinician",
         "binding": {
           "strength": "extensible",
           "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-encounter-reason-code-1"
