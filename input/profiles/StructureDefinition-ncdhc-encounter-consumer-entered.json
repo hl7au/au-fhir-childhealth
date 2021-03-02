@@ -1,0 +1,75 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-encounter-consumer-entered",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-consumer-entered",
+  "version": "current",
+  "name": "NCDHCEncounterConsumerEntered",
+  "title": "NCDHC Encounter Consumer Entered",
+  "status": "active",
+  "description": "An encounter representing clinical event details as entered by the consumer",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.participant.type",
+        "path": "Encounter.participant.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "AUT",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Encounter.participant.individual",
+        "path": "Encounter.participant.individual",
+        "short": "Details of the consumer who has entered the data about the encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-relatedperson"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.reasonCode",
+        "path": "Encounter.reasonCode",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-encounter-reason-code-1"
+        }
+      }
+    ]
+  }
+}

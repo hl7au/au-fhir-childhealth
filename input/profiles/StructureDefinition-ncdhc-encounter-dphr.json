@@ -73,7 +73,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role"
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role",
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner",
+              "http://hl7.org.au/fhir/StructureDefinition/au-relatedperson"
             ]
           }
         ]

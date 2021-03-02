@@ -173,7 +173,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-consumer-entered"
             ]
           }
         ],
