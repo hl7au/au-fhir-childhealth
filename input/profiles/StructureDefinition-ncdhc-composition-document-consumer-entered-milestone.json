@@ -62,7 +62,7 @@
         "id": "Composition.type.coding",
         "path": "Composition.type.coding",
         "patternCoding": {
-          "code": "CONENTRENCT",
+          "code": "CONENTRMLST",
           "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
         }
       },
