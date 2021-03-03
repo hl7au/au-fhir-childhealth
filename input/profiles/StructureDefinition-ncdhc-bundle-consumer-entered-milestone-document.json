@@ -16,7 +16,7 @@
   "name": "NCDHCBundleConsumerEnteredMilestonesDocument",
   "title": "NCDHC FHIR Consumer Entered Milestone Document",
   "status": "active",
-  "description": "NCDHC FHIR Consumer Entered FMilestone document profile using Bundle resource",
+  "description": "NCDHC FHIR Consumer Entered Milestone document profile using Bundle resource",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
