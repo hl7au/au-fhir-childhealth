@@ -1,0 +1,39 @@
+{
+  "resourceType": "Observation",
+  "id": "0a645a42-fe48-o001-0002-cdhr00hi0031",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-consumer-entered-milestone"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "364675009",
+        "system": "http://snomed.info/sct",
+        "display": "Feature of infant milestones"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+    "display": "Baby of Lina Smith"
+  },
+  "effectiveDateTime": "2020-04-10T16:13:03+10:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "1365221000168104",
+        "system": "http://snomed.info/sct",
+        "display": "Infant raises head while on stomach"
+      }
+    ]
+  },
+  "performer": [
+    {
+      "reference": "RelatedPerson/a01bacd2-rpt5c-11ea-b3de-0242ac130002",
+      "display": "Mother"
+    }
+  ]
+}

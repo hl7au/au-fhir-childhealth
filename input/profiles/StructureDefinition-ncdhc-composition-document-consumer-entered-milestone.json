@@ -118,7 +118,7 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
-        "fixedString": "Consumer Entered Encounter",
+        "fixedString": "Feature of Childhood Milestones",
         "mustSupport": true
       },
       {
@@ -161,7 +161,7 @@
         "id": "Composition.section.code.coding",
         "path": "Composition.section.code.coding",
         "patternCoding": {
-          "code": "80943009",
+          "code": "TBD",
           "system": "http://snomed.info/sct"
         }
       },
