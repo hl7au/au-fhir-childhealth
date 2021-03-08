@@ -233,7 +233,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncdhc-composition-parental-observation"
+          "reference": "StructureDefinition/ncdhc-composition-document-parental-observation"
         },
         "name": "NCDHC Composition Parental Observation",
         "description": "Composition based profile to define the structure and narrative content necessary for Parental Observation",
@@ -1307,6 +1307,54 @@
         "name": "ncdhc-document-pregnancy-management-plan-example",
         "description": "Pregnancy Management Plan FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-preg-management-plan-document"
+      },
+	  {
+        "reference": {
+          "reference": "Bundle/ncdhc-document-consumer-entered-milestone-example"
+        },
+        "name": "ncdhc-document-consumer-entered-milestone-example",
+        "description": "Consumer Entered Milestone FHIR Document Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-consumer-entered-milestone-document"
+      },
+	  {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0031"
+        },
+        "name": "0a645a42-fe48-c001-0001-cdhr00hi0031",
+        "description": " Consumer Entered Milestone Composition Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-consumer-entered-milestone"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0031"
+        },
+        "name": "0a645a42-fe48-e001-0001-cdhr00hi0031",
+        "description": "Consumer Entered Milestone Encounter details",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0031"
+        },
+        "name": "0a645a42-fe48-o001-0001-cdhr00hi0031",
+        "description": "Example to demonstrate the Consumer Entered Milestone",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-consumer-entered-milestone"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0002-cdhr00hi0031"
+        },
+        "name": "0a645a42-fe48-o001-0002-cdhr00hi0031",
+        "description": "Example to demonstrate the Consumer Entered Milestone",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-consumer-entered-milestone"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0003-cdhr00hi0031"
+        },
+        "name": "0a645a42-fe48-o001-0003-cdhr00hi0031",
+        "description": "Example to demonstrate the Consumer Entered Milestone",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-consumer-entered-milestone"
       }
     ],
     "page": {
