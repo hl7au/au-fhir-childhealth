@@ -99,7 +99,7 @@
           {
             "code": "Composition",
             "profile": [
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-parental-observation"
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-parental-observation"
             ]
           }
         ],
