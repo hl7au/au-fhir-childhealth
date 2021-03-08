@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-composition-parental-observation",
+  "id": "ncdhc-composition-document-parental-observation",
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-parental-observation",
   "version": "current",
   "name": "NCDHCCompositionParentalObservation",

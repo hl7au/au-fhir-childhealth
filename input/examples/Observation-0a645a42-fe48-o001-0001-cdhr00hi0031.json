@@ -3,7 +3,7 @@
   "id": "0a645a42-fe48-o001-0001-cdhr00hi0031",
   "meta": {
     "profile": [
-      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-consumer-entered-milestone"
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-childhood-milestones"
     ]
   },
   "code": {

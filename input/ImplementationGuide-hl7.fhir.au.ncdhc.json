@@ -1322,7 +1322,7 @@
         },
         "name": "0a645a42-fe48-c001-0001-cdhr00hi0031",
         "description": " Consumer Entered Milestone Composition Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-consumer-entered-milestone"
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-consumer-entered-milestone"
       },
       {
         "reference": {
@@ -1338,7 +1338,7 @@
         },
         "name": "0a645a42-fe48-o001-0001-cdhr00hi0031",
         "description": "Example to demonstrate the Consumer Entered Milestone",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-consumer-entered-milestone"
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-childhood-milestones"
       },
 	  {
         "reference": {
@@ -1346,7 +1346,7 @@
         },
         "name": "0a645a42-fe48-o001-0002-cdhr00hi0031",
         "description": "Example to demonstrate the Consumer Entered Milestone",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-consumer-entered-milestone"
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-childhood-milestones"
       },
 	  {
         "reference": {
@@ -1354,7 +1354,7 @@
         },
         "name": "0a645a42-fe48-o001-0003-cdhr00hi0031",
         "description": "Example to demonstrate the Consumer Entered Milestone",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-consumer-entered-milestone"
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-childhood-milestones"
       }
     ],
     "page": {
