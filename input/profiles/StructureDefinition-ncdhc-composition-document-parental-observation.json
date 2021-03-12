@@ -119,7 +119,7 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
-        "fixedString": "Parental Observation",
+        "fixedString": "Health observation provided by parent or carer",
         "mustSupport": true
       },
       {
@@ -174,7 +174,7 @@
       {
         "id": "Composition.section:vitalSignsAndMeasurements.title",
         "path": "Composition.section.title",
-        "patternString": "Vital signs and measurements",
+        "patternString": "Health observation provided by parent or carer",
         "mustSupport": true
       },
       {
@@ -187,7 +187,7 @@
         "path": "Composition.section.code.coding",
         "min": 1,
         "patternCoding": {
-          "code": "118227000",
+          "code": "1526911000168104",
           "system": "http://snomed.info/sct"
         }
       },
