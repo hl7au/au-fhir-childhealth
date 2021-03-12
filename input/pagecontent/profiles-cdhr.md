@@ -5,6 +5,7 @@ The following list of profiles are being used in the CDHR (Child Digital Health 
 
 ## CDHR Common Profiles
 * [Child Patient](StructureDefinition-ncdhc-patient-child.html) - Patient profile to represent the Child Patient in context.
+* [Child RelaetdPerson](StructureDefinition-ncdhc-related-person.html) - RelaetdPerson profile to represent the parent or care giver for the child patient in context.
 * [CDHR Encounter](StructureDefinition-ncdhc-encounter-cdhr.html) - Encounter profile to represent CDHR patient visit related details.
 * [NCDHC Practitioner](StructureDefinition-ncdhc-practitioner.html) - Profile to represent a Practitioner in NCDHC Context.
 * [NCDHC PractitionerRole](StructureDefinition-ncdhc-practitioner-role.html) - Profile to represent a PractitionerRole in NCDHC Context.
@@ -20,6 +21,8 @@ The following list of profiles are being used in the CDHR (Child Digital Health 
 * [Parental Observation](StructureDefinition-ncdhc-bundle-parental-observation-document.html) - Details related to the observations as entered by the parents.
 * [Consumer Entered Milestones](StructureDefinition-ncdhc-bundle-consumer-entered-milestone-document.html) - Details related to the milestones achieved by the child.
 * [Family History and Risk Factor Consumer Entered](StructureDefinition-ncdhc-bundle-fh-rf-consumer-entered-document.html) - Details related to risk factors and family history as entered by the consumer.
+* [Parental Observation](StructureDefinition-ncdhc-bundle-parental-observation-document.html) - Observation details about the child as entered by the parent or care giver.
+* [Consumer Entered Encounter](StructureDefinition-ncdhc-bundle-consumer-entered-encounter-document.html) - Clinical Encounter details about the child as entered by the parent or care giver.
 
 
 
