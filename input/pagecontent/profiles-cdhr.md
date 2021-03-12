@@ -18,7 +18,6 @@ The following list of profiles are being used in the CDHR (Child Digital Health 
 * [Newborn Hearing Screen](StructureDefinition-ncdhc-bundle-newborn-hearing-screen-document.html) - Details of the hearing screen examination performed on the newborn.
 * [Newborn Discharge](StructureDefinition-ncdhc-bundle-newborn-discharge-document.html) - Details related to the discharge of the newborn. 
 * [Newborn Examination](StructureDefinition-ncdhc-bundle-newborn-exam-document.html) - Details of the examination performed on the newborn.
-* [Parental Observation](StructureDefinition-ncdhc-bundle-parental-observation-document.html) - Details related to the observations as entered by the parents.
 * [Consumer Entered Milestones](StructureDefinition-ncdhc-bundle-consumer-entered-milestone-document.html) - Details related to the milestones achieved by the child.
 * [Family History and Risk Factor Consumer Entered](StructureDefinition-ncdhc-bundle-fh-rf-consumer-entered-document.html) - Details related to risk factors and family history as entered by the consumer.
 * [Parental Observation](StructureDefinition-ncdhc-bundle-parental-observation-document.html) - Observation details about the child as entered by the parent or care giver.
