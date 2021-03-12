@@ -23,7 +23,7 @@
             "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-consumer-entered-milestone"
           ]
         },
-        "title": "Feature of Childhood Milestones",
+        "title": "Childhood milestone observed by parent or carer",
         "type": {
           "coding": [
             {
@@ -70,11 +70,11 @@
         "section": [
           {
             "mode": "snapshot",
-            "title": "Consumer Entered Milestone",
+            "title": "Childhood milestone observed by parent or carer",
             "code": {
               "coding": [
                 {
-                  "code": "364675009",
+                  "code": "1526921000168106",
                   "system": "http://snomed.info/sct"
                 }
               ]
@@ -82,7 +82,7 @@
             "entry": [
               {
                 "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0031",
-                "display": "Consumer Entered Milestone"
+                "display": "Childhood milestone observed by parent or carer"
               }
             ]
           }

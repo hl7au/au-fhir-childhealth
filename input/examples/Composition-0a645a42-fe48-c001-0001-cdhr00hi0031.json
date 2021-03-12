@@ -6,7 +6,7 @@
       "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-consumer-entered-milestone"
     ]
   },
-  "title": "Consumer Entered Milestone",
+  "title": "Childhood milestone observed by parent or carer",
   "type": {
     "coding": [
       {
@@ -53,7 +53,7 @@
   "section": [
     {
       "mode": "snapshot",
-      "title": "Consumer Entered Milestone",
+      "title": "Childhood milestone observed by parent or carer",
       "code": {
         "coding": [
           {
@@ -65,7 +65,7 @@
       "entry": [
         {
           "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0031",
-          "display": "Consumer Entered Milestone"
+          "display": "Childhood milestone observed by parent or carer"
         }
       ]
     }

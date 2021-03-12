@@ -118,7 +118,7 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
-        "fixedString": "Feature of Childhood Milestones",
+        "fixedString": "Childhood milestone observed by parent or carer",
         "mustSupport": true
       },
       {
@@ -149,7 +149,7 @@
       {
         "id": "Composition.section.title",
         "path": "Composition.section.title",
-        "fixedString": "Consumer Entered Milestone",
+        "fixedString": "Childhood milestone observed by parent or carer",
         "mustSupport": true
       },
       {
@@ -161,7 +161,7 @@
         "id": "Composition.section.code.coding",
         "path": "Composition.section.code.coding",
         "patternCoding": {
-          "code": "TBD",
+          "code": "1526921000168106",
           "system": "http://snomed.info/sct"
         }
       },
