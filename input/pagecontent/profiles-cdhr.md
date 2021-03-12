@@ -5,7 +5,7 @@ The following list of profiles are being used in the CDHR (Child Digital Health 
 
 ## CDHR Common Profiles
 * [Child Patient](StructureDefinition-ncdhc-patient-child.html) - Patient profile to represent the Child Patient in context.
-* [Child RelaetdPerson](StructureDefinition-ncdhc-related-person.html) - RelaetdPerson profile to represent the parent or care giver for the child patient in context.
+* [NCDHC RelaetdPerson](StructureDefinition-ncdhc-related-person.html) - RelaetdPerson profile to represent the parent or care giver for the child patient in context.
 * [CDHR Encounter](StructureDefinition-ncdhc-encounter-cdhr.html) - Encounter profile to represent CDHR patient visit related details.
 * [NCDHC Practitioner](StructureDefinition-ncdhc-practitioner.html) - Profile to represent a Practitioner in NCDHC Context.
 * [NCDHC PractitionerRole](StructureDefinition-ncdhc-practitioner-role.html) - Profile to represent a PractitionerRole in NCDHC Context.
