@@ -118,7 +118,7 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
-        "fixedString": "Consumer Entered Encounter",
+        "fixedString": "Health information provided by parent or carer",
         "mustSupport": true
       },
       {
@@ -149,7 +149,7 @@
       {
         "id": "Composition.section.title",
         "path": "Composition.section.title",
-        "fixedString": "Consumer Entered Encounter",
+        "fixedString": "Health information provided by parent or carer",
         "mustSupport": true
       },
       {
@@ -161,7 +161,7 @@
         "id": "Composition.section.code.coding",
         "path": "Composition.section.code.coding",
         "patternCoding": {
-          "code": "TBD",
+          "code": "1526901000168102",
           "system": "http://snomed.info/sct"
         }
       },

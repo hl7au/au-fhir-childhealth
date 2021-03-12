@@ -1,0 +1,52 @@
+{
+  "resourceType": "Encounter",
+  "id": "0a645a42-fe48-e002-0001-cdhr00hi0042",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-consumer-entered"
+    ]
+  },
+  "class": {
+    "code": "HH",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "display": "home health"
+  },
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "code": "AUT",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+            }
+          ]
+        }
+      ],
+      "individual": {
+        "reference": "RelatedPerson/a01bacd2-rpt5c-11ea-b3de-0242ac130002",
+        "display": "Mother"
+      }
+    }
+  ],
+  "status": "finished",
+  "subject": {
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+    "display": "Baby of Lina Smith"
+  },
+  "period": {
+    "start": "2020-08-10T16:13:03+10:00",
+    "end": "2020-08-10T16:13:03+10:00"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "39104002",
+          "system": "http://snomed.info/sct",
+          "display": "Illness"
+        }
+      ]
+    }
+  ]
+}
