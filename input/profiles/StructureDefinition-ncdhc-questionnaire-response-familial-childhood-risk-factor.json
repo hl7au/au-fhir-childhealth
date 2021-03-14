@@ -14,7 +14,7 @@
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-questionnaire-response-familial-childhood-risk-factor",
   "version": "current",
   "name": "NCDHCQuestionnaireResponseFamilialChildhoodRiskFactor",
-  "title": "NCDHC QuestionnaireResponse",
+  "title": "NCDHC QuestionnaireResponse Familial Childhood RiskFactor",
   "status": "active",
   "description": "This is the NCDHC QuestionnaireResponse profile to gather Familial Childhood Risk Factor information in Question Response form",
   "fhirVersion": "4.0.1",
