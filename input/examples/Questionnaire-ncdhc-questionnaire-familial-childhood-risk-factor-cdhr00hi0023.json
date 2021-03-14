@@ -1,0 +1,93 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "ncdhc-questionnaire-familial-childhood-risk-factor-cdhr00hi0023",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-questionnaire-base"
+    ]
+  },
+  "version": "v1.0.0_en",
+  "name": "FamilialChildhoodRiskFactor",
+  "title": "Familial Childhood Risk Factor",
+  "status": "active",
+  "subjectType": [
+    "FamilyMemberHistory"
+  ],
+  "date": "2021-02-10",
+  "publisher": "National Children’s Digital Health Collaborative",
+  "description": "\nTo record the following familial risk factor associated to the baby in context are recorded:\n  * Hearing / Deafness / Hearing Problems\n  * Vision / Sight / Blindness / Eye Problems\n  * Dysplasia of the Hips / Hip Problems",
+  "item": [
+    {
+      "linkId": "1.0.0.0",
+      "code": [
+        {
+          "code": "439750006",
+          "system": "http://snomed.info/sct",
+          "display": "Family history of hearing loss"
+        }
+      ],
+      "text": "Have any of your baby's close relatives been deaf or had a hearing problem from childhood?",
+      "type": "open-choice",
+      "required": false,
+      "repeats": false,
+      "answerValueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-familial-childhood-riskfactor-answers-1",
+      "initial": [
+        {
+          "valueCoding": {
+            "code": "NI",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "display": "NoInformation"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "2.0.0.0",
+      "code": [
+        {
+          "code": "430723005",
+          "system": "http://snomed.info/sct",
+          "display": "Family history of visual disturbance"
+        }
+      ],
+      "text": "Did anyone in the family have eye problems in childhood?",
+      "type": "open-choice",
+      "required": false,
+      "repeats": false,
+      "answerValueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-familial-childhood-riskfactor-answers-1",
+      "initial": [
+        {
+          "valueCoding": {
+            "code": "NI",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "display": "NoInformation"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "3.0.0.0",
+      "code": [
+        {
+          "code": "700191004",
+          "system": "http://snomed.info/sct",
+          "display": "Family history of developmental hip dysplasia"
+        }
+      ],
+      "text": "Is there family history of hip problems in childhood? Example - dysplasia of the hips",
+      "type": "open-choice",
+      "required": false,
+      "repeats": false,
+      "answerValueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-familial-childhood-riskfactor-answers-1",
+      "initial": [
+        {
+          "valueCoding": {
+            "code": "NI",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "display": "NoInformation"
+          }
+        }
+      ]
+    }
+  ]
+}

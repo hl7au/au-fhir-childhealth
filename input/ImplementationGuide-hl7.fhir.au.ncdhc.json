@@ -63,7 +63,7 @@
         "description": "NCDHC FHIR document profile using Bundle resource",
         "exampleBoolean": false
       },
-	   {
+      {
         "reference": {
           "reference": "StructureDefinition/ncdhc-bundle-edb-document"
         },
@@ -135,7 +135,7 @@
         "description": "NCDHC FHIR Pregnancy Management Plan document profile using Bundle resource",
         "exampleBoolean": false
       },
-	  {
+      {
         "reference": {
           "reference": "StructureDefinition/ncdhc-bundle-consumer-entered-encounter-document"
         },
@@ -143,7 +143,7 @@
         "description": "NCDHC FHIR Consumer Entered Encounter document profile using Bundle resource",
         "exampleBoolean": false
       },
-	  {
+      {
         "reference": {
           "reference": "StructureDefinition/ncdhc-encounter-consumer-entered"
         },
@@ -823,7 +823,7 @@
         "description": "Estimated Date of Birth Composition Composition Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-edb"
       },
-	  {
+      {
         "reference": {
           "reference": "Composition/0a645a42-fe48-c019-0001-cdhr00hi0005"
         },
@@ -831,7 +831,6 @@
         "description": "Newborn Examination Composition Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-examination"
       },
-	  
       {
         "reference": {
           "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0012"
@@ -952,7 +951,7 @@
         "description": "Example to indicate if Date of last period is consistent with Ultra Sound",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-edb-consistent-lmp-us"
       },
-	  {
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o000-0001-cdhr00hi0005"
         },
@@ -1056,7 +1055,7 @@
         "description": "Example to demonstrate outcome of physical examination of Genitalia performed on the newborn",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-genitalia-exam"
       },
-	  {
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o012-0001-cdhr00hi0005"
         },
@@ -1064,8 +1063,7 @@
         "description": "Example to demonstrates left and right testes assesment outcome",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-testes-exam"
       },
-	  
-	  {
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o013-0001-cdhr00hi0005"
         },
@@ -1073,7 +1071,7 @@
         "description": "Example to demonstrate Outcome of the 'Musculo Skeletal' check performed on the newborn",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam"
       },
-	  {
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o014-0001-cdhr00hi0005"
         },
@@ -1113,7 +1111,6 @@
         "description": "Example to demonstrate Outcome of the 'Reflexes / Neurological' check performed on the newborn",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-reflexes-neurological-exam"
       },
-      
       {
         "reference": {
           "reference": "Encounter/a01bacd2-ec5c-11ea-b3de-0003ac130004"
@@ -1122,7 +1119,6 @@
         "description": "Newborn hearing screening Encounter detils",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
       },
-      
       {
         "reference": {
           "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000"
@@ -1227,7 +1223,15 @@
         "description": "Newborn Hearing Screen FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-hearing-screen-document"
       },
-	  {
+      {
+        "reference": {
+          "reference": "Questionnaire/ncdhc-questionnaire-familial-childhood-risk-factor-cdhr00hi0023"
+        },
+        "name": "ncdhc-questionnaire-familial-childhood-risk-factor-cdhr00hi0023",
+        "description": "Familial Childhood Risk Factor Questionnaire",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-questionnaire-base"
+      },
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0003"
         },
@@ -1235,7 +1239,6 @@
         "description": "Example to demonstrate 'Breast fed' feeding method as applied to the baby patient in context",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-method"
       },
-      
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o005-0001-cdhr00hi0003"
@@ -1244,7 +1247,6 @@
         "description": "Use of different types of milk  being intaken by infant",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-milk-feeding-status"
       },
-      
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o006-0001-cdhr00hi0003"
@@ -1268,7 +1270,8 @@
         "name": "0a645a42-fe48-o013-0001-cdhr00hi0003",
         "description": "Example to represent Baby's Head Circumference at Discharge",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-head-circumference"
-      },{
+      },
+      {
         "reference": {
           "reference": "Composition/0a645a42-fe48-c007-0001-cdhr00hi0003"
         },
@@ -1284,7 +1287,7 @@
         "description": "Newborn discharge assessnent Encounter details",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
       },
-	  {
+      {
         "reference": {
           "reference": "Encounter/0a645a42-fe48-e020-0001-cdhr00hi0005"
         },
@@ -1292,7 +1295,7 @@
         "description": "Newborn discharge assessnent Encounter details",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
       },
-	  {
+      {
         "reference": {
           "reference": "CarePlan/0a645a42-fe48-cp001-0001-dphr00hi115b"
         },
@@ -1300,7 +1303,7 @@
         "description": "Example to demonstrate pregnancy management plans and associated details",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-careplan-pregnancy-management-plan"
       },
-	  {
+      {
         "reference": {
           "reference": "Composition/0a645a42-fe48-cp002-0001-dphr00hi115b"
         },
@@ -1308,7 +1311,7 @@
         "description": "Pregnancy Management Plans Composition Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-preg-management-plans"
       },
-	  {
+      {
         "reference": {
           "reference": "Encounter/0a645a42-fe48-cp003-0001-dphr00hi115b"
         },
@@ -1316,7 +1319,7 @@
         "description": "Pregnancy Management Plans Encounter details",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
       },
-	  {
+      {
         "reference": {
           "reference": "CareTeam/0a645a42-fe48-ct001-0001-dphr00hi115b"
         },
@@ -1324,7 +1327,7 @@
         "description": "Example to demonstrate care Team",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-care-team"
       },
-	  {
+      {
         "reference": {
           "reference": "Bundle/ncdhc-document-pregnancy-management-plan-example"
         },
@@ -1332,7 +1335,7 @@
         "description": "Pregnancy Management Plan FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-preg-management-plan-document"
       },
-	  {
+      {
         "reference": {
           "reference": "Bundle/ncdhc-document-consumer-entered-milestone-example"
         },
@@ -1340,7 +1343,7 @@
         "description": "Consumer Entered Milestone FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-consumer-entered-milestone-document"
       },
-	  {
+      {
         "reference": {
           "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0031"
         },
@@ -1364,7 +1367,7 @@
         "description": "Example to demonstrate the Consumer Entered Milestone",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-childhood-milestones"
       },
-	  {
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o001-0002-cdhr00hi0031"
         },
@@ -1372,7 +1375,7 @@
         "description": "Example to demonstrate the Consumer Entered Milestone",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-childhood-milestones"
       },
-	  {
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o001-0003-cdhr00hi0031"
         },
@@ -1380,7 +1383,7 @@
         "description": "Example to demonstrate the Consumer Entered Milestone",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-childhood-milestones"
       },
-	  {
+      {
         "reference": {
           "reference": "Composition/0a645a42-fe48-P001-0001-cdhr00hi0048"
         },
@@ -1420,7 +1423,7 @@
         "description": "Example to demonstrate the Consumer Entered Encounter",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-consumer-entered"
       },
-	  {
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0048"
         },
@@ -1428,7 +1431,7 @@
         "description": "Example to represent Baby's Body Weight at Discharge",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
       },
-	  {
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0048"
         },
@@ -1436,7 +1439,7 @@
         "description": "Example to represent Baby's Body Height at Discharge",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyheight"
       },
-	  {
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0048"
         },
@@ -1444,7 +1447,7 @@
         "description": "Example to represent Baby's Head Circumference at Discharge",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-head-circumference"
       },
-	  {
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0048"
         },
@@ -1452,7 +1455,7 @@
         "description": "Example to represent Baby's BMI",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bmi"
       },
-	  {
+      {
         "reference": {
           "reference": "Bundle/ncdhc-document-consumer-entered-encounter-example"
         },
@@ -1468,7 +1471,7 @@
         "description": "Parental Observation FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-parental-observation-document"
       },
-	  {
+      {
         "reference": {
           "reference": "RelatedPerson/a01bacd2-rpt5c-12ea-b3de-0242ac130002"
         },
@@ -1476,7 +1479,7 @@
         "description": "Example to demonstrate NCDHC RelatedPerson",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-related-person"
       },
-	  {
+      {
         "reference": {
           "reference": "RelatedPerson/a01bacd2-rpt5c-11ea-b3de-0242ac130002"
         },
@@ -1484,7 +1487,7 @@
         "description": "Example to demonstrate NCDHC RelatedPerson",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-related-person"
       },
-	  {
+      {
         "reference": {
           "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002"
         },
@@ -1500,7 +1503,7 @@
         "description": "Example of NCDHC Practitioner  to represent clinically responsible person",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner"
       },
-	  {
+      {
         "reference": {
           "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003"
         },
