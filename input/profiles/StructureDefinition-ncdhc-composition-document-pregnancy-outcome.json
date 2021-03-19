@@ -1,0 +1,203 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-composition-document-pregnancy-outcome",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-pregnancy-outcome",
+  "version": "current",
+  "name": "NCDHCCompositionpregnancyOutcome",
+  "title": "NCDHC Composition Woman's Pregnancy outcome",
+  "status": "active",
+  "description": "Composition based profile to define the structure and narrative content necessary for Woman's Pregnancy outcome FHIR document.",
+  "purpose": " The document at a minimum carries the following details:\n   * Current pregnancy outcome (Birthed elsewhere, miscarriage, termination, ectopic and molar)\n   * Location\n   * Pregnancy duration\n   * Pregnancy completion date\n   * Current baby details\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "fhirdocumentreference",
+      "uri": "http://hl7.org/fhir/documentreference",
+      "name": "FHIR DocumentReference"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-clinical-document-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.type.coding",
+        "path": "Composition.type.coding",
+        "patternCoding": {
+          "code": "PREGOTCOME",
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
+        }
+      },
+      {
+        "id": "Composition.category.coding",
+        "path": "Composition.category.coding",
+        "patternCoding": {
+          "code": "PREGDTLS",
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1"
+        }
+      },
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-expectant-mother"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.encounter",
+        "path": "Composition.encounter",
+        "short": "Use Encounter to record the Date and Time of Check, Venue, Examiner details",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.title",
+        "path": "Composition.title",
+        "fixedString": "Pregnancy outcome"
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code.coding"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the code pattern"
+        }
+      },
+      {
+        "id": "Composition.section:pregnancyOutcome",
+        "path": "Composition.section",
+        "sliceName": "pregnancyOutcome",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyOutcome.title",
+        "path": "Composition.section.title",
+        "fixedString": "Current pregnancy outcome",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyOutcome.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyOutcome.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "1403101000168108",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Composition.section:pregnancyOutcome.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this.resolve().code.coding"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the pattern:$this.resolve().code.coding"
+        }
+      },
+      {
+        "id": "Composition.section:pregnancyOutcome.entry:pregnancyDuration",
+        "path": "Composition.section.entry",
+        "sliceName": "pregnancyDuration",
+        "short": "Pregnancy duration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyOutcome.entry:pregnancyCompletionDate",
+        "path": "Composition.section.entry",
+        "sliceName": "pregnancyCompletionDate",
+        "short": "Pregnancy completion date",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-date-of-fetal-loss"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyOutcome.entry:currentBaby",
+        "path": "Composition.section.entry",
+        "sliceName": "currentBaby",
+        "short": "Current baby's status and date of birth",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

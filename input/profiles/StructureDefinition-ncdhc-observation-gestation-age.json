@@ -62,7 +62,7 @@
         "path": "Observation",
         "constraint": [
           {
-            "key": "ncdhc-obs-gestage-inv-001-daysweeks",
+            "key": "ncdhc-obs-inv-004-gestage-daysweeks",
             "severity": "error",
             "human": "At least days or weeks or both should be present unless data absent reason is proivded",
             "expression": "(dataAbsentReason.empty()) implies (component.exists())",
@@ -204,7 +204,16 @@
         "patternQuantity": {
           "code": "d",
           "system": "http://unitsofmeasure.org"
-        }
+        },
+        "constraint": [
+          {
+            "key": "ncdhc-obs-inv-006-gestage-days",
+            "severity": "error",
+            "human": "value of 'days' must be a whole number",
+            "expression": "value.toString().contains('.').not()",
+            "source": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
+          }
+        ]
       },
       {
         "id": "Observation.component:weeksGestAge",
@@ -254,7 +263,16 @@
         "patternQuantity": {
           "code": "wk",
           "system": "http://unitsofmeasure.org"
-        }
+        },
+        "constraint": [
+          {
+            "key": "ncdhc-obs-inv-005-gestage-wks",
+            "severity": "error",
+            "human": "value of 'weeks' must be a whole number",
+            "expression": "value.toString().contains('.').not()",
+            "source": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
+          }
+        ]
       }
     ]
   }
