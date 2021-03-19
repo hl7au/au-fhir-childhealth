@@ -143,6 +143,14 @@
         "description": "NCDHC FHIR Consumer Entered Encounter document profile using Bundle resource",
         "exampleBoolean": false
       },
+	  {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-bundle-pregnancy-outcome-document"
+        },
+        "name": "NCDHC FHIR Woman's Pregnancy Outcome Document",
+        "description": "NCDHC FHIR Woman's Pregnancy Outcome document profile using Bundle resource",
+        "exampleBoolean": false
+      },
       {
         "reference": {
           "reference": "StructureDefinition/ncdhc-encounter-consumer-entered"
@@ -277,6 +285,14 @@
         },
         "name": "NCDHC Composition Pregnancy Management Plans",
         "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Estimated Date of Birth",
+        "exampleBoolean": false
+      },
+	  {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-document-pregnancy-outcome"
+        },
+        "name": "NCDHC Composition Woman's Pregnancy outcome",
+        "description": "Composition based profile to define the structure and narrative content necessary for Woman's Pregnancy outcome FHIR document.",
         "exampleBoolean": false
       },
       {
@@ -645,6 +661,14 @@
         },
         "name": "NCDHC Observation Vital Sign Head Circumference Profile",
         "description": "This profile sets minimum expectations for the Observation Vital Sign resource to record, search and fetch Head Circumference of the patient in context.",
+        "exampleBoolean": false
+      },
+	  {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-date-of-fetal-loss"
+        },
+        "name": "NCDHC Observation Date of fetal loss",
+        "description": "Observation profile to record, search and fetch date of fetal loss",
         "exampleBoolean": false
       },
       {
