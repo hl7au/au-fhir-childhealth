@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NCDHCValueSetPregnancyOutcome",
+  "id": "ncdhc-pregnancy-outcome-1",
+  "title": "NCDHC Pregnancy Outcome ValueSet",
+  "description": "National Children's Digital Health Collaborative - Values to represent different types of pregnancy outcome",
+  "version": "current",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-pregnancy-outcome-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "281050002",
+            "display": "Livebirth"
+          },
+          {
+            "code": "237364002",
+            "display": "Stillbirth"
+          },
+          {
+            "code": "1394371000168109",
+            "display": "Intrauterine fetal death"
+          },
+          {
+            "code": "237364003",
+            "display": "Stillbirth"
+          },
+          {
+            "code": "17369002",
+            "display": "Miscarriage"
+          },
+          {
+            "code": "44782008",
+            "display": "Molar pregnancy"
+          }
+        ]
+      }
+    ]
+  }
+}

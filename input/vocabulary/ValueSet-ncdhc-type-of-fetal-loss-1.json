@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NCDHCValueSetTypeOfFetalLoss",
+  "id": "ncdhc-type-of-fetal-loss-1",
+  "title": "NCDHC Type Of Fetal Loss ValueSet",
+  "description": "National Children's Digital Health Collaborative - Values to represent different types of fetal loss",
+  "version": "current",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-type-of-fetal-loss-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1394371000168109",
+            "display": "Intrauterine fetal death"
+          },
+          {
+            "code": "237364003",
+            "display": "Stillbirth"
+          },
+          {
+            "code": "17369002",
+            "display": "Miscarriage"
+          },
+          {
+            "code": "44782008",
+            "display": "Molar pregnancy"
+          }
+        ]
+      }
+    ]
+  }
+}

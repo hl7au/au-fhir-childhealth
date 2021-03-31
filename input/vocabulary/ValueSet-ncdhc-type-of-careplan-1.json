@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NCDHCValueSetTypeOfCarePlan",
+  "id": "ncdhc-type-of-careplan-1",
+  "title": "NCDHC Type Of Care Plan ValueSet",
+  "description": "National Children's Digital Health Collaborative - Values to represent different types of care plans",
+  "version": "current",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-type-of-careplan-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "773433004",
+            "display": "Antenatal management plan"
+          },
+          {
+            "code": "1376691000168103",
+            "display": "Birth management plan"
+          },
+          {
+            "code": "773432009",
+            "display": "Postnatal management plan"
+          },
+          {
+            "code": "1376871000168100",
+            "display": "Postnatal discharge management plan"
+          },
+          {
+            "code": "1376941000168103",
+            "display": "Neonatal care plan"
+          },
+          {
+            "code": "1402171000168109",
+            "display": "Future pregnancy management plan"
+          }
+        ]
+      }
+    ]
+  }
+}

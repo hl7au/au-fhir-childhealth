@@ -3,7 +3,7 @@
   "status": "active",
   "name": "NCDHCValueSetPregnancyComplication",
   "id": "ncdhc-pregnancy-complications-1",
-  "title": "NCDHC ValueSet Regularity Of Menstrual Cycle",
+  "title": "NCDHC ValueSet Pregnancy Complication",
   "description": "National Digital Health Collaborative - Value set to determine what type of pregnancy complication/s occurred during the birthing process",
   "version": "current",
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-pregnancy-complications-1",
