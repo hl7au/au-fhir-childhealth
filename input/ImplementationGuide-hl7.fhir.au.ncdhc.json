@@ -665,6 +665,14 @@
       },
 	  {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-pregnancy-outcome"
+        },
+        "name": "NCDHC Observation Pregnancy Outcome",
+        "description": "Observation profile to record, search and fetch pregnancy outcome",
+        "exampleBoolean": false
+      },
+	  {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-date-of-fetal-loss"
         },
         "name": "NCDHC Observation Date of fetal loss",
@@ -821,6 +829,22 @@
         },
         "name": "NCDHC ValueSet Regularity Of Menstrual Cycle",
         "description": "National Children's Digital Health Collaborative - Codes to determine what type of Observation Regularity Of Menstrual Cycle are applicable to each completed check/observation.",
+        "exampleBoolean": false
+      },
+	  {
+        "reference": {
+          "reference": "ValueSet/ncdhc-type-of-fetal-loss-1"
+        },
+        "name": "NCDHC Type Of Fetal Loss ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent different types of fetal loss",
+        "exampleBoolean": false
+      },
+	  {
+        "reference": {
+          "reference": "ValueSet/ncdhc-pregnancy-outcome-1"
+        },
+        "name": "NCDHC Pregnancy Outcome ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent different types of pregnancy outcome",
         "exampleBoolean": false
       },
       {
@@ -1534,6 +1558,110 @@
         "name": "p01bacd2-pr5c-11ea-b3de-0242ac130003",
         "description": "Example of NCDHC PractitionerRole  to represent as clinically responsible person",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role"
+      },
+	  {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c001-0001-dphr00hi0109"
+        },
+        "name": "0a645a42-fe48-c001-0001-dphr00hi0109",
+        "description": " Pregnancy Outcome Composition Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-pregnancy-outcome"
+      },
+      {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c001-0001-dphr00hi115a"
+        },
+        "name": "0a645a42-fe48-c001-0001-dphr00hi115a",
+        "description": " Pregnancy Issues And Plans Composition Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-preg-issues-plans"
+      },
+      {
+        "reference": {
+          "reference": "CareTeam/0a645a42-fe48-ct001-0001-dphr00hi115a"
+        },
+        "name": "0a645a42-fe48-ct001-0001-dphr00hi115a",
+        "description": "Example to demonstrate care Team",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-care-team"
+      },
+	  {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e001-0001-dphr00hi0109"
+        },
+        "name": "0a645a42-fe48-e001-0001-dphr00hi0109",
+        "description": "Pregnancy Outcome encounter Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e001-0001-dphr00hi115a"
+        },
+        "name": "0a645a42-fe48-e001-0001-dphr00hi115a",
+        "description": "Pregnancy Issues And Plans details",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0001-dphr00hi0109"
+        },
+        "name": "0a645a42-fe48-o001-0001-dphr00hi0109",
+        "description": "Example to demonstrate record, search ,fetch pregnancy outcome",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-outcome"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o002-0001-dphr00hi0109"
+        },
+        "name": "0a645a42-fe48-o002-0001-dphr00hi0109",
+        "description": "GestationAge Observation example when both days and weeks are provided in the instance",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o003-0001-dphr00hi0109"
+        },
+        "name": "0a645a42-fe48-o003-0001-dphr00hi0109",
+        "description": "Example to demonstrate record, search and fetch date of fetal loss",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-date-of-fetal-loss"
+      },
+	  {
+        "reference": {
+          "reference": "Patient/0a645a42-fe48-p001-0001-dphr00hi0109"
+        },
+        "name": "0a645a42-fe48-p001-0001-dphr00hi0109",
+        "description": "Pregnancy Outcome current baby status Example",
+        "exampleBoolean": true
+      },
+	  {
+        "reference": {
+          "reference": "CarePlan/0a645a42-fe48-p001-0001-dphr00hi115a"
+        },
+        "name": "0a645a42-fe48-p001-0001-dphr00hi115a",
+        "description": "Example to demonstrate CarePlan profile to record Antenatal Care and associated details",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-careplan-pregnancy-complication"
+      },
+      {
+        "reference": {
+          "reference": "Condition/0a645a42-fe48-p002-0001-dphr00hi115a"
+        },
+        "name": "0a645a42-fe48-p002-0001-dphr00hi115a",
+        "description": "Example to demonstrate Condition profile to record pregnancy complications and associated details",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-condition-pregnancy-complication"
+      },
+	  {
+        "reference": {
+          "reference": "Bundle/ncdhc-document-pregnancy-outcome-example"
+        },
+        "name": "ncdhc-document-pregnancy-outcome-example",
+        "description": "Pregnancy Outcome FHIR Document Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-pregnancy-outcome-document"
+      },
+	  {
+        "reference": {
+          "reference": "Bundle/ncdhc-document-pregnancy-issues-and-plans-example"
+        },
+        "name": "ncdhc-document-pregnancy-issues-and-plans-example",
+        "description": "Pregnancy Issues And Plans FHIR Document Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-preg-issues-plan-document"
       }
     ],
     "page": {
