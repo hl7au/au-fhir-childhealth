@@ -1,0 +1,20 @@
+{
+  "resourceType": "CareTeam",
+  "id": "0a645a42-fe48-ct001-0001-dphr00hi115a",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-care-team"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "2345"
+    }
+  ],
+  "status": "active",
+  "name": "Care Team managed by Dr. Smith",
+  "subject": {
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+    "display": "Eve Bill"
+  }
+}

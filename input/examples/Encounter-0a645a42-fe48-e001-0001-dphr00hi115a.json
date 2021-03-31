@@ -1,0 +1,39 @@
+{
+  "resourceType": "Encounter",
+  "id": "0a645a42-fe48-e001-0001-dphr00hi115a",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
+    ]
+  },
+  "status": "finished",
+  "class": {
+    "code": "AMB",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "display": "ambulatory"
+  },
+  "subject": {
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+    "display": "Eve Bill"
+  },
+  "period": {
+    "start": "2020-11-10T16:13:03+10:00",
+    "end": "2020-11-10T16:13:03+10:00"
+  },
+  "contained": [
+    {
+      "resourceType": "Location",
+      "id": "0a645a42-fe48-l001-0001-dphr00hi115a",
+      "name": "Downunder Hospital"
+    }
+  ],
+  "location": [
+    {
+      "location": {
+        "reference": "#0a645a42-fe48-l001-0001-dphr00hi115a",
+        "display": "Downunder Hospital"
+      },
+      "status": "completed"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "resourceType": "CarePlan",
+  "id": "0a645a42-fe48-p001-0001-dphr00hi115a",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-careplan-pregnancy-complication"
+    ]
+  },
+  "intent": "plan",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "129755006",
+          "system": "http://snomed.info/sct",
+          "display": "Punctate calcification"
+        }
+      ]
+    }
+  ],
+  "title": "Pregnancy Complication Treatement Plan",
+  "status": "active",
+  "subject": {
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+    "display": "Eve Bill"
+  },
+  "created": "2020-11-10T16:13:03+10:00",
+  "period": {
+    "start": "2020-11-10T16:13:03+10:00",
+    "end": "2020-12-10T16:13:03+10:00"
+  },
+  "contributor": [
+    {
+      "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+      "display": "Eve Bill"
+    }
+  ],
+  "careTeam": [
+    {
+      "reference": "CareTeam/0a645a42-fe48-ct001-0001-dphr00hi115a"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/0a645a42-fe48-p002-0001-dphr00hi115a"
+    }
+  ],
+  "note": [
+    {
+      "text": "Punctate calcifications are considered typically benign when regional or diffuse in distribution."
+    }
+  ]
+}
