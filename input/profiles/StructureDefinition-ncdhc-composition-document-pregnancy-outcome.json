@@ -148,6 +148,23 @@
         }
       },
       {
+        "id": "Composition.section:pregnancyOutcome.entry:pregnancyOutcomeCurrent",
+        "path": "Composition.section.entry",
+        "sliceName": "pregnancyOutcomeCurrent",
+        "short": "Current pregnancy outcome",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-outcome"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section:pregnancyOutcome.entry:pregnancyDuration",
         "path": "Composition.section.entry",
         "sliceName": "pregnancyDuration",

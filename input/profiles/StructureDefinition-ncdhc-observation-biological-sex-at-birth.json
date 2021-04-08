@@ -64,6 +64,11 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.focus",
+        "path": "Observation.focus",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
         "short": "Date when the sex of the newborn was identified",

@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-gestation-age",
+  "id": "ncdhc-observation-duration-of-labour",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,12 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-duration-of-labour",
   "version": "current",
-  "name": "NCDHCObservationGestationAge",
-  "title": "NCDHC Observation Gestation Age",
+  "name": "NCDHCObservationDurationOfLabour",
+  "title": "NCDHC Observation Duration of labour",
   "status": "active",
-  "description": "Observation profile to set minimum expectations to record and search and fetch gestation age in weeks and days",
+  "description": "Observation profile to record, search and fetch duration of labour associated to the patient in context.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -62,11 +62,11 @@
         "path": "Observation",
         "constraint": [
           {
-            "key": "ncdhc-obs-inv-004-gestage-daysweeks",
+            "key": "ncdhc-obs-inv-004-duration-of-labour",
             "severity": "error",
-            "human": "At least days or weeks or both should be present unless data absent reason is proivded",
+            "human": "At least hrs or min or both SHALL be present unless data absent reason is proivded",
             "expression": "(dataAbsentReason.empty()) implies (component.exists())",
-            "source": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
+            "source": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-duration-of-labour"
           }
         ]
       },
@@ -76,30 +76,18 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.category",
-        "path": "Observation.category",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "exam",
-              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-            }
-          ]
-        }
-      },
-      {
         "id": "Observation.code",
         "path": "Observation.code",
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:gestationAgeSNOMED-CT",
+        "id": "Observation.code.coding:durationOfLabourSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "gestationAgeSNOMED-CT",
+        "sliceName": "durationOfLabourSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "57036006",
+          "code": "289248003",
           "system": "http://snomed.info/sct"
         }
       },
@@ -116,6 +104,42 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
+        "short": "Date when Duration of labour was observed",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x].extension",
+        "path": "Observation.effective[x].extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.effective[x].extension:data-absent-reason",
+        "path": "Observation.effective[x].extension",
+        "sliceName": "data-absent-reason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -157,32 +181,32 @@
           ],
           "rules": "closed",
           "ordered": false,
-          "description": "Slice on component based on the code"
+          "description": "Slice to hold duration of labour in hrs and min"
         },
         "max": "2"
       },
       {
-        "id": "Observation.component:daysGestAge",
+        "id": "Observation.component:hrsDurationOfLabour",
         "path": "Observation.component",
-        "sliceName": "daysGestAge",
+        "sliceName": "hrsDurationOfLabour",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Observation.component:daysGestAge.code",
+        "id": "Observation.component:hrsDurationOfLabour.code",
         "path": "Observation.component.code",
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "258703001",
+              "code": "258702006",
               "system": "http://snomed.info/sct"
             }
           ]
         }
       },
       {
-        "id": "Observation.component:daysGestAge.value[x]",
+        "id": "Observation.component:hrsDurationOfLabour.value[x]",
         "path": "Observation.component.value[x]",
         "slicing": {
           "discriminator": [
@@ -202,46 +226,46 @@
         ]
       },
       {
-        "id": "Observation.component:daysGestAge.valueQuantity",
+        "id": "Observation.component:hrsDurationOfLabour.valueQuantity",
         "path": "Observation.component.valueQuantity",
         "min": 1,
         "max": "1",
         "patternQuantity": {
-          "code": "d",
+          "code": "h",
           "system": "http://unitsofmeasure.org"
         },
         "constraint": [
           {
-            "key": "ncdhc-obs-inv-006-gestage-days",
+            "key": "ncdhc-obs-inv-005-duration-of-labour-hrs",
             "severity": "error",
-            "human": "value of 'days' must be a whole number",
+            "human": "value of 'hrs' must be a whole number",
             "expression": "value.toString().contains('.').not()",
-            "source": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
+            "source": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-duration-of-labour"
           }
         ]
       },
       {
-        "id": "Observation.component:weeksGestAge",
+        "id": "Observation.component:minDurationOfLabour",
         "path": "Observation.component",
-        "sliceName": "weeksGestAge",
+        "sliceName": "minDurationOfLabour",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Observation.component:weeksGestAge.code",
+        "id": "Observation.component:minDurationOfLabour.code",
         "path": "Observation.component.code",
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "258705008",
+              "code": "258701004",
               "system": "http://snomed.info/sct"
             }
           ]
         }
       },
       {
-        "id": "Observation.component:weeksGestAge.value[x]",
+        "id": "Observation.component:minDurationOfLabour.value[x]",
         "path": "Observation.component.value[x]",
         "slicing": {
           "discriminator": [
@@ -261,21 +285,21 @@
         ]
       },
       {
-        "id": "Observation.component:weeksGestAge.valueQuantity",
+        "id": "Observation.component:minDurationOfLabour.valueQuantity",
         "path": "Observation.component.valueQuantity",
         "min": 1,
         "max": "1",
         "patternQuantity": {
-          "code": "wk",
+          "code": "min",
           "system": "http://unitsofmeasure.org"
         },
         "constraint": [
           {
-            "key": "ncdhc-obs-inv-005-gestage-wks",
+            "key": "ncdhc-obs-inv-006-duration-of-labour-min",
             "severity": "error",
-            "human": "value of 'weeks' must be a whole number",
+            "human": "value of 'mins' must be a whole number",
             "expression": "value.toString().contains('.').not()",
-            "source": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
+            "source": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-duration-of-labour"
           }
         ]
       }

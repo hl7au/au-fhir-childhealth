@@ -1,0 +1,910 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-composition-document-pregnancy-history",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-pregnancy-history",
+  "version": "current",
+  "name": "NCDHCCompositionPregnancyHistory",
+  "title": "NCDHC Composition Woman's Pregnancy History",
+  "status": "active",
+  "description": "Composition based profile to define the structure and narrative content necessary for Woman's Pregnancy History FHIR document.",
+  "purpose": " The document at a minimum carries the following details:\n   * Pregnancy History\n   * History of Live Birth\n   * History of Stillbirth\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "fhirdocumentreference",
+      "uri": "http://hl7.org/fhir/documentreference",
+      "name": "FHIR DocumentReference"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-clinical-document-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.type.coding",
+        "path": "Composition.type.coding",
+        "patternCoding": {
+          "code": "PREGHSTRY",
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
+        }
+      },
+      {
+        "id": "Composition.category.coding",
+        "path": "Composition.category.coding",
+        "patternCoding": {
+          "code": "PREGDTLS",
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1"
+        }
+      },
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-expectant-mother"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.encounter",
+        "path": "Composition.encounter",
+        "short": "Use Encounter to record the Date and Time of Check, Venue, Examiner details",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.title",
+        "path": "Composition.title",
+        "fixedString": "Woman's Pregnancy History"
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code.coding"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the code pattern"
+        }
+      },
+      {
+        "id": "Composition.section:pregnancyHistory",
+        "path": "Composition.section",
+        "sliceName": "pregnancyHistory",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.title",
+        "path": "Composition.section.title",
+        "fixedString": "Previous pregnancies",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "127362006",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this.resolve().code.coding"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the pattern:$this.resolve().code.coding"
+        }
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.entry:gravida",
+        "path": "Composition.section.entry",
+        "sliceName": "gravida",
+        "short": "Gravida",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gravida"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.entry:parity",
+        "path": "Composition.section.entry",
+        "sliceName": "parity",
+        "short": "Parity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-parity"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.entry:priorPregnancyLoss",
+        "path": "Composition.section.entry",
+        "sliceName": "priorPregnancyLoss",
+        "short": "Prior Pregnancy loss",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-prior-pregnancy-loss"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:liveBirthHistory",
+        "path": "Composition.section",
+        "sliceName": "liveBirthHistory",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.title",
+        "path": "Composition.section.title",
+        "fixedString": "Livebirth"
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "281050002",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this.resolve().code.coding"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the pattern:$this.resolve().code.coding"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry:liveBirthPatient",
+        "path": "Composition.section.entry",
+        "sliceName": "liveBirthPatient",
+        "short": "Live Birth Child",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry:sex",
+        "path": "Composition.section.entry",
+        "sliceName": "sex",
+        "short": "Sex",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-biological-sex-at-birth"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry:gestation",
+        "path": "Composition.section.entry",
+        "sliceName": "gestation",
+        "short": "Gestation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry:typeOfLabour",
+        "path": "Composition.section.entry",
+        "sliceName": "typeOfLabour",
+        "short": "Type of labour - Spontaneous / Induced (Labour onset)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-labour"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry:durationOfLabour",
+        "path": "Composition.section.entry",
+        "sliceName": "durationOfLabour",
+        "short": "Duration of labour",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-duration-of-labour"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry:typeOfBirth",
+        "path": "Composition.section.entry",
+        "sliceName": "typeOfBirth",
+        "short": "Type of birth",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-birth"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry:painReliefAnaesthetic",
+        "path": "Composition.section.entry",
+        "sliceName": "painReliefAnaesthetic",
+        "short": "Pain relief / Anaesthetic",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-medication-statement-analgesia-use"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry:perinealStatus",
+        "path": "Composition.section.entry",
+        "sliceName": "perinealStatus",
+        "short": "Perineal status / Genital tract trauma",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-perineal-status"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry:antenatalComplications",
+        "path": "Composition.section.entry",
+        "sliceName": "antenatalComplications",
+        "short": "Antenatal complications",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-complication"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry:labourComplications",
+        "path": "Composition.section.entry",
+        "sliceName": "labourComplications",
+        "short": "Labour complications",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-labour-complication"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry:postnatalComplication",
+        "path": "Composition.section.entry",
+        "sliceName": "postnatalComplication",
+        "short": "Postnatal complication/s",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-complication"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry:postnatalReadmissions",
+        "path": "Composition.section.entry",
+        "sliceName": "postnatalReadmissions",
+        "short": "Postnatal readmission reason",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-readmission"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry:birthWeight",
+        "path": "Composition.section.entry",
+        "sliceName": "birthWeight",
+        "short": "Birth weight (g)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry:feeding",
+        "path": "Composition.section.entry",
+        "sliceName": "feeding",
+        "short": "Feeding",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-status"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry:fetalNeonatalComplications",
+        "path": "Composition.section.entry",
+        "sliceName": "fetalNeonatalComplications",
+        "short": "Fetal / Neonatal complications",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neonatal-complication"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:liveBirthHistory.entry:healthIssues",
+        "path": "Composition.section.entry",
+        "sliceName": "healthIssues",
+        "short": "Health issues",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-health-issues"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stillBirthHistory",
+        "path": "Composition.section",
+        "sliceName": "stillBirthHistory",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.title",
+        "path": "Composition.section.title",
+        "fixedString": "H/O: fetal loss after 20 weeks"
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "1391851000168106",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this.resolve().code.coding"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the pattern:$this.resolve().code.coding"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.entry:lostFetus",
+        "path": "Composition.section.entry",
+        "sliceName": "lostFetus",
+        "short": "Fetus",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.entry:pregnancyOutcome",
+        "path": "Composition.section.entry",
+        "sliceName": "pregnancyOutcome",
+        "short": "Pregnancy outcome (Still birth at 20 weeks or later)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-fetal-loss"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.entry:sex",
+        "path": "Composition.section.entry",
+        "sliceName": "sex",
+        "short": "Sex",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-biological-sex-at-birth"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.entry:gestation",
+        "path": "Composition.section.entry",
+        "sliceName": "gestation",
+        "short": "Gestation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.entry:typeOfLabour",
+        "path": "Composition.section.entry",
+        "sliceName": "typeOfLabour",
+        "short": "Type of labour - Spontaneous / Induced (Labour onset)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-labour"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.entry:durationOfLabour",
+        "path": "Composition.section.entry",
+        "sliceName": "durationOfLabour",
+        "short": "Duration of labour",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-duration-of-labour"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.entry:typeOfBirth",
+        "path": "Composition.section.entry",
+        "sliceName": "typeOfBirth",
+        "short": "Type of birth",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-birth"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.entry:painReliefAnaesthetic",
+        "path": "Composition.section.entry",
+        "sliceName": "painReliefAnaesthetic",
+        "short": "Pain relief / Anaesthetic",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-medication-statement-analgesia-use"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.entry:perinealStatus",
+        "path": "Composition.section.entry",
+        "sliceName": "perinealStatus",
+        "short": "Perineal status / Genital tract trauma",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-perineal-status"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.entry:antenatalComplications",
+        "path": "Composition.section.entry",
+        "sliceName": "antenatalComplications",
+        "short": "Antenatal complications",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-complication"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.entry:labourComplications",
+        "path": "Composition.section.entry",
+        "sliceName": "labourComplications",
+        "short": "Labour complications",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-labour-complication"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.entry:postnatalComplication",
+        "path": "Composition.section.entry",
+        "sliceName": "postnatalComplication",
+        "short": "Postnatal complication/s",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-complication"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.entry:postnatalReadmissions",
+        "path": "Composition.section.entry",
+        "sliceName": "postnatalReadmissions",
+        "short": "Postnatal readmission reason",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-readmission"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.entry:birthWeight",
+        "path": "Composition.section.entry",
+        "sliceName": "birthWeight",
+        "short": "Birth weight (g)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stillBirthHistory.entry:pregComments",
+        "path": "Composition.section.entry",
+        "sliceName": "pregComments",
+        "short": "Pregnancy comments",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-comments"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:fetalLossHistory",
+        "path": "Composition.section",
+        "sliceName": "fetalLossHistory",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:fetalLossHistory.title",
+        "path": "Composition.section.title",
+        "fixedString": "H/O: fetal loss before 20 weeks"
+      },
+      {
+        "id": "Composition.section:fetalLossHistory.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "1392441000168102",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Composition.section:fetalLossHistory.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this.resolve().code.coding"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the pattern:$this.resolve().code.coding"
+        }
+      },
+      {
+        "id": "Composition.section:fetalLossHistory.entry:pregnancyOutcome",
+        "path": "Composition.section.entry",
+        "sliceName": "pregnancyOutcome",
+        "short": "Pregnancy outcome",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-fetal-loss"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:fetalLossHistory.entry:fetalLossDate",
+        "path": "Composition.section.entry",
+        "sliceName": "fetalLossDate",
+        "short": "Date of fetal loss",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-date-of-fetal-loss"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:fetalLossHistory.entry:gestation",
+        "path": "Composition.section.entry",
+        "sliceName": "gestation",
+        "short": "Gestation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:fetalLossHistory.entry:pregComments",
+        "path": "Composition.section.entry",
+        "sliceName": "pregComments",
+        "short": "Pregnancy comments",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-comments"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

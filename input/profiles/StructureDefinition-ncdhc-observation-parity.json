@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-feeding-method",
+  "id": "ncdhc-observation-parity",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,13 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-method",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-parity",
   "version": "current",
-  "name": "NCDHCObservationFeedingMethod",
-  "title": "NCDHC Observation Feeding Method",
+  "name": "NCDHCObservationParity",
+  "title": "NCDHC Observation Parity",
   "status": "active",
-  "description": "Observation profile to record Feeding Method for the newborn in context",
-  "purpose": "\n The following details associated to the newborn in context are recorded:\n   * Test completion status\n   * Outcome of hearing test in right ear\n   * Outcome of hearing test in left ear\n   * Indication of whether a referral is needed\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "description": "Observation profile to record, search and fetch number of births (carried to viable gestation age) associated to the expectant mother in context.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -59,6 +58,19 @@
   "differential": {
     "element": [
       {
+        "id": "Observation",
+        "path": "Observation",
+        "constraint": [
+          {
+            "key": "ncdhc-obs-inv-004-parity",
+            "severity": "error",
+            "human": "parity must be a whole number",
+            "expression": "value.toString().contains('.').not()",
+            "source": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-parity"
+          }
+        ]
+      },
+      {
         "id": "Observation.status",
         "path": "Observation.status",
         "mustSupport": true
@@ -69,27 +81,19 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:feedingMethodSNOMED-CT",
+        "id": "Observation.code.coding:paritySNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "feedingMethodSNOMED-CT",
+        "sliceName": "paritySNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "169740003",
+          "code": "252113007",
           "system": "http://snomed.info/sct"
         }
       },
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -100,7 +104,7 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Screening Date",
+        "short": "Date when Parity was reported",
         "type": [
           {
             "code": "dateTime"
@@ -165,24 +169,43 @@
         },
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Quantity"
           }
         ]
       },
       {
-        "id": "Observation.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
+        "id": "Observation.valueQuantity",
+        "path": "Observation.valueQuantity",
         "min": 0,
         "max": "1",
-        "mustSupport": true,
-        "binding": {
-          "strength": "preferred",
-          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-feeding-method-1"
+        "patternQuantity": {
+          "code": "1",
+          "system": "http://unitsofmeasure.org"
         }
+      },
+      {
+        "id": "Observation.valueQuantity.value",
+        "path": "Observation.valueQuantity.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueQuantity.system",
+        "path": "Observation.valueQuantity.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueQuantity.code",
+        "path": "Observation.valueQuantity.code",
+        "mustSupport": true
       },
       {
         "id": "Observation.dataAbsentReason",
         "path": "Observation.dataAbsentReason",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
         "mustSupport": true
       }
     ]

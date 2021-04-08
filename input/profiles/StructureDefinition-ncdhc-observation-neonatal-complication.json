@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-feeding-method",
+  "id": "ncdhc-observation-neonatal-complication",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,13 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-method",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neonatal-complication",
   "version": "current",
-  "name": "NCDHCObservationFeedingMethod",
-  "title": "NCDHC Observation Feeding Method",
+  "name": "NCDHCObservationNeonatalComplication",
+  "title": "NCDHC Observation Neonatal Complications",
   "status": "active",
-  "description": "Observation profile to record Feeding Method for the newborn in context",
-  "purpose": "\n The following details associated to the newborn in context are recorded:\n   * Test completion status\n   * Outcome of hearing test in right ear\n   * Outcome of hearing test in left ear\n   * Indication of whether a referral is needed\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "description": "Observation profile to record, search and fetch Neonatal complication observed",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -69,27 +68,19 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:feedingMethodSNOMED-CT",
+        "id": "Observation.code.coding:neonatalComplicationsSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "feedingMethodSNOMED-CT",
+        "sliceName": "neonatalComplicationsSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "169740003",
+          "code": "414025005",
           "system": "http://snomed.info/sct"
         }
       },
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -100,27 +91,16 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Screening Date",
+        "short": "Date when Neonatal Complication was noted",
         "type": [
           {
             "code": "dateTime"
+          },
+          {
+            "code": "Period"
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "Observation.effective[x].extension",
-        "path": "Observation.effective[x].extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Observation.effective[x].extension:data-absent-reason",
@@ -166,6 +146,9 @@
         "type": [
           {
             "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
           }
         ]
       },
@@ -174,15 +157,25 @@
         "path": "Observation.valueCodeableConcept",
         "min": 0,
         "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-feeding-method-1"
+          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-neonatal-complications-1"
         }
       },
       {
         "id": "Observation.dataAbsentReason",
         "path": "Observation.dataAbsentReason",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
         "mustSupport": true
       }
     ]

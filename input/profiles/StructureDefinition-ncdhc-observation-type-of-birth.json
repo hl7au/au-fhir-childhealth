@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-feeding-method",
+  "id": "ncdhc-observation-type-of-birth",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,13 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-method",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-birth",
   "version": "current",
-  "name": "NCDHCObservationFeedingMethod",
-  "title": "NCDHC Observation Feeding Method",
+  "name": "NCDHCObservationTypeOfBirth",
+  "title": "NCDHC Observation Type Of Birth",
   "status": "active",
-  "description": "Observation profile to record Feeding Method for the newborn in context",
-  "purpose": "\n The following details associated to the newborn in context are recorded:\n   * Test completion status\n   * Outcome of hearing test in right ear\n   * Outcome of hearing test in left ear\n   * Indication of whether a referral is needed\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "description": "Observation profile to record, search and fetch type of birth observed during the birthing procedure",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -69,27 +68,19 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:feedingMethodSNOMED-CT",
+        "id": "Observation.code.coding:typeOfBirthSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "feedingMethodSNOMED-CT",
+        "sliceName": "typeOfBirthSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "169740003",
+          "code": "236973005",
           "system": "http://snomed.info/sct"
         }
       },
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -100,7 +91,7 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Screening Date",
+        "short": "Date when type of birth observed",
         "type": [
           {
             "code": "dateTime"
@@ -166,6 +157,9 @@
         "type": [
           {
             "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
           }
         ]
       },
@@ -174,15 +168,25 @@
         "path": "Observation.valueCodeableConcept",
         "min": 0,
         "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-feeding-method-1"
+          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-type-of-birth-1"
         }
       },
       {
         "id": "Observation.dataAbsentReason",
         "path": "Observation.dataAbsentReason",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
         "mustSupport": true
       }
     ]
