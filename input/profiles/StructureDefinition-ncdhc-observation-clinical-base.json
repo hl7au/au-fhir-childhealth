@@ -114,6 +114,18 @@
         ]
       },
       {
+        "id": "Observation.focus",
+        "path": "Observation.focus",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
         "min": 1
