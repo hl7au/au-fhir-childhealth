@@ -151,6 +151,14 @@
         "description": "NCDHC FHIR Woman's Pregnancy Outcome document profile using Bundle resource",
         "exampleBoolean": false
       },
+	  {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-bundle-child-presented-in-ed"
+        },
+        "name": "NCDHC FHIR Child Presented In ED Document",
+        "description": "NCDHC FHIRChild Presented In ED document profile using Bundle resource",
+        "exampleBoolean": false
+      },
       {
         "reference": {
           "reference": "StructureDefinition/ncdhc-encounter-consumer-entered"
@@ -293,6 +301,14 @@
         },
         "name": "NCDHC Composition Woman's Pregnancy outcome",
         "description": "Composition based profile to define the structure and narrative content necessary for Woman's Pregnancy outcome FHIR document.",
+        "exampleBoolean": false
+      },
+	  {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-document-child-presented-in-ed"
+        },
+        "name": "NCDHC Composition Child Presented ED",
+        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Child Presented ED",
         "exampleBoolean": false
       },
       {
@@ -679,6 +695,30 @@
         "description": "Observation profile to record, search and fetch date of fetal loss",
         "exampleBoolean": false
       },
+	  {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-diognosis"
+        },
+        "name": "NCDHC Observation Diognosis",
+        "description": "Observation profile to record Confirmed diagnosis; active diagnosis being treated",
+        "exampleBoolean": false
+      },
+	  {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-comments"
+        },
+        "name": "NCDHC Observation Comments",
+        "description": "Observation profile to record Additional comments about the encounter",
+        "exampleBoolean": false
+      },
+	  {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-complaint-or-issue"
+        },
+        "name": "NCDHC Observation Presenting Complaint Or Issue",
+        "description": "Observation profile to record The health problem or issue exeperienced by the patient resulting in their attendence to emergency department",
+        "exampleBoolean": false
+      },
       {
         "reference": {
           "reference": "StructureDefinition/ncdhc-organisation"
@@ -749,6 +789,14 @@
         },
         "name": "NCDHC Related Person",
         "description": "This profile defines a related person structure that localises core concepts, including identifiers and terminology",
+        "exampleBoolean": false
+      },
+	  {
+        "reference": {
+          "reference": "ValueSet/ncdhc-child-complaint-issue-1"
+        },
+        "name": "NCDHC ValueSet Child Complaint or Issue",
+        "description": "National Digital Health Collaborative - Value set to determine the health problem or issue exeperienced by the patient resulting in their attendence to emergency department",
         "exampleBoolean": false
       },
       {
