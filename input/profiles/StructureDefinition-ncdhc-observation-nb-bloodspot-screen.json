@@ -16,7 +16,7 @@
   "name": "NCDHCObservationNewbornBloodspotScreen",
   "title": "NCDHC Observation Newborn Bloodspot Screen",
   "status": "active",
-  "description": "Observation profile to record completion status and any associated details of the test used to detect certain rare genetic conditions and disorders of the metabolism of the newborn in context.",
+  "description": "Observation profile to record completion status or reason for non-completion of the Newborn Bloodspot Screening procedure",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
