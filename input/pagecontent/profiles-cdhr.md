@@ -22,7 +22,7 @@ The following list of profiles are being used in the CDHR (Child Digital Health 
 * [Family History and Risk Factor Consumer Entered](StructureDefinition-ncdhc-bundle-fh-rf-consumer-entered-document.html) - Details related to risk factors and family history as entered by the consumer.
 * [Parental Observation](StructureDefinition-ncdhc-bundle-parental-observation-document.html) - Observation details about the child as entered by the parent or care giver.
 * [Consumer Entered Encounter](StructureDefinition-ncdhc-bundle-consumer-entered-encounter-document.html) - Clinical Encounter details about the child as entered by the parent or care giver.
-* [Child Presented In Emergancy Department](StructureDefinition-ncdhc-bundle-child-presented-in-ed.html) - Details on issues and diagnosis when child was presented in Emergancy Department in a healthcare facility.
+* [Child Presented In Emergency Department](StructureDefinition-ncdhc-bundle-child-presented-in-ed.html) - Details on issues and diagnosis when child was presented in Emergency Department in a healthcare facility.
 
 
 
