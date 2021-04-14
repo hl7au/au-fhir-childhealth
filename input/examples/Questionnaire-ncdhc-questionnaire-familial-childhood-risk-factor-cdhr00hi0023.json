@@ -30,7 +30,7 @@
       "type": "open-choice",
       "required": false,
       "repeats": false,
-      "answerValueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-familial-childhood-riskfactor-answers-1",
+      "answerValueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-familial-childhood-riskfactor-answers-1",
       "initial": [
         {
           "valueCoding": {
@@ -54,7 +54,7 @@
       "type": "open-choice",
       "required": false,
       "repeats": false,
-      "answerValueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-familial-childhood-riskfactor-answers-1",
+      "answerValueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-familial-childhood-riskfactor-answers-1",
       "initial": [
         {
           "valueCoding": {
@@ -78,7 +78,7 @@
       "type": "open-choice",
       "required": false,
       "repeats": false,
-      "answerValueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-familial-childhood-riskfactor-answers-1",
+      "answerValueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-familial-childhood-riskfactor-answers-1",
       "initial": [
         {
           "valueCoding": {
