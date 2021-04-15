@@ -1481,9 +1481,9 @@
       },
       {
         "reference": {
-          "reference": "Composition/0a645a42-fe48-P001-0001-cdhr00hi0048"
+          "reference": "Composition/0a645a42-fe48-p001-0001-cdhr00hi0048"
         },
-        "name": "0a645a42-fe48-P001-0001-cdhr00hi0048",
+        "name": "0a645a42-fe48-p001-0001-cdhr00hi0048",
         "description": " Parental Observation Composition Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-parental-observation"
       },

@@ -1,0 +1,85 @@
+{
+  "resourceType": "Composition",
+  "id": "0a645a42-fe48-p001-0001-cdhr00hi0048",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-parental-observation"
+    ]
+  },
+  "title": "Health observation provided by parent or carer",
+  "type": {
+    "coding": [
+      {
+        "code": "PAOBS",
+        "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "POB",
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1"
+        }
+      ]
+    }
+  ],
+  "section": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "1526911000168104",
+            "system": "http://snomed.info/sct"
+          }
+        ]
+      },
+      "mode": "snapshot",
+      "title": "Health observation provided by parent or carer",
+      "entry": [
+        {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0048",
+          "display": "body Weight"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0048",
+          "display": "body Length"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0048",
+          "display": "Head Circumference"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0048",
+          "display": "BMI of child - System Calculated"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+    "display": "Baby of Lina Smith"
+  },
+  "encounter": {
+    "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0048",
+    "display": "home health"
+  },
+  "date": "2020-08-12T16:13:03+10:00",
+  "author": [
+    {
+      "reference": "RelatedPerson/a01bacd2-rpt5c-11ea-b3de-0242ac130002",
+      "display": "Mother"
+    }
+  ],
+  "attester": [
+    {
+      "mode": "personal",
+      "party": {
+        "reference": "RelatedPerson/a01bacd2-rpt5c-11ea-b3de-0242ac130002",
+        "display": "Mother"
+      }
+    }
+  ]
+}
