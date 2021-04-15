@@ -172,7 +172,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-observation-completion-status-1"
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-observation-completion-status-1"
         }
       },
       {
@@ -259,7 +259,7 @@
         "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-observation-interpretation-1"
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-observation-interpretation-1"
         }
       },
       {
@@ -309,7 +309,7 @@
         "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-observation-interpretation-1"
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-observation-interpretation-1"
         }
       }
     ]

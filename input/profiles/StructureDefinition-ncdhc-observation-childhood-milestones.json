@@ -170,7 +170,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/valueset-ncdhc-childhood-milestone-1"
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-childhood-milestones-1"
         }
       },
       {

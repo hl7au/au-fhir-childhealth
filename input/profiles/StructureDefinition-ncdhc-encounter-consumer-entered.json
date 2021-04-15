@@ -70,7 +70,7 @@
         "short": "Type of clinical event for which the child was taken to clinician",
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-encounter-reason-code-1"
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-consumer-encounter-reason-1"
         }
       }
     ]

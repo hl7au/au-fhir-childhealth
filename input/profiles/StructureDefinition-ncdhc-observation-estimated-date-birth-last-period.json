@@ -348,7 +348,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-observation-certainty-of-menstrual-cycle-1"
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-certainty-of-menstrual-cycle-1"
         }
       },
       {
@@ -401,7 +401,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-regularity-of-menstrual-cycle-1"
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-regularity-of-menstrual-cycle-1"
         }
       }
     ]
