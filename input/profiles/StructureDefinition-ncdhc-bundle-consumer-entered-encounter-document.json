@@ -94,7 +94,7 @@
       {
         "id": "Bundle.entry:compositionEntry.resource",
         "path": "Bundle.entry.resource",
-        "short": "Consumer Entered encounter Composition Profile",
+        "short": "Consumer Entered Encounter Composition Profile",
         "type": [
           {
             "code": "Composition",
