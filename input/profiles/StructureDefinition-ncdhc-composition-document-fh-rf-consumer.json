@@ -201,7 +201,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-risk-entered-consumer-entered"
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-risk-factors-consumer-entered"
             ]
           }
         ],
