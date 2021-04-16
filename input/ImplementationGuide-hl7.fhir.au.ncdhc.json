@@ -609,7 +609,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncdhc-observation-risk-entered-consumer-entered"
+          "reference": "StructureDefinition/ncdhc-observation-risk-factors-consumer-entered"
         },
         "name": "NCDHC Observation Consumer Entered Risk Factors",
         "description": "Flag profile to record different risk factors as reported by the Consumer",
