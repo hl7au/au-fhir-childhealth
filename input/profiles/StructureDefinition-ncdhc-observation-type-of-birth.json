@@ -176,7 +176,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-generic-yes-no-1"
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/valueset-ncdhc-type-of-birth-1"
         }
       },
       {
