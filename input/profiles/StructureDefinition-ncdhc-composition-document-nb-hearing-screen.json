@@ -6,7 +6,7 @@
   "name": "NCDHCCompositionNewbornHearingScreen",
   "title": "NCDHC Composition Newborn Hearing Screen",
   "status": "active",
-  "description": "Composition based profile to define the structure and narrative content necessary for Hearing Screen FHIR document.",
+  "description": "Composition based profile to define the structure and narrative content necessary pertaining to the automated hearing screen performed on newborns. Used to determine congenital risk factors for hearing related conditions and the necessity for further screening",
   "purpose": "The document at a minimum carries the following details:\n   * The completion status of Newborn Hearing Screen and outcome\n   * Screening Date and Venue\n   * Details of the person who is clinically responsible for the undetaking of the exam\n   * Attester who has clinically signed off the data\n   * Author of the document \n   * The newborn Patient in context\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

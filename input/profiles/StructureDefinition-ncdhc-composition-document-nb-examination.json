@@ -6,7 +6,7 @@
   "name": "NCDHCCompositionNewbornExamination",
   "title": "NCDHC Composition Newborn Examination",
   "status": "active",
-  "description": "Composition based profile to define the structure and narrative content necessary for Newborn Examination FHIR document.",
+  "description": "Composition based profile to define the structure and narrative content necessary for the brief physical examination conducted within the first few minutes of birth and a second detailed assessment within 48 hours of birth, used to screen for congenital anomalies.",
   "purpose": " The document at a minimum carries the following details:\n   * The completion outcome of the following Newborn Examinations:\n   * Examination Date and Venue\n   * Details of the person who is clinically responsible for the undetaking of the exam\n   * Attester who has clinically signed off the data\n   * Author of the document \n   * The newborn Patient in context\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
