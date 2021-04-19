@@ -185,17 +185,8 @@
         "id": "Composition.section:pregnancyHistory.entry:priorPregnancyLoss",
         "path": "Composition.section.entry",
         "sliceName": "priorPregnancyLoss",
-        "short": "Prior Pregnancy loss",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-prior-pregnancy-loss"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
