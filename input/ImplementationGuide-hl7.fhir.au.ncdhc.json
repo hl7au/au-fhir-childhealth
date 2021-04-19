@@ -49,10 +49,26 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-bundle-child-presented-in-ed"
+        },
+        "name": "NCDHC FHIR Child Presented In ED Document",
+        "description": "NCDHC FHIRChild Presented In ED document profile using Bundle resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-bundle-consumer-entered-encounter-document"
+        },
+        "name": "NCDHC FHIR Consumer Entered Encounter Document",
+        "description": "NCDHC FHIR Consumer Entered Encounter document profile using Bundle resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-bundle-consumer-entered-milestone-document"
         },
         "name": "NCDHC FHIR Consumer Entered Milestone Document",
-        "description": "NCDHC FHIR Consumer Entered FMilestone document profile using Bundle resource",
+        "description": "NCDHC FHIR Consumer Entered Milestone document profile using Bundle resource",
         "exampleBoolean": false
       },
       {
@@ -68,7 +84,7 @@
           "reference": "StructureDefinition/ncdhc-bundle-edb-document"
         },
         "name": "NCDHC FHIR Estimated Date of Birth Document",
-        "description": "NCDHC FHIR Newborn Examination document profile using Bundle resource",
+        "description": "NCDHC FHIR Estimated Date of Birth document profile using Bundle resource",
         "exampleBoolean": false
       },
       {
@@ -121,6 +137,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-bundle-pregnancy-history-document"
+        },
+        "name": "NCDHC FHIR Woman's Pregnancy History Document",
+        "description": "NCDHC FHIR Woman's Pregnancy History document profile using Bundle resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-bundle-pregnancy-outcome-document"
+        },
+        "name": "NCDHC FHIR Woman's Pregnancy Outcome Document",
+        "description": "NCDHC FHIR Woman's Pregnancy Outcome document profile using Bundle resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-bundle-preg-issues-plan-document"
         },
         "name": "NCDHC FHIR Pregnancy Complication Plan Document",
@@ -133,38 +165,6 @@
         },
         "name": "NCDHC FHIR Pregnancy Management Plan Document",
         "description": "NCDHC FHIR Pregnancy Management Plan document profile using Bundle resource",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ncdhc-bundle-consumer-entered-encounter-document"
-        },
-        "name": "NCDHC FHIR Consumer Entered Encounter Document",
-        "description": "NCDHC FHIR Consumer Entered Encounter document profile using Bundle resource",
-        "exampleBoolean": false
-      },
-	  {
-        "reference": {
-          "reference": "StructureDefinition/ncdhc-bundle-pregnancy-outcome-document"
-        },
-        "name": "NCDHC FHIR Woman's Pregnancy Outcome Document",
-        "description": "NCDHC FHIR Woman's Pregnancy Outcome document profile using Bundle resource",
-        "exampleBoolean": false
-      },
-	  {
-        "reference": {
-          "reference": "StructureDefinition/ncdhc-bundle-child-presented-in-ed"
-        },
-        "name": "NCDHC FHIR Child Presented In ED Document",
-        "description": "NCDHC FHIRChild Presented In ED document profile using Bundle resource",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ncdhc-encounter-consumer-entered"
-        },
-        "name": "NCDHC Encounter Consumer Entered",
-        "description": "An encounter representing clinical event details as entered by the consumer",
         "exampleBoolean": false
       },
       {
@@ -189,6 +189,14 @@
         },
         "name": "NCDHC Care Team",
         "description": "This profile defines a care Team",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-document-child-presented-in-ed"
+        },
+        "name": "NCDHC Composition Child Presented ED",
+        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Child Presented ED",
         "exampleBoolean": false
       },
       {
@@ -220,7 +228,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-consumer-entered-milestone"
         },
         "name": "NCDHC Composition Consumer Entered Milestone",
-        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Milestone entered by the consumer",
+        "description": "Composition based profile to define the details entered by consumer regarding child development milestones such as first time talking, crawling, walking ",
         "exampleBoolean": false
       },
       {
@@ -236,7 +244,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-fh-rf-consumer"
         },
         "name": "NCDHC Composition Family History and Risk Factors Entered By Consumer",
-        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Estimated Date of Birth",
+        "description": "Composition based profile to capture the details pertaining to family and newborn medical history & newborn health risk factors such as birth weight, use of oxygen at birth etc as entered by parent/caretaker",
         "exampleBoolean": false
       },
       {
@@ -244,7 +252,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
         },
         "name": "NCDHC Composition Newborn Bloodspot Screen",
-        "description": "Composition based profile to define the structure and narrative content necessary for Newborn Bloodspot Screen FHIR document.",
+        "description": "Composition specifying the patient, provider, relevant dates and completion status for the Newborn Bloodspot Screening procedure.",
         "exampleBoolean": false
       },
       {
@@ -260,7 +268,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-nb-examination"
         },
         "name": "NCDHC Composition Newborn Examination",
-        "description": "Composition based profile to define the structure and narrative content necessary for Newborn Examination FHIR document.",
+        "description": "Composition based profile to define the structure and narrative content necessary for the brief physical examination conducted within the first few minutes of birth and a second detailed assessment within 48 hours of birth, used to screen for congenital anomalies.",
         "exampleBoolean": false
       },
       {
@@ -268,7 +276,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-nb-hearing-screen"
         },
         "name": "NCDHC Composition Newborn Hearing Screen",
-        "description": "Composition based profile to define the structure and narrative content necessary for Hearing Screen FHIR document.",
+        "description": "Composition based profile to define the structure and narrative content necessary pertaining to the automated hearing screen performed on newborns. Used to determine congenital risk factors for hearing related conditions and the necessity for further screening",
         "exampleBoolean": false
       },
       {
@@ -277,6 +285,14 @@
         },
         "name": "NCDHC Composition Parental Observation",
         "description": "Composition based profile to define the structure and narrative content necessary for Parental Observation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-document-pregnancy-history"
+        },
+        "name": "NCDHC Composition Woman's Pregnancy History",
+        "description": "Composition based profile to define the structure and narrative content necessary for Woman's Pregnancy History FHIR document.",
         "exampleBoolean": false
       },
       {
@@ -295,20 +311,12 @@
         "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Estimated Date of Birth",
         "exampleBoolean": false
       },
-	  {
+      {
         "reference": {
           "reference": "StructureDefinition/ncdhc-composition-document-pregnancy-outcome"
         },
         "name": "NCDHC Composition Woman's Pregnancy outcome",
         "description": "Composition based profile to define the structure and narrative content necessary for Woman's Pregnancy outcome FHIR document.",
-        "exampleBoolean": false
-      },
-	  {
-        "reference": {
-          "reference": "StructureDefinition/ncdhc-composition-document-child-presented-in-ed"
-        },
-        "name": "NCDHC Composition Child Presented ED",
-        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Child Presented ED",
         "exampleBoolean": false
       },
       {
@@ -337,10 +345,34 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-encounter-consumer-entered"
+        },
+        "name": "NCDHC Encounter Consumer Entered",
+        "description": "An encounter representing clinical event details as entered by the consumer",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-encounter-dphr"
         },
         "name": "NCDHC Encounter DPHR",
         "description": "This is the base NCDHC Encounter profile for DPHR Health Interactions.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-family-member-history-consumer-entered"
+        },
+        "name": "NCDHC Consumer Entered Family Member History",
+        "description": "FamilyMemberHistory profile to record different conditions as reported by the Consumer",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-medication-statement-analgesia-use"
+        },
+        "name": "NCDHC MedicationStatement Analgesia Use",
+        "description": "Observation profile to record, search and fetch details of analgesia used during labour/delivery for the patient in context.",
         "exampleBoolean": false
       },
       {
@@ -409,10 +441,50 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-comments"
+        },
+        "name": "NCDHC Observation Comments",
+        "description": "Observation profile to record Additional comments about the encounter",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-complaint-or-issue"
+        },
+        "name": "NCDHC Observation Presenting Complaint Or Issue",
+        "description": "Observation profile to record The health problem or issue exeperienced by the patient resulting in their attendence to emergency department",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-consumer-base"
         },
         "name": "NCDHC Consumer Observation Base",
         "description": "This is the base profile for NCDHC Consumer Obsrevation. All NCDHC Consumer Observation profiles SHALL extend this profile (vital-sgins profiles are excluded)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-date-of-fetal-loss"
+        },
+        "name": "NCDHC Observation Date of fetal loss",
+        "description": "Observation profile to record, search and fetch date of fetal loss",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-diognosis"
+        },
+        "name": "NCDHC Observation Diognosis",
+        "description": "Observation profile to record Confirmed diagnosis; active diagnosis being treated",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-duration-of-labour"
+        },
+        "name": "NCDHC Observation Duration of labour",
+        "description": "Observation profile to record, search and fetch duration of labour associated to the patient in context.",
         "exampleBoolean": false
       },
       {
@@ -453,6 +525,14 @@
         },
         "name": "NCDHC Observation Ears Examination",
         "description": "Observation profile to record outcome of the Right and Left Ear check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-encounter-note"
+        },
+        "name": "NCDHC Observation Encounter Note",
+        "description": "Observation profile to record, search and fetch encounter notes",
         "exampleBoolean": false
       },
       {
@@ -505,10 +585,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-gravida"
+        },
+        "name": "NCDHC Observation Gravida",
+        "description": "Observation profile to record, search and fetch Total number of pregnancies associated to the expectant mother in context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-head-fontanelles-exam"
         },
         "name": "NCDHC Observation Head and Fontanelles Examination",
         "description": "Observation profile to record outcome of the check performed around the anatomical feature of the infant skull",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-health-issues"
+        },
+        "name": "NCDHC Observation Health Issues",
+        "description": "Observation profile to record, search and fetch health issues observed",
         "exampleBoolean": false
       },
       {
@@ -533,6 +629,14 @@
         },
         "name": "NCDHC Observation to indicate if Date of last period is consistent with USS",
         "description": "Observation profile to record if the estimated date of delivery is consistent between last menstrual period and antenatal ultrasound scan for the expectatnt mother in context",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-labour-complication"
+        },
+        "name": "NCDHC Observation Labour Complications",
+        "description": "Observation profile to record, search and fetch labour complication observed",
         "exampleBoolean": false
       },
       {
@@ -569,10 +673,18 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-neonatal-complication"
+        },
+        "name": "NCDHC Observation Neonatal Complications",
+        "description": "Observation profile to record, search and fetch Neonatal complication observed",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
         },
         "name": "NCDHC Observation Newborn Bloodspot Screen",
-        "description": "Observation profile to record completion status and any associated details of the test used to detect certain rare genetic conditions and disorders of the metabolism of the newborn in context.",
+        "description": "Observation profile to record completion status or reason for non-completion of the Newborn Bloodspot Screening procedure",
         "exampleBoolean": false
       },
       {
@@ -585,10 +697,66 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-parity"
+        },
+        "name": "NCDHC Observation Parity",
+        "description": "Observation profile to record, search and fetch number of births (carried to viable gestation age) associated to the expectant mother in context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-perineal-status"
+        },
+        "name": "NCDHC Observation Perineal Status",
+        "description": "Observation profile to record, search and fetch Perineal Status observed",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-postnatal-complication"
+        },
+        "name": "NCDHC Observation Postnatal Complications",
+        "description": "Observation profile to record, search and fetch Postnatal complication observed",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-postnatal-readmission"
+        },
+        "name": "NCDHC Observation Postnatal Readmissions",
+        "description": "Observation profile to record, search and fetch Postnatal Readmission reasons",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-pregnancy-comments"
+        },
+        "name": "NCDHC Observation Pregnancy Comments",
+        "description": "Observation profile to record, search and fetch Pregnancy Comments",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-pregnancy-complication"
         },
         "name": "NCDHC Observation Pregnancy Complication",
         "description": "Observation profile to record, search and fetch Pregnancy Complication associated to the child in context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-pregnancy-outcome"
+        },
+        "name": "NCDHC Observation Pregnancy Outcome",
+        "description": "Observation profile to record, search and fetch pregnancy outcome",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-prior-pregnancy-loss"
+        },
+        "name": "NCDHC Observation Prior Pregnancy Loss",
+        "description": "Observation profile to record, search and fetch Total number of unsuccessful pegnancies associated to the expectant mother in context.",
         "exampleBoolean": false
       },
       {
@@ -641,6 +809,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-type-of-birth"
+        },
+        "name": "NCDHC Observation Type Of Birth",
+        "description": "Observation profile to record, search and fetch type of birth observed during the birthing procedure",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-type-of-fetal-loss"
+        },
+        "name": "NCDHC Observation Type of Fetal Loss",
+        "description": "Observation profile to record, search and fetch type of fetal loss",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-type-of-labour"
+        },
+        "name": "NCDHC Observation TypeOfLabour",
+        "description": "Observation profile to record, search and fetch type of labour observed during the Labouring procedure",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-umbilicus-exam"
         },
         "name": "NCDHC Observation Umbilicus Examination",
@@ -677,46 +869,6 @@
         },
         "name": "NCDHC Observation Vital Sign Head Circumference Profile",
         "description": "This profile sets minimum expectations for the Observation Vital Sign resource to record, search and fetch Head Circumference of the patient in context.",
-        "exampleBoolean": false
-      },
-	  {
-        "reference": {
-          "reference": "StructureDefinition/ncdhc-observation-pregnancy-outcome"
-        },
-        "name": "NCDHC Observation Pregnancy Outcome",
-        "description": "Observation profile to record, search and fetch pregnancy outcome",
-        "exampleBoolean": false
-      },
-	  {
-        "reference": {
-          "reference": "StructureDefinition/ncdhc-observation-date-of-fetal-loss"
-        },
-        "name": "NCDHC Observation Date of fetal loss",
-        "description": "Observation profile to record, search and fetch date of fetal loss",
-        "exampleBoolean": false
-      },
-	  {
-        "reference": {
-          "reference": "StructureDefinition/ncdhc-observation-diognosis"
-        },
-        "name": "NCDHC Observation Diognosis",
-        "description": "Observation profile to record Confirmed diagnosis; active diagnosis being treated",
-        "exampleBoolean": false
-      },
-	  {
-        "reference": {
-          "reference": "StructureDefinition/ncdhc-observation-comments"
-        },
-        "name": "NCDHC Observation Comments",
-        "description": "Observation profile to record Additional comments about the encounter",
-        "exampleBoolean": false
-      },
-	  {
-        "reference": {
-          "reference": "StructureDefinition/ncdhc-observation-complaint-or-issue"
-        },
-        "name": "NCDHC Observation Presenting Complaint Or Issue",
-        "description": "Observation profile to record The health problem or issue exeperienced by the patient resulting in their attendence to emergency department",
         "exampleBoolean": false
       },
       {
@@ -779,7 +931,7 @@
         "reference": {
           "reference": "StructureDefinition/ncdhc-questionnaire-response-familial-childhood-risk-factor"
         },
-        "name": "NCDHC QuestionnaireResponse",
+        "name": "NCDHC QuestionnaireResponse Familial Childhood RiskFactor",
         "description": "This is the NCDHC QuestionnaireResponse profile to gather Familial Childhood Risk Factor information in Question Response form",
         "exampleBoolean": false
       },

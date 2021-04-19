@@ -1,0 +1,144 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncdhc-family-member-history-consumer-entered",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Summary"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-family-member-history-consumer-entered",
+  "version": "current",
+  "name": "NCDHCFamilyMemberHistoryConsumerEntered",
+  "title": "NCDHC Consumer Entered Family Member History",
+  "status": "active",
+  "description": "FamilyMemberHistory profile to record different conditions as reported by the Consumer",
+  "purpose": "\n The following health conditions associated to the expectant mother in context are recorded:\n   * Hearing / Deafness / Hearing Problems\n   * Vision / Sight / Blindness / Eye Problems\n   * Need Oxygen > 48hrs \n   * Birth Weight <1500gms\n   * Intensive Care >24hrs \n   * Dysplasia of the Hips / Hip Problems\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "FamilyMemberHistory",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "FamilyMemberHistory.status",
+        "path": "FamilyMemberHistory.status",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.dataAbsentReason",
+        "path": "FamilyMemberHistory.dataAbsentReason",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.patient",
+        "path": "FamilyMemberHistory.patient",
+        "short": "Reference to the child patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.date",
+        "path": "FamilyMemberHistory.date",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.name",
+        "path": "FamilyMemberHistory.name",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.relationship",
+        "path": "FamilyMemberHistory.relationship",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.sex",
+        "path": "FamilyMemberHistory.sex",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.reasonCode",
+        "path": "FamilyMemberHistory.reasonCode",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.note",
+        "path": "FamilyMemberHistory.note",
+        "short": "Any generic note",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.condition.code",
+        "path": "FamilyMemberHistory.condition.code",
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-familial-risk-factor-1"
+        }
+      },
+      {
+        "id": "FamilyMemberHistory.condition.outcome",
+        "path": "FamilyMemberHistory.condition.outcome",
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-familial-childhood-riskfactor-answers-1"
+        }
+      },
+      {
+        "id": "FamilyMemberHistory.condition.onsetAge",
+        "path": "FamilyMemberHistory.condition.onsetAge",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Age"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.condition.note",
+        "path": "FamilyMemberHistory.condition.note",
+        "short": "Comments on specific condition",
+        "mustSupport": true
+      }
+    ]
+  }
+}
