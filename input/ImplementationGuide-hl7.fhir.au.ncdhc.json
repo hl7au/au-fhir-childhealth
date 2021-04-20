@@ -943,7 +943,7 @@
         "description": "This profile defines a related person structure that localises core concepts, including identifiers and terminology",
         "exampleBoolean": false
       },
-	  {
+      {
         "reference": {
           "reference": "ValueSet/ncdhc-child-complaint-issue-1"
         },
@@ -1031,7 +1031,7 @@
         "description": "National Children's Digital Health Collaborative - Codes to determine what type of Observation Regularity Of Menstrual Cycle are applicable to each completed check/observation.",
         "exampleBoolean": false
       },
-	  {
+      {
         "reference": {
           "reference": "ValueSet/ncdhc-type-of-fetal-loss-1"
         },
@@ -1039,7 +1039,7 @@
         "description": "National Children's Digital Health Collaborative - Values to represent different types of fetal loss",
         "exampleBoolean": false
       },
-	  {
+      {
         "reference": {
           "reference": "ValueSet/ncdhc-pregnancy-outcome-1"
         },
@@ -1748,7 +1748,7 @@
           "reference": "Practitioner/p01bacd2-or5c-11ea-b3de-0242ac130002"
         },
         "name": "p01bacd2-or5c-11ea-b3de-0242ac130002",
-        "description": "Example of NCDHC Practitioner  to represent clinically responsible person",
+        "description": "Example of NCDHC Practitioner to represent clinically responsible person",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner"
       },
       {
@@ -1756,10 +1756,10 @@
           "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003"
         },
         "name": "p01bacd2-pr5c-11ea-b3de-0242ac130003",
-        "description": "Example of NCDHC PractitionerRole  to represent as clinically responsible person",
+        "description": "Example of NCDHC PractitionerRole to represent as clinically responsible person",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role"
       },
-	  {
+      {
         "reference": {
           "reference": "Composition/0a645a42-fe48-c001-0001-dphr00hi0109"
         },
@@ -1783,7 +1783,7 @@
         "description": "Example to demonstrate care Team",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-care-team"
       },
-	  {
+      {
         "reference": {
           "reference": "Encounter/0a645a42-fe48-e001-0001-dphr00hi0109"
         },
@@ -1799,7 +1799,7 @@
         "description": "Pregnancy Issues And Plans details",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
       },
-	  {
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o001-0001-dphr00hi0109"
         },
@@ -1807,7 +1807,7 @@
         "description": "Example to demonstrate record, search ,fetch pregnancy outcome",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-outcome"
       },
-	  {
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o002-0001-dphr00hi0109"
         },
@@ -1815,7 +1815,7 @@
         "description": "GestationAge Observation example when both days and weeks are provided in the instance",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
       },
-	  {
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o003-0001-dphr00hi0109"
         },
@@ -1823,7 +1823,7 @@
         "description": "Example to demonstrate record, search and fetch date of fetal loss",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-date-of-fetal-loss"
       },
-	  {
+      {
         "reference": {
           "reference": "Patient/0a645a42-fe48-p001-0001-dphr00hi0109"
         },
@@ -1832,6 +1832,14 @@
         "exampleBoolean": true
       },
 	  {
+        "reference": {
+          "reference": "Patient/0a645a42-fe48-p001-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-p001-0001-dphr00hi0135",
+        "description": "Pregnancy History livebirth patient Example",
+        "exampleBoolean": true
+      },
+      {
         "reference": {
           "reference": "CarePlan/0a645a42-fe48-p001-0001-dphr00hi115a"
         },
@@ -1847,7 +1855,7 @@
         "description": "Example to demonstrate Condition profile to record pregnancy complications and associated details",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-condition-pregnancy-complication"
       },
-	  {
+      {
         "reference": {
           "reference": "Bundle/ncdhc-document-pregnancy-outcome-example"
         },
@@ -1855,13 +1863,301 @@
         "description": "Pregnancy Outcome FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-pregnancy-outcome-document"
       },
-	  {
+      {
         "reference": {
           "reference": "Bundle/ncdhc-document-pregnancy-issues-and-plans-example"
         },
         "name": "ncdhc-document-pregnancy-issues-and-plans-example",
         "description": "Pregnancy Issues And Plans FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-preg-issues-plan-document"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/ncdhc-document-preghist-livebirth-example"
+        },
+        "name": "ncdhc-document-preghist-livebirth-example",
+        "description": "Pregnancy History FHIR Document Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-pregnancy-history-document"
+      },
+      {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c001-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-c001-0001-dphr00hi0135",
+        "description": " Pregnancy History Composition Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-pregnancy-history"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e001-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-e001-0001-dphr00hi0135",
+        "description": "Pregnancy History encounter Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o004-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o004-0001-dphr00hi0135",
+        "description": "Newborn Biological Sex and effectiveDateTime",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-biological-sex-at-birth"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o005-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o005-0001-dphr00hi0135",
+        "description": "GestationAge Observation example when both days and weeks are provided in the instance",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o006-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o006-0001-dphr00hi0135",
+        "description": "Example of Type Of Labour represented as CodeableConcept with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-labour"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o006-0002-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o006-0002-dphr00hi0135",
+        "description": "Example of Type Of Labour represented as String with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-labour"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o006-0003-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o006-0003-dphr00hi0135",
+        "description": "Type Of Labour example with absent reason to represent no Type Of Labour was noted",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-labour"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o007-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o007-0001-dphr00hi0135",
+        "description": "Example to demonstrate Observation profile to record, search and fetch duration of labour associated to the patient in context",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-duration-of-labour"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o008-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o008-0001-dphr00hi0135",
+        "description": "Example of Type Of Birth represented as CodeableConcept with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-birth"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o008-0002-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o008-0002-dphr00hi0135",
+        "description": "Example of Type Of Birth represented as String with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-birth"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o008-0003-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o008-0003-dphr00hi0135",
+        "description": "Type Of Birth example with absent reason to represent no complication was noted",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-birth"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/0a645a42-fe48-o009-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o009-0001-dphr00hi0135",
+        "description": "Example to demonstrate  profile to record, search and fetch details of analgesia used during labour/delivery for the patient in context.",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-medication-statement-analgesia-use"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o010-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o010-0001-dphr00hi0135",
+        "description": "Example of Perineal Status represented as CodeableConcept with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-perineal-status"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o010-0002-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o010-0002-dphr00hi0135",
+        "description": "Example of Perineal Status represented as String with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-perineal-status"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o010-0003-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o010-0003-dphr00hi0135",
+        "description": "Perineal Status example with absent reason to represent no complication was noted",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-perineal-status"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o011-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o011-0001-dphr00hi0135",
+        "description": "Pregnancy Complication example represented as string with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-complication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o011-0002-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o011-0002-dphr00hi0135",
+        "description": "Pregnancy Complication example represented as CodeableConcept with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-complication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o011-0003-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o011-0003-dphr00hi0135",
+        "description": "Pregnancy Complication example with absent reason to represent no complication was noted",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-complication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o012-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o012-0001-dphr00hi0135",
+        "description": "Example of Labour complication represented as CodeableConcept with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-labour-complication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o012-0002-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o012-0002-dphr00hi0135",
+        "description": "Example of Labour complication represented as CodeableConcept with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-labour-complication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o012-0003-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o012-0003-dphr00hi0135",
+        "description": "Labour Complication example with absent reason to represent no complication was noted",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-labour-complication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o013-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o013-0001-dphr00hi0135",
+        "description": "Example to demonstrate Postnatal complication represented as CodeableConcept with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-complication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o013-0002-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o013-0002-dphr00hi0135",
+        "description": "Example to demonstrate Postnatal complication represented as String with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-complication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o013-0003-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o013-0003-dphr00hi0135",
+        "description": "Postnatal Complication example with absent reason to represent no complication was noted",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-complication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o014-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o014-0001-dphr00hi0135",
+        "description": "Example to demonstrate Postnatal Readmission represented as String  with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-readmission"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o014-0002-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o014-0002-dphr00hi0135",
+        "description": " Postnatal Readmissions example with absent reason to represent no complication was noted",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-readmission"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o015-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o015-0001-dphr00hi0135",
+        "description": "Example to represent child's birthweight ",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o016-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o016-0001-dphr00hi0135",
+        "description": "Child's feeding Status Observation example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-status"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o017-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o017-0001-dphr00hi0135",
+        "description": "Newborn Feeding Status and effectiveDateTime",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-method"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o018-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o018-0001-dphr00hi0135",
+        "description": "Example to demonstrate child's milk intake",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-milk-feeding-status"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o019-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o019-0001-dphr00hi0135",
+        "description": "Example to demonstrate Neonatal complication represented as CodeableConcept with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neonatal-complication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o019-0002-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o019-0002-dphr00hi0135",
+        "description": "Example of Neonatal complication represented as valueString with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neonatal-complication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o020-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o020-0001-dphr00hi0135",
+        "description": "Example to demonstrate Health Issues represented as CodeableConcept with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-health-issues"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o020-0002-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o020-0002-dphr00hi0135",
+        "description": "Example of Health Issues represented as valueString with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-health-issues"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o020-0003-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o020-0003-dphr00hi0135",
+        "description": "Health Issues example with absent reason to represent no complication was noted",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-health-issues"
       }
     ],
     "page": {

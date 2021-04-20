@@ -1,0 +1,34 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "0a645a42-fe48-o009-0001-dphr00hi0135",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-medication-statement-analgesia-use"
+    ]
+  },
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "1428451000168101",
+        "system": "http://snomed.info/sct",
+        "display": "Epidural anaesthesia in labour"
+      }
+    ]
+  },
+  "status": "active",
+  "subject": {
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+    "display": "Eve Bill"
+  },
+  "effectiveDateTime": "2020-12-25T16:13:03+10:00",
+  "dosage": [
+    {
+      "text": "Infusion Rate: 4mL/Hr"
+    }
+  ],
+  "note": [
+    {
+      "text": "Record every hour"
+    }
+  ]
+}

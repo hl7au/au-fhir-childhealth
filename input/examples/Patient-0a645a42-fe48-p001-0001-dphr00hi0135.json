@@ -1,0 +1,27 @@
+{
+  "resourceType": "Patient",
+  "id": "0a645a42-fe48-p001-0001-dphr00hi0135",
+  "meta": {
+    "profile": [
+      "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+      "valueAddress": {
+        "text": "Blacktown Hostpital"
+      }
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "given": [
+        "Baby of Eve"
+      ],
+      "family": "Bill"
+    }
+  ],
+  "birthDate": "2018-12-27"
+}

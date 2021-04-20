@@ -1,0 +1,1246 @@
+{
+  "resourceType": "Bundle",
+  "id": "ncdhc-document-preghist-livebirth-example",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-pregnancy-history-document"
+    ]
+  },
+  "type": "document",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:0c3151bd-1abf-4d67-p04k-cd1017a4c6e0"
+  },
+  "timestamp": "2018-12-27T16:13:03+10:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-c001-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "0a645a42-fe48-c001-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-pregnancy-history"
+          ]
+        },
+        "title": "Woman's Pregnancy History",
+        "type": {
+          "coding": [
+            {
+              "code": "PREGHSTRY",
+              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "PREGDTLS",
+                "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1"
+              }
+            ]
+          }
+        ],
+        "section": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "281050002",
+                  "system": "http://snomed.info/sct",
+                  "display": "Livebirth"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "title": "Livebirth",
+            "entry": [
+              {
+                "reference": "Patient/0a645a42-fe48-p001-0001-dphr00hi0135"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o004-0001-dphr00hi0135"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o005-0001-dphr00hi0135"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o006-0001-dphr00hi0135"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o007-0001-dphr00hi0135"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o008-0001-dphr00hi0135"
+              },
+              {
+                "reference": "MedicationStatement/0a645a42-fe48-o009-0001-dphr00hi0135"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o010-0001-dphr00hi0135"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o011-0001-dphr00hi0135"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o012-0001-dphr00hi0135"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o013-0001-dphr00hi0135"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o014-0001-dphr00hi0135"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o015-0001-dphr00hi0135"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o016-0001-dphr00hi0135"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o019-0001-dphr00hi0135"
+              },
+              {
+                "reference": "Observation/0a645a42-fe48-o020-0001-dphr00hi0135"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+          "display": "Eve Bill"
+        },
+        "encounter": {
+          "reference": "Encounter/0a645a42-fe48-e001-0001-dphr00hi0135",
+          "display": "Consultation on 10th Aug 2020 at Downunder Hospital"
+        },
+        "date": "2018-12-27T16:13:03+10:00",
+        "author": [
+          {
+            "reference": "Practitioner/p01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Helen Mayo"
+          }
+        ],
+        "attester": [
+          {
+            "mode": "professional",
+            "party": {
+              "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+              "display": "Downunder Hospital"
+            }
+          }
+        ],
+        "custodian": {
+          "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+          "display": "Downunder Hospital"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a01bacd2-pt5c-11ea-b3de-0242ac110000",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "a01bacd2-pt5c-11ea-b3de-0242ac110000",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-expectant-mother"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "NI",
+                  "display": "National unique individual identifier"
+                }
+              ],
+              "text": "IHI"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
+            "value": "8003608000024083"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR",
+                  "display": "Medical record number"
+                }
+              ],
+              "text": "Medical Record Number"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0/8003620000000000",
+            "value": "02133000",
+            "assigner": {
+              "display": "Blacktown Hospital"
+            }
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "given": [
+              "Lina"
+            ],
+            "family": "Smith"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1996-08-01",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "31 Pacquola Street"
+            ],
+            "city": "Blacktown",
+            "state": "NSW",
+            "country": "AU"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-e001-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "0a645a42-fe48-e001-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
+          ]
+        },
+        "status": "finished",
+        "class": {
+          "code": "AMB",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+          "display": "Eve Bill"
+        },
+        "period": {
+          "start": "2018-12-27T16:13:03+10:00",
+          "end": "2018-12-27T16:13:03+10:00"
+        },
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "0a645a42-fe48-l001-0001-dphr00hi0135",
+            "name": "Downunder Hospital"
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "reference": "#0a645a42-fe48-l001-0001-dphr00hi0135",
+              "display": "Downunder Hospital"
+            },
+            "status": "completed"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:p01bacd2-or5c-11ea-b3de-0242ac130002",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "p01bacd2-or5c-11ea-b3de-0242ac130002",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "NPI",
+                  "display": "National provider identifier"
+                }
+              ],
+              "text": "HPI-I"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hi/hpii/1.0",
+            "value": "8003619900015717"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "given": [
+              "Helen"
+            ],
+            "family": "Mayo"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:o01bacd2-or5c-11ea-b3de-0242ac130002",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "o01bacd2-or5c-11ea-b3de-0242ac130002",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-organisation"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org.au/CodeSystem/v2-0203",
+                  "code": "NOI",
+                  "display": "National Organisation Identifier"
+                }
+              ],
+              "text": "HPI-O"
+            },
+            "system": "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
+            "value": "8003621566684455"
+          }
+        ],
+        "active": true,
+        "name": "Downunder Hospital"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-p001-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "0a645a42-fe48-p001-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+            "valueAddress": {
+              "text": "Blacktown Hostpital"
+            }
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "given": [
+              "Baby of Eve"
+            ],
+            "family": "Bill"
+          }
+        ],
+        "birthDate": "2018-12-27"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o004-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o004-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-biological-sex-at-birth"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1515311000168102",
+              "display": "Biological sex at birth"
+            },
+            {
+              "code": "76689-9",
+              "system": "http://loinc.org",
+              "display": "Sex assigned at birth"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03+10:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "248153007",
+              "system": "http://snomed.info/sct",
+              "display": "Male"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o005-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o005-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "57036006",
+              "system": "http://snomed.info/sct",
+              "display": "Fetal gestational age"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "258703001",
+                  "system": "http://snomed.info/sct",
+                  "display": "day"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "code": "d",
+              "system": "http://unitsofmeasure.org",
+              "value": 4,
+              "unit": "days"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "258705008",
+                  "system": "http://snomed.info/sct",
+                  "display": "week"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "code": "wk",
+              "system": "http://unitsofmeasure.org",
+              "value": 40,
+              "unit": "weeks"
+            }
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+          "display": "Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03+10:00",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ],
+        "note": [
+          {
+            "text": "Gestation Age 40.4"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o006-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o006-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-labour"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "249120008",
+              "system": "http://snomed.info/sct",
+              "display": "Onset of labour first stage"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+          "display": "Eve Bill"
+        },
+        "effectiveDateTime": "2020-12-25T16:13:03+10:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "84457005",
+              "system": "http://snomed.info/sct",
+              "display": "Spontaneous onset of labour"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Spontaneous onset of labour"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o007-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o007-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-duration-of-labour"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "289248003",
+              "system": "http://snomed.info/sct",
+              "display": "Duration of labour"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "258702006",
+                  "system": "http://snomed.info/sct",
+                  "display": "hour"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 7,
+              "code": "h",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "258701004",
+                  "system": "http://snomed.info/sct",
+                  "display": "minute"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 30,
+              "code": "min",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+          "display": "Eve Bill"
+        },
+        "effectiveDateTime": "2020-12-25T16:13:03+10:00",
+        "note": [
+          {
+            "text": "Duration of labour 7 h 30 min"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o008-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o008-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-birth"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "236973005",
+              "system": "http://snomed.info/sct",
+              "display": "Delivery procedure"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+          "display": "Eve Bill"
+        },
+        "effectiveDateTime": "2020-12-25T16:13:03+10:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "700000006",
+              "system": "http://snomed.info/sct",
+              "display": "Vaginal delivery of fetus"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Type of birth - Vaginal delivery of fetus"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o009-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "0a645a42-fe48-o009-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-medication-statement-analgesia-use"
+          ]
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "1428451000168101",
+              "system": "http://snomed.info/sct",
+              "display": "Epidural anaesthesia in labour"
+            }
+          ]
+        },
+        "status": "active",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+          "display": "Eve Bill"
+        },
+        "effectiveDateTime": "2020-12-25T16:13:03+10:00",
+        "dosage": [
+          {
+            "text": "Infusion Rate: 4mL/Hr"
+          }
+        ],
+        "note": [
+          {
+            "text": "Record every hour"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o010-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o010-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-perineal-status"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "289849003",
+              "system": "http://snomed.info/sct",
+              "display": "Female perineal finding"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+          "display": "Eve Bill"
+        },
+        "effectiveDateTime": "2020-12-25T16:13:03+10:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "28985400",
+              "system": "http://snomed.info/sct",
+              "display": "Perineum intact"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Perineal status- Perineum intact"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o011-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o011-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-complication"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "609496007",
+              "system": "http://snomed.info/sct",
+              "display": "Complication occurring during pregnancy"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+          "display": "Eve Bill"
+        },
+        "effectiveDateTime": "2020-12-25T16:13:03+10:00",
+        "valueString": "Chronic Hypertension",
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ],
+        "note": [
+          {
+            "text": "Hypertension"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o012-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o012-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-labour-complication"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "199745000",
+              "system": "http://snomed.info/sct",
+              "display": "Complication occurring during labour and delivery"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+          "display": "Eve Bill"
+        },
+        "effectiveDateTime": "2020-12-25T16:13:03+10:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "57759005",
+              "system": "http://snomed.info/sct",
+              "display": "First degree perineal laceration"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o013-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o013-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-complication"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "80113008",
+              "system": "http://snomed.info/sct",
+              "display": "Complication of the puerperium"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+          "display": "Eve Bill"
+        },
+        "effectiveDateTime": "2020-12-25T16:13:03+10:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "700038005",
+              "system": "http://snomed.info/sct",
+              "display": "Mastitis associated with breastfeeding"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": " breast pain, swelling, warmth and redness"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o014-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o014-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-readmission"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "417005",
+              "system": "http://snomed.info/sct",
+              "display": "Hospital re-admission"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+          "display": "Eve Bill"
+        },
+        "effectiveDateTime": "2020-12-25T16:13:03+10:00",
+        "valueString": "Hospital re-admission",
+        "note": [
+          {
+            "text": "Hospital re-admission"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o015-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o015-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "364589006",
+              "display": "Birth weight"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "code": "kg",
+          "system": "http://unitsofmeasure.org",
+          "value": 2.2,
+          "unit": "kg"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+          "display": "Baby of Lina Smith"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03+10:00",
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "17621005",
+                "system": "http://snomed.info/sct",
+                "display": "Normal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o016-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o016-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-status"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "364651009",
+              "system": "http://snomed.info/sct",
+              "display": "Characteristics of infant feeding"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2018-12-27T16:13:03+10:00",
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/0a645a42-fe48-o017-0001-dphr00hi0135",
+            "display": "Feeding Method"
+          },
+          {
+            "reference": "Observation/0a645a42-fe48-o018-0001-dphr00hi0135",
+            "display": "Milk Feeding Status"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o017-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o017-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-method"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "169740003",
+              "system": "http://snomed.info/sct",
+              "display": "Infant feeding method"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2020-08-21T16:13:03+10:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "169644004",
+              "system": "http://snomed.info/sct",
+              "display": "Feeding intention - bottle"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o018-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o018-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-milk-feeding-status"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "226404003",
+              "system": "http://snomed.info/sct",
+              "display": "Milk Intake"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001",
+          "display": "Baby of Eve Bill"
+        },
+        "effectiveDateTime": "2020-12-25T16:13:03+10:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "226790003",
+              "system": "http://snomed.info/sct",
+              "display": "Expressed breast milk"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o019-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o019-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neonatal-complication"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "414025005",
+              "system": "http://snomed.info/sct",
+              "display": "Disorder of fetus or newborn"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+          "display": "Eve Bill"
+        },
+        "effectiveDateTime": "2020-12-25T16:13:03+10:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "276549000",
+              "system": "http://snomed.info/sct",
+              "display": "Newborn physiological jaundice"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "physiological jaundice"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a645a42-fe48-o020-0001-dphr00hi0135",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a645a42-fe48-o020-0001-dphr00hi0135",
+        "meta": {
+          "profile": [
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-health-issues"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "363788007",
+              "system": "http://snomed.info/sct",
+              "display": "Clinical history/examination observable"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",
+          "display": "Eve Bill"
+        },
+        "effectiveDateTime": "2020-12-25T16:13:03+10:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "195967001",
+              "system": "http://snomed.info/sct",
+              "display": "Asthma"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Asthma"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+            "display": "Examiner"
+          },
+          {
+            "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+            "display": "Clinical Responsible Organisation"
+          }
+        ]
+      }
+    }
+  ]
+}
