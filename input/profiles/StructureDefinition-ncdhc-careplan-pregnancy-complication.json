@@ -68,7 +68,7 @@
         "id": "CarePlan.category.coding",
         "path": "CarePlan.category.coding",
         "patternCoding": {
-          "code": "129755006",
+          "code": "866145009",
           "system": "http://snomed.info/sct"
         }
       },
