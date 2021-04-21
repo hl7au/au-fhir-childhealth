@@ -1,0 +1,34 @@
+{
+  "resourceType": "Observation",
+  "id": "0a645a42-fe48-o003-0001-cdhr00hi0040",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-comments"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "866144008",
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+    "display": "Baby of Lina Smith"
+  },
+  "effectiveDateTime": "2020-08-10T16:13:03+10:00",
+  "valueString": "This is an observation comment",
+  "performer": [
+    {
+      "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003",
+      "display": "Examiner"
+    },
+    {
+      "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+      "display": "Clinical Responsible Organisation"
+    }
+  ]
+}
