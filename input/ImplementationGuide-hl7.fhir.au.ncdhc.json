@@ -945,14 +945,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ncdhc-child-complaint-issue-1"
-        },
-        "name": "NCDHC ValueSet Child Complaint or Issue",
-        "description": "National Digital Health Collaborative - Value set to determine the health problem or issue exeperienced by the patient resulting in their attendence to emergency department",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/ncdhc-audiologist-referral-status-1"
         },
         "name": "NCDHC Audiologist Referral Status ValueSet",
@@ -969,14 +961,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ncdhc-detected-sex-1"
-        },
-        "name": "NCDHC Detected Sex ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Detected Sex.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/ncdhc-feeding-method-1"
         },
         "name": "NCDHC Feeding Method ValueSet",
@@ -985,26 +969,74 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ncdhc-generic-yes-no-1"
+          "reference": "ValueSet/ncdhc-analgesia-use-1"
         },
-        "name": "NCDHC ValueSet Generic Yes No",
-        "description": "National Children's Digital Health Collaborative - Codes to represent generic Yes/No value.",
+        "name": "NCDHC Analgesia Use ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent Analgesia used during labour/delivery",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/ncdhc-milk-feeding-status-1"
+          "reference": "ValueSet/ncdhc-child-complaint-issue-1"
         },
-        "name": "NCDHC Milk Feeding Status ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Milk Feeding Status.",
+        "name": "NCDHC ValueSet Child Complaint or Issue",
+        "description": "National Digital Health Collaborative - Value set to determine the health problem or issue exeperienced by the patient resulting in their attendence to emergency department",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/ncdhc-observation-completion-status-1"
+          "reference": "ValueSet/valueset-ncdhc-childhood-milestone-1"
         },
-        "name": "NCDHC Observation Completion Status",
-        "description": "National Children's Digital Health Collaborative - Values to represent what type of Observation Completion Status are applicable to each completed check/observation.",
+        "name": "NCDHC ValueSet Childhood Milestones",
+        "description": "National Children's Digital Health Collaborative - Codes to represent InfantMilestones value.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-detected-sex-1"
+        },
+        "name": "NCDHC Detected Sex ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Detected Sex.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-encounter-service-type-1"
+        },
+        "name": "NCDHC Encounter Service Type ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent Encounter Service Type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-familial-childhood-riskfactor-answers-1"
+        },
+        "name": "NCDHC Familial Childhood RiskFactor Answers ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent Familial Childhood RiskFactor Answers",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-familial-risk-factor-1"
+        },
+        "name": "NCDHC Familial Risk Factor ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent Familial Risk Factor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-labour-complications-1"
+        },
+        "name": "NCDHC Labour Complications ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent Labour Complications",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-neonatal-complications-1"
+        },
+        "name": "NCDHC neonatal Complications ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent neonatal Complications",
         "exampleBoolean": false
       },
       {
@@ -1017,18 +1049,42 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ncdhc-observation-interpretation-1"
+          "reference": "ValueSet/ncdhc-perineal-status-1"
         },
-        "name": "NCDHC Observation Interpretation",
-        "description": "National Children's Digital Health Collaborative - Codes to determine what type of Observation Interpretation are applicable to each completed check/observation.",
+        "name": "NCDHC Perineal Status ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent different types of Perineal Status",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/ncdhc-regularity-of-menstrual-cycle-1"
+          "reference": "ValueSet/ncdhc-postnatal-complications-1"
         },
-        "name": "NCDHC ValueSet Regularity Of Menstrual Cycle",
-        "description": "National Children's Digital Health Collaborative - Codes to determine what type of Observation Regularity Of Menstrual Cycle are applicable to each completed check/observation.",
+        "name": "NCDHC Postnatal Complications ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent Postnatal Complications",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-pregnancy-outcome-1"
+        },
+        "name": "NCDHC Pregnancy Outcome ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent different types of pregnancy outcome",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-risk-factor-1"
+        },
+        "name": "NCDHC Risk Factor ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent Familial Risk Factor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-type-of-careplan-1"
+        },
+        "name": "NCDHC Type Of Care Plan ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent different types of care plans",
         "exampleBoolean": false
       },
       {
@@ -1041,10 +1097,18 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ncdhc-pregnancy-outcome-1"
+          "reference": "ValueSet/ncdhc-type-of-labour-1"
         },
-        "name": "NCDHC Pregnancy Outcome ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent different types of pregnancy outcome",
+        "name": "NCDHC Type Of Labour ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent different types of Labour",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-health-issues-1"
+        },
+        "name": "NCDHC health issues ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent health issues",
         "exampleBoolean": false
       },
       {
