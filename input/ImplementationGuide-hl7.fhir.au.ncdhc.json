@@ -171,7 +171,7 @@
         "reference": {
           "reference": "StructureDefinition/ncdhc-careplan-pregnancy-complication"
         },
-        "name": "NCDHC CarePlan Antenatal Care",
+        "name": "NCDHC Pregnancy Complication CarePlan",
         "description": "CarePlan profile to record Antenatal Care and associated details",
         "exampleBoolean": false
       },
@@ -228,7 +228,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-consumer-entered-milestone"
         },
         "name": "NCDHC Composition Consumer Entered Milestone",
-        "description": "Composition based profile to define the details entered by consumer regarding child development milestones such as first time talking, crawling, walking",
+        "description": "Composition based profile to define the details entered by consumer regarding child development milestones such as first time talking, crawling, walking ",
         "exampleBoolean": false
       },
       {
@@ -489,14 +489,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncdhc-observation-edb-by-clinical-examination"
-        },
-        "name": "NCDHC Observation Estimated date of birth by Clinical Examination",
-        "description": "Observation profile to record Estimated date of birth by Clinical Examination for the expectatnt mother in context",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-edb"
         },
         "name": "NCDHC Observation Estimated Date of Birth",
@@ -505,10 +497,18 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-edb-by-clinical-examination"
+        },
+        "name": "NCDHC Observation Estimated date of birth by Clinical Examination",
+        "description": "Observation profile to record Estimated date of birth by Clinical Examination for the expectatnt mother in context",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-estimated-date-birth-last-period"
         },
         "name": "NCDHC Observation Estimated date of birth by LNMP",
-        "description": "Observation profile to record Estimated date of birth by LNMP for the expectatnt mother in context",
+        "description": "Observation profile to record Estimated date of birth by LNMP for the expectant mother in context",
         "exampleBoolean": false
       },
       {
@@ -941,30 +941,6 @@
         },
         "name": "NCDHC Related Person",
         "description": "This profile defines a related person structure that localises core concepts, including identifiers and terminology",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-audiologist-referral-status-1"
-        },
-        "name": "NCDHC Audiologist Referral Status ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHCValueSetAudiologist Referral Status are applicable to each completed check/observation.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-observation-certainty-of-menstrual-cycle-1"
-        },
-        "name": "NCDHC Observation Certainty Of Menstrual Cycle",
-        "description": "National Children's Digital Health Collaborative - Codes to determine what type of Observation Certainty Of Menstrual Cycle are applicable to each completed check/observation.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-feeding-method-1"
-        },
-        "name": "NCDHC Feeding Method ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Feeding Method.",
         "exampleBoolean": false
       },
       {
@@ -2246,6 +2222,38 @@
         "name": "0a645a42-fe48-o020-0003-dphr00hi0135",
         "description": "Health Issues example with absent reason to represent no complication was noted",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-health-issues"
+      },
+	  {
+        "reference": {
+          "reference": "Bundle/ncdhc-document-child-presented-ed-example"
+        },
+        "name": "ncdhc-document-child-presented-ed-example",
+		"description": "Child presetnted in Emergency Department FHIR Document Example",
+        "exampleBoolean": true
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0040"
+        },
+        "name": "0a645a42-fe48-o001-0001-cdhr00hi0040",
+		"description": "Health Issues presented in ED Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-complaint-or-issue"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0040"
+        },
+        "name": "0a645a42-fe48-o002-0001-cdhr00hi0040",
+		"description": "Diognosis of Issues presented in ED Exaple",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-diognosis"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0040"
+        },
+        "name": "0a645a42-fe48-o003-0001-cdhr00hi0040",
+		"description": "Comments on Health Issues presented in ED Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-comments"
       }
     ],
     "page": {
