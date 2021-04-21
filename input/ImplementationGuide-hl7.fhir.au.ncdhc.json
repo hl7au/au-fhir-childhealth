@@ -228,7 +228,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-consumer-entered-milestone"
         },
         "name": "NCDHC Composition Consumer Entered Milestone",
-        "description": "Composition based profile to define the details entered by consumer regarding child development milestones such as first time talking, crawling, walking ",
+        "description": "Composition based profile to define the details entered by consumer regarding child development milestones such as first time talking, crawling, walking",
         "exampleBoolean": false
       },
       {
@@ -1305,6 +1305,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/0a645a42-fe48-o006-0012-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-o006-0012-cdhr00hi0003",
+        "description": "Example to represent Baby's Body Weight at Discharge",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-genitalia-exam"
+      },
+      {
+        "reference": {
           "reference": "Observation/0a645a42-fe48-o012-0001-cdhr00hi0005"
         },
         "name": "0a645a42-fe48-o012-0001-cdhr00hi0005",
@@ -1481,6 +1489,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/0a645a42-fe48-o014-0001-cdhr00hi0023"
+        },
+        "name": "0a645a42-fe48-o014-0001-cdhr00hi0023",
+        "description": "Familial Childhood Risk Factor Questionnaire on neonate requiring oxygen for 48 hours or more",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-risk-factors-consumer-entered"
+      },
+      {
+        "reference": {
           "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0003"
         },
         "name": "0a645a42-fe48-o004-0001-cdhr00hi0003",
@@ -1596,7 +1612,7 @@
           "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0031"
         },
         "name": "0a645a42-fe48-c001-0001-cdhr00hi0031",
-        "description": " Consumer Entered Milestone Composition Example",
+        "description": "Consumer Entered Milestone Composition Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-consumer-entered-milestone"
       },
       {
@@ -1636,7 +1652,7 @@
           "reference": "Composition/0a645a42-fe48-p001-0001-cdhr00hi0048"
         },
         "name": "0a645a42-fe48-p001-0001-cdhr00hi0048",
-        "description": " Parental Observation Composition Example",
+        "description": "Parental Observation Composition Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-parental-observation"
       },
       {
@@ -1644,7 +1660,7 @@
           "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0042"
         },
         "name": "0a645a42-fe48-c001-0001-cdhr00hi0042",
-        "description": " Consumer Entered Encounter Composition Example",
+        "description": "Consumer Entered Encounter Composition Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-consumer-entered-encounter"
       },
       {
@@ -1764,7 +1780,7 @@
           "reference": "Composition/0a645a42-fe48-c001-0001-dphr00hi0109"
         },
         "name": "0a645a42-fe48-c001-0001-dphr00hi0109",
-        "description": " Pregnancy Outcome Composition Example",
+        "description": "Pregnancy Outcome Composition Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-pregnancy-outcome"
       },
       {
@@ -1772,7 +1788,7 @@
           "reference": "Composition/0a645a42-fe48-c001-0001-dphr00hi115a"
         },
         "name": "0a645a42-fe48-c001-0001-dphr00hi115a",
-        "description": " Pregnancy Issues And Plans Composition Example",
+        "description": "Pregnancy Issues And Plans Composition Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-preg-issues-plans"
       },
       {
@@ -1831,7 +1847,7 @@
         "description": "Pregnancy Outcome current baby status Example",
         "exampleBoolean": true
       },
-	  {
+      {
         "reference": {
           "reference": "Patient/0a645a42-fe48-p001-0001-dphr00hi0135"
         },
@@ -1884,7 +1900,7 @@
           "reference": "Composition/0a645a42-fe48-c001-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-c001-0001-dphr00hi0135",
-        "description": " Pregnancy History Composition Example",
+        "description": "Pregnancy History Composition Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-pregnancy-history"
       },
       {
@@ -2084,7 +2100,7 @@
           "reference": "Observation/0a645a42-fe48-o014-0002-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o014-0002-dphr00hi0135",
-        "description": " Postnatal Readmissions example with absent reason to represent no complication was noted",
+        "description": "Postnatal Readmissions example with absent reason to represent no complication was noted",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-readmission"
       },
       {
@@ -2092,7 +2108,7 @@
           "reference": "Observation/0a645a42-fe48-o015-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o015-0001-dphr00hi0135",
-        "description": "Example to represent child's birthweight ",
+        "description": "Example to represent child's birthweight",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
       },
       {
@@ -2133,6 +2149,14 @@
         },
         "name": "0a645a42-fe48-o019-0002-dphr00hi0135",
         "description": "Example of Neonatal complication represented as valueString with comment",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neonatal-complication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o019-0003-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o019-0003-dphr00hi0135",
+        "description": "Example when no Neonatal complication was reported",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neonatal-complication"
       },
       {
