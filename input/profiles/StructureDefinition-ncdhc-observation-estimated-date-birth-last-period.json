@@ -16,8 +16,8 @@
   "name": "NCDHCObservationEDBLNMP",
   "title": "NCDHC Observation Estimated date of birth by LNMP",
   "status": "active",
-  "description": "Observation profile to record Estimated date of birth by LNMP for the expectatnt mother in context",
-  "purpose": "\n The following details associated to the expectant mother in context are recorded:\n   * Estimated Date of Birth\n   * Last menstrual period - 1st day\n   * Usual length of menstrual cycle\n   * Certainty of Menstrual cycle\n   * Regularity of Menstrual cycle\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "description": "Observation profile to record Estimated date of birth by LNMP for the expectant mother in context",
+  "purpose": "\n The following details associated to the expectant mother in context are recorded:\n   * Estimated Date of Birth\n   * Last menstrual period - 1st day\n   * Usual length of menstrual cycle\n   * Certainty of Menstrual cycle\n   * Regularity of Menstrual cycle\nImplementer conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -95,7 +95,7 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Date and time when the EBD was noted",
+        "short": "Date and time when the EDB was noted",
         "type": [
           {
             "code": "dateTime"

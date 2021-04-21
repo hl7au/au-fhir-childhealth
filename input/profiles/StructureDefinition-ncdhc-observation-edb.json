@@ -17,7 +17,7 @@
   "title": "NCDHC Observation Estimated Date of Birth",
   "status": "active",
   "description": "Observation profile to record Estimated Date of Birth and associated details. Date of delivery (birth) is estimated based on a number of clinical factors and the woman’s cycle information",
-  "purpose": "\n The following details associated to the expectant mother in context are recorded:\n   * Estimated date of birth\n   * Estimated date of birth by LNMP, USS and clinical observations\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "purpose": "\n The following details associated to the expectant mother in context are recorded:\n   * Estimated date of birth\n   * Estimated date of birth by LNMP, USS and clinical observations\nImplementer conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -69,9 +69,9 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:ebdSNOMED-CT",
+        "id": "Observation.code.coding:edbSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "ebdSNOMED-CT",
+        "sliceName": "edbSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -95,7 +95,7 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Date and time when EBD was confirmed",
+        "short": "Date and time when EDB was confirmed",
         "type": [
           {
             "code": "dateTime"

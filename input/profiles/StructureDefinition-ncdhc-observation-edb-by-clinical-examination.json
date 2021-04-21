@@ -13,7 +13,7 @@
   ],
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-edb-by-clinical-examination",
   "version": "current",
-  "name": "NCDHCObservationEBDClinicalExam",
+  "name": "NCDHCObservationEDBClinicalExam",
   "title": "NCDHC Observation Estimated date of birth by Clinical Examination",
   "status": "active",
   "description": "Observation profile to record Estimated date of birth by Clinical Examination for the expectatnt mother in context",
@@ -95,7 +95,7 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Date and time when the EBD was noted",
+        "short": "Date and time when the EDB was noted",
         "type": [
           {
             "code": "dateTime"
