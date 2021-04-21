@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "title": "Pregnancy Complication Treatement Plan",
+  "title": "Pregnancy Complication Treatment Plan",
   "status": "active",
   "subject": {
     "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000",

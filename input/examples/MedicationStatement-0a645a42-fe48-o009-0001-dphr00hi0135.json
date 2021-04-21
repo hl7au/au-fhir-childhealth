@@ -21,6 +21,17 @@
     "display": "Eve Bill"
   },
   "effectiveDateTime": "2020-12-25T16:13:03+10:00",
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "397990008",
+          "system": "http://snomed.info/sct",
+          "display": "Analgesia for labour/delivery"
+        }
+      ]
+    }
+  ],
   "dosage": [
     {
       "text": "Infusion Rate: 4mL/Hr"
