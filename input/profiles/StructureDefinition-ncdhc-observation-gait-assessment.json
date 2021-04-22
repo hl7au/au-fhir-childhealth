@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-musculo-skeletal-exam",
+  "id": "ncdhc-observation-gait-assessment",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,13 +11,13 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gait-assessment",
   "version": "current",
-  "name": "NCDHCObservationMusculoSkeletalExam",
-  "title": "NCDHC Observation Musculo Skeletal Examination",
+  "name": "NCDHCObservationGaitAssesment",
+  "title": "NCDHC Observation Gait Assesment",
   "status": "active",
-  "description": "Observation profile to record outcome of the Musculo Skeletal check performed on the newborn",
-  "purpose": "\n The following details associated to the newborn  are recorded:\n   *Musculo Skeletal Outcome\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "description": "Observation profile to record Outcome of the child's gait assessement performed on the child",
+  "purpose": "\n The following details associated to the child are recorded:\n   *Gait Outcome\n\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -69,13 +69,13 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:musculoSkeletaltSNOMED-CT",
+        "id": "Observation.code.coding:gaitAssesmentSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "musculoSkeletaltSNOMED-CT",
+        "sliceName": "gaitAssesmentSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "364561008",
+          "code": "363836006",
           "system": "http://snomed.info/sct"
         }
       },
@@ -100,7 +100,7 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Date when Musculo Skeletal Examination was performed",
+        "short": "Date when Gait Assesment was performed",
         "type": [
           {
             "code": "dateTime"
@@ -174,7 +174,7 @@
       {
         "id": "Observation.note",
         "path": "Observation.note",
-        "short": "Additional comments on musculo skeletal",
+        "short": "Additional comments on Gait Assesment",
         "mustSupport": true
       }
     ]

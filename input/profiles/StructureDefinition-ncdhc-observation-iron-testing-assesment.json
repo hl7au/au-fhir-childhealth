@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-musculo-skeletal-exam",
+  "id": "ncdhc-observation-iron-testing-assesment",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,13 +11,13 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-iron-testing-assesment",
   "version": "current",
-  "name": "NCDHCObservationMusculoSkeletalExam",
-  "title": "NCDHC Observation Musculo Skeletal Examination",
+  "name": "NCDHCObservationIronTestingAssesment",
+  "title": "NCDHC Observation Iron Testing Assesment",
   "status": "active",
-  "description": "Observation profile to record outcome of the Musculo Skeletal check performed on the newborn",
-  "purpose": "\n The following details associated to the newborn  are recorded:\n   *Musculo Skeletal Outcome\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "description": "Observation profile to record Outcome of Iron Testing Assesment",
+  "purpose": "\n The following details associated to the newborn  are recorded:\n   *Outcome of Iron Testing Assesment\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -69,13 +69,13 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:musculoSkeletaltSNOMED-CT",
+        "id": "Observation.code.coding:ironTestingCheckSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "musculoSkeletaltSNOMED-CT",
+        "sliceName": "ironTestingCheckSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "364561008",
+          "code": "42950004",
           "system": "http://snomed.info/sct"
         }
       },
@@ -100,7 +100,7 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Date when Musculo Skeletal Examination was performed",
+        "short": "Date when Iron Testing Assesment was performed",
         "type": [
           {
             "code": "dateTime"
@@ -153,7 +153,32 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "max": "0"
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-observation-completion-status-1"
+        }
       },
       {
         "id": "Observation.dataAbsentReason",
@@ -161,20 +186,58 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.interpretation",
-        "path": "Observation.interpretation",
-        "short": "Normal | Follow-up review of patient requested | Referral needed",
-        "max": "1",
-        "mustSupport": true,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-observation-interpretation-1"
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "short": "Additional comments on Iron Testing Assesment",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this.resolve().code.coding"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice on hasMember based on the $this.resolve().code.coding pattern"
         }
       },
       {
-        "id": "Observation.note",
-        "path": "Observation.note",
-        "short": "Additional comments on musculo skeletal",
+        "id": "Observation.hasMember:SerumFerritinMeasurement",
+        "path": "Observation.hasMember",
+        "sliceName": "SerumFerritinMeasurement",
+        "short": "Serum Ferritin Measurement",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-serum-ferritin-measurement"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:HaemoglobinlevelEstimation",
+        "path": "Observation.hasMember",
+        "sliceName": "HaemoglobinlevelEstimation",
+        "short": "Haemoglobin level Estimation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-haemoglobin-level-estimation"
+            ]
+          }
+        ],
         "mustSupport": true
       }
     ]

@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-reflexes-neurological-exam",
+  "id": "ncdhc-observation-neurological-exam",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,12 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-reflexes-neurological-exam",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neurological-exam",
   "version": "current",
-  "name": "NCDHCObservationReflexesNeurologicalExam",
-  "title": "NCDHC Observation Reflexes / Neurological Examination",
+  "name": "NCDHCObservationNeurologicalExam",
+  "title": "NCDHC Observation Neurological Examination",
   "status": "active",
-  "description": "Observation profile to record Outcome of the Outcome of the Reflexes / Neurological Check (Physical examination checking the involuntary movements or actions to determine the wellbeing of the newborns brain and nervous system) performed on the newborn",
+  "description": "Observation profile to record Outcome of the Outcome of the Neurological Check (Physical examination checking the involuntary movements or actions to determine the wellbeing of the newborns brain and nervous system) performed on the newborn",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -68,9 +68,9 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:reflexesNeurologicalExamSNOMED-CT",
+        "id": "Observation.code.coding:neurologicalExamSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "reflexesNeurologicalExamSNOMED-CT",
+        "sliceName": "neurologicalExamSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -94,7 +94,7 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Date when Reflexes / Neurological Examination was performed",
+        "short": "Date when Neurological Examination was performed",
         "type": [
           {
             "code": "dateTime"
@@ -138,7 +138,7 @@
       {
         "id": "Observation.note",
         "path": "Observation.note",
-        "short": "Additional comments on Reflexes / Neurological",
+        "short": "Additional comments on Neurological",
         "mustSupport": true
       }
     ]

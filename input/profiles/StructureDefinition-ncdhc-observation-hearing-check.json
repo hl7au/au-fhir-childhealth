@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-musculo-skeletal-exam",
+  "id": "ncdhc-observation-hearing-check",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,13 +11,13 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hearing-check",
   "version": "current",
-  "name": "NCDHCObservationMusculoSkeletalExam",
-  "title": "NCDHC Observation Musculo Skeletal Examination",
+  "name": "NCDHCObservationHearingCheck",
+  "title": "NCDHC Observationn Hearing Check",
   "status": "active",
-  "description": "Observation profile to record outcome of the Musculo Skeletal check performed on the newborn",
-  "purpose": "\n The following details associated to the newborn  are recorded:\n   *Musculo Skeletal Outcome\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "description": "Observation profile to record hearing check as applied to the child  in context",
+  "purpose": "\n The following details associated to the infant  are recorded:\n   *Hearing Check as applied to the child\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -69,13 +69,13 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:musculoSkeletaltSNOMED-CT",
+        "id": "Observation.code.coding:hearingCheckSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "musculoSkeletaltSNOMED-CT",
+        "sliceName": "hearingCheckSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "364561008",
+          "code": "252957005",
           "system": "http://snomed.info/sct"
         }
       },
@@ -93,14 +93,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.encounter",
-        "path": "Observation.encounter",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Date when Musculo Skeletal Examination was performed",
         "type": [
           {
             "code": "dateTime"
@@ -156,25 +150,52 @@
         "max": "0"
       },
       {
-        "id": "Observation.dataAbsentReason",
-        "path": "Observation.dataAbsentReason",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.interpretation",
-        "path": "Observation.interpretation",
-        "short": "Normal | Follow-up review of patient requested | Referral needed",
-        "max": "1",
-        "mustSupport": true,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-observation-interpretation-1"
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this.resolve().code.coding"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice on hasMember based on the Observation.code.coding pattern"
         }
       },
       {
-        "id": "Observation.note",
-        "path": "Observation.note",
-        "short": "Additional comments on musculo skeletal",
+        "id": "Observation.hasMember:pureToneAudiometry",
+        "path": "Observation.hasMember",
+        "sliceName": "pureToneAudiometry",
+        "short": "Pure Tone Audiometry",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pure-tone-audiometry"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:Tympanometry",
+        "path": "Observation.hasMember",
+        "sliceName": "Tympanometry",
+        "short": "(Tympanometry) Screen",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-tympanometry"
+            ]
+          }
+        ],
         "mustSupport": true
       }
     ]

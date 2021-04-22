@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-musculo-skeletal-exam",
+  "id": "ncdhc-observation-haemoglobin-level-estimation",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,13 +11,13 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-haemoglobin-level-estimation",
   "version": "current",
-  "name": "NCDHCObservationMusculoSkeletalExam",
-  "title": "NCDHC Observation Musculo Skeletal Examination",
+  "name": "NCDHCObservationHaemoglobinlevelEstimation",
+  "title": "NCDHC Observation Haemoglobin level Estimation",
   "status": "active",
-  "description": "Observation profile to record outcome of the Musculo Skeletal check performed on the newborn",
-  "purpose": "\n The following details associated to the newborn  are recorded:\n   *Musculo Skeletal Outcome\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "description": "Observation profile to record Outcome of Haemoglobin level Estimation",
+  "purpose": "\n The following details associated to the newborn  are recorded:\n   *Haemoglobin level Estimation\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -69,13 +69,13 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:musculoSkeletaltSNOMED-CT",
+        "id": "Observation.code.coding:hemoglobinCheckSNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "musculoSkeletaltSNOMED-CT",
+        "sliceName": "hemoglobinCheckSNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "364561008",
+          "code": "271026005",
           "system": "http://snomed.info/sct"
         }
       },
@@ -100,7 +100,7 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Date when Musculo Skeletal Examination was performed",
+        "short": "Date when Haemoglobin level Estimation was performed",
         "type": [
           {
             "code": "dateTime"
@@ -153,7 +153,32 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "max": "0"
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-iron-test-type-1"
+        }
       },
       {
         "id": "Observation.dataAbsentReason",
@@ -161,20 +186,9 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.interpretation",
-        "path": "Observation.interpretation",
-        "short": "Normal | Follow-up review of patient requested | Referral needed",
-        "max": "1",
-        "mustSupport": true,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-observation-interpretation-1"
-        }
-      },
-      {
         "id": "Observation.note",
         "path": "Observation.note",
-        "short": "Additional comments on musculo skeletal",
+        "short": "Additional comments on Haemoglobin level Estimation",
         "mustSupport": true
       }
     ]

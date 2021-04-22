@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncdhc-observation-musculo-skeletal-exam",
+  "id": "ncdhc-observation-left-eye-visual-acuity",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,13 +11,13 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-left-eye-visual-acuity",
   "version": "current",
-  "name": "NCDHCObservationMusculoSkeletalExam",
-  "title": "NCDHC Observation Musculo Skeletal Examination",
+  "name": "NCDHCObsevationLeftEyeVisualAcuity",
+  "title": "NCDHC Obsevation Left Eye Visual Acuity",
   "status": "active",
-  "description": "Observation profile to record outcome of the Musculo Skeletal check performed on the newborn",
-  "purpose": "\n The following details associated to the newborn  are recorded:\n   *Musculo Skeletal Outcome\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
+  "description": "Observation profile to record Result of Left eye",
+  "purpose": "\n The following details associated to the child's Tympanometry outcome are recorded:\n   * Left Eye - Visual Acuity Outcome\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -69,13 +69,13 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:musculoSkeletaltSNOMED-CT",
+        "id": "Observation.code.coding:leftEyeVisualAcuitySNOMED-CT",
         "path": "Observation.code.coding",
-        "sliceName": "musculoSkeletaltSNOMED-CT",
+        "sliceName": "leftEyeVisualAcuitySNOMED-CT",
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "364561008",
+          "code": "386708005",
           "system": "http://snomed.info/sct"
         }
       },
@@ -100,7 +100,6 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Date when Musculo Skeletal Examination was performed",
         "type": [
           {
             "code": "dateTime"
@@ -161,21 +160,73 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.interpretation",
-        "path": "Observation.interpretation",
-        "short": "Normal | Follow-up review of patient requested | Referral needed",
-        "max": "1",
-        "mustSupport": true,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-observation-interpretation-1"
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code.coding"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice on component based on the Observation.code.coding pattern"
         }
       },
       {
-        "id": "Observation.note",
-        "path": "Observation.note",
-        "short": "Additional comments on musculo skeletal",
+        "id": "Observation.component:visualAcuityTestedAt3Metres",
+        "path": "Observation.component",
+        "sliceName": "visualAcuityTestedAt3Metres",
+        "short": "Visual acuity tested at 3 metres",
+        "min": 0,
+        "max": "1",
         "mustSupport": true
+      },
+      {
+        "id": "Observation.component:visualAcuityTestedAt3Metres.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "1368901000168106",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.component:visualAcuityTestedAt3Metres.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:visualAcuityTestedAt6Metres",
+        "path": "Observation.component",
+        "sliceName": "visualAcuityTestedAt6Metres",
+        "short": "Visual acuity tested at 6 metres",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:visualAcuityTestedAt6Metres.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "1368911000168109",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.component:visualAcuityTestedAt6Metres.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
       }
     ]
   }
