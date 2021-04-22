@@ -1,0 +1,86 @@
+{
+  "resourceType": "Composition",
+  "id": "0a645a42-fe48-c001-0001-cdhr00hi0040",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-child-presented-in-ed"
+    ]
+  },
+  "title": "Child Presented in ED",
+  "type": {
+    "coding": [
+      {
+        "code": "CHPED",
+        "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "CHPED",
+          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+    "display": "Baby of Lina Smith"
+  },
+  "encounter": {
+    "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0040",
+    "display": "Downunder Hospital"
+  },
+  "date": "2020-08-10T16:13:03+10:00",
+  "author": [
+    {
+      "reference": "Practitioner/p01bacd2-or5c-11ea-b3de-0242ac130002",
+      "display": "Helen Mayo"
+    }
+  ],
+  "attester": [
+    {
+      "mode": "professional",
+      "party": {
+        "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+        "display": "Downunder Hospital"
+      }
+    }
+  ],
+  "custodian": {
+    "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+    "display": "Downunder Hospital"
+  },
+  "section": [
+    {
+      "mode": "snapshot",
+      "title": "Child Presented in ED",
+      "code": {
+        "coding": [
+          {
+            "code": "4525004",
+            "system": "http://snomed.info/sct",
+            "display": "Emergency department patient visit"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0040",
+          "display": "presenting complaint or issues experienced by child"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0040",
+          "display": "Diagnosis"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0040",
+          "display": "Comments"
+        }
+      ]
+    }
+  ]
+}
