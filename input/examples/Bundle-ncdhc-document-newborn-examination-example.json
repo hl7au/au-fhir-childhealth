@@ -1305,7 +1305,7 @@
         "id": "0a645a42-fe48-o018-0001-cdhr00hi0005",
         "meta": {
           "profile": [
-            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-reflexes-neurological-exam"
+            "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neurological-exam"
           ]
         },
         "code": {
