@@ -165,20 +165,20 @@
         },
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Quantity"
           }
         ]
       },
       {
-        "id": "Observation.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
+        "id": "Observation.valueQuantity",
+        "path": "Observation.valueQuantity",
         "min": 0,
         "max": "1",
-        "mustSupport": true,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-iron-test-type-1"
-        }
+        "patternQuantity": {
+          "code": "ug/L",
+          "system": "http://unitsofmeasure.org"
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.dataAbsentReason",
