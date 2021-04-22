@@ -57,6 +57,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-bundle-clinical-observation-document"
+        },
+        "name": "NCDHC FHIR Clinical Observation Document",
+        "description": "NCDHC FHIR Clinical Observation document profile using Bundle resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-bundle-consumer-entered-encounter-document"
         },
         "name": "NCDHC FHIR Consumer Entered Encounter Document",
@@ -205,6 +213,14 @@
         },
         "name": "NCDHC Composition Clinical Document Base",
         "description": "This profile is used to represent the Compsition associated with a FHIR Clinical Document",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-composition-document-clinical-observation"
+        },
+        "name": "NCDHC Composition Clinical Observation",
+        "description": "Composition based profile to define the structure and narrative content necessary for Clinical Observation FHIR document.",
         "exampleBoolean": false
       },
       {
@@ -473,6 +489,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-devolopement-assessement"
+        },
+        "name": "NCDHC Observation Devolopement Assesment",
+        "description": "Observation profile to record Outcome of the child's developmental assessement ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-deworming-assesment"
+        },
+        "name": "NCDHC Observation Deworming Assesment",
+        "description": "Observation profile to record Which type of medication was administered for deworming",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-diognosis"
         },
         "name": "NCDHC Observation Diognosis",
@@ -545,6 +577,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-eyes-monocularly-tested"
+        },
+        "name": "NCDHC Observation Eyes Monocularly Tested",
+        "description": "Observation profile to record Eye test conducted to determine child's vision",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-feeding-method"
         },
         "name": "NCDHC Observation Feeding Method",
@@ -565,6 +605,22 @@
         },
         "name": "NCDHC Observation Femoral Pulses Examination",
         "description": "Observation profile to record outcome of the Right and Left Femoral Pulses check performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-fontanelles-and-sutures-assessment"
+        },
+        "name": "NCDHC Observation Fontanelles And Sutures Assesment",
+        "description": "Observation profile to record outcome of the child's fontanelles and sutures assessment performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-gait-assessment"
+        },
+        "name": "NCDHC Observation Gait Assesment",
+        "description": "Observation profile to record Outcome of the child's gait assessement performed on the child",
         "exampleBoolean": false
       },
       {
@@ -593,6 +649,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-haemoglobin-level-estimation"
+        },
+        "name": "NCDHC Observation Haemoglobin level Estimation",
+        "description": "Observation profile to record Outcome of Haemoglobin level Estimation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-head-fontanelles-exam"
         },
         "name": "NCDHC Observation Head and Fontanelles Examination",
@@ -601,10 +665,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-head-shape-assesment"
+        },
+        "name": "NCDHC Observation Head Shape Assesment",
+        "description": "Observation profile to record Outcome of the child's head shape assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-health-issues"
         },
         "name": "NCDHC Observation Health Issues",
         "description": "Observation profile to record, search and fetch health issues observed",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-hearing-check"
+        },
+        "name": "NCDHC Observationn Hearing Check",
+        "description": "Observation profile to record hearing check as applied to the child  in context",
         "exampleBoolean": false
       },
       {
@@ -621,6 +701,14 @@
         },
         "name": "NCDHC Observation Hormonal contraception At Time of Conception",
         "description": "Observation profile to record Hormonal contraception being used at time of conception by the expectant mother in context",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-iron-testing-assesment"
+        },
+        "name": "NCDHC Observation Iron Testing Assesment",
+        "description": "Observation profile to record Outcome of Iron Testing Assesment",
         "exampleBoolean": false
       },
       {
@@ -681,6 +769,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-neurological-exam"
+        },
+        "name": "NCDHC Observation Neurological Examination",
+        "description": "Observation profile to record Outcome of the Outcome of the Neurological Check (Physical examination checking the involuntary movements or actions to determine the wellbeing of the newborns brain and nervous system) performed on the newborn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
         },
         "name": "NCDHC Observation Newborn Bloodspot Screen",
@@ -693,6 +789,14 @@
         },
         "name": "NCDHC Observation Newborn Hearing Screen",
         "description": "Observation profile to record Hearing Screening Test status and assoicated details for the newborn in context",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-oral-health-assesment"
+        },
+        "name": "NCDHC Observation Oral Health Assesment",
+        "description": "Observation profile to record Outcome of Oral health check",
         "exampleBoolean": false
       },
       {
@@ -761,10 +865,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncdhc-observation-reflexes-neurological-exam"
+          "reference": "StructureDefinition/ncdhc-observation-pure-tone-audiometry"
         },
-        "name": "NCDHC Observation Reflexes / Neurological Examination",
-        "description": "Observation profile to record Outcome of the Outcome of the Reflexes / Neurological Check (Physical examination checking the involuntary movements or actions to determine the wellbeing of the newborns brain and nervous system) performed on the newborn",
+        "name": "NCDHC Observation Pure Tone Audiometry",
+        "description": "Observation profile to record Air conduction screening down to 25dB at 1000, 2000 and 4000 Hz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-reflexes-exam"
+        },
+        "name": "NCDHC Observation Reflexes Examination",
+        "description": "Observation profile to record Outcome of the Reflexes Check (Physical examination checking the involuntary movements or actions to determine the wellbeing of the newborns brain and nervous system)",
         "exampleBoolean": false
       },
       {
@@ -777,10 +889,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-right-eye-visual-acuity"
+        },
+        "name": "NCDHC Obsevation Right Eye Visual Acuity",
+        "description": "Observation profile to record Result of Right eye",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncdhc-observation-risk-factors-consumer-entered"
         },
         "name": "NCDHC Observation Consumer Entered Risk Factors",
         "description": "Flag profile to record different risk factors as reported by the Consumer",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-serum-ferritin-measurement"
+        },
+        "name": "NCDHC Observation Serum Ferritin Measurement",
+        "description": "Observation profile to record Outcome of Serum Ferritin Measurement",
         "exampleBoolean": false
       },
       {
@@ -805,6 +933,14 @@
         },
         "name": "NCDHC Observation Testes fully descended R/L Examination",
         "description": "Observation profile to record outcome of the Testes check performed on the newborn male Patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-tympanometry"
+        },
+        "name": "NCDHC Observation Tympanometry",
+        "description": "Observation profile to record Test conducted to test middle ear functioning. ",
         "exampleBoolean": false
       },
       {
@@ -869,6 +1005,14 @@
         },
         "name": "NCDHC Observation Vital Sign Head Circumference Profile",
         "description": "This profile sets minimum expectations for the Observation Vital Sign resource to record, search and fetch Head Circumference of the patient in context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncdhc-observation-left-eye-visual-acuity"
+        },
+        "name": "NCDHC Obsevation Left Eye Visual Acuity",
+        "description": "Observation profile to record Result of Left eye",
         "exampleBoolean": false
       },
       {
@@ -953,6 +1097,22 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ncdhc-audiologist-referral-status-1"
+        },
+        "name": "NCDHC Audiologist Referral Status ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHCValueSetAudiologist Referral Status are applicable to each completed check/observation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-observation-certainty-of-menstrual-cycle-1"
+        },
+        "name": "NCDHC Observation Certainty Of Menstrual Cycle",
+        "description": "National Children's Digital Health Collaborative - Codes to determine what type of Observation Certainty Of Menstrual Cycle are applicable to each completed check/observation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/ncdhc-child-complaint-issue-1"
         },
         "name": "NCDHC ValueSet Child Complaint or Issue",
@@ -973,6 +1133,14 @@
         },
         "name": "NCDHC Detected Sex ValueSet",
         "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Detected Sex.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-encounter-reason-code-1"
+        },
+        "name": "NCDHC Encounter Reason Code ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent Encounter Reason Code",
         "exampleBoolean": false
       },
       {
@@ -1001,10 +1169,42 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ncdhc-feeding-method-1"
+        },
+        "name": "NCDHC Feeding Method ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Feeding Method.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-generic-yes-no-1"
+        },
+        "name": "NCDHC ValueSet Generic Yes No",
+        "description": "National Children's Digital Health Collaborative - Codes to represent generic Yes/No value.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-iron-test-type-1"
+        },
+        "name": "NCDHC Iron Test Type ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Iron Test Type.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/ncdhc-labour-complications-1"
         },
         "name": "NCDHC Labour Complications ValueSet",
         "description": "National Children's Digital Health Collaborative - Values to represent Labour Complications",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-milk-feeding-status-1"
+        },
+        "name": "NCDHC Milk Feeding Status ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Milk Feeding Status.",
         "exampleBoolean": false
       },
       {
@@ -1041,6 +1241,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ncdhc-pregnancy-complications-1"
+        },
+        "name": "NCDHC ValueSet Pregnancy Complication",
+        "description": "National Digital Health Collaborative - Value set to determine what type of pregnancy complication/s occurred during the birthing process",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/ncdhc-pregnancy-outcome-1"
         },
         "name": "NCDHC Pregnancy Outcome ValueSet",
@@ -1049,10 +1257,26 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ncdhc-regularity-of-menstrual-cycle-1"
+        },
+        "name": "NCDHC ValueSet Regularity Of Menstrual Cycle",
+        "description": "National Children's Digital Health Collaborative - Codes to determine what type of Observation Regularity Of Menstrual Cycle are applicable to each completed check/observation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/ncdhc-risk-factor-1"
         },
         "name": "NCDHC Risk Factor ValueSet",
         "description": "National Children's Digital Health Collaborative - Values to represent Familial Risk Factor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncdhc-type-of-birth-1"
+        },
+        "name": "NCDHC Type Of Birth ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent different types of birth",
         "exampleBoolean": false
       },
       {
@@ -1405,7 +1629,7 @@
         },
         "name": "0a645a42-fe48-o018-0001-cdhr00hi0005",
         "description": "Example to demonstrate Outcome of the 'Reflexes / Neurological' check performed on the newborn",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-reflexes-neurological-exam"
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neurological-exam"
       },
       {
         "reference": {
@@ -2223,36 +2447,36 @@
         "description": "Health Issues example with absent reason to represent no complication was noted",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-health-issues"
       },
-	  {
+      {
         "reference": {
           "reference": "Bundle/ncdhc-document-child-presented-ed-example"
         },
         "name": "ncdhc-document-child-presented-ed-example",
-		"description": "Child presetnted in Emergency Department FHIR Document Example",
+        "description": "Child presetnted in Emergency Department FHIR Document Example",
         "exampleBoolean": true
       },
-	  {
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0040"
         },
         "name": "0a645a42-fe48-o001-0001-cdhr00hi0040",
-		"description": "Health Issues presented in ED Example",
+        "description": "Health Issues presented in ED Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-complaint-or-issue"
       },
-	  {
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0040"
         },
         "name": "0a645a42-fe48-o002-0001-cdhr00hi0040",
-		"description": "Diognosis of Issues presented in ED Exaple",
+        "description": "Diognosis of Issues presented in ED Exaple",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-diognosis"
       },
-	  {
+      {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0040"
         },
         "name": "0a645a42-fe48-o003-0001-cdhr00hi0040",
-		"description": "Comments on Health Issues presented in ED Example",
+        "description": "Comments on Health Issues presented in ED Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-comments"
       }
     ],
