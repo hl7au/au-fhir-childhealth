@@ -49,7 +49,7 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/ncdhc-bundle-child-presented-in-ed"
+          "reference": "StructureDefinition/ncdhc-bundle-child-presented-in-ed-document"
         },
         "name": "NCDHC FHIR Child Presented In ED Document",
         "description": "NCDHC FHIRChild Presented In ED document profile using Bundle resource",
@@ -244,7 +244,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-consumer-entered-milestone"
         },
         "name": "NCDHC Composition Consumer Entered Milestone",
-        "description": "Composition based profile to define the details entered by consumer regarding child development milestones such as first time talking, crawling, walking ",
+        "description": "Composition based profile to define the details entered by consumer regarding child development milestones such as first time talking, crawling, walking",
         "exampleBoolean": false
       },
       {
@@ -492,7 +492,7 @@
           "reference": "StructureDefinition/ncdhc-observation-devolopement-assessement"
         },
         "name": "NCDHC Observation Devolopement Assesment",
-        "description": "Observation profile to record Outcome of the child's developmental assessement ",
+        "description": "Observation profile to record Outcome of the child's developmental assessement",
         "exampleBoolean": false
       },
       {
@@ -940,7 +940,7 @@
           "reference": "StructureDefinition/ncdhc-observation-tympanometry"
         },
         "name": "NCDHC Observation Tympanometry",
-        "description": "Observation profile to record Test conducted to test middle ear functioning. ",
+        "description": "Observation profile to record Test conducted to test middle ear functioning.",
         "exampleBoolean": false
       },
       {
@@ -2446,6 +2446,22 @@
         "name": "ncdhc-document-child-presented-ed-example",
         "description": "Child presetnted in Emergency Department FHIR Document Example",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0040"
+        },
+        "name": "0a645a42-fe48-c001-0001-cdhr00hi0040",
+        "description": "Child presetnted in Emergency Department Composition Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-child-presented-in-ed"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0040"
+        },
+        "name": "0a645a42-fe48-e001-0001-cdhr00hi0040",
+        "description": "Child presetnted in Emergency Department Encounter Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
       },
       {
         "reference": {
