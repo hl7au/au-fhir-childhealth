@@ -1185,14 +1185,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ncdhc-iron-test-type-1"
-        },
-        "name": "NCDHC Iron Test Type ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Iron Test Type.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/ncdhc-labour-complications-1"
         },
         "name": "NCDHC Labour Complications ValueSet",
@@ -1628,7 +1620,7 @@
           "reference": "Observation/0a645a42-fe48-o018-0001-cdhr00hi0005"
         },
         "name": "0a645a42-fe48-o018-0001-cdhr00hi0005",
-        "description": "Example to demonstrate Outcome of the 'Reflexes / Neurological' check performed on the newborn",
+        "description": "Example to demonstrate Outcome of the 'Neurological' check performed on the newborn",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neurological-exam"
       },
       {
