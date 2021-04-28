@@ -13,8 +13,8 @@ The following list of profiles are being ussed in the DPHR (Digital Pregnancy He
 * [NCDHC FHIR Document](StructureDefinition-ncdhc-bundle-document.html) - Bundle profile to represent a FHIR document in NCDHC Context.
 
 ## DPHR Health Interactions
-* [Estimated Date of Birth (EDB)](StructureDefinition-ncdhc-bundle-edb-document.html) - Estimated Date of Birth and associated details.
+* [Estimated Date of Birth (EDB)](StructureDefinition-ncdhc-bundle-edb-document.html) - Health interaction recording the calculated estimated date of birth (EDB), menstrual cycle information, ultrasound confirmation of EDB as well as hormonal contraception and breastfeeding status at time of conception.
 * [Pregnancy Management Plan](StructureDefinition-ncdhc-bundle-preg-management-plan-document.html) - Details on pregnancy management plan.
-* [Pregnancy Complication and Plan](StructureDefinition-ncdhc-bundle-preg-issues-plan-document.html) - Pregnancy complications and associated details.
+* [Pregnancy Complication and Plan](StructureDefinition-ncdhc-bundle-preg-issues-plan-document.html) - Health issues and pregnancy complications affecting this pregnancy,  with associated details or plans.
 * [Pregnancy Outcome](StructureDefinition-ncdhc-bundle-pregnancy-outcome-document.html) - Pregnancy outcome and associated details.
-* [Woman's Pregnancy History](StructureDefinition-ncdhc-bundle-pregnancy-history-document.html) - PWoman's Pregnancy History associated details.
+* [Woman's Pregnancy History](StructureDefinition-ncdhc-bundle-pregnancy-history-document.html) - Woman's Pregnancy History associated details.
