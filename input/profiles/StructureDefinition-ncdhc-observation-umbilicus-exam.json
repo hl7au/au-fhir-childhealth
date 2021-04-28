@@ -16,7 +16,7 @@
   "name": "NCDHCObservationUmbilicusExam",
   "title": "NCDHC Observation Umbilicus Examination",
   "status": "active",
-  "description": "Observation profile to record outcome of the Umbilicus check performed on the newborn",
+  "description": "Observation profile to record outcome of the umbilicus examination performed on the newborn, and indication if follow-up or a referral is required",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

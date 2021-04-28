@@ -6,7 +6,7 @@
   "name": "NCDHCConditionPregnancyComplication",
   "title": "NCDHC Condition Pregnancy Complication",
   "status": "active",
-  "description": "Condition profile to record pregnancy complications and associated details",
+  "description": "Condition profile to record health issue or pregnancy complication affecting this preganancy, and associated details",
   "purpose": "\n The following details associated to the expectant mother in context are recorded:\n   * Current Pregnancy Complications\n   * Date observed\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSuppo rt” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

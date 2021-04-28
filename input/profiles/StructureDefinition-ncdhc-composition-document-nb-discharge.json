@@ -6,7 +6,7 @@
   "name": "NCDHCCompositionNewbornDischarge",
   "title": "NCDHC Composition Newborn Discharge",
   "status": "active",
-  "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to a newborn's discharge from a health facility including measurements, date of discharge and other identifying information",
+  "description": "Composition based profile to specify newborn information including date of birth, weight, length, head circumference and feeding status  at time of discharge from a health facility.",
   "purpose": "The document at a minimum carries the following details:\n   * \n   * Discharge Time and Venue\n   * Admissions\n   * Details of the person who is clinically responsible for the discharge\n   * Attester who has clinically signed off the data\n   * Author of the document \n   * The newborn Patient in context\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

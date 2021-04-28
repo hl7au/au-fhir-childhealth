@@ -16,7 +16,7 @@
   "name": "NCDHCCarePlanPregnancyComplication",
   "title": "NCDHC Pregnancy Complication CarePlan",
   "status": "active",
-  "description": "CarePlan profile to record Antenatal Care and associated details",
+  "description": "Profile to record the health issue or pregnancy complication affecting this pregnancy, with treating clinician and associated details or treatment plans.",
   "purpose": "\n The following details associated to the expectant mother in context are recorded:\n   * Current Pregnancy Complications\n   * Description of plan\n   * Date of plan\n   * Under Care of / Treating Clinican\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

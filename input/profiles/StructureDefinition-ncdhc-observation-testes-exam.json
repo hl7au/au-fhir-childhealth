@@ -16,7 +16,7 @@
   "name": "NCDHCObservationTestesExam",
   "title": "NCDHC Observation Testes fully descended R/L Examination",
   "status": "active",
-  "description": "Observation profile to record outcome of the Testes check performed on the newborn male Patient",
+  "description": "Observation profile to record outcome of the right and left descended testes examination for the newborn, and indication if follow-up or a referral is required",
   "purpose": "\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

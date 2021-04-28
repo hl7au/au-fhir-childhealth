@@ -16,7 +16,7 @@
   "name": "NCDHCObservationHeadAndFontanellesExam",
   "title": "NCDHC Observation Head and Fontanelles Examination",
   "status": "active",
-  "description": "Observation profile to record outcome of the check performed around the anatomical feature of the infant skull",
+  "description": "Observation profile to record outcome of the examination performed on the fontanelles and sutures of the infant skull, and indication if follow-up or referral is required",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

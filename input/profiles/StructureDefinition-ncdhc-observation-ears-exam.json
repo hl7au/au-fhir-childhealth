@@ -16,7 +16,7 @@
   "name": "NCDHCObservationEarsExam",
   "title": "NCDHC Observation Ears Examination",
   "status": "active",
-  "description": "Observation profile to record outcome of the Right and Left Ear check performed on the newborn",
+  "description": "Observation profile to record outcome of the right and left ear exminations for the newborn, and indication if follow-up or a referral is required",
   "purpose": "\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

@@ -16,7 +16,7 @@
   "name": "NCDHCObservationMouthPalateExam",
   "title": "NCDHC Observation Mouth / Palate Examination",
   "status": "active",
-  "description": "Observation profile to record Outcome of the Mouth / Palate check performed on the newborn",
+  "description": "Observation profile to record outcome of the Mouth / Palate examination performed on the newborn, and indication if follow-up or a referral is required",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
