@@ -74,7 +74,7 @@
           "display": "Family history of developmental hip dysplasia"
         }
       ],
-      "text": "Is there family history of hip problems in childhood? Example - dysplasia of the hips",
+      "text": "Is there family history of hip problems in childhood? Example - dysplasia of the hips?",
       "type": "open-choice",
       "required": false,
       "repeats": false,
