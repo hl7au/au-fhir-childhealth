@@ -1,0 +1,39 @@
+{
+  "resourceType": "Observation",
+  "id": "0a645a42-fe48-o001-0001-cdhr00hi0023",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-risk-factors-consumer-entered"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "1402861000168108",
+        "system": "http://snomed.info/sct",
+        "display": "H/O: neonate requiring oxygen for 48 hours or more"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+    "display": "Baby of Lina Smith"
+  },
+  "effectiveDateTime": "2021-04-10T16:13:03+10:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "373067005",
+        "system": "http://snomed.info/sct",
+        "display": "No"
+      }
+    ]
+  },
+  "performer": [
+    {
+      "reference": "RelatedPerson/a01bacd2-rpt5c-11ea-b3de-0242ac130002",
+      "display": "Lina Smith"
+    }
+  ]
+}
