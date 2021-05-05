@@ -182,14 +182,6 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:pregnancyHistory.entry:priorPregnancyLoss",
-        "path": "Composition.section.entry",
-        "sliceName": "priorPregnancyLoss",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
         "id": "Composition.section:liveBirthHistory",
         "path": "Composition.section",
         "sliceName": "liveBirthHistory",
