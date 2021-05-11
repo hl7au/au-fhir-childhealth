@@ -18,10 +18,10 @@ The following list of profiles are being used in the CDHR (Child Digital Health 
 * [Newborn Hearing Screen](StructureDefinition-ncdhc-bundle-newborn-hearing-screen-document.html) - Health interaction to record details of the Newborn Hearing Screen. Hearing Screen is performed on both left and right ears and provides an indication if referral is required.
 * [Newborn Discharge](StructureDefinition-ncdhc-bundle-newborn-discharge-document.html) - Health interaction compiling details related to the newborn at discharge from a health facility 
 * [Newborn Examination](StructureDefinition-ncdhc-bundle-newborn-exam-document.html) - Health interaction to record the results of the Newborn examination which are a standard set of physical examination assessments undertaken on newborns. Results can also include an indication for referral if applicable.
-* [Consumer Entered Milestones](StructureDefinition-ncdhc-bundle-consumer-entered-milestone-document.html) - Details related to the milestones achieved by the child.
+* [Consumer Entered Milestones](StructureDefinition-ncdhc-bundle-consumer-entered-milestone-document.html) - Health interaction recording achievement of child development milestones, as entered by the parent/carer.
 * [Family History and Risk Factor Consumer Entered](StructureDefinition-ncdhc-bundle-fh-rf-consumer-entered-document.html) - Details related to risk factors and family history as entered by the consumer.
 * [Parental Observation](StructureDefinition-ncdhc-bundle-parental-observation-document.html) - Observation details about the child as entered by the parent or care giver.
-* [Consumer Entered Encounter](StructureDefinition-ncdhc-bundle-consumer-entered-encounter-document.html) - Clinical Encounter details about the child as entered by the parent or care giver.
+* [Consumer Entered Encounter](StructureDefinition-ncdhc-bundle-consumer-entered-encounter-document.html) - Health interaction recording any clinical encounters that the child has had such as injury, illness, surgical procedures or adverse reactions, as entered by the parent/carer
 * [Child Presented In Emergency Department](StructureDefinition-ncdhc-bundle-child-presented-in-ed-document.html) - Details on issues and diagnosis when child was presented in Emergency Department in a healthcare facility.
 * [Clinical Observation](StructureDefinition-ncdhc-bundle-clinical-observation-document.html) - Details on observations noted by the clinicians.
 
