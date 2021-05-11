@@ -16,7 +16,7 @@
   "name": "NCDHCObservationMilkFeedingStatus",
   "title": "NCDHC Observation Milk Feeding Status",
   "status": "active",
-  "description": "Observation profile to record Milk Feeding Status of the newborn in context",
+  "description": "Observation profile to record the milk intake for the infant, such as breast milk or formula",
   "purpose": "\n The following details associated to the newborn in context are recorded:\n   * Test milk feeding status\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

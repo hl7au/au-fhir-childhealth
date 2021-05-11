@@ -16,7 +16,7 @@
   "name": "NCDHCObservationHipsExam",
   "title": "NCDHC Observation Hips Examination",
   "status": "active",
-  "description": "Observation profile to record outcome of the hip joint stability examination performed on the newborn, and indication if follow-up or a referral is required",
+  "description": "Observation profile to record outcome of the hip joint stability examination performed on the child, and indication if follow-up or a referral is required",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

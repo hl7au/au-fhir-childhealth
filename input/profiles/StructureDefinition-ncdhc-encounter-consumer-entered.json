@@ -6,7 +6,7 @@
   "name": "NCDHCEncounterConsumerEntered",
   "title": "NCDHC Encounter Consumer Entered",
   "status": "active",
-  "description": "An encounter representing clinical event details as entered by the consumer",
+  "description": "An encounter recording the type/s of clinical encounter/s the child has had, as entered by the consumer",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

@@ -16,7 +16,7 @@
   "name": "NCDHCObservationHormonalContraception",
   "title": "NCDHC Observation Hormonal contraception At Time of Conception",
   "status": "active",
-  "description": "Observation profile to record Hormonal contraception being used at time of conception by the expectant mother in context",
+  "description": "Observation profile to record hormonal contraception being used at time of conception by the expectant mother",
   "purpose": "\n The following details associated to the expectant mother in context are recorded:\n   * Use of oral contraception status at conception\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

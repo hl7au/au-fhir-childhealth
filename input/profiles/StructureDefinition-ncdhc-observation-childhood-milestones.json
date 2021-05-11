@@ -16,7 +16,7 @@
   "name": "NCDHCObservationChildhoodMilestones",
   "title": "NCDHC Observation Childhood Milestones",
   "status": "active",
-  "description": "Observation profile to record childhood milestones as entered by the Consumer",
+  "description": "Observation profile to record the achievement of child development milestones",
   "purpose": "\n The following details associated to the newborn in context are recorded:\n   * Milestones\n   * Date Observed\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

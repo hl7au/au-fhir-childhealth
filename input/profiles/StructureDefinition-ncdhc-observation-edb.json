@@ -16,7 +16,7 @@
   "name": "NCDHCObservationEDB",
   "title": "NCDHC Observation Estimated Date of Birth",
   "status": "active",
-  "description": "Observation profile to record Estimated Date of Birth and associated details. Date of delivery (birth) is estimated based on a number of clinical factors and the woman’s cycle information",
+  "description": "Observation profile to record the calculated Estimated Date of Birth and the method of calculation",
   "purpose": "\n The following details associated to the expectant mother in context are recorded:\n   * Estimated date of birth\n   * Estimated date of birth by LNMP, USS and clinical observations\nImplementer conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

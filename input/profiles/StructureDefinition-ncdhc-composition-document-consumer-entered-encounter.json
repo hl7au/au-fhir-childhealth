@@ -6,7 +6,7 @@
   "name": "NCDHCCompositionConsumerEnteredEncounter",
   "title": "NCDHC Composition Consumer Entered Encounter",
   "status": "active",
-  "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on encounter details as entered by the consumer",
+  "description": "Composition profile specifying patient and entry details for recording any clinical encounters that the child has had, as entered by the parent/carer",
   "purpose": "The document at a minimum carries details on the following areas:\n\n   * Encounter type \n   * Comments\n   * Details of the person who entered the encounter details\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

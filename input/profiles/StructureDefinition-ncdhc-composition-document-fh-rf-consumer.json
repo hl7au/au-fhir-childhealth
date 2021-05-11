@@ -6,7 +6,7 @@
   "name": "NCDHCCompositionFHRFConsumerEntered",
   "title": "NCDHC Composition Family History and Risk Factors Entered By Consumer",
   "status": "active",
-  "description": "Composition based profile to capture the details pertaining to family and newborn medical history & newborn health risk factors such as birth weight, use of oxygen at birth etc as entered by parent/caretaker",
+  "description": "Composition profile specifying patient and entry details for recording  risk factors experienced at birth, and familial childhood risk factors.",
   "purpose": "The document at a minimum carries details on the following areas:\n\n   * Need Oxygen > 48hrs \n   * Birth Weight <1500gms\n   * Intensive Care >24hrs \n   * Hearing / Deafness / Hearing Problems\n   * Vision / Sight / Blindness / Eye Problems \n   * Dysplasia of the Hips / Hip Problems\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

@@ -16,7 +16,7 @@
   "name": "NCDHCObservationBreastFeedingAtConception",
   "title": "NCDHC Observation Breast feeding at time of conception",
   "status": "active",
-  "description": "Observation profile to record breast feeding status at time of conception of the expectant mother in context",
+  "description": "Observation profile to record breast feeding status of the expectant mother at time of conception",
   "purpose": "\n The following details associated to the expectant mother in context are recorded:\n   * Breastfeeding at time of conception\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

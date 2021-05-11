@@ -16,7 +16,7 @@
   "name": "NCDHCObservationFeedingMethod",
   "title": "NCDHC Observation Feeding Method",
   "status": "active",
-  "description": "Observation profile to record Feeding Method for the newborn in context",
+  "description": "Observation profile to record the feeding method, such as breastfed, bottle fed or combination feeding for the infant",
   "purpose": "\n The following details associated to the newborn in context are recorded:\n   * Test completion status\n   * Outcome of hearing test in right ear\n   * Outcome of hearing test in left ear\n   * Indication of whether a referral is needed\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

@@ -6,7 +6,7 @@
   "name": "NCDHCObservationVitalSignBodyHeight",
   "title": "NCDHC Observation Vital Sign Body Height Profile",
   "status": "active",
-  "description": "This profile sets minimum expectations for the Observation Vital Sign resource to record, search and fetch Body Height or Birth Length of the patient in context.",
+  "description": "Observation profile to record the height (or length for infants) of the patient",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

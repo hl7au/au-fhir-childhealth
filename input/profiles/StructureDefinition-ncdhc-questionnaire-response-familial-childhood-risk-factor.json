@@ -16,7 +16,7 @@
   "name": "NCDHCQuestionnaireResponseFamilialChildhoodRiskFactor",
   "title": "NCDHC QuestionnaireResponse Familial Childhood RiskFactor",
   "status": "active",
-  "description": "This is the NCDHC QuestionnaireResponse profile to gather Familial Childhood Risk Factor information in Question Response form",
+  "description": "Questionnaire profile to record family history of childhood issues such as hearing, eye/vision or hip problems.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

@@ -16,7 +16,7 @@
   "name": "NCDHCObservationRiskFactorsConsumerEntered",
   "title": "NCDHC Observation Consumer Entered Risk Factors",
   "status": "active",
-  "description": "Flag profile to record different risk factors as reported by the Consumer",
+  "description": "Observation profile to record risk factors that the child experienced at birth such as low birth weight, or requiring oxygen or a stay in intensive care unit.",
   "purpose": "\n The following familial risk factor associated to the baby in context are recorded:\n   * Need Oxygen > 48hrs \n   * Birth Weight <1500gms\n   * Intensive Care >24hrs \nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
