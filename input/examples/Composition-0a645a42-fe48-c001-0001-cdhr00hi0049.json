@@ -1,0 +1,214 @@
+{
+  "resourceType": "Composition",
+  "id": "0a645a42-fe48-c001-0001-cdhr00hi0049",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-clinical-observation"
+    ]
+  },
+  "title": "Clinical Observation",
+  "type": {
+	  "coding": [
+		{
+		  "code": "CLINICOBS",
+		  "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-type-2",
+		  "display": "Clinician Observation"
+		}
+	  ]
+	},
+	"category": [
+	  {
+		"coding": [
+		  {
+			"code": "CLNOBS",
+			"system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-category-1",
+			"display": "Clinician Observation"
+		  }
+		]
+	  }
+	],
+  "section": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "118227000",
+            "system": "http://snomed.info/sct",
+            "display": "Vital signs finding"
+          }
+        ]
+      },
+      "mode": "snapshot",
+      "title": "Vital signs Finding",
+      "entry": [
+        {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0049",
+          "display": "Child's Weight"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0049",
+          "display": "Child's Length"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0049",
+          "display": "Head Circumference"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0049",
+          "display": "Body Mass Index"
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "418138009",
+            "system": "http://snomed.info/sct",
+            "display": "Patient condition finding"
+          }
+        ]
+      },
+      "title": "Patient Condition Finding",
+      "entry": [
+        {
+          "reference": "Observation/0a645a42-fe48-o005-0001-cdhr00hi0049",
+          "display": "Fontanelles, Sutures"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o006-0001-cdhr00hi0049",
+          "display": "Eyes"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o007-0001-cdhr00hi0049",
+          "display": "Eyes Monocularly Tested"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o010-0001-cdhr00hi0049",
+          "display": "Hearing Check"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o013-0001-cdhr00hi0049",
+          "display": "Ears"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o014-0001-cdhr00hi0049",
+          "display": "Mouth & Palate"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o015-0001-cdhr00hi0049",
+          "display": "Cardiovascular"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o016-0001-cdhr00hi0049",
+          "display": "FemoralPulses"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o017-0001-cdhr00hi0049",
+          "display": "Respiratory Rate"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o018-0001-cdhr00hi0049",
+          "display": "Abdomen"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o019-0001-cdhr00hi0049",
+          "display": "Umbilicus"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o020-0001-cdhr00hi0049",
+          "display": "Anus"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o021-0001-cdhr00hi0049",
+          "display": "Genitalia"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o022-0001-cdhr00hi0049",
+          "display": "Testes fully descended"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o023-0001-cdhr00hi0049",
+          "display": "Musculo-Skeletal"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o024-0001-cdhr00hi0049",
+          "display": "Limbs"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o025-0001-cdhr00hi0049",
+          "display": "Spine"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o026-0001-cdhr00hi0049",
+          "display": "Hips"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o0027-0001-cdhr00hi0049",
+          "display": "Gait"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o028-0001-cdhr00hi0049",
+          "display": "Skin"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o029-0001-cdhr00hi0049",
+          "display": "Reflexes"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o030-0001-cdhr00hi0049",
+          "display": "Neurological"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o031-0001-cdhr00hi0049",
+          "display": "Head Shape"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o032-0001-cdhr00hi0049",
+          "display": "Deworming"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o033-0001-cdhr00hi0049",
+          "display": "Iron Testing"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o036-0001-cdhr00hi0049",
+          "display": "Oral Health"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o037-0001-cdhr00hi0049",
+          "display": "Devolopement"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+    "display": "Baby of Lina Smith"
+  },
+  "encounter": {
+    "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0049",
+    "display": "Downunder Hospital"
+  },
+  "date": "2020-07-10T16:13:03+10:00",
+  "author": [
+    {
+      "reference": "Practitioner/p01bacd2-or5c-11ea-b3de-0242ac130002",
+      "display": "Helen Mayo"
+    }
+  ],
+  "attester": [
+    {
+      "mode": "professional",
+      "party": {
+        "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+        "display": "Downunder Hospital"
+      }
+    }
+  ],
+  "custodian": {
+    "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+    "display": "Downunder Hospital"
+  }
+}
