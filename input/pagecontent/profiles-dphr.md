@@ -17,4 +17,4 @@ The following list of profiles are being used in the DPHR (Digital Pregnancy Hea
 * [Pregnancy Management Plan](StructureDefinition-ncdhc-bundle-preg-management-plan-document.html) - Details on pregnancy management plan.
 * [Pregnancy Complication and Plan](StructureDefinition-ncdhc-bundle-preg-issues-plan-document.html) - Health issues and pregnancy complications affecting this pregnancy,  with associated details or plans.
 * [Pregnancy Outcome](StructureDefinition-ncdhc-bundle-pregnancy-outcome-document.html) - Pregnancy outcome and associated details.
-* [Woman's Pregnancy History](StructureDefinition-ncdhc-bundle-pregnancy-history-document.html) - Health interactiong recording the woman's pregnancy history details.
+* [Woman's Pregnancy History](StructureDefinition-ncdhc-bundle-pregnancy-history-document.html) - Health interaction recording the woman's pregnancy history details.
