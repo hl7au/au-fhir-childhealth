@@ -1,7 +1,7 @@
 <!-- profiles-dphr.md {% comment %}
 
 {% endcomment %} -->
-The following list of profiles are being ussed in the DPHR (Digital Pregnancy Health Record) implementation. 
+The following list of profiles are being used in the DPHR (Digital Pregnancy Health Record) implementation. 
 
 ## DPHR Common Profiles
 * [Expectant Mother Patient](StructureDefinition-ncdhc-patient-expectant-mother.html) - Patient profile to represent the Expectant Mother Patient in context.
