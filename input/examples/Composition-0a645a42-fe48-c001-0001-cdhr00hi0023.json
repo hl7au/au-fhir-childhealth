@@ -1,0 +1,106 @@
+{
+  "resourceType": "Composition",
+  "id": "0a645a42-fe48-c001-0001-cdhr00hi0023",
+  "meta": {
+    "profile": [
+      "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-fh-rf-consumer"
+    ]
+  },
+  "title": "Consumer Entered Family History and Risk Factors",
+  "type": {
+	  "coding": [
+		{
+		  "code": "FHRFCONSENTD",
+		  "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-type-2",
+		  "display": "Family History and Risk Factors Consumer Entered"
+		}
+	  ]
+	},
+	"category": [
+	  {
+		"coding": [
+		  {
+			"code": "FHRF",
+			"system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-category-1",
+			"display": "Family History Consumer Entered"
+		  }
+		]
+	  }
+	],
+  "section": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "80943009",
+            "system": "http://snomed.info/sct",
+            "display": "Risk factor"
+          }
+        ]
+      },
+      "mode": "snapshot",
+      "title": "Risk Factors",
+      "entry": [
+        {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0023",
+          "display": "Need Oxygen > 48hrs"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o001-0002-cdhr00hi0023",
+          "display": "Birth Weight <1500gms"
+        },
+        {
+          "reference": "Observation/0a645a42-fe48-o001-0003-cdhr00hi0023",
+          "display": "Intensive Care >24hrs"
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "102486008",
+            "system": "http://snomed.info/sct",
+            "display": "Familial risk factor"
+          }
+        ]
+      },
+      "title": "Familial Risk Factor",
+      "entry": [
+        {
+          "reference": "QuestionnaireResponse/0a645a42-fe48-qr01-0001-cdhr00hi0023",
+          "display": "Familial risk factor Questionnaire"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
+    "display": "Baby of Lina Smith"
+  },
+  "encounter": {
+    "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0023",
+    "display": "Downunder Hospital"
+  },
+  "date": "2021-04-10T16:13:03+10:00",
+  "author": [
+    {
+      "reference": "RelatedPerson/a01bacd2-rpt5c-11ea-b3de-0242ac130002",
+      "display": "Lina Smith"
+    }
+  ],
+  "attester": [
+    {
+      "mode": "professional",
+      "party": {
+        "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+        "display": "Downunder Hospital"
+      }
+    }
+  ],
+  "custodian": {
+    "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002",
+    "display": "Downunder Hospital"
+  }
+}
