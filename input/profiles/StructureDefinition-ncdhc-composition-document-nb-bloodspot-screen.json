@@ -62,9 +62,8 @@
         "id": "Composition.type.coding",
         "path": "Composition.type.coding",
         "patternCoding": {
-          "code": "NEWBRNBLDSCR",
-          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1",
-          "display": "Newborn Bloodspot Screen"
+          "code": "NEWBRNBLDSRN",
+          "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-type-2"
         }
       },
       {
@@ -77,8 +76,7 @@
         "path": "Composition.category.coding",
         "patternCoding": {
           "code": "SCREENING",
-          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1",
-          "display": "SCREENING"
+          "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-category-1"
         }
       },
       {

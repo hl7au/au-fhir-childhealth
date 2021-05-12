@@ -27,8 +27,9 @@
         "type": {
           "coding": [
             {
-              "code": "PAOBS",
-              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
+              "code": "PARENTOBS",
+              "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-type-2",
+			  "display": "Parental Observation"
             }
           ]
         },
@@ -36,8 +37,9 @@
           {
             "coding": [
               {
-                "code": "POB",
-                "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1"
+                "code": "CONDOC",
+                "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-category-1",
+			    "display": "Consumer Document"
               }
             ]
           }

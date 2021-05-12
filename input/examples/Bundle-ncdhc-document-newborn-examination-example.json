@@ -27,11 +27,23 @@
         "type": {
           "coding": [
             {
-              "code": "NEWBRNEXM",
-              "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
+              "code": "NBEXAM",
+              "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-type-2",
+			  "display": "Newborn Examination"
             }
           ]
         },
+		"category": [
+          {
+            "coding": [
+              {
+                "code": "EXAM",
+                "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-category-1",
+				"display": "Clinical Examination Document"
+              }
+            ]
+          }
+        ],
         "section": [
           {
             "title": "Neonatal screening",

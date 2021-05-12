@@ -16,7 +16,7 @@
   "name": "NCDHCBundleChildPresentedInED",
   "title": "NCDHC FHIR Child Presented In ED Document",
   "status": "active",
-  "description": "NCDHC FHIRChild Presented In ED document profile using Bundle resource",
+  "description": "NCDHC FHIR Child Presented In ED document profile using Bundle resource",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

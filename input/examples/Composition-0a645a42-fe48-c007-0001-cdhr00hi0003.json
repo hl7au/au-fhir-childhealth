@@ -8,13 +8,25 @@
   },
   "title": "Newborn Discharge",
   "type": {
-    "coding": [
-      {
-        "code": "NEWBRNDSCHRG",
-        "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
-      }
-    ]
-  },
+	  "coding": [
+		{
+		  "code": "NEWBRNDIS",
+		  "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-type-2",
+		  "display": "Newborn Discharge"
+		}
+	  ]
+	},
+	"category": [
+	  {
+		"coding": [
+		  {
+			"code": "DSCHRG",
+			"system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-category-1",
+			"display": "Discharge Document"
+		  }
+		]
+	  }
+	],
   "section": [
     {
       "code": {

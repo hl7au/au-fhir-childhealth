@@ -65,7 +65,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-type-of-careplan-1"
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-care-plan-type-1"
         }
       },
       {

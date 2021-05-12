@@ -49,7 +49,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-analgesia-use-1"
+          "valueSet": "https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/ncdhc-analgesia-during-labour-delivery-1"
         }
       },
       {

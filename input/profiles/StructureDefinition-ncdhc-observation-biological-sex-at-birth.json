@@ -175,7 +175,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-observation-data-absent-reason-1"
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-observation-valueabsentreason-1"
         }
       }
     ]

@@ -8,23 +8,25 @@
   },
   "title": "Child Presented in ED",
   "type": {
-    "coding": [
-      {
-        "code": "CHPED",
-        "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-hi-type-1"
-      }
-    ]
-  },
-  "category": [
-    {
-      "coding": [
-        {
-          "code": "CHPED",
-          "system": "http://hl7.org.au/fhir/ch/v1/CodeSystem/ncdhc-document-class-1"
-        }
-      ]
-    }
-  ],
+	  "coding": [
+		{
+		  "code": "CHILDPRESEMRCY",
+		  "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-type-2",
+		  "display": "Child Presented In Emergency"
+		}
+	  ]
+	},
+	"category": [
+	  {
+		"coding": [
+		  {
+			"code": "CHPED",
+			"system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-category-1",
+			"display": "Child Presented In Emergency Department"
+		  }
+		]
+	  }
+	],
   "status": "final",
   "subject": {
     "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000",
