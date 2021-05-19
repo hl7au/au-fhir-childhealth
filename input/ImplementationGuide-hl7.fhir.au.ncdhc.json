@@ -2382,7 +2382,386 @@
         "name": "0a645a42-fe48-o003-0001-cdhr00hi0040",
         "description": "Comments on Health Issues presented in ED Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-comments"
+      },
+	  {
+        "reference": {
+          "reference": "Bundle/ncdhc-document-fh-rf-consumer-entered-example"
+        },
+        "name": "ncdhc-document-fh-rf-consumer-entered-example",
+        "description": "Risk Factor Consumer Entered FHIR Document Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-fh-rf-consumer-entered-document"
+      },
+	  {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0023"
+        },
+        "name": "0a645a42-fe48-c001-0001-cdhr00hi0023",
+        "description": "Risk Factor Consumer Entered Composition Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-fh-rf-consumer"
+      },
+	  {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0023"
+        },
+        "name": "0a645a42-fe48-e001-0001-cdhr00hi0023",
+        "description": "Risk Factor Consumer Entered Encounter Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0023"
+        },
+        "name": "0a645a42-fe48-o001-0001-cdhr00hi0023",
+        "description": "Risk Factor Consumer Entered Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-risk-factors-consumer-entered"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0002-cdhr00hi0023"
+        },
+        "name": "0a645a42-fe48-o001-0002-cdhr00hi0023",
+		"description": "Risk Factor Consumer Entered Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-risk-factors-consumer-entered"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0003-cdhr00hi0023"
+        },
+        "name": "0a645a42-fe48-o001-0003-cdhr00hi0023",
+		"description": "Risk Factor Consumer Entered Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-risk-factors-consumer-entered"
+      },
+	  {
+        "reference": {
+          "reference": "Bundle/ncdhc-document-clinical-observation-example"
+        },
+        "name": "ncdhc-document-clinical-observation-example",
+        "description": "Clinical Examination FHIR Document Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-clinical-observation-document"
+      },
+	  {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-c001-0001-cdhr00hi0049",
+        "description": "Clinical Observation Composition Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-clinical-observation"
+      },
+	  
+	  {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-e001-0001-cdhr00hi0049",
+        "description": "Clinical Observation Entered Encounter Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+      },
+	  
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o001-0001-cdhr00hi0049",
+		"description": "Child Body Height Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o002-0001-cdhr00hi0049",
+		"description": "Child Body Height Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o0027-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o0027-0001-cdhr00hi0049",
+		"description": "Child Gait Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gait-assessment"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o021-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o021-0001-cdhr00hi0049",
+		"description": "Child Genitalia Assessment Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-genitalia-exam"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o003-0001-cdhr00hi0049",
+		"description": "Child Genitalia Assessment Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-genitalia-exam"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o004-0001-cdhr00hi0049",
+		"description": "Child BMI Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bmi"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o005-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o005-0001-cdhr00hi0049",
+		"description": "Child Fontanelles and Sutures Assessment Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-fontanelles-and-sutures-assessment"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o022-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o022-0001-cdhr00hi0049",
+		"description": "Child Testes Assessment Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-testes-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o023-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o023-0001-cdhr00hi0049",
+		"description": "Child Musculo Skeletal Assessment Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o024-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o024-0001-cdhr00hi0049",
+		"description": "Child Limbs Assessment Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-limbs-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o025-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o025-0001-cdhr00hi0049",
+		"description": "Child Spine Assessment Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-spine-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o026-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o026-0001-cdhr00hi0049",
+		"description": "Child Hips Assessment Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hips-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o028-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o028-0001-cdhr00hi0049",
+		"description": "Child Skin Assessment Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-skin-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o029-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o029-0001-cdhr00hi0049",
+		"description": "Child Reflexes Assessment Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-reflexes-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o030-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o030-0001-cdhr00hi0049",
+				"description": "Child Neurological Examination Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neurological-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o031-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o031-0001-cdhr00hi0049",
+		"description": "Child Head Shape Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-shape-assesment"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o032-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o032-0001-cdhr00hi0049",
+		"description": "Child Deworming Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-deworming-assesment"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o033-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o033-0001-cdhr00hi0049",
+		"description": "Child Iron Testing Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-iron-testing-assesment"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o034-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o034-0001-cdhr00hi0049",
+		"description": "Child Ferritin Assessment Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-serum-ferritin-measurement"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o035-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o035-0001-cdhr00hi0049",
+		"description": "Child Haemoglobin Assessment Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-haemoglobin-level-estimation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o036-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o036-0001-cdhr00hi0049",
+		"description": "Child Oral Health Assessment Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-oral-health-assesment"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o037-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o037-0001-cdhr00hi0049",
+		"description": "Child Development Assessment Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-development-assessement"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o007-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o007-0001-cdhr00hi0049",
+		"description": "Child Eyes Monocularly Tested Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-eyes-monocularly-tested"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o008-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o008-0001-cdhr00hi0049",
+		"description": "Child Right Eye Visual Acuity Assessment Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-right-eye-visual-acuity"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o009-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o009-0001-cdhr00hi0049",
+		"description": "Child Left Eye Visual Acuity Assessment Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-left-eye-visual-acuity"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o010-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o010-0001-cdhr00hi0049",
+		"description": "Child Hearing Check Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hearing-check"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o011-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o011-0001-cdhr00hi0049",
+		"description": "Child Pure Tone Audiometry Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pure-tone-audiometry"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o012-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o012-0001-cdhr00hi0049",
+		"description": "Child Tympanometry Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-tympanometry"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o013-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o013-0001-cdhr00hi0049",
+		"description": "Child Ears Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-ears-exam"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o014-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o014-0001-cdhr00hi0049",
+		"description": "Child Mouth Palate Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-mouth-palate-exam"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o015-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o015-0001-cdhr00hi0049",
+		"description": "Child Cardiovascular Hart Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-cardiovascular-heart-exam"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o016-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o016-0001-cdhr00hi0049",
+		"description": "Child Femoral Pulses Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-femoral-pulses-exam"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o017-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o017-0001-cdhr00hi0049",
+		"description": "Child Respiratory Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-respiratory-rate-exam"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o018-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o018-0001-cdhr00hi0049",
+		"description": "Child Abdomen Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-abdomen-exam"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o019-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o019-0001-cdhr00hi0049",
+		"description": "Child Umbilicus Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-umbilicus-exam"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o020-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o020-0001-cdhr00hi0049",
+		"description": "Child Umbilicus Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-anus-exam"
+      },
+	  {
+        "reference": {
+          "reference": "QuestionnaireResponse/0a645a42-fe48-qr01-0001-cdhr00hi0023"
+        },
+        "name": "0a645a42-fe48-qr01-0001-cdhr00hi0023",
+		"description": "Familial Childhood Risk Factor QuestionnaireResponse Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-questionnaire-response-familial-childhood-risk-factor"
+      },
+	  {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o006-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o006-0001-cdhr00hi0049",
+		"description": "Eyes Observation Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-eyes-exam"
       }
+	  
     ],
     "page": {
       "nameUrl": "toc.html",
