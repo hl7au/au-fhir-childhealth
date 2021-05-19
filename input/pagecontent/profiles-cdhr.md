@@ -20,10 +20,10 @@ The following list of profiles are being used in the CDHR (Child Digital Health 
 * [Newborn Examination](StructureDefinition-ncdhc-bundle-newborn-exam-document.html) - Health interaction to record the results of the Newborn examination which are a standard set of physical examination assessments undertaken on newborns. Results can also include an indication for referral if applicable.
 * [Consumer Entered Milestones](StructureDefinition-ncdhc-bundle-consumer-entered-milestone-document.html) - Health interaction recording achievement of child development milestones, as entered by the parent/carer.
 * [Family History and Risk Factor Consumer Entered](StructureDefinition-ncdhc-bundle-fh-rf-consumer-entered-document.html) - Health interaction recording risk factors relevant to the child, or familial childhood risk factors, as entered by the parent/carer.
-* [Parental Observation](StructureDefinition-ncdhc-bundle-parental-observation-document.html) - Observation details about the child as entered by the parent or care giver.
-* [Consumer Entered Encounter](StructureDefinition-ncdhc-bundle-consumer-entered-encounter-document.html) - Health interaction recording any clinical encounters that the child has had such as injury, illness, surgical procedures or adverse reactions, as entered by the parent/carer
-* [Child Presented In Emergency Department](StructureDefinition-ncdhc-bundle-child-presented-in-ed-document.html) - Details on issues and diagnosis when child was presented in Emergency Department in a healthcare facility.
-* [Clinical Observation](StructureDefinition-ncdhc-bundle-clinical-observation-document.html) - Details on observations noted by the clinicians.
+* [Parental Observation](StructureDefinition-ncdhc-bundle-parental-observation-document.html) - Health interaction recording growth observations  of height, weight and head circumference for the child, as entered by the parent/carer.
+* [Consumer Entered Encounter](StructureDefinition-ncdhc-bundle-consumer-entered-encounter-document.html) - Health interaction recording any clinical encounters that the child has had such as injury, illness, surgical procedures or adverse reactions, as entered by the parent/carer.
+* [Child Presented In Emergency Department](StructureDefinition-ncdhc-bundle-child-presented-in-ed-document.html) - Health interaction recording any presentations to the Emergency Department by the child
+* [Clinical Observation](StructureDefinition-ncdhc-bundle-clinical-observation-document.html) - Health interaction recording the clinician observations for any encounter for the child.
 
 
 

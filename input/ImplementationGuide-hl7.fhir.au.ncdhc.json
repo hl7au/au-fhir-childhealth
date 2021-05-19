@@ -32,7 +32,7 @@
       ]
     }
   ],
-  "copyright": "Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/",
   "packageId": "hl7.fhir.au.ncdhc",
   "fhirVersion": [
     "4.0.1"
@@ -52,7 +52,7 @@
           "reference": "StructureDefinition/ncdhc-bundle-child-presented-in-ed-document"
         },
         "name": "NCDHC FHIR Child Presented In ED Document",
-        "description": "NCDHC FHIRChild Presented In ED document profile using Bundle resource",
+        "description": "NCDHC FHIR Child Presented In ED document profile using Bundle resource",
         "exampleBoolean": false
       },
       {
@@ -180,7 +180,7 @@
           "reference": "StructureDefinition/ncdhc-careplan-pregnancy-complication"
         },
         "name": "NCDHC Pregnancy Complication CarePlan",
-        "description": "CarePlan profile to record Antenatal Care and associated details",
+        "description": "Profile to record the health issue or pregnancy complication affecting this pregnancy, with treating clinician and associated details or treatment plans.",
         "exampleBoolean": false
       },
       {
@@ -188,7 +188,7 @@
           "reference": "StructureDefinition/ncdhc-careplan-pregnancy-management-plan"
         },
         "name": "NCDHC CarePlan Pregnancy Management Plan",
-        "description": "CarePlan profile to record pregnancy management plans and associated details",
+        "description": "CarePlan profile to record the type of pregnancy care plan being undertaken such as Antenatal plan, birth plan and post natal management plan",
         "exampleBoolean": false
       },
       {
@@ -204,7 +204,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-child-presented-in-ed"
         },
         "name": "NCDHC Composition Child Presented ED",
-        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Child Presented ED",
+        "description": "Composition profile specifying the patient, encounter date and other details for any presentations to the Emergency Department by the child",
         "exampleBoolean": false
       },
       {
@@ -220,7 +220,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-clinical-observation"
         },
         "name": "NCDHC Composition Clinical Observation",
-        "description": "Composition based profile to define the structure and narrative content necessary for Clinical Observation FHIR document.",
+        "description": "Composition profile specifying the patient, encounter date and other details for the clinician observations for the child such as vital signs and development checks",
         "exampleBoolean": false
       },
       {
@@ -236,7 +236,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-consumer-entered-encounter"
         },
         "name": "NCDHC Composition Consumer Entered Encounter",
-        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on encounter details as entered by the consumer",
+        "description": "Composition profile specifying patient and entry details for recording any clinical encounters that the child has had, as entered by the parent/carer",
         "exampleBoolean": false
       },
       {
@@ -244,7 +244,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-consumer-entered-milestone"
         },
         "name": "NCDHC Composition Consumer Entered Milestone",
-        "description": "Composition based profile to define the details entered by consumer regarding child development milestones such as first time talking, crawling, walking",
+        "description": "Composition profile specifying patient and entry details for the achievement of child development milestones like first time talking, crawling, walking, as entered by the parent/carer",
         "exampleBoolean": false
       },
       {
@@ -252,7 +252,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-edb"
         },
         "name": "NCDHC Composition Estimated Date Of Birth",
-        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Estimated Date of Birth",
+        "description": "Composition specifying the patient, provider, encounter,  estimated date of birth calculations and relevant obstetric information.",
         "exampleBoolean": false
       },
       {
@@ -260,7 +260,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-fh-rf-consumer"
         },
         "name": "NCDHC Composition Family History and Risk Factors Entered By Consumer",
-        "description": "Composition based profile to capture the details pertaining to family and newborn medical history & newborn health risk factors such as birth weight, use of oxygen at birth etc as entered by parent/caretaker",
+        "description": "Composition profile specifying patient and entry details for recording  risk factors experienced at birth, and familial childhood risk factors.",
         "exampleBoolean": false
       },
       {
@@ -276,7 +276,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-nb-discharge"
         },
         "name": "NCDHC Composition Newborn Discharge",
-        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to a newborn's discharge from a health facility including measurements, date of discharge and other identifying information",
+        "description": "Composition based profile to specify newborn information including date of birth, weight, length, head circumference and feeding status  at time of discharge from a health facility.",
         "exampleBoolean": false
       },
       {
@@ -284,7 +284,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-nb-examination"
         },
         "name": "NCDHC Composition Newborn Examination",
-        "description": "Composition based profile to define the structure and narrative content necessary for the brief physical examination conducted within the first few minutes of birth and a second detailed assessment within 48 hours of birth, used to screen for congenital anomalies.",
+        "description": "Composition specifying the patient, provider, relevant date of examination and results for the Newborn Examination",
         "exampleBoolean": false
       },
       {
@@ -292,7 +292,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-nb-hearing-screen"
         },
         "name": "NCDHC Composition Newborn Hearing Screen",
-        "description": "Composition based profile to define the structure and narrative content necessary pertaining to the automated hearing screen performed on newborns. Used to determine congenital risk factors for hearing related conditions and the necessity for further screening",
+        "description": "Composition specifying the patient, provider, relevant dates and examination results for the Newborn hearing screen.",
         "exampleBoolean": false
       },
       {
@@ -300,7 +300,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-parental-observation"
         },
         "name": "NCDHC Composition Parental Observation",
-        "description": "Composition based profile to define the structure and narrative content necessary for Parental Observation",
+        "description": "Composition profile specifying patient and entry details for recording growth observations for the child, as entered by the parent/carer",
         "exampleBoolean": false
       },
       {
@@ -308,7 +308,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-pregnancy-history"
         },
         "name": "NCDHC Composition Woman's Pregnancy History",
-        "description": "Composition based profile to define the structure and narrative content necessary for Woman's Pregnancy History FHIR document.",
+        "description": "Composition profile specifying patient and entry details for recording the woman's pregancy history details.",
         "exampleBoolean": false
       },
       {
@@ -316,7 +316,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-preg-issues-plans"
         },
         "name": "NCDHC Composition Pregnancy Issues And Plans",
-        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Estimated Date of Birth",
+        "description": "Composition specifying the patient, provider, encounter, and health issue or pregnancy complication affecting this pregnancy, with associated details or treatment plans",
         "exampleBoolean": false
       },
       {
@@ -324,7 +324,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-preg-management-plans"
         },
         "name": "NCDHC Composition Pregnancy Management Plans",
-        "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Estimated Date of Birth",
+        "description": "Composition based profile specifying the patient, encounter and other details for pregnancy care plans",
         "exampleBoolean": false
       },
       {
@@ -332,7 +332,7 @@
           "reference": "StructureDefinition/ncdhc-composition-document-pregnancy-outcome"
         },
         "name": "NCDHC Composition Woman's Pregnancy outcome",
-        "description": "Composition based profile to define the structure and narrative content necessary for Woman's Pregnancy outcome FHIR document.",
+        "description": "Composition profile specifying the patient, and outcome of the current pregnancy.",
         "exampleBoolean": false
       },
       {
@@ -340,7 +340,7 @@
           "reference": "StructureDefinition/ncdhc-condition-pregnancy-complication"
         },
         "name": "NCDHC Condition Pregnancy Complication",
-        "description": "Condition profile to record pregnancy complications and associated details",
+        "description": "Condition profile to record health issue or pregnancy complication affecting this preganancy, and associated details",
         "exampleBoolean": false
       },
       {
@@ -364,7 +364,7 @@
           "reference": "StructureDefinition/ncdhc-encounter-consumer-entered"
         },
         "name": "NCDHC Encounter Consumer Entered",
-        "description": "An encounter representing clinical event details as entered by the consumer",
+        "description": "An encounter recording the type/s of clinical encounter/s the child has had, as entered by the consumer",
         "exampleBoolean": false
       },
       {
@@ -388,7 +388,7 @@
           "reference": "StructureDefinition/ncdhc-medication-statement-analgesia-use"
         },
         "name": "NCDHC MedicationStatement Analgesia Use",
-        "description": "Observation profile to record, search and fetch details of analgesia used during labour/delivery for the patient in context.",
+        "description": "Observation profile to record the details of analgesia used during labour/delivery, such as  epidural, nitrous oxide",
         "exampleBoolean": false
       },
       {
@@ -396,7 +396,7 @@
           "reference": "StructureDefinition/ncdhc-observation-abdomen-exam"
         },
         "name": "NCDHC Observation Abdomen Examination",
-        "description": "Observation profile to record outcome of the Abdomen check performed on the newborn",
+        "description": "Observation profile to record outcome of the abdominal examination performed on the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -404,7 +404,7 @@
           "reference": "StructureDefinition/ncdhc-observation-anus-exam"
         },
         "name": "NCDHC Observation Anus Examination",
-        "description": "Observation profile to record outcome of the Anus check performed on the newborn",
+        "description": "Observation profile to record outcome of the anus examination performed on the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -428,7 +428,7 @@
           "reference": "StructureDefinition/ncdhc-observation-breastfeeding-time-conception"
         },
         "name": "NCDHC Observation Breast feeding at time of conception",
-        "description": "Observation profile to record breast feeding status at time of conception of the expectant mother in context",
+        "description": "Observation profile to record breast feeding status of the expectant mother at time of conception",
         "exampleBoolean": false
       },
       {
@@ -436,7 +436,7 @@
           "reference": "StructureDefinition/ncdhc-observation-cardiovascular-heart-exam"
         },
         "name": "NCDHC Observation Cardiovascular / heart Examination",
-        "description": "Observation profile to record outcome of the Cardiovascular / heart check performed on the newborn",
+        "description": "Observation profile to record outcome of the cardiovascular/heart examination performed on the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -444,7 +444,7 @@
           "reference": "StructureDefinition/ncdhc-observation-childhood-milestones"
         },
         "name": "NCDHC Observation Childhood Milestones",
-        "description": "Observation profile to record childhood milestones as entered by the Consumer",
+        "description": "Observation profile to record the achievement of child development milestones",
         "exampleBoolean": false
       },
       {
@@ -460,7 +460,7 @@
           "reference": "StructureDefinition/ncdhc-observation-comments"
         },
         "name": "NCDHC Observation Comments",
-        "description": "Observation profile to record Additional comments about the encounter",
+        "description": "Observation profile to record additional comments about the patient or encounter",
         "exampleBoolean": false
       },
       {
@@ -468,7 +468,7 @@
           "reference": "StructureDefinition/ncdhc-observation-complaint-or-issue"
         },
         "name": "NCDHC Observation Presenting Complaint Or Issue",
-        "description": "Observation profile to record The health problem or issue exeperienced by the patient resulting in their attendence to emergency department",
+        "description": "Observation profile to record the presenting complaint, or reason for presenting to the Emergency Department",
         "exampleBoolean": false
       },
       {
@@ -484,15 +484,15 @@
           "reference": "StructureDefinition/ncdhc-observation-date-of-fetal-loss"
         },
         "name": "NCDHC Observation Date of fetal loss",
-        "description": "Observation profile to record, search and fetch date of fetal loss",
+        "description": "Observation profile to record the date of fetal loss, if applicable",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncdhc-observation-devolopement-assessement"
+          "reference": "StructureDefinition/ncdhc-observation-development-assessement"
         },
         "name": "NCDHC Observation Devolopement Assesment",
-        "description": "Observation profile to record Outcome of the child's developmental assessement",
+        "description": "Observation profile to record Outcome of the child's developmental assessement ",
         "exampleBoolean": false
       },
       {
@@ -508,7 +508,7 @@
           "reference": "StructureDefinition/ncdhc-observation-diognosis"
         },
         "name": "NCDHC Observation Diognosis",
-        "description": "Observation profile to record Confirmed diagnosis; active diagnosis being treated",
+        "description": "Observation profile to record the diagnosis from the encounter",
         "exampleBoolean": false
       },
       {
@@ -516,7 +516,7 @@
           "reference": "StructureDefinition/ncdhc-observation-duration-of-labour"
         },
         "name": "NCDHC Observation Duration of labour",
-        "description": "Observation profile to record, search and fetch duration of labour associated to the patient in context.",
+        "description": "Observation profile to record the duration of labour in hours and minutes",
         "exampleBoolean": false
       },
       {
@@ -524,7 +524,7 @@
           "reference": "StructureDefinition/ncdhc-observation-edb"
         },
         "name": "NCDHC Observation Estimated Date of Birth",
-        "description": "Observation profile to record Estimated Date of Birth and associated details. Date of delivery (birth) is estimated based on a number of clinical factors and the woman’s cycle information",
+        "description": "Observation profile to record the calculated Estimated Date of Birth and the method of calculation",
         "exampleBoolean": false
       },
       {
@@ -556,7 +556,7 @@
           "reference": "StructureDefinition/ncdhc-observation-ears-exam"
         },
         "name": "NCDHC Observation Ears Examination",
-        "description": "Observation profile to record outcome of the Right and Left Ear check performed on the newborn",
+        "description": "Observation profile to record outcome of the right and left ear exminations for the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -572,7 +572,7 @@
           "reference": "StructureDefinition/ncdhc-observation-eyes-exam"
         },
         "name": "NCDHC Observation Eyes Examination",
-        "description": "Observation profile to record outcome of the Right and Left Eye check performed on the newborn",
+        "description": "Observation profile to record outcome of the right and left eye exminations for the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -588,7 +588,7 @@
           "reference": "StructureDefinition/ncdhc-observation-feeding-method"
         },
         "name": "NCDHC Observation Feeding Method",
-        "description": "Observation profile to record Feeding Method for the newborn in context",
+        "description": "Observation profile to record the feeding method, such as breastfed, bottle fed or combination feeding for the infant",
         "exampleBoolean": false
       },
       {
@@ -596,7 +596,7 @@
           "reference": "StructureDefinition/ncdhc-observation-feeding-status"
         },
         "name": "NCDHC Observation Newborn Feeding Status",
-        "description": "Observation profile to record Feeding Status of the newborn in context",
+        "description": "Observation profile to record the feeding status of the infant",
         "exampleBoolean": false
       },
       {
@@ -604,7 +604,7 @@
           "reference": "StructureDefinition/ncdhc-observation-femoral-pulses-exam"
         },
         "name": "NCDHC Observation Femoral Pulses Examination",
-        "description": "Observation profile to record outcome of the Right and Left Femoral Pulses check performed on the newborn",
+        "description": "Observation profile to record outcome of the right and left femoral pulse exminations for the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -628,7 +628,7 @@
           "reference": "StructureDefinition/ncdhc-observation-genitalia-exam"
         },
         "name": "NCDHC Observation Genitalia Examination",
-        "description": "Observation profile to record outcome of the Genitalia check performed on the newborn",
+        "description": "Observation profile to record outcome of the genitalia examination performed on the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -644,7 +644,7 @@
           "reference": "StructureDefinition/ncdhc-observation-gravida"
         },
         "name": "NCDHC Observation Gravida",
-        "description": "Observation profile to record, search and fetch Total number of pregnancies associated to the expectant mother in context.",
+        "description": "Observation profile to record the number of pregnancies the woman has had",
         "exampleBoolean": false
       },
       {
@@ -660,7 +660,7 @@
           "reference": "StructureDefinition/ncdhc-observation-head-fontanelles-exam"
         },
         "name": "NCDHC Observation Head and Fontanelles Examination",
-        "description": "Observation profile to record outcome of the check performed around the anatomical feature of the infant skull",
+        "description": "Observation profile to record outcome of the examination performed on the fontanelles and sutures of the childs' skull, and indication if follow-up or referral is required",
         "exampleBoolean": false
       },
       {
@@ -676,7 +676,7 @@
           "reference": "StructureDefinition/ncdhc-observation-health-issues"
         },
         "name": "NCDHC Observation Health Issues",
-        "description": "Observation profile to record, search and fetch health issues observed",
+        "description": "Observation profile to record  issues of the child of the woman",
         "exampleBoolean": false
       },
       {
@@ -692,7 +692,7 @@
           "reference": "StructureDefinition/ncdhc-observation-hips-exam"
         },
         "name": "NCDHC Observation Hips Examination",
-        "description": "Observation profile to record outcome of the Hips check performed on the newborn",
+        "description": "Observation profile to record outcome of the hip joint stability examination performed on the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -700,7 +700,7 @@
           "reference": "StructureDefinition/ncdhc-observation-hormonal-contraception-at-conception"
         },
         "name": "NCDHC Observation Hormonal contraception At Time of Conception",
-        "description": "Observation profile to record Hormonal contraception being used at time of conception by the expectant mother in context",
+        "description": "Observation profile to record hormonal contraception being used at time of conception by the expectant mother",
         "exampleBoolean": false
       },
       {
@@ -724,7 +724,7 @@
           "reference": "StructureDefinition/ncdhc-observation-labour-complication"
         },
         "name": "NCDHC Observation Labour Complications",
-        "description": "Observation profile to record, search and fetch labour complication observed",
+        "description": "Observation profile to record labour complications",
         "exampleBoolean": false
       },
       {
@@ -732,7 +732,7 @@
           "reference": "StructureDefinition/ncdhc-observation-limbs-exam"
         },
         "name": "NCDHC Observation Limbs Examination",
-        "description": "Observation profile to record outcome of the Limbs check performed on the newborn",
+        "description": "Observation profile to record outcome of the limb examination performed on the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -740,7 +740,7 @@
           "reference": "StructureDefinition/ncdhc-observation-milk-feeding-status"
         },
         "name": "NCDHC Observation Milk Feeding Status",
-        "description": "Observation profile to record Milk Feeding Status of the newborn in context",
+        "description": "Observation profile to record the milk intake for the infant, such as breast milk or formula",
         "exampleBoolean": false
       },
       {
@@ -748,7 +748,7 @@
           "reference": "StructureDefinition/ncdhc-observation-mouth-palate-exam"
         },
         "name": "NCDHC Observation Mouth / Palate Examination",
-        "description": "Observation profile to record Outcome of the Mouth / Palate check performed on the newborn",
+        "description": "Observation profile to record outcome of the Mouth / Palate examination performed on the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -756,7 +756,7 @@
           "reference": "StructureDefinition/ncdhc-observation-musculo-skeletal-exam"
         },
         "name": "NCDHC Observation Musculo Skeletal Examination",
-        "description": "Observation profile to record outcome of the Musculo Skeletal check performed on the newborn",
+        "description": "Observation profile to record outcome of the musculoskeletal system examination performed on the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -764,7 +764,7 @@
           "reference": "StructureDefinition/ncdhc-observation-neonatal-complication"
         },
         "name": "NCDHC Observation Neonatal Complications",
-        "description": "Observation profile to record, search and fetch Neonatal complication observed",
+        "description": "Observation profile to record neonatal complications",
         "exampleBoolean": false
       },
       {
@@ -788,7 +788,7 @@
           "reference": "StructureDefinition/ncdhc-observation-nb-hearing-screen"
         },
         "name": "NCDHC Observation Newborn Hearing Screen",
-        "description": "Observation profile to record Hearing Screening Test status and assoicated details for the newborn in context",
+        "description": "Observation profile to record Hearing Screen results for both left and right ears, and indication if a referral is required.",
         "exampleBoolean": false
       },
       {
@@ -804,7 +804,7 @@
           "reference": "StructureDefinition/ncdhc-observation-parity"
         },
         "name": "NCDHC Observation Parity",
-        "description": "Observation profile to record, search and fetch number of births (carried to viable gestation age) associated to the expectant mother in context.",
+        "description": "Observation profile to record the number of births (carried to viable gestation age) the woman has had",
         "exampleBoolean": false
       },
       {
@@ -812,7 +812,7 @@
           "reference": "StructureDefinition/ncdhc-observation-perineal-status"
         },
         "name": "NCDHC Observation Perineal Status",
-        "description": "Observation profile to record, search and fetch Perineal Status observed",
+        "description": "Observation profile to record the perineal status of the woman after birth",
         "exampleBoolean": false
       },
       {
@@ -820,7 +820,7 @@
           "reference": "StructureDefinition/ncdhc-observation-postnatal-complication"
         },
         "name": "NCDHC Observation Postnatal Complications",
-        "description": "Observation profile to record, search and fetch Postnatal complication observed",
+        "description": "Observation profile to record postnatal complications",
         "exampleBoolean": false
       },
       {
@@ -828,7 +828,7 @@
           "reference": "StructureDefinition/ncdhc-observation-postnatal-readmission"
         },
         "name": "NCDHC Observation Postnatal Readmissions",
-        "description": "Observation profile to record, search and fetch Postnatal Readmission reasons",
+        "description": "Observation profile to record postnatal readmission reasons",
         "exampleBoolean": false
       },
       {
@@ -836,7 +836,7 @@
           "reference": "StructureDefinition/ncdhc-observation-pregnancy-comments"
         },
         "name": "NCDHC Observation Pregnancy Comments",
-        "description": "Observation profile to record, search and fetch Pregnancy Comments",
+        "description": "Observation profile to record comments about the pregnancy of the woman",
         "exampleBoolean": false
       },
       {
@@ -844,7 +844,7 @@
           "reference": "StructureDefinition/ncdhc-observation-pregnancy-complication"
         },
         "name": "NCDHC Observation Pregnancy Complication",
-        "description": "Observation profile to record, search and fetch Pregnancy Complication associated to the child in context.",
+        "description": "Observation profile to record  pregnancy complication/s for this pregnancy",
         "exampleBoolean": false
       },
       {
@@ -852,7 +852,7 @@
           "reference": "StructureDefinition/ncdhc-observation-pregnancy-outcome"
         },
         "name": "NCDHC Observation Pregnancy Outcome",
-        "description": "Observation profile to record, search and fetch pregnancy outcome",
+        "description": "Observation profile to record the outcome of the current pregnancy, such as livebirth",
         "exampleBoolean": false
       },
       {
@@ -876,7 +876,7 @@
           "reference": "StructureDefinition/ncdhc-observation-reflexes-exam"
         },
         "name": "NCDHC Observation Reflexes Examination",
-        "description": "Observation profile to record Outcome of the Reflexes Check (Physical examination checking the involuntary movements or actions to determine the wellbeing of the newborns brain and nervous system)",
+        "description": "Observation profile to record outcome of the neurological examination performed on the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -884,7 +884,7 @@
           "reference": "StructureDefinition/ncdhc-observation-respiratory-rate-exam"
         },
         "name": "NCDHC Observation Respiratory Rate Examination",
-        "description": "Observation profile to record outcome of the Respiratory Rate check performed on the newborn",
+        "description": "Observation profile to record outcome of the respiratory rate examination performed on the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -900,7 +900,7 @@
           "reference": "StructureDefinition/ncdhc-observation-risk-factors-consumer-entered"
         },
         "name": "NCDHC Observation Consumer Entered Risk Factors",
-        "description": "Flag profile to record different risk factors as reported by the Consumer",
+        "description": "Observation profile to record risk factors that the child experienced at birth such as low birth weight, or requiring oxygen or a stay in intensive care unit.",
         "exampleBoolean": false
       },
       {
@@ -916,7 +916,7 @@
           "reference": "StructureDefinition/ncdhc-observation-skin-exam"
         },
         "name": "NCDHC Observation Skin Examination",
-        "description": "Observation profile to record outcome of the Skin check (Hyperpigmented macule, birthmarks, dry abrasions, bruises) performed on the newborn",
+        "description": "Observation profile to record outcome of the skin examination performed on the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -924,7 +924,7 @@
           "reference": "StructureDefinition/ncdhc-observation-spine-exam"
         },
         "name": "NCDHC Observation Spine Examination",
-        "description": "Observation profile to record outcome of the Spine check performed on the newborn",
+        "description": "Observation profile to record outcome of the spinal examination performed on the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -932,7 +932,7 @@
           "reference": "StructureDefinition/ncdhc-observation-testes-exam"
         },
         "name": "NCDHC Observation Testes fully descended R/L Examination",
-        "description": "Observation profile to record outcome of the Testes check performed on the newborn male Patient",
+        "description": "Observation profile to record outcome of the right and left descended testes examination for the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -940,7 +940,7 @@
           "reference": "StructureDefinition/ncdhc-observation-tympanometry"
         },
         "name": "NCDHC Observation Tympanometry",
-        "description": "Observation profile to record Test conducted to test middle ear functioning.",
+        "description": "Observation profile to record Test conducted to test middle ear functioning. ",
         "exampleBoolean": false
       },
       {
@@ -948,7 +948,7 @@
           "reference": "StructureDefinition/ncdhc-observation-type-of-birth"
         },
         "name": "NCDHC Observation Type Of Birth",
-        "description": "Observation profile to record, search and fetch type of birth observed during the birthing procedure",
+        "description": "Observation profile to record the type of birth the woman had, such as vaginal, caesarian, forceps.",
         "exampleBoolean": false
       },
       {
@@ -964,7 +964,7 @@
           "reference": "StructureDefinition/ncdhc-observation-type-of-labour"
         },
         "name": "NCDHC Observation TypeOfLabour",
-        "description": "Observation profile to record, search and fetch type of labour observed during the Labouring procedure",
+        "description": "Observation profile to record the type of   labour the woman had, such as spontaneous or induced.",
         "exampleBoolean": false
       },
       {
@@ -972,7 +972,7 @@
           "reference": "StructureDefinition/ncdhc-observation-umbilicus-exam"
         },
         "name": "NCDHC Observation Umbilicus Examination",
-        "description": "Observation profile to record outcome of the Umbilicus check performed on the newborn",
+        "description": "Observation profile to record outcome of the umbilicus examination performed on the child, and indication if follow-up or a referral is required",
         "exampleBoolean": false
       },
       {
@@ -980,7 +980,7 @@
           "reference": "StructureDefinition/ncdhc-observation-vitalsign-bmi"
         },
         "name": "NCDHC Observation Vital Sign BMI Profile",
-        "description": "This profile sets minimum expectations for the Observation Vital Sign resource to record, search and fetch BMI.",
+        "description": "Observation profile for a system calculated body mass index of the patient",
         "exampleBoolean": false
       },
       {
@@ -988,7 +988,7 @@
           "reference": "StructureDefinition/ncdhc-observation-vitalsign-bodyheight"
         },
         "name": "NCDHC Observation Vital Sign Body Height Profile",
-        "description": "This profile sets minimum expectations for the Observation Vital Sign resource to record, search and fetch Body Height or Birth Length of the patient in context.",
+        "description": "Observation profile to record the height (or length for infants) of the patient",
         "exampleBoolean": false
       },
       {
@@ -996,7 +996,7 @@
           "reference": "StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
         },
         "name": "NCDHC Observation Vital Sign Body Weight Profile",
-        "description": "This profile sets minimum expectations for the Observation Vital Sign resource to record, search and fetch Body Weight of the patient in context.",
+        "description": "Observation profile to record the body weight of the patient",
         "exampleBoolean": false
       },
       {
@@ -1004,7 +1004,7 @@
           "reference": "StructureDefinition/ncdhc-observation-vitalsign-head-circumference"
         },
         "name": "NCDHC Observation Vital Sign Head Circumference Profile",
-        "description": "This profile sets minimum expectations for the Observation Vital Sign resource to record, search and fetch Head Circumference of the patient in context.",
+        "description": "Observation profile to record  the head circumference of the patient",
         "exampleBoolean": false
       },
       {
@@ -1076,7 +1076,7 @@
           "reference": "StructureDefinition/ncdhc-questionnaire-response-familial-childhood-risk-factor"
         },
         "name": "NCDHC QuestionnaireResponse Familial Childhood RiskFactor",
-        "description": "This is the NCDHC QuestionnaireResponse profile to gather Familial Childhood Risk Factor information in Question Response form",
+        "description": "Questionnaire profile to record family history of childhood issues such as hearing, eye/vision or hip problems.",
         "exampleBoolean": false
       },
       {
@@ -1089,58 +1089,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ncdhc-analgesia-use-1"
-        },
-        "name": "NCDHC Analgesia Use ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent Analgesia used during labour/delivery",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-audiologist-referral-status-1"
-        },
-        "name": "NCDHC Audiologist Referral Status ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHCValueSetAudiologist Referral Status are applicable to each completed check/observation.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-observation-certainty-of-menstrual-cycle-1"
-        },
-        "name": "NCDHC Observation Certainty Of Menstrual Cycle",
-        "description": "National Children's Digital Health Collaborative - Codes to determine what type of Observation Certainty Of Menstrual Cycle are applicable to each completed check/observation.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/ncdhc-child-complaint-issue-1"
         },
         "name": "NCDHC ValueSet Child Complaint or Issue",
         "description": "National Digital Health Collaborative - Value set to determine the health problem or issue exeperienced by the patient resulting in their attendence to emergency department",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/valueset-ncdhc-childhood-milestone-1"
-        },
-        "name": "NCDHC ValueSet Childhood Milestones",
-        "description": "National Children's Digital Health Collaborative - Codes to represent InfantMilestones value.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-detected-sex-1"
-        },
-        "name": "NCDHC Detected Sex ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Detected Sex.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-encounter-reason-code-1"
-        },
-        "name": "NCDHC Encounter Reason Code ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent Encounter Reason Code",
         "exampleBoolean": false
       },
       {
@@ -1153,14 +1105,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ncdhc-familial-childhood-riskfactor-answers-1"
-        },
-        "name": "NCDHC Familial Childhood RiskFactor Answers ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent Familial Childhood RiskFactor Answers",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/ncdhc-familial-risk-factor-1"
         },
         "name": "NCDHC Familial Risk Factor ValueSet",
@@ -1169,18 +1113,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ncdhc-feeding-method-1"
+          "reference": "ValueSet/ncdhc-iron-test-type-1"
         },
-        "name": "NCDHC Feeding Method ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Feeding Method.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-generic-yes-no-1"
-        },
-        "name": "NCDHC ValueSet Generic Yes No",
-        "description": "National Children's Digital Health Collaborative - Codes to represent generic Yes/No value.",
+        "name": "NCDHC Iron Test Type ValueSet",
+        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Iron Test Type.",
         "exampleBoolean": false
       },
       {
@@ -1189,14 +1125,6 @@
         },
         "name": "NCDHC Labour Complications ValueSet",
         "description": "National Children's Digital Health Collaborative - Values to represent Labour Complications",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-milk-feeding-status-1"
-        },
-        "name": "NCDHC Milk Feeding Status ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Milk Feeding Status.",
         "exampleBoolean": false
       },
       {
@@ -1217,14 +1145,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ncdhc-perineal-status-1"
-        },
-        "name": "NCDHC Perineal Status ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent different types of Perineal Status",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/ncdhc-postnatal-complications-1"
         },
         "name": "NCDHC Postnatal Complications ValueSet",
@@ -1237,22 +1157,6 @@
         },
         "name": "NCDHC ValueSet Pregnancy Complication",
         "description": "National Digital Health Collaborative - Value set to determine what type of pregnancy complication/s occurred during the birthing process",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-pregnancy-outcome-1"
-        },
-        "name": "NCDHC Pregnancy Outcome ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent different types of pregnancy outcome",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-regularity-of-menstrual-cycle-1"
-        },
-        "name": "NCDHC ValueSet Regularity Of Menstrual Cycle",
-        "description": "National Children's Digital Health Collaborative - Codes to determine what type of Observation Regularity Of Menstrual Cycle are applicable to each completed check/observation.",
         "exampleBoolean": false
       },
       {
@@ -1273,18 +1177,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ncdhc-type-of-careplan-1"
-        },
-        "name": "NCDHC Type Of Care Plan ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent different types of care plans",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/ncdhc-type-of-fetal-loss-1"
         },
         "name": "NCDHC Type Of Fetal Loss ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent different types of fetal loss",
+        "description": "Observation profile to record the type of fetal loss experienced by the woman",
         "exampleBoolean": false
       },
       {
@@ -1305,418 +1201,65 @@
       },
       {
         "reference": {
-          "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0012"
+          "reference": "Bundle/ncdhc-document-child-presented-ed-example"
         },
-        "name": "0a645a42-fe48-c001-0001-cdhr00hi0012",
-        "description": "Newborn Hearing Screen Composition Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-hearing-screen"
+        "name": "ncdhc-document-child-presented-ed-example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-child-presented-in-ed-document"
       },
       {
         "reference": {
-          "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0081"
+          "reference": "Bundle/ncdhc-document-clinical-observation-example"
         },
-        "name": "0a645a42-fe48-c001-0001-cdhr00hi0081",
-        "description": "Newborn Bloodspot Screen Composition Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
+        "name": "ncdhc-document-clinical-observation-example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-clinical-observation-document"
       },
       {
         "reference": {
-          "reference": "Composition/0a645a42-fe48-c001-0001-dphr00hi101a"
+          "reference": "Bundle/ncdhc-document-consumer-entered-encounter-example"
         },
-        "name": "0a645a42-fe48-c001-0001-dphr00hi101a",
-        "description": "Estimated Date of Birth Composition Composition Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-edb"
+        "name": "ncdhc-document-consumer-entered-encounter-example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-consumer-entered-encounter-document"
       },
       {
         "reference": {
-          "reference": "Composition/0a645a42-fe48-c019-0001-cdhr00hi0005"
+          "reference": "Bundle/ncdhc-document-consumer-entered-milestone-example"
         },
-        "name": "0a645a42-fe48-c019-0001-cdhr00hi0005",
-        "description": "Newborn Examination Composition Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-examination"
-      },
-      {
-        "reference": {
-          "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0012"
-        },
-        "name": "0a645a42-fe48-e001-0001-cdhr00hi0012",
-        "description": "Newborn hearing screening Encounter detils",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
-      },
-      {
-        "reference": {
-          "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0081"
-        },
-        "name": "0a645a42-fe48-e001-0001-cdhr00hi0081",
-        "description": "Newborn blood spot screening Encounter detils",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
-      },
-      {
-        "reference": {
-          "reference": "Encounter/0a645a42-fe48-e001-0001-dphr00hi101a"
-        },
-        "name": "0a645a42-fe48-e001-0001-dphr00hi101a",
-        "description": "Estimated Date of birth assessnent Encounter details",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0012"
-        },
-        "name": "0a645a42-fe48-o001-0001-cdhr00hi0012",
-        "description": "Newborn Hearing Screen example with completion status, Outcome Right, Outcome Left, Refer to Audiologist flag and effectiveDateTime",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-hearing-screen"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0081"
-        },
-        "name": "0a645a42-fe48-o001-0001-cdhr00hi0081",
-        "description": "Newborn Bloodspot Screen example with completion status and effectiveDateTime",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o001-0001-dphr00hi101a"
-        },
-        "name": "0a645a42-fe48-o001-0001-dphr00hi101a",
-        "description": "Agreed estimated date of birth",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-edb"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0012"
-        },
-        "name": "0a645a42-fe48-o002-0001-cdhr00hi0012",
-        "description": "Newborn Hearing Screen Hearing Audiologist Referral Indication example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-audiologist-referral-indication"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o002-0001-dphr00hi101a"
-        },
-        "name": "0a645a42-fe48-o002-0001-dphr00hi101a",
-        "description": "Estimated date of birth by LNMP example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-estimated-date-birth-last-period"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o003-0001-dphr00hi101a"
-        },
-        "name": "0a645a42-fe48-o003-0001-dphr00hi101a",
-        "description": "Estimated date of birth by ultra sound example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-ultrasound-scan-obstetric"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o004-0001-dphr00hi101a"
-        },
-        "name": "0a645a42-fe48-o004-0001-dphr00hi101a",
-        "description": "Estimated date of birth by clinical examination example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-edb-by-clinical-examination"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o005-0001-dphr00hi101a"
-        },
-        "name": "0a645a42-fe48-o005-0001-dphr00hi101a",
-        "description": "Use of oral contraceptive by the expectatnt mother at conception example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hormonal-contraception-at-conception"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o006-0001-dphr00hi101a"
-        },
-        "name": "0a645a42-fe48-o006-0001-dphr00hi101a",
-        "description": "Breast feeding at time of conception example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-breastfeeding-time-conception"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o007-0001-dphr00hi101a"
-        },
-        "name": "0a645a42-fe48-o007-0001-dphr00hi101a",
-        "description": "GestationAge Observation example when both days and weeks are provided in the instance",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o007-0002-cdhr00hi0001"
-        },
-        "name": "0a645a42-fe48-o007-0002-cdhr00hi0001",
-        "description": "GestationAge Observation example when only weeks are provided and days are counted as '0' in the instance",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o008-0001-dphr00hi101a"
-        },
-        "name": "0a645a42-fe48-o008-0001-dphr00hi101a",
-        "description": "Example to indicate if Date of last period is consistent with Ultra Sound",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-edb-consistent-lmp-us"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o000-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o000-0001-cdhr00hi0005",
-        "description": "Newborn Biological Sex and effectiveDateTime",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-biological-sex-at-birth"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o001-0001-cdhr00hi0005",
-        "description": "Example to demonstrate outcome of the check performed around the anatomical feature of the infant skull",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o002-0001-cdhr00hi0005",
-        "description": "Example to demonstrates outcome of the Right and Left Eye check performed on the newborn",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-eyes-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o003-0001-cdhr00hi0005",
-        "description": "Example to demonstrates outcome of the Right and Left Ear check performed on the newborn",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-ears-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o004-0001-cdhr00hi0005",
-        "description": "Example to demonstrate'Mouth Or Palate' Assesment outcome of the baby patient in context",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-mouth-palate-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o005-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o005-0001-cdhr00hi0005",
-        "description": "Example to demonstrate Outcome of the Cardiovascular or heart check assesment of the baby patient in context",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-cardiovascular-heart-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o006-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o006-0001-cdhr00hi0005",
-        "description": "Example to demonstrates outcome of the Right and Left Femoral Pulses check performed on the newborn",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-femoral-pulses-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o007-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o007-0001-cdhr00hi0005",
-        "description": "Example to demonstrate outcome of the Respiratory Rate check performed on the newborn",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-respiratory-rate-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o008-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o008-0001-cdhr00hi0005",
-        "description": "Example to demonstrate Outcome of the Abdomen Check performed on the newborn",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-abdomen-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o009-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o009-0001-cdhr00hi0005",
-        "description": "Example to demonstrate Outcome of the Umbilicus Check (Smell, discharge, hernia) performed on newborn",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-umbilicus-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o010-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o010-0001-cdhr00hi0005",
-        "description": "Example to demonstrate outcome of the Anus check performed on the newborn",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-anus-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o011-0001-cdhr00hi0003"
-        },
-        "name": "0a645a42-fe48-o011-0001-cdhr00hi0003",
-        "description": "Example to represent Baby's Body Height at Discharge",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyheight"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o011-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o011-0001-cdhr00hi0005",
-        "description": "Example to demonstrate outcome of physical examination of Genitalia performed on the newborn",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-genitalia-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o006-0012-cdhr00hi0003"
-        },
-        "name": "0a645a42-fe48-o006-0012-cdhr00hi0003",
-        "description": "Example to represent Baby's Body Weight at Discharge",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-genitalia-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o012-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o012-0001-cdhr00hi0005",
-        "description": "Example to demonstrates left and right testes assesment outcome",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-testes-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o013-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o013-0001-cdhr00hi0005",
-        "description": "Example to demonstrate Outcome of the 'Musculo Skeletal' check performed on the newborn",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o014-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o014-0001-cdhr00hi0005",
-        "description": "Example to demonstrate Outcome of the 'Limbs' check performed on the newborn",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-limbs-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o015-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o015-0001-cdhr00hi0005",
-        "description": "Example to demonstrate Outcome of the 'Spine' check performed on the newborn",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-spine-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o016-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o016-0001-cdhr00hi0005",
-        "description": "Example to demonstrate Outcome of the 'Hips' check performed on the newborn",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hips-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o017-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o017-0001-cdhr00hi0005",
-        "description": "Example to demonstrate Outcome of the 'Skin' check performed on the newborn",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-skin-exam"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o018-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-o018-0001-cdhr00hi0005",
-        "description": "Example to demonstrate Outcome of the 'Neurological' check performed on the newborn",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neurological-exam"
-      },
-      {
-        "reference": {
-          "reference": "Encounter/a01bacd2-ec5c-11ea-b3de-0003ac130004"
-        },
-        "name": "a01bacd2-ec5c-11ea-b3de-0003ac130004",
-        "description": "Newborn hearing screening Encounter detils",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
-      },
-      {
-        "reference": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000"
-        },
-        "name": "a01bacd2-pt5c-11ea-b3de-0242ac110000",
-        "description": "Example of Child Patient profile to represent new born baby or a living child. This example contains IHI and MRN of the Child",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-expectant-mother"
-      },
-      {
-        "reference": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000"
-        },
-        "name": "a01bacd2-pt5c-11ea-b3de-0242ac130000",
-        "description": "Example of Child Patient profile to represent new born baby or a living child. This example contains IHI and MRN of the Child",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
-      },
-      {
-        "reference": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001"
-        },
-        "name": "a01bacd2-pt5c-11ea-b3de-0242ac130001",
-        "description": "Example of Child Patient profile to represent new born baby or a living child. This example contains IHI and MRN of the Child",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
-      },
-      {
-        "reference": {
-          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130002"
-        },
-        "name": "a01bacd2-pt5c-11ea-b3de-0242ac130002",
-        "description": "Example of Child Patient profile to represent new born baby or a living child. This example contains only IHI as the identifier with record status",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
-      },
-      {
-        "reference": {
-          "reference": "Location/l01bacd2-ec5c-11ea-b3de-0003ac130004"
-        },
-        "name": "l01bacd2-ec5c-11ea-b3de-0003ac130004",
-        "description": "Estimated Date of birth assessnent Encounter Location",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Location/l01bacd2-ec5c-11ea-b3de-0005ac130004"
-        },
-        "name": "l01bacd2-ec5c-11ea-b3de-0005ac130004",
-        "description": "Newborn examination Encounter Location",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Location/l01bacd2-ec5c-11ea-b3de-0012ac130004"
-        },
-        "name": "l01bacd2-ec5c-11ea-b3de-0012ac130004",
-        "description": "Newborn hearing screening Encounter Location",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Location/l01bacd2-ec5c-11ea-b3de-0242ac130004"
-        },
-        "name": "l01bacd2-ec5c-11ea-b3de-0242ac130004",
-        "description": "Newborn blood spot screening Encounter Location",
-        "exampleBoolean": true
+        "name": "ncdhc-document-consumer-entered-milestone-example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-consumer-entered-milestone-document"
       },
       {
         "reference": {
           "reference": "Bundle/ncdhc-document-edb-example"
         },
         "name": "ncdhc-document-edb-example",
-        "description": "Estimated Date of Birth FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-edb-document"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/ncdhc-document-fh-rf-consumer-entered-example"
+        },
+        "name": "ncdhc-document-fh-rf-consumer-entered-example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-fh-rf-consumer-entered-document"
       },
       {
         "reference": {
           "reference": "Bundle/ncdhc-document-nb-bloodspot-screen-example"
         },
         "name": "ncdhc-document-nb-bloodspot-screen-example",
-        "description": "Newborn Bloodspot Screen FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-bloodspot-screen-document"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/ncdhc-document-nb-hearing-screen-example"
+        },
+        "name": "ncdhc-document-nb-hearing-screen-example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-hearing-screen-document"
       },
       {
         "reference": {
           "reference": "Bundle/ncdhc-document-newborn-discharge-example"
         },
         "name": "ncdhc-document-newborn-discharge-example",
-        "description": "Newborn Discharge FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-discharge-document"
       },
       {
@@ -1724,207 +1267,223 @@
           "reference": "Bundle/ncdhc-document-newborn-examination-example"
         },
         "name": "ncdhc-document-newborn-examination-example",
-        "description": "Newborn Examination FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-exam-document"
       },
       {
         "reference": {
-          "reference": "Bundle/ncdhc-document-nb-hearing-screen-example"
+          "reference": "Bundle/ncdhc-document-parental-observation-example"
         },
-        "name": "ncdhc-document-nb-hearing-screen-example",
-        "description": "Newborn Hearing Screen FHIR Document Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-newborn-hearing-screen-document"
+        "name": "ncdhc-document-parental-observation-example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-parental-observation-document"
       },
       {
         "reference": {
-          "reference": "Questionnaire/ncdhc-questionnaire-familial-childhood-risk-factor-cdhr00hi0023"
+          "reference": "Bundle/ncdhc-document-preghist-livebirth-example"
         },
-        "name": "ncdhc-questionnaire-familial-childhood-risk-factor-cdhr00hi0023",
-        "description": "Familial Childhood Risk Factor Questionnaire",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-questionnaire-base"
+        "name": "ncdhc-document-preghist-livebirth-example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-pregnancy-history-document"
       },
       {
         "reference": {
-          "reference": "Observation/0a645a42-fe48-o014-0001-cdhr00hi0023"
+          "reference": "Bundle/ncdhc-document-pregnancy-issues-and-plans-example"
         },
-        "name": "0a645a42-fe48-o014-0001-cdhr00hi0023",
-        "description": "Familial Childhood Risk Factor Questionnaire on neonate requiring oxygen for 48 hours or more",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-risk-factors-consumer-entered"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0003"
-        },
-        "name": "0a645a42-fe48-o004-0001-cdhr00hi0003",
-        "description": "Example to demonstrate 'Breast fed' feeding method as applied to the baby patient in context",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-method"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o005-0001-cdhr00hi0003"
-        },
-        "name": "0a645a42-fe48-o005-0001-cdhr00hi0003",
-        "description": "Use of different types of milk  being intaken by infant",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-milk-feeding-status"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o006-0001-cdhr00hi0003"
-        },
-        "name": "0a645a42-fe48-o006-0001-cdhr00hi0003",
-        "description": "Example to demonstrate feeding status for Infant Feeding Method",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-status"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o012-0001-cdhr00hi0003"
-        },
-        "name": "0a645a42-fe48-o012-0001-cdhr00hi0003",
-        "description": "Example to represent Baby's Body Weight at Discharge",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o013-0001-cdhr00hi0003"
-        },
-        "name": "0a645a42-fe48-o013-0001-cdhr00hi0003",
-        "description": "Example to represent Baby's Head Circumference at Discharge",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-head-circumference"
-      },
-      {
-        "reference": {
-          "reference": "Composition/0a645a42-fe48-c007-0001-cdhr00hi0003"
-        },
-        "name": "0a645a42-fe48-c007-0001-cdhr00hi0003",
-        "description": "Newborn Discharge Composition Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-discharge"
-      },
-      {
-        "reference": {
-          "reference": "Encounter/0a645a42-fe48-e008-0001-cdhr00hi0003"
-        },
-        "name": "0a645a42-fe48-e008-0001-cdhr00hi0003",
-        "description": "Newborn discharge assessnent Encounter details",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
-      },
-      {
-        "reference": {
-          "reference": "Encounter/0a645a42-fe48-e020-0001-cdhr00hi0005"
-        },
-        "name": "0a645a42-fe48-e020-0001-cdhr00hi0005",
-        "description": "Newborn discharge assessnent Encounter details",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
-      },
-      {
-        "reference": {
-          "reference": "CarePlan/0a645a42-fe48-cp001-0001-dphr00hi115b"
-        },
-        "name": "0a645a42-fe48-cp001-0001-dphr00hi115b",
-        "description": "Example to demonstrate pregnancy management plans and associated details",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-careplan-pregnancy-management-plan"
-      },
-      {
-        "reference": {
-          "reference": "Composition/0a645a42-fe48-cp002-0001-dphr00hi115b"
-        },
-        "name": "0a645a42-fe48-cp002-0001-dphr00hi115b",
-        "description": "Pregnancy Management Plans Composition Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-preg-management-plans"
-      },
-      {
-        "reference": {
-          "reference": "Encounter/0a645a42-fe48-cp003-0001-dphr00hi115b"
-        },
-        "name": "0a645a42-fe48-cp003-0001-dphr00hi115b",
-        "description": "Pregnancy Management Plans Encounter details",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
-      },
-      {
-        "reference": {
-          "reference": "CareTeam/0a645a42-fe48-ct001-0001-dphr00hi115b"
-        },
-        "name": "0a645a42-fe48-ct001-0001-dphr00hi115b",
-        "description": "Example to demonstrate care Team",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-care-team"
+        "name": "ncdhc-document-pregnancy-issues-and-plans-example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-preg-issues-plan-document"
       },
       {
         "reference": {
           "reference": "Bundle/ncdhc-document-pregnancy-management-plan-example"
         },
         "name": "ncdhc-document-pregnancy-management-plan-example",
-        "description": "Pregnancy Management Plan FHIR Document Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-preg-management-plan-document"
       },
       {
         "reference": {
-          "reference": "Bundle/ncdhc-document-consumer-entered-milestone-example"
+          "reference": "Bundle/ncdhc-document-pregnancy-outcome-example"
         },
-        "name": "ncdhc-document-consumer-entered-milestone-example",
-        "description": "Consumer Entered Milestone FHIR Document Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-consumer-entered-milestone-document"
+        "name": "ncdhc-document-pregnancy-outcome-example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-pregnancy-outcome-document"
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/0a645a42-fe48-cp001-0001-dphr00hi115b"
+        },
+        "name": "0a645a42-fe48-cp001-0001-dphr00hi115b",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-careplan-pregnancy-management-plan"
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/0a645a42-fe48-p001-0001-dphr00hi115a"
+        },
+        "name": "0a645a42-fe48-p001-0001-dphr00hi115a",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-careplan-pregnancy-complication"
+      },
+      {
+        "reference": {
+          "reference": "CareTeam/0a645a42-fe48-ct001-0001-dphr00hi115a"
+        },
+        "name": "0a645a42-fe48-ct001-0001-dphr00hi115a",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-care-team"
+      },
+      {
+        "reference": {
+          "reference": "CareTeam/0a645a42-fe48-ct001-0001-dphr00hi115b"
+        },
+        "name": "0a645a42-fe48-ct001-0001-dphr00hi115b",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-care-team"
+      },
+      {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0012"
+        },
+        "name": "0a645a42-fe48-c001-0001-cdhr00hi0012",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-hearing-screen"
+      },
+      {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0023"
+        },
+        "name": "0a645a42-fe48-c001-0001-cdhr00hi0023",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-fh-rf-consumer"
       },
       {
         "reference": {
           "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0031"
         },
         "name": "0a645a42-fe48-c001-0001-cdhr00hi0031",
-        "description": "Consumer Entered Milestone Composition Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-consumer-entered-milestone"
       },
       {
         "reference": {
-          "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0031"
+          "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0040"
         },
-        "name": "0a645a42-fe48-e001-0001-cdhr00hi0031",
-        "description": "Consumer Entered Milestone Encounter details",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0031"
-        },
-        "name": "0a645a42-fe48-o001-0001-cdhr00hi0031",
-        "description": "Example to demonstrate the Consumer Entered Milestone",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-childhood-milestones"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o001-0002-cdhr00hi0031"
-        },
-        "name": "0a645a42-fe48-o001-0002-cdhr00hi0031",
-        "description": "Example to demonstrate the Consumer Entered Milestone",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-childhood-milestones"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o001-0003-cdhr00hi0031"
-        },
-        "name": "0a645a42-fe48-o001-0003-cdhr00hi0031",
-        "description": "Example to demonstrate the Consumer Entered Milestone",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-childhood-milestones"
-      },
-      {
-        "reference": {
-          "reference": "Composition/0a645a42-fe48-p001-0001-cdhr00hi0048"
-        },
-        "name": "0a645a42-fe48-p001-0001-cdhr00hi0048",
-        "description": "Parental Observation Composition Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-parental-observation"
+        "name": "0a645a42-fe48-c001-0001-cdhr00hi0040",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-child-presented-in-ed"
       },
       {
         "reference": {
           "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0042"
         },
         "name": "0a645a42-fe48-c001-0001-cdhr00hi0042",
-        "description": "Consumer Entered Encounter Composition Example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-consumer-entered-encounter"
+      },
+      {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-c001-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-clinical-observation"
+      },
+      {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0081"
+        },
+        "name": "0a645a42-fe48-c001-0001-cdhr00hi0081",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-bloodspot-screen"
+      },
+      {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c001-0001-dphr00hi0109"
+        },
+        "name": "0a645a42-fe48-c001-0001-dphr00hi0109",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-pregnancy-outcome"
+      },
+      {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c001-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-c001-0001-dphr00hi0135",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-pregnancy-history"
+      },
+      {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c001-0001-dphr00hi101a"
+        },
+        "name": "0a645a42-fe48-c001-0001-dphr00hi101a",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-edb"
+      },
+      {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c001-0001-dphr00hi115a"
+        },
+        "name": "0a645a42-fe48-c001-0001-dphr00hi115a",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-preg-issues-plans"
+      },
+      {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c007-0001-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-c007-0001-cdhr00hi0003",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-discharge"
+      },
+      {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-c019-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-c019-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-nb-examination"
+      },
+      {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-cp002-0001-dphr00hi115b"
+        },
+        "name": "0a645a42-fe48-cp002-0001-dphr00hi115b",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-preg-management-plans"
+      },
+      {
+        "reference": {
+          "reference": "Composition/0a645a42-fe48-p001-0001-cdhr00hi0048"
+        },
+        "name": "0a645a42-fe48-p001-0001-cdhr00hi0048",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-parental-observation"
+      },
+      {
+        "reference": {
+          "reference": "Condition/0a645a42-fe48-p002-0001-dphr00hi115a"
+        },
+        "name": "0a645a42-fe48-p002-0001-dphr00hi115a",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-condition-pregnancy-complication"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-cp003-0001-dphr00hi115b"
+        },
+        "name": "0a645a42-fe48-cp003-0001-dphr00hi115b",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0012"
+        },
+        "name": "0a645a42-fe48-e001-0001-cdhr00hi0012",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0023"
+        },
+        "name": "0a645a42-fe48-e001-0001-cdhr00hi0023",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0031"
+        },
+        "name": "0a645a42-fe48-e001-0001-cdhr00hi0031",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0040"
+        },
+        "name": "0a645a42-fe48-e001-0001-cdhr00hi0040",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
       },
       {
         "reference": {
           "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0042"
         },
         "name": "0a645a42-fe48-e001-0001-cdhr00hi0042",
-        "description": "Consumer Entered Encounter details",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
       },
       {
@@ -1932,135 +1491,41 @@
           "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0048"
         },
         "name": "0a645a42-fe48-e001-0001-cdhr00hi0048",
-        "description": "Parental Observation Encounter details",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
       },
       {
         "reference": {
-          "reference": "Encounter/0a645a42-fe48-e002-0001-cdhr00hi0042"
+          "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0049"
         },
-        "name": "0a645a42-fe48-e002-0001-cdhr00hi0042",
-        "description": "Example to demonstrate the Consumer Entered Encounter",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-consumer-entered"
+        "name": "0a645a42-fe48-e001-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
       },
       {
         "reference": {
-          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0048"
+          "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0081"
         },
-        "name": "0a645a42-fe48-o001-0001-cdhr00hi0048",
-        "description": "Example to represent Baby's Body Weight at Discharge",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0048"
-        },
-        "name": "0a645a42-fe48-o002-0001-cdhr00hi0048",
-        "description": "Example to represent Baby's Body Height at Discharge",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyheight"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0048"
-        },
-        "name": "0a645a42-fe48-o003-0001-cdhr00hi0048",
-        "description": "Example to represent Baby's Head Circumference at Discharge",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-head-circumference"
-      },
-      {
-        "reference": {
-          "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0048"
-        },
-        "name": "0a645a42-fe48-o004-0001-cdhr00hi0048",
-        "description": "Example to represent Baby's BMI",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bmi"
-      },
-      {
-        "reference": {
-          "reference": "Bundle/ncdhc-document-consumer-entered-encounter-example"
-        },
-        "name": "ncdhc-document-consumer-entered-encounter-example",
-        "description": "Consumer Entered Milestone FHIR Document Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-consumer-entered-encounter-document"
-      },
-      {
-        "reference": {
-          "reference": "Bundle/ncdhc-document-parental-observation-example"
-        },
-        "name": "ncdhc-document-parental-observation-example",
-        "description": "Parental Observation FHIR Document Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-parental-observation-document"
-      },
-      {
-        "reference": {
-          "reference": "RelatedPerson/a01bacd2-rpt5c-12ea-b3de-0242ac130002"
-        },
-        "name": "a01bacd2-rpt5c-12ea-b3de-0242ac130002",
-        "description": "Example to demonstrate NCDHC RelatedPerson",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-related-person"
-      },
-      {
-        "reference": {
-          "reference": "RelatedPerson/a01bacd2-rpt5c-11ea-b3de-0242ac130002"
-        },
-        "name": "a01bacd2-rpt5c-11ea-b3de-0242ac130002",
-        "description": "Example to demonstrate NCDHC RelatedPerson",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-related-person"
-      },
-      {
-        "reference": {
-          "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002"
-        },
-        "name": "o01bacd2-or5c-11ea-b3de-0242ac130002",
-        "description": "Example of NCDHC Organisation to represent clinically responsible Organisation",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-organisation"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/p01bacd2-or5c-11ea-b3de-0242ac130002"
-        },
-        "name": "p01bacd2-or5c-11ea-b3de-0242ac130002",
-        "description": "Example of NCDHC Practitioner to represent clinically responsible person",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003"
-        },
-        "name": "p01bacd2-pr5c-11ea-b3de-0242ac130003",
-        "description": "Example of NCDHC PractitionerRole to represent as clinically responsible person",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role"
-      },
-      {
-        "reference": {
-          "reference": "Composition/0a645a42-fe48-c001-0001-dphr00hi0109"
-        },
-        "name": "0a645a42-fe48-c001-0001-dphr00hi0109",
-        "description": "Pregnancy Outcome Composition Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-pregnancy-outcome"
-      },
-      {
-        "reference": {
-          "reference": "Composition/0a645a42-fe48-c001-0001-dphr00hi115a"
-        },
-        "name": "0a645a42-fe48-c001-0001-dphr00hi115a",
-        "description": "Pregnancy Issues And Plans Composition Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-preg-issues-plans"
-      },
-      {
-        "reference": {
-          "reference": "CareTeam/0a645a42-fe48-ct001-0001-dphr00hi115a"
-        },
-        "name": "0a645a42-fe48-ct001-0001-dphr00hi115a",
-        "description": "Example to demonstrate care Team",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-care-team"
+        "name": "0a645a42-fe48-e001-0001-cdhr00hi0081",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
       },
       {
         "reference": {
           "reference": "Encounter/0a645a42-fe48-e001-0001-dphr00hi0109"
         },
         "name": "0a645a42-fe48-e001-0001-dphr00hi0109",
-        "description": "Pregnancy Outcome encounter Example",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e001-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-e001-0001-dphr00hi0135",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e001-0001-dphr00hi101a"
+        },
+        "name": "0a645a42-fe48-e001-0001-dphr00hi101a",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
       },
       {
@@ -2068,135 +1533,391 @@
           "reference": "Encounter/0a645a42-fe48-e001-0001-dphr00hi115a"
         },
         "name": "0a645a42-fe48-e001-0001-dphr00hi115a",
-        "description": "Pregnancy Issues And Plans details",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e002-0001-cdhr00hi0042"
+        },
+        "name": "0a645a42-fe48-e002-0001-cdhr00hi0042",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-consumer-entered"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e008-0001-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-e008-0001-cdhr00hi0003",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/0a645a42-fe48-e020-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-e020-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/a01bacd2-ec5c-11ea-b3de-0003ac130004"
+        },
+        "name": "a01bacd2-ec5c-11ea-b3de-0003ac130004",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
+      },
+      {
+        "reference": {
+          "reference": "Location/l01bacd2-ec5c-11ea-b3de-0003ac130004"
+        },
+        "name": "l01bacd2-ec5c-11ea-b3de-0003ac130004",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Location/l01bacd2-ec5c-11ea-b3de-0005ac130004"
+        },
+        "name": "l01bacd2-ec5c-11ea-b3de-0005ac130004",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Location/l01bacd2-ec5c-11ea-b3de-0012ac130004"
+        },
+        "name": "l01bacd2-ec5c-11ea-b3de-0012ac130004",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Location/l01bacd2-ec5c-11ea-b3de-0242ac130004"
+        },
+        "name": "l01bacd2-ec5c-11ea-b3de-0242ac130004",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/0a645a42-fe48-o009-0001-dphr00hi0135"
+        },
+        "name": "0a645a42-fe48-o009-0001-dphr00hi0135",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-medication-statement-analgesia-use"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o000-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o000-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-biological-sex-at-birth"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o001-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-fontanelles-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0012"
+        },
+        "name": "0a645a42-fe48-o001-0001-cdhr00hi0012",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-hearing-screen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0023"
+        },
+        "name": "0a645a42-fe48-o001-0001-cdhr00hi0023",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-risk-factors-consumer-entered"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0031"
+        },
+        "name": "0a645a42-fe48-o001-0001-cdhr00hi0031",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-childhood-milestones"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0040"
+        },
+        "name": "0a645a42-fe48-o001-0001-cdhr00hi0040",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-complaint-or-issue"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0048"
+        },
+        "name": "0a645a42-fe48-o001-0001-cdhr00hi0048",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o001-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0081"
+        },
+        "name": "0a645a42-fe48-o001-0001-cdhr00hi0081",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-nb-bloodspot-screen"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o001-0001-dphr00hi0109"
         },
         "name": "0a645a42-fe48-o001-0001-dphr00hi0109",
-        "description": "Example to demonstrate record, search ,fetch pregnancy outcome",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-outcome"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0001-dphr00hi101a"
+        },
+        "name": "0a645a42-fe48-o001-0001-dphr00hi101a",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-edb"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0002-cdhr00hi0023"
+        },
+        "name": "0a645a42-fe48-o001-0002-cdhr00hi0023",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-risk-factors-consumer-entered"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0002-cdhr00hi0031"
+        },
+        "name": "0a645a42-fe48-o001-0002-cdhr00hi0031",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-childhood-milestones"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0003-cdhr00hi0023"
+        },
+        "name": "0a645a42-fe48-o001-0003-cdhr00hi0023",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-risk-factors-consumer-entered"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o001-0003-cdhr00hi0031"
+        },
+        "name": "0a645a42-fe48-o001-0003-cdhr00hi0031",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-childhood-milestones"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o002-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-eyes-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0012"
+        },
+        "name": "0a645a42-fe48-o002-0001-cdhr00hi0012",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-audiologist-referral-indication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0040"
+        },
+        "name": "0a645a42-fe48-o002-0001-cdhr00hi0040",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-diognosis"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0048"
+        },
+        "name": "0a645a42-fe48-o002-0001-cdhr00hi0048",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyheight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o002-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyheight"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o002-0001-dphr00hi0109"
         },
         "name": "0a645a42-fe48-o002-0001-dphr00hi0109",
-        "description": "GestationAge Observation example when both days and weeks are provided in the instance",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o002-0001-dphr00hi101a"
+        },
+        "name": "0a645a42-fe48-o002-0001-dphr00hi101a",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-estimated-date-birth-last-period"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o0027-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o0027-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gait-assessment"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o003-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-ears-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0040"
+        },
+        "name": "0a645a42-fe48-o003-0001-cdhr00hi0040",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-comments"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0048"
+        },
+        "name": "0a645a42-fe48-o003-0001-cdhr00hi0048",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-head-circumference"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o003-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-head-circumference"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o003-0001-dphr00hi0109"
         },
         "name": "0a645a42-fe48-o003-0001-dphr00hi0109",
-        "description": "Example to demonstrate record, search and fetch date of fetal loss",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-date-of-fetal-loss"
       },
       {
         "reference": {
-          "reference": "Patient/0a645a42-fe48-p001-0001-dphr00hi0109"
+          "reference": "Observation/0a645a42-fe48-o003-0001-dphr00hi101a"
         },
-        "name": "0a645a42-fe48-p001-0001-dphr00hi0109",
-        "description": "Pregnancy Outcome current baby status Example",
-        "exampleBoolean": true
+        "name": "0a645a42-fe48-o003-0001-dphr00hi101a",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-ultrasound-scan-obstetric"
       },
       {
         "reference": {
-          "reference": "Patient/0a645a42-fe48-p001-0001-dphr00hi0135"
+          "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0003"
         },
-        "name": "0a645a42-fe48-p001-0001-dphr00hi0135",
-        "description": "Pregnancy History livebirth patient Example",
-        "exampleBoolean": true
+        "name": "0a645a42-fe48-o004-0001-cdhr00hi0003",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-method"
       },
       {
         "reference": {
-          "reference": "CarePlan/0a645a42-fe48-p001-0001-dphr00hi115a"
+          "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0005"
         },
-        "name": "0a645a42-fe48-p001-0001-dphr00hi115a",
-        "description": "Example to demonstrate CarePlan profile to record Antenatal Care and associated details",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-careplan-pregnancy-complication"
+        "name": "0a645a42-fe48-o004-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-mouth-palate-exam"
       },
       {
         "reference": {
-          "reference": "Condition/0a645a42-fe48-p002-0001-dphr00hi115a"
+          "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0048"
         },
-        "name": "0a645a42-fe48-p002-0001-dphr00hi115a",
-        "description": "Example to demonstrate Condition profile to record pregnancy complications and associated details",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-condition-pregnancy-complication"
+        "name": "0a645a42-fe48-o004-0001-cdhr00hi0048",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bmi"
       },
       {
         "reference": {
-          "reference": "Bundle/ncdhc-document-pregnancy-outcome-example"
+          "reference": "Observation/0a645a42-fe48-o004-0001-cdhr00hi0049"
         },
-        "name": "ncdhc-document-pregnancy-outcome-example",
-        "description": "Pregnancy Outcome FHIR Document Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-pregnancy-outcome-document"
-      },
-      {
-        "reference": {
-          "reference": "Bundle/ncdhc-document-pregnancy-issues-and-plans-example"
-        },
-        "name": "ncdhc-document-pregnancy-issues-and-plans-example",
-        "description": "Pregnancy Issues And Plans FHIR Document Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-preg-issues-plan-document"
-      },
-      {
-        "reference": {
-          "reference": "Bundle/ncdhc-document-preghist-livebirth-example"
-        },
-        "name": "ncdhc-document-preghist-livebirth-example",
-        "description": "Pregnancy History FHIR Document Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-pregnancy-history-document"
-      },
-      {
-        "reference": {
-          "reference": "Composition/0a645a42-fe48-c001-0001-dphr00hi0135"
-        },
-        "name": "0a645a42-fe48-c001-0001-dphr00hi0135",
-        "description": "Pregnancy History Composition Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-pregnancy-history"
-      },
-      {
-        "reference": {
-          "reference": "Encounter/0a645a42-fe48-e001-0001-dphr00hi0135"
-        },
-        "name": "0a645a42-fe48-e001-0001-dphr00hi0135",
-        "description": "Pregnancy History encounter Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-dphr"
+        "name": "0a645a42-fe48-o004-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bmi"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o004-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o004-0001-dphr00hi0135",
-        "description": "Newborn Biological Sex and effectiveDateTime",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-biological-sex-at-birth"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o004-0001-dphr00hi101a"
+        },
+        "name": "0a645a42-fe48-o004-0001-dphr00hi101a",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-edb-by-clinical-examination"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o005-0001-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-o005-0001-cdhr00hi0003",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-milk-feeding-status"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o005-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o005-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-cardiovascular-heart-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o005-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o005-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-fontanelles-and-sutures-assessment"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o005-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o005-0001-dphr00hi0135",
-        "description": "GestationAge Observation example when both days and weeks are provided in the instance",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o005-0001-dphr00hi101a"
+        },
+        "name": "0a645a42-fe48-o005-0001-dphr00hi101a",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hormonal-contraception-at-conception"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o006-0001-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-o006-0001-cdhr00hi0003",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-status"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o006-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o006-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-femoral-pulses-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o006-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o006-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-eyes-exam"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o006-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o006-0001-dphr00hi0135",
-        "description": "Example of Type Of Labour represented as CodeableConcept with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-labour"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o006-0001-dphr00hi101a"
+        },
+        "name": "0a645a42-fe48-o006-0001-dphr00hi101a",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-breastfeeding-time-conception"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o006-0002-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o006-0002-dphr00hi0135",
-        "description": "Example of Type Of Labour represented as String with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-labour"
       },
       {
@@ -2204,31 +1925,83 @@
           "reference": "Observation/0a645a42-fe48-o006-0003-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o006-0003-dphr00hi0135",
-        "description": "Type Of Labour example with absent reason to represent no Type Of Labour was noted",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-labour"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o006-0012-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-o006-0012-cdhr00hi0003",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o007-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o007-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-respiratory-rate-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o007-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o007-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-eyes-monocularly-tested"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o007-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o007-0001-dphr00hi0135",
-        "description": "Example to demonstrate Observation profile to record, search and fetch duration of labour associated to the patient in context",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-duration-of-labour"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o007-0001-dphr00hi101a"
+        },
+        "name": "0a645a42-fe48-o007-0001-dphr00hi101a",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o007-0002-cdhr00hi0001"
+        },
+        "name": "0a645a42-fe48-o007-0002-cdhr00hi0001",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-gestation-age"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o008-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o008-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-abdomen-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o008-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o008-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-right-eye-visual-acuity"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o008-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o008-0001-dphr00hi0135",
-        "description": "Example of Type Of Birth represented as CodeableConcept with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-birth"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o008-0001-dphr00hi101a"
+        },
+        "name": "0a645a42-fe48-o008-0001-dphr00hi101a",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-edb-consistent-lmp-us"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o008-0002-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o008-0002-dphr00hi0135",
-        "description": "Example of Type Of Birth represented as String with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-birth"
       },
       {
@@ -2236,23 +2009,41 @@
           "reference": "Observation/0a645a42-fe48-o008-0003-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o008-0003-dphr00hi0135",
-        "description": "Type Of Birth example with absent reason to represent no complication was noted",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-type-of-birth"
       },
       {
         "reference": {
-          "reference": "MedicationStatement/0a645a42-fe48-o009-0001-dphr00hi0135"
+          "reference": "Observation/0a645a42-fe48-o009-0001-cdhr00hi0005"
         },
-        "name": "0a645a42-fe48-o009-0001-dphr00hi0135",
-        "description": "Example to demonstrate  profile to record, search and fetch details of analgesia used during labour/delivery for the patient in context.",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-medication-statement-analgesia-use"
+        "name": "0a645a42-fe48-o009-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-umbilicus-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o009-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o009-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-left-eye-visual-acuity"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o010-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o010-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-anus-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o010-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o010-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hearing-check"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o010-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o010-0001-dphr00hi0135",
-        "description": "Example of Perineal Status represented as CodeableConcept with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-perineal-status"
       },
       {
@@ -2260,7 +2051,6 @@
           "reference": "Observation/0a645a42-fe48-o010-0002-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o010-0002-dphr00hi0135",
-        "description": "Example of Perineal Status represented as String with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-perineal-status"
       },
       {
@@ -2268,15 +2058,34 @@
           "reference": "Observation/0a645a42-fe48-o010-0003-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o010-0003-dphr00hi0135",
-        "description": "Perineal Status example with absent reason to represent no complication was noted",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-perineal-status"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o011-0001-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-o011-0001-cdhr00hi0003",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyheight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o011-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o011-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-genitalia-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o011-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o011-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pure-tone-audiometry"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o011-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o011-0001-dphr00hi0135",
-        "description": "Pregnancy Complication example represented as string with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-complication"
       },
       {
@@ -2284,7 +2093,6 @@
           "reference": "Observation/0a645a42-fe48-o011-0002-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o011-0002-dphr00hi0135",
-        "description": "Pregnancy Complication example represented as CodeableConcept with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-complication"
       },
       {
@@ -2292,15 +2100,34 @@
           "reference": "Observation/0a645a42-fe48-o011-0003-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o011-0003-dphr00hi0135",
-        "description": "Pregnancy Complication example with absent reason to represent no complication was noted",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-pregnancy-complication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o012-0001-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-o012-0001-cdhr00hi0003",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o012-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o012-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-testes-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o012-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o012-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-tympanometry"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o012-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o012-0001-dphr00hi0135",
-        "description": "Example of Labour complication represented as CodeableConcept with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-labour-complication"
       },
       {
@@ -2308,7 +2135,6 @@
           "reference": "Observation/0a645a42-fe48-o012-0002-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o012-0002-dphr00hi0135",
-        "description": "Example of Labour complication represented as CodeableConcept with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-labour-complication"
       },
       {
@@ -2316,15 +2142,34 @@
           "reference": "Observation/0a645a42-fe48-o012-0003-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o012-0003-dphr00hi0135",
-        "description": "Labour Complication example with absent reason to represent no complication was noted",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-labour-complication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o013-0001-cdhr00hi0003"
+        },
+        "name": "0a645a42-fe48-o013-0001-cdhr00hi0003",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-head-circumference"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o013-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o013-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o013-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o013-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-ears-exam"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o013-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o013-0001-dphr00hi0135",
-        "description": "Example to demonstrate Postnatal complication represented as CodeableConcept with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-complication"
       },
       {
@@ -2332,7 +2177,6 @@
           "reference": "Observation/0a645a42-fe48-o013-0002-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o013-0002-dphr00hi0135",
-        "description": "Example to demonstrate Postnatal complication represented as String with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-complication"
       },
       {
@@ -2340,15 +2184,34 @@
           "reference": "Observation/0a645a42-fe48-o013-0003-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o013-0003-dphr00hi0135",
-        "description": "Postnatal Complication example with absent reason to represent no complication was noted",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-complication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o014-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o014-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-limbs-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o014-0001-cdhr00hi0023"
+        },
+        "name": "0a645a42-fe48-o014-0001-cdhr00hi0023",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-risk-factors-consumer-entered"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o014-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o014-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-mouth-palate-exam"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o014-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o014-0001-dphr00hi0135",
-        "description": "Example to demonstrate Postnatal Readmission represented as String  with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-readmission"
       },
       {
@@ -2356,47 +2219,104 @@
           "reference": "Observation/0a645a42-fe48-o014-0002-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o014-0002-dphr00hi0135",
-        "description": "Postnatal Readmissions example with absent reason to represent no complication was noted",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-postnatal-readmission"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o015-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o015-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-spine-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o015-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o015-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-cardiovascular-heart-exam"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o015-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o015-0001-dphr00hi0135",
-        "description": "Example to represent child's birthweight",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-vitalsign-bodyweight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o016-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o016-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hips-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o016-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o016-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-femoral-pulses-exam"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o016-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o016-0001-dphr00hi0135",
-        "description": "Child's feeding Status Observation example",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-status"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o017-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o017-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-skin-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o017-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o017-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-respiratory-rate-exam"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o017-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o017-0001-dphr00hi0135",
-        "description": "Newborn Feeding Status and effectiveDateTime",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-feeding-method"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o018-0001-cdhr00hi0005"
+        },
+        "name": "0a645a42-fe48-o018-0001-cdhr00hi0005",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neurological-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o018-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o018-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-abdomen-exam"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o018-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o018-0001-dphr00hi0135",
-        "description": "Example to demonstrate child's milk intake",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-milk-feeding-status"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o019-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o019-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-umbilicus-exam"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o019-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o019-0001-dphr00hi0135",
-        "description": "Example to demonstrate Neonatal complication represented as CodeableConcept with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neonatal-complication"
       },
       {
@@ -2404,7 +2324,6 @@
           "reference": "Observation/0a645a42-fe48-o019-0002-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o019-0002-dphr00hi0135",
-        "description": "Example of Neonatal complication represented as valueString with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neonatal-complication"
       },
       {
@@ -2412,15 +2331,20 @@
           "reference": "Observation/0a645a42-fe48-o019-0003-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o019-0003-dphr00hi0135",
-        "description": "Example when no Neonatal complication was reported",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neonatal-complication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o020-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o020-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-anus-exam"
       },
       {
         "reference": {
           "reference": "Observation/0a645a42-fe48-o020-0001-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o020-0001-dphr00hi0135",
-        "description": "Example to demonstrate Health Issues represented as CodeableConcept with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-health-issues"
       },
       {
@@ -2428,7 +2352,6 @@
           "reference": "Observation/0a645a42-fe48-o020-0002-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o020-0002-dphr00hi0135",
-        "description": "Example of Health Issues represented as valueString with comment",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-health-issues"
       },
       {
@@ -2436,56 +2359,210 @@
           "reference": "Observation/0a645a42-fe48-o020-0003-dphr00hi0135"
         },
         "name": "0a645a42-fe48-o020-0003-dphr00hi0135",
-        "description": "Health Issues example with absent reason to represent no complication was noted",
         "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-health-issues"
       },
       {
         "reference": {
-          "reference": "Bundle/ncdhc-document-child-presented-ed-example"
+          "reference": "Observation/0a645a42-fe48-o021-0001-cdhr00hi0049"
         },
-        "name": "ncdhc-document-child-presented-ed-example",
-        "description": "Child presetnted in Emergency Department FHIR Document Example",
+        "name": "0a645a42-fe48-o021-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-genitalia-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o022-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o022-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-testes-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o023-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o023-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-musculo-skeletal-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o024-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o024-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-limbs-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o025-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o025-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-spine-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o026-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o026-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-hips-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o028-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o028-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-skin-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o029-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o029-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-reflexes-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o030-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o030-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-neurological-exam"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o031-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o031-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-head-shape-assesment"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o032-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o032-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-deworming-assesment"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o033-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o033-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-iron-testing-assesment"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o034-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o034-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-serum-ferritin-measurement"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o035-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o035-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-haemoglobin-level-estimation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o036-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o036-0001-cdhr00hi0049",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-oral-health-assesment"
+      },
+      {
+        "reference": {
+          "reference": "Observation/0a645a42-fe48-o037-0001-cdhr00hi0049"
+        },
+        "name": "0a645a42-fe48-o037-0001-cdhr00hi0049",
         "exampleBoolean": true
       },
       {
         "reference": {
-          "reference": "Composition/0a645a42-fe48-c001-0001-cdhr00hi0040"
+          "reference": "Organization/o01bacd2-or5c-11ea-b3de-0242ac130002"
         },
-        "name": "0a645a42-fe48-c001-0001-cdhr00hi0040",
-        "description": "Child presetnted in Emergency Department Composition Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-composition-document-child-presented-in-ed"
+        "name": "o01bacd2-or5c-11ea-b3de-0242ac130002",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-organisation"
       },
       {
         "reference": {
-          "reference": "Encounter/0a645a42-fe48-e001-0001-cdhr00hi0040"
+          "reference": "Patient/0a645a42-fe48-p001-0001-dphr00hi0109"
         },
-        "name": "0a645a42-fe48-e001-0001-cdhr00hi0040",
-        "description": "Child presetnted in Emergency Department Encounter Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-encounter-cdhr"
+        "name": "0a645a42-fe48-p001-0001-dphr00hi0109",
+        "exampleCanonical": "http://hl7.org.au/fhir/StructureDefinition/au-patient"
       },
       {
         "reference": {
-          "reference": "Observation/0a645a42-fe48-o001-0001-cdhr00hi0040"
+          "reference": "Patient/0a645a42-fe48-p001-0001-dphr00hi0135"
         },
-        "name": "0a645a42-fe48-o001-0001-cdhr00hi0040",
-        "description": "Health Issues presented in ED Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-complaint-or-issue"
+        "name": "0a645a42-fe48-p001-0001-dphr00hi0135",
+        "exampleCanonical": "http://hl7.org.au/fhir/StructureDefinition/au-patient"
       },
       {
         "reference": {
-          "reference": "Observation/0a645a42-fe48-o002-0001-cdhr00hi0040"
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac110000"
         },
-        "name": "0a645a42-fe48-o002-0001-cdhr00hi0040",
-        "description": "Diognosis of Issues presented in ED Exaple",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-diognosis"
+        "name": "a01bacd2-pt5c-11ea-b3de-0242ac110000",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-expectant-mother"
       },
       {
         "reference": {
-          "reference": "Observation/0a645a42-fe48-o003-0001-cdhr00hi0040"
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130000"
         },
-        "name": "0a645a42-fe48-o003-0001-cdhr00hi0040",
-        "description": "Comments on Health Issues presented in ED Example",
-        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-comments"
+        "name": "a01bacd2-pt5c-11ea-b3de-0242ac130000",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
+      },
+      {
+        "reference": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130001"
+        },
+        "name": "a01bacd2-pt5c-11ea-b3de-0242ac130001",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
+      },
+      {
+        "reference": {
+          "reference": "Patient/a01bacd2-pt5c-11ea-b3de-0242ac130002"
+        },
+        "name": "a01bacd2-pt5c-11ea-b3de-0242ac130002",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-patient-child"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/p01bacd2-or5c-11ea-b3de-0242ac130002"
+        },
+        "name": "p01bacd2-or5c-11ea-b3de-0242ac130002",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/p01bacd2-pr5c-11ea-b3de-0242ac130003"
+        },
+        "name": "p01bacd2-pr5c-11ea-b3de-0242ac130003",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-practitioner-role"
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/ncdhc-questionnaire-familial-childhood-risk-factor-cdhr00hi0023"
+        },
+        "name": "ncdhc-questionnaire-familial-childhood-risk-factor-cdhr00hi0023",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-questionnaire-base"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/0a645a42-fe48-qr01-0001-cdhr00hi0023"
+        },
+        "name": "0a645a42-fe48-qr01-0001-cdhr00hi0023",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-questionnaire-response-familial-childhood-risk-factor"
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/a01bacd2-rpt5c-11ea-b3de-0242ac130002"
+        },
+        "name": "a01bacd2-rpt5c-11ea-b3de-0242ac130002",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-related-person"
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/a01bacd2-rpt5c-12ea-b3de-0242ac130002"
+        },
+        "name": "a01bacd2-rpt5c-12ea-b3de-0242ac130002",
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-related-person"
       }
     ],
     "page": {
@@ -2553,7 +2630,7 @@
     "parameter": [
       {
         "code": "copyrightyear",
-        "value": "2020+"
+        "value": "2021+"
       },
       {
         "code": "releaselabel",
