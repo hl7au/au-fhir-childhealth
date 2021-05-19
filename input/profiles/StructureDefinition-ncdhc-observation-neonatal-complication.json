@@ -16,7 +16,7 @@
   "name": "NCDHCObservationNeonatalComplication",
   "title": "NCDHC Observation Neonatal Complications",
   "status": "active",
-  "description": "Observation profile to record, search and fetch Neonatal complication observed",
+  "description": "Observation profile to record neonatal complications",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

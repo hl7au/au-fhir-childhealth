@@ -16,7 +16,7 @@
   "name": "NCDHCObservationPregnancyComplication",
   "title": "NCDHC Observation Pregnancy Complication",
   "status": "active",
-  "description": "Profile to record health issue/s or pregnancy complications affecting this pregnancy, with treating clinician and associated details or treatment plans.",
+  "description": "Observation profile to record  pregnancy complication/s for this pregnancy",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

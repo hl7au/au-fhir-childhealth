@@ -16,7 +16,7 @@
   "name": "NCDHCObservationTypeOfBirth",
   "title": "NCDHC Observation Type Of Birth",
   "status": "active",
-  "description": "Observation profile to record, search and fetch type of birth observed during the birthing procedure",
+  "description": "Observation profile to record the type of birth the woman had, such as vaginal, caesarian, forceps.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

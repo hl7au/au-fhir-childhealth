@@ -16,7 +16,7 @@
   "name": "NCDHCObservationPostnatalReadmission",
   "title": "NCDHC Observation Postnatal Readmissions",
   "status": "active",
-  "description": "Observation profile to record, search and fetch Postnatal Readmission reasons",
+  "description": "Observation profile to record postnatal readmission reasons",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

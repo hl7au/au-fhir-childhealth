@@ -6,7 +6,7 @@
   "name": "NCDHCCompositionClinicalObservation",
   "title": "NCDHC Composition Clinical Observation",
   "status": "active",
-  "description": "Composition based profile to define the structure and narrative content necessary for Clinical Observation FHIR document.",
+  "description": "Composition profile specifying the patient, encounter date and other details for the clinician observations for the child such as vital signs and development checks",
   "purpose": " The document at a minimum carries the following details:\n   * The completion outcome of the following Clinical Observations:\n   * Examination Date and Venue\n   * Details of the person who is clinically responsible for the undetaking of the exam\n   * Attester who has clinically signed off the data\n   * Author of the document \n   * The newborn Patient in context\n   * Vital Sign\n   * Patient Condition Finding\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -773,7 +773,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-devolopement-assessement"
+              "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-observation-development-assessement"
             ]
           }
         ],

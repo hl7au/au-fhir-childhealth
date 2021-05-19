@@ -16,7 +16,7 @@
   "name": "NCDHCObservationPregnancyOutcome",
   "title": "NCDHC Observation Pregnancy Outcome",
   "status": "active",
-  "description": "Observation profile to record, search and fetch pregnancy outcome",
+  "description": "Observation profile to record the outcome of the current pregnancy, such as livebirth",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

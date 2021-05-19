@@ -16,7 +16,7 @@
   "name": "NCDHCObservationLabourComplication",
   "title": "NCDHC Observation Labour Complications",
   "status": "active",
-  "description": "Observation profile to record, search and fetch labour complication observed",
+  "description": "Observation profile to record labour complications",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

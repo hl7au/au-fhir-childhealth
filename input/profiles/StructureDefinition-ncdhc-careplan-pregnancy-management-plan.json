@@ -16,7 +16,7 @@
   "name": "NCDHCCarePlanPregnancyManagementPlan",
   "title": "NCDHC CarePlan Pregnancy Management Plan",
   "status": "active",
-  "description": "CarePlan profile to record pregnancy management plans and associated details",
+  "description": "CarePlan profile to record the type of pregnancy care plan being undertaken such as Antenatal plan, birth plan and post natal management plan",
   "purpose": "\n The following details associated to the expectant mother in context are recorded:\n   * Antenatal management plan\n   * Birth Management Plan\n   * Postnatal management plan\n   * Postnatal discharge management plan\n   * Neonatal care plan\n   * Next Pregnancy Management Plan \n   * Date of plan\n   * Summary of considerations for this Plan\n   * Expectant Mother's agreement to the plan\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

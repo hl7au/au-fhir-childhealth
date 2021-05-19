@@ -16,7 +16,7 @@
   "name": "NCDHCObservationComplaintOrIssue",
   "title": "NCDHC Observation Presenting Complaint Or Issue",
   "status": "active",
-  "description": "Observation profile to record The health problem or issue exeperienced by the patient resulting in their attendence to emergency department",
+  "description": "Observation profile to record the presenting complaint, or reason for presenting to the Emergency Department",
   "purpose": "\n The following details associated to the child are recorded:\n   *Presenting Issue\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

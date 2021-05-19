@@ -6,7 +6,7 @@
   "name": "NCDHCCompositionChildPresentedInED",
   "title": "NCDHC Composition Child Presented ED",
   "status": "active",
-  "description": "Composition based profile to define the structure and narrative content of FHIR document pertaining to details on Child Presented ED",
+  "description": "Composition profile specifying the patient, encounter date and other details for any presentations to the Emergency Department by the child",
   "purpose": "The document at a minimum carries details on the following areas:\n\n   * Presenting Complaint or Issue \n   * Diagnosis\n   * Comments \n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

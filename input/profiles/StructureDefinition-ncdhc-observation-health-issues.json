@@ -16,7 +16,7 @@
   "name": "NCDHCObservationHealthIssues",
   "title": "NCDHC Observation Health Issues",
   "status": "active",
-  "description": "Observation profile to record, search and fetch health issues observed",
+  "description": "Observation profile to record  issues of the child of the woman",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

@@ -16,7 +16,7 @@
   "name": "NCDHCObservationDateOfFetalLoss",
   "title": "NCDHC Observation Date of fetal loss",
   "status": "active",
-  "description": "Observation profile to record, search and fetch date of fetal loss",
+  "description": "Observation profile to record the date of fetal loss, if applicable",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

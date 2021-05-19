@@ -6,7 +6,7 @@
   "name": "NCDHCMedicationStatementAnalgesiaUse",
   "title": "NCDHC MedicationStatement Analgesia Use",
   "status": "active",
-  "description": "Observation profile to record, search and fetch details of analgesia used during labour/delivery for the patient in context.",
+  "description": "Observation profile to record the details of analgesia used during labour/delivery, such as  epidural, nitrous oxide",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

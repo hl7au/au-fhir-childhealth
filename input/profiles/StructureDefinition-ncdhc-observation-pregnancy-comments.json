@@ -16,7 +16,7 @@
   "name": "NCDHCObservationPregnancyComments",
   "title": "NCDHC Observation Pregnancy Comments",
   "status": "active",
-  "description": "Observation profile to record, search and fetch Pregnancy Comments",
+  "description": "Observation profile to record comments about the pregnancy of the woman",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

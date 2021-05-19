@@ -16,7 +16,7 @@
   "name": "NCDHCObservationComments",
   "title": "NCDHC Observation Comments",
   "status": "active",
-  "description": "Observation profile to record Additional comments about the encounter",
+  "description": "Observation profile to record additional comments about the patient or encounter",
   "purpose": "\n The following details associated to the newborn  are recorded:\n   *Comments\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

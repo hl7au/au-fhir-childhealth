@@ -16,7 +16,7 @@
   "name": "NCDHCObservationTypeOfLabour",
   "title": "NCDHC Observation TypeOfLabour",
   "status": "active",
-  "description": "Observation profile to record, search and fetch type of labour observed during the Labouring procedure",
+  "description": "Observation profile to record the type of   labour the woman had, such as spontaneous or induced.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

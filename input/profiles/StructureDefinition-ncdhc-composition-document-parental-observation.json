@@ -6,7 +6,7 @@
   "name": "NCDHCCompositionParentalObservation",
   "title": "NCDHC Composition Parental Observation",
   "status": "active",
-  "description": "Composition based profile to define the structure and narrative content necessary for Parental Observation",
+  "description": "Composition profile specifying patient and entry details for recording growth observations for the child, as entered by the parent/carer",
   "purpose": "The document at a minimum carries the following details:\n   * Weight Value\n   * Length/Height Value\n   * Head Circumference Value\n   * BMI Value\n   * Date when observation was recorded\n   * details about who undertook the observation (Peadiatrician, Mother, GP, Midwife)\n   * Attester who has signed off the data\n   * Author of the document \n\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

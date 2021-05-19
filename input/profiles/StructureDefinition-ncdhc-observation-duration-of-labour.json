@@ -16,7 +16,7 @@
   "name": "NCDHCObservationDurationOfLabour",
   "title": "NCDHC Observation Duration of labour",
   "status": "active",
-  "description": "Observation profile to record, search and fetch duration of labour associated to the patient in context.",
+  "description": "Observation profile to record the duration of labour in hours and minutes",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

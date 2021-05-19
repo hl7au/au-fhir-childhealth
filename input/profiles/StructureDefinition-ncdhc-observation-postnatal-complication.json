@@ -16,7 +16,7 @@
   "name": "NCDHCObservationPostnatalComplication",
   "title": "NCDHC Observation Postnatal Complications",
   "status": "active",
-  "description": "Observation profile to record, search and fetch Postnatal complication observed",
+  "description": "Observation profile to record postnatal complications",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

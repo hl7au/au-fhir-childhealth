@@ -16,7 +16,7 @@
   "name": "NCDHCObservationParity",
   "title": "NCDHC Observation Parity",
   "status": "active",
-  "description": "Observation profile to record, search and fetch number of births (carried to viable gestation age) associated to the expectant mother in context.",
+  "description": "Observation profile to record the number of births (carried to viable gestation age) the woman has had",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

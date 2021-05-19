@@ -16,7 +16,7 @@
   "name": "NCDHCObservationPerinealStatus",
   "title": "NCDHC Observation Perineal Status",
   "status": "active",
-  "description": "Observation profile to record, search and fetch Perineal Status observed",
+  "description": "Observation profile to record the perineal status of the woman after birth",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

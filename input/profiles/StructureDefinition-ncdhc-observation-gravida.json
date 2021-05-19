@@ -16,7 +16,7 @@
   "name": "NCDHCObservationGravida",
   "title": "NCDHC Observation Gravida",
   "status": "active",
-  "description": "Observation profile to record, search and fetch Total number of pregnancies associated to the expectant mother in context.",
+  "description": "Observation profile to record the number of pregnancies the woman has had",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

@@ -6,7 +6,7 @@
   "name": "NCDHCCompositionPregnancyHistory",
   "title": "NCDHC Composition Woman's Pregnancy History",
   "status": "active",
-  "description": "Composition based profile to define the structure and narrative content necessary for Woman's Pregnancy History FHIR document.",
+  "description": "Composition profile specifying patient and entry details for recording the woman's pregancy history details.",
   "purpose": " The document at a minimum carries the following details:\n   * Pregnancy History\n   * History of Live Birth\n   * History of Stillbirth\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
