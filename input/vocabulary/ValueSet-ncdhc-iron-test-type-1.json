@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NCDHCValueSetIronTestType",
+  "id": "ncdhc-iron-test-type-1",
+  "title": "NCDHC Iron Test Type ValueSet",
+  "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Iron Test Type.",
+  "version": "current",
+  "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-iron-test-type-1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "269821003",
+            "display": " Serum ferritin measurement"
+          },
+          {
+            "code": "271026005",
+            "display": "Haemoglobin level estimation"
+          }
+        ]
+      }
+    ]
+  }
+}

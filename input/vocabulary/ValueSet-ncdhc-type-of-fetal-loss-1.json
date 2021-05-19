@@ -4,7 +4,7 @@
   "name": "NCDHCValueSetTypeOfFetalLoss",
   "id": "ncdhc-type-of-fetal-loss-1",
   "title": "NCDHC Type Of Fetal Loss ValueSet",
-  "description": "National Children's Digital Health Collaborative - Values to represent different types of fetal loss",
+  "description": "Observation profile to record the type of fetal loss experienced by the woman",
   "version": "current",
   "url": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-type-of-fetal-loss-1",
   "compose": {
