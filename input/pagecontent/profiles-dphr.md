@@ -16,5 +16,5 @@ The following list of profiles are being used in the DPHR (Digital Pregnancy Hea
 * [Estimated Date of Birth (EDB)](StructureDefinition-ncdhc-bundle-edb-document.html) - Health interaction recording the calculated estimated date of birth (EDB), menstrual cycle information, ultrasound confirmation of EDB as well as hormonal contraception and breastfeeding status at time of conception.
 * [Pregnancy Management Plan](StructureDefinition-ncdhc-bundle-preg-management-plan-document.html) - Health interaction recording any standard care plans or management plan, and associated details for the pregnant mother.
 * [Pregnancy Complication and Plan](StructureDefinition-ncdhc-bundle-preg-issues-plan-document.html) - Health interaction recording health issues and pregnancy complications affecting this pregnancy,  with associated details or plans.
-* [Pregnancy Outcome](StructureDefinition-ncdhc-bundle-pregnancy-outcome-document.html) - Health interation to record current pregnancy outcome and associated details.
+* [Pregnancy Outcome](StructureDefinition-ncdhc-bundle-pregnancy-outcome-document.html) - Health interaction to record current pregnancy outcome and associated details.
 * [Woman's Pregnancy History](StructureDefinition-ncdhc-bundle-pregnancy-history-document.html) - HHealth interaction recording the woman's pregnancy history details.
