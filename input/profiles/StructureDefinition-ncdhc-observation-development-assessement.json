@@ -16,7 +16,7 @@
   "name": "NCDHCObservationDevolopementAssesment",
   "title": "NCDHC Observation Devolopement Assesment",
   "status": "active",
-  "description": "Observation profile to record Outcome of the child's developmental assessement ",
+  "description": "Observation profile to record the outcome of an assessment such as  normal, or if a referral is needed or the patient requires follow-up.",
   "purpose": "\n The following details associated to the newborn  are recorded:\n   *Development Outcome\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

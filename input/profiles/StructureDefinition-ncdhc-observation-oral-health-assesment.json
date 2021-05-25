@@ -16,7 +16,7 @@
   "name": "NCDHCObservationOralHealthAssesment",
   "title": "NCDHC Observation Oral Health Assesment",
   "status": "active",
-  "description": "Observation profile to record Outcome of Oral health check",
+  "description": "Observation profile to record the outcome of an oral health assessment for a child",
   "purpose": "\n The following details associated to the newborn  are recorded:\n   *Oral Health Outcome\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

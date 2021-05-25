@@ -16,7 +16,7 @@
   "name": "NCDHCObservationEyesMonocularlyTested",
   "title": "NCDHC Observation Eyes Monocularly Tested",
   "status": "active",
-  "description": "Observation profile to record Eye test conducted to determine child's vision",
+  "description": "Observation profile to record the results of a visual acuity test",
   "purpose": "\n The following details associated to the infant  are recorded:\n   *Eyes (Vision Tested Monocularly) \n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

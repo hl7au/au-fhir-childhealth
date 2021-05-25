@@ -16,7 +16,7 @@
   "name": "NCDHCObservationGaitAssesment",
   "title": "NCDHC Observation Gait Assesment",
   "status": "active",
-  "description": "Observation profile to record Outcome of the child's gait assessement performed on the child",
+  "description": "Observation profile to record the outcome of a gait assessment for the child",
   "purpose": "\n The following details associated to the child are recorded:\n   *Gait Outcome\n\n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [

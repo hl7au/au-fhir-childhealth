@@ -16,7 +16,7 @@
   "name": "NCDHCObservationNeurologicalExam",
   "title": "NCDHC Observation Neurological Examination",
   "status": "active",
-  "description": "Observation profile to record Outcome of the Outcome of the Neurological Check (Physical examination checking the involuntary movements or actions to determine the wellbeing of the newborns brain and nervous system) performed on the newborn",
+  "description": "Observation profile to record the results of a physical neurological assessment on a child",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

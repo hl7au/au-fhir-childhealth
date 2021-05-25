@@ -16,7 +16,7 @@
   "name": "NCDHCObservationHeadShapeAssesment",
   "title": "NCDHC Observation Head Shape Assesment",
   "status": "active",
-  "description": "Observation profile to record Outcome of the child's head shape assessment",
+  "description": "Observation profile to record the outcome of assessment of the shape of the child's head",
   "purpose": "\n The following details associated to the newborn  are recorded:\n   *Head Shape Outcome \n\nImplementers conforming to the NCDHC Implementation Guide, must follow the “mustSupport” guidelines as provided in the guidance page",
   "fhirVersion": "4.0.1",
   "mapping": [
