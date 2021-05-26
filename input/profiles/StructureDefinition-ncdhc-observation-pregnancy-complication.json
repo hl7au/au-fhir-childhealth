@@ -176,7 +176,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/valueset-ncdhc-pregnancy-complications-2"
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-generic-problem-diagnostic-reference-set-1"
         }
       },
       {

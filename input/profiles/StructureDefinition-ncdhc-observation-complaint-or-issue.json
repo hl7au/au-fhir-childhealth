@@ -185,7 +185,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/ValueSet/ncdhc-child-complaint-issue-1"
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/ncdhc-presenting-complaint-1"
         }
       },
       {

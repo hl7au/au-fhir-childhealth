@@ -28,7 +28,7 @@
           "coding": [
             {
               "code": "FHRFCONSENTD",
-              "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-type-2",
+              "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-type-1",
 			  "display": "Family History and Risk Factors Consumer Entered"
             }
           ]
