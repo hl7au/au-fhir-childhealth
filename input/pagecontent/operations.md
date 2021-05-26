@@ -1,3 +1,0 @@
-<!-- operations.md {% comment %}
-
-{% endcomment %} -->
