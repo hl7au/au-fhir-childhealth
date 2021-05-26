@@ -1087,22 +1087,7 @@
         "description": "This profile defines a related person structure that localises core concepts, including identifiers and terminology",
         "exampleBoolean": false
       },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-child-complaint-issue-1"
-        },
-        "name": "NCDHC ValueSet Child Complaint or Issue",
-        "description": "National Digital Health Collaborative - Value set to determine the health problem or issue exeperienced by the patient resulting in their attendence to emergency department",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-encounter-service-type-1"
-        },
-        "name": "NCDHC Encounter Service Type ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent Encounter Service Type",
-        "exampleBoolean": false
-      },
+      
       {
         "reference": {
           "reference": "ValueSet/ncdhc-familial-risk-factor-1"
@@ -1111,92 +1096,13 @@
         "description": "National Children's Digital Health Collaborative - Values to represent Familial Risk Factor",
         "exampleBoolean": false
       },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-iron-test-type-1"
-        },
-        "name": "NCDHC Iron Test Type ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent what type of NCDHC ValueSet Iron Test Type.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-labour-complications-1"
-        },
-        "name": "NCDHC Labour Complications ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent Labour Complications",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-neonatal-complications-1"
-        },
-        "name": "NCDHC neonatal Complications ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent neonatal Complications",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-observation-data-absent-reason-1"
-        },
-        "name": "NCDHC Observation DataAbsentReason ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent what type of Observation Data Absent Reasons are applicable when the Observation instance doesn't contain any value",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-postnatal-complications-1"
-        },
-        "name": "NCDHC Postnatal Complications ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent Postnatal Complications",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-pregnancy-complications-1"
-        },
-        "name": "NCDHC ValueSet Pregnancy Complication",
-        "description": "National Digital Health Collaborative - Value set to determine what type of pregnancy complication/s occurred during the birthing process",
-        "exampleBoolean": false
-      },
+      
       {
         "reference": {
           "reference": "ValueSet/ncdhc-risk-factor-1"
         },
         "name": "NCDHC Risk Factor ValueSet",
         "description": "National Children's Digital Health Collaborative - Values to represent Familial Risk Factor",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-type-of-birth-1"
-        },
-        "name": "NCDHC Type Of Birth ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent different types of birth",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-type-of-fetal-loss-1"
-        },
-        "name": "NCDHC Type Of Fetal Loss ValueSet",
-        "description": "Observation profile to record the type of fetal loss experienced by the woman",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-type-of-labour-1"
-        },
-        "name": "NCDHC Type Of Labour ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent different types of Labour",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncdhc-health-issues-1"
-        },
-        "name": "NCDHC health issues ValueSet",
-        "description": "National Children's Digital Health Collaborative - Values to represent health issues",
         "exampleBoolean": false
       },
       {
@@ -2341,7 +2247,7 @@
         },
         "name": "ncdhc-document-child-presented-ed-example",
         "description": "Child presetnted in Emergency Department FHIR Document Example",
-        "exampleBoolean": true
+        "exampleCanonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/StructureDefinition/ncdhc-bundle-child-presented-in-ed-document"
       },
       {
         "reference": {
