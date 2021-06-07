@@ -1,14 +1,14 @@
 {
   "package-id": "hl7.fhir.au.ncdhc",
   "canonical": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth",
-  "title": "NCDHC FHIR R4 Implementation Guide",
-  "introduction": "NCDHC Implementation guide using FHIR R4",
+  "title": "NCDHC FHIR Implementation Guide",
+  "introduction": "NCDHC Implementation guide using FHIR",
   "list": [
     {
       "version": "current",
       "date": "2021-06-30",
-      "desc": "Draft",
-      "path": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth",
+      "desc": "STU1",
+      "path": "/branches/au-fhir-ch-r4",
       "status": "ci-build",
       "sequence": "STU1",
       "fhirversion": "4.0.1",
@@ -17,21 +17,11 @@
     {
       "version": "1.0.0",
       "date": "2020-06-30",
-      "desc": "Draft",
-      "path": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/stu3",
+      "desc": "STU2",
+      "path": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth",
       "status": "ci-build",
-      "sequence": "STU1",
+      "sequence": "STU2",
       "fhirversion": "3.0.2",
-      "current": true
-    },
-    {
-      "version": "2.0.0",
-      "date": "2021-06-30",
-      "desc": "Draft",
-      "path": "http://build.fhir.org/ig/hl7au/au-fhir-childhealth/r4",
-      "status": "ci-build",
-      "sequence": "STU1",
-      "fhirversion": "4.0.1",
       "current": true
     }
   ]
