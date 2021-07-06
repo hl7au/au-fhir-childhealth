@@ -11,7 +11,7 @@
 	  "coding": [
 		{
 		  "code": "NBEXAM",
-		  "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-type-1",
+		  "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-type-2",
 		  "display": "Newborn Examination"
 		}
 	  ]

@@ -28,7 +28,7 @@
           "coding": [
             {
               "code": "PARENTOBS",
-              "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-type-1",
+              "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-type-2",
 			  "display": "Parental Observation"
             }
           ]
@@ -322,7 +322,7 @@
         "valueQuantity": {
           "code": "cm",
           "system": "http://unitsofmeasure.org",
-          "value": 220.1,
+          "value": 166.1,
           "unit": "cm"
         },
         "status": "final",

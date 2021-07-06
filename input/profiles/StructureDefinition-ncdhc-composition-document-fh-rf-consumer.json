@@ -63,7 +63,7 @@
         "path": "Composition.type.coding",
         "patternCoding": {
           "code": "FHRFCONSENTD",
-          "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-type-1"
+          "system": "https://healthterminologies.gov.au/fhir/CodeSystem/ncdhc-hi-type-2"
         }
       },
       {
