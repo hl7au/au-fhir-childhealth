@@ -1,7 +1,0 @@
-{
-  "resourceType": "RelatedPerson",
-  "id": "ncdhc-relatedperson-registration-authrep-example",
-  "patient": {
-    "reference": "Patient/patient-baby-example"
-  }
-}
