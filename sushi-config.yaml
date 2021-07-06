@@ -1,0 +1,43 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: hl7.fhir.au.ncdhc
+canonical: http://build.fhir.org/ig/hl7au/au-fhir-childhealth
+name: ch-fhir-sushi-wip
+status: draft
+version: current
+fhirVersion: 4.0.1
+publisher:
+  name: National Children’s Digital Health Collaborative
+  url: https://conversation.digitalhealth.gov.au/childrens-collaborative
+  email: EHNSW-ChildCollaborative@health.nsw.gov.au
+copyright: Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/
+description: NCDHC Implementation guide using FHIR R4
+jurisdiction: urn:iso:std:iso:3166#AU
+dependencies:
+  hl7.fhir.au.base: current
+parameters:
+  show-inherited-invariants: true
+  apply-copyright: true
+  apply-jurisdiction: true
+  apply-publisher: true
+  apply-version: true 
+copyrightYear: 2020+
+releaseLabel: ci-build
+
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Home: introduction.html
+  Guidance: guidance.html
+  CDHR Profiles: profiles-cdhr.html
+  DPHR Profiles: profiles-dphr.html
+  Artefacts Summary: artifacts.html
+  Extensions: extensions.html
+  Terminology: terminology.html
+  Operations: operations.html
+  CapabilityStatement: capstatements.html
+  Downloads: downloads.html
