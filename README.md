@@ -1,2 +1,2 @@
 # au-fhir-childhealth
-FHIR profiles for National Children's Digital Health Collaborative (NCDHC)
+FHIR STU3 profiles for National Children's Digital Health Collaborative (NCDHC)
