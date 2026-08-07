@@ -1,0 +1,2876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Control file for the IG Publisher. FHIR STU3 (3.0.2) content, R4-format IG resource. -->
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.au.ncdhc"/>
+  <url value="http://hl7.org.au/fhir/ch/v1/ImplementationGuide/hl7.fhir.au.ncdhc"/>
+  <version value="1.0.0"/>
+  <name value="AustralianNationalChildDigitalHealthImplementationGuide"/>
+  <title value="Australian National Child Digital Health Implementation Guide"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="National Children&apos;s Digital Health Collaborative (NCDHC)"/>
+  <contact>
+    <name value="HL7 Australia Child Digital Health Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://confluence.hl7australia.com/display/CHWG/Child+Health+Working+Group"/>
+    </telecom>
+  </contact>
+  <description value="Guidance on the implementation of child health related content using FHIR in an Australian usage context."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="AU"/>
+      <display value="Australia"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.au.ncdhc"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="3.0.2"/>
+  <dependsOn>
+    <uri value="http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.base"/>
+    <packageId value="hl7.fhir.au.base"/>
+    <version value="1.1.1"/>
+  </dependsOn>
+  <definition>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-bodyweight"/>
+      </reference>
+      <name value="AU Body Weight"/>
+      <description value="This profile defines a body weight information structure for use in an Australian context that tightens the BodyWeightCode slice, aligning to the proposed [R4 Observation Body Weight](http://build.fhir.org/bodyweight.html) profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ncdhc-consent-category-1"/>
+      </reference>
+      <name value="NCDHC Consent Category"/>
+      <description value="National Children Digital Health Collaborative - Consent Category - these will represent the consent status applicable to the creation and operation of the Child Digital Health Record and Digital Pregnancy Health Record initiatives for the National Digital Health Collaborative."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ncdhc-document-action-type-1"/>
+      </reference>
+      <name value="NCDHC Document Action Type Codes"/>
+      <description value="National Children's Digital Health Collaborative - Codes to represent the display values for the observation interpretation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ncdhc-document-class-1"/>
+      </reference>
+      <name value="NCDHC Document Class"/>
+      <description value="Observation Interpretation Class"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ncdhc-hi-type-1"/>
+      </reference>
+      <name value="NCDHC Health Interaction Type"/>
+      <description value="National Children's Digital Health Collaborative - Health Interactions which are recorded to capture the category of the event. In this instance the specific Health Interaction name will be derived."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ncdhc-observation-completion-status-display-1"/>
+      </reference>
+      <name value="NCDHC Observation Completion Status Display"/>
+      <description value="National Children's Digital Health Collaborative - Codes to represent if the observation/check is completed or not."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ncdhc-observation-interpretation-display-1"/>
+      </reference>
+      <name value="NCDHC Observation Interpretation Display Type"/>
+      <description value="National Children's Digital Health Collaborative - Codes to represent the display values for the observation interpretation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ncdhc-security-role-type-1"/>
+      </reference>
+      <name value="NCDHC Role Type"/>
+      <description value="NCDHC Role Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OperationDefinition/ncdhc-composition-view-document"/>
+      </reference>
+      <name value="NCDHC OperationDefination $view-document"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OperationDefinition/ncdhc-document-update"/>
+      </reference>
+      <name value="NCDHC OperationDefination $document-update"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OperationDefinition/ncdhc-patient-access"/>
+      </reference>
+      <name value="NCDHC OperationDefination $access"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-composition"/>
+      </reference>
+      <name value="AU Base Composition"/>
+      <description value="Australian realm Base Composition profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-antenatal-visit"/>
+      </reference>
+      <name value="NCDHC Antenatal Visit Composition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-base"/>
+      </reference>
+      <name value="NCDHC Base Composition"/>
+      <description value="This profile is used to represent NCDHC Base Composition profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-estimated-date-birth"/>
+      </reference>
+      <name value="NCDHC Estimated Date of Birth Composition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-rep-registration"/>
+      </reference>
+      <name value="NCDHC Rep Registration Composition"/>
+      <description value="A FHIR document to allow registration of representative."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-antenatal-visit"/>
+      </reference>
+      <name value="NCDHC View Antenatal Visits Composition"/>
+      <description value="Enables to view pregnancy check-up information recorded by health care provider."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-antenatal-visits-list-summary"/>
+      </reference>
+      <name value="NCDHC NCDHC Antenatal List Of Visits Composition"/>
+      <description value="To view a list of antenatal visits as shared by clinical providers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-base"/>
+      </reference>
+      <name value="NCDHC Composition View Base"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-consent"/>
+      </reference>
+      <name value="NCDHC Consent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-documentreference-clinical-notes"/>
+      </reference>
+      <name value="NCDHC Antenatal Visit Progress Notes DocumentReference"/>
+      <description value="We are leveraging the concept from https://build.fhir.org/ig/HL7/US-Core-R4/clinical-notes-guidance.html#fhir-resources-to-exchange-clinical-notes to represent DocumentReference as Clinical Notes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-dphr-encounter"/>
+      </reference>
+      <name value="NCDHC DPHR Encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-encounter"/>
+      </reference>
+      <name value="NCDHC Encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-base"/>
+      </reference>
+      <name value="NCDHC Observation Base"/>
+      <description value="Base profile for NCDHC Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-bi-alcohol-intake"/>
+      </reference>
+      <name value="NCDHC Brief Intervention Alcohol Observation"/>
+      <description value="Brief Intervention - Alcohol"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-bi-other"/>
+      </reference>
+      <name value="NCDHC Brief Intervention Other Observation"/>
+      <description value="Brief Intervention - Other"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-bi-tobacco-usage"/>
+      </reference>
+      <name value="NCDHC Brief Intervention Smoking Observation"/>
+      <description value="Brief Intervention - Smoking"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-bmi"/>
+      </reference>
+      <name value="NCDHC BMI Observation"/>
+      <description value="BMI"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-bodyheight"/>
+      </reference>
+      <name value="NCDHC Body Height Observation"/>
+      <description value="Height of baby recorded at birth or body weight recorded during assessment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-bodyweight"/>
+      </reference>
+      <name value="NCDHC Body Weight Observation"/>
+      <description value="Weight of baby recorded at birth or body weight recored during assessment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-bp"/>
+      </reference>
+      <name value="NCDHC Blood Pressure Observation"/>
+      <description value="The pressure of blood measured by systolic (top) and diastolic (bottom) valus using SNOMED Code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-breastfeeding-education"/>
+      </reference>
+      <name value="NCDHC Breastfeeding Education Observation"/>
+      <description value="Observation of the provision of education about breastfeeding."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-breastfeeding-time-conception"/>
+      </reference>
+      <name value="NCDHC Breastfeeding at Time of Conception Observation"/>
+      <description value="NCDHC Breastfeeding at Time of Conception Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-edb-by-clinical-examination"/>
+      </reference>
+      <name value="NCDHC EDB by Clinical Examination Observation"/>
+      <description value="NCDHC EDB by Clinical Examination Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-edb-consistent-lmp-us"/>
+      </reference>
+      <name value="NCDHC EDB Consistent between Last Menstrual Period and antenatal Ultrasound Scan Observation"/>
+      <description value="NCDHC Estimated Date of Birth consistent between Last Menstrual Period and Antenatal Ultrasound Scan Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-emotional-health-and-wellbeing"/>
+      </reference>
+      <name value="NCDHC Emotional Health and Wellbeing Observation"/>
+      <description value="Observation to note issues affecting the mental, emotional state, (e.g. stress, anxiety, depression emotional or psychiatric issues)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-estimated-date-birth-last-period"/>
+      </reference>
+      <name value="NCDHC Estimated Date of Birth from Last Period Observation"/>
+      <description value="NCDHC Estimated Date of Birth from Last Period Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-estimated-date-birth"/>
+      </reference>
+      <name value="NCDHC Estimated Date of Birth Observation"/>
+      <description value="NCDHC Estimated Date of Birth Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-estimated-gestation"/>
+      </reference>
+      <name value="NCDHC Estimated Gestation Observation"/>
+      <description value="Gestational age in weeks and days (usually equivalent to length of pregnancy)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-fetal-gestational-age-at-ultrasound"/>
+      </reference>
+      <name value="NCDHC Fetal Gestational Age at Ultrasound Observation"/>
+      <description value="NCDHC Fetal Gestational Age at Ultrasound Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-fetal-movement"/>
+      </reference>
+      <name value="NCDHC Fetal Movements (FM) observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-fetus-arrangement"/>
+      </reference>
+      <name value="NCDHC Arrangement Of Fetus Observation"/>
+      <description value="The presentation, position or lie of the fetus"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-fetus-liquor"/>
+      </reference>
+      <name value="NCDHC Liquor of Fetus Observation"/>
+      <description value="liquour is the amniotic fluid, the protective liquid contained by the amniotic sac of a gravid amniote"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-head-engagement"/>
+      </reference>
+      <name value="NCDHC Head Engagement Observation"/>
+      <description value="Observation of the Engagement of head"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-headcircum"/>
+      </reference>
+      <name value="NCDHC Head Circumference Observation"/>
+      <description value="NCDHC Head Circumference Observation Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-heart-rate"/>
+      </reference>
+      <name value="NCDHC Fetal Heart Rate (FHR) Observation"/>
+      <description value="A normal fetal heart rate (FHR), varies during gestation, increasing to around 170 bpm at 10 weeks and decreasing from then to around 130 bpm at term"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-hormonal-contraception-at-time-of-conception"/>
+      </reference>
+      <name value="NCDHC Hormonal Contraception at Time of Conception Observation"/>
+      <description value="NCDHC Hormonal Contraception at Time of Conception Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-illicit-drugs-gestation"/>
+      </reference>
+      <name value="NCDHC Illicit Drugs Use Gestation Observation"/>
+      <description value="Illicit drug usage during gestation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-medication-pres-change"/>
+      </reference>
+      <name value="NCDHC Medication Prescriptions Changes Observation"/>
+      <description value="Observation to note Current medications / prescriptions changes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-symphyseal-fundal-height"/>
+      </reference>
+      <name value="NCDHC Symphyseal-fundal height Observation"/>
+      <description value="It is measured from the top uterus to the top of the pubic symphysis. Fundal height, expressed in centimeters"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-ultrasound-scan-obstetric"/>
+      </reference>
+      <name value="NCDHC Obsteteric Ultrasound Scan Observation"/>
+      <description value="NCDHC Obsteteric Ultrasound Scan Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-urinalysis-protein"/>
+      </reference>
+      <name value="NCDHC Urinalysis Observation"/>
+      <description value="Urine dipstick screening for Leukocytes, nitrite, urobilinogen, protein, pH, blood, specific gravity, ketones, glucose, bilirubin"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-vitalsign-bmi"/>
+      </reference>
+      <name value="NCDHC BMI Vital Sign"/>
+      <description value="NCDHC Body Mass Index (BMI) Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-vitalsign-bodyheight"/>
+      </reference>
+      <name value="NCDHC Body Height Vital Sign"/>
+      <description value="NCDHC realm Body Height profile derived from STU3 Vital Signs Body Height profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-vitalsign-bodyweight"/>
+      </reference>
+      <name value="NCDHC Body Weight Vital Sign"/>
+      <description value="Weight of baby recorded at birth or body weight recored during assessment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-vitalsign-bp"/>
+      </reference>
+      <name value="NCDHC Vital Sign Blood Pressure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-vitalsign-headcircum"/>
+      </reference>
+      <name value="NCDHC Head Circumference Vital Sign"/>
+      <description value="NCDHC Head Circumference Vital Sign Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-vitalsign-heart-rate"/>
+      </reference>
+      <name value="NCDHC Vital Sign Heart Rate"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-patient-baby"/>
+      </reference>
+      <name value="NCDHC Patient Baby"/>
+      <description value="Profile to represent Baby Patient in NCDHC Context"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-patient-expectant-mother"/>
+      </reference>
+      <name value="NCDHC Expectant Mother Patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-questionnaire-base"/>
+      </reference>
+      <name value="NCDHC Questionnaire Base"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-questionnaireresponse-base"/>
+      </reference>
+      <name value="NCDHC QuestionnaireResponse Base"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-arrangement-of-fetus-1"/>
+      </reference>
+      <name value="NCDHC Arrangement of fetus"/>
+      <description value="National Children's Digital Health Collaborative - Arrangement of fetus ValueSet as applicable to National Children's Digital Health Collaborative"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-consent-category-1"/>
+      </reference>
+      <name value="NCDHC Consent Category"/>
+      <description value="National Children Digital Health Collaborative - Consent Category - this value set represents the consent status applicable to the creation and operation of the Child Digital Health Record and Digital Pregnancy Health Record initiatives for the National Digital Health Collaborative."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-descent-of-head-1"/>
+      </reference>
+      <name value="NCDHC Descent of Head"/>
+      <description value="Descent of Head ValueSet as applicable to National Children's Digital Health Collaborative"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-document-action-type-1"/>
+      </reference>
+      <name value="NNCDHC Document Action Type"/>
+      <description value="National Children's Digital Health Collaborative - Codes to represent the display values for the observation interpretation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-document-class-1"/>
+      </reference>
+      <name value="NCDHC Document Class"/>
+      <description value="NCDHC Document Class codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-document-type-1"/>
+      </reference>
+      <name value="NCDHC Document Type"/>
+      <description value="NCDHC Document Type codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-emotional-health-discussion-outcome-1"/>
+      </reference>
+      <name value="NCDHC Emotional Health Discussion Outcome"/>
+      <description value="National Children's Digital Health Collaborative - Emotional health wellbeing ValueSet as applicable to National Children's Digital Health Collaborative"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-encounter-type-1"/>
+      </reference>
+      <name value="NCDHC Encounter Type"/>
+      <description value="Codes to determine type of encounter occurred"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-first-fetal-movements-1"/>
+      </reference>
+      <name value="NCDHC First fetal Movements"/>
+      <description value="First fetal Movements ValueSet as applicable to National Children's Digital Health Collaborative"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-generic-yes-no-1"/>
+      </reference>
+      <name value="NCDHC Generic Yes No"/>
+      <description value="National Children's Digital Health Collaborative - generic yes no ValueSet as applicable to National Children's Digital Health Collaborative"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-head-engagement-status-1"/>
+      </reference>
+      <name value="NCDHC Head Engagement Status"/>
+      <description value="Head Engagement Status ValueSet as applicable to National Children's Digital Health Collaborative"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-hi-type-1"/>
+      </reference>
+      <name value="NCDHC Health Interaction Type"/>
+      <description value="National Children's Digital Health Collaborative - Health Interactions which are recorded to capture the category of the event. In this instance the specific Health Interaction name will be derived."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-illicit-drug-type-1"/>
+      </reference>
+      <name value="NCDHC Illicit drug type"/>
+      <description value="National Children's Digital Health Collaborative - Illicit drug type ValueSet as applicable to National Children's Digital Health Collaborative"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-labour-initiation-type-1"/>
+      </reference>
+      <name value="NCDHC Labour Initiation Type"/>
+      <description value="National Children's Digital Health Collaborative - Labour initiation type applicable at the time of birth"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-observation-Illicit-drugs-intake-status-1"/>
+      </reference>
+      <name value="NCDHC Observation Illicit Drugs Intake Status"/>
+      <description value="National Children Digital Health Collaborative - Observation Illicit Drugs Intake Status - Contains the codes for the status of illicit drugs usage."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-observation-category-1"/>
+      </reference>
+      <name value="NCDHC Observation Category"/>
+      <description value="Codes to capture the Health Interaction that the Observation instance is associated with."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-observation-completion-status-1"/>
+      </reference>
+      <name value="NCDHC Observation Completion Status"/>
+      <description value="National Children's Digital Health Collaborative - Values to represent what type of Observation Completion Status are applicable to each completed check/observation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-observation-completion-status-display-1"/>
+      </reference>
+      <name value="NCDHC Observation Completion Status Display"/>
+      <description value="National Children's Digital Health Collaborative - Codes to display if the observation/check is completed or not."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-observation-interpretation-1"/>
+      </reference>
+      <name value="NCDHC Observation Interpretation"/>
+      <description value="National Children's Digital Health Collaborative - Codes to determine what type of Observation Interpretation are applicable to each completed check/observation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-observation-interpretation-display-1"/>
+      </reference>
+      <name value="NCDHC Observation Interpretation Display Type"/>
+      <description value="National Children's Digital Health Collaborative - Codes to represent the display values for the observation interpretation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-observation-vac-sch-comp-status-1"/>
+      </reference>
+      <name value="NCDHC Observation Vaccination Schedule Completion Status"/>
+      <description value="National Children Digital Health Collaborative - Observation Vaccination Schedule Completion Status - Contains the codes for the status of whether the individual is up-to-date with their vaccinations as per the Australian Immunisation Schedule."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-observation-valueabsentreason-1"/>
+      </reference>
+      <name value="NCDHC Observation Value Absent Reason"/>
+      <description value="National Children's Digital Health Collaborative - Observation Value Absent Reason as provided by the source system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-quantity-of-liquor-1"/>
+      </reference>
+      <name value="NCDHC Quantity of liquor"/>
+      <description value="Quantity of liquor ValueSet as applicable to National Children's Digital Health Collaborative"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-security-role-type-1"/>
+      </reference>
+      <name value="NCDHC Security Role Type"/>
+      <description value="Codes to determine what kind of role is applicable to the role tyope of Consent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-smoking-status-1"/>
+      </reference>
+      <name value="NCDHC Smoking Status"/>
+      <description value="National Children's Digital Health Collaborative - ValueSet which will represent smoking status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-urinalysis-interpretation-1"/>
+      </reference>
+      <name value="NCDHC Urinalysis Interpretation"/>
+      <description value="National Children's Digital Health Collaborative - Urinalysis ValueSet as applicable to National Children's Digital Health Collaborative"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ncdhc-audit-type-1"/>
+      </reference>
+      <name value="NCDHC Audit Type"/>
+      <description value="National Children's Digital Health Collaborative - Audit Type which is added to capture the 'family' source of the event."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ncdhc-context-type-1"/>
+      </reference>
+      <name value="NCDHC Health Interaction Type"/>
+      <description value="This CodeSystem is used to determin the conext on which the provider is trying to gain access"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/ncdhc-metadata-consumer"/>
+      </reference>
+      <name value="National Children's Digital Health Collaborative CapabilityStatement (Consumer)"/>
+      <description value="Capability Statement for National Children's Digital Health Collaborative Consumer Channel"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/ncdhc-metadata-provider"/>
+      </reference>
+      <name value="National Children's Digital Health Collaborative CapabilityStatement(Provider)"/>
+      <description value="Capability Statement for National Children's Digital Health Collaborative Provider Channel"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-audit-event"/>
+      </reference>
+      <name value="NCDHC AuditEvent"/>
+      <description value="Captures Audit Details of the different operations performed in Data Hub"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-child-registration"/>
+      </reference>
+      <name value="NCDHC Rep Registration Composition"/>
+      <description value="A FHIR document to allow registration of child."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-health-check-assessment"/>
+      </reference>
+      <name value="NCDHC Health Check Assessment Composition"/>
+      <description value="This profile is used to represent Health Check Assessment."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-nbdelivery"/>
+      </reference>
+      <name value="NCDHC Newborn Delivery Composition"/>
+      <description value="Composition profile for NCDHC Newborn Delivery Health Interaction"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-antenatal-visits-information-bp"/>
+      </reference>
+      <name value="NCDHC NCDHC Antenatal Visits Selected Information Composition"/>
+      <description value="To view all a list of the selected information from antenatal visits as shared by clinical providers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-antenatal-visits-information-fundal-ht"/>
+      </reference>
+      <name value="NCDHC NCDHC Antenatal Visits Information Fundal Height Composition"/>
+      <description value="To view all a list of the selected information from antenatal visits as shared by clinical providers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-antenatal-visits-information-weight"/>
+      </reference>
+      <name value="NCDHC NCDHC Antenatal Visits Information Weight Composition"/>
+      <description value="To view all a list of the selected information from antenatal visits as shared by clinical providers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-birth"/>
+      </reference>
+      <name value="NCDHC Composition Birth View"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-hca-12m"/>
+      </reference>
+      <name value="NCDHC HCA View 12 Months Composition Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-hca-14wks"/>
+      </reference>
+      <name value="NCDHC HCA View 1-4 Weeks Composition Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-hca-18m"/>
+      </reference>
+      <name value="NCDHC HCA View 18 Months Composition Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-hca-2yr"/>
+      </reference>
+      <name value="NCDHC HCA View 2 Years Composition Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-hca-3yr"/>
+      </reference>
+      <name value="NCDHC HCA View 3 Years Composition Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-hca-4yr"/>
+      </reference>
+      <name value="NCDHC HCA View 4 Years Composition Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-hca-68wks"/>
+      </reference>
+      <name value="NCDHC HCA View 6-8 Weeks Composition Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-hca-6m"/>
+      </reference>
+      <name value="NCDHC HCA View 6 Months Composition Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-schedule"/>
+      </reference>
+      <name value="NCDHC HCA Schedule View Composition Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-composition-view-summary"/>
+      </reference>
+      <name value="NCDHC HCA Summary View Composition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-medicationstatement-vitamink"/>
+      </reference>
+      <name value="NCDHC Vitamin K Administered"/>
+      <description value="Vitamin K is a medication given to the newborn at birth. Either by intramuscular injection or up to three doses orally"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-abdomen"/>
+      </reference>
+      <name value="NCDHC Abdomen Observation"/>
+      <description value="Abdomen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-ageaprImmcomp"/>
+      </reference>
+      <name value="NCDHC Vaccination Status Observation"/>
+      <description value="Age Appropriate Immunisation completed as per schedule"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-anus"/>
+      </reference>
+      <name value="NCDHC Anus Observation"/>
+      <description value="Anus Outcome"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-apgar-score"/>
+      </reference>
+      <name value="NCDHC APGAR Scores"/>
+      <description value="A set of observations made on the baby following birth to check adaptation to life outside the womb. This includes 1 minute, 5 minutes and 10 minutes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-birth-abnormalities"/>
+      </reference>
+      <name value="NCDHC Abnormalities Noted At Birth"/>
+      <description value="Physical problems identified with the baby at, or shortly after birth. E.g. cleft lip/palate, extensive bruising, cephalohematoma etc."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-birth-complication"/>
+      </reference>
+      <name value="NCDHC Birth Complication Observation"/>
+      <description value="Complications observed during the birthing process"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-birth-head-circumference"/>
+      </reference>
+      <name value="NCDHC Birth Head Circumference"/>
+      <description value="Represents value for head circumference of baby recorded at birth"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-birth-length"/>
+      </reference>
+      <name value="NCDHC Birth Length"/>
+      <description value="Represents length of baby recorded at birth"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-bloodspot-screen"/>
+      </reference>
+      <name value="NCDHC Blood Spot Screen Observation"/>
+      <description value="A test used to detect certain rare genetic conditions and disorders of the metabolism"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-cardiovascular-dr"/>
+      </reference>
+      <name value="NCDHC Cardiovascular Test Observation"/>
+      <description value="Record Cardiovascular (Dr Only) Test outcomes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-development"/>
+      </reference>
+      <name value="NCDHC Development Observation"/>
+      <description value="Child Development"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-deworming"/>
+      </reference>
+      <name value="NCDHC Deworming Observation"/>
+      <description value="To record if deworming is found"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-ears"/>
+      </reference>
+      <name value="NCDHC Ears Test Observation"/>
+      <description value="Ear Test"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-eyes"/>
+      </reference>
+      <name value="NCDHC Eyes Observation"/>
+      <description value="Eeye Test"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-femoral-pulses"/>
+      </reference>
+      <name value="NCDHC Femoral Pulses Observation"/>
+      <description value="Femoral Pulses (Right, Left) Test"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-fetal-gestational-age"/>
+      </reference>
+      <name value="NCDHC Fetal Gestational Age Observation"/>
+      <description value="fetal gestational age"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-fluoride-varnish"/>
+      </reference>
+      <name value="NCDHC Fluoride Varnish Observation"/>
+      <description value="Record outcome of the child's fluoride varnish assessemen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-gait"/>
+      </reference>
+      <name value="NCDHC Gait Test Observation"/>
+      <description value="Gait Outcome"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-genitalia"/>
+      </reference>
+      <name value="NCDHC Genitalia Test Observation"/>
+      <description value="Outcome of physical examination of Genitalia"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-head-shape"/>
+      </reference>
+      <name value="NCDHC Head Shape Observation"/>
+      <description value="To record outcome of the child's head shape assessement"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-hearing-check"/>
+      </reference>
+      <name value="NCDHC Hearing Check Observation"/>
+      <description value="Hearing Check"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-hearing-screen"/>
+      </reference>
+      <name value="NCDHC Hearing Screen Observation"/>
+      <description value="Hearing test aimed to detect children with siginificant hearing loss at a young age"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-hips"/>
+      </reference>
+      <name value="NCDHC Hips Test Observation"/>
+      <description value="Hips Outcome"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-iron-haemoglobin-level"/>
+      </reference>
+      <name value="NCDHC Haemoglobin Level Observation"/>
+      <description value="Haemoglobin level estimation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-iron-serum-ferritin"/>
+      </reference>
+      <name value="NCDHC Serum Ferritin Observation"/>
+      <description value="Serum ferritin measurement"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-iron"/>
+      </reference>
+      <name value="NCDHC Iron Observation"/>
+      <description value="Iron assessment Outcome"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-labour-induced"/>
+      </reference>
+      <name value="NCDHC Labour Initiation"/>
+      <description value="Represents Labour initiation eg spontaneous, induced"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-left-eye-visiual-acuity"/>
+      </reference>
+      <name value="NCDHC Left Eye Visual Acuity Observation"/>
+      <description value="NCDHC Left Eye Visual Acuity test"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-method-of-delivery"/>
+      </reference>
+      <name value="NCDHC Type of Birth"/>
+      <description value="Type of birth observed during the birthing procedure."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-mouth-palate"/>
+      </reference>
+      <name value="NCDHC Mouth and Palate Observation"/>
+      <description value="Mouth Test"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-oral-health"/>
+      </reference>
+      <name value="NCDHC Oral Health Observation"/>
+      <description value="Oral Health Outcome"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-pregnancy-complication"/>
+      </reference>
+      <name value="NCDHC Pregnancy Complication"/>
+      <description value="Maternal medical conditions or infectious diseases arising in pregnancy which may have an impact on the fetus, e.g. gestational diabetes, infection etc."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-reflexes"/>
+      </reference>
+      <name value="NCDHC Reflexes Test Observation"/>
+      <description value="Outcome of the Reflexes / Neurological Check (Physical examination checking the involuntary movements or actions to determine the wellbeing of the newborns brain and nervous system)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-right-eye-visiual-acuity"/>
+      </reference>
+      <name value="NCDHC Right Eye Visual Acuity Observation"/>
+      <description value="NCDHC Right Eye Visual Acuity test"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-skin"/>
+      </reference>
+      <name value="NCDHC Skin Observation"/>
+      <description value="Skin Outcome"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-sutures-fontanelles"/>
+      </reference>
+      <name value="NCDHC Fontanelles and Sutures Observation"/>
+      <description value="Outcome of the child's fontanelles, sutures assessment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-test-iron"/>
+      </reference>
+      <name value="NCDHC Iron Test Observation"/>
+      <description value="Iron Testing Outcome"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-testes-fully-descended"/>
+      </reference>
+      <name value="NCDHC Testes Fully Descended Observation"/>
+      <description value="Testes fully descended R/L"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-umbilicus"/>
+      </reference>
+      <name value="NCDHC Umbilicus Observation"/>
+      <description value="Umbilicus"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-vision-screen"/>
+      </reference>
+      <name value="NCDHC Vision Screen Observation"/>
+      <description value="Vision Screen test aimed to detect children with vision problems at a young age"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-observation-vision-tested-monocularly"/>
+      </reference>
+      <name value="NCDHC Eyes Monocularly Tested Observation"/>
+      <description value="Eyes Monoculary Test"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ncdhc-operation-outcome"/>
+      </reference>
+      <name value="NCDHC OperationOutcome"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-colour-finding"/>
+      </reference>
+      <name value="APGAR Colour Findings"/>
+      <description value="APGAR colour findings"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-colour"/>
+      </reference>
+      <name value="APGAR Colour ObservationTypes"/>
+      <description value="APGAR colour observation types 1, 5, 10 minutes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-heart-rate-finding"/>
+      </reference>
+      <name value="APGAR Heart Rate Findings"/>
+      <description value="APGAR heart rate findings"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-heart-rate"/>
+      </reference>
+      <name value="APGAR Heart Rate Observation Types"/>
+      <description value="APGAR heart rate observation types 1, 5, 10 minutes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-muscle-tone-finding"/>
+      </reference>
+      <name value="APGAR Muscle Tone Findings"/>
+      <description value="APGAR muscle tone findings"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-muscle-tone"/>
+      </reference>
+      <name value="APGAR Muscle Tone Observation Types"/>
+      <description value="APGAR muscle tone observation types 1, 5, 10 minutes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-reflex-irritability-finding"/>
+      </reference>
+      <name value="APGAR Reflex Irritability Findings"/>
+      <description value="APGAR reflex irritability findings"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-reflex-irritability"/>
+      </reference>
+      <name value="APGAR Reflex Irritability Observation Types"/>
+      <description value="APGAR reflex irritability observation types 1, 5, 10 minutes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-respiratory-effort-finding"/>
+      </reference>
+      <name value="APGAR Respiratory Effort Findings"/>
+      <description value="APGAR respiratory effort findings"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-respiratory-effort"/>
+      </reference>
+      <name value="APGAR Respiratory Effort Observation Types"/>
+      <description value="APGAR respiratory effort observation types 1, 5, 10 minutes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-score-type-snomedct"/>
+      </reference>
+      <name value="APGAR Score Observation Types (SNOMED CT)"/>
+      <description value="APGAR score observation types 1, 5, 10 minutes, SNOMED CT binding"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/apgar-score-type"/>
+      </reference>
+      <name value="APGAR Score Observation Types"/>
+      <description value="APGAR score observation types 1, 5, 10 minutes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-audit-role-type-1"/>
+      </reference>
+      <name value="NCDHC Audit Role Type"/>
+      <description value="National Children's Digital Health Collaborative - Audit Role Type which is recorded to capture the role and name of the agent. The codes will be used to represent the different types of users which is applicable to the role type of Audit Log."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-audit-subtype-1"/>
+      </reference>
+      <name value="NCDHC Audit Subtype"/>
+      <description value="National Children's Digital Health Collaborative - Audit Subtype which recorded to capture the category of the event. In this instance the specific Health Interaction name will be derived."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-audit-type-1"/>
+      </reference>
+      <name value="NCDHC Audit Type"/>
+      <description value="National Children's Digital Health Collaborative - Audit Type which is added to capture the 'family' source of the event."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-birth-complications-1"/>
+      </reference>
+      <name value="NCDHC Birth Complications"/>
+      <description value="National Children's Digital Health Collaborative - Type of Birth Complications ValueSet which will determine what type of birth complication occurred."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-context-type-1"/>
+      </reference>
+      <name value="NCDHC Health Interaction Type"/>
+      <description value="This ValueSet is used to determin the conext on which the provider is trying to gain access"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-meds-route-admins-type-1"/>
+      </reference>
+      <name value="NCDHC Medication Route of Administration Types"/>
+      <description value="Codes to determine how the Medication was administered. Either by intramuscular injection or up to three doses orally"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-pregnancy-complications-1"/>
+      </reference>
+      <name value="NCDHC Pregnancy Complications"/>
+      <description value="National Digital Health Collaborative - Value set to determine what type of pregnancy complication/s occurred during the birthing process"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-tympanometry-results-1"/>
+      </reference>
+      <name value="NCDHC Tympanometry Results"/>
+      <description value="National Children Digital Health Collaborative - Tympanometry Results - Contains the results that are applicable to the Tympanometry test which tests of the middle ear functioning."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ncdhc-type-of-birth-1"/>
+      </reference>
+      <name value="NCDHC Type of Birth"/>
+      <description value="National Children's Digital Health Collaborative - ValueSet which will represent what type of birth occurred during the birthing process"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-antenatal-visit-collection-payload-example"/>
+      </reference>
+      <name value="ncdhc-antenatal-visit-collection-payload-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-antenatal-visits-consolidated-view-summary-example"/>
+      </reference>
+      <name value="ncdhc-antenatal-visits-consolidated-view-summary-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-bundle-document-create-authrep"/>
+      </reference>
+      <name value="ncdhc-bundle-document-create-authrep"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-bundle-document-create-exp-mthr-pt"/>
+      </reference>
+      <name value="ncdhc-bundle-document-create-exp-mthr-pt"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-composition-view-antenatal-visits-list-summary-example"/>
+      </reference>
+      <name value="ncdhc-composition-view-antenatal-visits-list-summary-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Device/ncdhc-device-child-data-hub-example"/>
+      </reference>
+      <name value="ncdhc-device-child-data-hub-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Device/ncdhc-nsw-jt"/>
+      </reference>
+      <name value="ncdhc-nsw-jt"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="DocumentReference/ncdhc-documentreference-clinical-notes-example"/>
+      </reference>
+      <name value="ncdhc-documentreference-clinical-notes-example"/>
+      <description value="Antenatal Visit Progress Notes recorded at 2019-12-23."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ncdhc-dphr-encounter-example"/>
+      </reference>
+      <name value="ncdhc-dphr-encounter-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-estimated-date-birth-document-example"/>
+      </reference>
+      <name value="ncdhc-estimated-date-birth-document-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/examiner-organization"/>
+      </reference>
+      <name value="Blacktown Hospital"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/examiner-practitioner"/>
+      </reference>
+      <name value="examiner-practitioner"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/ncdhc-examiner-practitioner-lsi-example"/>
+      </reference>
+      <name value="ncdhc-examiner-practitioner-lsi-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-bi-alcohol-intake-example"/>
+      </reference>
+      <name value="ncdhc-observation-bi-alcohol-intake-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-bi-other-example"/>
+      </reference>
+      <name value="ncdhc-observation-bi-other-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-bi-tobacco-usage-example"/>
+      </reference>
+      <name value="ncdhc-observation-bi-tobacco-usage-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-bmi-normal-example"/>
+      </reference>
+      <name value="observation-bmi-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-bodyheight-example"/>
+      </reference>
+      <name value="observation-bodyheight-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-bp-example"/>
+      </reference>
+      <name value="ncdhc-observation-bp-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-breastfeeding-education-example"/>
+      </reference>
+      <name value="ncdhc-observation-breastfeeding-education-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-breastfeeding-time-conception-example"/>
+      </reference>
+      <name value="observation-breastfeeding-time-conception-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-edb-by-clinical-examination-example"/>
+      </reference>
+      <name value="ncdhc-observation-edb-by-clinical-examination-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-edb-consistent-lmp-us-example"/>
+      </reference>
+      <name value="observation-edb-consistent-lmp-us-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-emotional-health-and-wellbeing-example"/>
+      </reference>
+      <name value="ncdhc-observation-emotional-health-and-wellbeing-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-estimated-date-birth-example"/>
+      </reference>
+      <name value="observation-estimated-date-birth-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-estimated-date-birth-last-period-example"/>
+      </reference>
+      <name value="observation-estimated-date-birth-last-period-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-estimated-gestation-example"/>
+      </reference>
+      <name value="observation-estimated-gestation-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-fetal-gestational-age-at-ultrasound-example"/>
+      </reference>
+      <name value="ncdhc-observation-fetal-gestational-age-at-ultrasound-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-fetal-movement-example"/>
+      </reference>
+      <name value="ncdhc-observation-fetal-movement-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-fetus-arrangement-example"/>
+      </reference>
+      <name value="ncdhc-observation-fetus-arrangement-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-fetus-liquor-example"/>
+      </reference>
+      <name value="ncdhc-observation-fetus-liquor-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-head-engagement-example"/>
+      </reference>
+      <name value="ncdhc-observation-head-engagement-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-headcircum-example"/>
+      </reference>
+      <name value="observation-headcircum-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-heart-rate-example"/>
+      </reference>
+      <name value="ncdhc-observation-heart-rate-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-hormonal-contraception-at-conception-example"/>
+      </reference>
+      <name value="ncdhc-observation-hormonal-contraception-at-conception-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-illicit-drugs-gestation-example"/>
+      </reference>
+      <name value="ncdhc-observation-illicit-drugs-gestation-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-medication-pres-change-example"/>
+      </reference>
+      <name value="ncdhc-observation-medication-pres-change-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-symphyseal-fundal-height-example"/>
+      </reference>
+      <name value="ncdhc-observation-symphyseal-fundal-height-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-ultrasound-scan-obstetric-example"/>
+      </reference>
+      <name value="ncdhc-observation-ultrasound-scan-obstetric-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-urinalysis-protein-example"/>
+      </reference>
+      <name value="ncdhc-observation-urinalysis-protein-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-vitalsign-bmi-example"/>
+      </reference>
+      <name value="observation-vitalsign-bmi-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-vitalsign-bodyheight-example"/>
+      </reference>
+      <name value="observation-vitalsign-bodyheight-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-vitalsign-bodyweight-example"/>
+      </reference>
+      <name value="ncdhc-observation-vitalsign-bodyweight-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-vitalsign-bp-example"/>
+      </reference>
+      <name value="ncdhc-observation-vitalsign-bp-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-vitalsign-headcircum-example"/>
+      </reference>
+      <name value="observation-vitalsign-headcircum-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-vitalsign-heart-rate-example"/>
+      </reference>
+      <name value="ncdhc-observation-vitalsign-heart-rate-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/patient-baby-example"/>
+      </reference>
+      <name value="patient-baby-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/ncdhc-patient-expectant-mother-example"/>
+      </reference>
+      <name value="ncdhc-patient-expectant-mother-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/antenatal-visits-list-qa-en-s1"/>
+      </reference>
+      <name value="antenatal-visits-list-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/antenatal-visit-alc-tob-drug-screening-qa-en-s1"/>
+      </reference>
+      <name value="antenatal-visit-alc-tob-drug-screening-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/antenatal-visit-myinfo-qa-en-s1"/>
+      </reference>
+      <name value="antenatal-visit-myinfo-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="RelatedPerson/ncdhc-relatedoersib-registration-self-example"/>
+      </reference>
+      <name value="ncdhc-relatedoersib-registration-self-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="RelatedPerson/ncdhc-relatedperson-registration-authrep-example"/>
+      </reference>
+      <name value="ncdhc-relatedperson-registration-authrep-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="RelatedPerson/ncdhc-relatedperson-registration-nomrep-example"/>
+      </reference>
+      <name value="ncdhc-relatedperson-registration-nomrep-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/antenatal-visits-list-sum-q-en-s1"/>
+      </reference>
+      <name value="Antenatal Visit List Summary"/>
+      <description value="Question model to represent Antenatal Visit List"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AuditEvent/audit-event-insert-example"/>
+      </reference>
+      <name value="audit-event-insert-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AuditEvent/audit-event-created-example"/>
+      </reference>
+      <name value="audit-event-created-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AuditEvent/audit-event-deleted-example"/>
+      </reference>
+      <name value="audit-event-deleted-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AuditEvent/audit-event-read-example"/>
+      </reference>
+      <name value="audit-event-read-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AuditEvent/audit-event-updated-example"/>
+      </reference>
+      <name value="audit-event-updated-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-composition-view-birth-sample"/>
+      </reference>
+      <name value="ncdhc-composition-view-birth-sample"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-bundle-document-create-child"/>
+      </reference>
+      <name value="ncdhc-bundle-document-create-child"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Composition/ncdhc-composition-antvst-example"/>
+      </reference>
+      <name value="Antenatal Record Collection Health Interaction"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Composition/780f219f-97a8-486d-99d9-ed631fe4fc57"/>
+      </reference>
+      <name value="Health Check Assessment Health Interaction"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-composition-view-antenatal-visit-example"/>
+      </reference>
+      <name value="ncdhc-composition-view-antenatal-visit-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Consent/ncdhc-consent-participation-authrep-example"/>
+      </reference>
+      <name value="ncdhc-consent-participation-authrep-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Consent/ncdhc-consent-registration-authrep-example"/>
+      </reference>
+      <name value="ncdhc-consent-registration-authrep-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="DocumentReference/ncdhc-doc-ref-current-example"/>
+      </reference>
+      <name value="ncdhc-doc-ref-current-example"/>
+      <description value="DocumentReference corresponding to HCA 1-4 Weeks"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="DocumentReference/ncdhc-doc-ref-superseded-example"/>
+      </reference>
+      <name value="ncdhc-doc-ref-superseded-example"/>
+      <description value="DocumentReference corresponding to HCA 1-4 Weeks"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-bundle-transaction-nbdelivery-request-payload"/>
+      </reference>
+      <name value="ncdhc-bundle-transaction-nbdelivery-request-payload"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="DocumentReference/ncdhc-dphr-doc-ref-current-example"/>
+      </reference>
+      <name value="ncdhc-dphr-doc-ref-current-example"/>
+      <description value="DocumentReference corresponding to Antenatal Visit"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ncdhc-encounter-example"/>
+      </reference>
+      <name value="ncdhc-encounter-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-hca-1-4weeks-view-summary"/>
+      </reference>
+      <name value="ncdhc-hca-1-4weeks-view-summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-hca-12mnths-view-summary"/>
+      </reference>
+      <name value="ncdhc-hca-12mnths-view-summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-hca-18mnths-view-summary"/>
+      </reference>
+      <name value="ncdhc-hca-18mnths-view-summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-hca-2year-view-summary"/>
+      </reference>
+      <name value="ncdhc-hca-2year-view-summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-hca-3year-view-summary"/>
+      </reference>
+      <name value="ncdhc-hca-3year-view-summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-hca-4year-view-summary"/>
+      </reference>
+      <name value="ncdhc-hca-4year-view-summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-hca-6-8weeks-view-summary"/>
+      </reference>
+      <name value="ncdhc-hca-6-8weeks-view-summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-hca-6mnths-view-summary"/>
+      </reference>
+      <name value="ncdhc-hca-6mnths-view-summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-hca-nsw-schedule-sample"/>
+      </reference>
+      <name value="ncdhc-hca-nsw-schedule-sample"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-hca-nsw-summary-sample"/>
+      </reference>
+      <name value="ncdhc-hca-nsw-summary-sample"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-hca-payload-4-9m"/>
+      </reference>
+      <name value="ncdhc-hca-payload-4-9m"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/ncdhc-medicationstatement-k1-example"/>
+      </reference>
+      <name value="ncdhc-medicationstatement-k1-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-nbdelivery-empty-section-payload"/>
+      </reference>
+      <name value="ncdhc-nbdelivery-empty-section-payload"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-nbdelivery-payload"/>
+      </reference>
+      <name value="ncdhc-nbdelivery-payload"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-abdomen-normal-example"/>
+      </reference>
+      <name value="observation-abdomen-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-anus-normal-example"/>
+      </reference>
+      <name value="observation-anus-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-apgar-score-10m-example"/>
+      </reference>
+      <name value="observation-apgar-score-10m-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-apgar-score-1m-example"/>
+      </reference>
+      <name value="observation-apgar-score-1m-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-apgar-score-5m-example"/>
+      </reference>
+      <name value="observation-apgar-score-5m-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-birth-abnormalities-example"/>
+      </reference>
+      <name value="observation-birth-abnormalities-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-birth-complication-example"/>
+      </reference>
+      <name value="observation-birth-complication-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-birth-head-circumference-example"/>
+      </reference>
+      <name value="ncdhc-observation-birth-head-circumference-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-birth-length-example"/>
+      </reference>
+      <name value="ncdhc-observation-birth-length-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-birthweight-example"/>
+      </reference>
+      <name value="observation-birthweight-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-bloodspot-screen-normal-example"/>
+      </reference>
+      <name value="ncdhc-observation-bloodspot-screen-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-bodyweight-example"/>
+      </reference>
+      <name value="observation-bodyweight-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-cardiovascular-normal-example"/>
+      </reference>
+      <name value="observation-cardiovascular-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-development-normal-example"/>
+      </reference>
+      <name value="observation-development-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-deworming-normal-example"/>
+      </reference>
+      <name value="observation-deworming-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-ears-normal-example"/>
+      </reference>
+      <name value="observation-ears-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-eyes-normal-example"/>
+      </reference>
+      <name value="observation-eyes-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-femoralpulse-normal-example"/>
+      </reference>
+      <name value="observation-femoralpulse-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-fluoridevarnish-normal-example"/>
+      </reference>
+      <name value="observation-fluoridevarnish-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-fontanelles-normal-example"/>
+      </reference>
+      <name value="observation-fontanelles-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-gait-normal-example"/>
+      </reference>
+      <name value="observation-gait-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-genitalia-normal-example"/>
+      </reference>
+      <name value="observation-genitalia-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-head-shape-normal-example"/>
+      </reference>
+      <name value="observation-head-shape-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-hearingcheck-normal-example"/>
+      </reference>
+      <name value="observation-hearingcheck-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-hearingscreen-normal-example"/>
+      </reference>
+      <name value="observation-hearingscreen-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-hips-normal-example"/>
+      </reference>
+      <name value="observation-hips-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-immunisation-normal-example"/>
+      </reference>
+      <name value="observation-immunisation-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-iron-haemoglobin-level-example"/>
+      </reference>
+      <name value="ncdhc-observation-iron-haemoglobin-level-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-iron-serum-ferritin-example"/>
+      </reference>
+      <name value="ncdhc-observation-iron-serum-ferritin-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-irontesting-normal-example"/>
+      </reference>
+      <name value="ncdhc-observation-irontesting-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-labour-induced-example"/>
+      </reference>
+      <name value="observation-labour-induced-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-left-eye-visiual-acuity-example"/>
+      </reference>
+      <name value="ncdhc-observation-left-eye-visiual-acuity-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-method-of-delivery-example"/>
+      </reference>
+      <name value="observation-method-of-delivery-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-mouthpalate-normal-example"/>
+      </reference>
+      <name value="observation-mouthpalate-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-no-pregnancy-complication-example"/>
+      </reference>
+      <name value="ncdhc-observation-no-pregnancy-complication-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-oralhealth-normal-example"/>
+      </reference>
+      <name value="observation-oralhealth-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-pregnancy-complication-example"/>
+      </reference>
+      <name value="observation-pregnancy-complication-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-reflexes-normal-example"/>
+      </reference>
+      <name value="observation-reflexes-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-right-eye-visiual-acuity-example"/>
+      </reference>
+      <name value="ncdhc-observation-right-eye-visiual-acuity-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-skin-normal-example"/>
+      </reference>
+      <name value="observation-skin-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-skin-review-example"/>
+      </reference>
+      <name value="observation-skin-review-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-testes-na-example"/>
+      </reference>
+      <name value="ncdhc-observation-testes-na-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-testes-normal-example"/>
+      </reference>
+      <name value="observation-testes-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-umbilicus-normal-example"/>
+      </reference>
+      <name value="observation-umbilicus-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ncdhc-observation-vision-tested-monocularly-example"/>
+      </reference>
+      <name value="ncdhc-observation-vision-tested-monocularly-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-visionscreen-normal-example"/>
+      </reference>
+      <name value="observation-visionscreen-normal-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-vitalsign-birthlength-example"/>
+      </reference>
+      <name value="observation-vitalsign-birthlength-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-vitalsign-birthweight-example"/>
+      </reference>
+      <name value="observation-vitalsign-birthweight-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OperationOutcome/operationoutcome-400-example"/>
+      </reference>
+      <name value="operationoutcome-400-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OperationOutcome/operationoutcome-401-example"/>
+      </reference>
+      <name value="operationoutcome-401-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OperationOutcome/operationoutcome-403-example"/>
+      </reference>
+      <name value="operationoutcome-403-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OperationOutcome/operationoutcome-404-example"/>
+      </reference>
+      <name value="operationoutcome-404-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OperationOutcome/operationoutcome-405-example"/>
+      </reference>
+      <name value="operationoutcome-405-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OperationOutcome/operationoutcome-409-example"/>
+      </reference>
+      <name value="operationoutcome-409-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OperationOutcome/operationoutcome-410-example"/>
+      </reference>
+      <name value="operationoutcome-410-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OperationOutcome/operationoutcome-422-example"/>
+      </reference>
+      <name value="operationoutcome-422-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OperationOutcome/operationoutcome-500-example"/>
+      </reference>
+      <name value="operationoutcome-500-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-operationoutcome-bundle-404-example"/>
+      </reference>
+      <name value="ncdhc-operationoutcome-bundle-404-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-operationoutcome-bundle-410-example"/>
+      </reference>
+      <name value="ncdhc-operationoutcome-bundle-410-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-operationoutcome-bundle-412-example"/>
+      </reference>
+      <name value="ncdhc-operationoutcome-bundle-412-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OperationOutcome/ncdhc-operationoutcome-information-example"/>
+      </reference>
+      <name value="ncdhc-operationoutcome-information-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="OperationOutcome/ncdhc-operationoutcome-informational-example"/>
+      </reference>
+      <name value="ncdhc-operationoutcome-informational-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ncdhc-patient-getall-example"/>
+      </reference>
+      <name value="ncdhc-patient-getall-example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/antenatal-visits-information-bp-qa-en-s1"/>
+      </reference>
+      <name value="antenatal-visits-information-bp-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/antenatal-visits-information-fundal-ht-qa-en-s1"/>
+      </reference>
+      <name value="antenatal-visits-information-fundal-ht-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/antenatal-visits-information-weight-qa-en-s1"/>
+      </reference>
+      <name value="antenatal-visits-information-weight-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/antenatal-visit-baby-info-qa-en-s1"/>
+      </reference>
+      <name value="antenatal-visit-baby-info-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/hca-sch-nsw-qa-en-s1"/>
+      </reference>
+      <name value="hca-sch-nsw-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/hca-sum-nsw-qa-en-s1"/>
+      </reference>
+      <name value="hca-sum-nsw-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/hca-1-4wk-qa-en-s1"/>
+      </reference>
+      <name value="hca-1-4wk-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/hca-12mnth-qa-en-s1"/>
+      </reference>
+      <name value="hca-12mnth-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/hca-18mnth-qa-en-s1"/>
+      </reference>
+      <name value="hca-18mnth-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/hca-2year-qa-en-s1"/>
+      </reference>
+      <name value="hca-2year-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/hca-3year-qa-en-s1"/>
+      </reference>
+      <name value="hca-3year-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/hca-4-9mnth-qa-en-s1"/>
+      </reference>
+      <name value="hca-4-9mnth-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/hca-4year-qa-en-s1"/>
+      </reference>
+      <name value="hca-4year-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/hca-6-8wk-qa-en-s1"/>
+      </reference>
+      <name value="hca-6-8wk-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/nb-delivery-qa-1"/>
+      </reference>
+      <name value="nb-delivery-qa-1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/antenatal-visit-nextvst-progresnts-qa-en-s1"/>
+      </reference>
+      <name value="antenatal-visit-nextvst-progresnts-qa-en-s1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/antenatal-visits-information-bp-qa-en-s1"/>
+      </reference>
+      <name value="Antenatal Visit BP Information View Summary"/>
+      <description value="Question model to represent Antenatal Visit BP Information View"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/antenatal-visits-information-fundal-ht-qa-en-s1"/>
+      </reference>
+      <name value="Antenatal Visit Fundal Height Information View"/>
+      <description value="Question model to represent Antenatal Visit Fundal Height Information View"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/antenatal-visits-information-weight-qa-en-s1"/>
+      </reference>
+      <name value="Antenatal Visit Weight Information View"/>
+      <description value="Question model to represent Antenatal Visit Weight Information View"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/antenatal-visit-baby-info-q-en-s1"/>
+      </reference>
+      <name value="Baby's Information Questionnaire"/>
+      <description value="Question model to Baby's Information section of Antenatal Visit"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hca-1-4wk-q-en-s1"/>
+      </reference>
+      <name value="Health Check Assessment 1-4 Week Questionnaire"/>
+      <description value="Question model to represent Health Check Assessment Section of the longitudinal summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hca-12mnth-q-en-s1"/>
+      </reference>
+      <name value="Health Check Assessment 12 Months Questionnaire"/>
+      <description value="Question model to represent Health Check Assessment Section of the longitudinal summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hca-18mnth-q-en-s1"/>
+      </reference>
+      <name value="Health Check Assessment 3 Year Questionnaire"/>
+      <description value="Question model to represent Health Check Assessment Section of the longitudinal summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hca-2yr-q-en-s1"/>
+      </reference>
+      <name value="Health Check Assessment 3 Year Questionnaire"/>
+      <description value="Question model to represent Health Check Assessment Section of the longitudinal summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hca-3yr-q-en-s1"/>
+      </reference>
+      <name value="Health Check Assessment 3 Year Questionnaire"/>
+      <description value="Question model to represent Health Check Assessment Section of the longitudinal summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hca-4-9mnth-q-en-s1"/>
+      </reference>
+      <name value="Health Check Assessment 4-9 Week Questionnaire"/>
+      <description value="Question model to represent Health Check Assessment Section of the longitudinal summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hca-4yr-q-en-s1"/>
+      </reference>
+      <name value="Health Check Assessment 4 Year Questionnaire"/>
+      <description value="Question model to represent Health Check Assessment Section of the longitudinal summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hca-6-8wk-q-en-s1"/>
+      </reference>
+      <name value="Health Check Assessment 6-8 Week Questionnaire"/>
+      <description value="Question model to represent Health Check Assessment Section of the longitudinal summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hca-sch-nsw-q-en-s1"/>
+      </reference>
+      <name value="Health Check Schedule"/>
+      <description value="Question model to represent Health Check Schedule"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hca-sum-nsw-q-en-s1"/>
+      </reference>
+      <name value="Health Check Summary"/>
+      <description value="Question model to represent Health Check Summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/antenatal-visit-my-info-q-en-s1"/>
+      </reference>
+      <name value="My Information Questionnaire"/>
+      <description value="Question model to My Information section of Antenatal Visit"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/antenatal-visit-alc-tob-drug-screening-qa-en-s1"/>
+      </reference>
+      <name value="My Alcohol, Tobacco and Other Drug screening Questionnaire"/>
+      <description value="Question model to My Alcohol, Tobacco and Other Drug screening section of Antenatal Visit"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/nb-delivery-q-en-s1"/>
+      </reference>
+      <name value="Newborn Delivery Questionnaire"/>
+      <description value="Question model to represent Newborn Delivery Section of the longitudinal summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/antenatal-visit-nextvst-progresnts-q-en-s1"/>
+      </reference>
+      <name value="Progress Notes and Next Visit Details Questionnaire"/>
+      <description value="Question model to represent Progress Notes and details about Next Visit"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="guidance.html"/>
+        <title value="General Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles Defined"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="extensions.html"/>
+        <title value="Extensions Defined"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="searchparams.html"/>
+        <title value="Search Parameters Defined"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="operations.html"/>
+        <title value="Operations"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="capstatements.html"/>
+        <title value="Capability Statements"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources-cdhr"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples-cdhr"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/pagecontent"/>
+    </parameter>
+    <parameter>
+      <code value="path-expansion-params"/>
+      <value value="expansion-params.json"/>
+    </parameter>
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2019+"/>
+    </parameter>
+    <parameter>
+      <code value="releaselabel"/>
+      <value value="ci-build"/>
+    </parameter>
+    <parameter>
+      <code value="shownav"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="autoload-resources"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="urn:iso:std:iso:3166"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="http://hl7.org.au/fhir/sid/icpc-2plus"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="http://www.mims.com.au/codes"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="http://www.gs1.org/gtin"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="http://pbs.gov.au/code/item"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="http://hl7.org.au/fhir/v2/0203"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="https://healthterminologies.gov.au/fhir/CodeSystem/date-accuracy-indicator-1"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="https://healthterminologies.gov.au/fhir/CodeSystem/concurrent-supply-grounds-1"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="https://healthterminologies.gov.au/fhir/ValueSet/medication-reason-not-taken-1"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="http://hl7.org/fhir/us/core/ValueSet/us-core-observation-ccdasmokingstatus"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="https://healthterminologies.gov.au/fhir/ValueSet/clinical-finding-1"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

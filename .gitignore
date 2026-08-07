@@ -1,13 +1,19 @@
-/output
-/qa
-/temp
+# IG Publisher build artefacts
+/output/
+/output-dphr/
+/qa/
+/qa-dphr/
+/temp/
+/temp-dphr/
+/template/
+qa.html
+qa-dphr.html
+input-cache/
 txCache/
-org.hl7.fhir.igpublisher.jar
 fhir-all-xsd/
-org.hl7.fhir.igpublisher.jar.3.0.0
-org.hl7.fhir.igpublisher.jar.3.1.0
-org.hl7.fhir.igpublisher.jar.3.0.1
-resources/resources/
-resources/au-fhir-base/
 private/
-resources/au-fhir-base
+
+# publisher run logs
+build.log
+build-dphr.log
+Requirements-fromNarrative.json

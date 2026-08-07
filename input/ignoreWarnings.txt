@@ -1,0 +1,14 @@
+== Suppressed Messages ==
+
+# The STU3 core v3 value sets (v3-ConfidentialityClassification, v3-ActCode, etc.)
+# carry a release date as their ValueSet.version. When the current IG Publisher
+# renders a binding to one of them it builds the link as "<url>|<version>/vs.html",
+# which is not a valid path, so every profile that binds to a v3 value set reports
+# an unresolvable link. Nothing in this repository produces or can correct these
+# URLs - they come from the core STU3 definitions and the publisher's renderer.
+
+The link 'http://hl7.org/fhir/STU3/v3/ConfidentialityClassification|2014-03-26/vs.html' for "ConfidentialityClassification|2014-03-26" cannot be resolved
+The link 'http://hl7.org/fhir/STU3/v3/ActCode|2016-11-11/vs.html' for "ActCode|2016-11-11" cannot be resolved
+The link 'http://hl7.org/fhir/STU3/v3/PurposeOfUse|2014-03-26/vs.html' for "PurposeOfUse|2014-03-26" cannot be resolved
+The link 'http://hl7.org/fhir/STU3/v3/ActEncounterCode|2014-03-26/vs.html' for "ActEncounterCode|2014-03-26" cannot be resolved
+The link 'http://hl7.org/fhir/STU3/v3/ActPriority|2016-11-11/vs.html' for "ActPriority|2016-11-11" cannot be resolved
